@@ -1,16 +1,14 @@
-### Hi there 👋
+## Olá! Eu sou o Kevin Richard👋🏿 
 
-<!--
-**k3vinrich4rd/k3vinrich4rd** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+💻🖥🖱 **Hoje eu trabalho com Back-End**
 
-Here are some ideas to get you started:
+👨🏿‍🎓📚📖 **Estudante de:  Java, JavaScript e Python** 
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+_Pronouns:_ **Ele/Dele**
+
+<div align="center">
+  <a href="https://github.com/k3vinrich4rd">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=k3vinrich4rd&show_icons=false&theme=midnight-purple&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=k3vinrich4rd&layout=compact&langs_count=7&theme=vision-friendly-dark"/>
+</div>
+  
