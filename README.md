@@ -5,7 +5,7 @@ My name is Kevin Richard and I work as a Java Developer Assistant at Zup Innovat
  ##                                                                 𝕄𝕖𝕒𝕟𝕤 𝕆𝕗 ℂ𝕠𝕟𝕥𝕒𝕔𝕥 📧:
   [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kevin-richard-pcd-b68a54203/) [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](https://mail.google.com/mail/kevinrichardve@gmail.com)
                                        
-                                                                  𝔸𝕟𝕒𝕝𝕪𝕥𝕚𝕔𝕤 📊📈:  
+                                                                 𝔸𝕟𝕒𝕝𝕪𝕥𝕚𝕔𝕤 📊📈:  
 <div align="center">
   <a href="https://github.com/k3vinrich4rd">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=k3vinrich4rd&show_icons=false&theme=midnight-purple&include_all_commits=true&count_private=true"/>
