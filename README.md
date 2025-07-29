@@ -1,19 +1,25 @@
-## 👋🏿Hello World 
-Nice to meet you, my name is Kevin Richard and  work as Developer Assistant Java in Zup Innovation 
+# 👋 Olá, eu sou o Kevin Richard!
 
-###                                            **Contact:**
-[![Linkedin](	https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kevin-richard-pcd-b68a54203/)
+Sou um **desenvolvedor de software** recém-formado, apaixonado por tecnologia e em início de carreira na área de desenvolvimento. Estou sempre em busca de novos desafios e oportunidades para aprender e crescer profissionalmente.
 
-   ##                                                    Statistics: 
-![Kevin Richard GitHub stats](https://github-readme-stats.vercel.app/api?username=k3vinrich4rd&show_icons=true&theme=midnight-purple)
+## 🚀 Sobre Mim
+- 🎓 **Formação:** Recém-formado em Análise e Desenvolvimento de Sistemas.
+- 💻 **Interesses:** Java, desenvolvimento web, APIs e boas práticas de programação.
+- 📚 **Aprendizado Contínuo:** Atualmente estudando frameworks modernos e aprimorando minhas habilidades de lógica de programação em projetos práticos.
+- 🌱 **Buscando Oportunidades:** Aberto a vagas de estágio, trainee ou júnior para iniciar minha trajetória profissional.
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=k3vinrich4rd&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+## 🛠️ Tecnologias e Ferramentas
+- **Linguagens:** Java
+- **Frameworks:** Spring Boot (básico)
+- **Ferramentas:** Git, GitHub, VS Code, IntelliJ
 
-### **Technologies I study:**
+## 📂 Projetos em Destaque
+- [LkBank](https://github.com/k3vinrich4rd/lk-bank): Projeto colaborativo em Java, focado em orientação a objetos, simulação de operações bancárias e aplicação de conceitos aprendidos em cursos.
+- Outros projetos disponíveis nos meus repositórios públicos.
 
-<div style="display: inline_block"><br>
-<img align="center" alt="Java" src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white"/>
-<img align="center" alt="Kotlin" src="https://img.shields.io/badge/Kotlin-0095D5?&style=for-the-badge&logo=kotlin&logoColor=white"/>
-</div>
+## 📫 Contato
+- [LinkedIn](https://www.linkedin.com/in/kevinrichard/)
+- E-mail: kevinrichard@email.com
 
-
+---
+> Estou animado para contribuir com a comunidade de tecnologia e crescer como desenvolvedor. Sinta-se à vontade para entrar em contato ou conferir meus projetos!
