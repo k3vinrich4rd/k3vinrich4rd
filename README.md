@@ -18,8 +18,8 @@ Sou um **desenvolvedor de software** recém-formado, apaixonado por tecnologia e
 - Outros projetos disponíveis nos meus repositórios públicos.
 
 ## 📫 Contato
-- [LinkedIn](https://www.linkedin.com/in/kevinrichard/)
-- E-mail: kevinrichard@email.com
+- [LinkedIn](https://www.linkedin.com/in/kevin-richard-b68a54203/)
+- E-mail: kevinrichardve@gmail.com
 
 ---
 > Estou animado para contribuir com a comunidade de tecnologia e crescer como desenvolvedor. Sinta-se à vontade para entrar em contato ou conferir meus projetos!
