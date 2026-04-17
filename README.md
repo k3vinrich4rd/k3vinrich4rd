@@ -6,8 +6,7 @@ Sou um **desenvolvedor de software** recém-formado, apaixonado por tecnologia e
 - 🎓 **Formação:** Recém-formado em Análise e Desenvolvimento de Sistemas.
 - 💻 **Interesses:** Java, desenvolvimento web, APIs e boas práticas de programação.
 - 📚 **Aprendizado Contínuo:** Atualmente estudando frameworks modernos e aprimorando minhas habilidades de lógica de programação em projetos práticos.
-- 🌱 **Buscando Oportunidades:** Aberto a vagas de estágio, trainee ou júnior para iniciar minha trajetória profissional.
-
+  
 ## 🛠️ Tecnologias e Ferramentas
 - **Linguagens:** Java
 - **Frameworks:** Spring Boot (básico)
