@@ -40,7 +40,7 @@
 &nbsp;
 <img src="https://img.shields.io/badge/Status-Disponivel%20para%20oportunidades-brightgreen?style=flat-square"/>
 &nbsp;
-<img src="https://img.shields.io/badge/Atualmente%20estudando-MongoDB%20%2B%20Spring-47A248?style=flat-square&logo=mongodb&logoColor=white"/>
+<img src="https://img.shields.io/badge/Atualmente%20estudando-Spring%20%2B%20MongoDB%20%2B%20AWS-47A248?style=flat-square&logo=spring&logoColor=white"/>
 
 </div>
 
@@ -52,13 +52,13 @@
 
 <img align="right" width="300" src="https://github-readme-stats.vercel.app/api/top-langs/?username=k3vinrich4rd&layout=donut&theme=tokyonight&hide_border=true&langs_count=6&bg_color=0d1117&title_color=EC7000&text_color=ffffff" alt="Linguagens"/>
 
-> *24 anos. Osasco, SP. Dev Junior. Sempre estudando. Sempre evoluindo.*
+> 24 anos. Osasco, SP. Dev Junior. Sempre estudando. Sempre evoluindo.
 
-Tenho **24 anos**, sou **homem negro**, **pessoa com deficiencia fisica**, residente de **Osasco, SP**.
+Tenho 24 anos, sou homem negro, pessoa com deficiência física e residente de Osasco, SP.
 
-Entrei na area de tecnologia pelo **[Programa Catalisa](https://www.linkedin.com/company/zupinnovation/posts/?feedView=all)** da **Zup Innovation**, que me colocou em um dos ecossistemas de tecnologia mais relevantes do Brasil. Hoje atuo como **Dev Junior na Zup Innovation**, empresa do grupo **[Itau](https://www.itau.com.br/)**, prestando servico para o maior banco privado do Brasil — e estudando todos os dias para chegar ao proximo nivel.
+Entrei na área de tecnologia pelo **[Programa Catalisa](https://www.linkedin.com/company/zupinnovation/posts/?feedView=all)** da **Zup Innovation**, que me colocou em um dos ecossistemas de tecnologia mais relevantes do Brasil. Hoje atuo como **Desenvolvedor de Software Junior na Zup Innovation**, empresa do grupo **[Itaú](https://www.itau.com.br/)**, prestando serviço para o maior banco privado do Brasil e estudando todos os dias para chegar ao próximo nível.
 
-> **Conhecimento nao tem teto. Codigo nao tem limite. So tem proximo nivel.**
+> *Conhecimento não tem teto. Código não tem limite. Só tem próximo nível.*
 
 <br clear="right"/>
 
@@ -69,23 +69,36 @@ Entrei na area de tecnologia pelo **[Programa Catalisa](https://www.linkedin.com
 ```java
 public class Kevin extends Developer {
 
-    String  nome     = "Kevin Richard";
-    int     idade    = 24;
-    String  cidade   = "Osasco, SP";
-    String  empresa  = "Zup Innovation (grupo Itaú)";
-    String  nivel    = "Junior -> Pleno (em progresso)";
-    String  entrada  = "Programa Catalisa — Zup Innovation";
+    String nome    = "Kevin Richard";
+    int idade      = 24;
+    String cidade  = "Osasco, SP";
+    String empresa = "Zup Innovation (grupo Itau)";
+    String nivel   = "Junior -> Pleno (em progresso)";
+    String entrada = "Programa Catalisa - Zup Innovation";
 
-    String[] foco       = { "Java", "Spring Boot", "APIs REST", "Backend" };
-    String[] aprendendo = { "AWS", "AI Agents", "Spec-Driven Dev", "Skill em IA" };
-    String   ingles     = "Básico (em desenvolvimento ativo)";
+    String[] foco = {
+        "Java",
+        "Spring Boot",
+        "APIs REST",
+        "MongoDB",
+        "Backend"
+    };
+
+    String[] aprendendo = {
+        "AWS",
+        "AI Agents",
+        "Spec-Driven Development",
+        "Skill em IA"
+    };
+
+    String ingles = "Basico (em desenvolvimento ativo)";
 
     String proximoPasso() {
-        return "Dominar o stack Java, evoluir para Pleno e ir mais além.";
+        return "Dominar o ecossistema Spring, evoluir para Pleno e ampliar impacto tecnico.";
     }
 
     String mentalidade() {
-        return "Informação e conhecimento nunca são demais.";
+        return "Informacao e conhecimento nunca sao demais.";
     }
 }
 ```
@@ -113,7 +126,6 @@ public class Kevin extends Developer {
 
 </div>
 
-
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:003D74,100:EC7000&height=3&section=header" width="100%"/>
 
 ## 🗂️ Projetos em destaque
@@ -126,27 +138,32 @@ public class Kevin extends Developer {
 <a href="https://github.com/k3vinrich4rd/workshop-springboot4-jpa" target="_blank">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=k3vinrich4rd&repo=workshop-springboot4-jpa&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=EC7000&icon_color=003D74&text_color=ffffff" alt="Workshop Spring Boot 4 JPA"/>
 </a>
+<a href="https://github.com/k3vinrich4rd/workshop-springboot4-mongodb" target="_blank">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=k3vinrich4rd&repo=workshop-springboot4-mongodb&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=EC7000&icon_color=003D74&text_color=ffffff" alt="Workshop Spring Boot 4 MongoDB"/>
+</a>
 
 </div>
 
 <br/>
 
-### 📘 Curso Java COMPLETO — Programacao Orientada a Objetos + Projetos
+### 📘 Curso Java COMPLETO — Programação Orientada a Objetos + Projetos
 
-> Repositorio principal dos meus estudos em Java — fundacao de toda a minha evolucao tecnica.
+> Repositório principal dos meus estudos em Java — fundação de toda a minha evolução técnica.
+
+> 🔗 Repositório: **[Curso-Java-COMPLETO-Programa-o-Orientada-a-Objetos-Projetos](https://github.com/k3vinrich4rd/Curso-Java-COMPLETO-Programa-o-Orientada-a-Objetos-Projetos)**
 
 <details>
-<summary><strong>Ver topicos praticados</strong></summary>
+<summary><strong>Ver tópicos praticados</strong></summary>
 <br/>
 
-| Modulo | Conteudo |
+| Módulo | Conteúdo |
 |---|---|
-| Fundamentos | Logica, algoritmos, tipos, estruturas |
-| POO | Encapsulamento, heranca, polimorfismo, abstracao |
-| Avancado | Generics, interfaces, enumeracoes, composicao |
-| Colecoes | List, Set, Map, iteradores |
+| Fundamentos | Lógica, algoritmos, tipos, estruturas |
+| POO | Encapsulamento, herança, polimorfismo, abstração |
+| Avançado | Generics, interfaces, enumerações, composição |
+| Coleções | List, Set, Map, iteradores |
 | Funcional | Lambdas, Streams, Optional |
-| Excecoes | try/catch, excecoes customizadas, hierarquia |
+| Exceções | try/catch, exceções customizadas, hierarquia |
 | Datas | LocalDate, Instant, DateTimeFormatter |
 | Projetos | Spring Boot, JPA, APIs REST |
 
@@ -164,64 +181,82 @@ public class Kevin extends Developer {
   <img src="https://img.shields.io/badge/H2-003545?style=flat-square"/>
 </p>
 
+> 🔗 Repositório: **[workshop-springboot4-jpa](https://github.com/k3vinrich4rd/workshop-springboot4-jpa)**
+
 <details>
 <summary><strong>Ver o que o projeto implementa</strong></summary>
 <br/>
 
 | Funcionalidade | Detalhe |
 |---|---|
-| CRUD completo | Usuarios com todos os verbos HTTP |
+| CRUD completo | Usuários com todos os verbos HTTP |
 | Relacionamentos JPA | OneToMany, ManyToOne, ManyToMany, OneToOne |
-| Chave composta | `@EmbeddedId` em OrderItem |
-| Enum persistido | Conversao inteiro / enum via getter/setter |
-| Excecoes globais | `@ControllerAdvice` + `ResourceNotFoundException` |
+| Chave composta | `@EmbeddedId` em `OrderItem` |
+| Enum persistido | Conversão inteiro / enum via getter/setter |
+| Exceções globais | `@ControllerAdvice` + `ResourceNotFoundException` |
 | Perfis de ambiente | `test` (H2) e `dev` (PostgreSQL) |
 
 </details>
 
 ---
 
-### 🍃 Em andamento — MongoDB + Spring Boot
+### 🍃 Workshop Spring Boot 4 + MongoDB — API REST NoSQL
 
 <p>
-  <img src="https://img.shields.io/badge/Status-Em%20Andamento-EC7000?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Java-25-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Spring%20Boot-4.1.1-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Spring%20Data%20MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white"/>
+  <img src="https://img.shields.io/badge/DTOs%20e%20buscas-003D74?style=flat-square"/>
 </p>
 
-> Módulo atual: API NoSQL com Spring Data MongoDB.
+> Projeto voltado ao estudo de APIs REST com banco NoSQL, modelagem orientada a documentos e consultas customizadas com Spring Data MongoDB.
 
 <details>
-<summary><strong>Ver o que estou aprendendo</strong></summary>
+<summary><strong>Ver o que o projeto implementa</strong></summary>
 <br/>
 
-- Integracao Spring Boot com MongoDB.
-- Modelagem de documentos vs. tabelas relacionais.
-- Referencias e documentos embutidos.
-- CRUD com Spring Data MongoDB.
-- Diferencas praticas entre SQL e NoSQL.
+| Funcionalidade | Detalhe |
+|---|---|
+| CRUD de usuários | listagem, busca por id, inserção, atualização e remoção |
+| DTOs | `UserDto`, `AuthorDto` e `CommentDto` para entrada e saída de dados |
+| Posts | posts com autor resumido e comentários embutidos |
+| Consultas MongoDB | busca por título e busca completa com texto + intervalo de datas |
+| Relacionamentos | `DBRef` para posts do usuário e documentos embutidos para comentários |
+| Seed automático | dados recriados no startup via `CommandLineRunner` |
 
 </details>
 
-> Repositorio sera linkado ao avancar no modulo.
+> 🔗 Repositório: **[workshop-springboot4-mongodb](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb)**
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:003D74,100:EC7000&height=3&section=header" width="100%"/>
 
 ## 🎯 PDZ — Roadmap 2026
 
-> **Objetivo:** consolidar a transicao de **Junior para Pleno** com base tecnica solida.
+> *Objetivo:* consolidar a transição de *Junior para Pleno* com base técnica sólida.
 
 <div align="center">
 
 | Pilar | Status | Foco |
 |---|---|---|
-| ☕ Java + Spring | ![](https://img.shields.io/badge/Em%20andamento-6DB33F?style=flat-square) | Spring Boot, JPA, testes |
+| ☕ Java + Spring | ![](https://img.shields.io/badge/Em%20andamento-6DB33F?style=flat-square) | Spring Boot, JPA, MongoDB, testes |
 | ☁️ AWS | ![](https://img.shields.io/badge/Em%20estudo-FF9900?style=flat-square) | EC2, S3, Lambda, IAM, Cloud Practitioner |
 | 🤖 Agent IA | ![](https://img.shields.io/badge/Iniciando-412991?style=flat-square) | LLMs, agentes, integração Java + IA |
 | 🧠 Spec-Driven Dev | ![](https://img.shields.io/badge/Iniciando-0D47A1?style=flat-square) | API First, OpenAPI, contratos |
 | 📈 Skill em IA | ![](https://img.shields.io/badge/Iniciando-EC7000?style=flat-square) | Copilot, produtividade técnica com IA |
 
 </div>
+
+<details>
+<summary><strong>Próximo foco em Spring Professional</strong></summary>
+<br/>
+
+- consolidar camadas, DTOs, CRUD e validações;
+- aprofundar em exceções customizadas e padrão REST;
+- dominar JPA, consultas, performance e autenticação JWT;
+- fechar o ciclo com deploy, perfis e CI/CD.
+
+</details>
 
 <details>
 <summary><strong>AWS — ver detalhes</strong></summary>
@@ -235,10 +270,10 @@ public class Kevin extends Developer {
   <img src="https://img.shields.io/badge/Objetivo-Cloud%20Practitioner-232F3E?style=flat-square&logo=amazonaws&logoColor=white"/>
 </p>
 
-- Infra como codigo e provisionamento.
+- Infra como código e provisionamento.
 - Deploy de apps Spring Boot na AWS.
 - Arquitetura serverless com Lambda.
-- Preparacao para Cloud Practitioner.
+- Preparação para Cloud Practitioner.
 
 </details>
 
@@ -251,9 +286,9 @@ public class Kevin extends Developer {
   <img src="https://img.shields.io/badge/Java%20%2B%20IA-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/>
 </p>
 
-- Conceitos de LLMs e modelos de linguagem.
-- Integracao de IA com Spring Boot.
-- Construcao de agentes autonomos.
+- Estudo a aplicação prática de **LLMs, agentes e assistentes de IA** no fluxo de desenvolvimento de software.
+- O foco aqui é entender como conectar IA com backend Java, automação de tarefas, revisão de código e produtividade técnica.
+- Também estou aprofundando conceitos de **agentes autônomos**, contexto, restrições, tomada de decisão e uso responsável da IA no dia a dia.
 
 </details>
 
@@ -267,9 +302,12 @@ public class Kevin extends Developer {
   <img src="https://img.shields.io/badge/OpenAPI%2FSwagger-85EA2D?style=flat-square&logo=swagger&logoColor=black"/>
 </p>
 
-- Definicao de contratos de API antes da implementacao.
-- Documentacao com OpenAPI/Swagger.
-- Testes baseados em especificacao.
+- **Spec-Driven Development (SDD)** é uma abordagem em que especificações estruturadas e detalhadas se tornam a principal fonte da verdade para orientar agentes e assistentes de IA na geração de código.
+- Nesse modelo, o foco muda: o código deixa de ser o artefato central e passa a ser consequência direta de especificações bem escritas, com contexto, regras e limites claros.
+- Isso reduz o chamado **"vibe coding"**, evitando soluções improvisadas a partir de prompts vagos e fortalecendo guardrails de arquitetura, negócio e dependências.
+- A documentação se torna viva: arquivos em Markdown como `specs`, `design` e `constitution` podem ser interpretados tanto por pessoas quanto por máquinas.
+- **Principais vantagens:** mais assertividade, menos desvio de padrão e evolução do papel do dev para arquiteto de especificações e revisor crítico.
+- Referências: [SoftDesign](https://www.softdesign.com.br/blog/spec-driven-development/), [Hack the Task](https://hackthetask.com.br/2026/03/20/spec-driven-development-com-claude-code/), [DS Academy](https://blog.dsacademy.com.br/spec-driven-development-a-nova-arquitetura-de-engenharia-de-software-na-era-dos-agentes-de-ia-parte-1/), [DIO](https://www.dio.me/articles/spec-driven-domain-sdd-estruturando-o-desenvolvimento-de-software-na-era-da-ia-generativa-c605bd734d9e), [YouTube 1](https://www.youtube.com/watch?v=8azw00qmfVE&t=122), [YouTube 2](https://www.youtube.com/shorts/ab4UDMayVlo), [YouTube 3](https://www.youtube.com/shorts/_jVLZQUO6lY).
 
 </details>
 
@@ -282,9 +320,9 @@ public class Kevin extends Developer {
   <img src="https://img.shields.io/badge/IA%20Aplicada-EC7000?style=flat-square"/>
 </p>
 
-- Uso estrategico de Copilot, ChatGPT e agentes no dev diario.
-- Produtividade com IA em code review e documentacao.
-- Comunicacao tecnica e visao sistemica.
+- Meu objetivo é transformar IA em **alavanca real de produtividade**, não só em geração de código.
+- Isso inclui uso estratégico de Copilot, ChatGPT e agentes para apoio em arquitetura, documentação, code review, estudos e refinamento técnico.
+- Também faz parte dessa trilha desenvolver comunicação técnica, visão sistêmica e capacidade de revisar criticamente o que a IA produz.
 
 </details>
 
@@ -322,7 +360,7 @@ public class Kevin extends Developer {
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:003D74,100:EC7000&height=3&section=header" width="100%"/>
 
-## 💼 Atuacao profissional
+## 💼 Atuação profissional
 
 <div align="center">
 
@@ -334,13 +372,13 @@ public class Kevin extends Developer {
 
 <br/>
 
-Atuo como **Desenvolvedor de Software Júnior** contratado pela **[Zup Innovation](https://www.linkedin.com/company/zupinnovation/posts/?feedView=all)**, empresa do grupo **Itaú**, prestando serviço diretamente para o **maior banco privado do Brasil**.
+Atuo como **Desenvolvedor de Software Junior** contratado pela **[Zup Innovation](https://www.linkedin.com/company/zupinnovation/posts/?feedView=all)**, empresa do grupo **Itaú**, prestando serviço diretamente para o maior banco privado do Brasil.
 
 <div align="center">
 
 | Área | Competência |
 |---|---|
-| Técnico | Java, Spring Boot, APIs REST, JPA/Hibernate |
+| Técnico | Java, Spring Boot, APIs REST, JPA/Hibernate, MongoDB |
 | Colaboração | Trabalho em equipe, comunicação técnica, code review |
 | Entregas | Responsabilidade, proatividade, foco em qualidade |
 | Evolução | Aprendizado contínuo, mentoria, adaptação a desafios |
@@ -350,7 +388,7 @@ Atuo como **Desenvolvedor de Software Júnior** contratado pela **[Zup Innovatio
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:003D74,100:EC7000&height=3&section=header" width="100%"/>
 
-## 🎓 Formacao e certificacoes
+## 🎓 Formação e certificações
 
 <div align="center">
 
