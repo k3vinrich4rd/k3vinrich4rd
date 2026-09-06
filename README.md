@@ -390,14 +390,6 @@ Atuo como **Desenvolvedor de Software Junior** contratado pela **[Zup Innovation
 
 ## 🎓 Formação e certificações
 
-<div align="center">
-
-**Análise e Desenvolvimento de Sistemas** — Anhanguera Educacional
-
-</div>
-
-<br/>
-
 <details>
 <summary><strong>Java e desenvolvimento backend</strong></summary>
 <br/>
@@ -414,6 +406,7 @@ Atuo como **Desenvolvedor de Software Junior** contratado pela **[Zup Innovation
 | Spring Boot 3: desenvolva uma API Rest em Java | Alura |
 | TDD e Java: testes automatizados com JUnit | Alura |
 | Mocks em Java: conhecendo o Mockito | Alura |
+| Java COMPLETO Programação Orientada a Objetos + Projetos | Udemy |
 
 </div>
 </details>
