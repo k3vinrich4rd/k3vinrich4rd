@@ -116,6 +116,7 @@ public class Kevin extends Developer {
 
 <div align="center">
 
+
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=k3vinrich4rd&theme=tokyo-night&hide_border=true&area=true&area_color=EC7000&color=ffffff&line=003D74&point=EC7000&bg_color=0d1117&custom_title=Frequencia%20de%20Commits" alt="Grafico de atividade" width="98%"/>
 
 </div>
@@ -127,6 +128,8 @@ public class Kevin extends Developer {
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:003D74,100:EC7000&height=3&section=header" width="100%"/>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/renanbarrostech-cmd/renanbarrostech-cmd/output/snake-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/renanbarrostech-cmd/renanbarrostech-cmd/output/snake.svg" /><img width="100%" src="https://raw.githubusercontent.com/renanbarrostech-cmd/renanbarrostech-cmd/output/snake-dark.svg" alt="Snake eating my contribution graph" /></picture>
 
 ## 🗂️ Projetos em destaque
 
