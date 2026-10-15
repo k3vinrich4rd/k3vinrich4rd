@@ -1,0 +1,107 @@
+// Chamado pelo hook post-commit de qualquer repositório do Kevin.
+// 1. Anota o commit no diário do dia e na nota do projeto no Obsidian.
+// 2. Recalcula o progresso (régua, checklist, testes) e regenera o README do perfil.
+// 3. Faz commit no repositório do perfil (e push, se "autoPush" estiver ligado no config.json).
+// Uso: node automacao/registrar-commit.mjs <pasta-do-repositorio>
+import fs from 'node:fs';
+import path from 'node:path';
+import { execFileSync } from 'node:child_process';
+import { RAIZ, lerConfig, ler, escrever, frontmatter, hoje } from '../scripts/lib.mjs';
+
+const cfg = lerConfig();
+const repo = path.resolve(process.argv[2] ?? process.cwd());
+const git = (args, cwd = repo, env = {}) =>
+  execFileSync('git', args, { cwd, encoding: 'utf8', env: { ...process.env, ...env }, stdio: ['ignore', 'pipe', 'ignore'] }).trim();
+const log = (msg) => fs.appendFileSync(path.join(RAIZ, 'automacao', 'sync.log'), `${new Date().toISOString()} ${msg}\n`);
+
+const normalizar = (url) => (url ?? '').toLowerCase().replace(/\.git$/, '').replace(/^git@github\.com:/, 'https://github.com/').replace(/\/$/, '');
+
+function dadosDoCommit() {
+  const [hash, assunto, data] = git(['log', '-1', '--format=%H%x1f%s%x1f%cs']).split('\x1f');
+  let remoto = '';
+  try { remoto = normalizar(git(['remote', 'get-url', 'origin'])); } catch { /* repositório sem remoto */ }
+  return {
+    hash, curto: hash.slice(0, 7), assunto, data,
+    branch: git(['rev-parse', '--abbrev-ref', 'HEAD']),
+    nome: remoto ? remoto.split('/').pop() : path.basename(repo),
+    remoto,
+  };
+}
+
+/** Procura no vault a nota cujo frontmatter "repo:" aponta para este repositório. */
+function notaDoProjeto(remoto) {
+  if (!remoto) return null;
+  const pastas = [path.join(cfg.vault, '02 Projetos')];
+  while (pastas.length) {
+    const d = pastas.pop();
+    for (const e of fs.readdirSync(d, { withFileTypes: true })) {
+      const f = path.join(d, e.name);
+      if (e.isDirectory()) pastas.push(f);
+      else if (e.name.endsWith('.md') && normalizar(frontmatter(ler(f)).repo) === remoto) return f;
+    }
+  }
+  return null;
+}
+
+function anotarNoDiario(c, nota) {
+  const arquivo = path.join(cfg.vault, '05 Diário', `${hoje()}.md`);
+  let md = ler(arquivo) ?? (ler(path.join(cfg.vault, 'Templates', 'Diário.md')) ?? '# 🗓️ {{date}}\n\n## ✅ Feito\n').replaceAll('{{date}}', hoje());
+  if (md.includes(c.curto)) return;
+  const link = nota ? `[[${path.basename(nota, '.md')}]]` : `\`${c.nome}\``;
+  const url = c.remoto ? ` ([\`${c.curto}\`](${c.remoto}/commit/${c.hash}))` : ` \`${c.curto}\``;
+  const linha = `- [x] 🤖 ${link} · \`${c.branch}\` · ${c.assunto}${url}`;
+  const linhas = md.split('\n');
+  let i = linhas.findIndex((l) => /^## .*Feito/.test(l));
+  if (i < 0) { linhas.push('', '## ✅ Feito'); i = linhas.length - 1; }
+  let fim = i + 1;
+  while (fim < linhas.length && !/^#{1,2} /.test(linhas[fim])) fim++;
+  // Remove o "- " vazio do template e insere depois do último item da seção.
+  for (let j = fim - 1; j > i; j--) if (/^- \s*$/.test(linhas[j])) { linhas.splice(j, 1); fim--; }
+  let pos = fim;
+  while (pos > i + 1 && linhas[pos - 1].trim() === '') pos--;
+  linhas.splice(pos, 0, linha);
+  escrever(arquivo, linhas.join('\n'));
+}
+
+function anotarNoProjeto(c, nota) {
+  if (!nota) return;
+  const INICIO = '%% auto:commits:inicio %%';
+  const FIM = '%% auto:commits:fim %%';
+  let md = ler(nota);
+  if (!md.includes(INICIO)) md = `${md.trimEnd()}\n\n## 🤖 Últimos commits (automático)\n${INICIO}\n${FIM}\n`;
+  const [antes, resto] = md.split(INICIO);
+  const [bloco, depois] = resto.split(FIM);
+  const itens = bloco.split('\n').filter((l) => l.startsWith('- ') && !l.includes(c.curto));
+  itens.unshift(`- ${c.data} · \`${c.branch}\` · ${c.assunto} · \`${c.curto}\``);
+  escrever(nota, `${antes}${INICIO}\n${itens.slice(0, 12).join('\n')}\n${FIM}${depois}`);
+}
+
+function atualizarPerfil(c) {
+  execFileSync(process.execPath, [path.join(RAIZ, 'scripts', 'coletar-progresso.mjs')], { cwd: RAIZ, stdio: 'ignore' });
+  execFileSync(process.execPath, [path.join(RAIZ, 'scripts', 'atualizar-readme.mjs')], { cwd: RAIZ, stdio: 'ignore' });
+  if (!fs.existsSync(path.join(RAIZ, '.git'))) return log('perfil sem git: README regenerado, sem commit');
+  const env = { KEVIN_SYNC: '1' };
+  git(['add', 'README.md', 'progresso.json', 'assets'], RAIZ);
+  if (!git(['diff', '--cached', '--name-only'], RAIZ)) return;
+  git(['commit', '-m', `docs(perfil): atualiza progresso (${c.nome} ${c.curto})`], RAIZ, env);
+  log(`perfil: commit criado a partir de ${c.nome} ${c.curto}`);
+  if (cfg.autoPush) {
+    git(['pull', '--rebase', '--autostash', '-q'], RAIZ, env);
+    git(['push', '-q'], RAIZ, env);
+    log('perfil: push feito');
+  }
+}
+
+try {
+  if (process.env.KEVIN_SYNC) process.exit(0);
+  const c = dadosDoCommit();
+  const nota = notaDoProjeto(c.remoto);
+  if (path.resolve(repo) !== path.resolve(RAIZ)) {
+    anotarNoDiario(c, nota);
+    anotarNoProjeto(c, nota);
+  }
+  log(`${c.nome} ${c.curto} anotado${nota ? ` em ${path.basename(nota)}` : ''}`);
+  atualizarPerfil(c);
+} catch (e) {
+  log(`erro: ${e.message}`);
+}

@@ -1,0 +1,9 @@
+#!/bin/sh
+# Dispara a sincronização Obsidian + README do perfil em segundo plano (o commit não fica mais lento).
+# Instalado por automacao/instalar.sh; o caminho abaixo é preenchido na instalação.
+[ -n "$KEVIN_SYNC" ] && exit 0
+SCRIPT="__SCRIPT__"
+[ -f "$SCRIPT" ] || exit 0
+command -v node >/dev/null 2>&1 || exit 0
+nohup node "$SCRIPT" "$(git rev-parse --show-toplevel)" >/dev/null 2>&1 &
+exit 0

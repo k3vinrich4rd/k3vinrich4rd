@@ -1,6 +1,7 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a1a,50:003D74,100:EC7000&height=220&section=header&text=Kevin%20Richard&fontSize=60&fontColor=ffffff&fontAlignY=38&animation=fadeIn&desc=Desenvolvedor%20Java%20Backend%20%7C%20Junior%20%E2%86%92%20Pleno%20%7C%20Zup%20Innovation&descAlignY=58&descSize=17&descColor=f0f0f0" alt="header"/>
+<!-- O banner é gerado por scripts/atualizar-readme.mjs com os números do progresso.json (régua, testes, MVP). -->
+<a href="https://www.linkedin.com/in/kevin-richard-b68a54203/" target="_blank"><img src="assets/banner.svg" width="100%" alt="Kevin Richard, desenvolvedor Java backend na Zup Innovation, disponível para oportunidades"/></a>
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=EC7000&center=true&vCenter=true&multiline=false&width=720&lines=Java+%2B+Spring+Boot+Backend+Developer;Zup+Innovation+%7C+servi%C3%A7o+para+o+Ita%C3%BA;Junior+%E2%86%92+Pleno+%7C+em+progresso;Construindo+o+RKF+Bank+%F0%9F%8F%A6;Informa%C3%A7%C3%A3o+e+conhecimento+nunca+s%C3%A3o+demais)](https://git.io/typing-svg)
 
@@ -16,7 +17,20 @@
 &nbsp;
 <img src="https://img.shields.io/badge/Projeto%20atual-RKF%20Bank-EC7000?style=flat-square&logo=springboot&logoColor=white"/>
 
-**[🎮 Trilhas](#-escolha-a-sua-trilha) · [🧭 Trajetória](#-trajetória) · [🏦 Projeto atual](#-projeto-atual--rkf-bank) · [🗂️ Projetos](#️-projetos-em-destaque) · [📈 Junior → Pleno](#-junior--pleno--onde-estou) · [🎯 Roadmap](#-pdi--roadmap-2026) · [🛠️ Stack](#️-tecnologias) · [💬 Perguntas](#-pergunte-ao-kevin) · [🎓 Formação](#-formação-e-certificações)**
+<a href="https://github.com/k3vinrich4rd/rkf_bank/actions/workflows/backend-ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/k3vinrich4rd/rkf_bank/backend-ci.yml?branch=develop&style=flat-square&label=CI%20RKF%20Bank&logo=githubactions&logoColor=white"/></a>
+<a href="https://github.com/k3vinrich4rd/rkf_bank/commits/develop"><img src="https://img.shields.io/github/last-commit/k3vinrich4rd/rkf_bank/develop?style=flat-square&label=%C3%BAltimo%20commit&color=003D74"/></a>
+<a href="https://github.com/k3vinrich4rd/rkf_bank/pulse"><img src="https://img.shields.io/github/commit-activity/m/k3vinrich4rd/rkf_bank?style=flat-square&label=commits%2Fm%C3%AAs&color=EC7000"/></a>
+<a href="https://github.com/k3vinrich4rd/rkf_bank/pulls?q=is%3Apr+is%3Amerged"><img src="https://img.shields.io/github/issues-pr-closed/k3vinrich4rd/rkf_bank?style=flat-square&label=PRs%20fechados&color=6DB33F"/></a>
+
+<!-- AUTO:status:START -->
+<img src="https://img.shields.io/static/v1?label=R%C3%A9gua%20Pleno&message=9%2F15&color=EC7000&style=flat-square"/>
+<img src="https://img.shields.io/static/v1?label=Testes%20RKF%20Bank&message=107%20%E2%9C%94&color=3fb950&style=flat-square&logo=junit5&logoColor=white"/>
+<img src="https://img.shields.io/static/v1?label=MVP&message=0%2F12&color=003D74&style=flat-square"/>
+<img src="https://img.shields.io/static/v1?label=Foco%20agora&message=Flyway&color=6A1B9A&style=flat-square"/>
+<img src="https://img.shields.io/static/v1?label=Atualizado&message=2026-10-15&color=30363d&style=flat-square"/>
+<!-- AUTO:status:END -->
+
+**[🎮 Trilhas](#-escolha-a-sua-trilha) · [📡 Ao vivo](#-ao-vivo) · [🧭 Trajetória](#-trajetória) · [🏦 Projeto atual](#-projeto-atual--rkf-bank) · [🗂️ Projetos](#️-projetos-em-destaque) · [📈 Junior → Pleno](#-junior--pleno--onde-estou) · [🎯 Roadmap](#-pdi--roadmap-2026) · [🛠️ Stack](#️-tecnologias) · [💬 Perguntas](#-pergunte-ao-kevin) · [🎓 Formação](#-formação-e-certificações)**
 
 </div>
 
@@ -30,13 +44,20 @@
 <summary><b>🧑‍💼 Sou recrutador(a) e tenho 1 minuto</b></summary>
 <br/>
 
+<!-- AUTO:recrutador:START -->
 | Pergunta | Resposta rápida |
 |---|---|
-| Quem é? | Dev **Java backend Junior** na **Zup Innovation**, prestando serviço para o **Itaú**, em transição para **Pleno** |
-| Melhor projeto? | **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, 107 testes, CI e logs rastreáveis |
+| Quem é? | Dev **Java backend Junior** na **Zup Innovation**, prestando serviço para o **Itaú**, em transição para **Pleno** (**9/15** competências já praticadas) |
+| Melhor projeto? | **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **107 testes**, CI e logs rastreáveis |
 | Stack principal? | Java · Spring Boot · JPA/Hibernate · MySQL/PostgreSQL · MongoDB · JUnit/Mockito · Docker · GitHub Actions |
-| O que está estudando? | Flyway → Testcontainers → Spring Security + JWT → AWS → Mensageria |
+| O que está estudando? | Flyway → JWT → Testcontainers → AWS → inglês → mensageria |
 | Contato? | [LinkedIn](https://www.linkedin.com/in/kevin-richard-b68a54203/) · [kevinrichardve@gmail.com](mailto:kevinrichardve@gmail.com) |
+<!-- AUTO:recrutador:END -->
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/kevin-richard-b68a54203/" target="_blank"><img src="https://img.shields.io/badge/%F0%9F%93%A9%20Vamos%20conversar%3F-Chamar%20no%20LinkedIn-0A66C2?style=for-the-badge"/></a>
+  <a href="mailto:kevinrichardve@gmail.com?subject=Oportunidade%20-%20Java%20Backend"><img src="https://img.shields.io/badge/%E2%9C%89%EF%B8%8F%20Enviar-e--mail-D14836?style=for-the-badge"/></a>
+</p>
 
 <details>
 <summary>👉 Quero ver evidências</summary>
@@ -92,6 +113,62 @@ flowchart LR
 Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 criei 53 repositórios; em 2026, 4. E os de 2026 contam muito mais sobre mim.
 
 </details>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:003D74,100:EC7000&height=3&section=header" width="100%"/>
+
+## 📡 Ao vivo
+
+> Esta seção se atualiza sozinha. Cada commit que eu faço alimenta o meu Obsidian, que alimenta este README. 🤖
+
+<!-- A cobrinha é gerada pelo workflow .github/workflows/snake.yml deste repositório (branch "output"). -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/k3vinrich4rd/k3vinrich4rd/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/k3vinrich4rd/k3vinrich4rd/output/snake.svg" />
+  <img width="100%" src="https://raw.githubusercontent.com/k3vinrich4rd/k3vinrich4rd/output/snake-dark.svg" alt="Cobrinha comendo o meu gráfico de commits" />
+</picture>
+
+<details open>
+<summary><b>⚡ Meus últimos commits</b></summary>
+<br/>
+
+<!-- AUTO:atividade:START -->
+| Repositório | Último commit | Quando |
+|---|---|---|
+| [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`7131627`](https://github.com/k3vinrich4rd/rkf_bank/commit/7131627a2753c87a93a990477f6381d6d095d0f2) Merge pull request #21 from k3vinrich4rd/fix/vulnerabilidades-dependencias | 15/10/2026 |
+| [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`81a35a0`](https://github.com/k3vinrich4rd/rkf_bank/commit/81a35a00b419267ccd1476b91d07c2df615a3ea5) Merge remote-tracking branch 'origin/develop' into fix/vulnerabilidades-dependen | 15/10/2026 |
+| [`JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`936b7fa`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/936b7fafbb49c01ce52f5f5d565eb0c0e15ca4ca) feat: ajuste de metodo acessor e inclusão de comentarios | 09/10/2026 |
+| [`desafio-devsuperior-crud-clientes`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) | [`9b0eb79`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes/commit/9b0eb794bf407bdbe22af1196065717ef72591a9) feat: implementando correcao sugerida no feedback | 05/10/2026 |
+| [`desafio-devsuperior-crud-clientes`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) | [`081441f`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes/commit/081441fdfcf7970ac1da4a4c57bc751327618575) feat: implementando atualizacoes de readme | 01/10/2026 |
+| [`JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`ed0d48d`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/ed0d48d187403513fa204be6027351c7f3048b5f) feat: implementando bean Validation | 29/09/2026 |
+| [`workshop-springboot4-mongodb`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb) | [`ecad5ce`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb/commit/ecad5cec16d1f5ef7b606e6f8b5daf5ce74ade25) feat: Implementando ajustes no projeto | 15/09/2026 |
+| [`workshop-springboot4-mongodb`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb) | [`264463c`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb/commit/264463cd568db8f49e9a3b154dc305bfb5adc906) feat: Implementando ajustes de comentarios no projeto e README.md | 06/09/2026 |
+
+<sub>🤖 Atualizado sozinho pelo GitHub Actions a cada 6 horas.</sub>
+<!-- AUTO:atividade:END -->
+
+</details>
+
+<details>
+<summary><b>📓 Diário de bordo: o que cada entrega me ensinou</b></summary>
+<br/>
+
+<!-- AUTO:diario:START -->
+| Quando | Onde | O que eu aprendi |
+|---|---|---|
+| 2026-10-15 | `fix/vulnerabilidades-dependencias` | dá para corrigir CVE de dependência transitiva sobrescrevendo a propriedade do BOM |
+| 2026-10-15 | `feature/testes-repository` | testar mapeamento JPA de verdade (cascata, `orphanRemoval`, `@Version`) |
+<!-- AUTO:diario:END -->
+
+</details>
+
+```mermaid
+flowchart LR
+    A["💻 git commit<br/>em qualquer projeto"] -->|hook post-commit| B["🧠 Obsidian<br/>diário + nota do projeto"]
+    B -->|régua, checklist, testes| C["📦 progresso.json"]
+    C -->|git push| D["⚙️ GitHub Actions<br/>a cada 6h"]
+    D --> E["🌐 este README<br/>banner, gráficos, cobrinha"]
+    click E "https://github.com/k3vinrich4rd" _blank
+```
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:003D74,100:EC7000&height=3&section=header" width="100%"/>
 
@@ -391,12 +468,33 @@ sequenceDiagram
 
 ## 🗂️ Projetos em destaque
 
+### ⭐ Os dois que eu mostraria numa entrevista
+
 <div align="center">
 
-<a href="https://github.com/k3vinrich4rd/workshop-springboot4-jpa" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=k3vinrich4rd&repo=workshop-springboot4-jpa&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=EC7000&icon_color=003D74&text_color=ffffff" alt="Workshop Spring Boot 4 JPA"/></a>
-<a href="https://github.com/k3vinrich4rd/workshop-springboot4-mongodb" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=k3vinrich4rd&repo=workshop-springboot4-mongodb&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=EC7000&icon_color=003D74&text_color=ffffff" alt="Workshop Spring Boot 4 MongoDB"/></a>
-<a href="https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=k3vinrich4rd&repo=JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=EC7000&icon_color=003D74&text_color=ffffff" alt="DSCommerce"/></a>
-<a href="https://github.com/k3vinrich4rd/BookMarket" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=k3vinrich4rd&repo=BookMarket&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=EC7000&icon_color=003D74&text_color=ffffff" alt="BookMarket"/></a>
+<a href="https://github.com/k3vinrich4rd/rkf_bank" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=k3vinrich4rd&repo=rkf_bank&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=EC7000&icon_color=003D74&text_color=ffffff&show_owner=false" alt="RKF Bank" width="49%"/></a>
+<a href="https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=k3vinrich4rd&repo=JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=EC7000&icon_color=003D74&text_color=ffffff&show_owner=false" alt="DSCommerce" width="49%"/></a>
+
+</div>
+
+| | 🏦 [RKF Bank](https://github.com/k3vinrich4rd/rkf_bank) | 🛒 [DSCommerce](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) |
+|---|---|---|
+| **O que é** | banco digital full stack, feito em dupla | e-commerce da formação Spring Professional (DevSuperior) |
+| **Meu papel** | todo o backend | projeto individual |
+| **Domínio** | clientes, contas, depósito, saque, transferência, extrato | usuários, pedidos, produtos, categorias, pagamento |
+| **O que mostra** | transação atômica, lock otimista, ViaCEP com falha tratada, logs com `X-Request-Id` | modelo de domínio rico, chave composta (`OrdemItemPK`), Bean Validation, erros padronizados |
+| **Qualidade** | 107 testes, JaCoCo, CI com CodeQL e Dependabot | camadas controller → service → repository, `DatabaseException` para integridade referencial |
+| **Stack** | Java 25 · Spring Boot 4 · MySQL · Docker · Next.js | Java · Spring Boot · JPA · H2 |
+| **Ver primeiro** | [`ContaService`](https://github.com/k3vinrich4rd/rkf_bank) · [roteiro no README](#-projeto-atual--rkf-bank) | [`ProductService`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/services/ProductService.java) · [`ControllerExceptionHandler`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/controllers/handlers/ControllerExceptionHandler.java) |
+
+### 🧩 Outros projetos que valem o clique
+
+<div align="center">
+
+<a href="https://github.com/k3vinrich4rd/workshop-springboot4-jpa" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=k3vinrich4rd&repo=workshop-springboot4-jpa&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=EC7000&icon_color=003D74&text_color=ffffff&show_owner=false" alt="Workshop Spring Boot 4 JPA"/></a>
+<a href="https://github.com/k3vinrich4rd/workshop-springboot4-mongodb" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=k3vinrich4rd&repo=workshop-springboot4-mongodb&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=EC7000&icon_color=003D74&text_color=ffffff&show_owner=false" alt="Workshop Spring Boot 4 MongoDB"/></a>
+<a href="https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=k3vinrich4rd&repo=desafio-devsuperior-crud-clientes&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=EC7000&icon_color=003D74&text_color=ffffff&show_owner=false" alt="CRUD de Clientes DevSuperior"/></a>
+<a href="https://github.com/k3vinrich4rd/BookMarket" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=k3vinrich4rd&repo=BookMarket&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=EC7000&icon_color=003D74&text_color=ffffff&show_owner=false" alt="BookMarket"/></a>
 
 </div>
 
@@ -404,16 +502,16 @@ sequenceDiagram
 
 | | Projeto | Por que vale a pena olhar | Stack |
 |:-:|---|---|---|
-| 🏦 | **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)** | aplicação bancária completa, com testes, CI e logs | Java 25 · Spring Boot 4 · MySQL · Docker |
 | 🌐 | **[Workshop JPA](https://github.com/k3vinrich4rd/workshop-springboot4-jpa)** | e-commerce com todos os tipos de relacionamento JPA | Spring Boot 4 · JPA · PostgreSQL · H2 |
 | 🍃 | **[Workshop MongoDB](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb)** | modelagem orientada a documentos e consultas customizadas | Spring Boot 4 · MongoDB |
-| 🛒 | **[DSCommerce](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM)** | modelo de domínio de e-commerce da formação Spring Professional | Spring Boot · JPA · H2 |
 | 👥 | **[CRUD de Clientes](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes)** | desafio DevSuperior com nota **10/10** | Spring Boot · JPA · Validation |
 | 📚 | **[BookMarket](https://github.com/k3vinrich4rd/BookMarket)** | API em **Kotlin** com segurança, eventos e Swagger | Kotlin · Spring Security · PostgreSQL |
+| 🎓 | **[StudentRegister](https://github.com/k3vinrich4rd/StudentRegister)** | API REST de cadastro de estudantes com Spring Security e `UserDetailsService` | Spring Boot · Spring Security |
 | 🪪 | **[cpf-utils](https://github.com/k3vinrich4rd/cpf-utils)** | validação e geração de CPF pelas regras oficiais | Java puro |
 
+<!-- AUTO:repos:START -->
 <details>
-<summary><b>📊 Meus 88 repositórios em números (gráficos)</b></summary>
+<summary><b>📊 Meus 88 repositórios em números (gráficos, atualizados sozinhos)</b></summary>
 <br/>
 
 ```mermaid
@@ -431,14 +529,14 @@ pie showData
 xychart-beta
     title "Repositórios criados por ano"
     x-axis [2022, 2023, 2024, 2025, 2026]
-    y-axis "Repositórios" 0 --> 60
+    y-axis "Repositórios" 0 --> 70
     bar [53, 18, 2, 11, 4]
     line [53, 18, 2, 11, 4]
 ```
 
 > 2022 foi o ano do volume (dezenas de exercícios do Catalisa). De 2025 em diante, a troca foi por **menos repositórios e projetos mais completos**, como o RKF Bank.
 
-**🧊 Os mesmos números em 3D** (gire com o mouse, dê zoom com a roda). Da esquerda para a direita: 2022, 2023, 2024, 2025 e 2026.
+**🧊 Os mesmos números em 3D** (gire com o mouse, dê zoom com a roda). Da esquerda para a direita: 2022, 2023, 2024, 2025, 2026.
 
 ```stl
 solid repositorios_por_ano
@@ -950,6 +1048,7 @@ endsolid repositorios_por_ano
 ```
 
 </details>
+<!-- AUTO:repos:END -->
 
 <details>
 <summary><b>🌐 Workshop Spring Boot 4 + JPA — API REST de e-commerce</b></summary>
@@ -1052,7 +1151,7 @@ endsolid repositorios_por_ano
 | SOLID e Design Patterns | [SOLID OCP/SRP](https://github.com/k3vinrich4rd/Lista-L6A-L6B-Refatoracao) · [Factory Method](https://github.com/k3vinrich4rd/RefazandoTrabalho_DesingPatternFactory) · [State](https://github.com/k3vinrich4rd/TrabalhandoComState) |
 | Testes | [Mockito](https://github.com/k3vinrich4rd/TrabalhandoComMockito) · [MockMvc](https://github.com/k3vinrich4rd/TrabalhandoComMockMvc) · [TDD com @MockBean](https://github.com/k3vinrich4rd/TesteTDDComMockBean) · [Conhecendo Mockito](https://github.com/k3vinrich4rd/Conhecendo-Mockito) |
 | Segurança | [Spring Security com usuários](https://github.com/k3vinrich4rd/UsuariosSecurity) · [criptografia de senhas](https://github.com/k3vinrich4rd/ProdutosSeguranca) |
-| Spring Boot | [Intensivão Java Spring](https://github.com/k3vinrich4rd/intensivao-java-spring) · [Injeção de dependência](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) · [Spring Boot Essentials](https://github.com/k3vinrich4rd/SpringBoot-Essentials) · [Spring Boot 3](https://github.com/k3vinrich4rd/ConhecendoSpringBoot3) |
+| Spring Boot | [Intensivão Java Spring](https://github.com/k3vinrich4rd/intensivao-java-spring) · [Injeção de dependência](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) · [Spring Boot Essentials](https://github.com/k3vinrich4rd/SpringBoot-Essentials) · [Spring Boot 3](https://github.com/k3vinrich4rd/ConhecendoSpringBoot3) · [Agenda Telefônica (Catalisa)](https://github.com/k3vinrich4rd/AgendaTelefonicaCatalisa) |
 
 </details>
 
@@ -1098,25 +1197,27 @@ quadrantChart
 <summary><b>✅ Competências e evidências</b></summary>
 <br/>
 
+<!-- AUTO:regua:START -->
 | Competência de Pleno | Status | Evidência |
 |---|:-:|---|
 | API REST em camadas com DTOs e erros padronizados | ✅ | RKF Bank, DSCommerce, Workshop JPA |
 | Modelagem JPA: relacionamentos, chave composta, cascata | ✅ | Workshop JPA, DSCommerce, RKF Bank |
-| Testes unitários, web e de repositório | ✅ | RKF Bank (Mockito + `@DataJpaTest`) |
-| Transações e concorrência (lock otimista) | ✅ | RKF Bank — transferência e `@Version` |
-| Integração com API externa e tratamento de falha | ✅ | RKF Bank — ViaCEP com timeout e `503` |
-| Logs estruturados e rastreabilidade | ✅ | RKF Bank — Log4j2 + `X-Request-Id` |
-| CI/CD, análise de segurança e gestão de dependências | ✅ | RKF Bank — GitHub Actions, CodeQL, Dependabot |
+| Testes unitários, web e de repositório | ✅ | RKF Bank |
+| Transações e concorrência | ✅ | RKF Bank |
+| Integração com API externa e falhas | ✅ | RKF Bank (ViaCEP) |
+| Logs e rastreabilidade | ✅ | RKF Bank |
+| CI/CD, segurança e dependências | ✅ | RKF Bank |
 | Git Flow, PRs e commits semânticos | ✅ | RKF Bank |
 | Banco NoSQL | ✅ | Workshop MongoDB |
-| Autenticação com JWT / OAuth2 | 🔄 | Spring Security já praticado; JWT na trilha Spring Professional |
-| Migrações versionadas (Flyway) | 🔄 | débito técnico mapeado no RKF Bank |
-| Testes de integração com Testcontainers | 🔄 | próximo passo do RKF Bank |
-| Deploy em nuvem (AWS) | 🔄 | em estudo — Cloud Practitioner |
+| Migrações versionadas | 🔄 | ⏫ próximo da fila |
+| Autenticação e autorização | 🔄 | em andamento |
+| Testes de integração com banco real | 🔄 | em andamento |
+| Deploy em nuvem | 🔄 | em andamento |
+| Inglês técnico | 🔄 | em andamento |
 | Mensageria e microsserviços | ⏳ | próximo ciclo |
-| Inglês técnico | 🔄 | em desenvolvimento ativo |
 
-<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-10-15</sub>
+<!-- AUTO:regua:END -->
 
 </details>
 
@@ -1135,11 +1236,11 @@ quadrantChart
 
 </div>
 
-<!-- A cobrinha é gerada pelo workflow .github/workflows/snake.yml deste repositório (branch "output"). -->
+<!-- Gerado pelo workflow .github/workflows/snake.yml (branch "output"). -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/k3vinrich4rd/k3vinrich4rd/output/snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/k3vinrich4rd/k3vinrich4rd/output/snake.svg" />
-  <img width="100%" src="https://raw.githubusercontent.com/k3vinrich4rd/k3vinrich4rd/output/snake-dark.svg" alt="Cobrinha comendo o meu gráfico de contribuições" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/k3vinrich4rd/k3vinrich4rd/output/profile-night-rainbow.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/k3vinrich4rd/k3vinrich4rd/output/profile-season-animate.svg" />
+  <img width="100%" src="https://raw.githubusercontent.com/k3vinrich4rd/k3vinrich4rd/output/profile-night-rainbow.svg" alt="Meus commits em 3D" />
 </picture>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:003D74,100:EC7000&height=3&section=header" width="100%"/>
@@ -1164,43 +1265,74 @@ quadrantChart
 <summary><b>📅 Cronograma: do MVP do RKF Bank ao Pleno</b></summary>
 <br/>
 
+<!-- AUTO:gantt:START -->
 ```mermaid
 gantt
-    title Próximas entregas
+    title Do MVP ao Pleno
     dateFormat YYYY-MM-DD
     axisFormat %d/%m
-    section MVP RKF Bank
-    Cliente e conta            :done,   s2, 2026-10-12, 7d
-    Movimentações              :active, s3, 2026-10-19, 7d
-    Testar e lançar            :        s4, 2026-10-26, 6d
-    section Rumo ao Pleno
-    Flyway                     :crit,   f1, 2026-10-16, 3d
-    Testcontainers             :        f2, after f1, 4d
-    Spring Security + JWT      :        f3, after f2, 10d
-    Deploy na AWS              :        f4, after s4, 7d
-    Mensageria                 :        f5, after f3, 10d
+    section MVP
+    Semana 2 - cliente e conta        :done,    s2, 2026-10-12, 7d
+    Semana 3 - movimentações          :active,  s3, 2026-10-19, 7d
+    Semana 4 - testar e lançar        :         s4, 2026-10-26, 6d
+    section Pleno
+    Flyway                            :crit,    f1, 2026-10-16, 3d
+    Spring Security + JWT             :         f2, after f1, 10d
+    Testcontainers                    :         f3, after f2, 4d
+    Deploy AWS                        :         f4, after s4, 7d
+    Mensageria                        :         f5, after f3, 10d
 ```
+<!-- AUTO:gantt:END -->
 
 </details>
 
 <details>
-<summary><b>✅ Checklist público do que falta (atualizo a cada PR)</b></summary>
+<summary><b>✅ Checklist público do que falta (sincronizado com o meu Obsidian)</b></summary>
 <br/>
 
-**MVP do RKF Bank (31/10/2026)**
-- [x] Cadastro com ViaCEP, contas, depósito, saque, transferência e extrato
-- [x] Logs rastreáveis, CI, testes de repositório e correção de CVEs
-- [ ] `GET /contas/{id}` e `GET /clientes/{id}/contas`
-- [ ] Telas de conta, movimentações e extrato (frontend)
-- [ ] Testes do PO & QA e correções
-- [ ] Deploy
+<!-- AUTO:checklist:START -->
+**✔️ Concluído recentemente**
+- ✅ Documentação dos testes de repositório — 2026-10-15
+- ✅ CVEs do Tomcat (3 críticas) e do Jackson (5 altas, 2 moderadas) corrigidas — 2026-10-15
+- ✅ H2 fixado em 2.3.232 (bug do `CHECK ... IN` no 2.4.240) — 2026-10-15
+- ✅ Testes da camada repositories (34 testes, `@DataJpaTest`) — 2026-10-15
 
-**Rumo ao Pleno**
-- [ ] Migrações com Flyway (`ddl-auto=validate`)
-- [ ] Testes de integração com Testcontainers + MySQL real
-- [ ] Login com Spring Security + JWT, cada cliente só acessa as próprias contas
-- [ ] Deploy na AWS (Docker + RDS + CI/CD)
-- [ ] Eventos de transferência com RabbitMQ e padrão Outbox
+**🚀 MVP do RKF Bank (31/10/2026)** `░░░░░░░░░░░░` 0%
+
+<b>Backend</b> <sub>0/3</sub>
+
+- [ ] `GET /contas/{contaId}` (saldo)
+- [ ] `GET /clientes/{clienteId}/contas`
+- [ ] Decidir como o usuário acessa a conta sem login (ver Decisões RKF Bank)
+
+<b>Frontend (Renan)</b> <sub>0/4</sub>
+
+- [ ] Abrir conta depois do cadastro
+- [ ] Tela da conta (saldo)
+- [ ] Telas de depósito, saque e transferência
+- [ ] Tela de extrato
+
+<b>Lançamento</b> <sub>0/5</sub>
+
+- [ ] Decidir onde publicar (ver Decisões RKF Bank)
+- [ ] Fellipe (PO & QA) testa tudo pelo roteiro E2E
+- [ ] Corrigir os bugs encontrados
+- [ ] Colocar no ar
+- [ ] Atualizar o README com link e prints
+
+**📏 Rumo ao Pleno** `░░░░░░░░░░░░` 0/26 passos
+
+- [ ] **Flyway** ⏫ **próximo** `░░░░░░░░` 0/6
+- [ ] **Spring Security + JWT** `░░░░░░░░` 0/6
+- [ ] **Testcontainers** `░░░░░░░░` 0/4
+- [ ] **Deploy AWS** 🔮 `░░░░░░░░` 0/5
+- [ ] **Mensageria** 🔮 `░░░░░░░░` 0/3
+- [ ] **Inglês** `░░░░░░░░` 0/2
+
+**🧹 Débitos técnicos:** 0/18 resolvidos
+
+<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-10-15.</sub>
+<!-- AUTO:checklist:END -->
 
 </details>
 

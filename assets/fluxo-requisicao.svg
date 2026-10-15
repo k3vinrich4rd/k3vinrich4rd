@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="210" viewBox="0 0 820 210" role="img" aria-label="Animação: uma transferência percorre Next.js, Controller, Service, Repository e MySQL e volta com 204">
+  <style>
+    .t { font-family: 'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif; fill: #e6edf3; }
+    .s { font-family: Consolas, Menlo, monospace; fill: #8b949e; font-size: 11px; }
+    .box { fill: #161b22; stroke-width: 2; }
+  </style>
+
+  <rect width="820" height="210" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <text x="20" y="30" class="t" font-size="15" font-weight="700">⚡ Uma transferência atravessando o meu backend</text>
+
+  <!-- trilho -->
+  <line x1="85" y1="100" x2="735" y2="100" stroke="#30363d" stroke-width="2" stroke-dasharray="6 6">
+    <animate attributeName="stroke-dashoffset" values="0;-24" dur="1s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- caixas: o contorno acende quando o pacote passa -->
+  <rect x="15" y="60" width="140" height="80" rx="10" class="box" stroke="#30363d">
+    <animate attributeName="stroke" dur="6s" repeatCount="indefinite" keyTimes="0;0.05;0.95;1" values="#EC7000;#30363d;#30363d;#EC7000"/>
+  </rect>
+  <rect x="177.5" y="60" width="140" height="80" rx="10" class="box" stroke="#30363d">
+    <animate attributeName="stroke" dur="6s" repeatCount="indefinite" keyTimes="0;0.085;0.125;0.165;0.835;0.875;0.915;1" values="#30363d;#30363d;#EC7000;#30363d;#30363d;#3fb950;#30363d;#30363d"/>
+  </rect>
+  <rect x="340" y="60" width="140" height="80" rx="10" class="box" stroke="#30363d">
+    <animate attributeName="stroke" dur="6s" repeatCount="indefinite" keyTimes="0;0.21;0.25;0.29;0.71;0.75;0.79;1" values="#30363d;#30363d;#EC7000;#30363d;#30363d;#3fb950;#30363d;#30363d"/>
+  </rect>
+  <rect x="502.5" y="60" width="140" height="80" rx="10" class="box" stroke="#30363d">
+    <animate attributeName="stroke" dur="6s" repeatCount="indefinite" keyTimes="0;0.335;0.375;0.415;0.585;0.625;0.665;1" values="#30363d;#30363d;#EC7000;#30363d;#30363d;#3fb950;#30363d;#30363d"/>
+  </rect>
+  <rect x="665" y="60" width="140" height="80" rx="10" class="box" stroke="#30363d">
+    <animate attributeName="stroke" dur="6s" repeatCount="indefinite" keyTimes="0;0.45;0.5;0.55;1" values="#30363d;#30363d;#EC7000;#30363d;#30363d"/>
+  </rect>
+
+  <text x="85" y="92" text-anchor="middle" class="t" font-size="14" font-weight="600">👤 Next.js</text>
+  <text x="85" y="114" text-anchor="middle" class="s">X-Request-Id</text>
+  <text x="247.5" y="92" text-anchor="middle" class="t" font-size="14" font-weight="600">Controller</text>
+  <text x="247.5" y="114" text-anchor="middle" class="s">@Valid · DTO</text>
+  <text x="410" y="92" text-anchor="middle" class="t" font-size="14" font-weight="600">Service</text>
+  <text x="410" y="114" text-anchor="middle" class="s">@Transactional</text>
+  <text x="572.5" y="92" text-anchor="middle" class="t" font-size="14" font-weight="600">Repository</text>
+  <text x="572.5" y="114" text-anchor="middle" class="s">Spring Data JPA</text>
+  <text x="735" y="92" text-anchor="middle" class="t" font-size="14" font-weight="600">🐬 MySQL 8.4</text>
+  <text x="735" y="114" text-anchor="middle" class="s">@Version</text>
+
+  <!-- pacote: laranja na ida, verde na volta -->
+  <circle cy="152" r="7" fill="#EC7000">
+    <animate attributeName="cx" dur="6s" repeatCount="indefinite" values="85;735;85"/>
+    <animate attributeName="fill" dur="6s" repeatCount="indefinite" keyTimes="0;0.5;0.5001;1" values="#EC7000;#EC7000;#3fb950;#3fb950"/>
+  </circle>
+
+  <text x="410" y="186" text-anchor="middle" class="s" font-size="13" opacity="1">
+    → POST /contas/transferencia { valor: 50.00 }
+    <animate attributeName="opacity" dur="6s" repeatCount="indefinite" keyTimes="0;0.48;0.5;1" values="1;1;0;0"/>
+  </text>
+  <text x="410" y="186" text-anchor="middle" class="s" font-size="13" fill="#3fb950" opacity="0">
+    ← 204 No Content · débito + crédito + lançamento na mesma transação
+    <animate attributeName="opacity" dur="6s" repeatCount="indefinite" keyTimes="0;0.5;0.52;0.98;1" values="0;0;1;1;0"/>
+  </text>
+</svg>

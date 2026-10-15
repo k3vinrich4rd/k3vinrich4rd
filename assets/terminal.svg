@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="360" viewBox="0 0 820 360" role="img" aria-label="Terminal rodando os testes do RKF Bank: 107 testes, BUILD SUCCESS">
+  <style>
+    .t { font-family: Consolas, 'Fira Code', Menlo, 'Courier New', monospace; font-size: 15px; fill: #c9d1d9; }
+    .p { fill: #EC7000; font-weight: bold; }
+    .ok { fill: #3fb950; font-weight: bold; }
+    .dim { fill: #8b949e; }
+    .info { fill: #58a6ff; }
+    .l { opacity: 0; animation: show 0.01s forwards; }
+    @keyframes show { to { opacity: 1; } }
+    .typing { clip-path: inset(0 100% 0 0); animation: type 1.2s steps(16) 0.4s forwards; }
+    @keyframes type { to { clip-path: inset(0 0 0 0); } }
+    .cursor { animation: blink 1s step-end infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    .bar { animation: grow 3.2s ease-out 1.8s forwards; transform-origin: left; transform: scaleX(0); }
+    @keyframes grow { to { transform: scaleX(1); } }
+  </style>
+
+  <rect width="820" height="360" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <rect width="820" height="36" rx="12" fill="#161b22"/>
+  <rect y="24" width="820" height="12" fill="#161b22"/>
+  <circle cx="22" cy="18" r="6" fill="#ff5f56"/>
+  <circle cx="42" cy="18" r="6" fill="#ffbd2e"/>
+  <circle cx="62" cy="18" r="6" fill="#27c93f"/>
+  <text x="410" y="23" text-anchor="middle" class="t dim" font-size="13">kevin@rkfbank: ~/rkf_bank — bash</text>
+
+  <text x="24" y="70" class="t"><tspan class="p">➜ </tspan><tspan class="info">rkf_bank</tspan> <tspan class="typing">./run-test.sh</tspan></text>
+
+  <text x="24" y="100" class="t dim l" style="animation-delay:1.8s">&gt;&gt;&gt; Subindo banco de dados limpo (MySQL)...</text>
+  <text x="24" y="124" class="t l" style="animation-delay:2.3s">&gt;&gt;&gt; Banco MySQL <tspan class="ok">healthy!</tspan></text>
+  <text x="24" y="148" class="t dim l" style="animation-delay:2.8s">&gt;&gt;&gt; Rodando todos os testes do projeto</text>
+
+  <rect x="24" y="162" width="772" height="10" rx="5" fill="#21262d" class="l" style="animation-delay:1.8s"/>
+  <rect x="24" y="162" width="772" height="10" rx="5" fill="#EC7000" class="bar"/>
+
+  <text x="24" y="198" class="t l" style="animation-delay:3.3s"><tspan class="ok">✔</tspan> ClienteServiceTest · ContaServiceTest       <tspan class="dim">regras de negócio</tspan></text>
+  <text x="24" y="222" class="t l" style="animation-delay:3.8s"><tspan class="ok">✔</tspan> ClienteControllerTest · ContaControllerTest <tspan class="dim">rotas HTTP</tspan></text>
+  <text x="24" y="246" class="t l" style="animation-delay:4.3s"><tspan class="ok">✔</tspan> Cliente/Conta/LancamentoRepositoryTest     <tspan class="dim">@DataJpaTest + H2</tspan></text>
+  <text x="24" y="270" class="t l" style="animation-delay:4.8s"><tspan class="ok">✔</tspan> ViaCep · CPF · Logs · ExceptionHandler      <tspan class="dim">integração e infra</tspan></text>
+
+  <text x="24" y="306" class="t l" style="animation-delay:5.4s">[INFO] Tests run: <tspan class="ok">107</tspan>, Failures: <tspan class="ok">0</tspan>, Errors: <tspan class="ok">0</tspan>, Skipped: 0</text>
+  <text x="24" y="332" class="t l" style="animation-delay:5.9s">[INFO] <tspan class="ok">BUILD SUCCESS</tspan> <tspan class="dim">✨ pronto para o próximo PR</tspan><tspan class="p cursor"> ▌</tspan></text>
+</svg>

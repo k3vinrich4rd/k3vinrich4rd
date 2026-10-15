@@ -1,0 +1,399 @@
+{
+  "atualizado": "2026-10-15",
+  "regua": {
+    "praticadas": 9,
+    "total": 15,
+    "andamento": 5,
+    "planejadas": 1,
+    "itens": [
+      {
+        "nome": "API REST em camadas com DTOs e erros padronizados",
+        "status": "praticada",
+        "evidencia": "RKF Bank, DSCommerce, Workshop JPA",
+        "proximo": false
+      },
+      {
+        "nome": "Modelagem JPA: relacionamentos, chave composta, cascata",
+        "status": "praticada",
+        "evidencia": "Workshop JPA, DSCommerce, RKF Bank",
+        "proximo": false
+      },
+      {
+        "nome": "Testes unitários, web e de repositório",
+        "status": "praticada",
+        "evidencia": "RKF Bank",
+        "proximo": false
+      },
+      {
+        "nome": "Transações e concorrência",
+        "status": "praticada",
+        "evidencia": "RKF Bank",
+        "proximo": false
+      },
+      {
+        "nome": "Integração com API externa e falhas",
+        "status": "praticada",
+        "evidencia": "RKF Bank (ViaCEP)",
+        "proximo": false
+      },
+      {
+        "nome": "Logs e rastreabilidade",
+        "status": "praticada",
+        "evidencia": "RKF Bank",
+        "proximo": false
+      },
+      {
+        "nome": "CI/CD, segurança e dependências",
+        "status": "praticada",
+        "evidencia": "RKF Bank",
+        "proximo": false
+      },
+      {
+        "nome": "Git Flow, PRs e commits semânticos",
+        "status": "praticada",
+        "evidencia": "RKF Bank",
+        "proximo": false
+      },
+      {
+        "nome": "Banco NoSQL",
+        "status": "praticada",
+        "evidencia": "Workshop MongoDB",
+        "proximo": false
+      },
+      {
+        "nome": "Migrações versionadas",
+        "status": "andamento",
+        "evidencia": "",
+        "proximo": true
+      },
+      {
+        "nome": "Autenticação e autorização",
+        "status": "andamento",
+        "evidencia": "",
+        "proximo": false
+      },
+      {
+        "nome": "Testes de integração com banco real",
+        "status": "andamento",
+        "evidencia": "",
+        "proximo": false
+      },
+      {
+        "nome": "Deploy em nuvem",
+        "status": "andamento",
+        "evidencia": "",
+        "proximo": false
+      },
+      {
+        "nome": "Inglês técnico",
+        "status": "andamento",
+        "evidencia": "",
+        "proximo": false
+      },
+      {
+        "nome": "Mensageria e microsserviços",
+        "status": "planejada",
+        "evidencia": "",
+        "proximo": false
+      }
+    ]
+  },
+  "foco": "Migrações versionadas",
+  "trilha": [
+    "Migrações versionadas",
+    "Autenticação e autorização",
+    "Testes de integração com banco real",
+    "Deploy em nuvem",
+    "Inglês técnico",
+    "Mensageria e microsserviços"
+  ],
+  "rkf": {
+    "testes": 107,
+    "checklist": {
+      "gantt": "```mermaid\ngantt\n    title Do MVP ao Pleno\n    dateFormat YYYY-MM-DD\n    axisFormat %d/%m\n    section MVP\n    Semana 2 - cliente e conta        :done,    s2, 2026-10-12, 7d\n    Semana 3 - movimentações          :active,  s3, 2026-10-19, 7d\n    Semana 4 - testar e lançar        :         s4, 2026-10-26, 6d\n    section Pleno\n    Flyway                            :crit,    f1, 2026-10-16, 3d\n    Spring Security + JWT             :         f2, after f1, 10d\n    Testcontainers                    :         f3, after f2, 4d\n    Deploy AWS                        :         f4, after s4, 7d\n    Mensageria                        :         f5, after f3, 10d\n```",
+      "agora": [
+        {
+          "feito": false,
+          "texto": "Mergear o PR `feature/testes-repository` na `develop` (34 testes de repositório + pin do H2 + docs)"
+        },
+        {
+          "feito": false,
+          "texto": "Mergear o PR `fix/vulnerabilidades-dependencias` na `develop` (Tomcat 11.0.27 + Jackson 3.1.7) — conflito simples no `<properties>`: manter `h2.version`, `tomcat.version` e `jackson-bom.version`"
+        },
+        {
+          "feito": false,
+          "texto": "⏫ Começar a `feature/flyway`"
+        }
+      ],
+      "mvp": {
+        "feitos": 0,
+        "total": 12,
+        "grupos": [
+          {
+            "nome": "Backend",
+            "futuro": false,
+            "proximo": false,
+            "feitos": 0,
+            "total": 3,
+            "itens": [
+              {
+                "feito": false,
+                "texto": "`GET /contas/{contaId}` (saldo)"
+              },
+              {
+                "feito": false,
+                "texto": "`GET /clientes/{clienteId}/contas`"
+              },
+              {
+                "feito": false,
+                "texto": "Decidir como o usuário acessa a conta sem login (ver Decisões RKF Bank)"
+              }
+            ]
+          },
+          {
+            "nome": "Frontend (Renan)",
+            "futuro": false,
+            "proximo": false,
+            "feitos": 0,
+            "total": 4,
+            "itens": [
+              {
+                "feito": false,
+                "texto": "Abrir conta depois do cadastro"
+              },
+              {
+                "feito": false,
+                "texto": "Tela da conta (saldo)"
+              },
+              {
+                "feito": false,
+                "texto": "Telas de depósito, saque e transferência"
+              },
+              {
+                "feito": false,
+                "texto": "Tela de extrato"
+              }
+            ]
+          },
+          {
+            "nome": "Lançamento",
+            "futuro": false,
+            "proximo": false,
+            "feitos": 0,
+            "total": 5,
+            "itens": [
+              {
+                "feito": false,
+                "texto": "Decidir onde publicar (ver Decisões RKF Bank)"
+              },
+              {
+                "feito": false,
+                "texto": "Fellipe (PO & QA) testa tudo pelo roteiro E2E"
+              },
+              {
+                "feito": false,
+                "texto": "Corrigir os bugs encontrados"
+              },
+              {
+                "feito": false,
+                "texto": "Colocar no ar"
+              },
+              {
+                "feito": false,
+                "texto": "Atualizar o README com link e prints"
+              }
+            ]
+          }
+        ]
+      },
+      "pleno": {
+        "feitos": 0,
+        "total": 26,
+        "grupos": [
+          {
+            "nome": "Flyway",
+            "futuro": false,
+            "proximo": true,
+            "feitos": 0,
+            "total": 6,
+            "itens": [
+              {
+                "feito": false,
+                "texto": "Adicionar o Flyway no `pom.xml` (starter do Spring Boot 4 + módulo MySQL)"
+              },
+              {
+                "feito": false,
+                "texto": "`V1__schema_inicial.sql` a partir do schema atual (`tb_cliente`, `tb_endereco`, `tb_conta`, `tb_lancamento`)"
+              },
+              {
+                "feito": false,
+                "texto": "`spring.jpa.hibernate.ddl-auto=validate`"
+              },
+              {
+                "feito": false,
+                "texto": "Testes em H2 rodando a mesma migração (modo MySQL)"
+              },
+              {
+                "feito": false,
+                "texto": "`V2__` com migração de dados: e-mail em minúsculas"
+              },
+              {
+                "feito": false,
+                "texto": "Atualizar `debitos-tecnicos.md` e o `backend/README.md`"
+              }
+            ]
+          },
+          {
+            "nome": "Spring Security + JWT",
+            "futuro": false,
+            "proximo": false,
+            "feitos": 0,
+            "total": 6,
+            "itens": [
+              {
+                "feito": false,
+                "texto": "Tabela de usuários via `V3__` (senha com BCrypt)"
+              },
+              {
+                "feito": false,
+                "texto": "`POST /auth/login` devolvendo JWT"
+              },
+              {
+                "feito": false,
+                "texto": "Filtro que valida o token"
+              },
+              {
+                "feito": false,
+                "texto": "Regra: cliente só vê e movimenta as próprias contas"
+              },
+              {
+                "feito": false,
+                "texto": "Proteger `GET /clientes` (hoje expõe CPF, e-mail e telefone)"
+              },
+              {
+                "feito": false,
+                "texto": "`401` / `403` no formato de erro padrão"
+              }
+            ]
+          },
+          {
+            "nome": "Testcontainers",
+            "futuro": false,
+            "proximo": false,
+            "feitos": 0,
+            "total": 4,
+            "itens": [
+              {
+                "feito": false,
+                "texto": "Testes de repositório contra MySQL 8.4 real (`@ServiceConnection`)"
+              },
+              {
+                "feito": false,
+                "texto": "Teste de concorrência: duas transferências simultâneas → `409` e saldo correto"
+              },
+              {
+                "feito": false,
+                "texto": "Testes de rota com `MockMvc` (JSON de verdade)"
+              },
+              {
+                "feito": false,
+                "texto": "Rodar no GitHub Actions"
+              }
+            ]
+          },
+          {
+            "nome": "Deploy AWS",
+            "futuro": true,
+            "proximo": false,
+            "feitos": 0,
+            "total": 5,
+            "itens": [
+              {
+                "feito": false,
+                "texto": "`Dockerfile` multi-stage do backend"
+              },
+              {
+                "feito": false,
+                "texto": "Perfil `prod` + credenciais fora do código"
+              },
+              {
+                "feito": false,
+                "texto": "Banco no RDS MySQL"
+              },
+              {
+                "feito": false,
+                "texto": "App no ECS Fargate ou Elastic Beanstalk"
+              },
+              {
+                "feito": false,
+                "texto": "Deploy pelo GitHub Actions depois do merge"
+              }
+            ]
+          },
+          {
+            "nome": "Mensageria",
+            "futuro": true,
+            "proximo": false,
+            "feitos": 0,
+            "total": 3,
+            "itens": [
+              {
+                "feito": false,
+                "texto": "`TransferenciaRealizadaEvent` com `@TransactionalEventListener`"
+              },
+              {
+                "feito": false,
+                "texto": "RabbitMQ no `docker-compose` + consumidor de notificação/comprovante"
+              },
+              {
+                "feito": false,
+                "texto": "Padrão Outbox + consumidor idempotente"
+              }
+            ]
+          },
+          {
+            "nome": "Inglês",
+            "futuro": false,
+            "proximo": false,
+            "feitos": 0,
+            "total": 2,
+            "itens": [
+              {
+                "feito": false,
+                "texto": "Descrições de PR em inglês"
+              },
+              {
+                "feito": false,
+                "texto": "`README.en.md`"
+              }
+            ]
+          }
+        ]
+      },
+      "debitos": {
+        "feitos": 0,
+        "total": 18
+      },
+      "recentes": [
+        "Documentação dos testes de repositório — 2026-10-15",
+        "CVEs do Tomcat (3 críticas) e do Jackson (5 altas, 2 moderadas) corrigidas — 2026-10-15",
+        "H2 fixado em 2.3.232 (bug do `CHECK ... IN` no 2.4.240) — 2026-10-15",
+        "Testes da camada repositories (34 testes, `@DataJpaTest`) — 2026-10-15"
+      ]
+    }
+  },
+  "historico": [
+    {
+      "data": "2026-10-15",
+      "branch": "`fix/vulnerabilidades-dependencias`",
+      "mudou": "Tomcat 11.0.24 → 11.0.27 e Jackson 3.1.5 → 3.1.7",
+      "aprendizado": "dá para corrigir CVE de dependência transitiva sobrescrevendo a propriedade do BOM"
+    },
+    {
+      "data": "2026-10-15",
+      "branch": "`feature/testes-repository`",
+      "mudou": "34 testes `@DataJpaTest`, H2 2.3.232, docs",
+      "aprendizado": "testar mapeamento JPA de verdade (cascata, `orphanRemoval`, `@Version`)"
+    }
+  ]
+}

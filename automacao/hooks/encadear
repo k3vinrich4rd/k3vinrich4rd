@@ -1,0 +1,12 @@
+#!/bin/sh
+# Hook global (core.hooksPath). Primeiro roda o hook próprio do repositório em .git/hooks,
+# para não desligar os hooks que cada projeto já tinha; depois roda a sincronização.
+nome=$(basename "$0")
+proprio="$(git rev-parse --git-common-dir)/hooks/$nome"
+if [ -x "$proprio" ]; then
+  "$proprio" "$@" || exit $?
+fi
+if [ "$nome" = "post-commit" ] || [ "$nome" = "post-merge" ]; then
+  "$(dirname "$0")/kevin-sync"
+fi
+exit 0
