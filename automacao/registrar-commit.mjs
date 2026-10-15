@@ -76,7 +76,26 @@ function anotarNoProjeto(c, nota) {
   escrever(nota, `${antes}${INICIO}\n${itens.slice(0, 12).join('\n')}\n${FIM}${depois}`);
 }
 
+/** Roda `fn` com uma trava em disco: commits seguidos (rebase, merge) não disputam o git do perfil. */
+function comTrava(fn) {
+  const trava = path.join(RAIZ, 'automacao', '.sync.lock');
+  const espera = new Int32Array(new SharedArrayBuffer(4));
+  for (let tentativa = 0; ; tentativa++) {
+    try { fs.mkdirSync(trava); break; } catch {
+      const idade = Date.now() - (fs.statSync(trava, { throwIfNoEntry: false })?.mtimeMs ?? Date.now());
+      if (idade > 120_000) { fs.rmSync(trava, { recursive: true, force: true }); continue; } // trava esquecida
+      if (tentativa > 240) throw new Error('trava do perfil ocupada há mais de 1 minuto');
+      Atomics.wait(espera, 0, 0, 250);
+    }
+  }
+  try { return fn(); } finally { fs.rmSync(trava, { recursive: true, force: true }); }
+}
+
 function atualizarPerfil(c) {
+  // Mudanças feitas à mão no perfil (ainda sem commit) não podem ir junto num commit automático.
+  if (fs.existsSync(path.join(RAIZ, '.git')) && git(['status', '--porcelain'], RAIZ)) {
+    return log('perfil com mudanças manuais pendentes: nada regenerado, sem commit (o próximo commit sincroniza)');
+  }
   execFileSync(process.execPath, [path.join(RAIZ, 'scripts', 'coletar-progresso.mjs')], { cwd: RAIZ, stdio: 'ignore' });
   execFileSync(process.execPath, [path.join(RAIZ, 'scripts', 'atualizar-readme.mjs')], { cwd: RAIZ, stdio: 'ignore' });
   if (!fs.existsSync(path.join(RAIZ, '.git'))) return log('perfil sem git: README regenerado, sem commit');
@@ -101,7 +120,7 @@ try {
     anotarNoProjeto(c, nota);
   }
   log(`${c.nome} ${c.curto} anotado${nota ? ` em ${path.basename(nota)}` : ''}`);
-  atualizarPerfil(c);
+  comTrava(() => atualizarPerfil(c));
 } catch (e) {
   log(`erro: ${e.message}`);
 }

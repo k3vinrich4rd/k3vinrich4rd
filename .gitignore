@@ -4,3 +4,4 @@ node_modules/
 .claude/
 .previa.html
 .previa-readme.html
+automacao/.sync.lock/
