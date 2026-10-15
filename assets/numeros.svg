@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="186" viewBox="0 0 1200 186" role="img" aria-label="Kevin em números: 4 anos codando, 88 repositórios, 109 testes no RKF Bank, 9/15 régua Pleno, 19 assuntos praticados, 18 certificações">
+  <!-- Gerado por scripts/svgs.mjs. Não edite à mão. -->
+  <style>
+    .num { font: 800 44px Consolas, 'Fira Code', 'JetBrains Mono', Menlo, monospace; }
+    .rot { font: 700 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #e6edf3; }
+    .sub { font: 400 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #8b949e; }
+    .rola { animation-duration: 1.8s; animation-timing-function: cubic-bezier(.2,.9,.2,1); animation-fill-mode: both; }
+    @keyframes r0 { 0% { transform: translateY(0); } 100% { transform: translateY(0px); } } @keyframes r1 { 0% { transform: translateY(0); } 100% { transform: translateY(-52px); } } @keyframes r2 { 0% { transform: translateY(0); } 100% { transform: translateY(-104px); } } @keyframes r3 { 0% { transform: translateY(0); } 100% { transform: translateY(-156px); } } @keyframes r4 { 0% { transform: translateY(0); } 100% { transform: translateY(-208px); } } @keyframes r5 { 0% { transform: translateY(0); } 100% { transform: translateY(-260px); } } @keyframes r6 { 0% { transform: translateY(0); } 100% { transform: translateY(-312px); } } @keyframes r7 { 0% { transform: translateY(0); } 100% { transform: translateY(-364px); } } @keyframes r8 { 0% { transform: translateY(0); } 100% { transform: translateY(-416px); } } @keyframes r9 { 0% { transform: translateY(0); } 100% { transform: translateY(-468px); } }
+    .card { opacity: 0; animation: sobe .7s cubic-bezier(.2,.8,.2,1) forwards; }
+    @keyframes sobe { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+  </style>
+  
+    <g class="card" style="animation-delay:0.00s">
+      <rect x="10" y="18" width="180" height="150" rx="12" fill="#0b1422" stroke="#30363d"/>
+      <rect x="10" y="18" width="180" height="3" rx="1.5" fill="#58a6ff"/>
+      <clipPath id="c87_92_0"><rect x="85" y="48" width="28" height="54"/></clipPath>
+      <g clip-path="url(#c87_92_0)"><g class="rola" style="--alvo:-208px; animation-delay:0.40s; animation-name: r4"><text x="87" y="92" class="num" fill="#58a6ff">0</text><text x="87" y="144" class="num" fill="#58a6ff">1</text><text x="87" y="196" class="num" fill="#58a6ff">2</text><text x="87" y="248" class="num" fill="#58a6ff">3</text><text x="87" y="300" class="num" fill="#58a6ff">4</text><text x="87" y="352" class="num" fill="#58a6ff">5</text><text x="87" y="404" class="num" fill="#58a6ff">6</text><text x="87" y="456" class="num" fill="#58a6ff">7</text><text x="87" y="508" class="num" fill="#58a6ff">8</text><text x="87" y="560" class="num" fill="#58a6ff">9</text></g></g>
+      <text x="100" y="130" text-anchor="middle" class="rot">anos codando</text>
+      <text x="100" y="152" text-anchor="middle" class="sub">desde o Catalisa, em 2022</text>
+    </g>
+    <g class="card" style="animation-delay:0.15s">
+      <rect x="210" y="18" width="180" height="150" rx="12" fill="#0b1422" stroke="#30363d"/>
+      <rect x="210" y="18" width="180" height="3" rx="1.5" fill="#EC7000"/>
+      <clipPath id="c274_92_0"><rect x="272" y="48" width="28" height="54"/></clipPath>
+      <g clip-path="url(#c274_92_0)"><g class="rola" style="--alvo:-416px; animation-delay:0.55s; animation-name: r8"><text x="274" y="92" class="num" fill="#EC7000">0</text><text x="274" y="144" class="num" fill="#EC7000">1</text><text x="274" y="196" class="num" fill="#EC7000">2</text><text x="274" y="248" class="num" fill="#EC7000">3</text><text x="274" y="300" class="num" fill="#EC7000">4</text><text x="274" y="352" class="num" fill="#EC7000">5</text><text x="274" y="404" class="num" fill="#EC7000">6</text><text x="274" y="456" class="num" fill="#EC7000">7</text><text x="274" y="508" class="num" fill="#EC7000">8</text><text x="274" y="560" class="num" fill="#EC7000">9</text></g></g>
+      <clipPath id="c274_92_1"><rect x="298" y="48" width="28" height="54"/></clipPath>
+      <g clip-path="url(#c274_92_1)"><g class="rola" style="--alvo:-416px; animation-delay:0.67s; animation-name: r8"><text x="300" y="92" class="num" fill="#EC7000">0</text><text x="300" y="144" class="num" fill="#EC7000">1</text><text x="300" y="196" class="num" fill="#EC7000">2</text><text x="300" y="248" class="num" fill="#EC7000">3</text><text x="300" y="300" class="num" fill="#EC7000">4</text><text x="300" y="352" class="num" fill="#EC7000">5</text><text x="300" y="404" class="num" fill="#EC7000">6</text><text x="300" y="456" class="num" fill="#EC7000">7</text><text x="300" y="508" class="num" fill="#EC7000">8</text><text x="300" y="560" class="num" fill="#EC7000">9</text></g></g>
+      <text x="300" y="130" text-anchor="middle" class="rot">repositórios</text>
+      <text x="300" y="152" text-anchor="middle" class="sub">de exercícios a projetos reais</text>
+    </g>
+    <g class="card" style="animation-delay:0.30s">
+      <rect x="410" y="18" width="180" height="150" rx="12" fill="#0b1422" stroke="#30363d"/>
+      <rect x="410" y="18" width="180" height="3" rx="1.5" fill="#3fb950"/>
+      <clipPath id="c461_92_0"><rect x="459" y="48" width="28" height="54"/></clipPath>
+      <g clip-path="url(#c461_92_0)"><g class="rola" style="--alvo:-52px; animation-delay:0.70s; animation-name: r1"><text x="461" y="92" class="num" fill="#3fb950">0</text><text x="461" y="144" class="num" fill="#3fb950">1</text><text x="461" y="196" class="num" fill="#3fb950">2</text><text x="461" y="248" class="num" fill="#3fb950">3</text><text x="461" y="300" class="num" fill="#3fb950">4</text><text x="461" y="352" class="num" fill="#3fb950">5</text><text x="461" y="404" class="num" fill="#3fb950">6</text><text x="461" y="456" class="num" fill="#3fb950">7</text><text x="461" y="508" class="num" fill="#3fb950">8</text><text x="461" y="560" class="num" fill="#3fb950">9</text></g></g>
+      <clipPath id="c461_92_1"><rect x="485" y="48" width="28" height="54"/></clipPath>
+      <g clip-path="url(#c461_92_1)"><g class="rola" style="--alvo:0px; animation-delay:0.82s; animation-name: r0"><text x="487" y="92" class="num" fill="#3fb950">0</text><text x="487" y="144" class="num" fill="#3fb950">1</text><text x="487" y="196" class="num" fill="#3fb950">2</text><text x="487" y="248" class="num" fill="#3fb950">3</text><text x="487" y="300" class="num" fill="#3fb950">4</text><text x="487" y="352" class="num" fill="#3fb950">5</text><text x="487" y="404" class="num" fill="#3fb950">6</text><text x="487" y="456" class="num" fill="#3fb950">7</text><text x="487" y="508" class="num" fill="#3fb950">8</text><text x="487" y="560" class="num" fill="#3fb950">9</text></g></g>
+      <clipPath id="c461_92_2"><rect x="511" y="48" width="28" height="54"/></clipPath>
+      <g clip-path="url(#c461_92_2)"><g class="rola" style="--alvo:-468px; animation-delay:0.94s; animation-name: r9"><text x="513" y="92" class="num" fill="#3fb950">0</text><text x="513" y="144" class="num" fill="#3fb950">1</text><text x="513" y="196" class="num" fill="#3fb950">2</text><text x="513" y="248" class="num" fill="#3fb950">3</text><text x="513" y="300" class="num" fill="#3fb950">4</text><text x="513" y="352" class="num" fill="#3fb950">5</text><text x="513" y="404" class="num" fill="#3fb950">6</text><text x="513" y="456" class="num" fill="#3fb950">7</text><text x="513" y="508" class="num" fill="#3fb950">8</text><text x="513" y="560" class="num" fill="#3fb950">9</text></g></g>
+      <text x="500" y="130" text-anchor="middle" class="rot">testes no RKF Bank</text>
+      <text x="500" y="152" text-anchor="middle" class="sub">BUILD SUCCESS ✔</text>
+    </g>
+    <g class="card" style="animation-delay:0.45s">
+      <rect x="610" y="18" width="180" height="150" rx="12" fill="#0b1422" stroke="#30363d"/>
+      <rect x="610" y="18" width="180" height="3" rx="1.5" fill="#EC7000"/>
+      <clipPath id="c648_92_0"><rect x="646" y="48" width="28" height="54"/></clipPath>
+      <g clip-path="url(#c648_92_0)"><g class="rola" style="--alvo:-468px; animation-delay:0.85s; animation-name: r9"><text x="648" y="92" class="num" fill="#EC7000">0</text><text x="648" y="144" class="num" fill="#EC7000">1</text><text x="648" y="196" class="num" fill="#EC7000">2</text><text x="648" y="248" class="num" fill="#EC7000">3</text><text x="648" y="300" class="num" fill="#EC7000">4</text><text x="648" y="352" class="num" fill="#EC7000">5</text><text x="648" y="404" class="num" fill="#EC7000">6</text><text x="648" y="456" class="num" fill="#EC7000">7</text><text x="648" y="508" class="num" fill="#EC7000">8</text><text x="648" y="560" class="num" fill="#EC7000">9</text></g></g>
+      <text x="674" y="92" class="num" fill="#EC7000">/</text>
+      <clipPath id="c648_92_2"><rect x="698" y="48" width="28" height="54"/></clipPath>
+      <g clip-path="url(#c648_92_2)"><g class="rola" style="--alvo:-52px; animation-delay:1.09s; animation-name: r1"><text x="700" y="92" class="num" fill="#EC7000">0</text><text x="700" y="144" class="num" fill="#EC7000">1</text><text x="700" y="196" class="num" fill="#EC7000">2</text><text x="700" y="248" class="num" fill="#EC7000">3</text><text x="700" y="300" class="num" fill="#EC7000">4</text><text x="700" y="352" class="num" fill="#EC7000">5</text><text x="700" y="404" class="num" fill="#EC7000">6</text><text x="700" y="456" class="num" fill="#EC7000">7</text><text x="700" y="508" class="num" fill="#EC7000">8</text><text x="700" y="560" class="num" fill="#EC7000">9</text></g></g>
+      <clipPath id="c648_92_3"><rect x="724" y="48" width="28" height="54"/></clipPath>
+      <g clip-path="url(#c648_92_3)"><g class="rola" style="--alvo:-260px; animation-delay:1.21s; animation-name: r5"><text x="726" y="92" class="num" fill="#EC7000">0</text><text x="726" y="144" class="num" fill="#EC7000">1</text><text x="726" y="196" class="num" fill="#EC7000">2</text><text x="726" y="248" class="num" fill="#EC7000">3</text><text x="726" y="300" class="num" fill="#EC7000">4</text><text x="726" y="352" class="num" fill="#EC7000">5</text><text x="726" y="404" class="num" fill="#EC7000">6</text><text x="726" y="456" class="num" fill="#EC7000">7</text><text x="726" y="508" class="num" fill="#EC7000">8</text><text x="726" y="560" class="num" fill="#EC7000">9</text></g></g>
+      <text x="700" y="130" text-anchor="middle" class="rot">régua Pleno</text>
+      <text x="700" y="152" text-anchor="middle" class="sub">competências praticadas</text>
+    </g>
+    <g class="card" style="animation-delay:0.60s">
+      <rect x="810" y="18" width="180" height="150" rx="12" fill="#0b1422" stroke="#30363d"/>
+      <rect x="810" y="18" width="180" height="3" rx="1.5" fill="#d2a8ff"/>
+      <clipPath id="c874_92_0"><rect x="872" y="48" width="28" height="54"/></clipPath>
+      <g clip-path="url(#c874_92_0)"><g class="rola" style="--alvo:-52px; animation-delay:1.00s; animation-name: r1"><text x="874" y="92" class="num" fill="#d2a8ff">0</text><text x="874" y="144" class="num" fill="#d2a8ff">1</text><text x="874" y="196" class="num" fill="#d2a8ff">2</text><text x="874" y="248" class="num" fill="#d2a8ff">3</text><text x="874" y="300" class="num" fill="#d2a8ff">4</text><text x="874" y="352" class="num" fill="#d2a8ff">5</text><text x="874" y="404" class="num" fill="#d2a8ff">6</text><text x="874" y="456" class="num" fill="#d2a8ff">7</text><text x="874" y="508" class="num" fill="#d2a8ff">8</text><text x="874" y="560" class="num" fill="#d2a8ff">9</text></g></g>
+      <clipPath id="c874_92_1"><rect x="898" y="48" width="28" height="54"/></clipPath>
+      <g clip-path="url(#c874_92_1)"><g class="rola" style="--alvo:-468px; animation-delay:1.12s; animation-name: r9"><text x="900" y="92" class="num" fill="#d2a8ff">0</text><text x="900" y="144" class="num" fill="#d2a8ff">1</text><text x="900" y="196" class="num" fill="#d2a8ff">2</text><text x="900" y="248" class="num" fill="#d2a8ff">3</text><text x="900" y="300" class="num" fill="#d2a8ff">4</text><text x="900" y="352" class="num" fill="#d2a8ff">5</text><text x="900" y="404" class="num" fill="#d2a8ff">6</text><text x="900" y="456" class="num" fill="#d2a8ff">7</text><text x="900" y="508" class="num" fill="#d2a8ff">8</text><text x="900" y="560" class="num" fill="#d2a8ff">9</text></g></g>
+      <text x="900" y="130" text-anchor="middle" class="rot">assuntos praticados</text>
+      <text x="900" y="152" text-anchor="middle" class="sub">de 26 no meu Obsidian</text>
+    </g>
+    <g class="card" style="animation-delay:0.75s">
+      <rect x="1010" y="18" width="180" height="150" rx="12" fill="#0b1422" stroke="#30363d"/>
+      <rect x="1010" y="18" width="180" height="3" rx="1.5" fill="#58a6ff"/>
+      <clipPath id="c1074_92_0"><rect x="1072" y="48" width="28" height="54"/></clipPath>
+      <g clip-path="url(#c1074_92_0)"><g class="rola" style="--alvo:-52px; animation-delay:1.15s; animation-name: r1"><text x="1074" y="92" class="num" fill="#58a6ff">0</text><text x="1074" y="144" class="num" fill="#58a6ff">1</text><text x="1074" y="196" class="num" fill="#58a6ff">2</text><text x="1074" y="248" class="num" fill="#58a6ff">3</text><text x="1074" y="300" class="num" fill="#58a6ff">4</text><text x="1074" y="352" class="num" fill="#58a6ff">5</text><text x="1074" y="404" class="num" fill="#58a6ff">6</text><text x="1074" y="456" class="num" fill="#58a6ff">7</text><text x="1074" y="508" class="num" fill="#58a6ff">8</text><text x="1074" y="560" class="num" fill="#58a6ff">9</text></g></g>
+      <clipPath id="c1074_92_1"><rect x="1098" y="48" width="28" height="54"/></clipPath>
+      <g clip-path="url(#c1074_92_1)"><g class="rola" style="--alvo:-416px; animation-delay:1.27s; animation-name: r8"><text x="1100" y="92" class="num" fill="#58a6ff">0</text><text x="1100" y="144" class="num" fill="#58a6ff">1</text><text x="1100" y="196" class="num" fill="#58a6ff">2</text><text x="1100" y="248" class="num" fill="#58a6ff">3</text><text x="1100" y="300" class="num" fill="#58a6ff">4</text><text x="1100" y="352" class="num" fill="#58a6ff">5</text><text x="1100" y="404" class="num" fill="#58a6ff">6</text><text x="1100" y="456" class="num" fill="#58a6ff">7</text><text x="1100" y="508" class="num" fill="#58a6ff">8</text><text x="1100" y="560" class="num" fill="#58a6ff">9</text></g></g>
+      <text x="1100" y="130" text-anchor="middle" class="rot">certificações</text>
+      <text x="1100" y="152" text-anchor="middle" class="sub">Alura · Udemy · AWS · Workover</text>
+    </g>
+</svg>

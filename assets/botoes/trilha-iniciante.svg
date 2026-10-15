@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="64" viewBox="0 0 400 64" role="img" aria-label="Também estou começando na área: O caminho que funcionou para mim">
+  <!-- Gerado por scripts/svgs.mjs. Não edite à mão. -->
+  <defs><linearGradient id="marca" x1="0" x2="1"><stop offset="0" stop-color="#003D74"/><stop offset="1" stop-color="#EC7000"/></linearGradient>
+    <linearGradient id="brilho" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".18"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <clipPath id="forma"><rect x="1" y="1" width="398" height="62" rx="31"/></clipPath>
+  </defs>
+  <style>
+    .brilho { animation: passa 3.2s ease-in-out infinite; }
+    @keyframes passa { 0% { transform: translateX(-400px); } 60%,100% { transform: translateX(400px); } }
+    .seta { animation: seta 1.4s ease-in-out infinite; }
+    @keyframes seta { 0%,100% { transform: translateX(0); } 50% { transform: translateX(4px); } }
+  </style>
+  <g clip-path="url(#forma)">
+    <rect width="400" height="64" fill="#0d1117"/>
+    <rect width="400" height="64" fill="#3fb950" opacity="0.12"/>
+    <rect class="brilho" width="200" height="64" fill="url(#brilho)"/>
+  </g>
+  <rect x="1" y="1" width="398" height="62" rx="31" fill="none" stroke="#3fb950" stroke-width="1.5"/>
+  <text x="22" y="29" style="font: 700 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">🌱  Também estou começando na área</text>
+  <text x="22" y="49" style="font: 400 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">O caminho que funcionou para mim</text>
+  <text x="370" y="38" style="font: 700 16px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#3fb950" class="seta">›</text>
+</svg>

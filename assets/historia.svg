@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="370" viewBox="0 0 1200 370" role="img" aria-label="Minha história em 6 cenas, de 2022 até agora: 2022 A porta de entrada; 2023 Novas linguagens, mais testes; 2024 Base sólida; 2025 Formação profissional; 2026 Projeto de verdade; Agora Rumo ao Pleno">
+  <!-- Gerado por scripts/svgs.mjs. Não edite à mão. -->
+  <defs><linearGradient id="marca" x1="0" x2="1"><stop offset="0" stop-color="#003D74"/><stop offset="1" stop-color="#EC7000"/></linearGradient>
+    <radialGradient id="brilho" cx=".85" cy=".2" r=".6"><stop offset="0" stop-color="#EC7000" stop-opacity=".22"/><stop offset="1" stop-color="#EC7000" stop-opacity="0"/></radialGradient>
+  </defs>
+  <style>
+    .ano { font: 800 34px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #EC7000; }
+    .titulo { font: 700 30px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #e6edf3; }
+    .linha { font: 400 19px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #c9d1d9; }
+    .marco { font: 600 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #8b949e; }
+    .cena { opacity: 0; animation: cena 24s infinite; }
+    @keyframes cena { 0% { opacity: 0; transform: translateY(14px); } 2% { opacity: 1; transform: none; } 14.67% { opacity: 1; transform: none; } 16.667% { opacity: 0; transform: translateY(-10px); } 100% { opacity: 0; } }
+    .marcador { animation: anda 24s cubic-bezier(.6,0,.2,1) infinite; }
+    @keyframes anda { 0.00% { transform: translateX(0.0px); } 13.67% { transform: translateX(0.0px); } 16.67% { transform: translateX(196.0px); } 30.33% { transform: translateX(196.0px); } 33.33% { transform: translateX(392.0px); } 47.00% { transform: translateX(392.0px); } 50.00% { transform: translateX(588.0px); } 63.67% { transform: translateX(588.0px); } 66.67% { transform: translateX(784.0px); } 80.33% { transform: translateX(784.0px); } 83.33% { transform: translateX(980.0px); } 97.00% { transform: translateX(980.0px); } 100% { transform: translateX(980.0px); } }
+    .rastro { transform-origin: 110px 0; animation: rastro 24s cubic-bezier(.6,0,.2,1) infinite; }
+    @keyframes rastro { 0.00% { transform: scaleX(0.0010); } 13.67% { transform: scaleX(0.0010); } 16.67% { transform: scaleX(0.2000); } 30.33% { transform: scaleX(0.2000); } 33.33% { transform: scaleX(0.4000); } 47.00% { transform: scaleX(0.4000); } 50.00% { transform: scaleX(0.6000); } 63.67% { transform: scaleX(0.6000); } 66.67% { transform: scaleX(0.8000); } 80.33% { transform: scaleX(0.8000); } 83.33% { transform: scaleX(1.0000); } 97.00% { transform: scaleX(1.0000); } 100% { transform: scaleX(1); } }
+    .pulso { animation: pulso 1.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes pulso { 0%,100% { transform: scale(1); opacity: .9; } 50% { transform: scale(1.6); opacity: .25; } }
+  </style>
+  <rect width="1200" height="370" rx="14" fill="#0d1117" stroke="#30363d"/>
+  <rect width="1200" height="370" rx="14" fill="url(#brilho)"/>
+  <text x="40" y="44" style="font: 700 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; letter-spacing: 3px" fill="#8b949e">📖 MINHA HISTÓRIA · 6 CENAS · 24s</text>
+  
+  <g class="cena" style="animation-delay:0s">
+    <text x="120" y="118" font-size="64">🚪</text>
+    <text x="220" y="92" class="ano">2022</text>
+    <text x="220" y="132" class="titulo">A porta de entrada</text>
+    <text x="222" y="178" class="linha"><tspan fill="#EC7000">▸ </tspan>Programa Catalisa da Zup Innovation</text>
+    <text x="222" y="208" class="linha"><tspan fill="#EC7000">▸ </tspan>Lógica, POO, SOLID e Design Patterns</text>
+    <text x="222" y="238" class="linha"><tspan fill="#EC7000">▸ </tspan>Spring Boot, JPA, Mockito e Spring Security</text>
+  </g>
+  <g class="cena" style="animation-delay:4s">
+    <text x="120" y="118" font-size="64">🧪</text>
+    <text x="220" y="92" class="ano">2023</text>
+    <text x="220" y="132" class="titulo">Novas linguagens, mais testes</text>
+    <text x="222" y="178" class="linha"><tspan fill="#EC7000">▸ </tspan>Kotlin + Spring Boot no BookMarket</text>
+    <text x="222" y="208" class="linha"><tspan fill="#EC7000">▸ </tspan>Testes automatizados e Mockito (Alura)</text>
+    <text x="222" y="238" class="linha"><tspan fill="#EC7000">▸ </tspan>Spring Boot 3</text>
+  </g>
+  <g class="cena" style="animation-delay:8s">
+    <text x="120" y="118" font-size="64">🧱</text>
+    <text x="220" y="92" class="ano">2024</text>
+    <text x="220" y="132" class="titulo">Base sólida</text>
+    <text x="222" y="178" class="linha"><tspan fill="#EC7000">▸ </tspan>Spring Boot Essentials (DevDojo)</text>
+    <text x="222" y="208" class="linha"><tspan fill="#EC7000">▸ </tspan>API REST de cadastro de estudantes</text>
+    <text x="222" y="238" class="linha"><tspan fill="#EC7000">▸ </tspan>Menos volume, mais profundidade</text>
+  </g>
+  <g class="cena" style="animation-delay:12s">
+    <text x="120" y="118" font-size="64">🎓</text>
+    <text x="220" y="92" class="ano">2025</text>
+    <text x="220" y="132" class="titulo">Formação profissional</text>
+    <text x="222" y="178" class="linha"><tspan fill="#EC7000">▸ </tspan>Formação Spring Professional (DevSuperior)</text>
+    <text x="222" y="208" class="linha"><tspan fill="#EC7000">▸ </tspan>Injeção de dependência e componentes</text>
+    <text x="222" y="238" class="linha"><tspan fill="#EC7000">▸ </tspan>Projeto em dupla: LkBank</text>
+  </g>
+  <g class="cena" style="animation-delay:16s">
+    <text x="120" y="118" font-size="64">🏦</text>
+    <text x="220" y="92" class="ano">2026</text>
+    <text x="220" y="132" class="titulo">Projeto de verdade</text>
+    <text x="222" y="178" class="linha"><tspan fill="#EC7000">▸ </tspan>Java 25 + Spring Boot 4</text>
+    <text x="222" y="208" class="linha"><tspan fill="#EC7000">▸ </tspan>RKF Bank: 109 testes, CI, logs e lock otimista</text>
+    <text x="222" y="238" class="linha"><tspan fill="#EC7000">▸ </tspan>Workshops JPA e MongoDB · CRUD nota 10/10</text>
+  </g>
+  <g class="cena" style="animation-delay:20s">
+    <text x="120" y="118" font-size="64">🚀</text>
+    <text x="220" y="92" class="ano">Agora</text>
+    <text x="220" y="132" class="titulo">Rumo ao Pleno</text>
+    <text x="222" y="178" class="linha"><tspan fill="#EC7000">▸ </tspan>9 de 15 competências de Pleno praticadas</text>
+    <text x="222" y="208" class="linha"><tspan fill="#EC7000">▸ </tspan>Dev Junior na Zup, serviço para o Itaú</text>
+    <text x="222" y="238" class="linha"><tspan fill="#EC7000">▸ </tspan>Próximo passo: Flyway</text>
+  </g>
+  <line x1="110" y1="318" x2="1090" y2="318" stroke="#30363d" stroke-width="3"/>
+  <line x1="110" y1="318" x2="1090" y2="318" stroke="url(#marca)" stroke-width="3" class="rastro"/>
+  
+    <circle cx="110" cy="318" r="7" fill="#0d1117" stroke="#EC7000" stroke-width="2"/>
+    <text x="110" y="346" text-anchor="middle" class="marco">2022</text>
+    <circle cx="306" cy="318" r="7" fill="#0d1117" stroke="#EC7000" stroke-width="2"/>
+    <text x="306" y="346" text-anchor="middle" class="marco">2023</text>
+    <circle cx="502" cy="318" r="7" fill="#0d1117" stroke="#EC7000" stroke-width="2"/>
+    <text x="502" y="346" text-anchor="middle" class="marco">2024</text>
+    <circle cx="698" cy="318" r="7" fill="#0d1117" stroke="#EC7000" stroke-width="2"/>
+    <text x="698" y="346" text-anchor="middle" class="marco">2025</text>
+    <circle cx="894" cy="318" r="7" fill="#0d1117" stroke="#EC7000" stroke-width="2"/>
+    <text x="894" y="346" text-anchor="middle" class="marco">2026</text>
+    <circle cx="1090" cy="318" r="7" fill="#0d1117" stroke="#EC7000" stroke-width="2"/>
+    <text x="1090" y="346" text-anchor="middle" class="marco">Agora</text>
+  <g class="marcador"><circle cx="110" cy="318" r="10" fill="#EC7000" class="pulso"/><circle cx="110" cy="318" r="7" fill="#EC7000"/></g>
+</svg>

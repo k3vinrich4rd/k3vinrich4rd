@@ -30,18 +30,35 @@
 <img src="https://img.shields.io/static/v1?label=Atualizado&message=2026-10-15&color=30363d&style=flat-square"/>
 <!-- AUTO:status:END -->
 
-**[🎮 Trilhas](#-escolha-a-sua-trilha) · [📡 Ao vivo](#-ao-vivo) · [🧭 Trajetória](#-trajetória) · [🏦 Projeto atual](#-projeto-atual--rkf-bank) · [🗂️ Projetos](#️-projetos-em-destaque) · [📈 Junior → Pleno](#-junior--pleno--onde-estou) · [🎯 Roadmap](#-pdi--roadmap-2026) · [🛠️ Stack](#️-tecnologias) · [💬 Perguntas](#-pergunte-ao-kevin) · [🎓 Formação](#-formação-e-certificações)**
+<!-- Botões gerados por scripts/svgs.mjs. Cada um leva a uma seção. -->
+<a href="#-escolha-a-sua-trilha"><img src="assets/botoes/trilhas.svg" alt="🎮 Trilhas" height="46"/></a>
+<a href="#-ao-vivo"><img src="assets/botoes/ao-vivo.svg" alt="📡 Ao vivo" height="46"/></a>
+<a href="#-trajetória"><img src="assets/botoes/historia.svg" alt="🧭 Trajetória" height="46"/></a>
+<a href="#-projeto-atual--rkf-bank"><img src="assets/botoes/rkf-bank.svg" alt="🏦 Projeto atual" height="46"/></a>
+<a href="#️-projetos-em-destaque"><img src="assets/botoes/projetos.svg" alt="🗂️ Projetos" height="46"/></a>
+<br/>
+<a href="#-junior--pleno--onde-estou"><img src="assets/botoes/pleno.svg" alt="📈 Junior → Pleno" height="46"/></a>
+<a href="#-pdi--roadmap-2026"><img src="assets/botoes/roadmap.svg" alt="🎯 Roadmap" height="46"/></a>
+<a href="#️-tecnologias"><img src="assets/botoes/stack.svg" alt="🛠️ Stack" height="46"/></a>
+<a href="#-pergunte-ao-kevin"><img src="assets/botoes/perguntas.svg" alt="💬 Perguntas" height="46"/></a>
+<a href="#-formação-e-certificações"><img src="assets/botoes/formacao.svg" alt="🎓 Formação" height="46"/></a>
+
+<br/><br/>
+
+<!-- Números gerados a partir do progresso.json: rolam a cada visita. -->
+<img src="assets/numeros.svg" width="100%" alt="Kevin em números: anos codando, repositórios, testes no RKF Bank, régua Pleno, assuntos praticados e certificações"/>
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:003D74,100:EC7000&height=3&section=header" width="100%"/>
+<img src="assets/divisor.svg" width="100%" alt=""/>
 
 ## 🎮 Escolha a sua trilha
 
 > Clique na trilha que mais combina com você. Cada uma abre um caminho diferente pelo meu perfil.
+> 👇 Os botões abrem e fecham.
 
 <details>
-<summary><b>🧑‍💼 Sou recrutador(a) e tenho 1 minuto</b></summary>
+<summary><img src="assets/botoes/trilha-recrutador.svg" height="64" alt="🧑‍💼 Sou recrutador(a) e tenho 1 minuto"/></summary>
 <br/>
 
 <!-- AUTO:recrutador:START -->
@@ -55,8 +72,8 @@
 <!-- AUTO:recrutador:END -->
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/kevin-richard-b68a54203/" target="_blank"><img src="https://img.shields.io/badge/%F0%9F%93%A9%20Vamos%20conversar%3F-Chamar%20no%20LinkedIn-0A66C2?style=for-the-badge"/></a>
-  <a href="mailto:kevinrichardve@gmail.com?subject=Oportunidade%20-%20Java%20Backend"><img src="https://img.shields.io/badge/%E2%9C%89%EF%B8%8F%20Enviar-e--mail-D14836?style=for-the-badge"/></a>
+  <a href="https://www.linkedin.com/in/kevin-richard-b68a54203/" target="_blank"><img src="assets/botoes/linkedin.svg" alt="📩 Vamos conversar? Chamar no LinkedIn" height="46"/></a>
+  <a href="mailto:kevinrichardve@gmail.com?subject=Oportunidade%20-%20Java%20Backend"><img src="assets/botoes/email.svg" alt="✉️ Enviar e-mail" height="46"/></a>
 </p>
 
 <details>
@@ -72,7 +89,7 @@
 </details>
 
 <details>
-<summary><b>👩‍💻 Sou dev e quero ver código</b></summary>
+<summary><img src="assets/botoes/trilha-dev.svg" height="64" alt="👩‍💻 Sou dev e quero ver código"/></summary>
 <br/>
 
 Sugestão de leitura, do mais simples ao mais completo:
@@ -100,7 +117,7 @@ Sugestão de leitura, do mais simples ao mais completo:
 </details>
 
 <details>
-<summary><b>🌱 Também estou começando na área</b></summary>
+<summary><img src="assets/botoes/trilha-iniciante.svg" height="64" alt="🌱 Também estou começando na área"/></summary>
 <br/>
 
 Eu comecei pelo **Programa Catalisa** da Zup em 2022, com exercícios de lógica. O caminho que funcionou para mim:
@@ -114,7 +131,7 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 
 </details>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:003D74,100:EC7000&height=3&section=header" width="100%"/>
+<img src="assets/divisor.svg" width="100%" alt=""/>
 
 ## 📡 Ao vivo
 
@@ -176,9 +193,12 @@ flowchart LR
     click E "https://github.com/k3vinrich4rd" _blank
 ```
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:003D74,100:EC7000&height=3&section=header" width="100%"/>
+<img src="assets/divisor.svg" width="100%" alt=""/>
 
 ## 🧭 Trajetória
+
+<!-- História em cenas gerada por scripts/svgs.mjs com os números do progresso.json. -->
+<img src="assets/historia.svg" width="100%" alt="Minha história em cenas: 2022 Programa Catalisa, 2023 Kotlin e testes, 2024 Spring Boot Essentials, 2025 Formação Spring Professional, 2026 RKF Bank, agora rumo ao Pleno"/>
 
 <img align="right" width="300" src="https://github-readme-stats.vercel.app/api/top-langs/?username=k3vinrich4rd&layout=donut&theme=tokyonight&hide_border=true&langs_count=6&bg_color=0d1117&title_color=EC7000&text_color=ffffff" alt="Linguagens"/>
 
@@ -248,9 +268,15 @@ timeline
 
 </details>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:003D74,100:EC7000&height=3&section=header" width="100%"/>
+<img src="assets/divisor.svg" width="100%" alt=""/>
 
 ## 🚀 Sobre mim
+
+<img src="assets/sobre-mim.svg" width="100%" alt="Classe Java Kevin aberta numa IDE, linha por linha"/>
+
+<details>
+<summary><b>📄 Ver como texto (para copiar)</b></summary>
+<br/>
 
 ```java
 public class Kevin extends Developer implements AprendizContinuo {
@@ -276,7 +302,9 @@ public class Kevin extends Developer implements AprendizContinuo {
 }
 ```
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:003D74,100:EC7000&height=3&section=header" width="100%"/>
+</details>
+
+<img src="assets/divisor.svg" width="100%" alt=""/>
 
 ## 🏦 Projeto atual — RKF Bank
 
@@ -301,7 +329,7 @@ public class Kevin extends Developer implements AprendizContinuo {
 > Banco digital **full stack** feito em dupla. Eu cuido do **backend**: API REST em Java e Spring Boot, banco MySQL, integração com o ViaCEP, logs e testes. O **[Renan Barros](https://github.com/renanbarrostech-cmd)** cuida do frontend em Next.js. É o projeto em que eu pratico, de ponta a ponta, o que se espera de um dev **Pleno**.
 
 <div align="center">
-  <img src="assets/terminal.svg" width="100%" alt="Terminal rodando os testes do RKF Bank: 107 testes, BUILD SUCCESS"/>
+  <img src="assets/terminal.svg" width="100%" alt="Terminal rodando os testes do RKF Bank: 109 testes, BUILD SUCCESS"/>
 </div>
 
 <div align="center">
@@ -470,7 +498,7 @@ sequenceDiagram
 
 </details>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:003D74,100:EC7000&height=3&section=header" width="100%"/>
+<img src="assets/divisor.svg" width="100%" alt=""/>
 
 ## 🗂️ Projetos em destaque
 
@@ -489,10 +517,22 @@ sequenceDiagram
 | **Meu papel** | todo o backend | projeto individual |
 | **Domínio** | clientes, contas, depósito, saque, transferência, extrato | usuários, pedidos, produtos, categorias, pagamento |
 | **O que mostra** | transação atômica, lock otimista, ViaCEP com falha tratada, logs com `X-Request-Id` | modelo de domínio rico, chave composta (`OrdemItemPK`), Bean Validation, erros padronizados |
-| **Qualidade** | 107 testes, JaCoCo, CI com CodeQL e Dependabot | camadas controller → service → repository, `DatabaseException` para integridade referencial |
+| **Qualidade** | 109 testes, JaCoCo, CI com CodeQL e Dependabot | camadas controller → service → repository, `DatabaseException` para integridade referencial |
 | **Stack** | Java 25 · Spring Boot 4 · MySQL · Docker · Next.js | Java · Spring Boot · JPA · H2 |
 | **README** | [roteiro do projeto](https://github.com/k3vinrich4rd/rkf_bank#readme) | [modelo de domínio, endpoints e respostas reais](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM#readme) |
 | **Ver primeiro** | [`ContaService`](https://github.com/k3vinrich4rd/rkf_bank) · [roteiro no README](#-projeto-atual--rkf-bank) | [`ProductService`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/services/ProductService.java) · [`ControllerExceptionHandler`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/controllers/handlers/ControllerExceptionHandler.java) |
+
+<div align="center">
+
+<b>🏦 RKF Bank</b>&nbsp;&nbsp;
+<a href="https://github.com/k3vinrich4rd/rkf_bank" target="_blank"><img src="assets/botoes/ver-codigo.svg" alt="📂 Ver código do RKF Bank" height="46"/></a>
+<a href="https://github.com/k3vinrich4rd/rkf_bank#readme" target="_blank"><img src="assets/botoes/ler-readme.svg" alt="📖 Ler o README do RKF Bank" height="46"/></a>
+<br/>
+<b>🛒 DSCommerce</b>&nbsp;&nbsp;
+<a href="https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM" target="_blank"><img src="assets/botoes/ver-codigo.svg" alt="📂 Ver código do DSCommerce" height="46"/></a>
+<a href="https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM#readme" target="_blank"><img src="assets/botoes/ler-readme.svg" alt="📖 Ler o README do DSCommerce" height="46"/></a>
+
+</div>
 
 ### 🧩 Outros projetos que valem o clique
 
@@ -1162,7 +1202,7 @@ endsolid repositorios_por_ano
 
 </details>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:003D74,100:EC7000&height=3&section=header" width="100%"/>
+<img src="assets/divisor.svg" width="100%" alt=""/>
 
 ## 📈 Junior → Pleno — onde estou
 
@@ -1289,7 +1329,7 @@ mindmap
 
 </details>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:003D74,100:EC7000&height=3&section=header" width="100%"/>
+<img src="assets/divisor.svg" width="100%" alt=""/>
 
 ## 📊 GitHub Stats
 
@@ -1307,7 +1347,7 @@ mindmap
   <img width="100%" src="https://raw.githubusercontent.com/k3vinrich4rd/k3vinrich4rd/output/profile-night-rainbow.svg" alt="Meus commits em 3D" />
 </picture>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:003D74,100:EC7000&height=3&section=header" width="100%"/>
+<img src="assets/divisor.svg" width="100%" alt=""/>
 
 ## 🎯 PDI — Roadmap 2026
 
@@ -1482,7 +1522,7 @@ gantt
 
 </details>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:003D74,100:EC7000&height=3&section=header" width="100%"/>
+<img src="assets/divisor.svg" width="100%" alt=""/>
 
 ## 🛠️ Tecnologias
 
@@ -1543,7 +1583,7 @@ mindmap
 
 </details>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:003D74,100:EC7000&height=3&section=header" width="100%"/>
+<img src="assets/divisor.svg" width="100%" alt=""/>
 
 ## 💼 Atuação profissional
 
@@ -1571,7 +1611,7 @@ Atuo como **Desenvolvedor de Software Junior** contratado pela **[Zup Innovation
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:003D74,100:EC7000&height=3&section=header" width="100%"/>
+<img src="assets/divisor.svg" width="100%" alt=""/>
 
 ## 💬 Pergunte ao Kevin
 
@@ -1681,7 +1721,7 @@ O CI tem **CodeQL**, **Dependency Review** e **Dependabot**. Quando o Spring Boo
 
 </details>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:003D74,100:EC7000&height=3&section=header" width="100%"/>
+<img src="assets/divisor.svg" width="100%" alt=""/>
 
 ## 🎓 Formação e certificações
 
@@ -1742,6 +1782,8 @@ O CI tem **CodeQL**, **Dependency Review** e **Dependabot**. Quando o Spring Boo
 ---
 
 <div align="center">
+
+<a href="https://www.linkedin.com/in/kevin-richard-b68a54203/" target="_blank"><img src="assets/chamada.svg" width="100%" alt="Vamos conversar? Disponível para oportunidades em desenvolvimento Java backend. Falar no LinkedIn"/></a>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:EC7000,50:003D74,100:1a1a1a&height=130&section=footer&animation=twinkling&text=Informa%C3%A7%C3%A3o%20e%20conhecimento%20nunca%20s%C3%A3o%20demais&fontSize=18&fontColor=ffffff&fontAlignY=65" alt="footer"/>
 

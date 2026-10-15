@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="210" viewBox="0 0 1200 210" role="img" aria-label="Vamos conversar? Estou disponível para oportunidades em desenvolvimento Java backend. Clique para falar comigo no LinkedIn.">
+  <!-- Gerado por scripts/svgs.mjs. Não edite à mão. -->
+  <defs><linearGradient id="marca" x1="0" x2="1"><stop offset="0" stop-color="#003D74"/><stop offset="1" stop-color="#EC7000"/></linearGradient>
+    <radialGradient id="g1" cx=".2" cy=".3" r=".7"><stop offset="0" stop-color="#003D74" stop-opacity=".6"/><stop offset="1" stop-color="#003D74" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g2" cx=".85" cy=".8" r=".6"><stop offset="0" stop-color="#EC7000" stop-opacity=".35"/><stop offset="1" stop-color="#EC7000" stop-opacity="0"/></radialGradient>
+  </defs>
+  <style>
+    .onda { animation: onda 2.4s ease-out infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes onda { 0% { transform: scale(1); opacity: .7; } 100% { transform: scale(1.35); opacity: 0; } }
+    .entra { opacity: 0; animation: entra .8s cubic-bezier(.2,.8,.2,1) forwards; }
+    @keyframes entra { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+    .mao { animation: aceno 2s ease-in-out infinite; transform-box: fill-box; transform-origin: 70% 90%; }
+    @keyframes aceno { 0%,60%,100% { transform: rotate(0); } 10%,30% { transform: rotate(14deg); } 20%,40% { transform: rotate(-8deg); } }
+  </style>
+  <rect width="1200" height="210" rx="16" fill="#0d1117" stroke="#30363d"/>
+  <rect width="1200" height="210" rx="16" fill="url(#g1)"/><rect width="1200" height="210" rx="16" fill="url(#g2)"/>
+  <text x="60" y="92" font-size="44" class="mao">👋</text>
+  <text x="130" y="88" class="entra" style="font: 800 34px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; animation-delay:.2s" fill="#fff">Vamos conversar?</text>
+  <text x="132" y="122" class="entra" style="font: 400 17px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; animation-delay:.4s" fill="#c9d1d9">Disponível para oportunidades em desenvolvimento Java backend.</text>
+  <text x="132" y="150" class="entra" style="font: 400 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; animation-delay:.6s" fill="#8b949e">Java · Spring Boot · APIs REST · JPA · Testes · CI/CD</text>
+  <g transform="translate(860 70)">
+    <rect width="290" height="64" rx="32" fill="none" stroke="#EC7000" stroke-width="2" class="onda"/>
+    <rect width="290" height="64" rx="32" fill="url(#marca)"/>
+    <text x="145" y="40" text-anchor="middle" style="font: 700 18px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#fff">Falar no LinkedIn  ›</text>
+  </g>
+</svg>

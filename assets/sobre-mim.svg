@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="598" viewBox="0 0 1200 598" role="img" aria-label="Classe Java Kevin: nome, cidade, empresa, nível, foco, aprendizado e próximo passo">
+  <!-- Gerado por scripts/svgs.mjs. Não edite à mão. -->
+  <style>
+    .cod { font: 400 16px Consolas, 'Fira Code', 'JetBrains Mono', Menlo, monospace; fill: #c9d1d9; }
+    .num { font: 400 13px Consolas, 'Fira Code', 'JetBrains Mono', Menlo, monospace; fill: #484f58; }
+    .ln { opacity: 0; animation: mostra .25s ease-out forwards; }
+    @keyframes mostra { from { opacity: 0; transform: translateX(-6px); } to { opacity: 1; transform: none; } }
+    .cursor { animation: pisca 1s step-end infinite; }
+    @keyframes pisca { 50% { opacity: 0; } }
+  </style>
+  <rect width="1200" height="598" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <rect width="1200" height="38" rx="12" fill="#161b22"/><rect y="26" width="1200" height="12" fill="#161b22"/>
+  <circle cx="22" cy="19" r="6" fill="#ff5f56"/><circle cx="42" cy="19" r="6" fill="#ffbd2e"/><circle cx="62" cy="19" r="6" fill="#27c93f"/>
+  <rect x="90" y="8" width="130" height="30" rx="6" fill="#0d1117"/>
+  <text x="104" y="28" style="font: 600 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">☕ Kevin.java</text>
+  <text x="1180" y="25" text-anchor="end" style="font: 400 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">Java 25 · UTF-8 · LF</text>
+  <text x="64" y="74" class="cod ln" style="animation-delay:0.40s" xml:space="preserve"><tspan fill="#ff7b72">public</tspan> <tspan fill="#ff7b72">class</tspan> <tspan fill="#ffa657">Kevin</tspan> <tspan fill="#ff7b72">extends</tspan> <tspan fill="#ffa657">Developer</tspan> <tspan fill="#ff7b72">implements</tspan> <tspan fill="#ffa657">AprendizContinuo</tspan> {</text>
+    <text x="40" y="74" text-anchor="end" class="num ln" style="animation-delay:0.40s">1</text>
+    <text x="64" y="98" class="cod ln" style="animation-delay:0.52s" xml:space="preserve"></text>
+    <text x="40" y="98" text-anchor="end" class="num ln" style="animation-delay:0.52s">2</text>
+    <text x="64" y="122" class="cod ln" style="animation-delay:0.64s" xml:space="preserve">    <tspan fill="#ff7b72">String</tspan> nome     = <tspan fill="#a5d6ff">&quot;<tspan fill="#ffa657">Kevin</tspan> Richard&quot;</tspan>;</text>
+    <text x="40" y="122" text-anchor="end" class="num ln" style="animation-delay:0.64s">3</text>
+    <text x="64" y="146" class="cod ln" style="animation-delay:0.76s" xml:space="preserve">    <tspan fill="#ff7b72">String</tspan> cidade   = <tspan fill="#a5d6ff">&quot;Osasco, SP&quot;</tspan>;</text>
+    <text x="40" y="146" text-anchor="end" class="num ln" style="animation-delay:0.76s">4</text>
+    <text x="64" y="170" class="cod ln" style="animation-delay:0.88s" xml:space="preserve">    <tspan fill="#ff7b72">String</tspan> empresa  = <tspan fill="#a5d6ff">&quot;Zup Innovation (grupo Itaú)&quot;</tspan>;</text>
+    <text x="40" y="170" text-anchor="end" class="num ln" style="animation-delay:0.88s">5</text>
+    <text x="64" y="194" class="cod ln" style="animation-delay:1.00s" xml:space="preserve">    <tspan fill="#ff7b72">String</tspan> nivel    = &quot;Junior -&gt; Pleno (em progresso)&quot;;</text>
+    <text x="40" y="194" text-anchor="end" class="num ln" style="animation-delay:1.00s">6</text>
+    <text x="64" y="218" class="cod ln" style="animation-delay:1.12s" xml:space="preserve">    <tspan fill="#ff7b72">String</tspan> entrada  = <tspan fill="#a5d6ff">&quot;Programa Catalisa - Zup Innovation&quot;</tspan>;</text>
+    <text x="40" y="218" text-anchor="end" class="num ln" style="animation-delay:1.12s">7</text>
+    <text x="64" y="242" class="cod ln" style="animation-delay:1.24s" xml:space="preserve"></text>
+    <text x="40" y="242" text-anchor="end" class="num ln" style="animation-delay:1.24s">8</text>
+    <text x="64" y="266" class="cod ln" style="animation-delay:1.36s" xml:space="preserve">    <tspan fill="#ff7b72">List</tspan>&lt;<tspan fill="#ff7b72">String</tspan>&gt; foco       = <tspan fill="#ff7b72">List</tspan>.of(<tspan fill="#a5d6ff">&quot;Java&quot;</tspan>, <tspan fill="#a5d6ff">&quot;Spring Boot&quot;</tspan>, <tspan fill="#a5d6ff">&quot;APIs REST&quot;</tspan>, <tspan fill="#a5d6ff">&quot;JPA/Hibernate&quot;</tspan>, <tspan fill="#a5d6ff">&quot;Testes&quot;</tspan>, <tspan fill="#a5d6ff">&quot;MongoDB&quot;</tspan>);</text>
+    <text x="40" y="266" text-anchor="end" class="num ln" style="animation-delay:1.36s">9</text>
+    <text x="64" y="290" class="cod ln" style="animation-delay:1.48s" xml:space="preserve">    <tspan fill="#ff7b72">List</tspan>&lt;<tspan fill="#ff7b72">String</tspan>&gt; aprendendo = <tspan fill="#ff7b72">List</tspan>.of(<tspan fill="#a5d6ff">&quot;AWS&quot;</tspan>, <tspan fill="#a5d6ff">&quot;AI Agents&quot;</tspan>, <tspan fill="#a5d6ff">&quot;Spec-Driven Development&quot;</tspan>, <tspan fill="#a5d6ff">&quot;Skill em IA&quot;</tspan>);</text>
+    <text x="40" y="290" text-anchor="end" class="num ln" style="animation-delay:1.48s">10</text>
+    <text x="64" y="314" class="cod ln" style="animation-delay:1.60s" xml:space="preserve">    <tspan fill="#ff7b72">String</tspan> ingles           = <tspan fill="#a5d6ff">&quot;Básico (em desenvolvimento ativo)&quot;</tspan>;</text>
+    <text x="40" y="314" text-anchor="end" class="num ln" style="animation-delay:1.60s">11</text>
+    <text x="64" y="338" class="cod ln" style="animation-delay:1.72s" xml:space="preserve"></text>
+    <text x="40" y="338" text-anchor="end" class="num ln" style="animation-delay:1.72s">12</text>
+    <text x="64" y="362" class="cod ln" style="animation-delay:1.84s" xml:space="preserve">    <tspan fill="#d2a8ff">@Override</tspan></text>
+    <text x="40" y="362" text-anchor="end" class="num ln" style="animation-delay:1.84s">13</text>
+    <text x="64" y="386" class="cod ln" style="animation-delay:1.96s" xml:space="preserve">    <tspan fill="#ff7b72">public</tspan> <tspan fill="#ff7b72">String</tspan> proximoPasso() {</text>
+    <text x="40" y="386" text-anchor="end" class="num ln" style="animation-delay:1.96s">14</text>
+    <text x="64" y="410" class="cod ln" style="animation-delay:2.08s" xml:space="preserve">        <tspan fill="#ff7b72">return</tspan> <tspan fill="#a5d6ff">&quot;Dominar o ecossistema Spring, evoluir para Pleno e ampliar meu impacto técnico.&quot;</tspan>;</text>
+    <text x="40" y="410" text-anchor="end" class="num ln" style="animation-delay:2.08s">15</text>
+    <text x="64" y="434" class="cod ln" style="animation-delay:2.20s" xml:space="preserve">    }</text>
+    <text x="40" y="434" text-anchor="end" class="num ln" style="animation-delay:2.20s">16</text>
+    <text x="64" y="458" class="cod ln" style="animation-delay:2.32s" xml:space="preserve"></text>
+    <text x="40" y="458" text-anchor="end" class="num ln" style="animation-delay:2.32s">17</text>
+    <text x="64" y="482" class="cod ln" style="animation-delay:2.44s" xml:space="preserve">    <tspan fill="#ff7b72">public</tspan> <tspan fill="#ff7b72">String</tspan> mentalidade() {</text>
+    <text x="40" y="482" text-anchor="end" class="num ln" style="animation-delay:2.44s">18</text>
+    <text x="64" y="506" class="cod ln" style="animation-delay:2.56s" xml:space="preserve">        <tspan fill="#ff7b72">return</tspan> <tspan fill="#a5d6ff">&quot;Informação e conhecimento nunca são demais.&quot;</tspan>;</text>
+    <text x="40" y="506" text-anchor="end" class="num ln" style="animation-delay:2.56s">19</text>
+    <text x="64" y="530" class="cod ln" style="animation-delay:2.68s" xml:space="preserve">    }</text>
+    <text x="40" y="530" text-anchor="end" class="num ln" style="animation-delay:2.68s">20</text>
+    <text x="64" y="554" class="cod ln" style="animation-delay:2.80s" xml:space="preserve">}</text>
+    <text x="40" y="554" text-anchor="end" class="num ln" style="animation-delay:2.80s">21</text>
+  <rect x="64" y="562" width="9" height="3" fill="#EC7000" class="cursor"/>
+</svg>
