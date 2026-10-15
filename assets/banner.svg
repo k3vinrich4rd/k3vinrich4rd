@@ -82,12 +82,12 @@
     <text x="240" y="22" text-anchor="middle" class="mono" font-size="12" fill="#8b949e">kevin@zup: ~ — bash</text>
     <text x="24" y="64" class="mono"><tspan fill="#EC7000" font-weight="bold">➜ </tspan><tspan fill="#58a6ff">~ </tspan><tspan class="digita" fill="#e6edf3">kevin --status</tspan></text>
     <g>
-      <text x="24" y="92" class="mono ln" style="animation-delay:1.20s"><tspan class="key">nível    </tspan><tspan class="val">Junior → Pleno</tspan></text>
-      <text x="24" y="117" class="mono ln" style="animation-delay:1.55s"><tspan class="key">empresa  </tspan><tspan class="val">Zup Innovation · Itaú</tspan></text>
-      <text x="24" y="142" class="mono ln" style="animation-delay:1.90s"><tspan class="key">stack    </tspan><tspan class="val">Java 25 · Spring Boot 4</tspan></text>
-      <text x="24" y="167" class="mono ln" style="animation-delay:2.25s"><tspan class="key">projeto  </tspan><tspan class="val">RKF Bank (banco digital)</tspan></text>
-      <text x="24" y="192" class="mono ln" style="animation-delay:2.60s"><tspan class="key">testes   </tspan><tspan class="ok">107 ✔ BUILD SUCCESS</tspan></text>
-      <text x="24" y="217" class="mono ln" style="animation-delay:2.95s"><tspan class="key">foco     </tspan><tspan class="or">Flyway → JWT → Testcontainers</tspan></text>
+      <text x="24" y="92" class="mono ln" style="animation-delay:1.20s"><tspan class="key">nível</tspan><tspan x="110" class="val">Junior → Pleno</tspan></text>
+      <text x="24" y="117" class="mono ln" style="animation-delay:1.55s"><tspan class="key">empresa</tspan><tspan x="110" class="val">Zup Innovation · Itaú</tspan></text>
+      <text x="24" y="142" class="mono ln" style="animation-delay:1.90s"><tspan class="key">stack</tspan><tspan x="110" class="val">Java 25 · Spring Boot 4</tspan></text>
+      <text x="24" y="167" class="mono ln" style="animation-delay:2.25s"><tspan class="key">projeto</tspan><tspan x="110" class="val">RKF Bank (banco digital)</tspan></text>
+      <text x="24" y="192" class="mono ln" style="animation-delay:2.60s"><tspan class="key">testes</tspan><tspan x="110" class="ok">107 ✔ BUILD SUCCESS</tspan></text>
+      <text x="24" y="217" class="mono ln" style="animation-delay:2.95s"><tspan class="key">foco</tspan><tspan x="110" class="or">Flyway → JWT → Testcontainers</tspan></text>
     </g>
     <g class="ln" style="animation-delay:3.30s">
       <text x="24" y="246" class="mono key">pleno</text>

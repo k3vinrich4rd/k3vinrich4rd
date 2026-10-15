@@ -151,7 +151,7 @@ function svgBanner() {
     ['foco', trilha, 'or'],
   ];
   const termo = linhas.map(([k, v, c], i) =>
-    `<text x="24" y="${92 + i * 25}" class="mono ln" style="animation-delay:${(1.2 + i * 0.35).toFixed(2)}s"><tspan class="key">${xml(k.padEnd(9))}</tspan><tspan class="${c || 'val'}">${xml(v)}</tspan></text>`).join('\n      ');
+    `<text x="24" y="${92 + i * 25}" class="mono ln" style="animation-delay:${(1.2 + i * 0.35).toFixed(2)}s"><tspan class="key">${xml(k)}</tspan><tspan x="110" class="${c || 'val'}">${xml(v)}</tspan></text>`).join('\n      ');
   const yBarra = 92 + linhas.length * 25;
   const atraso = (1.2 + linhas.length * 0.35).toFixed(2);
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-label="Kevin Richard, desenvolvedor Java backend. Régua Pleno ${regua.praticadas} de ${regua.total}, ${rkf.testes} testes no RKF Bank. Disponível para oportunidades.">
