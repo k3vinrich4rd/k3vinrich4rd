@@ -27,6 +27,10 @@
     .pulso { animation: pulso 1.8s ease-in-out infinite; transform-origin: 54px 64px; }
     @keyframes pulso { 0%,100% { opacity: 1; } 50% { opacity: .35; } }
     .scan { animation: scan 6s linear infinite; }
+    .aceno { animation: aceno 1.8s ease-in-out infinite; }
+    @keyframes aceno { 0%,55%,100% { transform: rotate(0deg); } 12%,36% { transform: rotate(16deg); } 24%,48% { transform: rotate(-10deg); } }
+    .anda-avatar { animation: passo .5s ease-in-out infinite alternate; }
+    @keyframes passo { from { transform: translateY(0); } to { transform: translateY(-4px); } }
     @keyframes scan { from { transform: translateY(-40px); } to { transform: translateY(440px); } }
   </style>
 
@@ -73,6 +77,29 @@
       <text x="420" y="342" font-size="12" fill="#8b949e">entregas do MVP</text>
     </g>
   </g>
+
+  <g class="entra" style="animation-delay:1.3s"><g transform="translate(566 214) scale(0.95)">
+    <g class="">
+      <ellipse cx="50" cy="121" rx="30" ry="3" fill="#000" opacity=".35"/>
+      <path d="M12 120 C12 90 29 78 50 78 C71 78 88 90 88 120 Z" fill="#003D74"/>
+      <path d="M50 80 L50 120" stroke="#EC7000" stroke-width="2.5"/>
+      <path d="M38 80 Q50 92 62 80" fill="none" stroke="#0a2c52" stroke-width="3"/>
+      <rect x="42" y="62" width="16" height="18" rx="5" fill="#45281a"/>
+      <circle cx="28" cy="46" r="5.5" fill="#45281a"/>
+      <circle cx="72" cy="46" r="5.5" fill="#45281a"/>
+      <ellipse cx="50" cy="44" rx="22" ry="25" fill="#5a3520"/>
+      <path d="M28 41 C26 21 38 14 50 14 C63 14 75 21 72 41 C70 30 62 26 50 26 C38 26 30 30 28 41 Z" fill="#121212"/>
+      <path d="M29 48 C30 62 39 70 50 70 C61 70 70 62 71 48 C68 58 61 63 50 63 C39 63 32 58 29 48 Z" fill="#121212"/>
+      <path d="M38 38 h7 M55 38 h7" stroke="#121212" stroke-width="2.4" stroke-linecap="round"/>
+      <circle cx="42" cy="45" r="2.4" fill="#0d0d0d"/>
+      <circle cx="58" cy="45" r="2.4" fill="#0d0d0d"/>
+      <path d="M44 56 Q50 61 56 56" stroke="#f2e6dc" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <g class="aceno" style="transform-origin: 80px 92px">
+        <path d="M78 92 Q92 74 94 56" stroke="#003D74" stroke-width="11" stroke-linecap="round" fill="none"/>
+        <circle cx="94" cy="52" r="7" fill="#5a3520"/>
+      </g>
+    </g>
+  </g></g>
 
   <g transform="translate(680 40)">
     <rect width="480" height="320" rx="12" fill="#0d1117" fill-opacity=".92" stroke="#30363d"/>

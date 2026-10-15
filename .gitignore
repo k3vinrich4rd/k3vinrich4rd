@@ -1,3 +1,6 @@
 automacao/config.json
 automacao/sync.log
 node_modules/
+.claude/
+.previa.html
+.previa-readme.html

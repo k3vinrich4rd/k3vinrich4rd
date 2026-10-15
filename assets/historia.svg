@@ -16,6 +16,10 @@
     @keyframes rastro { 0.00% { transform: scaleX(0.0010); } 13.67% { transform: scaleX(0.0010); } 16.67% { transform: scaleX(0.2000); } 30.33% { transform: scaleX(0.2000); } 33.33% { transform: scaleX(0.4000); } 47.00% { transform: scaleX(0.4000); } 50.00% { transform: scaleX(0.6000); } 63.67% { transform: scaleX(0.6000); } 66.67% { transform: scaleX(0.8000); } 80.33% { transform: scaleX(0.8000); } 83.33% { transform: scaleX(1.0000); } 97.00% { transform: scaleX(1.0000); } 100% { transform: scaleX(1); } }
     .pulso { animation: pulso 1.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
     @keyframes pulso { 0%,100% { transform: scale(1); opacity: .9; } 50% { transform: scale(1.6); opacity: .25; } }
+    .aceno { animation: aceno 1.8s ease-in-out infinite; }
+    @keyframes aceno { 0%,55%,100% { transform: rotate(0deg); } 12%,36% { transform: rotate(16deg); } 24%,48% { transform: rotate(-10deg); } }
+    .anda-avatar { animation: passo .5s ease-in-out infinite alternate; }
+    @keyframes passo { from { transform: translateY(0); } to { transform: translateY(-4px); } }
   </style>
   <rect width="1200" height="370" rx="14" fill="#0d1117" stroke="#30363d"/>
   <rect width="1200" height="370" rx="14" fill="url(#brilho)"/>
@@ -84,5 +88,23 @@
     <text x="894" y="346" text-anchor="middle" class="marco">2026</text>
     <circle cx="1090" cy="318" r="7" fill="#0d1117" stroke="#EC7000" stroke-width="2"/>
     <text x="1090" y="346" text-anchor="middle" class="marco">Agora</text>
-  <g class="marcador"><circle cx="110" cy="318" r="10" fill="#EC7000" class="pulso"/><circle cx="110" cy="318" r="7" fill="#EC7000"/></g>
+  <g class="marcador"><g transform="translate(80 238) scale(0.6)">
+    <g class="anda-avatar">
+      <ellipse cx="50" cy="121" rx="30" ry="3" fill="#000" opacity=".35"/>
+      <path d="M12 120 C12 90 29 78 50 78 C71 78 88 90 88 120 Z" fill="#003D74"/>
+      <path d="M50 80 L50 120" stroke="#EC7000" stroke-width="2.5"/>
+      <path d="M38 80 Q50 92 62 80" fill="none" stroke="#0a2c52" stroke-width="3"/>
+      <rect x="42" y="62" width="16" height="18" rx="5" fill="#45281a"/>
+      <circle cx="28" cy="46" r="5.5" fill="#45281a"/>
+      <circle cx="72" cy="46" r="5.5" fill="#45281a"/>
+      <ellipse cx="50" cy="44" rx="22" ry="25" fill="#5a3520"/>
+      <path d="M28 41 C26 21 38 14 50 14 C63 14 75 21 72 41 C70 30 62 26 50 26 C38 26 30 30 28 41 Z" fill="#121212"/>
+      <path d="M29 48 C30 62 39 70 50 70 C61 70 70 62 71 48 C68 58 61 63 50 63 C39 63 32 58 29 48 Z" fill="#121212"/>
+      <path d="M38 38 h7 M55 38 h7" stroke="#121212" stroke-width="2.4" stroke-linecap="round"/>
+      <circle cx="42" cy="45" r="2.4" fill="#0d0d0d"/>
+      <circle cx="58" cy="45" r="2.4" fill="#0d0d0d"/>
+      <path d="M44 56 Q50 61 56 56" stroke="#f2e6dc" stroke-width="2" fill="none" stroke-linecap="round"/>
+      
+    </g>
+  </g><circle cx="110" cy="318" r="10" fill="#EC7000" class="pulso"/><circle cx="110" cy="318" r="7" fill="#EC7000"/></g>
 </svg>

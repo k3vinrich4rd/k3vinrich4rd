@@ -3,6 +3,7 @@
 // Uso: node scripts/atualizar-readme.mjs [--api]
 import path from 'node:path';
 import { RAIZ, ler, escrever, substituirBloco, xml } from './lib.mjs';
+import * as svg from './svgs.mjs';
 
 const USUARIO = 'k3vinrich4rd';
 const usarApi = process.argv.includes('--api');
@@ -237,7 +238,7 @@ function svgBanner() {
     @keyframes enche { to { transform: scaleX(1); } }
     .pulso { animation: pulso 1.8s ease-in-out infinite; transform-origin: 54px 64px; }
     @keyframes pulso { 0%,100% { opacity: 1; } 50% { opacity: .35; } }
-    .scan { animation: scan 6s linear infinite; }
+    .scan { animation: scan 6s linear infinite; }${svg.estiloAvatar}
     @keyframes scan { from { transform: translateY(-40px); } to { transform: translateY(440px); } }
   </style>
 
@@ -273,6 +274,8 @@ function svgBanner() {
       <text x="420" y="342" font-size="12" fill="#8b949e">entregas do MVP</text>
     </g>
   </g>
+
+  <g class="entra" style="animation-delay:1.3s">${svg.avatar(566, 214, 0.95, { acenar: true })}</g>
 
   <g transform="translate(680 40)">
     <rect width="480" height="320" rx="12" fill="#0d1117" fill-opacity=".92" stroke="#30363d"/>
@@ -419,9 +422,9 @@ readme = substituirBloco(readme, 'dica', blocoDica());
 if (ck.gantt) readme = substituirBloco(readme, 'gantt', ck.gantt);
 // Números soltos no texto que acompanham o progresso.
 readme = readme
-  .replace(/d+(?= testes, JaCoCo)/, rkf.testes)
-  .replace(/(Terminal rodando os testes do RKF Bank: )d+/, `$1${rkf.testes}`)
-  .replace(/(Rumo ao Pleno: )d+ de d+/, `$1${regua.praticadas} de ${regua.total}`);
+  .replace(/\d+(?= testes, JaCoCo)/, rkf.testes)
+  .replace(/(Terminal rodando os testes do RKF Bank: )\d+/, `$1${rkf.testes}`)
+  .replace(/(Rumo ao Pleno: )\d+ de \d+/, `$1${regua.praticadas} de ${regua.total}`);
 
 if (usarApi) {
   try {
@@ -434,8 +437,54 @@ if (usarApi) {
   }
 }
 
+// ---------- SVGs animados das seções (história, números, botões...) ----------
+
+const anoAtual = Number(new Date().toLocaleDateString('sv-SE', { timeZone: 'America/Sao_Paulo' }).slice(0, 4));
+const totalRepos = Number(/Meus (\d+) repositórios/.exec(readme)?.[1] ?? 0);
+const formacao = readme.slice(readme.indexOf('## 🎓 Formação'));
+const certificacoes = (formacao.match(/^\| (?!Certificação|---)[^|]+\| [^|]+\|$/gm) ?? []).length;
+const estudos = p.estudos ?? [];
+const classeKevin = /## 🚀 Sobre mim[\s\S]*?```java\n([\s\S]*?)\n```/.exec(readme)?.[1].split('\n') ?? [];
+
+const arquivosSvg = {
+  'historia.svg': svg.historia({ testes: rkf.testes, praticadas: regua.praticadas, total: regua.total, foco: apelido(p.foco) }),
+  'numeros.svg': svg.numeros([
+    [anoAtual - 2022, 'anos codando', 'desde o Catalisa, em 2022', '#58a6ff'],
+    [totalRepos, 'repositórios', 'de exercícios a projetos reais', '#EC7000'],
+    [rkf.testes, 'testes no RKF Bank', 'BUILD SUCCESS ✔', '#3fb950'],
+    [`${regua.praticadas}/${regua.total}`, 'régua Pleno', 'competências praticadas', '#EC7000'],
+    [estudos.filter((e) => e.status === 'praticado').length, 'assuntos praticados', `de ${estudos.length} no meu Obsidian`, '#d2a8ff'],
+    [certificacoes, 'certificações', 'Alura · Udemy · AWS · Workover', '#58a6ff'],
+  ]),
+  'sobre-mim.svg': svg.ide(classeKevin),
+  'divisor.svg': svg.divisor(),
+  'chamada.svg': svg.chamada(),
+};
+const botoes = {
+  // Larguras pensadas para caber 5 botões por linha na coluna do perfil (~830px).
+  'trilhas.svg': ['Trilhas', { icone: '🎮', largura: 128 }],
+  'ao-vivo.svg': ['Ao vivo', { icone: '📡', largura: 132 }],
+  'historia.svg': ['Trajetória', { icone: '🧭', largura: 148 }],
+  'rkf-bank.svg': ['Projeto atual', { icone: '🏦', largura: 168, destaque: true }],
+  'projetos.svg': ['Projetos', { icone: '🗂️', largura: 138 }],
+  'pleno.svg': ['Junior → Pleno', { icone: '📈', largura: 176 }],
+  'roadmap.svg': ['Roadmap', { icone: '🎯', largura: 142 }],
+  'stack.svg': ['Stack', { icone: '🛠️', largura: 118 }],
+  'perguntas.svg': ['Perguntas', { icone: '💬', largura: 148 }],
+  'formacao.svg': ['Formação', { icone: '🎓', largura: 146 }],
+  'trilha-recrutador.svg': ['Sou recrutador(a) e tenho 1 minuto', { icone: '💼', largura: 400, destaque: true, sub: 'Quem sou, melhor projeto, stack e contato' }],
+  'trilha-dev.svg': ['Sou dev e quero ver código', { icone: '👩‍💻', largura: 400, cor: '#58a6ff', sub: 'Roteiro de leitura do mais simples ao mais completo' }],
+  'trilha-iniciante.svg': ['Também estou começando na área', { icone: '🌱', largura: 400, cor: '#3fb950', sub: 'O caminho que funcionou para mim' }],
+  'ver-codigo.svg': ['Ver código', { icone: '📂', largura: 170, cor: '#58a6ff' }],
+  'ler-readme.svg': ['Ler o README', { icone: '📖', largura: 190 }],
+  'linkedin.svg': ['Chamar no LinkedIn', { icone: '📩', largura: 240, destaque: true }],
+  'email.svg': ['Enviar e-mail', { icone: '✉️', largura: 190, cor: '#ff7b72' }],
+};
+
 const mudancas = [
   escrever(arquivoReadme, readme) && 'README.md',
+  ...Object.entries(arquivosSvg).map(([nome, conteudo]) => escrever(path.join(RAIZ, 'assets', nome), conteudo) && `assets/${nome}`),
+  ...Object.entries(botoes).map(([nome, [texto, op]]) => escrever(path.join(RAIZ, 'assets', 'botoes', nome), svg.botao(texto, op)) && `assets/botoes/${nome}`),
   escrever(path.join(RAIZ, 'assets', 'banner.svg'), svgBanner()) && 'assets/banner.svg',
   escrever(path.join(RAIZ, 'assets', 'rumo-ao-pleno.svg'), svgRumoAoPleno()) && 'assets/rumo-ao-pleno.svg',
   escrever(path.join(RAIZ, 'assets', 'terminal.svg'), atualizarTerminal(ler(path.join(RAIZ, 'assets', 'terminal.svg')))) && 'assets/terminal.svg',
