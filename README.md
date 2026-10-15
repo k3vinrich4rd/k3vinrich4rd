@@ -140,12 +140,12 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:atividade:START -->
 | Repositório | Último commit | Quando |
 |---|---|---|
+| [`JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`0849493`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/0849493f006f8569a3c9a93e9578c3ba795d6921) docs: adiciona README com modelo de dominio, endpoints e exemplos reais | 15/10/2026 |
+| [`JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`cf381a2`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/cf381a2b0fdf09b7ce7b3c3784be9cc876f6352e) fix: salva application-test.properties em UTF-8 | 15/10/2026 |
 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`7131627`](https://github.com/k3vinrich4rd/rkf_bank/commit/7131627a2753c87a93a990477f6381d6d095d0f2) Merge pull request #21 from k3vinrich4rd/fix/vulnerabilidades-dependencias | 15/10/2026 |
 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`81a35a0`](https://github.com/k3vinrich4rd/rkf_bank/commit/81a35a00b419267ccd1476b91d07c2df615a3ea5) Merge remote-tracking branch 'origin/develop' into fix/vulnerabilidades-dependen | 15/10/2026 |
-| [`JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`936b7fa`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/936b7fafbb49c01ce52f5f5d565eb0c0e15ca4ca) feat: ajuste de metodo acessor e inclusão de comentarios | 09/10/2026 |
 | [`desafio-devsuperior-crud-clientes`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) | [`9b0eb79`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes/commit/9b0eb794bf407bdbe22af1196065717ef72591a9) feat: implementando correcao sugerida no feedback | 05/10/2026 |
 | [`desafio-devsuperior-crud-clientes`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) | [`081441f`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes/commit/081441fdfcf7970ac1da4a4c57bc751327618575) feat: implementando atualizacoes de readme | 01/10/2026 |
-| [`JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`ed0d48d`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/ed0d48d187403513fa204be6027351c7f3048b5f) feat: implementando bean Validation | 29/09/2026 |
 | [`workshop-springboot4-mongodb`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb) | [`ecad5ce`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb/commit/ecad5cec16d1f5ef7b606e6f8b5daf5ce74ade25) feat: Implementando ajustes no projeto | 15/09/2026 |
 | [`workshop-springboot4-mongodb`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb) | [`264463c`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb/commit/264463cd568db8f49e9a3b154dc305bfb5adc906) feat: Implementando ajustes de comentarios no projeto e README.md | 06/09/2026 |
 
@@ -526,10 +526,10 @@ pie showData
     title Linguagem principal dos repositórios
     "Java" : 66
     "Kotlin" : 8
-    "Sem linguagem" : 5
     "HTML" : 4
+    "Sem linguagem" : 4
+    "JavaScript" : 3
     "Python" : 3
-    "JavaScript" : 2
 ```
 
 ```mermaid
