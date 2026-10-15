@@ -78,6 +78,27 @@ function historico() {
     .slice(0, 5);
 }
 
+function estudos() {
+  const raiz = vault('03 Estudos');
+  if (!fs.existsSync(raiz)) return anterior.estudos ?? [];
+  const lista = [];
+  for (const area of fs.readdirSync(raiz, { withFileTypes: true }).filter((e) => e.isDirectory())) {
+    for (const arq of fs.readdirSync(path.join(raiz, area.name)).filter((f) => f.endsWith('.md')).sort()) {
+      const md = ler(path.join(raiz, area.name, arq));
+      const fm = frontmatter(md);
+      if (fm.tipo !== 'estudo') continue;
+      const passos = tarefas(md); // todas as tarefas da nota, em qualquer seção
+      lista.push({
+        nome: arq.replace(/\.md$/, ''),
+        area: fm.area ?? area.name,
+        status: fm.status ?? 'andamento',
+        passos: { feitos: passos.filter((p) => p.feito).length, total: passos.length },
+      });
+    }
+  }
+  return lista;
+}
+
 function rkf() {
   const repo = cfg.rkfbank;
   if (!repo || !fs.existsSync(repo)) return anterior.rkf ?? {};
@@ -104,6 +125,7 @@ const progresso = {
   trilha: (reguaAtual?.itens ?? []).filter((i) => i.status !== 'praticada').map((i) => i.nome),
   rkf: { ...rkf(), checklist: lista },
   historico: historico(),
+  estudos: estudos(),
 };
 
 // A data só muda quando algum dado mudou, para não gerar commit vazio todo dia.

@@ -395,5 +395,241 @@
       "mudou": "34 testes `@DataJpaTest`, H2 2.3.232, docs",
       "aprendizado": "testar mapeamento JPA de verdade (cascata, `orphanRemoval`, `@Version`)"
     }
+  ],
+  "estudos": [
+    {
+      "nome": "Integração com APIs externas",
+      "area": "Arquitetura",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 3
+      }
+    },
+    {
+      "nome": "Lock otimista e transações",
+      "area": "Arquitetura",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 3
+      }
+    },
+    {
+      "nome": "Logs e observabilidade",
+      "area": "Arquitetura",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
+      "nome": "Mensageria e Outbox",
+      "area": "Arquitetura",
+      "status": "planejado",
+      "passos": {
+        "feitos": 0,
+        "total": 6
+      }
+    },
+    {
+      "nome": "AWS",
+      "area": "Cloud",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 10
+      }
+    },
+    {
+      "nome": "Flyway",
+      "area": "Dados",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 5
+      }
+    },
+    {
+      "nome": "H2 x MySQL",
+      "area": "Dados",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "MongoDB",
+      "area": "Dados",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "SQL e MySQL",
+      "area": "Dados",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
+      "nome": "Dependências e CVEs",
+      "area": "DevOps",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Docker e Compose",
+      "area": "DevOps",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
+      "nome": "Git Flow e commits semânticos",
+      "area": "DevOps",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "GitHub Actions",
+      "area": "DevOps",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 3
+      }
+    },
+    {
+      "nome": "Agentes e IA aplicada",
+      "area": "IA",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
+      "nome": "Spec-Driven Development",
+      "area": "IA",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 1
+      }
+    },
+    {
+      "nome": "Coleções Streams e Optional",
+      "area": "Java",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Exceções em Java",
+      "area": "Java",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "POO e SOLID",
+      "area": "Java",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
+      "nome": "Bean Validation",
+      "area": "Spring",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Spring Boot e camadas",
+      "area": "Spring",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 1
+      }
+    },
+    {
+      "nome": "Spring Data JPA e relacionamentos",
+      "area": "Spring",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
+      "nome": "Spring Security e JWT",
+      "area": "Spring",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 8
+      }
+    },
+    {
+      "nome": "Tratamento de erros REST",
+      "area": "Spring",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 1
+      }
+    },
+    {
+      "nome": "DataJpaTest",
+      "area": "Testes",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "JUnit e Mockito",
+      "area": "Testes",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Testcontainers",
+      "area": "Testes",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 7
+      }
+    }
   ]
 }

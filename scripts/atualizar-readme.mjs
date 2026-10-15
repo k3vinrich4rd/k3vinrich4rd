@@ -79,6 +79,61 @@ function blocoDiario() {
 ${historico.map((h) => `| ${h.data} | ${h.branch} | ${h.aprendizado} |`).join('\n')}`;
 }
 
+function blocoEstudos() {
+  const estudos = p.estudos ?? [];
+  if (!estudos.length) return '_Em breve._';
+  const icone = { praticado: '✅', andamento: '🔄', planejado: '⏳' };
+  const areas = [...new Set(estudos.map((e) => e.area))];
+  const conta = (st) => estudos.filter((e) => e.status === st).length;
+  const mapa = areas.map((a) => `    ${a}\n${estudos.filter((e) => e.area === a).map((e) => `      ${icone[e.status] ?? '•'} ${e.nome}`).join('\n')}`).join('\n');
+  const agora = estudos.filter((e) => e.status !== 'praticado')
+    .sort((a, b) => (a.status === 'andamento' ? -1 : 1) - (b.status === 'andamento' ? -1 : 1))
+    .map((e) => `| ${icone[e.status]} ${e.nome} | ${e.area} | ${e.passos.total ? `\`${barra(e.passos.feitos, e.passos.total, 10)}\` ${e.passos.feitos}/${e.passos.total}` : '—'} |`);
+  return `**${conta('praticado')}** assuntos praticados em projeto · **${conta('andamento')}** em andamento · **${conta('planejado')}** planejados
+
+\`\`\`mermaid
+mindmap
+  root((🧠 Estudos))
+${mapa}
+\`\`\`
+
+| Estudando agora | Área | Próximos passos |
+|---|---|---|
+${agora.join('\n')}
+
+<sub>🤖 Lido das notas de estudo do meu Obsidian em ${p.atualizado}.</sub>`;
+}
+
+const dicas = [
+  ['@Transactional(readOnly = true)', 'Em métodos só de leitura, avisa o Hibernate para não checar mudanças nas entidades: menos trabalho e intenção clara.'],
+  ['getReferenceById', 'No update, devolve uma referência sem fazer SELECT. O banco só é consultado quando você realmente precisa dos dados.'],
+  ['@Version', 'Lock otimista: se duas transações alteram a mesma linha, a segunda recebe conflito em vez de sobrescrever o dado.'],
+  ['BigDecimal', 'Dinheiro nunca em double: 0.1 + 0.2 em double dá 0.30000000000000004.'],
+  ['open-in-view=false', 'Desligar evita consultas escondidas na camada web e expõe cedo o famoso LazyInitializationException.'],
+  ['@MapsId', 'Faz a entidade filha usar o mesmo id da mãe, sem coluna extra. Ótimo para relações 1:1 que nascem juntas.'],
+  ['@EmbeddedId', 'Quando uma relação N:N tem dados próprios (quantidade, preço), ela vira entidade com chave composta.'],
+  ['@DataJpaTest', 'Sobe só a camada JPA: ideal para testar consultas derivadas, cascata e constraints sem subir a aplicação inteira.'],
+  ['Optional.orElseThrow', 'Transforma "não achei" em exceção de negócio numa linha, sem if de null espalhado pelo código.'],
+  ['@RestControllerAdvice', 'Centraliza o tratamento de erros: cada exceção vira um status HTTP e um JSON no mesmo formato.'],
+  ['ResponseEntity.created(uri)', 'No POST, devolve 201 com o header Location apontando para o recurso novo.'],
+  ['MDC + X-Request-Id', 'Coloque o id da requisição no MDC e ele aparece em todas as linhas de log daquela chamada.'],
+  ['Commits semânticos', 'feat:, fix:, test:, docs:... o histórico vira documentação e o changelog quase se escreve sozinho.'],
+  ['Records', 'DTOs imutáveis em uma linha: record ContaDto(UUID id, BigDecimal saldo) {}.'],
+  ['Flyway', 'Cada mudança de schema vira um V__*.sql versionado. Nada de ddl-auto=update em produção.'],
+  ['Testcontainers', 'Testa contra o MySQL de verdade num container, e não contra um H2 que se comporta diferente.'],
+  ['Pageable', 'Receba Pageable no controller e o Spring monta page, size e sort direto da URL.'],
+  ['@Valid + Bean Validation', 'Validação declarativa no DTO: a regra mora perto do dado e a mensagem sai pronta para o front.'],
+  ['equals/hashCode por id', 'Entidades em Set precisam de equals e hashCode consistentes, senão itens somem ou duplicam.'],
+  ['Dependabot + CodeQL', 'Segurança no automático: PRs de atualização e alerta de vulnerabilidade sem você lembrar de olhar.'],
+];
+
+function blocoDica() {
+  const agora = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/Sao_Paulo' }));
+  const dia = Math.floor((agora - new Date(agora.getFullYear(), 0, 0)) / 86400000);
+  const [titulo, texto] = dicas[dia % dicas.length];
+  return `> 💡 **Dica do dia: \`${titulo}\`**  \n> ${texto}  \n> <sub>Muda todo dia sozinha · ${dia % dicas.length + 1}/${dicas.length}</sub>`;
+}
+
 // ---------- SVGs ----------
 
 const apelidos = [
@@ -340,7 +395,7 @@ async function blocoAtividade(repos) {
         const data = c.commit.author.date.slice(0, 10).split('-').reverse().join('/');
         linhas.push([c.commit.author.date, `| [\`${r.name}\`](${r.html_url}) | [\`${c.sha.slice(0, 7)}\`](${c.html_url}) ${msg} | ${data} |`]);
       }
-    } catch (e) { console.warn(`aviso: ${e.message}`); }
+    } catch (e) { console.warn(`aviso: ${e.message}`); return null; } // tabela pela metade engana: mantém a anterior
   }
   if (!linhas.length) return null;
   return `| Repositório | Último commit | Quando |
@@ -359,6 +414,8 @@ readme = substituirBloco(readme, 'recrutador', blocoRecrutador());
 readme = substituirBloco(readme, 'regua', blocoRegua());
 readme = substituirBloco(readme, 'checklist', blocoChecklist());
 readme = substituirBloco(readme, 'diario', blocoDiario());
+readme = substituirBloco(readme, 'estudos', blocoEstudos());
+readme = substituirBloco(readme, 'dica', blocoDica());
 if (ck.gantt) readme = substituirBloco(readme, 'gantt', ck.gantt);
 // Números soltos no texto que acompanham o progresso.
 readme = readme

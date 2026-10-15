@@ -120,6 +120,12 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 
 > Esta seção se atualiza sozinha. Cada commit que eu faço alimenta o meu Obsidian, que alimenta este README. 🤖
 
+<!-- AUTO:dica:START -->
+> 💡 **Dica do dia: `Optional.orElseThrow`**  
+> Transforma "não achei" em exceção de negócio numa linha, sem if de null espalhado pelo código.  
+> <sub>Muda todo dia sozinha · 9/20</sub>
+<!-- AUTO:dica:END -->
+
 <!-- A cobrinha é gerada pelo workflow .github/workflows/snake.yml deste repositório (branch "output"). -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/k3vinrich4rd/k3vinrich4rd/output/snake-dark.svg" />
@@ -485,6 +491,7 @@ sequenceDiagram
 | **O que mostra** | transação atômica, lock otimista, ViaCEP com falha tratada, logs com `X-Request-Id` | modelo de domínio rico, chave composta (`OrdemItemPK`), Bean Validation, erros padronizados |
 | **Qualidade** | 107 testes, JaCoCo, CI com CodeQL e Dependabot | camadas controller → service → repository, `DatabaseException` para integridade referencial |
 | **Stack** | Java 25 · Spring Boot 4 · MySQL · Docker · Next.js | Java · Spring Boot · JPA · H2 |
+| **README** | [roteiro do projeto](https://github.com/k3vinrich4rd/rkf_bank#readme) | [modelo de domínio, endpoints e respostas reais](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM#readme) |
 | **Ver primeiro** | [`ContaService`](https://github.com/k3vinrich4rd/rkf_bank) · [roteiro no README](#-projeto-atual--rkf-bank) | [`ProductService`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/services/ProductService.java) · [`ControllerExceptionHandler`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/controllers/handlers/ControllerExceptionHandler.java) |
 
 ### 🧩 Outros projetos que valem o clique
@@ -1221,6 +1228,67 @@ quadrantChart
 
 </details>
 
+<details>
+<summary><b>📚 Mapa vivo dos meus estudos (sincronizado com o Obsidian)</b></summary>
+<br/>
+
+<!-- AUTO:estudos:START -->
+**19** assuntos praticados em projeto · **6** em andamento · **1** planejados
+
+```mermaid
+mindmap
+  root((🧠 Estudos))
+    Arquitetura
+      ✅ Integração com APIs externas
+      ✅ Lock otimista e transações
+      ✅ Logs e observabilidade
+      ⏳ Mensageria e Outbox
+    Cloud
+      🔄 AWS
+    Dados
+      🔄 Flyway
+      ✅ H2 x MySQL
+      ✅ MongoDB
+      ✅ SQL e MySQL
+    DevOps
+      ✅ Dependências e CVEs
+      ✅ Docker e Compose
+      ✅ Git Flow e commits semânticos
+      ✅ GitHub Actions
+    IA
+      🔄 Agentes e IA aplicada
+      🔄 Spec-Driven Development
+    Java
+      ✅ Coleções Streams e Optional
+      ✅ Exceções em Java
+      ✅ POO e SOLID
+    Spring
+      ✅ Bean Validation
+      ✅ Spring Boot e camadas
+      ✅ Spring Data JPA e relacionamentos
+      🔄 Spring Security e JWT
+      ✅ Tratamento de erros REST
+    Testes
+      ✅ DataJpaTest
+      ✅ JUnit e Mockito
+      🔄 Testcontainers
+```
+
+| Estudando agora | Área | Próximos passos |
+|---|---|---|
+| 🔄 AWS | Cloud | `░░░░░░░░░░` 0/10 |
+| 🔄 Flyway | Dados | `░░░░░░░░░░` 0/5 |
+| 🔄 Agentes e IA aplicada | IA | `░░░░░░░░░░` 0/2 |
+| 🔄 Spec-Driven Development | IA | `░░░░░░░░░░` 0/1 |
+| 🔄 Spring Security e JWT | Spring | `░░░░░░░░░░` 0/8 |
+| 🔄 Testcontainers | Testes | `░░░░░░░░░░` 0/7 |
+| ⏳ Mensageria e Outbox | Arquitetura | `░░░░░░░░░░` 0/6 |
+
+<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-10-15.</sub>
+<!-- AUTO:estudos:END -->
+
+</details>
+
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:003D74,100:EC7000&height=3&section=header" width="100%"/>
 
 ## 📊 GitHub Stats
@@ -1556,6 +1624,64 @@ Cada requisição recebe um `X-Request-Id` (ou reaproveita o que o frontend mand
 <br/>
 
 O CI tem **CodeQL**, **Dependency Review** e **Dependabot**. Quando o Spring Boot mais recente ainda trazia um Tomcat com 3 CVEs críticas e um Jackson com 7 CVEs, eu sobrescrevi só essas duas versões no `pom.xml`, validei com a suíte completa e com a aplicação rodando contra o MySQL, e deixei um comentário para remover a sobrescrita quando o Spring Boot alcançar.
+
+</details>
+
+### 🎯 Desafio relâmpago: quanto você sabe de backend?
+
+> Três perguntas tiradas dos meus projetos. Escolha uma resposta e clique para ver se acertou.
+
+**1. Duas transferências tentam debitar a mesma conta ao mesmo tempo. Com `@Version` na entidade, o que acontece com a segunda?**
+
+<details><summary>A) Sobrescreve o saldo da primeira</summary>
+
+❌ **Ainda não.** Isso é o que o lock otimista evita: sem ele, uma escrita apagaria a outra.
+
+</details>
+<details><summary>B) Recebe um conflito e a API devolve 409</summary>
+
+✅ **Isso!** A versão lida já não é a atual, o Hibernate lança <code>OptimisticLockException</code> e o RKF Bank responde <code>409</code>.
+
+</details>
+<details><summary>C) Fica esperando a primeira terminar</summary>
+
+❌ **Ainda não.** Esse é o lock <b>pessimista</b> (<code>SELECT ... FOR UPDATE</code>). O otimista não bloqueia, ele detecta o conflito.
+
+</details>
+
+**2. Um pedido tem vários produtos e cada item guarda quantidade e preço. Como mapear?**
+
+<details><summary>A) @ManyToMany direto entre Order e Product</summary>
+
+❌ **Ainda não.** O <code>@ManyToMany</code> puro não tem onde guardar quantidade e preço.
+
+</details>
+<details><summary>B) Entidade OrderItem com chave composta (@EmbeddedId)</summary>
+
+✅ **Isso!** Exatamente o que eu fiz no DSCommerce com <code>OrdemItemPK</code>: a associação vira entidade e ganha dados próprios.
+
+</details>
+<details><summary>C) Uma lista de ids de produto dentro do pedido</summary>
+
+❌ **Ainda não.** Perde a integridade referencial e não guarda o preço da compra.
+
+</details>
+
+**3. O ViaCEP não responde. Qual a melhor resposta da API de cadastro?**
+
+<details><summary>A) Ficar esperando até o ViaCEP voltar</summary>
+
+❌ **Ainda não.** Uma dependência lenta não pode travar a sua API inteira.
+
+</details>
+<details><summary>B) 500 Internal Server Error</summary>
+
+❌ **Ainda não.** O erro não é seu, é de um serviço externo. 500 esconde a causa.
+
+</details>
+<details><summary>C) Timeout curto e 503 Service Unavailable</summary>
+
+✅ **Isso!** É o que o RKF Bank faz: timeout de 3 s e <code>503</code> com mensagem clara. CEP inexistente vira <code>422</code>.
 
 </details>
 
