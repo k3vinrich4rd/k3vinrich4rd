@@ -1298,10 +1298,6 @@ mindmap
 <img src="https://github-readme-stats.vercel.app/api?username=k3vinrich4rd&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&rank_icon=github&bg_color=0d1117&title_color=EC7000&icon_color=003D74&text_color=ffffff" alt="GitHub Stats" width="49%"/>
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=k3vinrich4rd&theme=tokyonight&hide_border=true&background=0d1117&ring=EC7000&fire=EC7000&currStreakLabel=EC7000&sideLabels=003D74" alt="GitHub Streak" width="49%"/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=k3vinrich4rd&theme=tokyo-night&hide_border=true&area=true&area_color=EC7000&color=ffffff&line=003D74&point=EC7000&bg_color=0d1117&custom_title=Frequ%C3%AAncia%20de%20Commits" alt="Gráfico de atividade" width="98%"/>
-
-<img src="https://github-profile-trophy.vercel.app/?username=k3vinrich4rd&theme=tokyonight&no-frame=true&row=1&column=7&margin-w=8&no-bg=true" alt="Troféus" width="98%"/>
-
 </div>
 
 <!-- Gerado pelo workflow .github/workflows/snake.yml (branch "output"). -->
