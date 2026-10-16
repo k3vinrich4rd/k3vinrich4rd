@@ -136,9 +136,9 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 > Esta seção se atualiza sozinha. Cada commit que eu faço alimenta o meu Obsidian, que alimenta este README. 🤖
 
 <!-- AUTO:dica:START -->
-> 💡 **Dica do dia: `Optional.orElseThrow`**  
-> Transforma "não achei" em exceção de negócio numa linha, sem if de null espalhado pelo código.  
-> <sub>Muda todo dia sozinha · 9/20</sub>
+> 💡 **Dica do dia: `@RestControllerAdvice`**  
+> Centraliza o tratamento de erros: cada exceção vira um status HTTP e um JSON no mesmo formato.  
+> <sub>Muda todo dia sozinha · 10/20</sub>
 <!-- AUTO:dica:END -->
 
 <!-- A cobrinha é gerada pelo workflow .github/workflows/snake.yml deste repositório (branch "output"). -->
