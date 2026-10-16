@@ -130,6 +130,62 @@ export function historia({ testes, praticadas, total, foco }) {
 `;
 }
 
+// ---------- ⚡ pulso da semana ----------
+
+/** Mapa de calor das últimas semanas (as células acendem em sequência) com os números da semana ao lado. */
+export function pulso({ dias, semana, mes, ativos, sequencia, ultimo, atualizado }) {
+  const cores = ['#161b22', '#0b2a4a', AZUL, '#c25a00', LARANJA];
+  const tam = 20;
+  const passo = 24;
+  const x0 = 40;
+  const y0 = 56;
+  const celulas = dias.map((d, i) => {
+    const col = Math.floor(i / 7);
+    const lin = new Date(`${d.data}T12:00:00Z`).getUTCDay();
+    const ultimaCelula = i === dias.length - 1;
+    return `<rect x="${x0 + col * passo}" y="${y0 + lin * passo}" width="${tam}" height="${tam}" rx="3" fill="${cores[d.nivel] ?? cores[0]}" class="cel${ultimaCelula ? ' hoje' : ''}" style="animation-delay:${(col * 0.06 + lin * 0.015).toFixed(2)}s"><title>${xml(d.data)}: ${d.qtd}</title></rect>`;
+  }).join('\n    ');
+  const semanas = Math.ceil(dias.length / 7);
+  const xs = x0 + semanas * passo + 40;
+  const cards = [
+    ['🔥', sequencia, sequencia === 1 ? 'dia seguido' : 'dias seguidos', LARANJA],
+    ['⚡', semana, 'contribuições em 7 dias', '#58a6ff'],
+    ['📅', mes, 'contribuições em 30 dias', VERDE],
+    ['🗓️', ativos, 'dias ativos no mês', '#d2a8ff'],
+  ];
+  const largCard = (1160 - xs) / 2 - 10;
+  const blocos = cards.map(([ico, valor, rot, cor], i) => {
+    const x = xs + (i % 2) * (largCard + 20);
+    const y = 56 + Math.floor(i / 2) * 88;
+    return `<g class="sobe" style="animation-delay:${(0.4 + i * 0.12).toFixed(2)}s">
+      <rect x="${x}" y="${y}" width="${largCard}" height="72" rx="10" fill="#0b1422" stroke="${BORDA}"/>
+      <text x="${x + 16}" y="${y + 45}" font-size="22">${ico}</text>
+      <text x="${x + 52}" y="${y + 45}" style="font: 800 28px ${MONO}" fill="${cor}">${valor}</text>
+      <text x="${x + 52 + String(valor).length * 18 + 12}" y="${y + 44}" style="font: 400 14px ${SANS}" fill="${APAGADO}">${xml(rot)}</text>
+    </g>`;
+  }).join('\n  ');
+  return `${cabecalho(1200, 270, `Pulso da semana: ${sequencia} ${sequencia === 1 ? 'dia seguido' : 'dias seguidos'}, ${semana} contribuições em 7 dias, ${mes} em 30 dias, ${ativos} dias ativos no mês. Último commit ${ultimo}.`)}
+  <style>
+    .cel { opacity: 0; animation: acende .35s ease-out forwards; }
+    @keyframes acende { from { opacity: 0; transform: scale(.4); } to { opacity: 1; transform: none; } }
+    .cel { transform-box: fill-box; transform-origin: center; }
+    .hoje { stroke: ${LARANJA}; stroke-width: 2; animation: acende .35s ease-out forwards, piscaHoje 1.6s ease-in-out 2s infinite; }
+    @keyframes piscaHoje { 0%,100% { stroke-opacity: 1; } 50% { stroke-opacity: .2; } }
+    .sobe { opacity: 0; animation: sobeP .6s cubic-bezier(.2,.8,.2,1) forwards; }
+    @keyframes sobeP { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+    .vivo { animation: vivo 1.4s ease-in-out infinite; }
+    @keyframes vivo { 0%,100% { opacity: 1; } 50% { opacity: .25; } }
+  </style>
+  <rect width="1200" height="270" rx="14" fill="${FUNDO}" stroke="${BORDA}"/>
+  <circle cx="44" cy="31" r="5" fill="${VERDE}" class="vivo"/>
+  <text x="58" y="36" style="font: 700 14px ${SANS}; letter-spacing: 2px" fill="${TEXTO}">PULSO · ÚLTIMAS ${semanas} SEMANAS</text>
+  ${celulas}
+  ${blocos}
+  <text x="${xs}" y="246" style="font: 400 14px ${SANS}" fill="${APAGADO}">⏱️ Último commit <tspan fill="${TEXTO}" font-weight="700">${xml(ultimo)}</tspan> · atualizado em ${xml(atualizado)} (Brasília)</text>
+</svg>
+`;
+}
+
 // ---------- 🔢 números com dígitos que rolam ----------
 
 function digitosRolando(valor, x, y, cor, atraso) {
