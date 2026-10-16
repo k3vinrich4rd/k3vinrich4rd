@@ -62,7 +62,7 @@
     <text x="220" y="92" class="ano">2026</text>
     <text x="220" y="132" class="titulo">Projeto de verdade</text>
     <text x="222" y="178" class="linha"><tspan fill="#EC7000">▸ </tspan>Java 25 + Spring Boot 4</text>
-    <text x="222" y="208" class="linha"><tspan fill="#EC7000">▸ </tspan>RKF Bank: 109 testes, CI, logs e lock otimista</text>
+    <text x="222" y="208" class="linha"><tspan fill="#EC7000">▸ </tspan>RKF Bank: 163 testes, CI, logs e lock otimista</text>
     <text x="222" y="238" class="linha"><tspan fill="#EC7000">▸ </tspan>Workshops JPA e MongoDB · CRUD nota 10/10</text>
   </g>
   <g class="cena" style="animation-delay:20s">

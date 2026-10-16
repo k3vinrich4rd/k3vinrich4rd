@@ -42,7 +42,7 @@
 | Pergunta | Resposta rápida |
 |---|---|
 | Quem é? | Dev **Java backend Junior** na **Zup Innovation**, prestando serviço para o **Itaú**, em transição para **Pleno** (**9/15** competências já praticadas) |
-| Melhor projeto? | **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **109 testes**, CI e logs rastreáveis |
+| Melhor projeto? | **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **163 testes**, CI e logs rastreáveis |
 | Stack principal? | Java · Spring Boot · JPA/Hibernate · MySQL/PostgreSQL · MongoDB · JUnit/Mockito · Docker · GitHub Actions |
 | O que está estudando? | Flyway → JWT → Testcontainers → AWS → inglês → mensageria |
 | Contato? | [LinkedIn](https://www.linkedin.com/in/kevin-richard-b68a54203/) · [kevinrichardve@gmail.com](mailto:kevinrichardve@gmail.com) |
@@ -121,7 +121,7 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 
 <!-- AUTO:status:START -->
 <img src="https://img.shields.io/static/v1?label=R%C3%A9gua%20Pleno&message=9%2F15&color=EC7000&style=flat-square"/>
-<img src="https://img.shields.io/static/v1?label=Testes%20RKF%20Bank&message=109%20%E2%9C%94&color=3fb950&style=flat-square&logo=junit5&logoColor=white"/>
+<img src="https://img.shields.io/static/v1?label=Testes%20RKF%20Bank&message=163%20%E2%9C%94&color=3fb950&style=flat-square&logo=junit5&logoColor=white"/>
 <img src="https://img.shields.io/static/v1?label=Entregas%20recentes&message=4%20%E2%9C%94&color=003D74&style=flat-square"/>
 <img src="https://img.shields.io/static/v1?label=Foco%20agora&message=Flyway&color=6A1B9A&style=flat-square"/>
 <!-- AUTO:status:END -->
@@ -332,7 +332,7 @@ public class Kevin extends Developer implements AprendizContinuo {
 > Banco digital **full stack** feito em dupla. Eu cuido do **backend**: API REST em Java e Spring Boot, banco MySQL, integração com o ViaCEP, logs e testes. O **[Renan Barros](https://github.com/renanbarrostech-cmd)** cuida do frontend em Next.js. É o projeto em que eu pratico, de ponta a ponta, o que se espera de um dev **Pleno**.
 
 <div align="center">
-  <img src="assets/terminal.svg" width="100%" alt="Terminal rodando os testes do RKF Bank: 109 testes, BUILD SUCCESS"/>
+  <img src="assets/terminal.svg" width="100%" alt="Terminal rodando os testes do RKF Bank: 163 testes, BUILD SUCCESS"/>
 </div>
 
 <div align="center">
@@ -520,7 +520,7 @@ sequenceDiagram
 | **Meu papel** | todo o backend | projeto individual |
 | **Domínio** | clientes, contas, depósito, saque, transferência, extrato | usuários, pedidos, produtos, categorias, pagamento |
 | **O que mostra** | transação atômica, lock otimista, ViaCEP com falha tratada, logs com `X-Request-Id` | modelo de domínio rico, chave composta (`OrdemItemPK`), Bean Validation, erros padronizados |
-| **Qualidade** | 109 testes, JaCoCo, CI com CodeQL e Dependabot | camadas controller → service → repository, `DatabaseException` para integridade referencial |
+| **Qualidade** | 163 testes, JaCoCo, CI com CodeQL e Dependabot | camadas controller → service → repository, `DatabaseException` para integridade referencial |
 | **Stack** | Java 25 · Spring Boot 4 · MySQL · Docker · Next.js | Java · Spring Boot · JPA · H2 |
 | **README** | [roteiro do projeto](https://github.com/k3vinrich4rd/rkf_bank#readme) | [modelo de domínio, endpoints e respostas reais](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM#readme) |
 | **Ver primeiro** | [`ContaService`](https://github.com/k3vinrich4rd/rkf_bank) · [roteiro no README](#-projeto-atual--rkf-bank) | [`ProductService`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/services/ProductService.java) · [`ControllerExceptionHandler`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/controllers/handlers/ControllerExceptionHandler.java) |
@@ -1266,7 +1266,7 @@ quadrantChart
 | Inglês técnico | 🔄 | em andamento |
 | Mensageria e microsserviços | ⏳ | próximo ciclo |
 
-<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-10-15</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-10-16</sub>
 <!-- AUTO:regua:END -->
 
 </details>
@@ -1327,7 +1327,7 @@ mindmap
 | 🔄 Testcontainers | Testes | <sub>7 a fazer</sub> |
 | ⏳ Mensageria e Outbox | Arquitetura | <sub>6 a fazer</sub> |
 
-<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-10-15.</sub>
+<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-10-16.</sub>
 <!-- AUTO:estudos:END -->
 
 </details>
@@ -1438,7 +1438,7 @@ gantt
 
 **🧹 Débitos técnicos:** 18 mapeados
 
-<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-10-15.</sub>
+<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-10-16.</sub>
 <!-- AUTO:checklist:END -->
 
 </details>
