@@ -117,6 +117,8 @@ function atualizarPerfil(c) {
 
 try {
   if (process.env.KEVIN_SYNC) process.exit(0);
+  // Commits e pulls no próprio perfil não mudam o progresso: sincronizar aqui só geraria commits vazios de sentido.
+  if (path.resolve(repo) === path.resolve(RAIZ)) process.exit(0);
   const c = dadosDoCommit();
   const nota = notaDoProjeto(c.remoto);
   if (path.resolve(repo) !== path.resolve(RAIZ)) {
