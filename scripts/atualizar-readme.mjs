@@ -18,13 +18,28 @@ const barra = (a, b, n = 12) => '█'.repeat(Math.round((a / (b || 1)) * n)).pad
 // ---------- blocos que dependem só do progresso.json ----------
 
 function blocoStatus() {
+  // MVP zerado passa a impressão de parado: enquanto nada fechou, o badge mostra as entregas recentes.
+  const mvp = ck.mvp.feitos
+    ? badge('MVP', `${ck.mvp.feitos}/${ck.mvp.total}`, '003D74')
+    : badge('Entregas recentes', `${ck.recentes.length} ✔`, '003D74');
   return [
     badge('Régua Pleno', `${regua.praticadas}/${regua.total}`, 'EC7000'),
     badge('Testes RKF Bank', `${rkf.testes} ✔`, '3fb950', '&logo=junit5&logoColor=white'),
-    badge('MVP', `${ck.mvp.feitos}/${ck.mvp.total}`, '003D74'),
+    mvp,
     badge('Foco agora', apelido(p.foco), '6A1B9A'),
-    badge('Atualizado', p.atualizado, '30363d'),
   ].join('\n');
+}
+
+/** "Esta semana": o que está aberto agora no checklist do Obsidian, sem detalhes entre parênteses. */
+function blocoAgora() {
+  const abertos = (ck.agora ?? []).filter((i) => !i.feito).map((i) => i.texto.replace(/\s*[—(].*$/, '').replace(/^⏫\s*/, '').trim());
+  const fechado = ck.recentes[0];
+  const linhas = [
+    ...abertos.slice(0, 3).map((t) => `- 🔨 ${t}`),
+    `- 🎯 Foco de estudo: **${apelido(p.foco)}**`,
+    fechado && `- ✅ Última entrega: ${fechado}`,
+  ].filter(Boolean);
+  return `**🔥 Esta semana**\n\n${linhas.join('\n')}`;
 }
 
 function blocoRecrutador() {
@@ -50,25 +65,29 @@ ${linhas.join('\n')}
 <sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em ${p.atualizado}</sub>`;
 }
 
+/** Barra só quando já há avanço; antes disso, mostra quanto falta (zeros em série parecem projeto parado). */
+const progresso = (feitos, total, n = 12, sufixo = '') =>
+  feitos ? `\`${barra(feitos, total, n)}\` ${feitos}/${total}${sufixo}` : `<sub>${total} a fazer</sub>`;
+
 function blocoChecklist() {
   const item = (i) => `- [${i.feito ? 'x' : ' '}] ${i.texto}`;
-  const mvp = ck.mvp.grupos.map((g) => `<b>${g.nome}</b> <sub>${g.feitos}/${g.total}</sub>\n\n${g.itens.map(item).join('\n')}`).join('\n\n');
+  const mvp = ck.mvp.grupos.map((g) => `<b>${g.nome}</b> ${progresso(g.feitos, g.total, 8)}\n\n${g.itens.map(item).join('\n')}`).join('\n\n');
   const pleno = ck.pleno.grupos.map((g) => {
     const st = g.total && g.feitos === g.total ? 'x' : ' ';
     const tag = g.proximo ? ' ⏫ **próximo**' : g.futuro ? ' 🔮' : '';
-    return `- [${st}] **${g.nome}**${tag} \`${barra(g.feitos, g.total, 8)}\` ${g.feitos}/${g.total}`;
+    return `- [${st}] **${g.nome}**${tag} ${progresso(g.feitos, g.total, 8)}`;
   }).join('\n');
-  const recentes = ck.recentes.length ? `\n**✔️ Concluído recentemente**\n${ck.recentes.map((r) => `- ✅ ${r}`).join('\n')}\n` : '';
+  const recentes = ck.recentes.length ? `\n**✔️ Concluído recentemente** <sub>${ck.recentes.length} entregas</sub>\n${ck.recentes.map((r) => `- ✅ ${r}`).join('\n')}\n` : '';
   return `${recentes}
-**🚀 MVP do RKF Bank (31/10/2026)** \`${barra(ck.mvp.feitos, ck.mvp.total)}\` ${pct(ck.mvp.feitos, ck.mvp.total)}%
+**🚀 MVP do RKF Bank (31/10/2026)** ${progresso(ck.mvp.feitos, ck.mvp.total)}
 
 ${mvp}
 
-**📏 Rumo ao Pleno** \`${barra(ck.pleno.feitos, ck.pleno.total)}\` ${ck.pleno.feitos}/${ck.pleno.total} passos
+**📏 Rumo ao Pleno** ${progresso(ck.pleno.feitos, ck.pleno.total, 12, ' passos')}
 
 ${pleno}
 
-**🧹 Débitos técnicos:** ${ck.debitos.feitos}/${ck.debitos.total} resolvidos
+**🧹 Débitos técnicos:** ${ck.debitos.feitos ? `${ck.debitos.feitos}/${ck.debitos.total} resolvidos` : `${ck.debitos.total} mapeados`}
 
 <sub>🤖 Sincronizado com o checklist do meu Obsidian em ${p.atualizado}.</sub>`;
 }
@@ -89,7 +108,7 @@ function blocoEstudos() {
   const mapa = areas.map((a) => `    ${a}\n${estudos.filter((e) => e.area === a).map((e) => `      ${icone[e.status] ?? '•'} ${e.nome}`).join('\n')}`).join('\n');
   const agora = estudos.filter((e) => e.status !== 'praticado')
     .sort((a, b) => (a.status === 'andamento' ? -1 : 1) - (b.status === 'andamento' ? -1 : 1))
-    .map((e) => `| ${icone[e.status]} ${e.nome} | ${e.area} | ${e.passos.total ? `\`${barra(e.passos.feitos, e.passos.total, 10)}\` ${e.passos.feitos}/${e.passos.total}` : '—'} |`);
+    .map((e) => `| ${icone[e.status]} ${e.nome} | ${e.area} | ${e.passos.total ? progresso(e.passos.feitos, e.passos.total, 10) : '—'} |`);
   return `**${conta('praticado')}** assuntos praticados em projeto · **${conta('andamento')}** em andamento · **${conta('planejado')}** planejados
 
 \`\`\`mermaid
@@ -265,8 +284,8 @@ function svgBanner() {
       <text x="238" y="322" font-size="22" font-weight="800" fill="#3fb950">${rkf.testes}</text>
       <text x="238" y="342" font-size="12" fill="#8b949e">testes verdes no RKF Bank</text>
       <rect x="404" y="296" width="170" height="58" rx="10" fill="#0d1117" stroke="#30363d"/>
-      <text x="420" y="322" font-size="22" font-weight="800" fill="#58a6ff">${ck.mvp.feitos}/${ck.mvp.total}</text>
-      <text x="420" y="342" font-size="12" fill="#8b949e">entregas do MVP</text>
+      <text x="420" y="322" font-size="22" font-weight="800" fill="#58a6ff">${ck.mvp.feitos ? `${ck.mvp.feitos}/${ck.mvp.total}` : ck.recentes.length}</text>
+      <text x="420" y="342" font-size="12" fill="#8b949e">${ck.mvp.feitos ? 'entregas do MVP' : 'entregas recentes'}</text>
     </g>
   </g>
 
@@ -385,22 +404,93 @@ async function blocoAtividade(repos) {
   const linhas = [];
   for (const r of recentes) {
     try {
-      // O RKF Bank trabalha na develop; nos outros vale a branch padrão.
-      const rota = `/repos/${USUARIO}/${r.name}/commits?per_page=2&author=${USUARIO}`;
+      // O RKF Bank trabalha na develop; nos outros vale a branch padrão. Busca a mais para sobrar depois de tirar merges.
+      const rota = `/repos/${USUARIO}/${r.name}/commits?per_page=8&author=${USUARIO}`;
       const commits = await api(`${rota}&sha=develop`).catch(() => api(rota));
-      for (const c of commits) {
-        const msg = c.commit.message.split('\n')[0].replace(/\|/g, '\\|').slice(0, 80);
-        const data = c.commit.author.date.slice(0, 10).split('-').reverse().join('/');
-        linhas.push([c.commit.author.date, `| [\`${r.name}\`](${r.html_url}) | [\`${c.sha.slice(0, 7)}\`](${c.html_url}) ${msg} | ${data} |`]);
+      for (const c of commits.filter((c) => !/^Merge /.test(c.commit.message)).slice(0, 2)) {
+        const titulo = c.commit.message.split('\n')[0];
+        const msg = titulo.replace(/\|/g, '\\|').slice(0, 72);
+        const data = c.commit.author.date;
+        linhas.push([data, `| ${iconeCommit(titulo)} | [\`${nomeCurto(r.name)}\`](${r.html_url}) | [\`${c.sha.slice(0, 7)}\`](${c.html_url}) ${msg} | ${tempoRelativo(data)} |`]);
       }
     } catch (e) { console.warn(`aviso: ${e.message}`); return null; } // tabela pela metade engana: mantém a anterior
   }
   if (!linhas.length) return null;
-  return `| Repositório | Último commit | Quando |
-|---|---|---|
-${linhas.sort((a, b) => b[0].localeCompare(a[0])).map((l) => l[1]).join('\n')}
+  linhas.sort((a, b) => b[0].localeCompare(a[0]));
+  ultimoCommit = linhas[0][0];
+  return `| | Repositório | Commit | Quando |
+|:-:|---|---|---|
+${linhas.slice(0, 8).map((l) => l[1]).join('\n')}
 
-<sub>🤖 Atualizado sozinho pelo GitHub Actions a cada 6 horas.</sub>`;
+<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · ${agoraBrasilia()}</sub>`;
+}
+
+// ---------- ⚡ pulso da semana ----------
+
+let ultimoCommit = null;
+
+// Nomes de repositório muito longos ganham um apelido só na exibição (o link continua o mesmo).
+const nomeCurto = (nome) => ({ 'JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM': 'dscommerce', 'desafio-devsuperior-crud-clientes': 'crud-clientes' }[nome] ?? nome);
+const AGORA = new Date();
+
+const iconeCommit = (titulo) => ({
+  feat: '✨', fix: '🐛', test: '🧪', docs: '📝', chore: '🔧', build: '🔧', ci: '🔧', refactor: '♻️', perf: '⚡', style: '🎨', revert: '⏪',
+}[/^(\w+)(\(|!|:)/.exec(titulo)?.[1]] ?? '•');
+
+function tempoRelativo(iso) {
+  const min = Math.max(0, Math.round((AGORA - new Date(iso)) / 60000));
+  if (min < 60) return `há ${min} min`;
+  const h = Math.round(min / 60);
+  if (h < 24) return `há ${h} h`;
+  const d = Math.round(h / 24);
+  return d === 1 ? 'ontem' : d < 30 ? `há ${d} dias` : new Date(iso).toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo' });
+}
+
+const agoraBrasilia = () =>
+  `${AGORA.toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo', day: '2-digit', month: '2-digit' })} às ${AGORA.toLocaleTimeString('pt-BR', { timeZone: 'America/Sao_Paulo', hour: '2-digit', minute: '2-digit' })}`;
+
+/** Calendário de contribuições pela página pública do perfil (não precisa de token). */
+async function calendario() {
+  const r = await fetch(`https://github.com/users/${USUARIO}/contributions`, { headers: { 'User-Agent': 'perfil-k3vinrich4rd' } });
+  if (!r.ok) throw new Error(`calendário: HTTP ${r.status}`);
+  const html = await r.text();
+  const datas = Object.fromEntries([...html.matchAll(/data-date="(\d{4}-\d{2}-\d{2})" id="(contribution-day-component-\d+-\d+)" data-level="(\d)"/g)]
+    .map(([, data, id, nivel]) => [id, { data, nivel: Number(nivel), qtd: 0 }]));
+  for (const [, id, texto] of html.matchAll(/for="(contribution-day-component-\d+-\d+)"[^>]*>([^<]*)/g)) {
+    if (datas[id]) datas[id].qtd = /^No contributions/.test(texto) ? 0 : Number(/^(\d+)/.exec(texto)?.[1] ?? 0);
+  }
+  const dias = Object.values(datas).sort((a, b) => a.data.localeCompare(b.data));
+  if (dias.length < 60) throw new Error('calendário: formato inesperado');
+  return dias;
+}
+
+function dadosPulso(dias) {
+  const hoje = AGORA.toLocaleDateString('sv-SE', { timeZone: 'America/Sao_Paulo' });
+  const ate = dias.filter((d) => d.data <= hoje);
+  const ultimos = (n) => ate.slice(-n);
+  const soma = (lista) => lista.reduce((s, d) => s + d.qtd, 0);
+  // Sequência: conta para trás a partir de hoje (ou de ontem, se hoje ainda não teve commit).
+  let seq = 0;
+  const rev = [...ate].reverse();
+  for (let i = rev[0]?.qtd ? 0 : 1; i < rev.length && rev[i].qtd > 0; i++) seq++;
+  const dia = ultimos(84);
+  // Começa num domingo para as colunas serem semanas de verdade.
+  while (dia.length && new Date(`${dia[0].data}T12:00:00Z`).getUTCDay() !== 0) dia.shift();
+  return {
+    dias: dia,
+    semana: soma(ultimos(7)),
+    mes: soma(ultimos(30)),
+    ativos: ultimos(30).filter((d) => d.qtd > 0).length,
+    sequencia: seq,
+    ultimo: ultimoCommit ? tempoRelativo(ultimoCommit) : (() => {
+      const d = [...ate].reverse().find((x) => x.qtd > 0);
+      // Sem a API só se sabe o dia, não a hora: fala em dias para não inventar precisão.
+      if (!d) return '—';
+      const dias = Math.round((new Date(`${hoje}T12:00:00Z`) - new Date(`${d.data}T12:00:00Z`)) / 86400000);
+      return dias === 0 ? 'hoje' : dias === 1 ? 'ontem' : `há ${dias} dias`;
+    })(),
+    atualizado: agoraBrasilia(),
+  };
 }
 
 // ---------- execução ----------
@@ -431,6 +521,15 @@ if (usarApi) {
     console.warn(`aviso: API do GitHub indisponível, mantendo os blocos anteriores (${e.message})`);
   }
 }
+readme = substituirBloco(readme, 'agora', blocoAgora());
+
+// O pulso usa a página pública de contribuições: funciona com ou sem token. Se falhar, fica o anterior.
+let svgPulso = null;
+try {
+  svgPulso = svg.pulso(dadosPulso(await calendario()));
+} catch (e) {
+  console.warn(`aviso: pulso não atualizado (${e.message})`);
+}
 
 // ---------- SVGs animados das seções (história, números, botões...) ----------
 
@@ -454,6 +553,7 @@ const arquivosSvg = {
   'sobre-mim.svg': svg.ide(classeKevin),
   'divisor.svg': svg.divisor(),
   'chamada.svg': svg.chamada(),
+  ...(svgPulso && { 'pulso.svg': svgPulso }),
 };
 const botoes = {
   // Larguras pensadas para caber 5 botões por linha na coluna do perfil (~830px).

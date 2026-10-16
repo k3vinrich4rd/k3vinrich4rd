@@ -5,3 +5,4 @@ node_modules/
 .previa.html
 .previa-readme.html
 automacao/.sync.lock/
+.pr-descricao.md

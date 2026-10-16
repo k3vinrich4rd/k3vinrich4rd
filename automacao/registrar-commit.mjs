@@ -96,6 +96,10 @@ function atualizarPerfil(c) {
   if (fs.existsSync(path.join(RAIZ, '.git')) && git(['status', '--porcelain'], RAIZ)) {
     return log('perfil com mudanças manuais pendentes: nada regenerado, sem commit (o próximo commit sincroniza)');
   }
+  // Progresso só entra na main: numa branch de trabalho ele se misturaria com a mudança em andamento.
+  if (fs.existsSync(path.join(RAIZ, '.git')) && git(['rev-parse', '--abbrev-ref', 'HEAD'], RAIZ) !== 'main') {
+    return log('perfil fora da main: nada regenerado, sem commit (o próximo commit na main sincroniza)');
+  }
   execFileSync(process.execPath, [path.join(RAIZ, 'scripts', 'coletar-progresso.mjs')], { cwd: RAIZ, stdio: 'ignore' });
   execFileSync(process.execPath, [path.join(RAIZ, 'scripts', 'atualizar-readme.mjs')], { cwd: RAIZ, stdio: 'ignore' });
   if (!fs.existsSync(path.join(RAIZ, '.git'))) return log('perfil sem git: README regenerado, sem commit');
