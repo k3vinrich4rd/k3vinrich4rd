@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- O banner é gerado por scripts/atualizar-readme.mjs com os números do progresso.json (régua, testes, MVP). -->
-<a href="https://www.linkedin.com/in/kevin-richard-b68a54203/" target="_blank"><img src="assets/banner.svg" width="100%" alt="Kevin Richard, desenvolvedor Java backend na Zup Innovation, disponível para oportunidades"/></a>
+<a href="https://www.linkedin.com/in/kevin-richard-b68a54203/" target="_blank"><img src="assets/banner.svg" width="100%" alt="Kevin Richard, desenvolvedor Java backend na Zup Innovation"/></a>
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=EC7000&center=true&vCenter=true&multiline=false&width=720&lines=Java+%2B+Spring+Boot+Backend+Developer;Zup+Innovation+%7C+servi%C3%A7o+para+o+Ita%C3%BA;Junior+%E2%86%92+Pleno+%7C+em+progresso;Construindo+o+RKF+Bank+%F0%9F%8F%A6;Informa%C3%A7%C3%A3o+e+conhecimento+nunca+s%C3%A3o+demais)](https://git.io/typing-svg)
 
@@ -12,8 +12,6 @@
 <a href="https://www.linkedin.com/school/anhanguera-educacional-sa/" target="_blank"><img src="https://img.shields.io/badge/Forma%C3%A7%C3%A3o-Anhanguera-6A1B9A?style=for-the-badge"/></a>
 
 <img src="https://visitor-badge.laobi.icu/badge?page_id=k3vinrich4rd.k3vinrich4rd&left_color=003D74&right_color=EC7000&left_text=Visitantes" alt="visitors"/>
-&nbsp;
-<img src="https://img.shields.io/badge/Status-Dispon%C3%ADvel%20para%20oportunidades-brightgreen?style=flat-square"/>
 &nbsp;
 <img src="https://img.shields.io/badge/Projeto%20atual-RKF%20Bank-EC7000?style=flat-square&logo=springboot&logoColor=white"/>
 
@@ -1783,7 +1781,7 @@ O CI tem **CodeQL**, **Dependency Review** e **Dependabot**. Quando o Spring Boo
 
 <div align="center">
 
-<a href="https://www.linkedin.com/in/kevin-richard-b68a54203/" target="_blank"><img src="assets/chamada.svg" width="100%" alt="Vamos conversar? Disponível para oportunidades em desenvolvimento Java backend. Falar no LinkedIn"/></a>
+<a href="https://www.linkedin.com/in/kevin-richard-b68a54203/" target="_blank"><img src="assets/chamada.svg" width="100%" alt="Vamos conversar? Desenvolvedor Java backend na Zup Innovation. Falar no LinkedIn"/></a>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:EC7000,50:003D74,100:1a1a1a&height=130&section=footer&animation=twinkling&text=Informa%C3%A7%C3%A3o%20e%20conhecimento%20nunca%20s%C3%A3o%20demais&fontSize=18&fontColor=ffffff&fontAlignY=65" alt="footer"/>
 

@@ -210,7 +210,7 @@ function svgBanner() {
     `<text x="24" y="${92 + i * 25}" class="mono ln" style="animation-delay:${(1.2 + i * 0.35).toFixed(2)}s"><tspan class="key">${xml(k)}</tspan><tspan x="110" class="${c || 'val'}">${xml(v)}</tspan></text>`).join('\n      ');
   const yBarra = 92 + linhas.length * 25;
   const atraso = (1.2 + linhas.length * 0.35).toFixed(2);
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-label="Kevin Richard, desenvolvedor Java backend. Régua Pleno ${regua.praticadas} de ${regua.total}, ${rkf.testes} testes no RKF Bank. Disponível para oportunidades.">
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-label="Kevin Richard, desenvolvedor Java backend. Régua Pleno ${regua.praticadas} de ${regua.total}, ${rkf.testes} testes no RKF Bank.">
   <!-- Gerado por scripts/atualizar-readme.mjs a partir de progresso.json. Não edite à mão. -->
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d1117"/><stop offset=".55" stop-color="#0b1b33"/><stop offset="1" stop-color="#0d1117"/></linearGradient>
@@ -252,11 +252,6 @@ function svgBanner() {
   </g>
 
   <g class="sans">
-    <g class="entra" style="animation-delay:.1s">
-      <rect x="40" y="48" width="290" height="32" rx="16" fill="#0d1117" stroke="#238636"/>
-      <circle class="pulso" cx="60" cy="64" r="6" fill="#3fb950"/>
-      <text x="76" y="69" font-size="14" fill="#7ee787" font-weight="600">Disponível para oportunidades</text>
-    </g>
     <text x="40" y="150" font-size="64" font-weight="800" fill="#ffffff" class="entra" style="animation-delay:.3s">Kevin Richard</text>
     <text x="42" y="196" font-size="28" font-weight="700" fill="url(#marca)" class="entra" style="animation-delay:.5s">Java Backend Developer</text>
     <text x="42" y="230" font-size="17" fill="#c9d1d9" class="entra" style="animation-delay:.7s">Spring Boot · JPA/Hibernate · Testes · CI/CD · Cloud</text>

@@ -26,7 +26,7 @@ const PELE_SOMBRA = '#45281a';
 const CABELO = '#121212';
 
 /**
- * Avatar vetorial do Kevin: homem negro, cabelo curto e barba, moletom azul com detalhe laranja.
+ * Avatar vetorial do Kevin: homem negro, cabelo na máquina 1, bigode e barbicha, moletom azul com detalhe laranja.
  * Desenhado numa caixa de 100x120; `escala` e a posição (canto superior esquerdo) vêm de fora.
  * Com `acenar`, o braço direito acena; com `andar`, o corpo balança como quem caminha.
  */
@@ -47,12 +47,16 @@ export function avatar(x, y, escala = 1, { acenar = false, andar = false } = {})
       <circle cx="28" cy="46" r="5.5" fill="${PELE_SOMBRA}"/>
       <circle cx="72" cy="46" r="5.5" fill="${PELE_SOMBRA}"/>
       <ellipse cx="50" cy="44" rx="22" ry="25" fill="${PELE}"/>
-      <path d="M28 41 C26 21 38 14 50 14 C63 14 75 21 72 41 C70 30 62 26 50 26 C38 26 30 30 28 41 Z" fill="${CABELO}"/>
-      <path d="M29 48 C30 62 39 70 50 70 C61 70 70 62 71 48 C68 58 61 63 50 63 C39 63 32 58 29 48 Z" fill="${CABELO}"/>
+      <!-- cabelo na máquina 1: sombra fina e rente, acompanhando o formato do crânio -->
+      <path d="M28.5 40 C27 24 37 19.5 50 19.5 C63 19.5 73 24 71.5 40 C69 31 61 28.5 50 28.5 C39 28.5 31 31 28.5 40 Z" fill="${CABELO}" opacity=".88"/>
+      <path d="M30 38 C32 27 40 23 50 23 C60 23 68 27 70 38" fill="none" stroke="${CABELO}" stroke-width="1" opacity=".5"/>
       <path d="M38 38 h7 M55 38 h7" stroke="${CABELO}" stroke-width="2.4" stroke-linecap="round"/>
       <circle cx="42" cy="45" r="2.4" fill="#0d0d0d"/>
       <circle cx="58" cy="45" r="2.4" fill="#0d0d0d"/>
-      <path d="M44 56 Q50 61 56 56" stroke="#f2e6dc" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <!-- bigode e barbicha -->
+      <path d="M40.5 54 C43 51.5 47.5 52.5 50 54.2 C52.5 52.5 57 51.5 59.5 54 C57 56.6 53 56 50 55.4 C47 56 43 56.6 40.5 54 Z" fill="${CABELO}"/>
+      <path d="M45 63.5 C46 66 48 69.5 50 70.5 C52 69.5 54 66 55 63.5 C53 64.6 47 64.6 45 63.5 Z" fill="${CABELO}"/>
+      <path d="M45 59.4 Q50 62.6 55 59.4" stroke="#f2e6dc" stroke-width="1.8" fill="none" stroke-linecap="round"/>
       ${braco}
     </g>
   </g>`;
@@ -255,7 +259,7 @@ export function divisor() {
 // ---------- 📣 chamada final ----------
 
 export function chamada() {
-  return `${cabecalho(1200, 210, 'Vamos conversar? Estou disponível para oportunidades em desenvolvimento Java backend. Clique para falar comigo no LinkedIn.')}
+  return `${cabecalho(1200, 210, 'Vamos conversar? Desenvolvedor Java backend na Zup Innovation. Clique para falar comigo no LinkedIn.')}
   <defs>${gradientes}
     <radialGradient id="g1" cx=".2" cy=".3" r=".7"><stop offset="0" stop-color="${AZUL}" stop-opacity=".6"/><stop offset="1" stop-color="${AZUL}" stop-opacity="0"/></radialGradient>
     <radialGradient id="g2" cx=".85" cy=".8" r=".6"><stop offset="0" stop-color="${LARANJA}" stop-opacity=".35"/><stop offset="1" stop-color="${LARANJA}" stop-opacity="0"/></radialGradient>
@@ -271,7 +275,7 @@ ${estiloAvatar}
   <rect width="1200" height="210" rx="16" fill="url(#g1)"/><rect width="1200" height="210" rx="16" fill="url(#g2)"/>
   ${avatar(44, 46, 1.05, { acenar: true })}
   <text x="180" y="88" class="entra" style="font: 800 34px ${SANS}; animation-delay:.2s" fill="#fff">Vamos conversar?</text>
-  <text x="182" y="122" class="entra" style="font: 400 17px ${SANS}; animation-delay:.4s" fill="#c9d1d9">Disponível para oportunidades em desenvolvimento Java backend.</text>
+  <text x="182" y="122" class="entra" style="font: 400 17px ${SANS}; animation-delay:.4s" fill="#c9d1d9">Desenvolvedor Java backend na Zup Innovation, serviço para o Itaú.</text>
   <text x="182" y="150" class="entra" style="font: 400 15px ${SANS}; animation-delay:.6s" fill="${APAGADO}">Java · Spring Boot · APIs REST · JPA · Testes · CI/CD</text>
   <g transform="translate(860 70)">
     <rect width="290" height="64" rx="32" fill="none" stroke="${LARANJA}" stroke-width="2" class="onda"/>
