@@ -91,7 +91,26 @@ function comTrava(fn) {
   try { return fn(); } finally { fs.rmSync(trava, { recursive: true, force: true }); }
 }
 
+/** Rebase que ficou pela metade (conflito num SVG gerado) travava todas as sincronizações seguintes. */
+function destravarRebase(env) {
+  const gitDir = path.join(RAIZ, '.git');
+  if (!['rebase-merge', 'rebase-apply'].some((d) => fs.existsSync(path.join(gitDir, d)))) return;
+  git(['rebase', '--abort'], RAIZ, env);
+  log('perfil: rebase pela metade abortado (o progresso é regenerado em seguida)');
+}
+
+/** README e SVGs são gerados aqui e no GitHub Actions: em conflito, vale a versão gerada agora (a mais nova). */
+function sincronizarComRemoto(env) {
+  try {
+    git(['pull', '--rebase', '--autostash', '-X', 'theirs', '-q'], RAIZ, env);
+  } catch (e) {
+    destravarRebase(env);
+    throw new Error(`pull do perfil falhou (${e.message.split('\n')[0]})`);
+  }
+}
+
 function atualizarPerfil(c) {
+  if (fs.existsSync(path.join(RAIZ, '.git'))) destravarRebase({ KEVIN_SYNC: '1' });
   // Mudanças feitas à mão no perfil (ainda sem commit) não podem ir junto num commit automático.
   if (fs.existsSync(path.join(RAIZ, '.git')) && git(['status', '--porcelain'], RAIZ)) {
     return log('perfil com mudanças manuais pendentes: nada regenerado, sem commit (o próximo commit sincroniza)');
@@ -100,17 +119,24 @@ function atualizarPerfil(c) {
   if (fs.existsSync(path.join(RAIZ, '.git')) && git(['rev-parse', '--abbrev-ref', 'HEAD'], RAIZ) !== 'main') {
     return log('perfil fora da main: nada regenerado, sem commit (o próximo commit na main sincroniza)');
   }
+  const env = { KEVIN_SYNC: '1' };
+  const temGit = fs.existsSync(path.join(RAIZ, '.git'));
+  // Pega antes o que o Actions publicou: gerar em cima da versão nova evita o conflito nos SVGs.
+  if (temGit && cfg.autoPush) sincronizarComRemoto(env);
   execFileSync(process.execPath, [path.join(RAIZ, 'scripts', 'coletar-progresso.mjs')], { cwd: RAIZ, stdio: 'ignore' });
   execFileSync(process.execPath, [path.join(RAIZ, 'scripts', 'atualizar-readme.mjs')], { cwd: RAIZ, stdio: 'ignore' });
-  if (!fs.existsSync(path.join(RAIZ, '.git'))) return log('perfil sem git: README regenerado, sem commit');
-  const env = { KEVIN_SYNC: '1' };
+  if (!temGit) return log('perfil sem git: README regenerado, sem commit');
   git(['add', 'README.md', 'progresso.json', 'assets'], RAIZ);
   if (!git(['diff', '--cached', '--name-only'], RAIZ)) return;
   git(['commit', '-m', `docs(perfil): atualiza progresso (${c.nome} ${c.curto})`], RAIZ, env);
   log(`perfil: commit criado a partir de ${c.nome} ${c.curto}`);
   if (cfg.autoPush) {
-    git(['pull', '--rebase', '--autostash', '-q'], RAIZ, env);
-    git(['push', '-q'], RAIZ, env);
+    try {
+      git(['push', '-q'], RAIZ, env);
+    } catch {
+      sincronizarComRemoto(env); // o Actions publicou no meio do caminho: junta e tenta de novo
+      git(['push', '-q'], RAIZ, env);
+    }
     log('perfil: push feito');
   }
 }
