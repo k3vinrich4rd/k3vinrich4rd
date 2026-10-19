@@ -337,7 +337,7 @@ public class Kevin extends Developer implements AprendizContinuo {
 
 </div>
 
-> Banco digital **full stack** feito por um time de três, todos de **Osasco, SP**. Eu cuido do **backend**: API REST em Java e Spring Boot, banco MySQL com Flyway, login com Spring Security + JWT, integração com o ViaCEP, logs e testes. O **[Renan Barros](https://github.com/renanbarrostech-cmd)** cuida do frontend em Next.js, e o **Fellipe Santana**, idealizador do projeto, é o PO & QA e o primeiro cliente. É o projeto em que eu pratico, de ponta a ponta, o que se espera de um dev **Pleno**.
+> Banco digital **full stack** feito por um time de três, todos de **Osasco, SP**. Eu cuido do **backend**: API REST em Java e Spring Boot, banco MySQL com Flyway, login com Spring Security + JWT, integração com o ViaCEP, logs e testes. O **[Renan Barros](https://github.com/renanbarrostech-cmd)** cuida do frontend em Next.js, e o **Felipe Santana**, idealizador do projeto, é o PO & QA e o primeiro cliente. É o projeto em que eu pratico, de ponta a ponta, o que se espera de um dev **Pleno**.
 
 <div align="center">
   <img src="assets/terminal.svg" width="100%" alt="Terminal rodando os testes do RKF Bank: 163 testes, BUILD SUCCESS"/>
@@ -1461,7 +1461,7 @@ gantt
 
 - [ ] Decidir onde publicar (ver Decisões RKF Bank)
 - [ ] LGPD mínimo: política de privacidade, aceite dos termos e encarregado
-- [ ] Fellipe (idealizador, PO & QA e primeiro cliente) testa tudo pelo roteiro E2E
+- [ ] Felipe (PO & QA e primeiro cliente) testa tudo pelo roteiro E2E
 - [ ] Corrigir os bugs encontrados
 - [ ] Colocar no ar
 - [ ] Atualizar o README com link e prints
