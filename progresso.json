@@ -1,9 +1,9 @@
 {
-  "atualizado": "2026-10-16",
+  "atualizado": "2026-10-19",
   "regua": {
-    "praticadas": 9,
+    "praticadas": 11,
     "total": 15,
-    "andamento": 5,
+    "andamento": 3,
     "planejadas": 1,
     "itens": [
       {
@@ -62,21 +62,21 @@
       },
       {
         "nome": "Migrações versionadas",
-        "status": "andamento",
-        "evidencia": "",
-        "proximo": true
+        "status": "praticada",
+        "evidencia": "RKF Bank (V1, V2, V3; PR #23)",
+        "proximo": false
       },
       {
         "nome": "Autenticação e autorização",
-        "status": "andamento",
-        "evidencia": "",
+        "status": "praticada",
+        "evidencia": "RKF Bank (JWT, BCrypt, perfis, regra de dono; PR #24)",
         "proximo": false
       },
       {
         "nome": "Testes de integração com banco real",
         "status": "andamento",
         "evidencia": "",
-        "proximo": false
+        "proximo": true
       },
       {
         "nome": "Deploy em nuvem",
@@ -98,10 +98,8 @@
       }
     ]
   },
-  "foco": "Migrações versionadas",
+  "foco": "Testes de integração com banco real",
   "trilha": [
-    "Migrações versionadas",
-    "Autenticação e autorização",
     "Testes de integração com banco real",
     "Deploy em nuvem",
     "Inglês técnico",
@@ -110,30 +108,30 @@
   "rkf": {
     "testes": 163,
     "checklist": {
-      "gantt": "```mermaid\ngantt\n    title Do MVP ao Pleno\n    dateFormat YYYY-MM-DD\n    axisFormat %d/%m\n    section MVP\n    Semana 2 - cliente e conta        :done,    s2, 2026-10-12, 7d\n    Semana 3 - movimentações          :active,  s3, 2026-10-19, 7d\n    Semana 4 - testar e lançar        :         s4, 2026-10-26, 6d\n    section Pleno\n    Flyway                            :crit,    f1, 2026-10-16, 3d\n    Spring Security + JWT             :         f2, after f1, 10d\n    Testcontainers                    :         f3, after f2, 4d\n    Deploy AWS                        :         f4, after s4, 7d\n    Mensageria                        :         f5, after f3, 10d\n```",
+      "gantt": "```mermaid\ngantt\n    title Do MVP ao Pleno\n    dateFormat YYYY-MM-DD\n    axisFormat %d/%m\n    section MVP\n    Semana 2 - cliente e conta        :done,    s2, 2026-10-12, 7d\n    Semana 3 - movimentações          :active,  s3, 2026-10-19, 7d\n    Semana 4 - testar e lançar        :         s4, 2026-10-26, 6d\n    section Pleno\n    Flyway                            :done,    f1, 2026-10-15, 2d\n    Spring Security + JWT             :done,    f2, 2026-10-16, 2d\n    Testcontainers                    :crit,    f3, 2026-10-20, 4d\n    Swagger                           :         f6, after f3, 2d\n    Deploy AWS                        :         f4, after s4, 7d\n    Mensageria                        :         f5, after f6, 10d\n```",
       "agora": [
         {
           "feito": false,
-          "texto": "Mergear o PR `feature/testes-repository` na `develop` (34 testes de repositório + pin do H2 + docs)"
+          "texto": "Mergear o PR `docs/readme-banco-digital` (README novo + docs atualizadas)"
         },
         {
           "feito": false,
-          "texto": "Mergear o PR `fix/vulnerabilidades-dependencias` na `develop` (Tomcat 11.0.27 + Jackson 3.1.7) — conflito simples no `<properties>`: manter `h2.version`, `tomcat.version` e `jackson-bom.version`"
+          "texto": "⏫ Começar a `feature/testcontainers`"
         },
         {
           "feito": false,
-          "texto": "⏫ Começar a `feature/flyway`"
+          "texto": "LGPD mínimo antes do deploy"
         }
       ],
       "mvp": {
-        "feitos": 0,
-        "total": 12,
+        "feitos": 6,
+        "total": 14,
         "grupos": [
           {
             "nome": "Backend",
             "futuro": false,
             "proximo": false,
-            "feitos": 0,
+            "feitos": 1,
             "total": 3,
             "itens": [
               {
@@ -145,8 +143,8 @@
                 "texto": "`GET /clientes/{clienteId}/contas`"
               },
               {
-                "feito": false,
-                "texto": "Decidir como o usuário acessa a conta sem login (ver Decisões RKF Bank)"
+                "feito": true,
+                "texto": "Decidir como o usuário acessa a conta sem login (resolvido com o login)"
               }
             ]
           },
@@ -154,24 +152,28 @@
             "nome": "Frontend (Renan)",
             "futuro": false,
             "proximo": false,
-            "feitos": 0,
-            "total": 4,
+            "feitos": 5,
+            "total": 5,
             "itens": [
               {
-                "feito": false,
+                "feito": true,
                 "texto": "Abrir conta depois do cadastro"
               },
               {
-                "feito": false,
+                "feito": true,
                 "texto": "Tela da conta (saldo)"
               },
               {
-                "feito": false,
+                "feito": true,
                 "texto": "Telas de depósito, saque e transferência"
               },
               {
-                "feito": false,
+                "feito": true,
                 "texto": "Tela de extrato"
+              },
+              {
+                "feito": true,
+                "texto": "Tela de login com cookie `httpOnly`"
               }
             ]
           },
@@ -180,7 +182,7 @@
             "futuro": false,
             "proximo": false,
             "feitos": 0,
-            "total": 5,
+            "total": 6,
             "itens": [
               {
                 "feito": false,
@@ -188,7 +190,11 @@
               },
               {
                 "feito": false,
-                "texto": "Fellipe (PO & QA) testa tudo pelo roteiro E2E"
+                "texto": "LGPD mínimo: política de privacidade, aceite dos termos e encarregado"
+              },
+              {
+                "feito": false,
+                "texto": "Fellipe (idealizador, PO & QA e primeiro cliente) testa tudo pelo roteiro E2E"
               },
               {
                 "feito": false,
@@ -207,38 +213,38 @@
         ]
       },
       "pleno": {
-        "feitos": 0,
-        "total": 26,
+        "feitos": 12,
+        "total": 29,
         "grupos": [
           {
             "nome": "Flyway",
             "futuro": false,
-            "proximo": true,
-            "feitos": 0,
+            "proximo": false,
+            "feitos": 6,
             "total": 6,
             "itens": [
               {
-                "feito": false,
+                "feito": true,
                 "texto": "Adicionar o Flyway no `pom.xml` (starter do Spring Boot 4 + módulo MySQL)"
               },
               {
-                "feito": false,
+                "feito": true,
                 "texto": "`V1__schema_inicial.sql` a partir do schema atual (`tb_cliente`, `tb_endereco`, `tb_conta`, `tb_lancamento`)"
               },
               {
-                "feito": false,
+                "feito": true,
                 "texto": "`spring.jpa.hibernate.ddl-auto=validate`"
               },
               {
-                "feito": false,
-                "texto": "Testes em H2 rodando a mesma migração (modo MySQL)"
+                "feito": true,
+                "texto": "Testes em H2 rodando a mesma migração"
               },
               {
-                "feito": false,
+                "feito": true,
                 "texto": "`V2__` com migração de dados: e-mail em minúsculas"
               },
               {
-                "feito": false,
+                "feito": true,
                 "texto": "Atualizar `debitos-tecnicos.md` e o `backend/README.md`"
               }
             ]
@@ -247,31 +253,31 @@
             "nome": "Spring Security + JWT",
             "futuro": false,
             "proximo": false,
-            "feitos": 0,
+            "feitos": 6,
             "total": 6,
             "itens": [
               {
-                "feito": false,
+                "feito": true,
                 "texto": "Tabela de usuários via `V3__` (senha com BCrypt)"
               },
               {
-                "feito": false,
+                "feito": true,
                 "texto": "`POST /auth/login` devolvendo JWT"
               },
               {
-                "feito": false,
-                "texto": "Filtro que valida o token"
+                "feito": true,
+                "texto": "Validação do token (OAuth2 Resource Server)"
               },
               {
-                "feito": false,
+                "feito": true,
                 "texto": "Regra: cliente só vê e movimenta as próprias contas"
               },
               {
-                "feito": false,
-                "texto": "Proteger `GET /clientes` (hoje expõe CPF, e-mail e telefone)"
+                "feito": true,
+                "texto": "Proteger `GET /clientes` (só ADMIN)"
               },
               {
-                "feito": false,
+                "feito": true,
                 "texto": "`401` / `403` no formato de erro padrão"
               }
             ]
@@ -279,7 +285,7 @@
           {
             "nome": "Testcontainers",
             "futuro": false,
-            "proximo": false,
+            "proximo": true,
             "feitos": 0,
             "total": 4,
             "itens": [
@@ -302,6 +308,27 @@
             ]
           },
           {
+            "nome": "Swagger / OpenAPI",
+            "futuro": false,
+            "proximo": false,
+            "feitos": 0,
+            "total": 3,
+            "itens": [
+              {
+                "feito": false,
+                "texto": "springdoc compatível com o Spring Boot 4"
+              },
+              {
+                "feito": false,
+                "texto": "Botão *Authorize* com o JWT"
+              },
+              {
+                "feito": false,
+                "texto": "Fluxo completo só pelo Swagger UI"
+              }
+            ]
+          },
+          {
             "nome": "Deploy AWS",
             "futuro": true,
             "proximo": false,
@@ -314,7 +341,7 @@
               },
               {
                 "feito": false,
-                "texto": "Perfil `prod` + credenciais fora do código"
+                "texto": "Perfil `prod` + credenciais fora do código + Spring Boot Actuator (`health`)"
               },
               {
                 "feito": false,
@@ -372,28 +399,48 @@
       },
       "debitos": {
         "feitos": 0,
-        "total": 18
+        "total": 17
       },
       "recentes": [
-        "Documentação dos testes de repositório — 2026-10-15",
+        "Notas de IA, universo Spring e análise de LGPD no Obsidian — 2026-10-19",
+        "Frontend: login, conta, movimentações e extrato (PRs #26 e #27) — 2026-10-17",
+        "Spring Security + JWT, BCrypt, perfis e regra de dono (PR #24) — 2026-10-16",
+        "Flyway com V1, V2 e V3, `ddl-auto=validate` (PR #23) — 2026-10-16",
         "CVEs do Tomcat (3 críticas) e do Jackson (5 altas, 2 moderadas) corrigidas — 2026-10-15",
-        "H2 fixado em 2.3.232 (bug do `CHECK ... IN` no 2.4.240) — 2026-10-15",
         "Testes da camada repositories (34 testes, `@DataJpaTest`) — 2026-10-15"
       ]
     }
   },
   "historico": [
     {
+      "data": "2026-10-19",
+      "branch": "`docs/readme-banco-digital`",
+      "mudou": "README com cara de banco digital (SVGs animados, trilhas, time), docs e checklist atualizados, análise de LGPD",
+      "aprendizado": "documentação desatualizada engana o time e a IA: checklist dizia \"Flyway em andamento\" com tudo mergeado"
+    },
+    {
+      "data": "2026-10-17",
+      "branch": "PRs #26 e #27 (frontend)",
+      "mudou": "login com cookie `httpOnly`, conta, movimentações e extrato",
+      "aprendizado": "token fora do alcance do JavaScript (BFF)"
+    },
+    {
+      "data": "2026-10-16",
+      "branch": "PR #24 `feature/spring-security-jwt`",
+      "mudou": "login CPF + senha, JWT HS256 com OAuth2 Resource Server, BCrypt, perfis e regra de dono",
+      "aprendizado": "autenticação (401) × autorização (403); regra de dono é regra de negócio, não da filter chain"
+    },
+    {
+      "data": "2026-10-16",
+      "branch": "PR #23 `feature/flyway`",
+      "mudou": "V1, V2 e V3, `ddl-auto=validate`",
+      "aprendizado": "migração aplicada nunca se edita (checksum); H2 × MySQL no SQL portável"
+    },
+    {
       "data": "2026-10-15",
       "branch": "`fix/vulnerabilidades-dependencias`",
       "mudou": "Tomcat 11.0.24 → 11.0.27 e Jackson 3.1.5 → 3.1.7",
       "aprendizado": "dá para corrigir CVE de dependência transitiva sobrescrevendo a propriedade do BOM"
-    },
-    {
-      "data": "2026-10-15",
-      "branch": "`feature/testes-repository`",
-      "mudou": "34 testes `@DataJpaTest`, H2 2.3.232, docs",
-      "aprendizado": "testar mapeamento JPA de verdade (cascata, `orphanRemoval`, `@Version`)"
     }
   ],
   "estudos": [
@@ -404,6 +451,15 @@
       "passos": {
         "feitos": 0,
         "total": 3
+      }
+    },
+    {
+      "nome": "LGPD",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 5
       }
     },
     {
@@ -445,10 +501,10 @@
     {
       "nome": "Flyway",
       "area": "Dados",
-      "status": "andamento",
+      "status": "praticado",
       "passos": {
-        "feitos": 0,
-        "total": 5
+        "feitos": 6,
+        "total": 6
       }
     },
     {
@@ -519,8 +575,8 @@
       "area": "IA",
       "status": "andamento",
       "passos": {
-        "feitos": 0,
-        "total": 2
+        "feitos": 1,
+        "total": 4
       }
     },
     {
@@ -533,6 +589,24 @@
       }
     },
     {
+      "nome": "Spring AI",
+      "area": "IA",
+      "status": "planejado",
+      "passos": {
+        "feitos": 0,
+        "total": 5
+      }
+    },
+    {
+      "nome": "BigDecimal e dinheiro",
+      "area": "Java",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
       "nome": "Coleções Streams e Optional",
       "area": "Java",
       "status": "praticado",
@@ -542,7 +616,34 @@
       }
     },
     {
+      "nome": "Concorrência e threads virtuais",
+      "area": "Java",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 3
+      }
+    },
+    {
       "nome": "Exceções em Java",
+      "area": "Java",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Java moderno (8 a 25)",
+      "area": "Java",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 3
+      }
+    },
+    {
+      "nome": "Maven e build",
       "area": "Java",
       "status": "praticado",
       "passos": {
@@ -589,10 +690,19 @@
     {
       "nome": "Spring Security e JWT",
       "area": "Spring",
-      "status": "andamento",
+      "status": "praticado",
+      "passos": {
+        "feitos": 8,
+        "total": 11
+      }
+    },
+    {
+      "nome": "Swagger e OpenAPI",
+      "area": "Spring",
+      "status": "planejado",
       "passos": {
         "feitos": 0,
-        "total": 8
+        "total": 5
       }
     },
     {
@@ -631,5 +741,13 @@
         "total": 7
       }
     }
-  ]
+  ],
+  "biblioteca": {
+    "notas": 56,
+    "comSem": 28,
+    "sessoes": [
+      "IA, Spring e LGPD",
+      "Java e seu universo"
+    ]
+  }
 }

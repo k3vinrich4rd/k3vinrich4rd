@@ -69,9 +69,9 @@
     <text x="120" y="118" font-size="64">🚀</text>
     <text x="220" y="92" class="ano">Agora</text>
     <text x="220" y="132" class="titulo">Rumo ao Pleno</text>
-    <text x="222" y="178" class="linha"><tspan fill="#EC7000">▸ </tspan>9 de 15 competências de Pleno praticadas</text>
+    <text x="222" y="178" class="linha"><tspan fill="#EC7000">▸ </tspan>11 de 15 competências de Pleno praticadas</text>
     <text x="222" y="208" class="linha"><tspan fill="#EC7000">▸ </tspan>Dev Junior na Zup, serviço para o Itaú</text>
-    <text x="222" y="238" class="linha"><tspan fill="#EC7000">▸ </tspan>Próximo passo: Flyway</text>
+    <text x="222" y="238" class="linha"><tspan fill="#EC7000">▸ </tspan>Próximo passo: Testcontainers</text>
   </g>
   <line x1="110" y1="318" x2="1090" y2="318" stroke="#30363d" stroke-width="3"/>
   <line x1="110" y1="318" x2="1090" y2="318" stroke="url(#marca)" stroke-width="3" class="rastro"/>

@@ -109,7 +109,11 @@ function blocoEstudos() {
   const agora = estudos.filter((e) => e.status !== 'praticado')
     .sort((a, b) => (a.status === 'andamento' ? -1 : 1) - (b.status === 'andamento' ? -1 : 1))
     .map((e) => `| ${icone[e.status]} ${e.nome} | ${e.area} | ${e.passos.total ? progresso(e.passos.feitos, e.passos.total, 10) : '—'} |`);
-  return `**${conta('praticado')}** assuntos praticados em projeto · **${conta('andamento')}** em andamento · **${conta('planejado')}** planejados
+  const b = p.biblioteca;
+  const cerebro = b
+    ? `\n\n📚 **${b.notas}** notas de estudo no segundo cérebro · **${b.comSem}** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: ${b.sessoes.map((s) => `**${s}**`).join(' · ')}`
+    : '';
+  return `**${conta('praticado')}** assuntos praticados em projeto · **${conta('andamento')}** em andamento · **${conta('planejado')}** planejados${cerebro}
 
 \`\`\`mermaid
 mindmap
@@ -146,6 +150,37 @@ const dicas = [
   ['equals/hashCode por id', 'Entidades em Set precisam de equals e hashCode consistentes, senão itens somem ou duplicam.'],
   ['Dependabot + CodeQL', 'Segurança no automático: PRs de atualização e alerta de vulnerabilidade sem você lembrar de olhar.'],
 ];
+
+// Perguntas de entrevista tiradas das minhas notas de estudo (Obsidian). Três por dia, em rodízio.
+const flashcards = [
+  ['Java', 'Por que nunca usar double para dinheiro?', 'Porque double guarda em base 2 e 0.1 não tem representação exata: <code>0.1 + 0.2</code> dá <code>0.30000000000000004</code>. No RKF Bank o saldo é <code>BigDecimal</code> e a coluna é <code>DECIMAL(19,2)</code>.'],
+  ['Java', 'Diferença entre JDK, JRE e JVM?', 'A JVM executa bytecode; o JRE é JVM + bibliotecas para rodar; o JDK é JRE + ferramentas de desenvolvimento (<code>javac</code>). O mesmo <code>.jar</code> roda no Windows e no Linux do CI porque o bytecode é da JVM, não do sistema.'],
+  ['Java', 'Java tem vazamento de memória?', 'Tem: o GC só recolhe objetos inalcançáveis. Um <code>static Map</code> que nunca é limpo mantém tudo vivo até o <code>OutOfMemoryError</code>. A solução é cache com limite e expiração.'],
+  ['Java', '== ou equals para comparar dois BigDecimal?', 'Nenhum dos dois: <code>==</code> compara endereço e <code>equals</code> compara a escala (<code>1.0</code> ≠ <code>1.00</code>). Para valor, use <code>compareTo(...) == 0</code>.'],
+  ['Java', 'Por que records são ótimos para DTO e péssimos para entidade JPA?', 'Records são imutáveis e já trazem <code>equals</code>, <code>hashCode</code> e <code>toString</code>. O Hibernate precisa de construtor vazio e de alterar campos, o que record não permite. Cuidado: o <code>toString</code> automático pode vazar senha no log.'],
+  ['Java', 'O que é uma race condition?', 'Duas threads leem o mesmo valor e gravam por cima uma da outra. Em memória resolve com <code>AtomicInteger</code>/<code>synchronized</code>; no banco, com lock otimista (<code>@Version</code>), que no RKF Bank vira <code>409</code>.'],
+  ['Java', 'Por que exceção de negócio deve ser unchecked num projeto Spring?', 'O <code>@Transactional</code> só faz rollback automático em <code>RuntimeException</code>. Uma exceção checked deixaria o débito gravado pela metade.'],
+  ['Spring', 'Qual a diferença entre 401 e 403?', '<code>401</code>: não sei quem você é (sem token, vencido ou adulterado). <code>403</code>: sei quem você é, mas não pode (conta de outro cliente). No RKF Bank a regra de dono mora no <code>ContaService</code>.'],
+  ['Spring', 'Por que a senha vai em BCrypt e não em SHA-256?', 'BCrypt tem salt aleatório (senhas iguais viram hashes diferentes) e é lento de propósito, o que encarece a força bruta. SHA-256 é rápido demais para senha.'],
+  ['Spring', 'O que acontece se eu editar uma migração do Flyway já aplicada?', 'O checksum não bate e a aplicação não sobe (<code>Migration checksum mismatch</code>). Mudança nova = arquivo novo (<code>V4__...</code>). É uma proteção: todo banco fica igual.'],
+  ['Spring', 'Por que o @Transactional não funciona numa chamada interna?', 'Ele é implementado por um proxy (AOP). Chamar outro método da mesma classe não passa pelo proxy, então a transação não abre.'],
+  ['Spring', 'Por que injeção de dependência pelo construtor?', 'Campos <code>final</code>, dependências explícitas e teste sem Spring: <code>new ContaService(mock(ContaRepository.class))</code>.'],
+  ['Spring', 'O que o MockMvc testa que chamar o controller direto não testa?', 'O JSON de verdade, o <code>@Valid</code>, a serialização e o status HTTP. Um <code>{"valor":"abc"}</code> só é pego passando pelo MockMvc.'],
+  ['IA', 'RAG ou fine-tuning para responder sobre as decisões do time?', 'RAG: o conhecimento muda e precisa citar a fonte. Fine-tuning ensina jeito e tarefa, não fatos atualizados.'],
+  ['IA', 'Qual a diferença entre chatbot e agente de IA?', 'O chatbot responde; o agente usa ferramentas em loop até cumprir um objetivo. Por isso precisa de guardrails: ler pode ser automático, mexer em dinheiro exige confirmação humana.'],
+  ['IA', 'Que problema o MCP resolve?', 'O N × M de integrações: cada sistema expõe um servidor MCP e qualquer IA compatível usa, como o USB-C fez com cabos.'],
+  ['IA', 'Por que o saldo não deve ser calculado pelo LLM?', 'O LLM prevê texto, não faz conta exata. Regra exata (saldo, CPF, limite) é código; o LLM interpreta e o código valida e executa.'],
+  ['LGPD', 'O cliente pede para apagar os dados. O banco pode dar DELETE?', 'Não: registros financeiros têm guarda obrigatória por outras leis. O certo é encerrar a conta, bloquear o acesso e anonimizar ao fim do prazo.'],
+];
+
+function blocoFlashcards() {
+  const agora = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/Sao_Paulo' }));
+  const dia = Math.floor((agora - new Date(agora.getFullYear(), 0, 0)) / 86400000);
+  const hojeCards = [0, 1, 2].map((k) => flashcards[(dia * 3 + k) % flashcards.length]);
+  const cards = hojeCards.map(([area, pergunta, resposta]) =>
+    `<details>\n<summary><b>🃏 ${area} · ${pergunta}</b></summary>\n<br/>\n\n${resposta}\n\n</details>`).join('\n\n');
+  return `${cards}\n\n<sub>🔄 Três perguntas novas por dia, tiradas das minhas notas de estudo · ${flashcards.length} no baralho</sub>`;
+}
 
 function blocoDica() {
   const agora = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/Sao_Paulo' }));
@@ -504,6 +539,7 @@ readme = substituirBloco(readme, 'checklist', blocoChecklist());
 readme = substituirBloco(readme, 'diario', blocoDiario());
 readme = substituirBloco(readme, 'estudos', blocoEstudos());
 readme = substituirBloco(readme, 'dica', blocoDica());
+readme = substituirBloco(readme, 'flashcards', blocoFlashcards());
 if (ck.gantt) readme = substituirBloco(readme, 'gantt', ck.gantt);
 // Números soltos no texto que acompanham o progresso.
 readme = readme

@@ -41,10 +41,10 @@
 <!-- AUTO:recrutador:START -->
 | Pergunta | Resposta rápida |
 |---|---|
-| Quem é? | Dev **Java backend Junior** na **Zup Innovation**, prestando serviço para o **Itaú**, em transição para **Pleno** (**9/15** competências já praticadas) |
+| Quem é? | Dev **Java backend Junior** na **Zup Innovation**, prestando serviço para o **Itaú**, em transição para **Pleno** (**11/15** competências já praticadas) |
 | Melhor projeto? | **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **163 testes**, CI e logs rastreáveis |
 | Stack principal? | Java · Spring Boot · JPA/Hibernate · MySQL/PostgreSQL · MongoDB · JUnit/Mockito · Docker · GitHub Actions |
-| O que está estudando? | Flyway → JWT → Testcontainers → AWS → inglês → mensageria |
+| O que está estudando? | Testcontainers → AWS → inglês → mensageria |
 | Contato? | [LinkedIn](https://www.linkedin.com/in/kevin-richard-b68a54203/) · [kevinrichardve@gmail.com](mailto:kevinrichardve@gmail.com) |
 <!-- AUTO:recrutador:END -->
 
@@ -75,7 +75,7 @@ Sugestão de leitura, do mais simples ao mais completo:
 2. 👥 **[CRUD de Clientes](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes)**: API em camadas com validação e paginação.
 3. 🌐 **[Workshop JPA](https://github.com/k3vinrich4rd/workshop-springboot4-jpa)**: todos os relacionamentos JPA e chave composta.
 4. 📚 **[BookMarket](https://github.com/k3vinrich4rd/BookMarket)**: Kotlin, Spring Security e eventos de domínio.
-5. 🏦 **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: transações, lock otimista, logs com `X-Request-Id`, testes `@DataJpaTest` e CI com CodeQL.
+5. 🏦 **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: transações, lock otimista, Flyway, Spring Security + JWT, logs com `X-Request-Id`, testes `@DataJpaTest` e CI com CodeQL.
 
 <details>
 <summary>👉 Onde olhar primeiro no RKF Bank</summary>
@@ -83,7 +83,9 @@ Sugestão de leitura, do mais simples ao mais completo:
 
 | Arquivo | Por que é interessante |
 |---|---|
-| `services/ContaService.java` | transferência atômica e validação de saldo |
+| `services/ContaService.java` | transferência atômica, validação de saldo e regra de dono (404 → 403 → 422) |
+| `config/ConfiguracaoSeguranca.java` | `SecurityFilterChain`, JWT HS256 com algoritmo fixo e BCrypt |
+| `resources/db/migration/` | Flyway: `V1` schema, `V2` migração de dados, `V3` usuários |
 | `entities/Conta.java` | `@Version` para lock otimista |
 | `controllers/handlers/ControllerExceptionHandler.java` | cada exceção vira o status certo |
 | `config/FiltroLogRequisicao.java` | `X-Request-Id` em todos os logs, com proteção contra log forjado |
@@ -120,10 +122,10 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <div align="center">
 
 <!-- AUTO:status:START -->
-<img src="https://img.shields.io/static/v1?label=R%C3%A9gua%20Pleno&message=9%2F15&color=EC7000&style=flat-square"/>
+<img src="https://img.shields.io/static/v1?label=R%C3%A9gua%20Pleno&message=11%2F15&color=EC7000&style=flat-square"/>
 <img src="https://img.shields.io/static/v1?label=Testes%20RKF%20Bank&message=163%20%E2%9C%94&color=3fb950&style=flat-square&logo=junit5&logoColor=white"/>
-<img src="https://img.shields.io/static/v1?label=Entregas%20recentes&message=4%20%E2%9C%94&color=003D74&style=flat-square"/>
-<img src="https://img.shields.io/static/v1?label=Foco%20agora&message=Flyway&color=6A1B9A&style=flat-square"/>
+<img src="https://img.shields.io/static/v1?label=MVP&message=6%2F14&color=003D74&style=flat-square"/>
+<img src="https://img.shields.io/static/v1?label=Foco%20agora&message=Testcontainers&color=6A1B9A&style=flat-square"/>
 <!-- AUTO:status:END -->
 
 </div>
@@ -131,11 +133,11 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:agora:START -->
 **🔥 Esta semana**
 
-- 🔨 Mergear o PR `feature/testes-repository` na `develop`
-- 🔨 Mergear o PR `fix/vulnerabilidades-dependencias` na `develop`
-- 🔨 Começar a `feature/flyway`
-- 🎯 Foco de estudo: **Flyway**
-- ✅ Última entrega: Documentação dos testes de repositório — 2026-10-15
+- 🔨 Mergear o PR `docs/readme-banco-digital`
+- 🔨 Começar a `feature/testcontainers`
+- 🔨 LGPD mínimo antes do deploy
+- 🎯 Foco de estudo: **Testcontainers**
+- ✅ Última entrega: Notas de IA, universo Spring e análise de LGPD no Obsidian — 2026-10-19
 <!-- AUTO:agora:END -->
 
 <!-- AUTO:dica:START -->
@@ -179,8 +181,11 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:diario:START -->
 | Quando | Onde | O que eu aprendi |
 |---|---|---|
+| 2026-10-19 | `docs/readme-banco-digital` | documentação desatualizada engana o time e a IA: checklist dizia "Flyway em andamento" com tudo mergeado |
+| 2026-10-17 | PRs #26 e #27 (frontend) | token fora do alcance do JavaScript (BFF) |
+| 2026-10-16 | PR #24 `feature/spring-security-jwt` | autenticação (401) × autorização (403); regra de dono é regra de negócio, não da filter chain |
+| 2026-10-16 | PR #23 `feature/flyway` | migração aplicada nunca se edita (checksum); H2 × MySQL no SQL portável |
 | 2026-10-15 | `fix/vulnerabilidades-dependencias` | dá para corrigir CVE de dependência transitiva sobrescrevendo a propriedade do BOM |
-| 2026-10-15 | `feature/testes-repository` | testar mapeamento JPA de verdade (cascata, `orphanRemoval`, `@Version`) |
 <!-- AUTO:diario:END -->
 
 </details>
@@ -265,6 +270,7 @@ timeline
          : Workshops JPA e MongoDB
          : CRUD DevSuperior (10/10)
          : RKF Bank - backend completo com CI, testes e logs
+         : Flyway e Spring Security + JWT no RKF Bank
 ```
 
 </details>
@@ -322,6 +328,8 @@ public class Kevin extends Developer implements AprendizContinuo {
 <img src="https://img.shields.io/badge/MySQL-8.4-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
 <img src="https://img.shields.io/badge/Docker-Compose-2496ED?style=flat-square&logo=docker&logoColor=white"/>
 <img src="https://img.shields.io/badge/Log4j2-X--Request--Id-D22128?style=flat-square&logo=apache&logoColor=white"/>
+<img src="https://img.shields.io/badge/Spring%20Security-JWT-6DB33F?style=flat-square&logo=springsecurity&logoColor=white"/>
+<img src="https://img.shields.io/badge/Flyway-V1%E2%86%92V3-CC0200?style=flat-square&logo=flyway&logoColor=white"/>
 <img src="https://img.shields.io/badge/JUnit%205-Mockito-25A162?style=flat-square&logo=junit5&logoColor=white"/>
 <img src="https://img.shields.io/badge/JaCoCo-cobertura-C21325?style=flat-square"/>
 <img src="https://img.shields.io/badge/GitHub%20Actions-CI-2088FF?style=flat-square&logo=githubactions&logoColor=white"/>
@@ -329,7 +337,7 @@ public class Kevin extends Developer implements AprendizContinuo {
 
 </div>
 
-> Banco digital **full stack** feito em dupla. Eu cuido do **backend**: API REST em Java e Spring Boot, banco MySQL, integração com o ViaCEP, logs e testes. O **[Renan Barros](https://github.com/renanbarrostech-cmd)** cuida do frontend em Next.js. É o projeto em que eu pratico, de ponta a ponta, o que se espera de um dev **Pleno**.
+> Banco digital **full stack** feito por um time de três, todos de **Osasco, SP**. Eu cuido do **backend**: API REST em Java e Spring Boot, banco MySQL com Flyway, login com Spring Security + JWT, integração com o ViaCEP, logs e testes. O **[Renan Barros](https://github.com/renanbarrostech-cmd)** cuida do frontend em Next.js, e o **Fellipe Santana**, idealizador do projeto, é o PO & QA e o primeiro cliente. É o projeto em que eu pratico, de ponta a ponta, o que se espera de um dev **Pleno**.
 
 <div align="center">
   <img src="assets/terminal.svg" width="100%" alt="Terminal rodando os testes do RKF Bank: 163 testes, BUILD SUCCESS"/>
@@ -347,7 +355,14 @@ public class Kevin extends Developer implements AprendizContinuo {
 erDiagram
     tb_cliente ||--|| tb_endereco : "mora em"
     tb_cliente ||--o{ tb_conta : "possui"
+    tb_cliente ||--o| tb_usuario : "entra com"
     tb_conta ||..o{ tb_lancamento : "origem ou destino"
+    tb_usuario {
+        UUID id PK
+        string login UK "CPF"
+        string senha_hash "BCrypt"
+        string perfil "CLIENTE ou ADMIN"
+    }
     tb_cliente {
         UUID id PK
         string nome_completo
@@ -418,7 +433,10 @@ journey
 | Transferência | origem ≠ destino, débito e crédito na **mesma transação** |
 | Extrato | lançamentos de entrada e saída, do mais novo para o mais antigo |
 | Concorrência | **lock otimista** (`@Version`): duas operações simultâneas na mesma conta resultam em `409`, sem saldo errado |
-| Erros | formato único de erro com status certo: `400`, `404`, `409`, `422` e `503` |
+| Login | CPF + senha (BCrypt), JWT de 15 min validado pelo OAuth2 Resource Server; CPF inexistente e senha errada dão a mesma resposta |
+| Regra de dono | cliente só movimenta e vê o extrato das **próprias** contas (`403`); listar clientes é só do `ADMIN` |
+| Banco versionado | schema só por migração do **Flyway**; o Hibernate apenas valida (`ddl-auto=validate`) |
+| Erros | formato único de erro com status certo: `400`, `401`, `403`, `404`, `409`, `422` e `503` |
 
 </details>
 
@@ -516,7 +534,7 @@ sequenceDiagram
 
 | | 🏦 [RKF Bank](https://github.com/k3vinrich4rd/rkf_bank) | 🛒 [DSCommerce](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) |
 |---|---|---|
-| **O que é** | banco digital full stack, feito em dupla | e-commerce da formação Spring Professional (DevSuperior) |
+| **O que é** | banco digital full stack, time de três (Osasco, SP) | e-commerce da formação Spring Professional (DevSuperior) |
 | **Meu papel** | todo o backend | projeto individual |
 | **Domínio** | clientes, contas, depósito, saque, transferência, extrato | usuários, pedidos, produtos, categorias, pagamento |
 | **O que mostra** | transação atômica, lock otimista, ViaCEP com falha tratada, logs com `X-Request-Id` | modelo de domínio rico, chave composta (`OrdemItemPK`), Bean Validation, erros padronizados |
@@ -1212,7 +1230,7 @@ endsolid repositorios_por_ano
 > O que separa um Junior de um Pleno não é só saber mais tecnologia: é **entregar com autonomia, qualidade e visão do todo**. Esta é a minha régua, com evidências.
 
 <div align="center">
-  <img src="assets/rumo-ao-pleno.svg" width="100%" alt="Rumo ao Pleno: 9 de 15 competências praticadas em projeto"/>
+  <img src="assets/rumo-ao-pleno.svg" width="100%" alt="Rumo ao Pleno: 11 de 15 competências praticadas em projeto"/>
 </div>
 
 <details>
@@ -1234,9 +1252,13 @@ quadrantChart
     Git Flow e CI: [0.7, 0.68]
     Logs: [0.62, 0.6]
     MongoDB: [0.45, 0.45]
-    JWT e OAuth2: [0.3, 0.86]
+    JWT e Spring Security: [0.66, 0.88]
+    Flyway: [0.6, 0.7]
+    Java moderno: [0.55, 0.75]
     AWS: [0.22, 0.8]
-    Testcontainers: [0.2, 0.66]
+    Testcontainers: [0.25, 0.7]
+    Concorrencia: [0.35, 0.78]
+    IA aplicada: [0.3, 0.6]
     Mensageria: [0.1, 0.62]
     Kotlin: [0.4, 0.3]
 ```
@@ -1259,14 +1281,14 @@ quadrantChart
 | CI/CD, segurança e dependências | ✅ | RKF Bank |
 | Git Flow, PRs e commits semânticos | ✅ | RKF Bank |
 | Banco NoSQL | ✅ | Workshop MongoDB |
-| Migrações versionadas | 🔄 | ⏫ próximo da fila |
-| Autenticação e autorização | 🔄 | em andamento |
-| Testes de integração com banco real | 🔄 | em andamento |
+| Migrações versionadas | ✅ | RKF Bank (V1, V2, V3; PR #23) |
+| Autenticação e autorização | ✅ | RKF Bank (JWT, BCrypt, perfis, regra de dono; PR #24) |
+| Testes de integração com banco real | 🔄 | ⏫ próximo da fila |
 | Deploy em nuvem | 🔄 | em andamento |
 | Inglês técnico | 🔄 | em andamento |
 | Mensageria e microsserviços | ⏳ | próximo ciclo |
 
-<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-10-16</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-10-19</sub>
 <!-- AUTO:regua:END -->
 
 </details>
@@ -1276,20 +1298,23 @@ quadrantChart
 <br/>
 
 <!-- AUTO:estudos:START -->
-**19** assuntos praticados em projeto · **6** em andamento · **1** planejados
+**23** assuntos praticados em projeto · **7** em andamento · **3** planejados
+
+📚 **56** notas de estudo no segundo cérebro · **28** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
 
 ```mermaid
 mindmap
   root((🧠 Estudos))
     Arquitetura
       ✅ Integração com APIs externas
+      🔄 LGPD
       ✅ Lock otimista e transações
       ✅ Logs e observabilidade
       ⏳ Mensageria e Outbox
     Cloud
       🔄 AWS
     Dados
-      🔄 Flyway
+      ✅ Flyway
       ✅ H2 x MySQL
       ✅ MongoDB
       ✅ SQL e MySQL
@@ -1301,15 +1326,21 @@ mindmap
     IA
       🔄 Agentes e IA aplicada
       🔄 Spec-Driven Development
+      ⏳ Spring AI
     Java
+      ✅ BigDecimal e dinheiro
       ✅ Coleções Streams e Optional
+      🔄 Concorrência e threads virtuais
       ✅ Exceções em Java
+      🔄 Java moderno (8 a 25)
+      ✅ Maven e build
       ✅ POO e SOLID
     Spring
       ✅ Bean Validation
       ✅ Spring Boot e camadas
       ✅ Spring Data JPA e relacionamentos
-      🔄 Spring Security e JWT
+      ✅ Spring Security e JWT
+      ⏳ Swagger e OpenAPI
       ✅ Tratamento de erros REST
     Testes
       ✅ DataJpaTest
@@ -1319,15 +1350,18 @@ mindmap
 
 | Estudando agora | Área | Próximos passos |
 |---|---|---|
+| 🔄 LGPD | Arquitetura | <sub>5 a fazer</sub> |
 | 🔄 AWS | Cloud | <sub>10 a fazer</sub> |
-| 🔄 Flyway | Dados | <sub>5 a fazer</sub> |
-| 🔄 Agentes e IA aplicada | IA | <sub>2 a fazer</sub> |
+| 🔄 Agentes e IA aplicada | IA | `███░░░░░░░` 1/4 |
 | 🔄 Spec-Driven Development | IA | <sub>1 a fazer</sub> |
-| 🔄 Spring Security e JWT | Spring | <sub>8 a fazer</sub> |
+| 🔄 Concorrência e threads virtuais | Java | <sub>3 a fazer</sub> |
+| 🔄 Java moderno (8 a 25) | Java | <sub>3 a fazer</sub> |
 | 🔄 Testcontainers | Testes | <sub>7 a fazer</sub> |
 | ⏳ Mensageria e Outbox | Arquitetura | <sub>6 a fazer</sub> |
+| ⏳ Spring AI | IA | <sub>5 a fazer</sub> |
+| ⏳ Swagger e OpenAPI | Spring | <sub>5 a fazer</sub> |
 
-<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-10-16.</sub>
+<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-10-19.</sub>
 <!-- AUTO:estudos:END -->
 
 </details>
@@ -1383,11 +1417,12 @@ gantt
     Semana 3 - movimentações          :active,  s3, 2026-10-19, 7d
     Semana 4 - testar e lançar        :         s4, 2026-10-26, 6d
     section Pleno
-    Flyway                            :crit,    f1, 2026-10-16, 3d
-    Spring Security + JWT             :         f2, after f1, 10d
-    Testcontainers                    :         f3, after f2, 4d
+    Flyway                            :done,    f1, 2026-10-15, 2d
+    Spring Security + JWT             :done,    f2, 2026-10-16, 2d
+    Testcontainers                    :crit,    f3, 2026-10-20, 4d
+    Swagger                           :         f6, after f3, 2d
     Deploy AWS                        :         f4, after s4, 7d
-    Mensageria                        :         f5, after f3, 10d
+    Mensageria                        :         f5, after f6, 10d
 ```
 <!-- AUTO:gantt:END -->
 
@@ -1398,47 +1433,52 @@ gantt
 <br/>
 
 <!-- AUTO:checklist:START -->
-**✔️ Concluído recentemente** <sub>4 entregas</sub>
-- ✅ Documentação dos testes de repositório — 2026-10-15
+**✔️ Concluído recentemente** <sub>6 entregas</sub>
+- ✅ Notas de IA, universo Spring e análise de LGPD no Obsidian — 2026-10-19
+- ✅ Frontend: login, conta, movimentações e extrato (PRs #26 e #27) — 2026-10-17
+- ✅ Spring Security + JWT, BCrypt, perfis e regra de dono (PR #24) — 2026-10-16
+- ✅ Flyway com V1, V2 e V3, `ddl-auto=validate` (PR #23) — 2026-10-16
 - ✅ CVEs do Tomcat (3 críticas) e do Jackson (5 altas, 2 moderadas) corrigidas — 2026-10-15
-- ✅ H2 fixado em 2.3.232 (bug do `CHECK ... IN` no 2.4.240) — 2026-10-15
 - ✅ Testes da camada repositories (34 testes, `@DataJpaTest`) — 2026-10-15
 
-**🚀 MVP do RKF Bank (31/10/2026)** <sub>12 a fazer</sub>
+**🚀 MVP do RKF Bank (31/10/2026)** `█████░░░░░░░` 6/14
 
-<b>Backend</b> <sub>3 a fazer</sub>
+<b>Backend</b> `███░░░░░` 1/3
 
 - [ ] `GET /contas/{contaId}` (saldo)
 - [ ] `GET /clientes/{clienteId}/contas`
-- [ ] Decidir como o usuário acessa a conta sem login (ver Decisões RKF Bank)
+- [x] Decidir como o usuário acessa a conta sem login (resolvido com o login)
 
-<b>Frontend (Renan)</b> <sub>4 a fazer</sub>
+<b>Frontend (Renan)</b> `████████` 5/5
 
-- [ ] Abrir conta depois do cadastro
-- [ ] Tela da conta (saldo)
-- [ ] Telas de depósito, saque e transferência
-- [ ] Tela de extrato
+- [x] Abrir conta depois do cadastro
+- [x] Tela da conta (saldo)
+- [x] Telas de depósito, saque e transferência
+- [x] Tela de extrato
+- [x] Tela de login com cookie `httpOnly`
 
-<b>Lançamento</b> <sub>5 a fazer</sub>
+<b>Lançamento</b> <sub>6 a fazer</sub>
 
 - [ ] Decidir onde publicar (ver Decisões RKF Bank)
-- [ ] Fellipe (PO & QA) testa tudo pelo roteiro E2E
+- [ ] LGPD mínimo: política de privacidade, aceite dos termos e encarregado
+- [ ] Fellipe (idealizador, PO & QA e primeiro cliente) testa tudo pelo roteiro E2E
 - [ ] Corrigir os bugs encontrados
 - [ ] Colocar no ar
 - [ ] Atualizar o README com link e prints
 
-**📏 Rumo ao Pleno** <sub>26 a fazer</sub>
+**📏 Rumo ao Pleno** `█████░░░░░░░` 12/29 passos
 
-- [ ] **Flyway** ⏫ **próximo** <sub>6 a fazer</sub>
-- [ ] **Spring Security + JWT** <sub>6 a fazer</sub>
-- [ ] **Testcontainers** <sub>4 a fazer</sub>
+- [x] **Flyway** `████████` 6/6
+- [x] **Spring Security + JWT** `████████` 6/6
+- [ ] **Testcontainers** ⏫ **próximo** <sub>4 a fazer</sub>
+- [ ] **Swagger / OpenAPI** <sub>3 a fazer</sub>
 - [ ] **Deploy AWS** 🔮 <sub>5 a fazer</sub>
 - [ ] **Mensageria** 🔮 <sub>3 a fazer</sub>
 - [ ] **Inglês** <sub>2 a fazer</sub>
 
-**🧹 Débitos técnicos:** 18 mapeados
+**🧹 Débitos técnicos:** 17 mapeados
 
-<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-10-16.</sub>
+<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-10-19.</sub>
 <!-- AUTO:checklist:END -->
 
 </details>
@@ -1656,9 +1696,57 @@ O CI tem **CodeQL**, **Dependency Review** e **Dependabot**. Quando o Spring Boo
 
 </details>
 
+<details>
+<summary><b>Como você protege as contas de um cliente contra outro cliente?</b></summary>
+<br/>
+
+Duas camadas no RKF Bank. A **autenticação** (Spring Security + OAuth2 Resource Server) confere o JWT em toda requisição: sem token, token vencido ou adulterado (até com `alg: none`) dão `401`. A **autorização** por dono fica no `ContaService`: o `clienteId` vem do token assinado, não da URL, e uma conta de outra pessoa dá `403`. A ordem 404 → 403 → 422 garante que ninguém descubra o saldo alheio pela mensagem de erro.
+
+</details>
+
+<details>
+<summary><b>Por que trocar o ddl-auto=update pelo Flyway?</b></summary>
+<br/>
+
+Com `update` o Hibernate adivinha o schema, não renomeia nem remove nada e não deixa histórico. Com Flyway cada mudança é um SQL versionado (`V1`, `V2`, `V3`), revisado no PR e igual em todo ambiente. O maior aprendizado foi o H2 × MySQL: SQL portável e UUID fixado como `BINARY(16)` para os testes validarem o mesmo schema.
+
+</details>
+
+### 🃏 Flashcards do dia
+
+> Perguntas de entrevista tiradas das minhas notas de estudo no Obsidian. Pense na resposta e clique para conferir. Mudam sozinhas todo dia.
+
+<!-- AUTO:flashcards:START -->
+<details>
+<summary><b>🃏 Spring · O que o MockMvc testa que chamar o controller direto não testa?</b></summary>
+<br/>
+
+O JSON de verdade, o <code>@Valid</code>, a serialização e o status HTTP. Um <code>{"valor":"abc"}</code> só é pego passando pelo MockMvc.
+
+</details>
+
+<details>
+<summary><b>🃏 IA · RAG ou fine-tuning para responder sobre as decisões do time?</b></summary>
+<br/>
+
+RAG: o conhecimento muda e precisa citar a fonte. Fine-tuning ensina jeito e tarefa, não fatos atualizados.
+
+</details>
+
+<details>
+<summary><b>🃏 IA · Qual a diferença entre chatbot e agente de IA?</b></summary>
+<br/>
+
+O chatbot responde; o agente usa ferramentas em loop até cumprir um objetivo. Por isso precisa de guardrails: ler pode ser automático, mexer em dinheiro exige confirmação humana.
+
+</details>
+
+<sub>🔄 Três perguntas novas por dia, tiradas das minhas notas de estudo · 18 no baralho</sub>
+<!-- AUTO:flashcards:END -->
+
 ### 🎯 Desafio relâmpago: quanto você sabe de backend?
 
-> Três perguntas tiradas dos meus projetos. Escolha uma resposta e clique para ver se acertou.
+> Quatro perguntas tiradas dos meus projetos. Escolha uma resposta e clique para ver se acertou.
 
 **1. Duas transferências tentam debitar a mesma conta ao mesmo tempo. Com `@Version` na entidade, o que acontece com a segunda?**
 
@@ -1711,6 +1799,24 @@ O CI tem **CodeQL**, **Dependency Review** e **Dependabot**. Quando o Spring Boo
 <details><summary>C) Timeout curto e 503 Service Unavailable</summary>
 
 ✅ **Isso!** É o que o RKF Bank faz: timeout de 3 s e <code>503</code> com mensagem clara. CEP inexistente vira <code>422</code>.
+
+</details>
+
+**4. Quanto dá `0.1 + 0.2` com `double` em Java?**
+
+<details><summary>A) 0.3</summary>
+
+❌ **Ainda não.** Seria o esperado, mas `double` guarda em base 2 e `0.1` não tem representação exata.
+
+</details>
+<details><summary>B) 0.30000000000000004</summary>
+
+✅ **Isso!** É por isso que o saldo do RKF Bank é <code>BigDecimal</code> (criado a partir de <code>String</code>) e a coluna é <code>DECIMAL(19,2)</code>.
+
+</details>
+<details><summary>C) Erro de compilação</summary>
+
+❌ **Ainda não.** Compila e roda; o problema é silencioso, o que o torna mais perigoso num banco.
 
 </details>
 

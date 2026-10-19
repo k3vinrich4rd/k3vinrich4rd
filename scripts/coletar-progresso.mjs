@@ -115,6 +115,26 @@ function rkf() {
   return { testes: testes || anterior.rkf?.testes || 0 };
 }
 
+/** Tamanho do segundo cérebro: notas de estudo, quantas têm o "com × sem" e as sessões guiadas. */
+function biblioteca() {
+  const raiz = vault('03 Estudos');
+  if (!fs.existsSync(raiz)) return anterior.biblioteca;
+  const notas = [];
+  const varrer = (dir) => {
+    for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+      const f = path.join(dir, e.name);
+      if (e.isDirectory()) varrer(f);
+      else if (e.name.endsWith('.md')) notas.push({ nome: e.name.replace(/\.md$/, ''), md: ler(f) });
+    }
+  };
+  varrer(raiz);
+  return {
+    notas: notas.length,
+    comSem: notas.filter((n) => /^## 🆚 Com × sem/m.test(n.md)).length,
+    sessoes: notas.filter((n) => n.nome.startsWith('Sessão de estudo - ')).map((n) => n.nome.replace('Sessão de estudo - ', '')).sort(),
+  };
+}
+
 const reguaAtual = regua();
 const lista = checklist();
 const proximo = reguaAtual?.itens.find((i) => i.proximo) ?? reguaAtual?.itens.find((i) => i.status === 'andamento');
@@ -126,6 +146,7 @@ const progresso = {
   rkf: { ...rkf(), checklist: lista },
   historico: historico(),
   estudos: estudos(),
+  biblioteca: biblioteca(),
 };
 
 // A data só muda quando algum dado mudou, para não gerar commit vazio todo dia.
