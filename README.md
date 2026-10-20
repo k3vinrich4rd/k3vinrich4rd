@@ -141,9 +141,9 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:agora:END -->
 
 <!-- AUTO:dica:START -->
-> 💡 **Dica do dia: `Commits semânticos`**  
-> feat:, fix:, test:, docs:... o histórico vira documentação e o changelog quase se escreve sozinho.  
-> <sub>Muda todo dia sozinha · 13/20</sub>
+> 💡 **Dica do dia: `Records`**  
+> DTOs imutáveis em uma linha: record ContaDto(UUID id, BigDecimal saldo) {}.  
+> <sub>Muda todo dia sozinha · 14/20</sub>
 <!-- AUTO:dica:END -->
 
 <!-- A cobrinha é gerada pelo workflow .github/workflows/snake.yml deste repositório (branch "output"). -->
@@ -160,8 +160,8 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:atividade:START -->
 | | Repositório | Commit | Quando |
 |:-:|---|---|---|
-| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`1c84d45`](https://github.com/k3vinrich4rd/rkf_bank/commit/1c84d45f59f511447421c20bdd95cd821a1d3090) docs: readme com aventura, login passo a passo e feito em Osasco | há 5 h |
-| 🔧 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`4afc7b9`](https://github.com/k3vinrich4rd/rkf_bank/commit/4afc7b90450dba591398d0ddd4fe716e2da7212f) chore: avatares do time a partir de fotos e card de Osasco | há 5 h |
+| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`1c84d45`](https://github.com/k3vinrich4rd/rkf_bank/commit/1c84d45f59f511447421c20bdd95cd821a1d3090) docs: readme com aventura, login passo a passo e feito em Osasco | há 11 h |
+| 🔧 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`4afc7b9`](https://github.com/k3vinrich4rd/rkf_bank/commit/4afc7b90450dba591398d0ddd4fe716e2da7212f) chore: avatares do time a partir de fotos e card de Osasco | há 11 h |
 | 📝 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`0849493`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/0849493f006f8569a3c9a93e9578c3ba795d6921) docs: adiciona README com modelo de dominio, endpoints e exemplos reais | há 4 dias |
 | 🐛 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`cf381a2`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/cf381a2b0fdf09b7ce7b3c3784be9cc876f6352e) fix: salva application-test.properties em UTF-8 | há 4 dias |
 | ✨ | [`crud-clientes`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) | [`9b0eb79`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes/commit/9b0eb794bf407bdbe22af1196065717ef72591a9) feat: implementando correcao sugerida no feedback | há 15 dias |
@@ -169,7 +169,7 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 | ✨ | [`workshop-springboot4-mongodb`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb) | [`ecad5ce`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb/commit/ecad5cec16d1f5ef7b606e6f8b5daf5ce74ade25) feat: Implementando ajustes no projeto | 15/09/2026 |
 | ✨ | [`workshop-springboot4-mongodb`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb) | [`264463c`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb/commit/264463cd568db8f49e9a3b154dc305bfb5adc906) feat: Implementando ajustes de comentarios no projeto e README.md | 06/09/2026 |
 
-<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 19/10 às 19:23</sub>
+<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 20/10 às 01:55</sub>
 <!-- AUTO:atividade:END -->
 
 </details>
@@ -1718,26 +1718,26 @@ Com `update` o Hibernate adivinha o schema, não renomeia nem remove nada e não
 
 <!-- AUTO:flashcards:START -->
 <details>
-<summary><b>🃏 Spring · O que o MockMvc testa que chamar o controller direto não testa?</b></summary>
+<summary><b>🃏 IA · Que problema o MCP resolve?</b></summary>
 <br/>
 
-O JSON de verdade, o <code>@Valid</code>, a serialização e o status HTTP. Um <code>{"valor":"abc"}</code> só é pego passando pelo MockMvc.
+O N × M de integrações: cada sistema expõe um servidor MCP e qualquer IA compatível usa, como o USB-C fez com cabos.
 
 </details>
 
 <details>
-<summary><b>🃏 IA · RAG ou fine-tuning para responder sobre as decisões do time?</b></summary>
+<summary><b>🃏 IA · Por que o saldo não deve ser calculado pelo LLM?</b></summary>
 <br/>
 
-RAG: o conhecimento muda e precisa citar a fonte. Fine-tuning ensina jeito e tarefa, não fatos atualizados.
+O LLM prevê texto, não faz conta exata. Regra exata (saldo, CPF, limite) é código; o LLM interpreta e o código valida e executa.
 
 </details>
 
 <details>
-<summary><b>🃏 IA · Qual a diferença entre chatbot e agente de IA?</b></summary>
+<summary><b>🃏 LGPD · O cliente pede para apagar os dados. O banco pode dar DELETE?</b></summary>
 <br/>
 
-O chatbot responde; o agente usa ferramentas em loop até cumprir um objetivo. Por isso precisa de guardrails: ler pode ser automático, mexer em dinheiro exige confirmação humana.
+Não: registros financeiros têm guarda obrigatória por outras leis. O certo é encerrar a conta, bloquear o acesso e anonimizar ao fim do prazo.
 
 </details>
 
