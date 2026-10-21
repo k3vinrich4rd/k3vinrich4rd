@@ -28,6 +28,11 @@ function dadosDoCommit() {
   };
 }
 
+/** Repositório privado (lista "privados" do config.json) entra no Obsidian, mas o perfil público nem cita o nome. */
+function ehPrivado(c) {
+  return (cfg.privados ?? []).some((n) => n.toLowerCase() === c.nome.toLowerCase());
+}
+
 /** Procura no vault a nota cujo frontmatter "repo:" aponta para este repositório. */
 function notaDoProjeto(remoto) {
   if (!remoto) return null;
@@ -128,7 +133,8 @@ function atualizarPerfil(c) {
   if (!temGit) return log('perfil sem git: README regenerado, sem commit');
   git(['add', 'README.md', 'progresso.json', 'assets'], RAIZ);
   if (!git(['diff', '--cached', '--name-only'], RAIZ)) return;
-  git(['commit', '-m', `docs(perfil): atualiza progresso (${c.nome} ${c.curto})`], RAIZ, env);
+  const origem = ehPrivado(c) ? '' : ` (${c.nome} ${c.curto})`;
+  git(['commit', '-m', `docs(perfil): atualiza progresso${origem}`], RAIZ, env);
   log(`perfil: commit criado a partir de ${c.nome} ${c.curto}`);
   if (cfg.autoPush) {
     try {

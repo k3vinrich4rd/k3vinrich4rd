@@ -1,5 +1,8 @@
 {
   "vault": "C:/Users/Estudo$/OneDrive/Documentos/Obsidian Vault",
   "rkfbank": "C:/Users/Estudo$/Documents/rkfbank",
-  "autoPush": false
+  "autoPush": false,
+  "privados": [
+    "rkf_bank-equipe"
+  ]
 }
