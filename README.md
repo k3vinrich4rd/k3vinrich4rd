@@ -85,7 +85,7 @@ Sugestão de leitura, do mais simples ao mais completo:
 |---|---|
 | `services/ContaService.java` | transferência atômica, validação de saldo e regra de dono (404 → 403 → 422) |
 | `config/ConfiguracaoSeguranca.java` | `SecurityFilterChain`, JWT HS256 com algoritmo fixo e BCrypt |
-| `resources/db/migration/` | Flyway: `V1` schema, `V2` migração de dados, `V3` usuários |
+| `resources/db/migration/` | Flyway: `V1`–`V8`, uma tabela por migração (endereço, cliente, conta, lançamento, usuário, idempotência) e callbacks de seed |
 | `entities/Conta.java` | `@Version` para lock otimista |
 | `controllers/handlers/ControllerExceptionHandler.java` | cada exceção vira o status certo |
 | `config/FiltroLogRequisicao.java` | `X-Request-Id` em todos os logs, com proteção contra log forjado |
@@ -272,6 +272,70 @@ timeline
          : RKF Bank - backend completo com CI, testes e logs
          : Flyway e Spring Security + JWT no RKF Bank
 ```
+
+</details>
+
+### 🔀 2022 × 2026: o mesmo saque, quatro anos depois
+
+> Em 2022, no Catalisa, eu fiz um "banco" pela primeira vez. Em 2026, fiz de novo no RKF Bank. Antes de abrir, tente achar **3 problemas** no código de 2022. 🕵️
+
+<details>
+<summary><b>📼 2022 — <a href="https://github.com/k3vinrich4rd/ContaBancariaSpring">ContaBancariaSpring</a> (clique para ver)</b></summary>
+<br/>
+
+```java
+public class Saque implements CalculoContaBancaria {
+    @Override
+    public BigDecimal calculoDeTransacoes(ContaBancariaModel conta) {
+        return conta.getValorAtualDaConta()
+                .subtract(new BigDecimal(String.valueOf(conta.getValorFonercidoSaqueDeposito())));
+    }
+}
+// e no service: o saldo e o valor do saque vêm no MESMO corpo da requisição
+contaBancariaModel.setValorFinal(resultado);
+return contaBancariaRepository.save(contaBancariaModel);
+```
+
+</details>
+
+<details>
+<summary><b>🏦 2026 — <a href="https://github.com/k3vinrich4rd/rkf_bank">RKF Bank</a> (clique para ver)</b></summary>
+<br/>
+
+```java
+@Transactional
+public void sacar(UUID contaId, SaqueRequestDto request, UsuarioLogado usuario) {
+    Conta conta = buscarDoDono(contaId, usuario);          // 404 se não existe, 403 se não é sua
+    BigDecimal valor = validarValor(request.valor());      // 422 se for zero ou negativo
+
+    if (conta.getSaldo().compareTo(valor) < 0) {
+        log.warn("Saque de {} recusado na conta {}: saldo insuficiente", valor, contaId);
+        throw new NaoProcessavelException("Saldo insuficiente");
+    }
+
+    conta.setSaldo(conta.getSaldo().subtract(valor));       // @Version na Conta: corrida vira 409
+    contaRepository.save(conta);
+    salvarLancamento(TipoLancamentoEnum.SAQUE, valor, conta.getId(), null, request.descricao());
+}
+```
+
+</details>
+
+<details>
+<summary><b>✅ Gabarito: o que mudou (abra depois de tentar)</b></summary>
+<br/>
+
+| Problema em 2022 | Como resolvi em 2026 |
+|---|---|
+| 💸 O **cliente mandava o próprio saldo** no JSON; bastava escrever um saldo maior | o saldo só existe no banco; a requisição traz apenas o valor |
+| 🕳️ **Saldo podia ficar negativo**: não havia regra nenhuma | `Saldo insuficiente` vira `422` antes de debitar |
+| 🔓 **Qualquer pessoa mexia em qualquer conta**: não havia login | JWT + regra de dono: conta de outro cliente vira `403` |
+| ➖ Valor **zero ou negativo** passava (e um saque negativo era um depósito!) | `validarValor` recusa com `422` |
+| 🏃 Dois saques ao mesmo tempo **sobrescreviam** um ao outro | `@Transactional` + lock otimista com `@Version` → `409` |
+| 🧾 Nenhum **histórico**: o valor final só substituía o anterior | cada saque gera um lançamento no extrato |
+| 🔇 Sem log nem teste do caminho de erro | log com `X-Request-Id` e 237 testes automatizados |
+
+<sub>Quantos você achou? Conta pra mim no <a href="#️-livro-de-visitas">livro de visitas</a>. 😄</sub>
 
 </details>
 
@@ -1695,6 +1759,21 @@ mindmap
 
 </div>
 
+### 🗳️ Você decide: o que o RKF Bank ganha depois?
+
+> Enquete **ao vivo**. Clique no placar da opção que você quer ver: abre uma issue já preenchida, é só enviar. Ela fecha sozinha e o voto entra na conta em alguns minutos. A mais votada sobe na fila do meu PDI. 🚀
+
+<div align="center">
+
+| Opção | O que significa | Placar (clique para votar) |
+|---|---|:-:|
+| 🐳 Testcontainers | testes com MySQL de verdade | <a href="https://github.com/k3vinrich4rd/k3vinrich4rd/issues/new?template=voto.yml&title=%5Bvoto%5D%20testcontainers"><img src="https://img.shields.io/github/issues-search?query=repo%3Ak3vinrich4rd%2Fk3vinrich4rd%20is%3Aissue%20in%3Atitle%20%22%5Bvoto%5D%20testcontainers%22&label=votos&color=2496ED&style=for-the-badge&cacheSeconds=300" alt="votos em testcontainers"/></a> |
+| 📘 Swagger / OpenAPI | contrato navegável da API | <a href="https://github.com/k3vinrich4rd/k3vinrich4rd/issues/new?template=voto.yml&title=%5Bvoto%5D%20swagger"><img src="https://img.shields.io/github/issues-search?query=repo%3Ak3vinrich4rd%2Fk3vinrich4rd%20is%3Aissue%20in%3Atitle%20%22%5Bvoto%5D%20swagger%22&label=votos&color=85EA2D&style=for-the-badge&cacheSeconds=300" alt="votos em swagger"/></a> |
+| ☁️ Deploy na AWS | RKF Bank no ar para todo mundo | <a href="https://github.com/k3vinrich4rd/k3vinrich4rd/issues/new?template=voto.yml&title=%5Bvoto%5D%20aws"><img src="https://img.shields.io/github/issues-search?query=repo%3Ak3vinrich4rd%2Fk3vinrich4rd%20is%3Aissue%20in%3Atitle%20%22%5Bvoto%5D%20aws%22&label=votos&color=FF9900&style=for-the-badge&cacheSeconds=300" alt="votos em aws"/></a> |
+| 📨 Mensageria | eventos com fila (Kafka/RabbitMQ) | <a href="https://github.com/k3vinrich4rd/k3vinrich4rd/issues/new?template=voto.yml&title=%5Bvoto%5D%20mensageria"><img src="https://img.shields.io/github/issues-search?query=repo%3Ak3vinrich4rd%2Fk3vinrich4rd%20is%3Aissue%20in%3Atitle%20%22%5Bvoto%5D%20mensageria%22&label=votos&color=6A1B9A&style=for-the-badge&cacheSeconds=300" alt="votos em mensageria"/></a> |
+
+</div>
+
 <details open>
 <summary><b>📅 Cronograma: do MVP do RKF Bank ao Pleno</b></summary>
 <br/>
@@ -1942,6 +2021,8 @@ Atuo como **Desenvolvedor de Software Junior** contratado pela **[Zup Innovation
 ## 💬 Pergunte ao Kevin
 
 > Perguntas que costumam aparecer em entrevista, respondidas com o que eu fiz de verdade. Clique para abrir.
+>
+> 🙋 **Ficou com uma dúvida que não está aqui?** [Faça sua pergunta](https://github.com/k3vinrich4rd/k3vinrich4rd/issues/new?template=pergunta.yml&title=%5Bpergunta%5D%20): eu respondo na issue, e as melhores viram resposta nesta seção.
 
 <details>
 <summary><b>Como você garante que uma transferência não deixa o saldo errado?</b></summary>
@@ -2170,6 +2251,22 @@ Tem: o GC só recolhe objetos inalcançáveis. Um <code>static Map</code> que nu
 | Curso Git e GitHub | Workover |
 
 </details>
+
+## ✍️ Livro de visitas
+
+> Passou por aqui? Deixe um oi, uma dica ou um feedback. Seu avatar aparece abaixo na próxima atualização. 👋
+
+<div align="center">
+
+<!-- AUTO:visitas:START -->
+<sub>Ninguém assinou ainda. Que tal ser a primeira pessoa? 👇</sub>
+<!-- AUTO:visitas:END -->
+
+<br/>
+
+<a href="https://github.com/k3vinrich4rd/k3vinrich4rd/issues/new?template=visita.yml&title=%5Bvisita%5D%20Ol%C3%A1%2C%20Kevin!"><img src="https://img.shields.io/badge/%E2%9C%8D%EF%B8%8F%20Assinar%20o%20livro%20de%20visitas-3fb950?style=for-the-badge" alt="Assinar o livro de visitas"/></a>
+
+</div>
 
 ---
 

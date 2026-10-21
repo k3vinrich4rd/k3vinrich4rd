@@ -1,0 +1,12 @@
+# "Pergunte ao Kevin": as melhores perguntas viram resposta na seção do README.
+name: 💬 Pergunte ao Kevin
+description: Uma pergunta técnica ou de carreira. As boas viram resposta no README.
+title: "[pergunta] "
+body:
+  - type: textarea
+    id: pergunta
+    attributes:
+      label: Sua pergunta
+      placeholder: "Ex.: Por que JWT e não sessão no RKF Bank?"
+    validations:
+      required: true

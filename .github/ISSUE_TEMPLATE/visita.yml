@@ -1,0 +1,17 @@
+# Livro de visitas do README: o avatar de quem abre "[visita]" aparece no README na próxima atualização.
+name: ✍️ Assinar o livro de visitas
+description: Deixe um oi e o seu avatar aparece no README do Kevin.
+title: "[visita] "
+body:
+  - type: input
+    id: de-onde
+    attributes:
+      label: De onde você é?
+      placeholder: "Ex.: Osasco, SP"
+  - type: textarea
+    id: recado
+    attributes:
+      label: Seu recado
+      placeholder: "Um oi, uma dica, uma vaga, um feedback sobre o RKF Bank..."
+    validations:
+      required: true

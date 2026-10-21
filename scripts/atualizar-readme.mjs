@@ -364,6 +364,18 @@ async function api(rota) {
   return r.json();
 }
 
+/** Livro de visitas: avatares de quem abriu uma issue "[visita]" (sem as marcadas como "oculto"). */
+async function blocoVisitas() {
+  const q = encodeURIComponent(`repo:${USUARIO}/${USUARIO} is:issue in:title "[visita]" -label:oculto`);
+  const { items } = await api(`/search/issues?q=${q}&sort=created&order=desc&per_page=50`);
+  const vistos = new Set();
+  const visitas = items.filter((i) => !vistos.has(i.user.login) && vistos.add(i.user.login)).slice(0, 14);
+  if (!visitas.length) return '<sub>Ninguém assinou ainda. Que tal ser a primeira pessoa? 👇</sub>';
+  const avatares = visitas.map((i) =>
+    `<a href="${i.html_url}" title="@${xml(i.user.login)}"><img src="${i.user.avatar_url}&s=88" width="44" height="44" alt="@${xml(i.user.login)}"/></a>`);
+  return `${avatares.join('\n')}\n\n<sub>${vistos.size} ${vistos.size === 1 ? 'pessoa já passou' : 'pessoas já passaram'} por aqui · clique num avatar para ler o recado</sub>`;
+}
+
 async function repositorios() {
   const todos = [];
   for (let pag = 1; ; pag++) {
@@ -544,6 +556,7 @@ if (ck.gantt) readme = substituirBloco(readme, 'gantt', ck.gantt);
 // Números soltos no texto que acompanham o progresso.
 readme = readme
   .replace(/\d+(?= testes, JaCoCo)/, rkf.testes)
+  .replace(/(`X-Request-Id` e )\d+(?= testes automatizados)/, `$1${rkf.testes}`)
   .replace(/(Terminal rodando os testes do RKF Bank: )\d+/, `$1${rkf.testes}`)
   .replace(/(Rumo ao Pleno: )\d+ de \d+/, `$1${regua.praticadas} de ${regua.total}`);
 
@@ -555,6 +568,11 @@ if (usarApi) {
     if (atividade) readme = substituirBloco(readme, 'atividade', atividade);
   } catch (e) {
     console.warn(`aviso: API do GitHub indisponível, mantendo os blocos anteriores (${e.message})`);
+  }
+  try {
+    readme = substituirBloco(readme, 'visitas', await blocoVisitas());
+  } catch (e) {
+    console.warn(`aviso: livro de visitas não atualizado (${e.message})`);
   }
 }
 readme = substituirBloco(readme, 'agora', blocoAgora());

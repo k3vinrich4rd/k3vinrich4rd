@@ -1,0 +1,46 @@
+# Responde às interações do README que chegam como issue: voto, visita e pergunta.
+# Voto e visita fecham sozinhos (o placar e o livro contam issues fechadas também); pergunta fica aberta para o Kevin responder.
+# Para esconder uma visita do README, basta pôr a etiqueta "oculto" na issue.
+name: Interações do README
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+  actions: write
+
+jobs:
+  responder:
+    if: startsWith(github.event.issue.title, '[voto]') || startsWith(github.event.issue.title, '[visita]') || startsWith(github.event.issue.title, '[pergunta]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: ${{ github.repository }}
+      NUMERO: ${{ github.event.issue.number }}
+      TITULO: ${{ github.event.issue.title }}
+      AUTOR: ${{ github.event.issue.user.login }}
+    steps:
+      - name: Etiquetar, agradecer e fechar
+        run: |
+          gh label create voto --color EC7000 --description "Voto na enquete do README" --force
+          gh label create visita --color 3fb950 --description "Livro de visitas do README" --force
+          gh label create pergunta --color 58a6ff --description "Pergunte ao Kevin" --force
+          gh label create oculto --color 6e7681 --description "Não aparece no README" --force
+          case "$TITULO" in
+            "[voto]"*)
+              gh issue edit "$NUMERO" --add-label voto
+              gh issue close "$NUMERO" --comment "Voto contado, @$AUTOR! 🗳️ O placar do README atualiza em alguns minutos. Obrigado por ajudar a decidir o próximo passo."
+              ;;
+            "[visita]"*)
+              gh issue edit "$NUMERO" --add-label visita
+              gh issue close "$NUMERO" --comment "Valeu pela visita, @$AUTOR! ✍️ Seu avatar entra no livro de visitas do README já já."
+              gh workflow run atualizar-readme.yml
+              ;;
+            "[pergunta]"*)
+              gh issue edit "$NUMERO" --add-label pergunta
+              gh issue comment "$NUMERO" --body "Boa pergunta, @$AUTOR! 💬 Eu respondo aqui em breve. Se ela for das boas, vira resposta na seção **Pergunte ao Kevin** do README."
+              ;;
+          esac

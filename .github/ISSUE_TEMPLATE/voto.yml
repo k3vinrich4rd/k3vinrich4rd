@@ -1,0 +1,15 @@
+# Enquete do README: cada issue "[voto] <opção>" conta um voto (o badge do README conta as issues).
+name: 🗳️ Votar no próximo passo
+description: Escolha o que o Kevin estuda e implementa depois no RKF Bank.
+title: "[voto] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por votar! 🙌 O título já vem com a opção que você clicou no README; é só enviar.
+        A issue fecha sozinha e o placar do README atualiza em alguns minutos.
+  - type: textarea
+    id: motivo
+    attributes:
+      label: Quer dizer por quê? (opcional)
+      placeholder: "Ex.: na minha empresa a gente usa muito isso..."
