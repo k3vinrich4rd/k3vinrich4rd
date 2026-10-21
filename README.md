@@ -328,8 +328,8 @@ public class Kevin extends Developer implements AprendizContinuo {
 <img src="https://img.shields.io/badge/MySQL-8.4-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
 <img src="https://img.shields.io/badge/Docker-Compose-2496ED?style=flat-square&logo=docker&logoColor=white"/>
 <img src="https://img.shields.io/badge/Log4j2-X--Request--Id-D22128?style=flat-square&logo=apache&logoColor=white"/>
-<img src="https://img.shields.io/badge/Spring%20Security-JWT-6DB33F?style=flat-square&logo=springsecurity&logoColor=white"/>
-<img src="https://img.shields.io/badge/Flyway-V1%E2%86%92V3-CC0200?style=flat-square&logo=flyway&logoColor=white"/>
+<img src="https://img.shields.io/badge/Spring%20Security-OAuth2%20%2B%20JWT-6DB33F?style=flat-square&logo=springsecurity&logoColor=white"/>
+<img src="https://img.shields.io/badge/Flyway-V1%E2%86%92V8%20%2B%20seed-CC0200?style=flat-square&logo=flyway&logoColor=white"/>
 <img src="https://img.shields.io/badge/JUnit%205-Mockito-25A162?style=flat-square&logo=junit5&logoColor=white"/>
 <img src="https://img.shields.io/badge/JaCoCo-cobertura-C21325?style=flat-square"/>
 <img src="https://img.shields.io/badge/GitHub%20Actions-CI-2088FF?style=flat-square&logo=githubactions&logoColor=white"/>
@@ -337,15 +337,305 @@ public class Kevin extends Developer implements AprendizContinuo {
 
 </div>
 
-> Banco digital **full stack** feito por um time de três, todos de **Osasco, SP**. Eu cuido do **backend**: API REST em Java e Spring Boot, banco MySQL com Flyway, login com Spring Security + JWT, integração com o ViaCEP, logs e testes. O **[Renan Barros](https://github.com/renanbarrostech-cmd)** cuida do frontend em Next.js, e o **Felipe Santana**, idealizador do projeto, é o PO & QA e o primeiro cliente. É o projeto em que eu pratico, de ponta a ponta, o que se espera de um dev **Pleno**.
+> **RKF Bank é um banco digital full stack construído como produto de verdade por três amigos de Osasco, SP.**
+> Conta, depósito, saque, transferência e extrato, com login seguro, dinheiro que nunca fica errado e dado pessoal que
+> nunca vaza. Eu cuido do **backend**; o **[Renan Barros](https://www.linkedin.com/in/renan-costa-barros/)** cuida do
+> frontend; o **Felipe Santana**, idealizador e primeiro cliente, é o PO & QA.
 
 <div align="center">
-  <img src="assets/terminal.svg" width="100%" alt="Terminal rodando os testes do RKF Bank: 163 testes, BUILD SUCCESS"/>
+  <img src="assets/terminal.svg" width="100%" alt="Terminal rodando os testes do RKF Bank, BUILD SUCCESS"/>
 </div>
+
+### 📣 Briefing para o mercado
+
+<table>
+  <tr>
+    <td valign="top" width="33%">
+      <h4>🎯 O problema</h4>
+      <sub>Portfólio de júnior costuma ser CRUD sem regra, sem teste e sem time. Não mostra o que uma empresa precisa ver: como a pessoa lida com <b>dinheiro, segurança, banco de dados e trabalho em equipe</b> ao mesmo tempo.</sub>
+    </td>
+    <td valign="top" width="33%">
+      <h4>🏦 A resposta</h4>
+      <sub>Um banco digital com as regras que um banco tem: saldo nunca negativo, transferência atômica, lock otimista contra corrida, regra de dono (<code>403</code>), login com BCrypt + JWT e LGPD desde o desenho.</sub>
+    </td>
+    <td valign="top" width="33%">
+      <h4>🤝 O diferencial</h4>
+      <sub>Processo de time real: contrato de API, Git Flow, PR revisado, decisões registradas (ADR), débitos técnicos, CI com CodeQL, guia de QA e um PO que dá o aceite. <b>Três pessoas, um produto.</b></sub>
+    </td>
+  </tr>
+</table>
+
+| Para quem avalia | O que o RKF Bank prova | Onde conferir |
+|---|---|---|
+| 👔 Recrutador | entrega de ponta a ponta com time, prazo e documentação | [README do projeto](https://github.com/k3vinrich4rd/rkf_bank) |
+| 🧑‍💻 Tech lead | Spring Security como **OAuth2 Resource Server**, `@Version`, `@Transactional`, Flyway com `ddl-auto=validate`, testes em todas as camadas | [guia técnico](https://github.com/k3vinrich4rd/rkf_bank/blob/develop/backend/README_IMPLEMENTACAO.md) |
+| 🧪 QA | 12 passos de caminho feliz, 12 de segurança, 18 de erro, cada um com a resposta real | [guia de testes manuais](https://github.com/k3vinrich4rd/rkf_bank/blob/develop/backend/README_TESTES_E2E.md) |
+| 🏛️ Arquiteto | revisão de arquitetura com riscos priorizados e alvo de **monólito modular** | [revisão de 20/10](https://github.com/k3vinrich4rd/rkf_bank/blob/develop/backend/README_IMPLEMENTACAO.md#8-revisão-de-arquitetura-20102026) |
+
+<div align="center">
+
+| 🧪 **237** testes | 🗃️ **8** migrações + seed | 🔐 **0** rotas de dinheiro sem login | 🧯 **7** status de erro tratados | 🏙️ **3** idealizadores de Osasco |
+|:---:|:---:|:---:|:---:|:---:|
+
+</div>
+
+### ⚡ Teste você mesmo em 60 segundos
+
+Sem Docker e sem configurar nada: o perfil **`visitante`** sobe a API com duas contas fictícias prontas, banco em
+memória e segredo do JWT sorteado na hora. Nada da equipe fica exposto. Guia completo:
+[VISITANTES.md](https://github.com/k3vinrich4rd/rkf_bank/blob/develop/VISITANTES.md).
+
+```bash
+git clone https://github.com/k3vinrich4rd/rkf_bank.git && cd rkf_bank
+./mvnw spring-boot:run -Dspring-boot.run.profiles=visitante      # JDK 25
+```
+
+```bash
+# outro terminal: entre como a Ana e veja o saldo dela
+TOKEN=$(curl -s -X POST localhost:8080/auth/login -H "Content-Type: application/json" \
+  -d '{"cpf":"246.813.579-28","senha":"Visitante@2026"}' | sed -E 's/.*"token":"([^"]+)".*/\1/')
+curl -s localhost:8080/contas -H "Authorization: Bearer $TOKEN"
+# [{"agencia":"0001","numeroConta":"900001","tipoContaEnum":"CORRENTE","saldo":1000.00,"ativa":true,...}]
+```
+
+| Conta de visitante | Login | Saldo |
+|---|---|---|
+| 🟠 **Ana Visitante** — origem | `246.813.579-28` / `Visitante@2026` | R$ 1.000,00 |
+| 🔵 **Bruno Visitante** — destino | `975.318.642-82` / `Visitante@2026` | R$ 500,00 |
+
+<details>
+<summary><b>🎮 Agora é com você: escolha o que a Ana faz (clique)</b></summary>
+<br/>
+
+<details>
+<summary>💸 Transferir R$ 200,00 de aluguel para o Bruno</summary>
+<br/>
+
+`POST /contas/transferencia` com `Idempotency-Key` → **`204 No Content`**. Ana fica com **R$ 800,00**, Bruno com
+**R$ 700,00**, e os dois extratos mostram o mesmo lançamento. Débito e crédito acontecem **na mesma transação**.
+
+</details>
+
+<details>
+<summary>📶 A rede cai e o app manda a mesma transferência de novo</summary>
+<br/>
+
+**`204` com `Idempotency-Replayed: true`** e **nenhum** centavo sai de novo. A chave da primeira chamada foi gravada
+na mesma transação do dinheiro; a repetição encontra a chave e só confirma. Mesma chave com outro valor → `422`.
+
+</details>
+
+<details>
+<summary>🕵️ Entrar como Bruno e tentar sacar da conta da Ana</summary>
+<br/>
+
+**`403 Forbidden`** — `Conta nao pertence ao usuario logado`. O `clienteId` vem do **token assinado**, não do request,
+e o dono é conferido antes de qualquer regra: o Bruno não descobre nem se a Ana tem saldo.
+
+</details>
+
+<details>
+<summary>🔨 Errar a senha da Ana cinco vezes</summary>
+<br/>
+
+Na sexta tentativa, **`429 Too Many Requests`** com `Retry-After` — nem a senha certa entra por 15 minutos. É o freio
+contra quem tenta adivinhar senha.
+
+</details>
+
+<details>
+<summary>🧨 Trocar <code>"perfil":"CLIENTE"</code> por <code>"ADMIN"</code> dentro do token</summary>
+<br/>
+
+**`401 Unauthorized`**. O payload do JWT é só Base64 (qualquer um lê), mas a assinatura HMAC-SHA256 não bate mais. E
+no perfil visitante a chave nem existe fora da memória da API: é sorteada a cada subida.
+
+</details>
+
+</details>
+
+### 📖 A nossa história
+
+```mermaid
+timeline
+    title RKF Bank — de uma ideia em Osasco ao MVP
+    25 set : Três amigos de Osasco decidem construir um banco de verdade : Java + Spring no backend, Next.js no frontend
+    02 out : MySQL 8.4 no Docker : primeiras regras — saldo, depósito, saque
+    13 out : Logs com X-Request-Id : roteiro E2E com 38 itens aprovados
+    15 out : Flyway assume o banco : Hibernate só valida
+    16 out : Login com CPF + senha : Spring Security como OAuth2 Resource Server e JWT
+    17 out : Token em cookie httpOnly no Next (BFF)
+    19 out : Os três como idealizadores : LGPD mínimo antes do deploy
+    20 out : Flyway reestruturado e contas da equipe sempre prontas : idempotência, conta que não se apaga e limite de login : perfil público de visitante
+    26 out : Felipe testa tudo como primeiro cliente
+```
+
+<details>
+<summary><b>🎬 Capítulo 1 — A ideia (setembro)</b></summary>
+<br/>
+
+Kevin, Renan e Felipe, três amigos de Osasco, queriam um projeto que mostrasse o que nenhum CRUD mostra. Escolheram o
+domínio mais exigente que conheciam: **dinheiro**. A regra desde o primeiro dia: dividir como um time de verdade —
+**API** (Kevin), **site** (Renan) e **produto** (Felipe) — e tratar cada entrega como entrega de empresa.
+
+</details>
+
+<details>
+<summary><b>🧱 Capítulo 2 — Regras que um banco precisa (início de outubro)</b></summary>
+<br/>
+
+Saldo nunca negativo, transferência na mesma transação, lock otimista (`@Version`) para duas operações simultâneas
+virarem `409` em vez de saldo errado, CPF validado pelos dígitos verificadores e endereço pelo ViaCEP.
+Cada regra virou teste antes de virar tela.
+
+</details>
+
+<details>
+<summary><b>🔐 Capítulo 3 — Ninguém mexe no dinheiro de ninguém (meados de outubro)</b></summary>
+<br/>
+
+Login com CPF + senha (BCrypt), JWT validado pelo **OAuth2 Resource Server** do Spring, regra de dono no service e
+`ADMIN` criado só pelo ambiente (nunca senha em migração). No frontend, o token mora num cookie `httpOnly` que o
+JavaScript não alcança. CPF inexistente e senha errada dão a mesma resposta, no mesmo tempo.
+
+</details>
+
+<details>
+<summary><b>🗃️ Capítulo 4 — Banco que se explica sozinho (20 de outubro)</b></summary>
+<br/>
+
+O schema foi reorganizado (uma migração por tabela) e ganhou **seeds** que garantem contas prontas a cada subida.
+No mesmo dia, a revisão de arquitetura virou código: **idempotência** nas movimentações (repetir não debita duas
+vezes), conta que **não se apaga** por cascata, número de conta **gerado pelo banco**, **limite de tentativas** no
+login e health check. E o repositório público deixou de expor qualquer senha: a equipe testa com acessos que só
+existem no ambiente dela; visitantes têm um perfil próprio, com contas fictícias e segredo sorteado.
+
+</details>
+
+<details>
+<summary><b>🚀 Capítulo 5 — O que vem agora</b></summary>
+<br/>
+
+Até o MVP (31/10): **Testcontainers** (MySQL real nos testes), `GET /contas/{id}`, **LGPD mínimo** e **deploy**. Depois: Swagger e **Pix**, já num monólito modular por funcionalidade.
+
+</details>
+
+<details>
+<summary><b>🛫🔐 Flyway + Spring Security: o que eu implementei (clique e explore)</b></summary>
+<br/>
+
+**🛫 O banco nasce e evolui por código:**
+
+```mermaid
+timeline
+    title Migrações do RKF Bank
+    V1 a V5 : endereço, cliente, conta, lançamento, usuário
+    V6 : idempotência das movimentações
+    V7 : usuário ativo (revogação)
+    V8 : versão da senha (troca derruba tokens)
+    toda subida : callback afterMigrate (contas de teste, idempotente)
+```
+
+**🔐 Toda requisição passa por 4 portões:**
+
+```mermaid
+flowchart LR
+    R(["Bearer eyJ..."]) --> A{"assinatura<br/>e validade"}
+    A -- não --> E1["401"]
+    A -- ok --> B{"usuário ativo,<br/>mesmo perfil e<br/>versão de senha?"}
+    B -- não --> E2["401"]
+    B -- ok --> C{"perfil pode<br/>a rota?"}
+    C -- não --> E3["403"]
+    C -- ok --> D{"a conta<br/>é sua?"}
+    D -- não --> E4["403"]
+    D -- ok --> OK(["✅"])
+```
+
+<details>
+<summary>🎯 Teste rápido: o que a API responde? (adivinhe, depois clique)</summary>
+<br/>
+
+<details><summary>Editar a <code>V1</code> depois de aplicada</summary>
+
+❌ `Migration checksum mismatch`: a API nem sobe. Mudança nova = versão nova.
+
+</details>
+<details><summary>Admin rebaixa alguém logado com token de ADMIN válido</summary>
+
+🔄 `401` na próxima requisição: o perfil do token não bate mais com o banco.
+
+</details>
+<details><summary>Trocar <code>"perfil":"CLIENTE"</code> por <code>"ADMIN"</code> no payload do JWT</summary>
+
+🔏 `401`: a assinatura HMAC-SHA256 não bate.
+
+</details>
+<details><summary>Repetir a mesma transferência com a mesma chave</summary>
+
+✅ `204` + `Idempotency-Replayed: true`, e o dinheiro sai uma vez só.
+
+</details>
+
+</details>
+
+[Ver por dentro no README do projeto](https://github.com/k3vinrich4rd/rkf_bank#-segurança-e-lgpd) · [contrato da API](https://github.com/k3vinrich4rd/rkf_bank/blob/develop/backend/README_CONTRATO_API.md)
+
+</details>
+
+### 👥 Quem faz
+
+<table>
+  <tr>
+    <td align="center" valign="top" width="33%">
+      <a href="https://www.linkedin.com/in/kevin-richard-b68a54203/"><img src="https://github.com/k3vinrich4rd.png" width="88" alt="Kevin Richard"/></a>
+      <h4>Kevin Richard · Backend</h4>
+      <a href="https://www.linkedin.com/in/kevin-richard-b68a54203/"><img src="https://img.shields.io/badge/LinkedIn-Kevin_Richard-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn de Kevin Richard"/></a>
+      <p align="left"><sub><i>“Conhecimento nunca é demais.”</i> Busca aprendizado constante para evoluir como pessoa e profissional, com determinação, foco, persistência, ambição, espírito coletivo e empatia. No RKF Bank: API, banco, segurança e testes.</sub></p>
+    </td>
+    <td align="center" valign="top" width="33%">
+      <h4>💡<br/>Felipe Santana · PO & QA</h4>
+      <img src="https://img.shields.io/badge/LinkedIn-em_breve-6B7280?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn de Felipe Santana: em breve"/>
+      <p align="left"><sub><i>“Se não funciona para o cliente, não está pronto.”</i> Idealizador e primeiro cliente: transforma ideia em prioridade, escreve o que é "pronto" e dá o aceite do MVP. A conta de origem que nasce em todo ambiente é a dele.</sub></p>
+    </td>
+    <td align="center" valign="top" width="33%">
+      <a href="https://www.linkedin.com/in/renan-costa-barros/"><img src="https://github.com/renanbarrostech-cmd.png" width="88" alt="Renan Barros"/></a>
+      <h4>Renan Barros · Frontend</h4>
+      <a href="https://www.linkedin.com/in/renan-costa-barros/"><img src="https://img.shields.io/badge/LinkedIn-Renan_Barros-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn de Renan Barros"/></a>
+      <p align="left"><sub><i>“Transformar problemas em soluções.”</i> De Jovem Aprendiz a Assistente Financeiro com quatro promoções em três anos; já automatizou a triagem de notas fiscais com Next.js e PostgreSQL. No RKF Bank: site, telas e login seguro.</sub></p>
+    </td>
+  </tr>
+</table>
 
 <div align="center">
   <img src="assets/fluxo-requisicao.svg" width="100%" alt="Animação: uma transferência percorre Next.js, Controller, Service, Repository e MySQL e volta com 204"/>
 </div>
+
+<details>
+<summary><b>🏛️ Arquitetura hoje e para onde vai</b></summary>
+<br/>
+
+**Hoje:** camadas (controller → service → repository), certo para o MVP. **Alvo:** monólito modular por funcionalidade
+quando entrar o Pix — um deploy só, código separado por domínio. Microsserviço foi descartado de propósito: três pessoas
+e um banco não pagam o custo de rede e consistência eventual.
+
+```mermaid
+flowchart LR
+    subgraph Hoje["Hoje — camadas"]
+        C[controllers] --> S[services] --> R[repositories]
+    end
+    subgraph Alvo["Alvo — monólito modular"]
+        AUTH[auth] --> CLI[cliente]
+        CONTA[conta] --> CLI
+        PIX["pix (futuro)"] --> CONTA
+    end
+    Hoje -- "no PR do Pix, uma pasta por PR" --> Alvo
+```
+
+Os cinco riscos apontados na revisão (idempotência, cascata, número de conta, conciliação e health check) foram
+resolvidos no mesmo dia, com testes.
+[Revisão completa](https://github.com/k3vinrich4rd/rkf_bank/blob/develop/backend/README_IMPLEMENTACAO.md#8-revisão-de-arquitetura-20102026).
+
+</details>
 
 <details>
 <summary><b>🗃️ Modelo de dados (diagrama interativo)</b></summary>
@@ -433,9 +723,11 @@ journey
 | Transferência | origem ≠ destino, débito e crédito na **mesma transação** |
 | Extrato | lançamentos de entrada e saída, do mais novo para o mais antigo |
 | Concorrência | **lock otimista** (`@Version`): duas operações simultâneas na mesma conta resultam em `409`, sem saldo errado |
-| Login | CPF + senha (BCrypt), JWT de 15 min validado pelo OAuth2 Resource Server; CPF inexistente e senha errada dão a mesma resposta |
+| Login | CPF + senha (BCrypt), JWT de 15 min validado pelo OAuth2 Resource Server; CPF inexistente e senha errada dão a mesma resposta; 5 erros → `429` |
+| Revogação na hora | rebaixar, desativar ou trocar a senha derruba o token antigo na próxima requisição (o usuário é conferido no banco a cada chamada) |
+| Idempotência | a mesma transferência repetida (rede caiu) não debita duas vezes: `Idempotency-Key` gravada na transação do dinheiro |
 | Regra de dono | cliente só movimenta e vê o extrato das **próprias** contas (`403`); listar clientes é só do `ADMIN` |
-| Banco versionado | schema só por migração do **Flyway**; o Hibernate apenas valida (`ddl-auto=validate`) |
+| Banco versionado | schema só por migração do **Flyway** (V1–V8); o Hibernate apenas valida (`ddl-auto=validate`); contas de teste por callback `afterMigrate`, nunca em produção |
 | Erros | formato único de erro com status certo: `400`, `401`, `403`, `404`, `409`, `422` e `503` |
 
 </details>
