@@ -42,7 +42,7 @@
 | Pergunta | Resposta rápida |
 |---|---|
 | Quem é? | Dev **Java backend Junior** na **Zup Innovation**, prestando serviço para o **Itaú**, em transição para **Pleno** (**11/15** competências já praticadas) |
-| Melhor projeto? | **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **163 testes**, CI e logs rastreáveis |
+| Melhor projeto? | **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **237 testes**, CI e logs rastreáveis |
 | Stack principal? | Java · Spring Boot · JPA/Hibernate · MySQL/PostgreSQL · MongoDB · JUnit/Mockito · Docker · GitHub Actions |
 | O que está estudando? | Testcontainers → AWS → inglês → mensageria |
 | Contato? | [LinkedIn](https://www.linkedin.com/in/kevin-richard-b68a54203/) · [kevinrichardve@gmail.com](mailto:kevinrichardve@gmail.com) |
@@ -123,7 +123,7 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 
 <!-- AUTO:status:START -->
 <img src="https://img.shields.io/static/v1?label=R%C3%A9gua%20Pleno&message=11%2F15&color=EC7000&style=flat-square"/>
-<img src="https://img.shields.io/static/v1?label=Testes%20RKF%20Bank&message=163%20%E2%9C%94&color=3fb950&style=flat-square&logo=junit5&logoColor=white"/>
+<img src="https://img.shields.io/static/v1?label=Testes%20RKF%20Bank&message=237%20%E2%9C%94&color=3fb950&style=flat-square&logo=junit5&logoColor=white"/>
 <img src="https://img.shields.io/static/v1?label=MVP&message=6%2F14&color=003D74&style=flat-square"/>
 <img src="https://img.shields.io/static/v1?label=Foco%20agora&message=Testcontainers&color=6A1B9A&style=flat-square"/>
 <!-- AUTO:status:END -->
@@ -133,11 +133,11 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:agora:START -->
 **🔥 Esta semana**
 
-- 🔨 Mergear o PR `docs/readme-banco-digital`
+- 🔨 Renan revisar o frontend do contrato 2.1–2.3
 - 🔨 Começar a `feature/testcontainers`
 - 🔨 LGPD mínimo antes do deploy
 - 🎯 Foco de estudo: **Testcontainers**
-- ✅ Última entrega: Notas de IA, universo Spring e análise de LGPD no Obsidian — 2026-10-19
+- ✅ Última entrega: README do RKF Bank interativo (aventura, Osasco, avatares) e os três como idealizadores (PRs #32–#34) — 2026-10-19
 <!-- AUTO:agora:END -->
 
 <!-- AUTO:dica:START -->
@@ -181,11 +181,11 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:diario:START -->
 | Quando | Onde | O que eu aprendi |
 |---|---|---|
+| 2026-10-20 | PRs #37 e #38 `chore/sincroniza-main-na-develop` | squash não carrega ancestralidade: para sincronizar branches é merge commit (`-s ours` quando o conteúdo já está igual) |
+| 2026-10-20 | PR #35 `feature/flyway-reestruturacao-e-dados-demo` | revogar acesso com JWT exige conferir o usuário a cada requisição; idempotência na mesma transação do dinheiro |
+| 2026-10-19 | PRs #33 e #34 `docs/idealizadores-e-avatares` | arquivo que "sempre aparece modificado" costuma ser fim de linha: `git add --renormalize` |
 | 2026-10-19 | `docs/readme-banco-digital` | documentação desatualizada engana o time e a IA: checklist dizia "Flyway em andamento" com tudo mergeado |
 | 2026-10-17 | PRs #26 e #27 (frontend) | token fora do alcance do JavaScript (BFF) |
-| 2026-10-16 | PR #24 `feature/spring-security-jwt` | autenticação (401) × autorização (403); regra de dono é regra de negócio, não da filter chain |
-| 2026-10-16 | PR #23 `feature/flyway` | migração aplicada nunca se edita (checksum); H2 × MySQL no SQL portável |
-| 2026-10-15 | `fix/vulnerabilidades-dependencias` | dá para corrigir CVE de dependência transitiva sobrescrevendo a propriedade do BOM |
 <!-- AUTO:diario:END -->
 
 </details>
@@ -830,7 +830,7 @@ sequenceDiagram
 | **Meu papel** | todo o backend | projeto individual |
 | **Domínio** | clientes, contas, depósito, saque, transferência, extrato | usuários, pedidos, produtos, categorias, pagamento |
 | **O que mostra** | transação atômica, lock otimista, ViaCEP com falha tratada, logs com `X-Request-Id` | modelo de domínio rico, chave composta (`OrdemItemPK`), Bean Validation, erros padronizados |
-| **Qualidade** | 163 testes, JaCoCo, CI com CodeQL e Dependabot | camadas controller → service → repository, `DatabaseException` para integridade referencial |
+| **Qualidade** | 237 testes, JaCoCo, CI com CodeQL e Dependabot | camadas controller → service → repository, `DatabaseException` para integridade referencial |
 | **Stack** | Java 25 · Spring Boot 4 · MySQL · Docker · Next.js | Java · Spring Boot · JPA · H2 |
 | **README** | [roteiro do projeto](https://github.com/k3vinrich4rd/rkf_bank#readme) | [modelo de domínio, endpoints e respostas reais](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM#readme) |
 | **Ver primeiro** | [`ContaService`](https://github.com/k3vinrich4rd/rkf_bank) · [roteiro no README](#-projeto-atual--rkf-bank) | [`ProductService`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/services/ProductService.java) · [`ControllerExceptionHandler`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/controllers/handlers/ControllerExceptionHandler.java) |
@@ -1567,20 +1567,20 @@ quadrantChart
 | API REST em camadas com DTOs e erros padronizados | ✅ | RKF Bank, DSCommerce, Workshop JPA |
 | Modelagem JPA: relacionamentos, chave composta, cascata | ✅ | Workshop JPA, DSCommerce, RKF Bank |
 | Testes unitários, web e de repositório | ✅ | RKF Bank |
-| Transações e concorrência | ✅ | RKF Bank |
+| Transações e concorrência | ✅ | RKF Bank (+ idempotência com `Idempotency-Key`, PR #35) |
 | Integração com API externa e falhas | ✅ | RKF Bank (ViaCEP) |
 | Logs e rastreabilidade | ✅ | RKF Bank |
 | CI/CD, segurança e dependências | ✅ | RKF Bank |
 | Git Flow, PRs e commits semânticos | ✅ | RKF Bank |
 | Banco NoSQL | ✅ | Workshop MongoDB |
-| Migrações versionadas | ✅ | RKF Bank (V1, V2, V3; PR #23) |
-| Autenticação e autorização | ✅ | RKF Bank (JWT, BCrypt, perfis, regra de dono; PR #24) |
+| Migrações versionadas | ✅ | RKF Bank (V1, V2, V3; PR #23) · reorganizado em V1–V8 com callbacks de seed (PR #35) |
+| Autenticação e autorização | ✅ | RKF Bank (JWT, BCrypt, perfis, regra de dono; PR #24) · gestão de usuários, revogação imediata, troca de senha e limite de login (PR #35) |
 | Testes de integração com banco real | 🔄 | ⏫ próximo da fila |
 | Deploy em nuvem | 🔄 | em andamento |
 | Inglês técnico | 🔄 | em andamento |
 | Mensageria e microsserviços | ⏳ | próximo ciclo |
 
-<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-10-19</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-10-20</sub>
 <!-- AUTO:regua:END -->
 
 </details>
@@ -1592,7 +1592,7 @@ quadrantChart
 <!-- AUTO:estudos:START -->
 **23** assuntos praticados em projeto · **7** em andamento · **3** planejados
 
-📚 **56** notas de estudo no segundo cérebro · **28** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
+📚 **57** notas de estudo no segundo cérebro · **28** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
 
 ```mermaid
 mindmap
@@ -1653,7 +1653,7 @@ mindmap
 | ⏳ Spring AI | IA | <sub>5 a fazer</sub> |
 | ⏳ Swagger e OpenAPI | Spring | <sub>5 a fazer</sub> |
 
-<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-10-19.</sub>
+<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-10-20.</sub>
 <!-- AUTO:estudos:END -->
 
 </details>
@@ -1726,12 +1726,12 @@ gantt
 
 <!-- AUTO:checklist:START -->
 **✔️ Concluído recentemente** <sub>6 entregas</sub>
+- ✅ README do RKF Bank interativo (aventura, Osasco, avatares) e os três como idealizadores (PRs #32–#34) — 2026-10-19
 - ✅ Notas de IA, universo Spring e análise de LGPD no Obsidian — 2026-10-19
 - ✅ Frontend: login, conta, movimentações e extrato (PRs #26 e #27) — 2026-10-17
 - ✅ Spring Security + JWT, BCrypt, perfis e regra de dono (PR #24) — 2026-10-16
 - ✅ Flyway com V1, V2 e V3, `ddl-auto=validate` (PR #23) — 2026-10-16
 - ✅ CVEs do Tomcat (3 críticas) e do Jackson (5 altas, 2 moderadas) corrigidas — 2026-10-15
-- ✅ Testes da camada repositories (34 testes, `@DataJpaTest`) — 2026-10-15
 
 **🚀 MVP do RKF Bank (31/10/2026)** `█████░░░░░░░` 6/14
 
@@ -1768,9 +1768,9 @@ gantt
 - [ ] **Mensageria** 🔮 <sub>3 a fazer</sub>
 - [ ] **Inglês** <sub>2 a fazer</sub>
 
-**🧹 Débitos técnicos:** 17 mapeados
+**🧹 Débitos técnicos:** 5/17 resolvidos
 
-<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-10-19.</sub>
+<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-10-20.</sub>
 <!-- AUTO:checklist:END -->
 
 </details>
