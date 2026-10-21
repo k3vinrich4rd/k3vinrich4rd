@@ -141,9 +141,9 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:agora:END -->
 
 <!-- AUTO:dica:START -->
-> 💡 **Dica do dia: `Records`**  
-> DTOs imutáveis em uma linha: record ContaDto(UUID id, BigDecimal saldo) {}.  
-> <sub>Muda todo dia sozinha · 14/20</sub>
+> 💡 **Dica do dia: `Flyway`**  
+> Cada mudança de schema vira um V__*.sql versionado. Nada de ddl-auto=update em produção.  
+> <sub>Muda todo dia sozinha · 15/20</sub>
 <!-- AUTO:dica:END -->
 
 <!-- A cobrinha é gerada pelo workflow .github/workflows/snake.yml deste repositório (branch "output"). -->
@@ -2011,26 +2011,26 @@ Com `update` o Hibernate adivinha o schema, não renomeia nem remove nada e não
 
 <!-- AUTO:flashcards:START -->
 <details>
-<summary><b>🃏 IA · Que problema o MCP resolve?</b></summary>
+<summary><b>🃏 Java · Por que nunca usar double para dinheiro?</b></summary>
 <br/>
 
-O N × M de integrações: cada sistema expõe um servidor MCP e qualquer IA compatível usa, como o USB-C fez com cabos.
+Porque double guarda em base 2 e 0.1 não tem representação exata: <code>0.1 + 0.2</code> dá <code>0.30000000000000004</code>. No RKF Bank o saldo é <code>BigDecimal</code> e a coluna é <code>DECIMAL(19,2)</code>.
 
 </details>
 
 <details>
-<summary><b>🃏 IA · Por que o saldo não deve ser calculado pelo LLM?</b></summary>
+<summary><b>🃏 Java · Diferença entre JDK, JRE e JVM?</b></summary>
 <br/>
 
-O LLM prevê texto, não faz conta exata. Regra exata (saldo, CPF, limite) é código; o LLM interpreta e o código valida e executa.
+A JVM executa bytecode; o JRE é JVM + bibliotecas para rodar; o JDK é JRE + ferramentas de desenvolvimento (<code>javac</code>). O mesmo <code>.jar</code> roda no Windows e no Linux do CI porque o bytecode é da JVM, não do sistema.
 
 </details>
 
 <details>
-<summary><b>🃏 LGPD · O cliente pede para apagar os dados. O banco pode dar DELETE?</b></summary>
+<summary><b>🃏 Java · Java tem vazamento de memória?</b></summary>
 <br/>
 
-Não: registros financeiros têm guarda obrigatória por outras leis. O certo é encerrar a conta, bloquear o acesso e anonimizar ao fim do prazo.
+Tem: o GC só recolhe objetos inalcançáveis. Um <code>static Map</code> que nunca é limpo mantém tudo vivo até o <code>OutOfMemoryError</code>. A solução é cache com limite e expiração.
 
 </details>
 
