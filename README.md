@@ -601,6 +601,7 @@ flowchart LR
       <a href="https://www.linkedin.com/in/renan-costa-barros/"><img src="https://github.com/renanbarrostech-cmd.png" width="88" alt="Renan Barros"/></a>
       <h4>Renan Barros · Frontend</h4>
       <a href="https://www.linkedin.com/in/renan-costa-barros/"><img src="https://img.shields.io/badge/LinkedIn-Renan_Barros-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn de Renan Barros"/></a>
+      <br/><a href="https://github.com/renanbarrostech-cmd"><img src="https://img.shields.io/badge/GitHub-renanbarrostech--cmd-181717?logo=github&logoColor=white" alt="GitHub de Renan Barros"/></a>
       <p align="left"><sub><i>“Transformar problemas em soluções.”</i> De Jovem Aprendiz a Assistente Financeiro com quatro promoções em três anos; já automatizou a triagem de notas fiscais com Next.js e PostgreSQL. No RKF Bank: site, telas e login seguro.</sub></p>
     </td>
   </tr>
