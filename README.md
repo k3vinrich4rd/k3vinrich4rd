@@ -42,7 +42,7 @@
 | Pergunta | Resposta rápida |
 |---|---|
 | Quem é? | Dev **Java backend Junior** na **Zup Innovation**, prestando serviço para o **Itaú**, em transição para **Pleno** (**11/15** competências já praticadas) |
-| Melhor projeto? | **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **255 testes**, CI e logs rastreáveis |
+| Melhor projeto? | **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **261 testes**, CI e logs rastreáveis |
 | Stack principal? | Java · Spring Boot · JPA/Hibernate · MySQL/PostgreSQL · MongoDB · JUnit/Mockito · Docker · GitHub Actions |
 | O que está estudando? | Testcontainers → AWS → inglês → mensageria |
 | Contato? | [LinkedIn](https://www.linkedin.com/in/kevin-richard-b68a54203/) · [kevinrichardve@gmail.com](mailto:kevinrichardve@gmail.com) |
@@ -123,7 +123,7 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 
 <!-- AUTO:status:START -->
 <img src="https://img.shields.io/static/v1?label=R%C3%A9gua%20Pleno&message=11%2F15&color=EC7000&style=flat-square"/>
-<img src="https://img.shields.io/static/v1?label=Testes%20RKF%20Bank&message=255%20%E2%9C%94&color=3fb950&style=flat-square&logo=junit5&logoColor=white"/>
+<img src="https://img.shields.io/static/v1?label=Testes%20RKF%20Bank&message=261%20%E2%9C%94&color=3fb950&style=flat-square&logo=junit5&logoColor=white"/>
 <img src="https://img.shields.io/static/v1?label=MVP&message=6%2F14&color=003D74&style=flat-square"/>
 <img src="https://img.shields.io/static/v1?label=Foco%20agora&message=Testcontainers&color=6A1B9A&style=flat-square"/>
 <!-- AUTO:status:END -->
@@ -181,11 +181,11 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:diario:START -->
 | Quando | Onde | O que eu aprendi |
 |---|---|---|
-| 2026-10-22 | `fix/debitos-paginacao-cors-dependencias` (aguardando entrega) | expor o `Page` do Spring acopla o contrato à versão do framework; CORS no Security depende do **nome** do bean |
-| 2026-10-22 | `feature/lgpd-direitos-do-titular` (aguardando entrega) | direito de eliminação num banco = encerrar + reter + anonimizar |
-| 2026-10-22 | `docs/guia-e2e-camadas-e-fluxos` (aguardando entrega) | padrão só onde há problema; `Impl` não paga o preço nos services |
+| 2026-10-22 | PR #48 `refactor/nomes-e-rotas-de-mercado` | evoluir API sem quebrar cliente: rota nova + antiga obsoleta com header padronizado (RFC 9745) até a versão maior |
+| 2026-10-22 | PR #45 `fix/debitos-paginacao-cors-dependencias` | expor o `Page` do Spring acopla o contrato à versão do framework; CORS no Security depende do **nome** do bean |
+| 2026-10-22 | PR #46 `feature/lgpd-direitos-do-titular` | direito de eliminação num banco = encerrar + reter + anonimizar |
+| 2026-10-22 | PR #47 `docs/guia-e2e-camadas-e-fluxos` | padrão só onde há problema; `Impl` não paga o preço nos services |
 | 2026-10-20 | PRs #37 e #38 `chore/sincroniza-main-na-develop` | squash não carrega ancestralidade: para sincronizar branches é merge commit (`-s ours` quando o conteúdo já está igual) |
-| 2026-10-20 | PR #35 `feature/flyway-reestruturacao-e-dados-demo` | revogar acesso com JWT exige conferir o usuário a cada requisição; idempotência na mesma transação do dinheiro |
 <!-- AUTO:diario:END -->
 
 </details>
@@ -333,7 +333,7 @@ public void sacar(UUID contaId, SaqueRequestDto request, UsuarioLogado usuario) 
 | ➖ Valor **zero ou negativo** passava (e um saque negativo era um depósito!) | `validarValor` recusa com `422` |
 | 🏃 Dois saques ao mesmo tempo **sobrescreviam** um ao outro | `@Transactional` + lock otimista com `@Version` → `409` |
 | 🧾 Nenhum **histórico**: o valor final só substituía o anterior | cada saque gera um lançamento no extrato |
-| 🔇 Sem log nem teste do caminho de erro | log com `X-Request-Id` e 255 testes automatizados |
+| 🔇 Sem log nem teste do caminho de erro | log com `X-Request-Id` e 261 testes automatizados |
 
 <sub>Quantos você achou? Conta pra mim no <a href="#️-livro-de-visitas">livro de visitas</a>. 😄</sub>
 
@@ -895,7 +895,7 @@ sequenceDiagram
 | **Meu papel** | todo o backend | projeto individual |
 | **Domínio** | clientes, contas, depósito, saque, transferência, extrato | usuários, pedidos, produtos, categorias, pagamento |
 | **O que mostra** | transação atômica, lock otimista, ViaCEP com falha tratada, logs com `X-Request-Id` | modelo de domínio rico, chave composta (`OrdemItemPK`), Bean Validation, erros padronizados |
-| **Qualidade** | 255 testes, JaCoCo, CI com CodeQL e Dependabot | camadas controller → service → repository, `DatabaseException` para integridade referencial |
+| **Qualidade** | 261 testes, JaCoCo, CI com CodeQL e Dependabot | camadas controller → service → repository, `DatabaseException` para integridade referencial |
 | **Stack** | Java 25 · Spring Boot 4 · MySQL · Docker · Next.js | Java · Spring Boot · JPA · H2 |
 | **README** | [roteiro do projeto](https://github.com/k3vinrich4rd/rkf_bank#readme) | [modelo de domínio, endpoints e respostas reais](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM#readme) |
 | **Ver primeiro** | [`ContaService`](https://github.com/k3vinrich4rd/rkf_bank) · [roteiro no README](#-projeto-atual--rkf-bank) | [`ProductService`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/services/ProductService.java) · [`ControllerExceptionHandler`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/controllers/handlers/ControllerExceptionHandler.java) |
@@ -1850,7 +1850,7 @@ gantt
 - [ ] **Mensageria** 🔮 <sub>3 a fazer</sub>
 - [ ] **Inglês** <sub>2 a fazer</sub>
 
-**🧹 Débitos técnicos:** 5/18 resolvidos
+**🧹 Débitos técnicos:** 9/18 resolvidos
 
 <sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-10-22.</sub>
 <!-- AUTO:checklist:END -->
