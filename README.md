@@ -42,7 +42,7 @@
 | Pergunta | Resposta rápida |
 |---|---|
 | Quem é? | Dev **Java backend Junior** na **Zup Innovation**, prestando serviço para o **Itaú**, em transição para **Pleno** (**11/15** competências já praticadas) |
-| Melhor projeto? | **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **242 testes**, CI e logs rastreáveis |
+| Melhor projeto? | **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **237 testes**, CI e logs rastreáveis |
 | Stack principal? | Java · Spring Boot · JPA/Hibernate · MySQL/PostgreSQL · MongoDB · JUnit/Mockito · Docker · GitHub Actions |
 | O que está estudando? | Testcontainers → AWS → inglês → mensageria |
 | Contato? | [LinkedIn](https://www.linkedin.com/in/kevin-richard-b68a54203/) · [kevinrichardve@gmail.com](mailto:kevinrichardve@gmail.com) |
@@ -123,7 +123,7 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 
 <!-- AUTO:status:START -->
 <img src="https://img.shields.io/static/v1?label=R%C3%A9gua%20Pleno&message=11%2F15&color=EC7000&style=flat-square"/>
-<img src="https://img.shields.io/static/v1?label=Testes%20RKF%20Bank&message=242%20%E2%9C%94&color=3fb950&style=flat-square&logo=junit5&logoColor=white"/>
+<img src="https://img.shields.io/static/v1?label=Testes%20RKF%20Bank&message=237%20%E2%9C%94&color=3fb950&style=flat-square&logo=junit5&logoColor=white"/>
 <img src="https://img.shields.io/static/v1?label=MVP&message=6%2F14&color=003D74&style=flat-square"/>
 <img src="https://img.shields.io/static/v1?label=Foco%20agora&message=Testcontainers&color=6A1B9A&style=flat-square"/>
 <!-- AUTO:status:END -->
@@ -134,8 +134,8 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 **🔥 Esta semana**
 
 - 🔨 Renan revisar o frontend do contrato 2.1–2.3
-- 🔨 Começar a `feature/testcontainers`
-- 🔨 LGPD mínimo antes do deploy
+- 🔨 `/entregar` as 3 branches de 22/10
+- 🔨 Domínio rico em `Conta`
 - 🎯 Foco de estudo: **Testcontainers**
 - ✅ Última entrega: README do RKF Bank interativo (aventura, Osasco, avatares) e os três como idealizadores (PRs #32–#34) — 2026-10-19
 <!-- AUTO:agora:END -->
@@ -181,11 +181,11 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:diario:START -->
 | Quando | Onde | O que eu aprendi |
 |---|---|---|
+| 2026-10-22 | `fix/debitos-paginacao-cors-dependencias` (aguardando entrega) | expor o `Page` do Spring acopla o contrato à versão do framework; CORS no Security depende do **nome** do bean |
+| 2026-10-22 | `feature/lgpd-direitos-do-titular` (aguardando entrega) | direito de eliminação num banco = encerrar + reter + anonimizar |
+| 2026-10-22 | `docs/guia-e2e-camadas-e-fluxos` (aguardando entrega) | padrão só onde há problema; `Impl` não paga o preço nos services |
 | 2026-10-20 | PRs #37 e #38 `chore/sincroniza-main-na-develop` | squash não carrega ancestralidade: para sincronizar branches é merge commit (`-s ours` quando o conteúdo já está igual) |
 | 2026-10-20 | PR #35 `feature/flyway-reestruturacao-e-dados-demo` | revogar acesso com JWT exige conferir o usuário a cada requisição; idempotência na mesma transação do dinheiro |
-| 2026-10-19 | PRs #33 e #34 `docs/idealizadores-e-avatares` | arquivo que "sempre aparece modificado" costuma ser fim de linha: `git add --renormalize` |
-| 2026-10-19 | `docs/readme-banco-digital` | documentação desatualizada engana o time e a IA: checklist dizia "Flyway em andamento" com tudo mergeado |
-| 2026-10-17 | PRs #26 e #27 (frontend) | token fora do alcance do JavaScript (BFF) |
 <!-- AUTO:diario:END -->
 
 </details>
@@ -333,7 +333,7 @@ public void sacar(UUID contaId, SaqueRequestDto request, UsuarioLogado usuario) 
 | ➖ Valor **zero ou negativo** passava (e um saque negativo era um depósito!) | `validarValor` recusa com `422` |
 | 🏃 Dois saques ao mesmo tempo **sobrescreviam** um ao outro | `@Transactional` + lock otimista com `@Version` → `409` |
 | 🧾 Nenhum **histórico**: o valor final só substituía o anterior | cada saque gera um lançamento no extrato |
-| 🔇 Sem log nem teste do caminho de erro | log com `X-Request-Id` e 242 testes automatizados |
+| 🔇 Sem log nem teste do caminho de erro | log com `X-Request-Id` e 237 testes automatizados |
 
 <sub>Quantos você achou? Conta pra mim no <a href="#️-livro-de-visitas">livro de visitas</a>. 😄</sub>
 
@@ -895,7 +895,7 @@ sequenceDiagram
 | **Meu papel** | todo o backend | projeto individual |
 | **Domínio** | clientes, contas, depósito, saque, transferência, extrato | usuários, pedidos, produtos, categorias, pagamento |
 | **O que mostra** | transação atômica, lock otimista, ViaCEP com falha tratada, logs com `X-Request-Id` | modelo de domínio rico, chave composta (`OrdemItemPK`), Bean Validation, erros padronizados |
-| **Qualidade** | 242 testes, JaCoCo, CI com CodeQL e Dependabot | camadas controller → service → repository, `DatabaseException` para integridade referencial |
+| **Qualidade** | 237 testes, JaCoCo, CI com CodeQL e Dependabot | camadas controller → service → repository, `DatabaseException` para integridade referencial |
 | **Stack** | Java 25 · Spring Boot 4 · MySQL · Docker · Next.js | Java · Spring Boot · JPA · H2 |
 | **README** | [roteiro do projeto](https://github.com/k3vinrich4rd/rkf_bank#readme) | [modelo de domínio, endpoints e respostas reais](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM#readme) |
 | **Ver primeiro** | [`ContaService`](https://github.com/k3vinrich4rd/rkf_bank) · [roteiro no README](#-projeto-atual--rkf-bank) | [`ProductService`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/services/ProductService.java) · [`ControllerExceptionHandler`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/controllers/handlers/ControllerExceptionHandler.java) |
@@ -1655,9 +1655,9 @@ quadrantChart
 <br/>
 
 <!-- AUTO:estudos:START -->
-**23** assuntos praticados em projeto · **7** em andamento · **3** planejados
+**23** assuntos praticados em projeto · **8** em andamento · **3** planejados
 
-📚 **57** notas de estudo no segundo cérebro · **50** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
+📚 **58** notas de estudo no segundo cérebro · **51** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
 
 ```mermaid
 mindmap
@@ -1668,6 +1668,7 @@ mindmap
       ✅ Lock otimista e transações
       ✅ Logs e observabilidade
       ⏳ Mensageria e Outbox
+      🔄 Padrões de projeto
     Cloud
       🔄 AWS
     Dados
@@ -1708,6 +1709,7 @@ mindmap
 | Estudando agora | Área | Próximos passos |
 |---|---|---|
 | 🔄 LGPD | Arquitetura | <sub>5 a fazer</sub> |
+| 🔄 Padrões de projeto | Arquitetura | <sub>4 a fazer</sub> |
 | 🔄 AWS | Cloud | <sub>10 a fazer</sub> |
 | 🔄 Agentes e IA aplicada | IA | `███░░░░░░░` 1/4 |
 | 🔄 Spec-Driven Development | IA | <sub>1 a fazer</sub> |
@@ -1848,7 +1850,7 @@ gantt
 - [ ] **Mensageria** 🔮 <sub>3 a fazer</sub>
 - [ ] **Inglês** <sub>2 a fazer</sub>
 
-**🧹 Débitos técnicos:** 5/17 resolvidos
+**🧹 Débitos técnicos:** 5/18 resolvidos
 
 <sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-10-22.</sub>
 <!-- AUTO:checklist:END -->

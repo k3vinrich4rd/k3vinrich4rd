@@ -3,6 +3,7 @@
 // Uso: node scripts/coletar-progresso.mjs
 import fs from 'node:fs';
 import path from 'node:path';
+import { execFileSync } from 'node:child_process';
 import { RAIZ, lerConfig, ler, escrever, frontmatter, secoes, tarefas, limparObsidian, hoje } from './lib.mjs';
 
 const cfg = lerConfig();
@@ -99,9 +100,22 @@ function estudos() {
   return lista;
 }
 
+/** Conta os testes que estão na develop publicada: a pasta local pode estar numa branch ainda não entregue. */
+function testesNaDevelop(repo) {
+  try {
+    const saida = execFileSync('git', ['-C', repo, 'grep', '-c', '-E', '@(Test|ParameterizedTest|RepeatedTest)\\b',
+      'origin/develop', '--', 'backend/src/test'], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] });
+    return saida.split('\n').filter(Boolean).reduce((soma, linha) => soma + Number(linha.split(':').pop()), 0);
+  } catch {
+    return 0; // sem git, sem origin/develop ou sem testes: cai na contagem pela pasta
+  }
+}
+
 function rkf() {
   const repo = cfg.rkfbank;
   if (!repo || !fs.existsSync(repo)) return anterior.rkf ?? {};
+  const daDevelop = testesNaDevelop(repo);
+  if (daDevelop) return { testes: daDevelop };
   let testes = 0;
   const pasta = path.join(repo, 'backend', 'src', 'test');
   const varrer = (d) => {

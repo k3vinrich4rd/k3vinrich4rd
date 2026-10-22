@@ -106,7 +106,7 @@
     "Mensageria e microsserviços"
   ],
   "rkf": {
-    "testes": 242,
+    "testes": 237,
     "checklist": {
       "gantt": "```mermaid\ngantt\n    title Do MVP ao Pleno\n    dateFormat YYYY-MM-DD\n    axisFormat %d/%m\n    section MVP\n    Semana 2 - cliente e conta        :done,    s2, 2026-10-12, 7d\n    Semana 3 - movimentações          :active,  s3, 2026-10-19, 7d\n    Semana 4 - testar e lançar        :         s4, 2026-10-26, 6d\n    section Pleno\n    Flyway                            :done,    f1, 2026-10-15, 2d\n    Spring Security + JWT             :done,    f2, 2026-10-16, 2d\n    Testcontainers                    :crit,    f3, 2026-10-20, 4d\n    Swagger                           :         f6, after f3, 2d\n    Deploy AWS                        :         f4, after s4, 7d\n    Mensageria                        :         f5, after f6, 10d\n```",
       "agora": [
@@ -121,6 +121,14 @@
         {
           "feito": false,
           "texto": "Renan revisar o frontend do contrato 2.1–2.3 (`feature/frontend-contrato-2-3`)"
+        },
+        {
+          "feito": false,
+          "texto": "⏫ `/entregar` as 3 branches de 22/10 (ordem: fix → lgpd → docs) e o PR #1 do `rkf_bank-equipe`"
+        },
+        {
+          "feito": false,
+          "texto": "Domínio rico em `Conta` (`debitar`/`creditar`) antes do MVP"
         },
         {
           "feito": false,
@@ -407,7 +415,7 @@
       },
       "debitos": {
         "feitos": 5,
-        "total": 17
+        "total": 18
       },
       "recentes": [
         "README do RKF Bank interativo (aventura, Osasco, avatares) e os três como idealizadores (PRs #32–#34) — 2026-10-19",
@@ -421,6 +429,24 @@
   },
   "historico": [
     {
+      "data": "2026-10-22",
+      "branch": "`fix/debitos-paginacao-cors-dependencias` (aguardando entrega)",
+      "mudou": "`PaginaResponse`, CORS em `/**` com `.cors()` no Security e `CORS_ORIGENS`, Spring Boot 4.1.2 sem overrides de Tomcat/Jackson; 242 testes",
+      "aprendizado": "expor o `Page` do Spring acopla o contrato à versão do framework; CORS no Security depende do **nome** do bean"
+    },
+    {
+      "data": "2026-10-22",
+      "branch": "`feature/lgpd-direitos-do-titular` (aguardando entrega)",
+      "mudou": "`/clientes/me` (ver e corrigir), encerramento com retenção, V9, anonimização diária; 246 testes",
+      "aprendizado": "direito de eliminação num banco = encerrar + reter + anonimizar"
+    },
+    {
+      "data": "2026-10-22",
+      "branch": "`docs/guia-e2e-camadas-e-fluxos` (aguardando entrega)",
+      "mudou": "guia E2E com admin e camadas, `FLUXOS.md` (C4), proposta de nomes, padrões de projeto, skill `/sugerir-evolucao`, comentários sem Javadoc, contas de teste renomeadas",
+      "aprendizado": "padrão só onde há problema; `Impl` não paga o preço nos services"
+    },
+    {
       "data": "2026-10-20",
       "branch": "PRs #37 e #38 `chore/sincroniza-main-na-develop`",
       "mudou": "`main` sincronizada na `develop` (README, recado, `mvnw.cmd`); #36 sem conflito",
@@ -431,24 +457,6 @@
       "branch": "PR #35 `feature/flyway-reestruturacao-e-dados-demo`",
       "mudou": "idempotência, conta que não se apaga, número de conta gerado, limite de login, health, perfis equipe/visitante, gestão de usuários, troca de senha, Flyway V1–V8, 237 testes, validado no MySQL 8.4",
       "aprendizado": "revogar acesso com JWT exige conferir o usuário a cada requisição; idempotência na mesma transação do dinheiro"
-    },
-    {
-      "data": "2026-10-19",
-      "branch": "PRs #33 e #34 `docs/idealizadores-e-avatares`",
-      "mudou": "os três como idealizadores, avatares desenhados de fotos, aventura interativa, Feito em Osasco, `mvnw.cmd` normalizado",
-      "aprendizado": "arquivo que \"sempre aparece modificado\" costuma ser fim de linha: `git add --renormalize`"
-    },
-    {
-      "data": "2026-10-19",
-      "branch": "`docs/readme-banco-digital`",
-      "mudou": "README com cara de banco digital (SVGs animados, trilhas, time), docs e checklist atualizados, análise de LGPD",
-      "aprendizado": "documentação desatualizada engana o time e a IA: checklist dizia \"Flyway em andamento\" com tudo mergeado"
-    },
-    {
-      "data": "2026-10-17",
-      "branch": "PRs #26 e #27 (frontend)",
-      "mudou": "login com cookie `httpOnly`, conta, movimentações e extrato",
-      "aprendizado": "token fora do alcance do JavaScript (BFF)"
     }
   ],
   "estudos": [
@@ -495,6 +503,15 @@
       "passos": {
         "feitos": 0,
         "total": 6
+      }
+    },
+    {
+      "nome": "Padrões de projeto",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 4
       }
     },
     {
@@ -751,8 +768,8 @@
     }
   ],
   "biblioteca": {
-    "notas": 57,
-    "comSem": 50,
+    "notas": 58,
+    "comSem": 51,
     "sessoes": [
       "IA, Spring e LGPD",
       "Java e seu universo"
