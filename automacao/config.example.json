@@ -4,5 +4,18 @@
   "autoPush": false,
   "privados": [
     "rkf_bank-equipe"
-  ]
+  ],
+  "radar": {
+    "dias": 3,
+    "fontes": [
+      {
+        "nome": "TechDrops",
+        "site": "https://www.techdrops.com.br"
+      },
+      {
+        "nome": "AI Drop",
+        "site": "https://www.aidrop.news"
+      }
+    ]
+  }
 }

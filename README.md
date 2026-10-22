@@ -1645,7 +1645,7 @@ quadrantChart
 | Inglês técnico | 🔄 | em andamento |
 | Mensageria e microsserviços | ⏳ | próximo ciclo |
 
-<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-10-20</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-10-22</sub>
 <!-- AUTO:regua:END -->
 
 </details>
@@ -1657,7 +1657,7 @@ quadrantChart
 <!-- AUTO:estudos:START -->
 **23** assuntos praticados em projeto · **7** em andamento · **3** planejados
 
-📚 **57** notas de estudo no segundo cérebro · **28** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
+📚 **57** notas de estudo no segundo cérebro · **50** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
 
 ```mermaid
 mindmap
@@ -1718,7 +1718,7 @@ mindmap
 | ⏳ Spring AI | IA | <sub>5 a fazer</sub> |
 | ⏳ Swagger e OpenAPI | Spring | <sub>5 a fazer</sub> |
 
-<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-10-20.</sub>
+<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-10-22.</sub>
 <!-- AUTO:estudos:END -->
 
 </details>
@@ -1850,7 +1850,7 @@ gantt
 
 **🧹 Débitos técnicos:** 5/17 resolvidos
 
-<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-10-20.</sub>
+<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-10-22.</sub>
 <!-- AUTO:checklist:END -->
 
 </details>

@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-20",
+  "atualizado": "2026-10-22",
   "regua": {
     "praticadas": 11,
     "total": 15,
@@ -752,7 +752,7 @@
   ],
   "biblioteca": {
     "notas": 57,
-    "comSem": 28,
+    "comSem": 50,
     "sessoes": [
       "IA, Spring e LGPD",
       "Java e seu universo"

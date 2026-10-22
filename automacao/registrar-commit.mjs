@@ -5,7 +5,7 @@
 // Uso: node automacao/registrar-commit.mjs <pasta-do-repositorio>
 import fs from 'node:fs';
 import path from 'node:path';
-import { execFileSync } from 'node:child_process';
+import { execFileSync, spawn } from 'node:child_process';
 import { RAIZ, lerConfig, ler, escrever, frontmatter, hoje } from '../scripts/lib.mjs';
 
 const cfg = lerConfig();
@@ -158,6 +158,8 @@ try {
     anotarNoProjeto(c, nota);
   }
   log(`${c.nome} ${c.curto} anotado${nota ? ` em ${path.basename(nota)}` : ''}`);
+  // Primeiro commit do dia também puxa as newsletters para o Radar do Obsidian (no máximo uma vez por dia).
+  spawn(process.execPath, [path.join(RAIZ, 'automacao', 'radar.mjs'), '--se-nao-rodou-hoje'], { detached: true, stdio: 'ignore' }).unref();
   comTrava(() => atualizarPerfil(c));
 } catch (e) {
   log(`erro: ${e.message}`);
