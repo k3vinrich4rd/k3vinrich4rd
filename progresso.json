@@ -106,7 +106,7 @@
     "Mensageria e microsserviços"
   ],
   "rkf": {
-    "testes": 237,
+    "testes": 242,
     "checklist": {
       "gantt": "```mermaid\ngantt\n    title Do MVP ao Pleno\n    dateFormat YYYY-MM-DD\n    axisFormat %d/%m\n    section MVP\n    Semana 2 - cliente e conta        :done,    s2, 2026-10-12, 7d\n    Semana 3 - movimentações          :active,  s3, 2026-10-19, 7d\n    Semana 4 - testar e lançar        :         s4, 2026-10-26, 6d\n    section Pleno\n    Flyway                            :done,    f1, 2026-10-15, 2d\n    Spring Security + JWT             :done,    f2, 2026-10-16, 2d\n    Testcontainers                    :crit,    f3, 2026-10-20, 4d\n    Swagger                           :         f6, after f3, 2d\n    Deploy AWS                        :         f4, after s4, 7d\n    Mensageria                        :         f5, after f6, 10d\n```",
       "agora": [
