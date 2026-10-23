@@ -141,9 +141,9 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:agora:END -->
 
 <!-- AUTO:dica:START -->
-> 💡 **Dica do dia: `Testcontainers`**  
-> Testa contra o MySQL de verdade num container, e não contra um H2 que se comporta diferente.  
-> <sub>Muda todo dia sozinha · 16/20</sub>
+> 💡 **Dica do dia: `Pageable`**  
+> Receba Pageable no controller e o Spring monta page, size e sort direto da URL.  
+> <sub>Muda todo dia sozinha · 17/20</sub>
 <!-- AUTO:dica:END -->
 
 <!-- A cobrinha é gerada pelo workflow .github/workflows/snake.yml deste repositório (branch "output"). -->
@@ -160,8 +160,8 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:atividade:START -->
 | | Repositório | Commit | Quando |
 |:-:|---|---|---|
-| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`8a27f12`](https://github.com/k3vinrich4rd/rkf_bank/commit/8a27f12498c5105c0e274627480f77a4fadf5d6a) docs: guia de testes do zero (H2, MySQL, IDE, Insomnia, permissoes e ADM | há 2 h |
-| 🔧 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`5785161`](https://github.com/k3vinrich4rd/rkf_bank/commit/57851619787406c0b124da6c08d08c9ad90e9b4e) chore: configuracoes de execucao da IntelliJ para os tres perfis | há 2 h |
+| 🐛 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`ef3db50`](https://github.com/k3vinrich4rd/rkf_bank/commit/ef3db508776f75fd9a6d4d6b2f033efb426310b9) fix(config): console do H2 ignora CSRF so no proprio caminho, em vez de  | há 2 h |
+| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`a3ec5a9`](https://github.com/k3vinrich4rd/rkf_bank/commit/a3ec5a99bb856bbade85d4f59099b24a35094105) docs: numeros da colecao ampliada e atalho de importacao no Insomnia | há 2 h |
 | 📝 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`0849493`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/0849493f006f8569a3c9a93e9578c3ba795d6921) docs: adiciona README com modelo de dominio, endpoints e exemplos reais | há 7 dias |
 | 🐛 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`cf381a2`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/cf381a2b0fdf09b7ce7b3c3784be9cc876f6352e) fix: salva application-test.properties em UTF-8 | há 7 dias |
 | ✨ | [`crud-clientes`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) | [`9b0eb79`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes/commit/9b0eb794bf407bdbe22af1196065717ef72591a9) feat: implementando correcao sugerida no feedback | há 18 dias |
@@ -169,7 +169,7 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 | ✨ | [`workshop-springboot4-mongodb`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb) | [`ecad5ce`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb/commit/ecad5cec16d1f5ef7b606e6f8b5daf5ce74ade25) feat: Implementando ajustes no projeto | 15/09/2026 |
 | ✨ | [`workshop-springboot4-mongodb`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb) | [`264463c`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb/commit/264463cd568db8f49e9a3b154dc305bfb5adc906) feat: Implementando ajustes de comentarios no projeto e README.md | 06/09/2026 |
 
-<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 22/10 às 23:42</sub>
+<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 23/10 às 01:56</sub>
 <!-- AUTO:atividade:END -->
 
 </details>
@@ -2094,26 +2094,26 @@ Com `update` o Hibernate adivinha o schema, não renomeia nem remove nada e não
 
 <!-- AUTO:flashcards:START -->
 <details>
-<summary><b>🃏 Java · == ou equals para comparar dois BigDecimal?</b></summary>
+<summary><b>🃏 Java · Por que exceção de negócio deve ser unchecked num projeto Spring?</b></summary>
 <br/>
 
-Nenhum dos dois: <code>==</code> compara endereço e <code>equals</code> compara a escala (<code>1.0</code> ≠ <code>1.00</code>). Para valor, use <code>compareTo(...) == 0</code>.
+O <code>@Transactional</code> só faz rollback automático em <code>RuntimeException</code>. Uma exceção checked deixaria o débito gravado pela metade.
 
 </details>
 
 <details>
-<summary><b>🃏 Java · Por que records são ótimos para DTO e péssimos para entidade JPA?</b></summary>
+<summary><b>🃏 Spring · Qual a diferença entre 401 e 403?</b></summary>
 <br/>
 
-Records são imutáveis e já trazem <code>equals</code>, <code>hashCode</code> e <code>toString</code>. O Hibernate precisa de construtor vazio e de alterar campos, o que record não permite. Cuidado: o <code>toString</code> automático pode vazar senha no log.
+<code>401</code>: não sei quem você é (sem token, vencido ou adulterado). <code>403</code>: sei quem você é, mas não pode (conta de outro cliente). No RKF Bank a regra de dono mora no <code>ContaService</code>.
 
 </details>
 
 <details>
-<summary><b>🃏 Java · O que é uma race condition?</b></summary>
+<summary><b>🃏 Spring · Por que a senha vai em BCrypt e não em SHA-256?</b></summary>
 <br/>
 
-Duas threads leem o mesmo valor e gravam por cima uma da outra. Em memória resolve com <code>AtomicInteger</code>/<code>synchronized</code>; no banco, com lock otimista (<code>@Version</code>), que no RKF Bank vira <code>409</code>.
+BCrypt tem salt aleatório (senhas iguais viram hashes diferentes) e é lento de propósito, o que encarece a força bruta. SHA-256 é rápido demais para senha.
 
 </details>
 
