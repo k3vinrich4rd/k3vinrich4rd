@@ -141,9 +141,9 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:agora:END -->
 
 <!-- AUTO:dica:START -->
-> 💡 **Dica do dia: `Pageable`**  
-> Receba Pageable no controller e o Spring monta page, size e sort direto da URL.  
-> <sub>Muda todo dia sozinha · 17/20</sub>
+> 💡 **Dica do dia: `@Valid + Bean Validation`**  
+> Validação declarativa no DTO: a regra mora perto do dado e a mensagem sai pronta para o front.  
+> <sub>Muda todo dia sozinha · 18/20</sub>
 <!-- AUTO:dica:END -->
 
 <!-- A cobrinha é gerada pelo workflow .github/workflows/snake.yml deste repositório (branch "output"). -->
@@ -160,16 +160,16 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:atividade:START -->
 | | Repositório | Commit | Quando |
 |:-:|---|---|---|
-| 🐛 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`ef3db50`](https://github.com/k3vinrich4rd/rkf_bank/commit/ef3db508776f75fd9a6d4d6b2f033efb426310b9) fix(config): console do H2 ignora CSRF so no proprio caminho, em vez de  | há 19 h |
-| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`a3ec5a9`](https://github.com/k3vinrich4rd/rkf_bank/commit/a3ec5a99bb856bbade85d4f59099b24a35094105) docs: numeros da colecao ampliada e atalho de importacao no Insomnia | há 19 h |
+| 🐛 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`ef3db50`](https://github.com/k3vinrich4rd/rkf_bank/commit/ef3db508776f75fd9a6d4d6b2f033efb426310b9) fix(config): console do H2 ignora CSRF so no proprio caminho, em vez de  | ontem |
+| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`a3ec5a9`](https://github.com/k3vinrich4rd/rkf_bank/commit/a3ec5a99bb856bbade85d4f59099b24a35094105) docs: numeros da colecao ampliada e atalho de importacao no Insomnia | ontem |
 | 📝 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`0849493`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/0849493f006f8569a3c9a93e9578c3ba795d6921) docs: adiciona README com modelo de dominio, endpoints e exemplos reais | há 8 dias |
 | 🐛 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`cf381a2`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/cf381a2b0fdf09b7ce7b3c3784be9cc876f6352e) fix: salva application-test.properties em UTF-8 | há 8 dias |
-| ✨ | [`crud-clientes`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) | [`9b0eb79`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes/commit/9b0eb794bf407bdbe22af1196065717ef72591a9) feat: implementando correcao sugerida no feedback | há 18 dias |
+| ✨ | [`crud-clientes`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) | [`9b0eb79`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes/commit/9b0eb794bf407bdbe22af1196065717ef72591a9) feat: implementando correcao sugerida no feedback | há 19 dias |
 | ✨ | [`crud-clientes`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) | [`081441f`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes/commit/081441fdfcf7970ac1da4a4c57bc751327618575) feat: implementando atualizacoes de readme | há 22 dias |
 | ✨ | [`workshop-springboot4-mongodb`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb) | [`ecad5ce`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb/commit/ecad5cec16d1f5ef7b606e6f8b5daf5ce74ade25) feat: Implementando ajustes no projeto | 15/09/2026 |
 | ✨ | [`workshop-springboot4-mongodb`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb) | [`264463c`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb/commit/264463cd568db8f49e9a3b154dc305bfb5adc906) feat: Implementando ajustes de comentarios no projeto e README.md | 06/09/2026 |
 
-<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 23/10 às 18:27</sub>
+<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 24/10 às 01:41</sub>
 <!-- AUTO:atividade:END -->
 
 </details>
@@ -2094,26 +2094,26 @@ Com `update` o Hibernate adivinha o schema, não renomeia nem remove nada e não
 
 <!-- AUTO:flashcards:START -->
 <details>
-<summary><b>🃏 Java · Por que exceção de negócio deve ser unchecked num projeto Spring?</b></summary>
+<summary><b>🃏 Spring · O que acontece se eu editar uma migração do Flyway já aplicada?</b></summary>
 <br/>
 
-O <code>@Transactional</code> só faz rollback automático em <code>RuntimeException</code>. Uma exceção checked deixaria o débito gravado pela metade.
+O checksum não bate e a aplicação não sobe (<code>Migration checksum mismatch</code>). Mudança nova = arquivo novo (<code>V6__...</code>). É uma proteção: todo banco fica igual.
 
 </details>
 
 <details>
-<summary><b>🃏 Spring · Qual a diferença entre 401 e 403?</b></summary>
+<summary><b>🃏 Spring · Por que o @Transactional não funciona numa chamada interna?</b></summary>
 <br/>
 
-<code>401</code>: não sei quem você é (sem token, vencido ou adulterado). <code>403</code>: sei quem você é, mas não pode (conta de outro cliente). No RKF Bank a regra de dono mora no <code>ContaService</code>.
+Ele é implementado por um proxy (AOP). Chamar outro método da mesma classe não passa pelo proxy, então a transação não abre.
 
 </details>
 
 <details>
-<summary><b>🃏 Spring · Por que a senha vai em BCrypt e não em SHA-256?</b></summary>
+<summary><b>🃏 Spring · Por que injeção de dependência pelo construtor?</b></summary>
 <br/>
 
-BCrypt tem salt aleatório (senhas iguais viram hashes diferentes) e é lento de propósito, o que encarece a força bruta. SHA-256 é rápido demais para senha.
+Campos <code>final</code>, dependências explícitas e teste sem Spring: <code>new ContaService(mock(ContaRepository.class))</code>.
 
 </details>
 
