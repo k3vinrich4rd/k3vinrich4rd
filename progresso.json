@@ -429,6 +429,12 @@
   "historico": [
     {
       "data": "2026-10-25",
+      "branch": "PR #67 `fix/vulnerabilidades-frontend-2026-10-25` + #68 develop → main",
+      "mudou": "9 CVEs transitivas do front (shadcn 4.22.1 + overrides), coleção com o ADMIN derrubando a sessão do desativado (pública 83, equipe 119), README com os números atuais; 0 alertas do Dependabot na main",
+      "aprendizado": "CVE em dependência de dependência se resolve subindo quem a traz ou com `overrides`; o Dependabot só olha a branch padrão"
+    },
+    {
+      "data": "2026-10-25",
       "branch": "PR #51 release `develop` → `main`",
       "mudou": "contrato 3.1, telas novas do Renan, Testcontainers, Swagger, refresh token e LGPD chegam à main; CI verde",
       "aprendizado": "levar à main só com tudo validado (307 testes, coleções 82/82 e 114/114, smoke 41/41)"
@@ -450,12 +456,6 @@
       "branch": "PR #48 `refactor/nomes-e-rotas-de-mercado`",
       "mudou": "nomes de mercado (sufixos `Exception`/`Enum`/`Dto` mantidos), rotas `POST /contas`, `/depositos`, `/saques`, `/transferencias`, `/usuarios/me/senha` e `page`/`size`; antigas com `Deprecation` + `Link` (contrato 2.6); 261 testes",
       "aprendizado": "evoluir API sem quebrar cliente: rota nova + antiga obsoleta com header padronizado (RFC 9745) até a versão maior"
-    },
-    {
-      "data": "2026-10-22",
-      "branch": "PR #45 `fix/debitos-paginacao-cors-dependencias`",
-      "mudou": "`PaginaResponse`, CORS em `/**` com `.cors()` no Security e `CORS_ORIGENS`, Spring Boot 4.1.2 sem overrides de Tomcat/Jackson; 242 testes",
-      "aprendizado": "expor o `Page` do Spring acopla o contrato à versão do framework; CORS no Security depende do **nome** do bean"
     }
   ],
   "estudos": [

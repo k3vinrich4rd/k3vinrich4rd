@@ -181,11 +181,11 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:diario:START -->
 | Quando | Onde | O que eu aprendi |
 |---|---|---|
+| 2026-10-25 | PR #67 `fix/vulnerabilidades-frontend-2026-10-25` + #68 develop → main | CVE em dependência de dependência se resolve subindo quem a traz ou com `overrides`; o Dependabot só olha a branch padrão |
 | 2026-10-25 | PR #51 release `develop` → `main` | levar à main só com tudo validado (307 testes, coleções 82/82 e 114/114, smoke 41/41) |
 | 2026-10-25 | PR #60 `refactor/contrato-3-0-integracao` (mergeado) | teste que passa no Windows e falha no Linux = dependência da **ordem** das classes (banco H2 compartilhado entre contextos) |
 | 2026-10-23 | PR #60 `refactor/contrato-3-0-integracao` | decidir erro por código, nunca por texto; rodar o roteiro escrito encontra o bug que o teste não tinha |
 | 2026-10-22 | PR #48 `refactor/nomes-e-rotas-de-mercado` | evoluir API sem quebrar cliente: rota nova + antiga obsoleta com header padronizado (RFC 9745) até a versão maior |
-| 2026-10-22 | PR #45 `fix/debitos-paginacao-cors-dependencias` | expor o `Page` do Spring acopla o contrato à versão do framework; CORS no Security depende do **nome** do bean |
 <!-- AUTO:diario:END -->
 
 </details>
