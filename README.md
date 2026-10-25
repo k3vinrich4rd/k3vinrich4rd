@@ -41,10 +41,10 @@
 <!-- AUTO:recrutador:START -->
 | Pergunta | Resposta rápida |
 |---|---|
-| Quem é? | Dev **Java backend Junior** na **Zup Innovation**, prestando serviço para o **Itaú**, em transição para **Pleno** (**11/15** competências já praticadas) |
-| Melhor projeto? | **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **264 testes**, CI e logs rastreáveis |
+| Quem é? | Dev **Java backend Junior** na **Zup Innovation**, prestando serviço para o **Itaú**, em transição para **Pleno** (**12/15** competências já praticadas) |
+| Melhor projeto? | **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **307 testes**, CI e logs rastreáveis |
 | Stack principal? | Java · Spring Boot · JPA/Hibernate · MySQL/PostgreSQL · MongoDB · JUnit/Mockito · Docker · GitHub Actions |
-| O que está estudando? | Testcontainers → AWS → inglês → mensageria |
+| O que está estudando? | AWS → inglês → mensageria |
 | Contato? | [LinkedIn](https://www.linkedin.com/in/kevin-richard-b68a54203/) · [kevinrichardve@gmail.com](mailto:kevinrichardve@gmail.com) |
 <!-- AUTO:recrutador:END -->
 
@@ -122,10 +122,10 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <div align="center">
 
 <!-- AUTO:status:START -->
-<img src="https://img.shields.io/static/v1?label=R%C3%A9gua%20Pleno&message=11%2F15&color=EC7000&style=flat-square"/>
-<img src="https://img.shields.io/static/v1?label=Testes%20RKF%20Bank&message=264%20%E2%9C%94&color=3fb950&style=flat-square&logo=junit5&logoColor=white"/>
-<img src="https://img.shields.io/static/v1?label=MVP&message=6%2F14&color=003D74&style=flat-square"/>
-<img src="https://img.shields.io/static/v1?label=Foco%20agora&message=Testcontainers&color=6A1B9A&style=flat-square"/>
+<img src="https://img.shields.io/static/v1?label=R%C3%A9gua%20Pleno&message=12%2F15&color=EC7000&style=flat-square"/>
+<img src="https://img.shields.io/static/v1?label=Testes%20RKF%20Bank&message=307%20%E2%9C%94&color=3fb950&style=flat-square&logo=junit5&logoColor=white"/>
+<img src="https://img.shields.io/static/v1?label=MVP&message=7%2F14&color=003D74&style=flat-square"/>
+<img src="https://img.shields.io/static/v1?label=Foco%20agora&message=AWS&color=6A1B9A&style=flat-square"/>
 <!-- AUTO:status:END -->
 
 </div>
@@ -136,14 +136,14 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 - 🔨 Renan revisar o frontend do contrato 2.1–2.3
 - 🔨 `/entregar` as 3 branches de 22/10
 - 🔨 Domínio rico em `Conta`
-- 🎯 Foco de estudo: **Testcontainers**
+- 🎯 Foco de estudo: **AWS**
 - ✅ Última entrega: README do RKF Bank interativo (aventura, Osasco, avatares) e os três como idealizadores (PRs #32–#34) — 2026-10-19
 <!-- AUTO:agora:END -->
 
 <!-- AUTO:dica:START -->
-> 💡 **Dica do dia: `Pageable`**  
-> Receba Pageable no controller e o Spring monta page, size e sort direto da URL.  
-> <sub>Muda todo dia sozinha · 17/20</sub>
+> 💡 **Dica do dia: `equals/hashCode por id`**  
+> Entidades em Set precisam de equals e hashCode consistentes, senão itens somem ou duplicam.  
+> <sub>Muda todo dia sozinha · 19/20</sub>
 <!-- AUTO:dica:END -->
 
 <!-- A cobrinha é gerada pelo workflow .github/workflows/snake.yml deste repositório (branch "output"). -->
@@ -181,11 +181,11 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:diario:START -->
 | Quando | Onde | O que eu aprendi |
 |---|---|---|
+| 2026-10-25 | PR #51 release `develop` → `main` | levar à main só com tudo validado (307 testes, coleções 82/82 e 114/114, smoke 41/41) |
+| 2026-10-25 | PR #60 `refactor/contrato-3-0-integracao` (mergeado) | teste que passa no Windows e falha no Linux = dependência da **ordem** das classes (banco H2 compartilhado entre contextos) |
+| 2026-10-23 | PR #60 `refactor/contrato-3-0-integracao` | decidir erro por código, nunca por texto; rodar o roteiro escrito encontra o bug que o teste não tinha |
 | 2026-10-22 | PR #48 `refactor/nomes-e-rotas-de-mercado` | evoluir API sem quebrar cliente: rota nova + antiga obsoleta com header padronizado (RFC 9745) até a versão maior |
 | 2026-10-22 | PR #45 `fix/debitos-paginacao-cors-dependencias` | expor o `Page` do Spring acopla o contrato à versão do framework; CORS no Security depende do **nome** do bean |
-| 2026-10-22 | PR #46 `feature/lgpd-direitos-do-titular` | direito de eliminação num banco = encerrar + reter + anonimizar |
-| 2026-10-22 | PR #47 `docs/guia-e2e-camadas-e-fluxos` | padrão só onde há problema; `Impl` não paga o preço nos services |
-| 2026-10-20 | PRs #37 e #38 `chore/sincroniza-main-na-develop` | squash não carrega ancestralidade: para sincronizar branches é merge commit (`-s ours` quando o conteúdo já está igual) |
 <!-- AUTO:diario:END -->
 
 </details>
@@ -333,7 +333,7 @@ public void sacar(UUID contaId, SaqueRequestDto request, UsuarioLogado usuario) 
 | ➖ Valor **zero ou negativo** passava (e um saque negativo era um depósito!) | `validarValor` recusa com `422` |
 | 🏃 Dois saques ao mesmo tempo **sobrescreviam** um ao outro | `@Transactional` + lock otimista com `@Version` → `409` |
 | 🧾 Nenhum **histórico**: o valor final só substituía o anterior | cada saque gera um lançamento no extrato |
-| 🔇 Sem log nem teste do caminho de erro | log com `X-Request-Id` e 264 testes automatizados |
+| 🔇 Sem log nem teste do caminho de erro | log com `X-Request-Id` e 307 testes automatizados |
 
 <sub>Quantos você achou? Conta pra mim no <a href="#️-livro-de-visitas">livro de visitas</a>. 😄</sub>
 
@@ -895,7 +895,7 @@ sequenceDiagram
 | **Meu papel** | todo o backend | projeto individual |
 | **Domínio** | clientes, contas, depósito, saque, transferência, extrato | usuários, pedidos, produtos, categorias, pagamento |
 | **O que mostra** | transação atômica, lock otimista, ViaCEP com falha tratada, logs com `X-Request-Id` | modelo de domínio rico, chave composta (`OrdemItemPK`), Bean Validation, erros padronizados |
-| **Qualidade** | 264 testes, JaCoCo, CI com CodeQL e Dependabot | camadas controller → service → repository, `DatabaseException` para integridade referencial |
+| **Qualidade** | 307 testes, JaCoCo, CI com CodeQL e Dependabot | camadas controller → service → repository, `DatabaseException` para integridade referencial |
 | **Stack** | Java 25 · Spring Boot 4 · MySQL · Docker · Next.js | Java · Spring Boot · JPA · H2 |
 | **README** | [roteiro do projeto](https://github.com/k3vinrich4rd/rkf_bank#readme) | [modelo de domínio, endpoints e respostas reais](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM#readme) |
 | **Ver primeiro** | [`ContaService`](https://github.com/k3vinrich4rd/rkf_bank) · [roteiro no README](#-projeto-atual--rkf-bank) | [`ProductService`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/services/ProductService.java) · [`ControllerExceptionHandler`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/controllers/handlers/ControllerExceptionHandler.java) |
@@ -1587,7 +1587,7 @@ endsolid repositorios_por_ano
 > O que separa um Junior de um Pleno não é só saber mais tecnologia: é **entregar com autonomia, qualidade e visão do todo**. Esta é a minha régua, com evidências.
 
 <div align="center">
-  <img src="assets/rumo-ao-pleno.svg" width="100%" alt="Rumo ao Pleno: 11 de 15 competências praticadas em projeto"/>
+  <img src="assets/rumo-ao-pleno.svg" width="100%" alt="Rumo ao Pleno: 12 de 15 competências praticadas em projeto"/>
 </div>
 
 <details>
@@ -1640,12 +1640,12 @@ quadrantChart
 | Banco NoSQL | ✅ | Workshop MongoDB |
 | Migrações versionadas | ✅ | RKF Bank (V1, V2, V3; PR #23) · reorganizado em V1–V8 com callbacks de seed (PR #35) |
 | Autenticação e autorização | ✅ | RKF Bank (JWT, BCrypt, perfis, regra de dono; PR #24) · gestão de usuários, revogação imediata, troca de senha e limite de login (PR #35) |
-| Testes de integração com banco real | 🔄 | ⏫ próximo da fila |
-| Deploy em nuvem | 🔄 | em andamento |
+| Testes de integração com banco real | ✅ | RKF Bank (7 testes no MySQL 8.4 real com `@ServiceConnection`: migrações, fluxo bancário e concorrência; rodam no CI; PR #60, na main em 25/10/2026) |
+| Deploy em nuvem | 🔄 | ⏫ próximo da fila |
 | Inglês técnico | 🔄 | em andamento |
 | Mensageria e microsserviços | ⏳ | próximo ciclo |
 
-<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-10-22</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-10-25</sub>
 <!-- AUTO:regua:END -->
 
 </details>
@@ -1655,7 +1655,7 @@ quadrantChart
 <br/>
 
 <!-- AUTO:estudos:START -->
-**23** assuntos praticados em projeto · **8** em andamento · **3** planejados
+**24** assuntos praticados em projeto · **7** em andamento · **3** planejados
 
 📚 **58** notas de estudo no segundo cérebro · **51** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
 
@@ -1703,7 +1703,7 @@ mindmap
     Testes
       ✅ DataJpaTest
       ✅ JUnit e Mockito
-      🔄 Testcontainers
+      ✅ Testcontainers
 ```
 
 | Estudando agora | Área | Próximos passos |
@@ -1715,12 +1715,11 @@ mindmap
 | 🔄 Spec-Driven Development | IA | <sub>1 a fazer</sub> |
 | 🔄 Concorrência e threads virtuais | Java | <sub>3 a fazer</sub> |
 | 🔄 Java moderno (8 a 25) | Java | <sub>3 a fazer</sub> |
-| 🔄 Testcontainers | Testes | <sub>7 a fazer</sub> |
 | ⏳ Mensageria e Outbox | Arquitetura | <sub>6 a fazer</sub> |
 | ⏳ Spring AI | IA | <sub>5 a fazer</sub> |
 | ⏳ Swagger e OpenAPI | Spring | <sub>5 a fazer</sub> |
 
-<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-10-22.</sub>
+<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-10-25.</sub>
 <!-- AUTO:estudos:END -->
 
 </details>
@@ -1815,11 +1814,11 @@ gantt
 - ✅ Flyway com V1, V2 e V3, `ddl-auto=validate` (PR #23) — 2026-10-16
 - ✅ CVEs do Tomcat (3 críticas) e do Jackson (5 altas, 2 moderadas) corrigidas — 2026-10-15
 
-**🚀 MVP do RKF Bank (31/10/2026)** `█████░░░░░░░` 6/14
+**🚀 MVP do RKF Bank (31/10/2026)** `██████░░░░░░` 7/14
 
-<b>Backend</b> `███░░░░░` 1/3
+<b>Backend</b> `█████░░░` 2/3
 
-- [ ] `GET /contas/{contaId}` (saldo)
+- [x] `GET /contas/{contaId}` (saldo) — contrato 3.1
 - [ ] `GET /clientes/{clienteId}/contas`
 - [x] Decidir como o usuário acessa a conta sem login (resolvido com o login)
 
@@ -1840,11 +1839,11 @@ gantt
 - [ ] Colocar no ar
 - [ ] Atualizar o README com link e prints
 
-**📏 Rumo ao Pleno** `█████░░░░░░░` 12/29 passos
+**📏 Rumo ao Pleno** `█████░░░░░░░` 13/29 passos
 
 - [x] **Flyway** `████████` 6/6
 - [x] **Spring Security + JWT** `████████` 6/6
-- [ ] **Testcontainers** ⏫ **próximo** <sub>4 a fazer</sub>
+- [ ] **Testcontainers** ⏫ **próximo** `██░░░░░░` 1/4
 - [ ] **Swagger / OpenAPI** <sub>3 a fazer</sub>
 - [ ] **Deploy AWS** 🔮 <sub>5 a fazer</sub>
 - [ ] **Mensageria** 🔮 <sub>3 a fazer</sub>
@@ -1852,7 +1851,7 @@ gantt
 
 **🧹 Débitos técnicos:** 9/18 resolvidos
 
-<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-10-22.</sub>
+<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-10-25.</sub>
 <!-- AUTO:checklist:END -->
 
 </details>
@@ -2094,26 +2093,26 @@ Com `update` o Hibernate adivinha o schema, não renomeia nem remove nada e não
 
 <!-- AUTO:flashcards:START -->
 <details>
-<summary><b>🃏 Java · Por que exceção de negócio deve ser unchecked num projeto Spring?</b></summary>
+<summary><b>🃏 Spring · O que o MockMvc testa que chamar o controller direto não testa?</b></summary>
 <br/>
 
-O <code>@Transactional</code> só faz rollback automático em <code>RuntimeException</code>. Uma exceção checked deixaria o débito gravado pela metade.
+O JSON de verdade, o <code>@Valid</code>, a serialização e o status HTTP. Um <code>{"valor":"abc"}</code> só é pego passando pelo MockMvc.
 
 </details>
 
 <details>
-<summary><b>🃏 Spring · Qual a diferença entre 401 e 403?</b></summary>
+<summary><b>🃏 IA · RAG ou fine-tuning para responder sobre as decisões do time?</b></summary>
 <br/>
 
-<code>401</code>: não sei quem você é (sem token, vencido ou adulterado). <code>403</code>: sei quem você é, mas não pode (conta de outro cliente). No RKF Bank a regra de dono mora no <code>ContaService</code>.
+RAG: o conhecimento muda e precisa citar a fonte. Fine-tuning ensina jeito e tarefa, não fatos atualizados.
 
 </details>
 
 <details>
-<summary><b>🃏 Spring · Por que a senha vai em BCrypt e não em SHA-256?</b></summary>
+<summary><b>🃏 IA · Qual a diferença entre chatbot e agente de IA?</b></summary>
 <br/>
 
-BCrypt tem salt aleatório (senhas iguais viram hashes diferentes) e é lento de propósito, o que encarece a força bruta. SHA-256 é rápido demais para senha.
+O chatbot responde; o agente usa ferramentas em loop até cumprir um objetivo. Por isso precisa de guardrails: ler pode ser automático, mexer em dinheiro exige confirmação humana.
 
 </details>
 

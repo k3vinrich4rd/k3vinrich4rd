@@ -62,16 +62,16 @@
     <text x="220" y="92" class="ano">2026</text>
     <text x="220" y="132" class="titulo">Projeto de verdade</text>
     <text x="222" y="178" class="linha"><tspan fill="#EC7000">▸ </tspan>Java 25 + Spring Boot 4</text>
-    <text x="222" y="208" class="linha"><tspan fill="#EC7000">▸ </tspan>RKF Bank: 264 testes, CI, logs e lock otimista</text>
+    <text x="222" y="208" class="linha"><tspan fill="#EC7000">▸ </tspan>RKF Bank: 307 testes, CI, logs e lock otimista</text>
     <text x="222" y="238" class="linha"><tspan fill="#EC7000">▸ </tspan>Workshops JPA e MongoDB · CRUD nota 10/10</text>
   </g>
   <g class="cena" style="animation-delay:20s">
     <text x="120" y="118" font-size="64">🚀</text>
     <text x="220" y="92" class="ano">Agora</text>
     <text x="220" y="132" class="titulo">Rumo ao Pleno</text>
-    <text x="222" y="178" class="linha"><tspan fill="#EC7000">▸ </tspan>11 de 15 competências de Pleno praticadas</text>
+    <text x="222" y="178" class="linha"><tspan fill="#EC7000">▸ </tspan>12 de 15 competências de Pleno praticadas</text>
     <text x="222" y="208" class="linha"><tspan fill="#EC7000">▸ </tspan>Dev Junior na Zup, serviço para o Itaú</text>
-    <text x="222" y="238" class="linha"><tspan fill="#EC7000">▸ </tspan>Próximo passo: Testcontainers</text>
+    <text x="222" y="238" class="linha"><tspan fill="#EC7000">▸ </tspan>Próximo passo: AWS</text>
   </g>
   <line x1="110" y1="318" x2="1090" y2="318" stroke="#30363d" stroke-width="3"/>
   <line x1="110" y1="318" x2="1090" y2="318" stroke="url(#marca)" stroke-width="3" class="rastro"/>

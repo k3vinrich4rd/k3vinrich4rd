@@ -1,9 +1,9 @@
 {
-  "atualizado": "2026-10-22",
+  "atualizado": "2026-10-25",
   "regua": {
-    "praticadas": 11,
+    "praticadas": 12,
     "total": 15,
-    "andamento": 3,
+    "andamento": 2,
     "planejadas": 1,
     "itens": [
       {
@@ -74,15 +74,15 @@
       },
       {
         "nome": "Testes de integração com banco real",
-        "status": "andamento",
-        "evidencia": "",
-        "proximo": true
+        "status": "praticada",
+        "evidencia": "RKF Bank (7 testes no MySQL 8.4 real com `@ServiceConnection`: migrações, fluxo bancário e concorrência; rodam no CI; PR #60, na main em 25/10/2026)",
+        "proximo": false
       },
       {
         "nome": "Deploy em nuvem",
         "status": "andamento",
         "evidencia": "",
-        "proximo": false
+        "proximo": true
       },
       {
         "nome": "Inglês técnico",
@@ -98,15 +98,14 @@
       }
     ]
   },
-  "foco": "Testes de integração com banco real",
+  "foco": "Deploy em nuvem",
   "trilha": [
-    "Testes de integração com banco real",
     "Deploy em nuvem",
     "Inglês técnico",
     "Mensageria e microsserviços"
   ],
   "rkf": {
-    "testes": 264,
+    "testes": 307,
     "checklist": {
       "gantt": "```mermaid\ngantt\n    title Do MVP ao Pleno\n    dateFormat YYYY-MM-DD\n    axisFormat %d/%m\n    section MVP\n    Semana 2 - cliente e conta        :done,    s2, 2026-10-12, 7d\n    Semana 3 - movimentações          :active,  s3, 2026-10-19, 7d\n    Semana 4 - testar e lançar        :         s4, 2026-10-26, 6d\n    section Pleno\n    Flyway                            :done,    f1, 2026-10-15, 2d\n    Spring Security + JWT             :done,    f2, 2026-10-16, 2d\n    Testcontainers                    :crit,    f3, 2026-10-20, 4d\n    Swagger                           :         f6, after f3, 2d\n    Deploy AWS                        :         f4, after s4, 7d\n    Mensageria                        :         f5, after f6, 10d\n```",
       "agora": [
@@ -131,8 +130,8 @@
           "texto": "Domínio rico em `Conta` (`debitar`/`creditar`) antes do MVP"
         },
         {
-          "feito": false,
-          "texto": "⏫ Começar a `feature/testcontainers`"
+          "feito": true,
+          "texto": "⏫ Começar a `feature/testcontainers` (na main em 25/10)"
         },
         {
           "feito": false,
@@ -140,19 +139,19 @@
         }
       ],
       "mvp": {
-        "feitos": 6,
+        "feitos": 7,
         "total": 14,
         "grupos": [
           {
             "nome": "Backend",
             "futuro": false,
             "proximo": false,
-            "feitos": 1,
+            "feitos": 2,
             "total": 3,
             "itens": [
               {
-                "feito": false,
-                "texto": "`GET /contas/{contaId}` (saldo)"
+                "feito": true,
+                "texto": "`GET /contas/{contaId}` (saldo) — contrato 3.1"
               },
               {
                 "feito": false,
@@ -229,7 +228,7 @@
         ]
       },
       "pleno": {
-        "feitos": 12,
+        "feitos": 13,
         "total": 29,
         "grupos": [
           {
@@ -302,7 +301,7 @@
             "nome": "Testcontainers",
             "futuro": false,
             "proximo": true,
-            "feitos": 0,
+            "feitos": 1,
             "total": 4,
             "itens": [
               {
@@ -310,8 +309,8 @@
                 "texto": "Testes de repositório contra MySQL 8.4 real (`@ServiceConnection`)"
               },
               {
-                "feito": false,
-                "texto": "Teste de concorrência: duas transferências simultâneas → `409` e saldo correto"
+                "feito": true,
+                "texto": "Teste de concorrência: duas transferências simultâneas → `409` e saldo correto (`ConcorrenciaMySqlTest`, MySQL real)"
               },
               {
                 "feito": false,
@@ -429,6 +428,24 @@
   },
   "historico": [
     {
+      "data": "2026-10-25",
+      "branch": "PR #51 release `develop` → `main`",
+      "mudou": "contrato 3.1, telas novas do Renan, Testcontainers, Swagger, refresh token e LGPD chegam à main; CI verde",
+      "aprendizado": "levar à main só com tudo validado (307 testes, coleções 82/82 e 114/114, smoke 41/41)"
+    },
+    {
+      "data": "2026-10-25",
+      "branch": "PR #60 `refactor/contrato-3-0-integracao` (mergeado)",
+      "mudou": "CI corrigido (H2 próprio nos testes de repository); coleção pública só do cliente (82) e da equipe com ADMIN (114); \"💡 Em palavras simples\" em cada passo; guias para iniciantes com VM options e Swagger; script de forja de JWT consertado",
+      "aprendizado": "teste que passa no Windows e falha no Linux = dependência da **ordem** das classes (banco H2 compartilhado entre contextos)"
+    },
+    {
+      "data": "2026-10-23",
+      "branch": "PR #60 `refactor/contrato-3-0-integracao`",
+      "mudou": "integra #53–#58 do Renan; contrato 3.0 (rotas 2.x fora, `tipoConta`, `CodigoErroEnum` + `codigo` no erro); bug do CPF do admin (500 → 409); coleção E2E 91/91; guias de teste e `FLUXOS.md` interativo; 268 testes",
+      "aprendizado": "decidir erro por código, nunca por texto; rodar o roteiro escrito encontra o bug que o teste não tinha"
+    },
+    {
       "data": "2026-10-22",
       "branch": "PR #48 `refactor/nomes-e-rotas-de-mercado`",
       "mudou": "nomes de mercado (sufixos `Exception`/`Enum`/`Dto` mantidos), rotas `POST /contas`, `/depositos`, `/saques`, `/transferencias`, `/usuarios/me/senha` e `page`/`size`; antigas com `Deprecation` + `Link` (contrato 2.6); 261 testes",
@@ -439,24 +456,6 @@
       "branch": "PR #45 `fix/debitos-paginacao-cors-dependencias`",
       "mudou": "`PaginaResponse`, CORS em `/**` com `.cors()` no Security e `CORS_ORIGENS`, Spring Boot 4.1.2 sem overrides de Tomcat/Jackson; 242 testes",
       "aprendizado": "expor o `Page` do Spring acopla o contrato à versão do framework; CORS no Security depende do **nome** do bean"
-    },
-    {
-      "data": "2026-10-22",
-      "branch": "PR #46 `feature/lgpd-direitos-do-titular`",
-      "mudou": "`/clientes/me` (ver e corrigir), encerramento com retenção, V9, anonimização diária; 246 testes",
-      "aprendizado": "direito de eliminação num banco = encerrar + reter + anonimizar"
-    },
-    {
-      "data": "2026-10-22",
-      "branch": "PR #47 `docs/guia-e2e-camadas-e-fluxos`",
-      "mudou": "guia E2E com admin e camadas, `FLUXOS.md` (C4), proposta de nomes, padrões de projeto, skill `/sugerir-evolucao`, comentários sem Javadoc, contas de teste renomeadas",
-      "aprendizado": "padrão só onde há problema; `Impl` não paga o preço nos services"
-    },
-    {
-      "data": "2026-10-20",
-      "branch": "PRs #37 e #38 `chore/sincroniza-main-na-develop`",
-      "mudou": "`main` sincronizada na `develop` (README, recado, `mvnw.cmd`); #36 sem conflito",
-      "aprendizado": "squash não carrega ancestralidade: para sincronizar branches é merge commit (`-s ours` quando o conteúdo já está igual)"
     }
   ],
   "estudos": [
@@ -760,9 +759,9 @@
     {
       "nome": "Testcontainers",
       "area": "Testes",
-      "status": "andamento",
+      "status": "praticado",
       "passos": {
-        "feitos": 0,
+        "feitos": 6,
         "total": 7
       }
     }
