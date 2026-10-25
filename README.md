@@ -141,9 +141,9 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:agora:END -->
 
 <!-- AUTO:dica:START -->
-> 💡 **Dica do dia: `@Valid + Bean Validation`**  
-> Validação declarativa no DTO: a regra mora perto do dado e a mensagem sai pronta para o front.  
-> <sub>Muda todo dia sozinha · 18/20</sub>
+> 💡 **Dica do dia: `equals/hashCode por id`**  
+> Entidades em Set precisam de equals e hashCode consistentes, senão itens somem ou duplicam.  
+> <sub>Muda todo dia sozinha · 19/20</sub>
 <!-- AUTO:dica:END -->
 
 <!-- A cobrinha é gerada pelo workflow .github/workflows/snake.yml deste repositório (branch "output"). -->
@@ -164,12 +164,12 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 | 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`a3ec5a9`](https://github.com/k3vinrich4rd/rkf_bank/commit/a3ec5a99bb856bbade85d4f59099b24a35094105) docs: numeros da colecao ampliada e atalho de importacao no Insomnia | há 2 dias |
 | 📝 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`0849493`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/0849493f006f8569a3c9a93e9578c3ba795d6921) docs: adiciona README com modelo de dominio, endpoints e exemplos reais | há 9 dias |
 | 🐛 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`cf381a2`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/cf381a2b0fdf09b7ce7b3c3784be9cc876f6352e) fix: salva application-test.properties em UTF-8 | há 9 dias |
-| ✨ | [`crud-clientes`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) | [`9b0eb79`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes/commit/9b0eb794bf407bdbe22af1196065717ef72591a9) feat: implementando correcao sugerida no feedback | há 19 dias |
+| ✨ | [`crud-clientes`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) | [`9b0eb79`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes/commit/9b0eb794bf407bdbe22af1196065717ef72591a9) feat: implementando correcao sugerida no feedback | há 20 dias |
 | ✨ | [`crud-clientes`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) | [`081441f`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes/commit/081441fdfcf7970ac1da4a4c57bc751327618575) feat: implementando atualizacoes de readme | há 23 dias |
 | ✨ | [`workshop-springboot4-mongodb`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb) | [`ecad5ce`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb/commit/ecad5cec16d1f5ef7b606e6f8b5daf5ce74ade25) feat: Implementando ajustes no projeto | 15/09/2026 |
 | ✨ | [`workshop-springboot4-mongodb`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb) | [`264463c`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb/commit/264463cd568db8f49e9a3b154dc305bfb5adc906) feat: Implementando ajustes de comentarios no projeto e README.md | 06/09/2026 |
 
-<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 24/10 às 17:53</sub>
+<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 25/10 às 01:47</sub>
 <!-- AUTO:atividade:END -->
 
 </details>
@@ -2094,26 +2094,26 @@ Com `update` o Hibernate adivinha o schema, não renomeia nem remove nada e não
 
 <!-- AUTO:flashcards:START -->
 <details>
-<summary><b>🃏 Spring · O que acontece se eu editar uma migração do Flyway já aplicada?</b></summary>
+<summary><b>🃏 Spring · O que o MockMvc testa que chamar o controller direto não testa?</b></summary>
 <br/>
 
-O checksum não bate e a aplicação não sobe (<code>Migration checksum mismatch</code>). Mudança nova = arquivo novo (<code>V6__...</code>). É uma proteção: todo banco fica igual.
+O JSON de verdade, o <code>@Valid</code>, a serialização e o status HTTP. Um <code>{"valor":"abc"}</code> só é pego passando pelo MockMvc.
 
 </details>
 
 <details>
-<summary><b>🃏 Spring · Por que o @Transactional não funciona numa chamada interna?</b></summary>
+<summary><b>🃏 IA · RAG ou fine-tuning para responder sobre as decisões do time?</b></summary>
 <br/>
 
-Ele é implementado por um proxy (AOP). Chamar outro método da mesma classe não passa pelo proxy, então a transação não abre.
+RAG: o conhecimento muda e precisa citar a fonte. Fine-tuning ensina jeito e tarefa, não fatos atualizados.
 
 </details>
 
 <details>
-<summary><b>🃏 Spring · Por que injeção de dependência pelo construtor?</b></summary>
+<summary><b>🃏 IA · Qual a diferença entre chatbot e agente de IA?</b></summary>
 <br/>
 
-Campos <code>final</code>, dependências explícitas e teste sem Spring: <code>new ContaService(mock(ContaRepository.class))</code>.
+O chatbot responde; o agente usa ferramentas em loop até cumprir um objetivo. Por isso precisa de guardrails: ler pode ser automático, mexer em dinheiro exige confirmação humana.
 
 </details>
 
