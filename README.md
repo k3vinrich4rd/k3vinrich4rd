@@ -160,8 +160,8 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:atividade:START -->
 | | Repositório | Commit | Quando |
 |:-:|---|---|---|
-| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`1334c45`](https://github.com/k3vinrich4rd/rkf_bank/commit/1334c4541de37200baebc11deff20c5ce68e09eb) docs(testes): exemplos regerados na ordem dos guias, com os valores que  | há 29 min |
-| 🧪 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`43a48d0`](https://github.com/k3vinrich4rd/rkf_bank/commit/43a48d064b8b07d5a9cb07135ab28db620c1a9ba) test(scripts): executor roda so os passos de um roteiro, na ordem, e o g | há 30 min |
+| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`1334c45`](https://github.com/k3vinrich4rd/rkf_bank/commit/1334c4541de37200baebc11deff20c5ce68e09eb) docs(testes): exemplos regerados na ordem dos guias, com os valores que  | há 1 h |
+| 🧪 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`43a48d0`](https://github.com/k3vinrich4rd/rkf_bank/commit/43a48d064b8b07d5a9cb07135ab28db620c1a9ba) test(scripts): executor roda so os passos de um roteiro, na ordem, e o g | há 1 h |
 | 📝 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`0849493`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/0849493f006f8569a3c9a93e9578c3ba795d6921) docs: adiciona README com modelo de dominio, endpoints e exemplos reais | há 11 dias |
 | 🐛 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`cf381a2`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/cf381a2b0fdf09b7ce7b3c3784be9cc876f6352e) fix: salva application-test.properties em UTF-8 | há 11 dias |
 | ✨ | [`crud-clientes`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) | [`9b0eb79`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes/commit/9b0eb794bf407bdbe22af1196065717ef72591a9) feat: implementando correcao sugerida no feedback | há 21 dias |
@@ -169,7 +169,7 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 | ✨ | [`workshop-springboot4-mongodb`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb) | [`ecad5ce`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb/commit/ecad5cec16d1f5ef7b606e6f8b5daf5ce74ade25) feat: Implementando ajustes no projeto | 15/09/2026 |
 | ✨ | [`workshop-springboot4-mongodb`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb) | [`264463c`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb/commit/264463cd568db8f49e9a3b154dc305bfb5adc906) feat: Implementando ajustes de comentarios no projeto e README.md | 06/09/2026 |
 
-<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 26/10 às 11:43</sub>
+<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 26/10 às 12:21</sub>
 <!-- AUTO:atividade:END -->
 
 </details>
