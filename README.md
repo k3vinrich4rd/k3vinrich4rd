@@ -1834,7 +1834,7 @@ gantt
 
 - [ ] Decidir onde publicar (ver Decisões RKF Bank)
 - [ ] LGPD mínimo: política de privacidade, aceite dos termos e encarregado
-- [ ] Fellipe (PO & QA e primeiro cliente) testa tudo: roteiros curtos prontos (`.equipe/testes/ROTEIRO_CLIENTE.md` e `ROTEIRO_ADMIN.md`)
+- [ ] Fellipe (PO & QA e primeiro cliente) testa tudo: roteiro pronto (`.equipe/testes/BACKEND_E2E.md`: Parte 2 ADMIN e Parte 3 cliente, H2 ou Docker)
 - [ ] Corrigir os bugs encontrados
 - [ ] Colocar no ar
 - [ ] Atualizar o README com link e prints

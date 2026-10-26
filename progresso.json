@@ -209,7 +209,7 @@
               },
               {
                 "feito": false,
-                "texto": "Fellipe (PO & QA e primeiro cliente) testa tudo: roteiros curtos prontos (`.equipe/testes/ROTEIRO_CLIENTE.md` e `ROTEIRO_ADMIN.md`)"
+                "texto": "Fellipe (PO & QA e primeiro cliente) testa tudo: roteiro pronto (`.equipe/testes/BACKEND_E2E.md`: Parte 2 ADMIN e Parte 3 cliente, H2 ou Docker)"
               },
               {
                 "feito": false,
@@ -430,7 +430,7 @@
     {
       "data": "2026-10-26",
       "branch": "PR #69 (deps do front) + PR #71 `docs/testes-trilhas-curtas` + equipe #5",
-      "mudou": "`VISITANTES.md` em 13 passos; `ROTEIRO_ADMIN` (25) e `ROTEIRO_CLIENTE` (36) na equipe; gerador com modo `--passos`; bug do registro corrigido; revisão do MVP de 26/10; só o PR #70 develop → main aberto",
+      "mudou": "`VISITANTES.md` em 13 passos; `.equipe/testes/BACKEND_E2E.md` reescrito (preparar → ADMIN 25 passos → cliente 36, com a ordem dos métodos HTTP), coleção da equipe com o ADMIN padrão, `.equipe` enxuta; gerador com modo `--passos`; bug do registro corrigido; revisão do MVP de 26/10; só o PR #70 develop → main aberto",
       "aprendizado": "testar não pode exigir ler 5 mil linhas: trilha curta primeiro, referência depois, as duas geradas da mesma execução real"
     },
     {
