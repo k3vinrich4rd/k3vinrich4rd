@@ -139,8 +139,8 @@
         }
       ],
       "mvp": {
-        "feitos": 7,
-        "total": 14,
+        "feitos": 8,
+        "total": 15,
         "grupos": [
           {
             "nome": "Backend",
@@ -196,12 +196,16 @@
             "nome": "Lançamento",
             "futuro": false,
             "proximo": false,
-            "feitos": 0,
-            "total": 6,
+            "feitos": 1,
+            "total": 7,
             "itens": [
               {
                 "feito": false,
-                "texto": "Decidir onde publicar (ver Decisões RKF Bank)"
+                "texto": "Decidir onde publicar (ver Decisões RKF Bank): proposta em `backend/README_DEPLOY.md`, A grátis (Render + Aiven + Vercel) ou B ~US$ 5/mês (Railway + Vercel)"
+              },
+              {
+                "feito": true,
+                "texto": "Perfil `prod` + `Dockerfile` testados num MySQL vazio (21/21, smoke 42/42) — 2026-10-26"
               },
               {
                 "feito": false,
@@ -228,7 +232,7 @@
         ]
       },
       "pleno": {
-        "feitos": 13,
+        "feitos": 14,
         "total": 29,
         "grupos": [
           {
@@ -347,7 +351,7 @@
             "nome": "Deploy AWS",
             "futuro": true,
             "proximo": false,
-            "feitos": 0,
+            "feitos": 1,
             "total": 5,
             "itens": [
               {
@@ -355,8 +359,8 @@
                 "texto": "`Dockerfile` multi-stage do backend"
               },
               {
-                "feito": false,
-                "texto": "Perfil `prod` + credenciais fora do código + Spring Boot Actuator (`health`)"
+                "feito": true,
+                "texto": "Perfil `prod` + credenciais fora do código + Spring Boot Actuator (`health`) — 2026-10-26"
               },
               {
                 "feito": false,
@@ -572,7 +576,7 @@
       "area": "DevOps",
       "status": "praticado",
       "passos": {
-        "feitos": 0,
+        "feitos": 1,
         "total": 2
       }
     },
@@ -590,8 +594,8 @@
       "area": "DevOps",
       "status": "praticado",
       "passos": {
-        "feitos": 0,
-        "total": 3
+        "feitos": 3,
+        "total": 5
       }
     },
     {
