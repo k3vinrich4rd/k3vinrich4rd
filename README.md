@@ -124,7 +124,7 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:status:START -->
 <img src="https://img.shields.io/static/v1?label=R%C3%A9gua%20Pleno&message=12%2F15&color=EC7000&style=flat-square"/>
 <img src="https://img.shields.io/static/v1?label=Testes%20RKF%20Bank&message=307%20%E2%9C%94&color=3fb950&style=flat-square&logo=junit5&logoColor=white"/>
-<img src="https://img.shields.io/static/v1?label=MVP&message=8%2F15&color=003D74&style=flat-square"/>
+<img src="https://img.shields.io/static/v1?label=MVP&message=9%2F15&color=003D74&style=flat-square"/>
 <img src="https://img.shields.io/static/v1?label=Foco%20agora&message=AWS&color=6A1B9A&style=flat-square"/>
 <!-- AUTO:status:END -->
 
@@ -1814,7 +1814,7 @@ gantt
 - ✅ Flyway com V1, V2 e V3, `ddl-auto=validate` (PR #23) — 2026-10-16
 - ✅ CVEs do Tomcat (3 críticas) e do Jackson (5 altas, 2 moderadas) corrigidas — 2026-10-15
 
-**🚀 MVP do RKF Bank (31/10/2026)** `██████░░░░░░` 8/15
+**🚀 MVP do RKF Bank (31/10/2026)** `███████░░░░░` 9/15
 
 <b>Backend</b> `█████░░░` 2/3
 
@@ -1830,11 +1830,11 @@ gantt
 - [x] Tela de extrato
 - [x] Tela de login com cookie `httpOnly`
 
-<b>Lançamento</b> `█░░░░░░░` 1/7
+<b>Lançamento</b> `██░░░░░░` 2/7
 
 - [ ] Decidir onde publicar (ver Decisões RKF Bank): proposta em `backend/README_DEPLOY.md`, A grátis (Render + Aiven + Vercel) ou B ~US$ 5/mês (Railway + Vercel)
 - [x] Perfil `prod` + `Dockerfile` testados num MySQL vazio (21/21, smoke 42/42) — 2026-10-26
-- [ ] LGPD mínimo: política de privacidade, aceite dos termos e encarregado
+- [x] LGPD mínimo: política de privacidade, aceite dos termos e encarregados (Kevin e Renan, termos 2026-10-26) — 2026-10-26
 - [ ] Fellipe (PO & QA e primeiro cliente) testa tudo: roteiro pronto (`.equipe/testes/BACKEND_E2E.md`: Parte 2 ADMIN e Parte 3 cliente, H2 ou Docker)
 - [ ] Corrigir os bugs encontrados
 - [ ] Colocar no ar

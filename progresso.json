@@ -139,7 +139,7 @@
         }
       ],
       "mvp": {
-        "feitos": 8,
+        "feitos": 9,
         "total": 15,
         "grupos": [
           {
@@ -196,7 +196,7 @@
             "nome": "Lançamento",
             "futuro": false,
             "proximo": false,
-            "feitos": 1,
+            "feitos": 2,
             "total": 7,
             "itens": [
               {
@@ -208,8 +208,8 @@
                 "texto": "Perfil `prod` + `Dockerfile` testados num MySQL vazio (21/21, smoke 42/42) — 2026-10-26"
               },
               {
-                "feito": false,
-                "texto": "LGPD mínimo: política de privacidade, aceite dos termos e encarregado"
+                "feito": true,
+                "texto": "LGPD mínimo: política de privacidade, aceite dos termos e encarregados (Kevin e Renan, termos 2026-10-26) — 2026-10-26"
               },
               {
                 "feito": false,
