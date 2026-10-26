@@ -181,11 +181,11 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:diario:START -->
 | Quando | Onde | O que eu aprendi |
 |---|---|---|
+| 2026-10-26 | PR #69 (deps do front) + PR #71 `docs/testes-trilhas-curtas` + equipe #5 | testar não pode exigir ler 5 mil linhas: trilha curta primeiro, referência depois, as duas geradas da mesma execução real |
 | 2026-10-25 | PR #67 `fix/vulnerabilidades-frontend-2026-10-25` + #68 develop → main | CVE em dependência de dependência se resolve subindo quem a traz ou com `overrides`; o Dependabot só olha a branch padrão |
 | 2026-10-25 | PR #51 release `develop` → `main` | levar à main só com tudo validado (307 testes, coleções 82/82 e 114/114, smoke 41/41) |
 | 2026-10-25 | PR #60 `refactor/contrato-3-0-integracao` (mergeado) | teste que passa no Windows e falha no Linux = dependência da **ordem** das classes (banco H2 compartilhado entre contextos) |
 | 2026-10-23 | PR #60 `refactor/contrato-3-0-integracao` | decidir erro por código, nunca por texto; rodar o roteiro escrito encontra o bug que o teste não tinha |
-| 2026-10-22 | PR #48 `refactor/nomes-e-rotas-de-mercado` | evoluir API sem quebrar cliente: rota nova + antiga obsoleta com header padronizado (RFC 9745) até a versão maior |
 <!-- AUTO:diario:END -->
 
 </details>
@@ -1645,7 +1645,7 @@ quadrantChart
 | Inglês técnico | 🔄 | em andamento |
 | Mensageria e microsserviços | ⏳ | próximo ciclo |
 
-<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-10-25</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-10-26</sub>
 <!-- AUTO:regua:END -->
 
 </details>
@@ -1719,7 +1719,7 @@ mindmap
 | ⏳ Spring AI | IA | <sub>5 a fazer</sub> |
 | ⏳ Swagger e OpenAPI | Spring | <sub>5 a fazer</sub> |
 
-<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-10-25.</sub>
+<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-10-26.</sub>
 <!-- AUTO:estudos:END -->
 
 </details>
@@ -1834,7 +1834,7 @@ gantt
 
 - [ ] Decidir onde publicar (ver Decisões RKF Bank)
 - [ ] LGPD mínimo: política de privacidade, aceite dos termos e encarregado
-- [ ] Felipe (PO & QA e primeiro cliente) testa tudo pelo roteiro E2E
+- [ ] Fellipe (PO & QA e primeiro cliente) testa tudo: roteiros curtos prontos (`.equipe/testes/ROTEIRO_CLIENTE.md` e `ROTEIRO_ADMIN.md`)
 - [ ] Corrigir os bugs encontrados
 - [ ] Colocar no ar
 - [ ] Atualizar o README com link e prints
@@ -1851,7 +1851,7 @@ gantt
 
 **🧹 Débitos técnicos:** 9/18 resolvidos
 
-<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-10-25.</sub>
+<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-10-26.</sub>
 <!-- AUTO:checklist:END -->
 
 </details>

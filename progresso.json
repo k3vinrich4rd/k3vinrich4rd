@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-25",
+  "atualizado": "2026-10-26",
   "regua": {
     "praticadas": 12,
     "total": 15,
@@ -209,7 +209,7 @@
               },
               {
                 "feito": false,
-                "texto": "Felipe (PO & QA e primeiro cliente) testa tudo pelo roteiro E2E"
+                "texto": "Fellipe (PO & QA e primeiro cliente) testa tudo: roteiros curtos prontos (`.equipe/testes/ROTEIRO_CLIENTE.md` e `ROTEIRO_ADMIN.md`)"
               },
               {
                 "feito": false,
@@ -428,6 +428,12 @@
   },
   "historico": [
     {
+      "data": "2026-10-26",
+      "branch": "PR #69 (deps do front) + PR #71 `docs/testes-trilhas-curtas` + equipe #5",
+      "mudou": "`VISITANTES.md` em 13 passos; `ROTEIRO_ADMIN` (25) e `ROTEIRO_CLIENTE` (36) na equipe; gerador com modo `--passos`; bug do registro corrigido; revisão do MVP de 26/10; só o PR #70 develop → main aberto",
+      "aprendizado": "testar não pode exigir ler 5 mil linhas: trilha curta primeiro, referência depois, as duas geradas da mesma execução real"
+    },
+    {
       "data": "2026-10-25",
       "branch": "PR #67 `fix/vulnerabilidades-frontend-2026-10-25` + #68 develop → main",
       "mudou": "9 CVEs transitivas do front (shadcn 4.22.1 + overrides), coleção com o ADMIN derrubando a sessão do desativado (pública 83, equipe 119), README com os números atuais; 0 alertas do Dependabot na main",
@@ -450,12 +456,6 @@
       "branch": "PR #60 `refactor/contrato-3-0-integracao`",
       "mudou": "integra #53–#58 do Renan; contrato 3.0 (rotas 2.x fora, `tipoConta`, `CodigoErroEnum` + `codigo` no erro); bug do CPF do admin (500 → 409); coleção E2E 91/91; guias de teste e `FLUXOS.md` interativo; 268 testes",
       "aprendizado": "decidir erro por código, nunca por texto; rodar o roteiro escrito encontra o bug que o teste não tinha"
-    },
-    {
-      "data": "2026-10-22",
-      "branch": "PR #48 `refactor/nomes-e-rotas-de-mercado`",
-      "mudou": "nomes de mercado (sufixos `Exception`/`Enum`/`Dto` mantidos), rotas `POST /contas`, `/depositos`, `/saques`, `/transferencias`, `/usuarios/me/senha` e `page`/`size`; antigas com `Deprecation` + `Link` (contrato 2.6); 261 testes",
-      "aprendizado": "evoluir API sem quebrar cliente: rota nova + antiga obsoleta com header padronizado (RFC 9745) até a versão maior"
     }
   ],
   "estudos": [
