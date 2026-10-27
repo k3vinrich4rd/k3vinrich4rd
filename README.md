@@ -141,9 +141,9 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:agora:END -->
 
 <!-- AUTO:dica:START -->
-> 💡 **Dica do dia: `Dependabot + CodeQL`**  
-> Segurança no automático: PRs de atualização e alerta de vulnerabilidade sem você lembrar de olhar.  
-> <sub>Muda todo dia sozinha · 20/20</sub>
+> 💡 **Dica do dia: `@Transactional(readOnly = true)`**  
+> Em métodos só de leitura, avisa o Hibernate para não checar mudanças nas entidades: menos trabalho e intenção clara.  
+> <sub>Muda todo dia sozinha · 1/20</sub>
 <!-- AUTO:dica:END -->
 
 <!-- A cobrinha é gerada pelo workflow .github/workflows/snake.yml deste repositório (branch "output"). -->
@@ -160,8 +160,8 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:atividade:START -->
 | | Repositório | Commit | Quando |
 |:-:|---|---|---|
-| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`a7d6fae`](https://github.com/k3vinrich4rd/rkf_bank/commit/a7d6fae0ac39a8b0a6c9b392856be92e624535dd) docs: armadilha do IntelliJ antigo com o Maven 3.10 do wrapper nos probl | há 7 h |
-| 🐛 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`2669c13`](https://github.com/k3vinrich4rd/rkf_bank/commit/2669c13183cb64e04d12f6ea3b773e5d606277ea) fix(deploy): imagem ligada ao repositorio para o Actions publicar no ghc | há 7 h |
+| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`a7d6fae`](https://github.com/k3vinrich4rd/rkf_bank/commit/a7d6fae0ac39a8b0a6c9b392856be92e624535dd) docs: armadilha do IntelliJ antigo com o Maven 3.10 do wrapper nos probl | há 13 h |
+| 🐛 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`2669c13`](https://github.com/k3vinrich4rd/rkf_bank/commit/2669c13183cb64e04d12f6ea3b773e5d606277ea) fix(deploy): imagem ligada ao repositorio para o Actions publicar no ghc | há 14 h |
 | 📝 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`0849493`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/0849493f006f8569a3c9a93e9578c3ba795d6921) docs: adiciona README com modelo de dominio, endpoints e exemplos reais | há 11 dias |
 | 🐛 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`cf381a2`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/cf381a2b0fdf09b7ce7b3c3784be9cc876f6352e) fix: salva application-test.properties em UTF-8 | há 11 dias |
 | ✨ | [`crud-clientes`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) | [`9b0eb79`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes/commit/9b0eb794bf407bdbe22af1196065717ef72591a9) feat: implementando correcao sugerida no feedback | há 22 dias |
@@ -169,7 +169,7 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 | ✨ | [`workshop-springboot4-mongodb`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb) | [`ecad5ce`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb/commit/ecad5cec16d1f5ef7b606e6f8b5daf5ce74ade25) feat: Implementando ajustes no projeto | 15/09/2026 |
 | ✨ | [`workshop-springboot4-mongodb`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb) | [`264463c`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb/commit/264463cd568db8f49e9a3b154dc305bfb5adc906) feat: Implementando ajustes de comentarios no projeto e README.md | 06/09/2026 |
 
-<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 26/10 às 19:42</sub>
+<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 27/10 às 02:10</sub>
 <!-- AUTO:atividade:END -->
 
 </details>
@@ -2094,26 +2094,26 @@ Com `update` o Hibernate adivinha o schema, não renomeia nem remove nada e não
 
 <!-- AUTO:flashcards:START -->
 <details>
-<summary><b>🃏 IA · Que problema o MCP resolve?</b></summary>
+<summary><b>🃏 Java · Por que nunca usar double para dinheiro?</b></summary>
 <br/>
 
-O N × M de integrações: cada sistema expõe um servidor MCP e qualquer IA compatível usa, como o USB-C fez com cabos.
+Porque double guarda em base 2 e 0.1 não tem representação exata: <code>0.1 + 0.2</code> dá <code>0.30000000000000004</code>. No RKF Bank o saldo é <code>BigDecimal</code> e a coluna é <code>DECIMAL(19,2)</code>.
 
 </details>
 
 <details>
-<summary><b>🃏 IA · Por que o saldo não deve ser calculado pelo LLM?</b></summary>
+<summary><b>🃏 Java · Diferença entre JDK, JRE e JVM?</b></summary>
 <br/>
 
-O LLM prevê texto, não faz conta exata. Regra exata (saldo, CPF, limite) é código; o LLM interpreta e o código valida e executa.
+A JVM executa bytecode; o JRE é JVM + bibliotecas para rodar; o JDK é JRE + ferramentas de desenvolvimento (<code>javac</code>). O mesmo <code>.jar</code> roda no Windows e no Linux do CI porque o bytecode é da JVM, não do sistema.
 
 </details>
 
 <details>
-<summary><b>🃏 LGPD · O cliente pede para apagar os dados. O banco pode dar DELETE?</b></summary>
+<summary><b>🃏 Java · Java tem vazamento de memória?</b></summary>
 <br/>
 
-Não: registros financeiros têm guarda obrigatória por outras leis. O certo é encerrar a conta, bloquear o acesso e anonimizar ao fim do prazo.
+Tem: o GC só recolhe objetos inalcançáveis. Um <code>static Map</code> que nunca é limpo mantém tudo vivo até o <code>OutOfMemoryError</code>. A solução é cache com limite e expiração.
 
 </details>
 
