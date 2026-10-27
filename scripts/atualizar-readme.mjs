@@ -542,6 +542,69 @@ function dadosPulso(dias) {
 
 // ---------- execução ----------
 
+// Painel das trilhas do Obsidian: o quanto de cada módulo já virou prática no RKF Bank.
+function blocoCerebro() {
+  const c = p.cerebro;
+  if (!c?.trilhas?.length) return '_Em breve._';
+  const icone = { praticado: '✅', andamento: '🔄', planejado: '📅', referencia: '📘' };
+  const capa = { 'Trilha 1 - Java e Spring': '☕🌱 Java & Spring', 'Trilha 2 - IA': '🤖 Inteligência Artificial' };
+  const conta = (notas, st) => notas.filter((n) => n.status === st).length;
+  const fracao = (a, b, n) => `\`${barra(a, b, n)}\` ${a}/${b}`; // mostra 0/15 também: aqui o zero é informação
+  const todas = (t) => t.modulos.flatMap((m) => m.notas);
+  const linhaTrilha = (t) => {
+    const n = todas(t);
+    return `| **${capa[t.nome] ?? t.nome}** | ${fracao(conta(n, 'praticado'), n.length, 10)} | ${conta(n, 'praticado')} | ${conta(n, 'andamento')} | ${conta(n, 'planejado')} | ${conta(n, 'referencia')} |`;
+  };
+  // Fluxo das trilhas: cada módulo pintado pelo quanto já foi praticado
+  const nos = c.trilhas.map((t, i) => {
+    const ids = t.modulos.map((_, j) => `t${i}m${j}`);
+    const def = t.modulos.map((m, j) => {
+      const feitos = conta(m.notas, 'praticado');
+      const classe = feitos / (m.notas.length || 1) >= 0.6 ? 'forte' : feitos || conta(m.notas, 'andamento') ? 'meio' : 'novo';
+      return `        ${ids[j]}["${m.nome.replace(/"/g, "'")}<br/>✅ ${feitos}/${m.notas.length}"]:::${classe}`;
+    });
+    return `    subgraph T${i}["${capa[t.nome] ?? t.nome}"]\n        direction TB\n${def.join('\n')}\n        ${ids.join(' --> ')}\n    end`;
+  });
+  const detalhe = (t) => `<details>
+<summary><b>${capa[t.nome] ?? t.nome}</b> · módulo a módulo</summary>
+<br/>
+
+| Módulo | Praticado | Assuntos |
+|---|---|---|
+${t.modulos.map((m) => `| ${m.nome} | ${fracao(conta(m.notas, 'praticado'), m.notas.length, 8)} | ${m.notas.map((n) => `${icone[n.status]} ${n.nome}`).join(' · ')} |`).join('\n')}
+
+</details>`;
+  const b = p.biblioteca ?? {};
+  const praticados = (p.estudos ?? []).filter((e) => e.status === 'praticado').length;
+  const modulos = c.trilhas.reduce((s, t) => s + t.modulos.length, 0);
+  const recentes = c.recentes.map((r) => `\`${r.area}\` ${r.nome}`).join(' · ');
+  return `<table align="center"><tr>
+<td align="center">🗓️<br/><b>${c.diasDiario30}</b> dias com registro<br/><sub>nos últimos 30</sub></td>
+<td align="center">📚<br/><b>${b.notas ?? 0}</b> notas de estudo<br/><sub>${b.comSem ?? 0} com exemplo com × sem</sub></td>
+<td align="center">🧭<br/><b>${c.trilhas.length}</b> trilhas<br/><sub>${modulos} módulos</sub></td>
+<td align="center">✅<br/><b>${praticados}</b> assuntos<br/><sub>praticados em projeto</sub></td>
+</tr></table>
+
+| Trilha | Praticado no RKF Bank | ✅ | 🔄 | 📅 | 📘 |
+|---|---|:-:|:-:|:-:|:-:|
+${c.trilhas.map(linhaTrilha).join('\n')}
+
+\`\`\`mermaid
+flowchart LR
+${nos.join('\n')}
+    T0 ~~~ T1
+    classDef forte fill:#238636,stroke:#3fb950,color:#fff
+    classDef meio fill:#9e6a03,stroke:#d29922,color:#fff
+    classDef novo fill:#30363d,stroke:#8b949e,color:#fff
+\`\`\`
+
+${c.trilhas.map(detalhe).join('\n\n')}
+
+📝 **Estudado por último:** ${recentes}
+
+<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em ${p.atualizado}</sub>`;
+}
+
 const arquivoReadme = path.join(RAIZ, 'README.md');
 let readme = ler(arquivoReadme);
 readme = substituirBloco(readme, 'status', blocoStatus());
@@ -550,6 +613,7 @@ readme = substituirBloco(readme, 'regua', blocoRegua());
 readme = substituirBloco(readme, 'checklist', blocoChecklist());
 readme = substituirBloco(readme, 'diario', blocoDiario());
 readme = substituirBloco(readme, 'estudos', blocoEstudos());
+readme = substituirBloco(readme, 'cerebro', blocoCerebro());
 readme = substituirBloco(readme, 'dica', blocoDica());
 readme = substituirBloco(readme, 'flashcards', blocoFlashcards());
 if (ck.gantt) readme = substituirBloco(readme, 'gantt', ck.gantt);

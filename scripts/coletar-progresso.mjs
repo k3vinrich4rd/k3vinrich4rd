@@ -149,6 +149,42 @@ function biblioteca() {
   };
 }
 
+/** As trilhas do Obsidian (00 Consulta/🧭 Trilha *.md): módulos (## ① ...) e o status de cada nota nas tabelas. */
+function cerebro() {
+  const pasta = vault('03 Estudos', '00 Consulta');
+  if (!fs.existsSync(pasta)) return anterior.cerebro;
+  const status = { '✅': 'praticado', '🔄': 'andamento', '📅': 'planejado', '📘': 'referencia' };
+  const trilhas = fs.readdirSync(pasta).filter((f) => f.startsWith('🧭 Trilha')).sort().map((arq) => {
+    const md = ler(path.join(pasta, arq));
+    const modulos = secoes(md).filter((s) => /^[①-⑨]/.test(s.titulo)).map((s) => {
+      const notas = [];
+      for (const linha of s.linhas.filter((l) => l.startsWith('| [['))) {
+        const [links, st] = linha.split('|').slice(1, 3);
+        if (st.includes('🗺️')) continue; // mapas de navegação não são assunto de estudo
+        const nomes = [...links.matchAll(/\[\[([^\]|]+)/g)].map((m) => m[1]);
+        const marcas = [...st.matchAll(/✅|🔄|📅|📘/g)].map((m) => status[m[0]]);
+        // "[[A]] · [[B]] | 📘 · 🔄": um status por nota; um status só vale para todas
+        nomes.forEach((nome, i) => notas.push({ nome, status: marcas[Math.min(i, marcas.length - 1)] ?? 'referencia' }));
+      }
+      return { nome: limparObsidian(s.titulo.replace(/→.*$/, '')).replace(/^([①-⑨])\s*/, '$1 '), notas };
+    });
+    return { nome: arq.replace(/^🧭 /, '').replace(/\.md$/, ''), modulos };
+  });
+  // "Na ativa": dias com nota no diário nos últimos 30 dias e as notas de estudo criadas por último.
+  const limite = new Date(Date.now() - 30 * 864e5).toLocaleDateString('sv-SE', { timeZone: 'America/Sao_Paulo' });
+  const diario = fs.existsSync(vault('05 Diário')) ? fs.readdirSync(vault('05 Diário')).filter((f) => /^\d{4}-\d{2}-\d{2}\.md$/.test(f)) : [];
+  const recentes = [];
+  const raiz = vault('03 Estudos');
+  for (const area of fs.readdirSync(raiz, { withFileTypes: true }).filter((e) => e.isDirectory() && !e.name.startsWith('00'))) {
+    for (const arq of fs.readdirSync(path.join(raiz, area.name)).filter((f) => f.endsWith('.md'))) {
+      const fm = frontmatter(ler(path.join(raiz, area.name, arq)));
+      if (fm.criado && fm.tipo !== 'hub') recentes.push({ nome: arq.replace(/\.md$/, ''), area: area.name, criado: fm.criado });
+    }
+  }
+  recentes.sort((a, b) => b.criado.localeCompare(a.criado) || a.nome.localeCompare(b.nome));
+  return { trilhas, diasDiario30: diario.filter((f) => f.slice(0, 10) >= limite).length, recentes: recentes.slice(0, 8) };
+}
+
 const reguaAtual = regua();
 const lista = checklist();
 const proximo = reguaAtual?.itens.find((i) => i.proximo) ?? reguaAtual?.itens.find((i) => i.status === 'andamento');
@@ -161,6 +197,7 @@ const progresso = {
   historico: historico(),
   estudos: estudos(),
   biblioteca: biblioteca(),
+  cerebro: cerebro(),
 };
 
 // A data só muda quando algum dado mudou, para não gerar commit vazio todo dia.

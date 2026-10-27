@@ -1645,7 +1645,7 @@ quadrantChart
 | Inglês técnico | 🔄 | em andamento |
 | Mensageria e microsserviços | ⏳ | próximo ciclo |
 
-<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-10-26</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-10-27</sub>
 <!-- AUTO:regua:END -->
 
 </details>
@@ -1657,7 +1657,7 @@ quadrantChart
 <!-- AUTO:estudos:START -->
 **24** assuntos praticados em projeto · **7** em andamento · **3** planejados
 
-📚 **58** notas de estudo no segundo cérebro · **51** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
+📚 **69** notas de estudo no segundo cérebro · **60** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
 
 ```mermaid
 mindmap
@@ -1719,8 +1719,131 @@ mindmap
 | ⏳ Spring AI | IA | <sub>5 a fazer</sub> |
 | ⏳ Swagger e OpenAPI | Spring | <sub>5 a fazer</sub> |
 
-<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-10-26.</sub>
+<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-10-27.</sub>
 <!-- AUTO:estudos:END -->
+
+</details>
+
+### 🧠 Segundo cérebro: estudo contínuo, prática no RKF Bank
+
+> De dia, entrego como **Java backend na Zup**, prestando serviço para o **Itaú**. Fora do expediente, sigo **duas trilhas de estudo** e transformo cada assunto em uma nota no meu Obsidian, com diagrama, exemplo **com × sem** usando o **RKF Bank** e como testar. Depois levo o que aprendi para o projeto. Este painel se atualiza sozinho a cada commit.
+
+<!-- AUTO:cerebro:START -->
+<table align="center"><tr>
+<td align="center">🗓️<br/><b>9</b> dias com registro<br/><sub>nos últimos 30</sub></td>
+<td align="center">📚<br/><b>69</b> notas de estudo<br/><sub>60 com exemplo com × sem</sub></td>
+<td align="center">🧭<br/><b>2</b> trilhas<br/><sub>12 módulos</sub></td>
+<td align="center">✅<br/><b>24</b> assuntos<br/><sub>praticados em projeto</sub></td>
+</tr></table>
+
+| Trilha | Praticado no RKF Bank | ✅ | 🔄 | 📅 | 📘 |
+|---|---|:-:|:-:|:-:|:-:|
+| **☕🌱 Java & Spring** | `██████░░░░` 24/43 | 24 | 4 | 2 | 13 |
+| **🤖 Inteligência Artificial** | `░░░░░░░░░░` 0/15 | 0 | 2 | 1 | 12 |
+
+```mermaid
+flowchart LR
+    subgraph T0["☕🌱 Java & Spring"]
+        direction TB
+        t0m0["① Java moderno (Java 21 / 25)<br/>✅ 5/11"]:::meio
+        t0m1["② Spring Boot & arquitetura em camadas<br/>✅ 1/3"]:::meio
+        t0m2["③ Banco de dados & sincronização<br/>✅ 6/6"]:::forte
+        t0m3["④ Validação e tratamento de erros<br/>✅ 2/3"]:::forte
+        t0m4["⑤ Testes (manuais e automatizados)<br/>✅ 3/6"]:::meio
+        t0m5["⑥ Segurança e infraestrutura<br/>✅ 7/14"]:::meio
+        t0m0 --> t0m1 --> t0m2 --> t0m3 --> t0m4 --> t0m5
+    end
+    subgraph T1["🤖 Inteligência Artificial"]
+        direction TB
+        t1m0["① Fundamentos<br/>✅ 0/2"]:::novo
+        t1m1["② Conhecimento: RAG<br/>✅ 0/3"]:::novo
+        t1m2["③ Ação: ferramentas e agentes<br/>✅ 0/4"]:::novo
+        t1m3["④ Backend Java<br/>✅ 0/1"]:::novo
+        t1m4["⑤ Engenharia de software com IA<br/>✅ 0/3"]:::meio
+        t1m5["⑥ Ferramentas e automação ('vibe coding' com método)<br/>✅ 0/2"]:::meio
+        t1m0 --> t1m1 --> t1m2 --> t1m3 --> t1m4 --> t1m5
+    end
+    T0 ~~~ T1
+    classDef forte fill:#238636,stroke:#3fb950,color:#fff
+    classDef meio fill:#9e6a03,stroke:#d29922,color:#fff
+    classDef novo fill:#30363d,stroke:#8b949e,color:#fff
+```
+
+<details>
+<summary><b>☕🌱 Java & Spring</b> · módulo a módulo</summary>
+<br/>
+
+| Módulo | Praticado | Assuntos |
+|---|---|---|
+| ① Java moderno (Java 21 / 25) | `████░░░░` 5/11 | 📘 JVM, JDK e bytecode · ✅ POO e SOLID · 🔄 Java moderno (8 a 25) · ✅ Coleções Streams e Optional · 📘 Objetos - equals, hashCode e imutabilidade · ✅ Exceções em Java · 📘 Generics · ✅ BigDecimal e dinheiro · 🔄 Concorrência e threads virtuais · 📘 Memória e Garbage Collector · ✅ Maven e build |
+| ② Spring Boot & arquitetura em camadas | `███░░░░░` 1/3 | 📘 Spring Framework - IoC DI e AOP · 📘 Spring Boot - auto-configuração e starters · ✅ Spring Boot e camadas |
+| ③ Banco de dados & sincronização | `████████` 6/6 | ✅ SQL e MySQL · ✅ Spring Data JPA e relacionamentos · ✅ H2 x MySQL · ✅ Flyway · ✅ Lock otimista e transações · ✅ MongoDB |
+| ④ Validação e tratamento de erros | `█████░░░` 2/3 | ✅ Bean Validation · ✅ Tratamento de erros REST · 📅 Swagger e OpenAPI |
+| ⑤ Testes (manuais e automatizados) | `████░░░░` 3/6 | 📘 TDD e estratégia de testes · ✅ JUnit e Mockito · 📘 Spring Boot Test · ✅ DataJpaTest · ✅ Testcontainers · 📘 Testes manuais de API - Postman e Insomnia |
+| ⑥ Segurança e infraestrutura | `████░░░░` 7/14 | ✅ Spring Security e JWT · 📘 OAuth2 e OIDC · 🔄 LGPD · 📅 Mensageria e Outbox · 📘 Pub-Sub e DLQ · ✅ Integração com APIs externas · ✅ Logs e observabilidade · 📘 Spring Boot Actuator · ✅ Docker e Compose · ✅ GitHub Actions · ✅ Git Flow e commits semânticos · ✅ Dependências e CVEs · 📘 Spring Cloud e microsserviços · 🔄 AWS |
+
+</details>
+
+<details>
+<summary><b>🤖 Inteligência Artificial</b> · módulo a módulo</summary>
+<br/>
+
+| Módulo | Praticado | Assuntos |
+|---|---|---|
+| ① Fundamentos | `░░░░░░░░` 0/2 | 📘 LLM · 📘 Prompt e engenharia de contexto |
+| ② Conhecimento: RAG | `░░░░░░░░` 0/3 | 📘 Embeddings e banco vetorial · 📘 RAG · 📘 Fine-tuning |
+| ③ Ação: ferramentas e agentes | `░░░░░░░░` 0/4 | 📘 Tool Calling (Function Calling) · 📘 MCP · 📘 Skills · 📘 Agentes de IA |
+| ④ Backend Java | `░░░░░░░░` 0/1 | 📅 Spring AI |
+| ⑤ Engenharia de software com IA | `░░░░░░░░` 0/3 | 🔄 Spec-Driven Development · 📘 System Design Document para IA · 📘 Testes de aplicações com IA (evals) |
+| ⑥ Ferramentas e automação ("vibe coding" com método) | `░░░░░░░░` 0/2 | 📘 Ferramentas de dev com IA · 🔄 Agentes e IA aplicada |
+
+</details>
+
+📝 **Estudado por último:** `IA` Ferramentas de dev com IA · `Spring` OAuth2 e OIDC · `Arquitetura` Pub-Sub e DLQ · `IA` System Design Document para IA · `Testes` TDD e estratégia de testes · `Testes` Testes de aplicações com IA (evals) · `Testes` Testes manuais de API - Postman e Insomnia · `IA` Tool Calling (Function Calling)
+
+<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-10-27</sub>
+<!-- AUTO:cerebro:END -->
+
+<details>
+<summary><b>🧱 Como cada nota é montada</b> (exemplo real: conta inexistente no RKF Bank)</summary>
+<br/>
+
+| Ordem | Bloco | Para quê |
+|:-:|---|---|
+| 1 | 🎯 **Em 30 segundos** | a **responsabilidade** do conceito, por que **usar ajuda** e por que **não usar atrapalha** |
+| 2 | 📖 **Ficha** | definição, quem criou e por quê, quando usar e quando não usar |
+| 3 | 🗺️ **Diagrama** | ver o fluxo antes de ler o código |
+| 4 | 🆚 **Com × sem** | o mesmo código do RKF Bank sem e com o conceito |
+| 5 | 🧪 **Como testar** | o teste que prova que funciona |
+| 6 | 🎤 **Entrevista** | perguntas para revisar sem olhar a resposta |
+
+**🎯 Em 30 segundos: tratamento de erros REST**
+**🧩 Responsabilidade:** transformar qualquer exceção em status HTTP correto e corpo de erro padronizado, num lugar só.
+**✅ Usar ajuda porque** o frontend sabe exatamente o que mostrar (404, 422 com campos) e nada interno vaza.
+**❌ Não usar atrapalha porque** vira 500 genérico com stack trace, nome de classe exposto e cada rota com um formato de erro.
+
+> [!CAUTION]
+> **❌ Sem:** o service devolve `null` e ninguém trata
+> ```java
+> Conta conta = contaRepository.findById(contaId).orElse(null);
+> return paraContaResponse(conta); // NullPointerException → 500 com stack trace
+> ```
+
+> [!TIP]
+> **✅ Com:** exceção de domínio + `@RestControllerAdvice` (como está no RKF Bank)
+> ```java
+> Conta conta = contaRepository.findById(contaId).orElseThrow(ContaNaoEncontradaException::new);
+> ```
+> ```json
+> { "status": 404, "codigo": "CONTA_NAO_ENCONTRADA", "message": "Conta não encontrada", "path": "/contas/3fa8..." }
+> ```
+
+```mermaid
+flowchart LR
+    S["ContaService<br/>throw ContaNaoEncontradaException"] --> H["TratadorGlobalDeErros<br/>@ExceptionHandler"]
+    H --> R["ErroResponse<br/>status · codigo · message · path · campos"]
+    R --> F["Frontend mostra<br/>'Conta não encontrada'"]
+```
 
 </details>
 
@@ -1852,7 +1975,7 @@ gantt
 
 **🧹 Débitos técnicos:** 9/18 resolvidos
 
-<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-10-26.</sub>
+<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-10-27.</sub>
 <!-- AUTO:checklist:END -->
 
 </details>

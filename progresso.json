@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-26",
+  "atualizado": "2026-10-27",
   "regua": {
     "praticadas": 12,
     "total": 15,
@@ -771,11 +771,360 @@
     }
   ],
   "biblioteca": {
-    "notas": 58,
-    "comSem": 51,
+    "notas": 69,
+    "comSem": 60,
     "sessoes": [
       "IA, Spring e LGPD",
       "Java e seu universo"
+    ]
+  },
+  "cerebro": {
+    "trilhas": [
+      {
+        "nome": "Trilha 1 - Java e Spring",
+        "modulos": [
+          {
+            "nome": "① Java moderno (Java 21 / 25)",
+            "notas": [
+              {
+                "nome": "JVM, JDK e bytecode",
+                "status": "referencia"
+              },
+              {
+                "nome": "POO e SOLID",
+                "status": "praticado"
+              },
+              {
+                "nome": "Java moderno (8 a 25)",
+                "status": "andamento"
+              },
+              {
+                "nome": "Coleções Streams e Optional",
+                "status": "praticado"
+              },
+              {
+                "nome": "Objetos - equals, hashCode e imutabilidade",
+                "status": "referencia"
+              },
+              {
+                "nome": "Exceções em Java",
+                "status": "praticado"
+              },
+              {
+                "nome": "Generics",
+                "status": "referencia"
+              },
+              {
+                "nome": "BigDecimal e dinheiro",
+                "status": "praticado"
+              },
+              {
+                "nome": "Concorrência e threads virtuais",
+                "status": "andamento"
+              },
+              {
+                "nome": "Memória e Garbage Collector",
+                "status": "referencia"
+              },
+              {
+                "nome": "Maven e build",
+                "status": "praticado"
+              }
+            ]
+          },
+          {
+            "nome": "② Spring Boot & arquitetura em camadas",
+            "notas": [
+              {
+                "nome": "Spring Framework - IoC DI e AOP",
+                "status": "referencia"
+              },
+              {
+                "nome": "Spring Boot - auto-configuração e starters",
+                "status": "referencia"
+              },
+              {
+                "nome": "Spring Boot e camadas",
+                "status": "praticado"
+              }
+            ]
+          },
+          {
+            "nome": "③ Banco de dados & sincronização",
+            "notas": [
+              {
+                "nome": "SQL e MySQL",
+                "status": "praticado"
+              },
+              {
+                "nome": "Spring Data JPA e relacionamentos",
+                "status": "praticado"
+              },
+              {
+                "nome": "H2 x MySQL",
+                "status": "praticado"
+              },
+              {
+                "nome": "Flyway",
+                "status": "praticado"
+              },
+              {
+                "nome": "Lock otimista e transações",
+                "status": "praticado"
+              },
+              {
+                "nome": "MongoDB",
+                "status": "praticado"
+              }
+            ]
+          },
+          {
+            "nome": "④ Validação e tratamento de erros",
+            "notas": [
+              {
+                "nome": "Bean Validation",
+                "status": "praticado"
+              },
+              {
+                "nome": "Tratamento de erros REST",
+                "status": "praticado"
+              },
+              {
+                "nome": "Swagger e OpenAPI",
+                "status": "planejado"
+              }
+            ]
+          },
+          {
+            "nome": "⑤ Testes (manuais e automatizados)",
+            "notas": [
+              {
+                "nome": "TDD e estratégia de testes",
+                "status": "referencia"
+              },
+              {
+                "nome": "JUnit e Mockito",
+                "status": "praticado"
+              },
+              {
+                "nome": "Spring Boot Test",
+                "status": "referencia"
+              },
+              {
+                "nome": "DataJpaTest",
+                "status": "praticado"
+              },
+              {
+                "nome": "Testcontainers",
+                "status": "praticado"
+              },
+              {
+                "nome": "Testes manuais de API - Postman e Insomnia",
+                "status": "referencia"
+              }
+            ]
+          },
+          {
+            "nome": "⑥ Segurança e infraestrutura",
+            "notas": [
+              {
+                "nome": "Spring Security e JWT",
+                "status": "praticado"
+              },
+              {
+                "nome": "OAuth2 e OIDC",
+                "status": "referencia"
+              },
+              {
+                "nome": "LGPD",
+                "status": "andamento"
+              },
+              {
+                "nome": "Mensageria e Outbox",
+                "status": "planejado"
+              },
+              {
+                "nome": "Pub-Sub e DLQ",
+                "status": "referencia"
+              },
+              {
+                "nome": "Integração com APIs externas",
+                "status": "praticado"
+              },
+              {
+                "nome": "Logs e observabilidade",
+                "status": "praticado"
+              },
+              {
+                "nome": "Spring Boot Actuator",
+                "status": "referencia"
+              },
+              {
+                "nome": "Docker e Compose",
+                "status": "praticado"
+              },
+              {
+                "nome": "GitHub Actions",
+                "status": "praticado"
+              },
+              {
+                "nome": "Git Flow e commits semânticos",
+                "status": "praticado"
+              },
+              {
+                "nome": "Dependências e CVEs",
+                "status": "praticado"
+              },
+              {
+                "nome": "Spring Cloud e microsserviços",
+                "status": "referencia"
+              },
+              {
+                "nome": "AWS",
+                "status": "andamento"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nome": "Trilha 2 - IA",
+        "modulos": [
+          {
+            "nome": "① Fundamentos",
+            "notas": [
+              {
+                "nome": "LLM",
+                "status": "referencia"
+              },
+              {
+                "nome": "Prompt e engenharia de contexto",
+                "status": "referencia"
+              }
+            ]
+          },
+          {
+            "nome": "② Conhecimento: RAG",
+            "notas": [
+              {
+                "nome": "Embeddings e banco vetorial",
+                "status": "referencia"
+              },
+              {
+                "nome": "RAG",
+                "status": "referencia"
+              },
+              {
+                "nome": "Fine-tuning",
+                "status": "referencia"
+              }
+            ]
+          },
+          {
+            "nome": "③ Ação: ferramentas e agentes",
+            "notas": [
+              {
+                "nome": "Tool Calling (Function Calling)",
+                "status": "referencia"
+              },
+              {
+                "nome": "MCP",
+                "status": "referencia"
+              },
+              {
+                "nome": "Skills",
+                "status": "referencia"
+              },
+              {
+                "nome": "Agentes de IA",
+                "status": "referencia"
+              }
+            ]
+          },
+          {
+            "nome": "④ Backend Java",
+            "notas": [
+              {
+                "nome": "Spring AI",
+                "status": "planejado"
+              }
+            ]
+          },
+          {
+            "nome": "⑤ Engenharia de software com IA",
+            "notas": [
+              {
+                "nome": "Spec-Driven Development",
+                "status": "andamento"
+              },
+              {
+                "nome": "System Design Document para IA",
+                "status": "referencia"
+              },
+              {
+                "nome": "Testes de aplicações com IA (evals)",
+                "status": "referencia"
+              }
+            ]
+          },
+          {
+            "nome": "⑥ Ferramentas e automação (\"vibe coding\" com método)",
+            "notas": [
+              {
+                "nome": "Ferramentas de dev com IA",
+                "status": "referencia"
+              },
+              {
+                "nome": "Agentes e IA aplicada",
+                "status": "andamento"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "diasDiario30": 9,
+    "recentes": [
+      {
+        "nome": "Ferramentas de dev com IA",
+        "area": "IA",
+        "criado": "2026-10-27"
+      },
+      {
+        "nome": "OAuth2 e OIDC",
+        "area": "Spring",
+        "criado": "2026-10-27"
+      },
+      {
+        "nome": "Pub-Sub e DLQ",
+        "area": "Arquitetura",
+        "criado": "2026-10-27"
+      },
+      {
+        "nome": "System Design Document para IA",
+        "area": "IA",
+        "criado": "2026-10-27"
+      },
+      {
+        "nome": "TDD e estratégia de testes",
+        "area": "Testes",
+        "criado": "2026-10-27"
+      },
+      {
+        "nome": "Testes de aplicações com IA (evals)",
+        "area": "Testes",
+        "criado": "2026-10-27"
+      },
+      {
+        "nome": "Testes manuais de API - Postman e Insomnia",
+        "area": "Testes",
+        "criado": "2026-10-27"
+      },
+      {
+        "nome": "Tool Calling (Function Calling)",
+        "area": "IA",
+        "criado": "2026-10-27"
+      }
     ]
   }
 }
