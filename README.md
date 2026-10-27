@@ -160,8 +160,8 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:atividade:START -->
 | | Repositório | Commit | Quando |
 |:-:|---|---|---|
-| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`03c9f06`](https://github.com/k3vinrich4rd/rkf_bank/commit/03c9f06cc475dbc2ce2487fc90fc84dd92d95239) docs: laboratorio de arquitetura, temas em estudo e README | há 6 min |
-| ✨ | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`0226122`](https://github.com/k3vinrich4rd/rkf_bank/commit/0226122c282a132a4e583fa225787e3b6fe9d3e5) feat(contas): GET /clientes/{clienteId}/contas so para o ADMIN | há 6 min |
+| 🐛 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`1a213c4`](https://github.com/k3vinrich4rd/rkf_bank/commit/1a213c409c2d060958dacb39f25923beaff9df1f) fix(readme): numero de testes igual ao Tests run do Maven | há 3 min |
+| 🐛 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`7c6daea`](https://github.com/k3vinrich4rd/rkf_bank/commit/7c6daea02c58fd6d969def5dd551bc90d6f94feb) fix(scripts): testar-no-mysql usa do .env so as variaveis do MySQL | há 3 min |
 | 📝 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`0849493`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/0849493f006f8569a3c9a93e9578c3ba795d6921) docs: adiciona README com modelo de dominio, endpoints e exemplos reais | há 12 dias |
 | 🐛 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`cf381a2`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/cf381a2b0fdf09b7ce7b3c3784be9cc876f6352e) fix: salva application-test.properties em UTF-8 | há 12 dias |
 | ✨ | [`crud-clientes`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) | [`9b0eb79`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes/commit/9b0eb794bf407bdbe22af1196065717ef72591a9) feat: implementando correcao sugerida no feedback | há 22 dias |
@@ -169,7 +169,7 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 | ✨ | [`workshop-springboot4-mongodb`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb) | [`ecad5ce`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb/commit/ecad5cec16d1f5ef7b606e6f8b5daf5ce74ade25) feat: Implementando ajustes no projeto | 15/09/2026 |
 | ✨ | [`workshop-springboot4-mongodb`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb) | [`264463c`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb/commit/264463cd568db8f49e9a3b154dc305bfb5adc906) feat: Implementando ajustes de comentarios no projeto e README.md | 06/09/2026 |
 
-<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 27/10 às 11:58</sub>
+<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 27/10 às 12:19</sub>
 <!-- AUTO:atividade:END -->
 
 </details>
