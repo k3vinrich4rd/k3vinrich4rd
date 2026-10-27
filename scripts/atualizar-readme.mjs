@@ -549,11 +549,16 @@ function blocoCerebro() {
   const icone = { praticado: '✅', andamento: '🔄', planejado: '📅', referencia: '📘' };
   const capa = { 'Trilha 1 - Java e Spring': '☕🌱 Java & Spring', 'Trilha 2 - IA': '🤖 Inteligência Artificial' };
   const conta = (notas, st) => notas.filter((n) => n.status === st).length;
-  const fracao = (a, b, n) => `\`${barra(a, b, n)}\` ${a}/${b}`; // mostra 0/15 também: aqui o zero é informação
+  // Quadrados em vez de `███░░`: na coluna estreita a barra em código quebrava a linha no GitHub.
+  // Mostra 0/15 também: aqui o zero é informação.
+  const fracao = (a, b, n = 5) => {
+    const cheios = Math.round((a / (b || 1)) * n);
+    return `${'🟩'.repeat(cheios)}${'⬜'.repeat(n - cheios)}<br/>**${a}/${b}**`;
+  };
   const todas = (t) => t.modulos.flatMap((m) => m.notas);
   const linhaTrilha = (t) => {
     const n = todas(t);
-    return `| **${capa[t.nome] ?? t.nome}** | ${fracao(conta(n, 'praticado'), n.length, 10)} | ${conta(n, 'praticado')} | ${conta(n, 'andamento')} | ${conta(n, 'planejado')} | ${conta(n, 'referencia')} |`;
+    return `| **${capa[t.nome] ?? t.nome}** | ${fracao(conta(n, 'praticado'), n.length)} | ${conta(n, 'praticado')} | ${conta(n, 'andamento')} | ${conta(n, 'planejado')} | ${conta(n, 'referencia')} |`;
   };
   // Fluxo das trilhas: cada módulo pintado pelo quanto já foi praticado
   const nos = c.trilhas.map((t, i) => {
@@ -571,7 +576,7 @@ function blocoCerebro() {
 
 | Módulo | Praticado | Assuntos |
 |---|---|---|
-${t.modulos.map((m) => `| ${m.nome} | ${fracao(conta(m.notas, 'praticado'), m.notas.length, 8)} | ${m.notas.map((n) => `${icone[n.status]} ${n.nome}`).join(' · ')} |`).join('\n')}
+${t.modulos.map((m) => `| ${m.nome} | ${fracao(conta(m.notas, 'praticado'), m.notas.length)} | ${m.notas.map((n) => `${icone[n.status]} ${n.nome}`).join(' · ')} |`).join('\n')}
 
 </details>`;
   const b = p.biblioteca ?? {};

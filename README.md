@@ -1655,7 +1655,7 @@ quadrantChart
 <br/>
 
 <!-- AUTO:estudos:START -->
-**24** assuntos praticados em projeto · **7** em andamento · **3** planejados
+**41** assuntos praticados em projeto · **4** em andamento · **2** planejados
 
 📚 **69** notas de estudo no segundo cérebro · **60** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
 
@@ -1664,11 +1664,11 @@ mindmap
   root((🧠 Estudos))
     Arquitetura
       ✅ Integração com APIs externas
-      🔄 LGPD
+      ✅ LGPD
       ✅ Lock otimista e transações
       ✅ Logs e observabilidade
       ⏳ Mensageria e Outbox
-      🔄 Padrões de projeto
+      ✅ Padrões de projeto
     Cloud
       🔄 AWS
     Dados
@@ -1682,42 +1682,51 @@ mindmap
       ✅ Git Flow e commits semânticos
       ✅ GitHub Actions
     IA
-      🔄 Agentes e IA aplicada
-      🔄 Spec-Driven Development
+      ✅ Agentes e IA aplicada
+      ✅ Ferramentas de dev com IA
+      ✅ Prompt e engenharia de contexto
+      ✅ Skills
+      ✅ Spec-Driven Development
       ⏳ Spring AI
     Java
       ✅ BigDecimal e dinheiro
       ✅ Coleções Streams e Optional
       🔄 Concorrência e threads virtuais
       ✅ Exceções em Java
-      🔄 Java moderno (8 a 25)
+      ✅ Generics
+      ✅ JVM, JDK e bytecode
+      ✅ Java moderno (8 a 25)
       ✅ Maven e build
+      ✅ Memória e Garbage Collector
+      🔄 Objetos - equals, hashCode e imutabilidade
       ✅ POO e SOLID
     Spring
       ✅ Bean Validation
+      🔄 OAuth2 e OIDC
+      ✅ Spring Boot - auto-configuração e starters
+      ✅ Spring Boot Actuator
+      ✅ Spring Boot Test
       ✅ Spring Boot e camadas
       ✅ Spring Data JPA e relacionamentos
+      ✅ Spring Framework - IoC DI e AOP
       ✅ Spring Security e JWT
-      ⏳ Swagger e OpenAPI
+      ✅ Swagger e OpenAPI
       ✅ Tratamento de erros REST
     Testes
       ✅ DataJpaTest
       ✅ JUnit e Mockito
       ✅ Testcontainers
+      ✅ Testes manuais de API - Postman e Insomnia
 ```
 
 | Estudando agora | Área | Próximos passos |
 |---|---|---|
-| 🔄 LGPD | Arquitetura | <sub>5 a fazer</sub> |
-| 🔄 Padrões de projeto | Arquitetura | <sub>4 a fazer</sub> |
 | 🔄 AWS | Cloud | <sub>10 a fazer</sub> |
-| 🔄 Agentes e IA aplicada | IA | `███░░░░░░░` 1/4 |
-| 🔄 Spec-Driven Development | IA | <sub>1 a fazer</sub> |
 | 🔄 Concorrência e threads virtuais | Java | <sub>3 a fazer</sub> |
-| 🔄 Java moderno (8 a 25) | Java | <sub>3 a fazer</sub> |
+| 🔄 Objetos - equals, hashCode e imutabilidade | Java | — |
+| 🔄 OAuth2 e OIDC | Spring | <sub>2 a fazer</sub> |
 | ⏳ Mensageria e Outbox | Arquitetura | <sub>6 a fazer</sub> |
 | ⏳ Spring AI | IA | <sub>5 a fazer</sub> |
-| ⏳ Swagger e OpenAPI | Spring | <sub>5 a fazer</sub> |
 
 <sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-10-27.</sub>
 <!-- AUTO:estudos:END -->
@@ -1733,34 +1742,34 @@ mindmap
 <td align="center">🗓️<br/><b>9</b> dias com registro<br/><sub>nos últimos 30</sub></td>
 <td align="center">📚<br/><b>69</b> notas de estudo<br/><sub>60 com exemplo com × sem</sub></td>
 <td align="center">🧭<br/><b>2</b> trilhas<br/><sub>12 módulos</sub></td>
-<td align="center">✅<br/><b>24</b> assuntos<br/><sub>praticados em projeto</sub></td>
+<td align="center">✅<br/><b>41</b> assuntos<br/><sub>praticados em projeto</sub></td>
 </tr></table>
 
 | Trilha | Praticado no RKF Bank | ✅ | 🔄 | 📅 | 📘 |
 |---|---|:-:|:-:|:-:|:-:|
-| **☕🌱 Java & Spring** | `██████░░░░` 24/43 | 24 | 4 | 2 | 13 |
-| **🤖 Inteligência Artificial** | `░░░░░░░░░░` 0/15 | 0 | 2 | 1 | 12 |
+| **☕🌱 Java & Spring** | 🟩🟩🟩🟩⬜<br/>**35/43** | 35 | 4 | 1 | 3 |
+| **🤖 Inteligência Artificial** | 🟩🟩⬜⬜⬜<br/>**5/15** | 5 | 0 | 1 | 9 |
 
 ```mermaid
 flowchart LR
     subgraph T0["☕🌱 Java & Spring"]
         direction TB
-        t0m0["① Java moderno (Java 21 / 25)<br/>✅ 5/11"]:::meio
-        t0m1["② Spring Boot & arquitetura em camadas<br/>✅ 1/3"]:::meio
+        t0m0["① Java moderno (Java 21 / 25)<br/>✅ 9/11"]:::forte
+        t0m1["② Spring Boot & arquitetura em camadas<br/>✅ 3/3"]:::forte
         t0m2["③ Banco de dados & sincronização<br/>✅ 6/6"]:::forte
-        t0m3["④ Validação e tratamento de erros<br/>✅ 2/3"]:::forte
-        t0m4["⑤ Testes (manuais e automatizados)<br/>✅ 3/6"]:::meio
-        t0m5["⑥ Segurança e infraestrutura<br/>✅ 7/14"]:::meio
+        t0m3["④ Validação e tratamento de erros<br/>✅ 3/3"]:::forte
+        t0m4["⑤ Testes (manuais e automatizados)<br/>✅ 5/6"]:::forte
+        t0m5["⑥ Segurança e infraestrutura<br/>✅ 9/14"]:::forte
         t0m0 --> t0m1 --> t0m2 --> t0m3 --> t0m4 --> t0m5
     end
     subgraph T1["🤖 Inteligência Artificial"]
         direction TB
-        t1m0["① Fundamentos<br/>✅ 0/2"]:::novo
+        t1m0["① Fundamentos<br/>✅ 1/2"]:::meio
         t1m1["② Conhecimento: RAG<br/>✅ 0/3"]:::novo
-        t1m2["③ Ação: ferramentas e agentes<br/>✅ 0/4"]:::novo
+        t1m2["③ Ação: ferramentas e agentes<br/>✅ 1/4"]:::meio
         t1m3["④ Backend Java<br/>✅ 0/1"]:::novo
-        t1m4["⑤ Engenharia de software com IA<br/>✅ 0/3"]:::meio
-        t1m5["⑥ Ferramentas e automação ('vibe coding' com método)<br/>✅ 0/2"]:::meio
+        t1m4["⑤ Engenharia de software com IA<br/>✅ 1/3"]:::meio
+        t1m5["⑥ Ferramentas e automação ('vibe coding' com método)<br/>✅ 2/2"]:::forte
         t1m0 --> t1m1 --> t1m2 --> t1m3 --> t1m4 --> t1m5
     end
     T0 ~~~ T1
@@ -1775,12 +1784,12 @@ flowchart LR
 
 | Módulo | Praticado | Assuntos |
 |---|---|---|
-| ① Java moderno (Java 21 / 25) | `████░░░░` 5/11 | 📘 JVM, JDK e bytecode · ✅ POO e SOLID · 🔄 Java moderno (8 a 25) · ✅ Coleções Streams e Optional · 📘 Objetos - equals, hashCode e imutabilidade · ✅ Exceções em Java · 📘 Generics · ✅ BigDecimal e dinheiro · 🔄 Concorrência e threads virtuais · 📘 Memória e Garbage Collector · ✅ Maven e build |
-| ② Spring Boot & arquitetura em camadas | `███░░░░░` 1/3 | 📘 Spring Framework - IoC DI e AOP · 📘 Spring Boot - auto-configuração e starters · ✅ Spring Boot e camadas |
-| ③ Banco de dados & sincronização | `████████` 6/6 | ✅ SQL e MySQL · ✅ Spring Data JPA e relacionamentos · ✅ H2 x MySQL · ✅ Flyway · ✅ Lock otimista e transações · ✅ MongoDB |
-| ④ Validação e tratamento de erros | `█████░░░` 2/3 | ✅ Bean Validation · ✅ Tratamento de erros REST · 📅 Swagger e OpenAPI |
-| ⑤ Testes (manuais e automatizados) | `████░░░░` 3/6 | 📘 TDD e estratégia de testes · ✅ JUnit e Mockito · 📘 Spring Boot Test · ✅ DataJpaTest · ✅ Testcontainers · 📘 Testes manuais de API - Postman e Insomnia |
-| ⑥ Segurança e infraestrutura | `████░░░░` 7/14 | ✅ Spring Security e JWT · 📘 OAuth2 e OIDC · 🔄 LGPD · 📅 Mensageria e Outbox · 📘 Pub-Sub e DLQ · ✅ Integração com APIs externas · ✅ Logs e observabilidade · 📘 Spring Boot Actuator · ✅ Docker e Compose · ✅ GitHub Actions · ✅ Git Flow e commits semânticos · ✅ Dependências e CVEs · 📘 Spring Cloud e microsserviços · 🔄 AWS |
+| ① Java moderno (Java 21 / 25) | 🟩🟩🟩🟩⬜<br/>**9/11** | ✅ JVM, JDK e bytecode · ✅ POO e SOLID · ✅ Java moderno (8 a 25) · ✅ Coleções Streams e Optional · 🔄 Objetos - equals, hashCode e imutabilidade · ✅ Exceções em Java · ✅ Generics · ✅ BigDecimal e dinheiro · 🔄 Concorrência e threads virtuais · ✅ Memória e Garbage Collector · ✅ Maven e build |
+| ② Spring Boot & arquitetura em camadas | 🟩🟩🟩🟩🟩<br/>**3/3** | ✅ Spring Framework - IoC DI e AOP · ✅ Spring Boot - auto-configuração e starters · ✅ Spring Boot e camadas |
+| ③ Banco de dados & sincronização | 🟩🟩🟩🟩🟩<br/>**6/6** | ✅ SQL e MySQL · ✅ Spring Data JPA e relacionamentos · ✅ H2 x MySQL · ✅ Flyway · ✅ Lock otimista e transações · ✅ MongoDB |
+| ④ Validação e tratamento de erros | 🟩🟩🟩🟩🟩<br/>**3/3** | ✅ Bean Validation · ✅ Tratamento de erros REST · ✅ Swagger e OpenAPI |
+| ⑤ Testes (manuais e automatizados) | 🟩🟩🟩🟩⬜<br/>**5/6** | 📘 TDD e estratégia de testes · ✅ JUnit e Mockito · ✅ Spring Boot Test · ✅ DataJpaTest · ✅ Testcontainers · ✅ Testes manuais de API - Postman e Insomnia |
+| ⑥ Segurança e infraestrutura | 🟩🟩🟩⬜⬜<br/>**9/14** | ✅ Spring Security e JWT · 🔄 OAuth2 e OIDC · ✅ LGPD · 📅 Mensageria e Outbox · 📘 Pub-Sub e DLQ · ✅ Integração com APIs externas · ✅ Logs e observabilidade · ✅ Spring Boot Actuator · ✅ Docker e Compose · ✅ GitHub Actions · ✅ Git Flow e commits semânticos · ✅ Dependências e CVEs · 📘 Spring Cloud e microsserviços · 🔄 AWS |
 
 </details>
 
@@ -1790,12 +1799,12 @@ flowchart LR
 
 | Módulo | Praticado | Assuntos |
 |---|---|---|
-| ① Fundamentos | `░░░░░░░░` 0/2 | 📘 LLM · 📘 Prompt e engenharia de contexto |
-| ② Conhecimento: RAG | `░░░░░░░░` 0/3 | 📘 Embeddings e banco vetorial · 📘 RAG · 📘 Fine-tuning |
-| ③ Ação: ferramentas e agentes | `░░░░░░░░` 0/4 | 📘 Tool Calling (Function Calling) · 📘 MCP · 📘 Skills · 📘 Agentes de IA |
-| ④ Backend Java | `░░░░░░░░` 0/1 | 📅 Spring AI |
-| ⑤ Engenharia de software com IA | `░░░░░░░░` 0/3 | 🔄 Spec-Driven Development · 📘 System Design Document para IA · 📘 Testes de aplicações com IA (evals) |
-| ⑥ Ferramentas e automação ("vibe coding" com método) | `░░░░░░░░` 0/2 | 📘 Ferramentas de dev com IA · 🔄 Agentes e IA aplicada |
+| ① Fundamentos | 🟩🟩🟩⬜⬜<br/>**1/2** | 📘 LLM · ✅ Prompt e engenharia de contexto |
+| ② Conhecimento: RAG | ⬜⬜⬜⬜⬜<br/>**0/3** | 📘 Embeddings e banco vetorial · 📘 RAG · 📘 Fine-tuning |
+| ③ Ação: ferramentas e agentes | 🟩⬜⬜⬜⬜<br/>**1/4** | 📘 Tool Calling (Function Calling) · 📘 MCP · ✅ Skills · 📘 Agentes de IA |
+| ④ Backend Java | ⬜⬜⬜⬜⬜<br/>**0/1** | 📅 Spring AI |
+| ⑤ Engenharia de software com IA | 🟩🟩⬜⬜⬜<br/>**1/3** | ✅ Spec-Driven Development · 📘 System Design Document para IA · 📘 Testes de aplicações com IA (evals) |
+| ⑥ Ferramentas e automação ("vibe coding" com método) | 🟩🟩🟩🟩🟩<br/>**2/2** | ✅ Ferramentas de dev com IA · ✅ Agentes e IA aplicada |
 
 </details>
 
