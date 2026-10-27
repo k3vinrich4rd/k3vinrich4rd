@@ -27,6 +27,24 @@
 
 </div>
 
+<!-- AUTO:indice:START -->
+<details>
+<summary><b>🗺️ Índice do perfil</b> · 14 seções (clique para abrir)</summary>
+<br/>
+
+| | |
+|---|---|
+| <a href="#-escolha-a-sua-trilha">01 · 🎮 Escolha a sua trilha</a> | <a href="#-github-stats">08 · 📊 GitHub Stats</a> |
+| <a href="#-ao-vivo">02 · 📡 Ao vivo</a> | <a href="#-pdi--roadmap-2026">09 · 🎯 PDI — Roadmap 2026</a> |
+| <a href="#-trajetória">03 · 🧭 Trajetória</a> | <a href="#️-tecnologias">10 · 🛠️ Tecnologias</a> |
+| <a href="#-sobre-mim">04 · 🚀 Sobre mim</a> | <a href="#-atuação-profissional">11 · 💼 Atuação profissional</a> |
+| <a href="#-projeto-atual--rkf-bank">05 · 🏦 Projeto atual — RKF Bank</a> | <a href="#-pergunte-ao-kevin">12 · 💬 Pergunte ao Kevin</a> |
+| <a href="#️-projetos-em-destaque">06 · 🗂️ Projetos em destaque</a> | <a href="#-formação-e-certificações">13 · 🎓 Formação e certificações</a> |
+| <a href="#-junior--pleno--onde-estou">07 · 📈 Junior → Pleno — onde estou</a> | <a href="#️-livro-de-visitas">14 · ✍️ Livro de visitas</a> |
+
+</details>
+<!-- AUTO:indice:END -->
+
 <img src="assets/secoes/escolha-a-sua-trilha.svg" width="100%" alt=""/>
 
 ## 🎮 Escolha a sua trilha
@@ -109,6 +127,8 @@ flowchart LR
 Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 criei 53 repositórios; em 2026, 4. E os de 2026 contam muito mais sobre mim.
 
 </details>
+
+<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
 
 <img src="assets/secoes/ao-vivo.svg" width="100%" alt=""/>
 
@@ -198,6 +218,8 @@ flowchart LR
     D --> E["🌐 este README<br/>banner, gráficos, cobrinha"]
     click E "https://github.com/k3vinrich4rd" _blank
 ```
+
+<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
 
 <img src="assets/secoes/trajetoria.svg" width="100%" alt=""/>
 
@@ -339,6 +361,8 @@ public void sacar(UUID contaId, SaqueRequestDto request, UsuarioLogado usuario) 
 
 </details>
 
+<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
+
 <img src="assets/secoes/sobre-mim.svg" width="100%" alt=""/>
 
 ## 🚀 Sobre mim
@@ -374,6 +398,8 @@ public class Kevin extends Developer implements AprendizContinuo {
 ```
 
 </details>
+
+<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
 
 <img src="assets/secoes/projeto-atual.svg" width="100%" alt=""/>
 
@@ -875,6 +901,8 @@ sequenceDiagram
 ```
 
 </details>
+
+<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
 
 <img src="assets/secoes/projetos-em-destaque.svg" width="100%" alt=""/>
 
@@ -1580,6 +1608,8 @@ endsolid repositorios_por_ano
 
 </details>
 
+<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
+
 <img src="assets/secoes/junior-pleno.svg" width="100%" alt=""/>
 
 ## 📈 Junior → Pleno — onde estou
@@ -1943,6 +1973,8 @@ flowchart LR
 
 </details>
 
+<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
+
 <img src="assets/secoes/github-stats.svg" width="100%" alt=""/>
 
 ## 📊 GitHub Stats
@@ -1960,6 +1992,8 @@ flowchart LR
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/k3vinrich4rd/k3vinrich4rd/output/profile-season-animate.svg" />
   <img width="100%" src="https://raw.githubusercontent.com/k3vinrich4rd/k3vinrich4rd/output/profile-night-rainbow.svg" alt="Meus commits em 3D" />
 </picture>
+
+<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
 
 <img src="assets/secoes/pdi.svg" width="100%" alt=""/>
 
@@ -2167,6 +2201,8 @@ gantt
 
 </details>
 
+<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
+
 <img src="assets/secoes/tecnologias.svg" width="100%" alt=""/>
 
 ## 🛠️ Tecnologias
@@ -2228,6 +2264,8 @@ mindmap
 
 </details>
 
+<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
+
 <img src="assets/secoes/atuacao-profissional.svg" width="100%" alt=""/>
 
 ## 💼 Atuação profissional
@@ -2254,6 +2292,8 @@ Atuo como **Desenvolvedor de Software Junior** contratado pela **[Zup Innovation
 </div>
 
 </details>
+
+<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
 
 <img src="assets/secoes/pergunte-ao-kevin.svg" width="100%" alt=""/>
 
@@ -2437,6 +2477,8 @@ Tem: o GC só recolhe objetos inalcançáveis. Um <code>static Map</code> que nu
 
 </details>
 
+<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
+
 <img src="assets/secoes/formacao-e-certificacoes.svg" width="100%" alt=""/>
 
 ## 🎓 Formação e certificações
@@ -2498,6 +2540,8 @@ Tem: o GC só recolhe objetos inalcançáveis. Um <code>static Map</code> que nu
 | Curso Git e GitHub | Workover |
 
 </details>
+
+<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
 
 <img src="assets/secoes/livro-de-visitas.svg" width="100%" alt=""/>
 

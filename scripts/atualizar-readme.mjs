@@ -677,6 +677,43 @@ const secoes = [];
 const visuais = aplicarVisuais(readme, p);
 readme = visuais.readme;
 
+// Navegação de um perfil longo: índice clicável das seções ## logo depois dos números do topo e um "voltar ao topo"
+// no fim de cada seção. Âncora igual à do GitHub: minúsculas, sem pontuação/emoji (o U+FE0F fica), espaço vira hífen.
+const ancora = (titulo) => '#' + titulo.toLowerCase().replace(/[^\p{L}\p{M}\p{N}\p{Pc} -]/gu, '').replace(/ /g, '-');
+const VOLTAR = '<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>';
+{
+  const linhas = readme.split('\n');
+  let dentroDeCodigo = false;
+  const titulos = [];
+  linhas.forEach((l) => {
+    if (l.startsWith('```')) dentroDeCodigo = !dentroDeCodigo;
+    else if (!dentroDeCodigo && l.startsWith('## ')) titulos.push(l.slice(3).trim());
+  });
+  const metade = Math.ceil(titulos.length / 2);
+  const item = (t, i) => (t ? `<a href="${ancora(t)}">${String(i + 1).padStart(2, '0')} · ${t}</a>` : '');
+  const indice = `<details>
+<summary><b>🗺️ Índice do perfil</b> · ${titulos.length} seções (clique para abrir)</summary>
+<br/>
+
+| | |
+|---|---|
+${titulos.slice(0, metade).map((t, i) => `| ${item(t, i)} | ${item(titulos[metade + i], metade + i)} |`).join('\n')}
+
+</details>`;
+  if (!readme.includes('<!-- AUTO:indice:START -->')) {
+    const primeiro = linhas.findIndex((l) => /^<img src="assets\/secoes\/[^"]+\.svg"/.test(l));
+    linhas.splice(primeiro, 0, '<!-- AUTO:indice:START -->', '<!-- AUTO:indice:END -->', '');
+  }
+  // "voltar ao topo" antes do cabeçalho de cada seção, a partir da segunda (o fim da seção anterior)
+  const cabecalhos = linhas.map((l, i) => (/^<img src="assets\/secoes\/[^"]+\.svg"/.test(l) ? i : -1)).filter((i) => i >= 0);
+  for (const i of cabecalhos.slice(1).reverse()) {
+    let j = i - 1;
+    while (j >= 0 && linhas[j].trim() === '') j--;
+    if (linhas[j] !== VOLTAR) linhas.splice(i, 0, VOLTAR, '');
+  }
+  readme = substituirBloco(linhas.join('\n'), 'indice', indice);
+}
+
 // O pulso usa a página pública de contribuições: funciona com ou sem token. Se falhar, fica o anterior.
 let svgPulso = null;
 try {
