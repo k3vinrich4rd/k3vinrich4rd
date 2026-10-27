@@ -639,8 +639,8 @@
       "area": "IA",
       "status": "praticado",
       "passos": {
-        "feitos": 0,
-        "total": 1
+        "feitos": 1,
+        "total": 3
       }
     },
     {
@@ -673,7 +673,7 @@
     {
       "nome": "Concorrência e threads virtuais",
       "area": "Java",
-      "status": "andamento",
+      "status": "praticado",
       "passos": {
         "feitos": 0,
         "total": 3
@@ -736,7 +736,7 @@
     {
       "nome": "Objetos - equals, hashCode e imutabilidade",
       "area": "Java",
-      "status": "andamento",
+      "status": "praticado",
       "passos": {
         "feitos": 0,
         "total": 0
@@ -921,7 +921,7 @@
               },
               {
                 "nome": "Objetos - equals, hashCode e imutabilidade",
-                "status": "andamento"
+                "status": "praticado"
               },
               {
                 "nome": "Exceções em Java",
@@ -937,7 +937,7 @@
               },
               {
                 "nome": "Concorrência e threads virtuais",
-                "status": "andamento"
+                "status": "praticado"
               },
               {
                 "nome": "Memória e Garbage Collector",
@@ -1175,7 +1175,7 @@
                 "status": "praticado"
               },
               {
-                "nome": "System Design Document para IA",
+                "nome": "Design Doc de arquitetura para IA",
                 "status": "referencia"
               },
               {
@@ -1200,8 +1200,13 @@
         ]
       }
     ],
-    "diasDiario30": 9,
+    "diasDiario30": 10,
     "recentes": [
+      {
+        "nome": "Design Doc de arquitetura para IA",
+        "area": "IA",
+        "criado": "2026-10-27"
+      },
       {
         "nome": "Ferramentas de dev com IA",
         "area": "IA",
@@ -1215,11 +1220,6 @@
       {
         "nome": "Pub-Sub e DLQ",
         "area": "Arquitetura",
-        "criado": "2026-10-27"
-      },
-      {
-        "nome": "System Design Document para IA",
-        "area": "IA",
         "criado": "2026-10-27"
       },
       {

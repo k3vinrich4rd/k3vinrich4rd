@@ -1655,7 +1655,7 @@ quadrantChart
 <br/>
 
 <!-- AUTO:estudos:START -->
-**41** assuntos praticados em projeto · **4** em andamento · **2** planejados
+**43** assuntos praticados em projeto · **2** em andamento · **2** planejados
 
 📚 **69** notas de estudo no segundo cérebro · **60** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
 
@@ -1691,14 +1691,14 @@ mindmap
     Java
       ✅ BigDecimal e dinheiro
       ✅ Coleções Streams e Optional
-      🔄 Concorrência e threads virtuais
+      ✅ Concorrência e threads virtuais
       ✅ Exceções em Java
       ✅ Generics
       ✅ JVM, JDK e bytecode
       ✅ Java moderno (8 a 25)
       ✅ Maven e build
       ✅ Memória e Garbage Collector
-      🔄 Objetos - equals, hashCode e imutabilidade
+      ✅ Objetos - equals, hashCode e imutabilidade
       ✅ POO e SOLID
     Spring
       ✅ Bean Validation
@@ -1722,8 +1722,6 @@ mindmap
 | Estudando agora | Área | Próximos passos |
 |---|---|---|
 | 🔄 AWS | Cloud | <sub>10 a fazer</sub> |
-| 🔄 Concorrência e threads virtuais | Java | <sub>3 a fazer</sub> |
-| 🔄 Objetos - equals, hashCode e imutabilidade | Java | — |
 | 🔄 OAuth2 e OIDC | Spring | <sub>2 a fazer</sub> |
 | ⏳ Mensageria e Outbox | Arquitetura | <sub>6 a fazer</sub> |
 | ⏳ Spring AI | IA | <sub>5 a fazer</sub> |
@@ -1739,22 +1737,22 @@ mindmap
 
 <!-- AUTO:cerebro:START -->
 <table align="center"><tr>
-<td align="center">🗓️<br/><b>9</b> dias com registro<br/><sub>nos últimos 30</sub></td>
+<td align="center">🗓️<br/><b>10</b> dias com registro<br/><sub>nos últimos 30</sub></td>
 <td align="center">📚<br/><b>69</b> notas de estudo<br/><sub>60 com exemplo com × sem</sub></td>
 <td align="center">🧭<br/><b>2</b> trilhas<br/><sub>12 módulos</sub></td>
-<td align="center">✅<br/><b>41</b> assuntos<br/><sub>praticados em projeto</sub></td>
+<td align="center">✅<br/><b>43</b> assuntos<br/><sub>praticados em projeto</sub></td>
 </tr></table>
 
 | Trilha | Praticado no RKF Bank | ✅ | 🔄 | 📅 | 📘 |
 |---|---|:-:|:-:|:-:|:-:|
-| **☕🌱 Java & Spring** | 🟩🟩🟩🟩⬜<br/>**35/43** | 35 | 4 | 1 | 3 |
+| **☕🌱 Java & Spring** | 🟩🟩🟩🟩⬜<br/>**37/43** | 37 | 2 | 1 | 3 |
 | **🤖 Inteligência Artificial** | 🟩🟩⬜⬜⬜<br/>**5/15** | 5 | 0 | 1 | 9 |
 
 ```mermaid
 flowchart LR
     subgraph T0["☕🌱 Java & Spring"]
         direction TB
-        t0m0["① Java moderno (Java 21 / 25)<br/>✅ 9/11"]:::forte
+        t0m0["① Java moderno (Java 21 / 25)<br/>✅ 11/11"]:::forte
         t0m1["② Spring Boot & arquitetura em camadas<br/>✅ 3/3"]:::forte
         t0m2["③ Banco de dados & sincronização<br/>✅ 6/6"]:::forte
         t0m3["④ Validação e tratamento de erros<br/>✅ 3/3"]:::forte
@@ -1784,7 +1782,7 @@ flowchart LR
 
 | Módulo | Praticado | Assuntos |
 |---|---|---|
-| ① Java moderno (Java 21 / 25) | 🟩🟩🟩🟩⬜<br/>**9/11** | ✅ JVM, JDK e bytecode · ✅ POO e SOLID · ✅ Java moderno (8 a 25) · ✅ Coleções Streams e Optional · 🔄 Objetos - equals, hashCode e imutabilidade · ✅ Exceções em Java · ✅ Generics · ✅ BigDecimal e dinheiro · 🔄 Concorrência e threads virtuais · ✅ Memória e Garbage Collector · ✅ Maven e build |
+| ① Java moderno (Java 21 / 25) | 🟩🟩🟩🟩🟩<br/>**11/11** | ✅ JVM, JDK e bytecode · ✅ POO e SOLID · ✅ Java moderno (8 a 25) · ✅ Coleções Streams e Optional · ✅ Objetos - equals, hashCode e imutabilidade · ✅ Exceções em Java · ✅ Generics · ✅ BigDecimal e dinheiro · ✅ Concorrência e threads virtuais · ✅ Memória e Garbage Collector · ✅ Maven e build |
 | ② Spring Boot & arquitetura em camadas | 🟩🟩🟩🟩🟩<br/>**3/3** | ✅ Spring Framework - IoC DI e AOP · ✅ Spring Boot - auto-configuração e starters · ✅ Spring Boot e camadas |
 | ③ Banco de dados & sincronização | 🟩🟩🟩🟩🟩<br/>**6/6** | ✅ SQL e MySQL · ✅ Spring Data JPA e relacionamentos · ✅ H2 x MySQL · ✅ Flyway · ✅ Lock otimista e transações · ✅ MongoDB |
 | ④ Validação e tratamento de erros | 🟩🟩🟩🟩🟩<br/>**3/3** | ✅ Bean Validation · ✅ Tratamento de erros REST · ✅ Swagger e OpenAPI |
@@ -1803,12 +1801,12 @@ flowchart LR
 | ② Conhecimento: RAG | ⬜⬜⬜⬜⬜<br/>**0/3** | 📘 Embeddings e banco vetorial · 📘 RAG · 📘 Fine-tuning |
 | ③ Ação: ferramentas e agentes | 🟩⬜⬜⬜⬜<br/>**1/4** | 📘 Tool Calling (Function Calling) · 📘 MCP · ✅ Skills · 📘 Agentes de IA |
 | ④ Backend Java | ⬜⬜⬜⬜⬜<br/>**0/1** | 📅 Spring AI |
-| ⑤ Engenharia de software com IA | 🟩🟩⬜⬜⬜<br/>**1/3** | ✅ Spec-Driven Development · 📘 System Design Document para IA · 📘 Testes de aplicações com IA (evals) |
+| ⑤ Engenharia de software com IA | 🟩🟩⬜⬜⬜<br/>**1/3** | ✅ Spec-Driven Development · 📘 Design Doc de arquitetura para IA · 📘 Testes de aplicações com IA (evals) |
 | ⑥ Ferramentas e automação ("vibe coding" com método) | 🟩🟩🟩🟩🟩<br/>**2/2** | ✅ Ferramentas de dev com IA · ✅ Agentes e IA aplicada |
 
 </details>
 
-📝 **Estudado por último:** `IA` Ferramentas de dev com IA · `Spring` OAuth2 e OIDC · `Arquitetura` Pub-Sub e DLQ · `IA` System Design Document para IA · `Testes` TDD e estratégia de testes · `Testes` Testes de aplicações com IA (evals) · `Testes` Testes manuais de API - Postman e Insomnia · `IA` Tool Calling (Function Calling)
+📝 **Estudado por último:** `IA` Design Doc de arquitetura para IA · `IA` Ferramentas de dev com IA · `Spring` OAuth2 e OIDC · `Arquitetura` Pub-Sub e DLQ · `Testes` TDD e estratégia de testes · `Testes` Testes de aplicações com IA (evals) · `Testes` Testes manuais de API - Postman e Insomnia · `IA` Tool Calling (Function Calling)
 
 <sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-10-27</sub>
 <!-- AUTO:cerebro:END -->
