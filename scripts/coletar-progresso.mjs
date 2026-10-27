@@ -102,6 +102,16 @@ function estudos() {
 
 /** Conta os testes que estão na develop publicada: a pasta local pode estar numa branch ainda não entregue. */
 function testesNaDevelop(repo) {
+  // 1º: o badge do README da develop, que o gerar-svgs-readme.mjs do RKF Bank escreve com o "Tests run" do Maven
+  // (um teste parametrizado conta cada execução). Assim o perfil mostra exatamente o número que o Maven mostra.
+  try {
+    const readme = execFileSync('git', ['-C', repo, 'show', 'origin/develop:README.md'],
+      { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] });
+    const badge = /badge\/testes-(\d+)_/.exec(readme);
+    if (badge) return Number(badge[1]);
+  } catch {
+    // sem origin/develop: segue para a contagem pelas anotações
+  }
   try {
     const saida = execFileSync('git', ['-C', repo, 'grep', '-c', '-E', '@(Test|ParameterizedTest|RepeatedTest)\\b',
       'origin/develop', '--', 'backend/src/test'], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] });

@@ -42,7 +42,7 @@
 | Pergunta | Resposta rápida |
 |---|---|
 | Quem é? | Dev **Java backend Junior** na **Zup Innovation**, prestando serviço para o **Itaú**, em transição para **Pleno** (**12/15** competências já praticadas) |
-| Melhor projeto? | **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **328 testes**, CI e logs rastreáveis |
+| Melhor projeto? | **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **346 testes**, CI e logs rastreáveis |
 | Stack principal? | Java · Spring Boot · JPA/Hibernate · MySQL/PostgreSQL · MongoDB · JUnit/Mockito · Docker · GitHub Actions |
 | O que está estudando? | AWS → inglês → mensageria |
 | Contato? | [LinkedIn](https://www.linkedin.com/in/kevin-richard-b68a54203/) · [kevinrichardve@gmail.com](mailto:kevinrichardve@gmail.com) |
@@ -123,7 +123,7 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 
 <!-- AUTO:status:START -->
 <img src="https://img.shields.io/static/v1?label=R%C3%A9gua%20Pleno&message=12%2F15&color=EC7000&style=flat-square"/>
-<img src="https://img.shields.io/static/v1?label=Testes%20RKF%20Bank&message=328%20%E2%9C%94&color=3fb950&style=flat-square&logo=junit5&logoColor=white"/>
+<img src="https://img.shields.io/static/v1?label=Testes%20RKF%20Bank&message=346%20%E2%9C%94&color=3fb950&style=flat-square&logo=junit5&logoColor=white"/>
 <img src="https://img.shields.io/static/v1?label=MVP&message=9%2F15&color=003D74&style=flat-square"/>
 <img src="https://img.shields.io/static/v1?label=Foco%20agora&message=AWS&color=6A1B9A&style=flat-square"/>
 <!-- AUTO:status:END -->
@@ -333,7 +333,7 @@ public void sacar(UUID contaId, SaqueRequestDto request, UsuarioLogado usuario) 
 | ➖ Valor **zero ou negativo** passava (e um saque negativo era um depósito!) | `validarValor` recusa com `422` |
 | 🏃 Dois saques ao mesmo tempo **sobrescreviam** um ao outro | `@Transactional` + lock otimista com `@Version` → `409` |
 | 🧾 Nenhum **histórico**: o valor final só substituía o anterior | cada saque gera um lançamento no extrato |
-| 🔇 Sem log nem teste do caminho de erro | log com `X-Request-Id` e 328 testes automatizados |
+| 🔇 Sem log nem teste do caminho de erro | log com `X-Request-Id` e 346 testes automatizados |
 
 <sub>Quantos você achou? Conta pra mim no <a href="#️-livro-de-visitas">livro de visitas</a>. 😄</sub>
 
@@ -895,7 +895,7 @@ sequenceDiagram
 | **Meu papel** | todo o backend | projeto individual |
 | **Domínio** | clientes, contas, depósito, saque, transferência, extrato | usuários, pedidos, produtos, categorias, pagamento |
 | **O que mostra** | transação atômica, lock otimista, ViaCEP com falha tratada, logs com `X-Request-Id` | modelo de domínio rico, chave composta (`OrdemItemPK`), Bean Validation, erros padronizados |
-| **Qualidade** | 328 testes, JaCoCo, CI com CodeQL e Dependabot | camadas controller → service → repository, `DatabaseException` para integridade referencial |
+| **Qualidade** | 346 testes, JaCoCo, CI com CodeQL e Dependabot | camadas controller → service → repository, `DatabaseException` para integridade referencial |
 | **Stack** | Java 25 · Spring Boot 4 · MySQL · Docker · Next.js | Java · Spring Boot · JPA · H2 |
 | **README** | [roteiro do projeto](https://github.com/k3vinrich4rd/rkf_bank#readme) | [modelo de domínio, endpoints e respostas reais](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM#readme) |
 | **Ver primeiro** | [`ContaService`](https://github.com/k3vinrich4rd/rkf_bank) · [roteiro no README](#-projeto-atual--rkf-bank) | [`ProductService`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/services/ProductService.java) · [`ControllerExceptionHandler`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/controllers/handlers/ControllerExceptionHandler.java) |
@@ -1590,8 +1590,8 @@ endsolid repositorios_por_ano
 
 ```mermaid
 flowchart LR
-    A["🏁 1 · Testes finais<br/>do MVP do RKF Bank<br/>(entrega 31/10)"]:::agora --> B["🎓 2 · Finalizando o curso<br/>Java Spring<br/>(DevSuperior)"]:::agora
-    B --> C["☕ 3 · Aprofundar<br/>em Java<br/>(DevSuperior)"]:::proximo
+    A["🏁 1 · Testes finais<br/>do MVP do RKF Bank<br/>(entrega 31/10)"]:::agora --> B["🎓 2 · Finalizando o<br/>Java Spring Professional<br/>(DevSuperior)"]:::agora
+    B --> C["☕ 3 · Java Spring Expert<br/>API REST + testes<br/>(DevSuperior)"]:::proximo
     C --> D["☁️ 4 · AWS<br/>na prática<br/>(Udemy)"]:::proximo
     D --> E["🤖 5 · IA para backend<br/>(trilha do meu Obsidian)"]:::proximo
     classDef agora fill:#9e6a03,stroke:#d29922,color:#fff
@@ -1604,7 +1604,7 @@ flowchart LR
 <summary><b>🏁 1 · Testes finais do MVP do RKF Bank</b> — 🔄 agora</summary>
 <br/>
 
-Reta final do banco digital que construo com o Renan e o Fellipe: **328 testes** na API, coleção do Insomnia com **121/121** requisições passando contra a API real (equipe) e o contrato da API na versão **3.2**. Falta o aceite do Fellipe como primeiro cliente e colocar no ar.
+Reta final do banco digital que construo com o Renan e o Fellipe: **346 testes** na API (todos verdes também num MySQL 8.4 real), coleção do Insomnia com **121/121** requisições passando contra a API real (equipe) e o contrato da API na versão **3.2**. Falta o aceite do Fellipe como primeiro cliente e colocar no ar.
 
 **Últimos incrementos (27/10):** `equals`/`hashCode` nas entidades JPA, respostas imutáveis, **threads virtuais** (mantendo o Java 25) e `GET /clientes/{clienteId}/contas` só para o ADMIN — tudo com teste. Spring Cloud, Outbox, Pub/Sub + DLQ, AWS e OAuth2/OIDC ficaram **em estudo para implementação**, com plano escrito.
 
@@ -1613,18 +1613,18 @@ Reta final do banco digital que construo com o Renan e o Fellipe: **328 testes**
 </details>
 
 <details>
-<summary><b>🎓 2 · Finalizando o curso Java Spring da DevSuperior</b> — 🔄 agora</summary>
+<summary><b>🎓 2 · Finalizando o Java Spring Professional (DevSuperior)</b> — 🔄 agora</summary>
 <br/>
 
-Últimas aulas do [curso](https://devsuperior.club/courses/5): arquitetura em camadas, DTOs, validação, tratamento de erros (`404`/`422`), Spring Security e testes. Cada aula vira nota no meu Obsidian, com exemplo **com × sem** usando o RKF Bank — por isso vários assuntos já aparecem como **praticados** no painel abaixo.
+[**Java Spring Professional**](https://devsuperior.club/courses/5), *"seja um profissional no desenvolvimento de API Rest com Java e Spring"*: arquitetura em camadas, DTOs, validação, tratamento de erros (`404`/`422`), Spring Security e testes. Cada aula vira nota no meu Obsidian, com exemplo **com × sem** usando o RKF Bank — por isso vários assuntos já aparecem como **praticados** no painel abaixo.
 
 </details>
 
 <details>
-<summary><b>☕ 3 · Aprofundar em Java</b> — ⏭️ em seguida</summary>
+<summary><b>☕ 3 · Java Spring Expert (DevSuperior)</b> — ⏭️ em seguida</summary>
 <br/>
 
-Próximo [curso da DevSuperior](https://devsuperior.club/courses/6) para ir além do Spring: Java moderno (records, *pattern matching*, coleções), concorrência e boas práticas de orientação a objetos. O que já pratiquei está na trilha **☕🌱 Java & Spring** do painel abaixo.
+[**Java Spring Expert**](https://devsuperior.club/courses/6), *"API Rest + testes automatizados"*: TDD, JUnit e Mockito, testes de repository, service e web, testes de integração, cobertura com JaCoCo, testes de API com MockMvc e RestAssured, OAuth2/JWT e o problema N+1. O que já pratiquei está na trilha **☕🌱 Java & Spring** do painel abaixo.
 
 </details>
 
@@ -1644,38 +1644,47 @@ Os mesmos conteúdos da trilha de IA do meu Obsidian, na ordem: **LLM e tokens �
 
 </details>
 
-### 📖 Definição de estudo em destaque: Spec-Driven Development (SDD)
+### 🧩 Adivinhe: o que eu estudei esta semana
 
-> [!NOTE]
-> **Spec-Driven Development (SDD)** é uma metodologia de engenharia de software em que a **especificação** — clara, estruturada, versionada e com **critérios de aceite verificáveis** — é o **artefato principal e a única fonte da verdade**. **Agentes de IA derivam dela o código, os testes e a documentação**, e tudo é **validado contra a spec**. Mudou o requisito? Muda-se **primeiro a spec**.
-
-| 🎯 Em 30 segundos | |
-|---|---|
-| 🧩 **Responsabilidade** | ser a única fonte da verdade: a IA gera código, testes e docs **a partir da spec**, e tudo é conferido **contra ela** |
-| ✅ **Usar ajuda porque** | a IA tem um alvo verificável; código, testes e docs saem coerentes; a revisão vira "bate com a spec?" |
-| ❌ **Não usar atrapalha porque** | cada prompt vira uma decisão escondida: a IA chuta regras, o teste confirma o chute e a doc diverge do código |
+> Adivinhe antes de abrir. Cada resposta saiu de um estudo no meu Obsidian **e** virou código testado no RKF Bank.
 
 <details>
-<summary><b>🆚 Com × sem: um caso real do RKF Bank</b> (clique)</summary>
+<summary><b>1. 🤖 Pedir "cria um endpoint de contas" para a IA é o suficiente?</b></summary>
 <br/>
 
-```mermaid
-flowchart LR
-    S["📝 Spec<br/>contrato da API 3.2"] --> IA["🤖 Agente de IA"]
-    IA --> C["💻 Código"]
-    IA --> T["🧪 Testes"]
-    IA --> D["📚 Docs e roteiro E2E"]
-    C & T & D --> V{"bate com a spec?"}
-    V -->|não| S
-```
+**Não.** Eu uso **Spec-Driven Development (SDD)**: a **especificação** (com critérios de aceite) é a única fonte da verdade, e a IA gera código, testes e documentação **a partir dela**. Sem spec, a IA liberou a rota para qualquer usuário logado. Com spec, saiu `GET /clientes/{clienteId}/contas` **só para o ADMIN**, com 9 testes e o contrato 3.2.
 
-> [!CAUTION]
-> **❌ Sem spec:** `"cria um endpoint para listar as contas de um cliente pelo id"` → a IA libera a rota para qualquer usuário logado, e um cliente troca o id na URL e vê as contas de outra pessoa.
+</details>
 
-> [!TIP]
-> **✅ Com spec:** `GET /clientes/{clienteId}/contas` — só ADMIN · cliente → `403` mesmo com o próprio id · `403` antes do `404` · lista ou página · aceite: `200`, página, `403`, `401`, `404`. Dessa spec saíram o código, **9 testes**, o contrato 3.2 e o roteiro E2E gerado de uma execução real.
+<details>
+<summary><b>2. 🔐 O cliente pede as contas pelo próprio id na URL. O que a API responde?</b></summary>
+<br/>
 
-**🧪 Como provo:** cada critério de aceite vira um teste; o contrato é conferido contra o código (`/verificar-contrato`) e contra a API no ar (coleção do Insomnia no CI).
+**`403`**, mesmo sendo o dono. Essa rota é do atendente (ADMIN); o cliente usa `GET /contas`, que descobre quem ele é pelo token. E o `403` vem **antes** do `404`: quem não é ADMIN nem descobre se aquele id existe.
+
+</details>
+
+<details>
+<summary><b>3. 🧵 200 cadastros esperando um serviço externo por 3 s. E o 201º?</b></summary>
+<br/>
+
+Com **threads virtuais** (Java 21+; o RKF Bank segue no 25), ele **não fica na fila**: enquanto espera I/O, a thread virtual libera a thread do sistema. Uma linha de configuração e um teste que garante que ela continua ligada.
+
+</details>
+
+<details>
+<summary><b>4. 🧩 Salvei uma entidade que estava num <code>HashSet</code>. Ela continua lá?</b></summary>
+<br/>
+
+**Continua**, porque o `hashCode` é fixo por classe e o `equals` compara o id do banco. Se o hash dependesse do id, ele mudaria de `null` para o UUID no `persist` e a entidade "sumiria" do conjunto. Prova: 21 casos de teste nas 7 entidades.
+
+</details>
+
+<details>
+<summary><b>5. 📨 Por que ainda não tem mensageria nem microsserviços no RKF Bank?</b></summary>
+<br/>
+
+Porque **arquitetura resolve problema que existe**. Spring Cloud, Outbox, Pub/Sub com DLQ, AWS e OAuth2/OIDC estão **em estudo para implementação**, com plano e código prontos e um **gatilho** escrito para cada um ([ver o plano](https://github.com/k3vinrich4rd/rkf_bank/blob/develop/planing/estudos-arquitetura.md)). O MVP vem primeiro.
 
 </details>
 
