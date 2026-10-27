@@ -27,7 +27,7 @@
 
 </div>
 
-<img src="assets/divisor.svg" width="100%" alt=""/>
+<img src="assets/secoes/escolha-a-sua-trilha.svg" width="100%" alt=""/>
 
 ## 🎮 Escolha a sua trilha
 
@@ -42,7 +42,7 @@
 | Pergunta | Resposta rápida |
 |---|---|
 | Quem é? | Dev **Java backend Junior** na **Zup Innovation**, prestando serviço para o **Itaú**, em transição para **Pleno** (**12/15** competências já praticadas) |
-| Melhor projeto? | **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **346 testes**, CI e logs rastreáveis |
+| Melhor projeto? | **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **356 testes**, CI e logs rastreáveis |
 | Stack principal? | Java · Spring Boot · JPA/Hibernate · MySQL/PostgreSQL · MongoDB · JUnit/Mockito · Docker · GitHub Actions |
 | O que está estudando? | AWS → inglês → mensageria |
 | Contato? | [LinkedIn](https://www.linkedin.com/in/kevin-richard-b68a54203/) · [kevinrichardve@gmail.com](mailto:kevinrichardve@gmail.com) |
@@ -110,7 +110,7 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 
 </details>
 
-<img src="assets/divisor.svg" width="100%" alt=""/>
+<img src="assets/secoes/ao-vivo.svg" width="100%" alt=""/>
 
 ## 📡 Ao vivo
 
@@ -123,7 +123,7 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 
 <!-- AUTO:status:START -->
 <img src="https://img.shields.io/static/v1?label=R%C3%A9gua%20Pleno&message=12%2F15&color=EC7000&style=flat-square"/>
-<img src="https://img.shields.io/static/v1?label=Testes%20RKF%20Bank&message=346%20%E2%9C%94&color=3fb950&style=flat-square&logo=junit5&logoColor=white"/>
+<img src="https://img.shields.io/static/v1?label=Testes%20RKF%20Bank&message=356%20%E2%9C%94&color=3fb950&style=flat-square&logo=junit5&logoColor=white"/>
 <img src="https://img.shields.io/static/v1?label=MVP&message=9%2F15&color=003D74&style=flat-square"/>
 <img src="https://img.shields.io/static/v1?label=Foco%20agora&message=AWS&color=6A1B9A&style=flat-square"/>
 <!-- AUTO:status:END -->
@@ -199,7 +199,7 @@ flowchart LR
     click E "https://github.com/k3vinrich4rd" _blank
 ```
 
-<img src="assets/divisor.svg" width="100%" alt=""/>
+<img src="assets/secoes/trajetoria.svg" width="100%" alt=""/>
 
 ## 🧭 Trajetória
 
@@ -333,13 +333,13 @@ public void sacar(UUID contaId, SaqueRequestDto request, UsuarioLogado usuario) 
 | ➖ Valor **zero ou negativo** passava (e um saque negativo era um depósito!) | `validarValor` recusa com `422` |
 | 🏃 Dois saques ao mesmo tempo **sobrescreviam** um ao outro | `@Transactional` + lock otimista com `@Version` → `409` |
 | 🧾 Nenhum **histórico**: o valor final só substituía o anterior | cada saque gera um lançamento no extrato |
-| 🔇 Sem log nem teste do caminho de erro | log com `X-Request-Id` e 346 testes automatizados |
+| 🔇 Sem log nem teste do caminho de erro | log com `X-Request-Id` e 356 testes automatizados |
 
 <sub>Quantos você achou? Conta pra mim no <a href="#️-livro-de-visitas">livro de visitas</a>. 😄</sub>
 
 </details>
 
-<img src="assets/divisor.svg" width="100%" alt=""/>
+<img src="assets/secoes/sobre-mim.svg" width="100%" alt=""/>
 
 ## 🚀 Sobre mim
 
@@ -375,7 +375,7 @@ public class Kevin extends Developer implements AprendizContinuo {
 
 </details>
 
-<img src="assets/divisor.svg" width="100%" alt=""/>
+<img src="assets/secoes/projeto-atual.svg" width="100%" alt=""/>
 
 ## 🏦 Projeto atual — RKF Bank
 
@@ -876,7 +876,7 @@ sequenceDiagram
 
 </details>
 
-<img src="assets/divisor.svg" width="100%" alt=""/>
+<img src="assets/secoes/projetos-em-destaque.svg" width="100%" alt=""/>
 
 ## 🗂️ Projetos em destaque
 
@@ -895,7 +895,7 @@ sequenceDiagram
 | **Meu papel** | todo o backend | projeto individual |
 | **Domínio** | clientes, contas, depósito, saque, transferência, extrato | usuários, pedidos, produtos, categorias, pagamento |
 | **O que mostra** | transação atômica, lock otimista, ViaCEP com falha tratada, logs com `X-Request-Id` | modelo de domínio rico, chave composta (`OrdemItemPK`), Bean Validation, erros padronizados |
-| **Qualidade** | 346 testes, JaCoCo, CI com CodeQL e Dependabot | camadas controller → service → repository, `DatabaseException` para integridade referencial |
+| **Qualidade** | 356 testes, JaCoCo, CI com CodeQL e Dependabot | camadas controller → service → repository, `DatabaseException` para integridade referencial |
 | **Stack** | Java 25 · Spring Boot 4 · MySQL · Docker · Next.js | Java · Spring Boot · JPA · H2 |
 | **README** | [roteiro do projeto](https://github.com/k3vinrich4rd/rkf_bank#readme) | [modelo de domínio, endpoints e respostas reais](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM#readme) |
 | **Ver primeiro** | [`ContaService`](https://github.com/k3vinrich4rd/rkf_bank) · [roteiro no README](#-projeto-atual--rkf-bank) | [`ProductService`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/services/ProductService.java) · [`ControllerExceptionHandler`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/controllers/handlers/ControllerExceptionHandler.java) |
@@ -1580,7 +1580,7 @@ endsolid repositorios_por_ano
 
 </details>
 
-<img src="assets/divisor.svg" width="100%" alt=""/>
+<img src="assets/secoes/junior-pleno.svg" width="100%" alt=""/>
 
 ## 📈 Junior → Pleno — onde estou
 
@@ -1724,7 +1724,11 @@ quadrantChart
 
 </details>
 
-<details open>
+<div align="center">
+  <img src="assets/competencias.svg" width="100%" alt="Competências de Pleno em cards: praticadas, em andamento e planejadas, cada uma com a evidência"/>
+</div>
+
+<details>
 <summary><b>✅ Competências e evidências</b></summary>
 <br/>
 
@@ -1757,7 +1761,7 @@ quadrantChart
 <br/>
 
 <!-- AUTO:estudos:START -->
-**43** assuntos praticados em projeto · **2** em andamento · **2** planejados
+**44** assuntos praticados em projeto · **2** em andamento · **2** planejados
 
 📚 **69** notas de estudo no segundo cérebro · **60** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
 
@@ -1817,6 +1821,7 @@ mindmap
     Testes
       ✅ DataJpaTest
       ✅ JUnit e Mockito
+      ✅ TDD e estratégia de testes
       ✅ Testcontainers
       ✅ Testes manuais de API - Postman e Insomnia
 ```
@@ -1842,12 +1847,12 @@ mindmap
 <td align="center">🗓️<br/><b>10</b> dias com registro<br/><sub>nos últimos 30</sub></td>
 <td align="center">📚<br/><b>69</b> notas de estudo<br/><sub>60 com exemplo com × sem</sub></td>
 <td align="center">🧭<br/><b>2</b> trilhas<br/><sub>12 módulos</sub></td>
-<td align="center">✅<br/><b>43</b> assuntos<br/><sub>praticados em projeto</sub></td>
+<td align="center">✅<br/><b>44</b> assuntos<br/><sub>praticados em projeto</sub></td>
 </tr></table>
 
 | Trilha | Praticado no RKF Bank | ✅ | 🔄 | 📅 | 📘 |
 |---|---|:-:|:-:|:-:|:-:|
-| **☕🌱 Java & Spring** | 🟩🟩🟩🟩⬜<br/>**37/43** | 37 | 2 | 1 | 3 |
+| **☕🌱 Java & Spring** | 🟩🟩🟩🟩⬜<br/>**38/43** | 38 | 2 | 1 | 2 |
 | **🤖 Inteligência Artificial** | 🟩🟩⬜⬜⬜<br/>**5/15** | 5 | 0 | 1 | 9 |
 
 ```mermaid
@@ -1858,7 +1863,7 @@ flowchart LR
         t0m1["② Spring Boot & arquitetura em camadas<br/>✅ 3/3"]:::forte
         t0m2["③ Banco de dados & sincronização<br/>✅ 6/6"]:::forte
         t0m3["④ Validação e tratamento de erros<br/>✅ 3/3"]:::forte
-        t0m4["⑤ Testes (manuais e automatizados)<br/>✅ 5/6"]:::forte
+        t0m4["⑤ Testes (manuais e automatizados)<br/>✅ 6/6"]:::forte
         t0m5["⑥ Segurança e infraestrutura<br/>✅ 9/14"]:::forte
         t0m0 --> t0m1 --> t0m2 --> t0m3 --> t0m4 --> t0m5
     end
@@ -1888,7 +1893,7 @@ flowchart LR
 | ② Spring Boot & arquitetura em camadas | 🟩🟩🟩🟩🟩<br/>**3/3** | ✅ Spring Framework - IoC DI e AOP · ✅ Spring Boot - auto-configuração e starters · ✅ Spring Boot e camadas |
 | ③ Banco de dados & sincronização | 🟩🟩🟩🟩🟩<br/>**6/6** | ✅ SQL e MySQL · ✅ Spring Data JPA e relacionamentos · ✅ H2 x MySQL · ✅ Flyway · ✅ Lock otimista e transações · ✅ MongoDB |
 | ④ Validação e tratamento de erros | 🟩🟩🟩🟩🟩<br/>**3/3** | ✅ Bean Validation · ✅ Tratamento de erros REST · ✅ Swagger e OpenAPI |
-| ⑤ Testes (manuais e automatizados) | 🟩🟩🟩🟩⬜<br/>**5/6** | 📘 TDD e estratégia de testes · ✅ JUnit e Mockito · ✅ Spring Boot Test · ✅ DataJpaTest · ✅ Testcontainers · ✅ Testes manuais de API - Postman e Insomnia |
+| ⑤ Testes (manuais e automatizados) | 🟩🟩🟩🟩🟩<br/>**6/6** | ✅ TDD e estratégia de testes · ✅ JUnit e Mockito · ✅ Spring Boot Test · ✅ DataJpaTest · ✅ Testcontainers · ✅ Testes manuais de API - Postman e Insomnia |
 | ⑥ Segurança e infraestrutura | 🟩🟩🟩⬜⬜<br/>**9/14** | ✅ Spring Security e JWT · 🔄 OAuth2 e OIDC · ✅ LGPD · 📅 Mensageria e Outbox · 📘 Pub-Sub e DLQ · ✅ Integração com APIs externas · ✅ Logs e observabilidade · ✅ Spring Boot Actuator · ✅ Docker e Compose · ✅ GitHub Actions · ✅ Git Flow e commits semânticos · ✅ Dependências e CVEs · 📘 Spring Cloud e microsserviços · 🔄 AWS |
 
 </details>
@@ -1956,7 +1961,7 @@ flowchart LR
 
 </details>
 
-<img src="assets/divisor.svg" width="100%" alt=""/>
+<img src="assets/secoes/github-stats.svg" width="100%" alt=""/>
 
 ## 📊 GitHub Stats
 
@@ -1974,7 +1979,7 @@ flowchart LR
   <img width="100%" src="https://raw.githubusercontent.com/k3vinrich4rd/k3vinrich4rd/output/profile-night-rainbow.svg" alt="Meus commits em 3D" />
 </picture>
 
-<img src="assets/divisor.svg" width="100%" alt=""/>
+<img src="assets/secoes/pdi.svg" width="100%" alt=""/>
 
 ## 🎯 PDI — Roadmap 2026
 
@@ -2171,7 +2176,7 @@ gantt
 
 </details>
 
-<img src="assets/divisor.svg" width="100%" alt=""/>
+<img src="assets/secoes/tecnologias.svg" width="100%" alt=""/>
 
 ## 🛠️ Tecnologias
 
@@ -2232,7 +2237,7 @@ mindmap
 
 </details>
 
-<img src="assets/divisor.svg" width="100%" alt=""/>
+<img src="assets/secoes/atuacao-profissional.svg" width="100%" alt=""/>
 
 ## 💼 Atuação profissional
 
@@ -2250,7 +2255,7 @@ Atuo como **Desenvolvedor de Software Junior** contratado pela **[Zup Innovation
 
 </div>
 
-<img src="assets/divisor.svg" width="100%" alt=""/>
+<img src="assets/secoes/pergunte-ao-kevin.svg" width="100%" alt=""/>
 
 ## 💬 Pergunte ao Kevin
 
@@ -2428,7 +2433,7 @@ Tem: o GC só recolhe objetos inalcançáveis. Um <code>static Map</code> que nu
 
 </details>
 
-<img src="assets/divisor.svg" width="100%" alt=""/>
+<img src="assets/secoes/formacao-e-certificacoes.svg" width="100%" alt=""/>
 
 ## 🎓 Formação e certificações
 
@@ -2485,6 +2490,8 @@ Tem: o GC só recolhe objetos inalcançáveis. Um <code>static Map</code> que nu
 | Curso Git e GitHub | Workover |
 
 </details>
+
+<img src="assets/secoes/livro-de-visitas.svg" width="100%" alt=""/>
 
 ## ✍️ Livro de visitas
 

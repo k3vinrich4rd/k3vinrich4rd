@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="684" viewBox="0 0 1200 684" role="img" aria-label="Competências de Pleno: 12 de 15 praticadas. API REST em camadas com DTOs e erros padronizados (praticada); Modelagem JPA: relacionamentos, chave composta, cascata (praticada); Testes unitários, web e de repositório (praticada); Transações e concorrência (praticada); Integração com API externa e falhas (praticada); Logs e rastreabilidade (praticada); CI/CD, segurança e dependências (praticada); Git Flow, PRs e commits semânticos (praticada); Banco NoSQL (praticada); Migrações versionadas (praticada); Autenticação e autorização (praticada); Testes de integração com banco real (praticada); Deploy em nuvem (andamento); Inglês técnico (andamento); Mensageria e microsserviços (planejada)">
+  <!-- Gerado por scripts/svgs.mjs. Não edite à mão. -->
+  <defs><linearGradient id="marca" x1="0" x2="1"><stop offset="0" stop-color="#003D74"/><stop offset="1" stop-color="#EC7000"/></linearGradient>
+    <linearGradient id="brilho" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".09"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  </defs>
+  <style>
+    .card { opacity: 0; animation: entra .6s cubic-bezier(.2,.8,.2,1) forwards; }
+    @keyframes entra { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+    .brilho { opacity: 0; animation: brilho 6s ease-in-out infinite; }
+    @keyframes brilho { 0%, 70%, 100% { opacity: 0; } 80% { opacity: 1; } }
+    .pulsa { animation: pulsa 1.4s ease-in-out infinite; }
+    @keyframes pulsa { 0%, 100% { opacity: .35; } 50% { opacity: 1; } }
+    .barra { transform: scaleX(0); transform-origin: left; animation: cresce 2s cubic-bezier(.2,.8,.2,1) .2s forwards; }
+    @keyframes cresce { to { transform: scaleX(1); } }
+  </style>
+  <rect width="1200" height="684" rx="16" fill="#0d1117" stroke="#30363d"/>
+  <text x="18" y="38" style="font: 800 22px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">🧩 Competências de Pleno</text>
+  <text x="18" y="60" style="font: 400 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">cada uma com evidência em projeto público</text>
+  <rect x="860" y="30" width="320" height="12" rx="6" fill="#21262d"/>
+  <rect x="860" y="30" width="256" height="12" rx="6" fill="url(#marca)" class="barra"/>
+  <text x="1180" y="62" text-anchor="end" style="font: 700 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#EC7000">12 / 15 praticadas</text>
+  <g class="card" style="animation-delay:0.15s">
+    <rect x="16" y="78" width="376" height="104" rx="12" fill="#161b22" stroke="#3fb950" stroke-opacity=".55"/>
+    <rect x="16" y="92" width="4" height="76" rx="2" fill="#3fb950"/>
+    <rect x="16" y="78" width="376" height="104" rx="12" fill="url(#brilho)" class="brilho" style="animation-delay:1.60s"/>
+    <text x="36" y="114" style="font: 24px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">🌐</text>
+    <text x="74" y="108" style="font: 600 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">API REST em camadas com DTOs e</text>
+    <text x="74" y="127" style="font: 600 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">erros padronizados</text>
+    <text x="74" y="162" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">RKF Bank, DSCommerce, Worksho…</text>
+    <text x="378" y="162" text-anchor="end" style="font: 600 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#3fb950">✅ praticada</text>
+  </g>
+  <g class="card" style="animation-delay:0.24s">
+    <rect x="408" y="78" width="376" height="104" rx="12" fill="#161b22" stroke="#3fb950" stroke-opacity=".55"/>
+    <rect x="408" y="92" width="4" height="76" rx="2" fill="#3fb950"/>
+    <rect x="408" y="78" width="376" height="104" rx="12" fill="url(#brilho)" class="brilho" style="animation-delay:1.85s"/>
+    <text x="428" y="114" style="font: 24px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">🗃️</text>
+    <text x="466" y="108" style="font: 600 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Modelagem JPA: relacionamentos,</text>
+    <text x="466" y="127" style="font: 600 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">chave composta, cascata</text>
+    <text x="466" y="162" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">Workshop JPA, DSCommerce, RKF…</text>
+    <text x="770" y="162" text-anchor="end" style="font: 600 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#3fb950">✅ praticada</text>
+  </g>
+  <g class="card" style="animation-delay:0.33s">
+    <rect x="800" y="78" width="376" height="104" rx="12" fill="#161b22" stroke="#3fb950" stroke-opacity=".55"/>
+    <rect x="800" y="92" width="4" height="76" rx="2" fill="#3fb950"/>
+    <rect x="800" y="78" width="376" height="104" rx="12" fill="url(#brilho)" class="brilho" style="animation-delay:2.10s"/>
+    <text x="820" y="114" style="font: 24px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">🧪</text>
+    <text x="858" y="108" style="font: 600 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Testes unitários, web e de</text>
+    <text x="858" y="127" style="font: 600 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">repositório</text>
+    <text x="858" y="162" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">RKF Bank</text>
+    <text x="1162" y="162" text-anchor="end" style="font: 600 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#3fb950">✅ praticada</text>
+  </g>
+  <g class="card" style="animation-delay:0.42s">
+    <rect x="16" y="198" width="376" height="104" rx="12" fill="#161b22" stroke="#3fb950" stroke-opacity=".55"/>
+    <rect x="16" y="212" width="4" height="76" rx="2" fill="#3fb950"/>
+    <rect x="16" y="198" width="376" height="104" rx="12" fill="url(#brilho)" class="brilho" style="animation-delay:2.35s"/>
+    <text x="36" y="234" style="font: 24px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">🔒</text>
+    <text x="74" y="228" style="font: 600 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Transações e concorrência</text>
+    <text x="74" y="282" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">RKF Bank</text>
+    <text x="378" y="282" text-anchor="end" style="font: 600 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#3fb950">✅ praticada</text>
+  </g>
+  <g class="card" style="animation-delay:0.51s">
+    <rect x="408" y="198" width="376" height="104" rx="12" fill="#161b22" stroke="#3fb950" stroke-opacity=".55"/>
+    <rect x="408" y="212" width="4" height="76" rx="2" fill="#3fb950"/>
+    <rect x="408" y="198" width="376" height="104" rx="12" fill="url(#brilho)" class="brilho" style="animation-delay:2.60s"/>
+    <text x="428" y="234" style="font: 24px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">🔌</text>
+    <text x="466" y="228" style="font: 600 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Integração com API externa e</text>
+    <text x="466" y="247" style="font: 600 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">falhas</text>
+    <text x="466" y="282" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">RKF Bank</text>
+    <text x="770" y="282" text-anchor="end" style="font: 600 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#3fb950">✅ praticada</text>
+  </g>
+  <g class="card" style="animation-delay:0.60s">
+    <rect x="800" y="198" width="376" height="104" rx="12" fill="#161b22" stroke="#3fb950" stroke-opacity=".55"/>
+    <rect x="800" y="212" width="4" height="76" rx="2" fill="#3fb950"/>
+    <rect x="800" y="198" width="376" height="104" rx="12" fill="url(#brilho)" class="brilho" style="animation-delay:2.85s"/>
+    <text x="820" y="234" style="font: 24px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">🔎</text>
+    <text x="858" y="228" style="font: 600 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Logs e rastreabilidade</text>
+    <text x="858" y="282" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">RKF Bank</text>
+    <text x="1162" y="282" text-anchor="end" style="font: 600 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#3fb950">✅ praticada</text>
+  </g>
+  <g class="card" style="animation-delay:0.69s">
+    <rect x="16" y="318" width="376" height="104" rx="12" fill="#161b22" stroke="#3fb950" stroke-opacity=".55"/>
+    <rect x="16" y="332" width="4" height="76" rx="2" fill="#3fb950"/>
+    <rect x="16" y="318" width="376" height="104" rx="12" fill="url(#brilho)" class="brilho" style="animation-delay:3.10s"/>
+    <text x="36" y="354" style="font: 24px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">⚙️</text>
+    <text x="74" y="348" style="font: 600 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">CI/CD, segurança e dependências</text>
+    <text x="74" y="402" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">RKF Bank</text>
+    <text x="378" y="402" text-anchor="end" style="font: 600 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#3fb950">✅ praticada</text>
+  </g>
+  <g class="card" style="animation-delay:0.78s">
+    <rect x="408" y="318" width="376" height="104" rx="12" fill="#161b22" stroke="#3fb950" stroke-opacity=".55"/>
+    <rect x="408" y="332" width="4" height="76" rx="2" fill="#3fb950"/>
+    <rect x="408" y="318" width="376" height="104" rx="12" fill="url(#brilho)" class="brilho" style="animation-delay:3.35s"/>
+    <text x="428" y="354" style="font: 24px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">🌿</text>
+    <text x="466" y="348" style="font: 600 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Git Flow, PRs e commits semânticos</text>
+    <text x="466" y="402" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">RKF Bank</text>
+    <text x="770" y="402" text-anchor="end" style="font: 600 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#3fb950">✅ praticada</text>
+  </g>
+  <g class="card" style="animation-delay:0.87s">
+    <rect x="800" y="318" width="376" height="104" rx="12" fill="#161b22" stroke="#3fb950" stroke-opacity=".55"/>
+    <rect x="800" y="332" width="4" height="76" rx="2" fill="#3fb950"/>
+    <rect x="800" y="318" width="376" height="104" rx="12" fill="url(#brilho)" class="brilho" style="animation-delay:3.60s"/>
+    <text x="820" y="354" style="font: 24px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">🍃</text>
+    <text x="858" y="348" style="font: 600 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Banco NoSQL</text>
+    <text x="858" y="402" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">Workshop MongoDB</text>
+    <text x="1162" y="402" text-anchor="end" style="font: 600 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#3fb950">✅ praticada</text>
+  </g>
+  <g class="card" style="animation-delay:0.96s">
+    <rect x="16" y="438" width="376" height="104" rx="12" fill="#161b22" stroke="#3fb950" stroke-opacity=".55"/>
+    <rect x="16" y="452" width="4" height="76" rx="2" fill="#3fb950"/>
+    <rect x="16" y="438" width="376" height="104" rx="12" fill="url(#brilho)" class="brilho" style="animation-delay:3.85s"/>
+    <text x="36" y="474" style="font: 24px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">🛫</text>
+    <text x="74" y="468" style="font: 600 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Migrações versionadas</text>
+    <text x="74" y="522" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">RKF Bank</text>
+    <text x="378" y="522" text-anchor="end" style="font: 600 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#3fb950">✅ praticada</text>
+  </g>
+  <g class="card" style="animation-delay:1.05s">
+    <rect x="408" y="438" width="376" height="104" rx="12" fill="#161b22" stroke="#3fb950" stroke-opacity=".55"/>
+    <rect x="408" y="452" width="4" height="76" rx="2" fill="#3fb950"/>
+    <rect x="408" y="438" width="376" height="104" rx="12" fill="url(#brilho)" class="brilho" style="animation-delay:4.10s"/>
+    <text x="428" y="474" style="font: 24px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">🛡️</text>
+    <text x="466" y="468" style="font: 600 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Autenticação e autorização</text>
+    <text x="466" y="522" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">RKF Bank</text>
+    <text x="770" y="522" text-anchor="end" style="font: 600 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#3fb950">✅ praticada</text>
+  </g>
+  <g class="card" style="animation-delay:1.14s">
+    <rect x="800" y="438" width="376" height="104" rx="12" fill="#161b22" stroke="#3fb950" stroke-opacity=".55"/>
+    <rect x="800" y="452" width="4" height="76" rx="2" fill="#3fb950"/>
+    <rect x="800" y="438" width="376" height="104" rx="12" fill="url(#brilho)" class="brilho" style="animation-delay:4.35s"/>
+    <text x="820" y="474" style="font: 24px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">🐳</text>
+    <text x="858" y="468" style="font: 600 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Testes de integração com banco</text>
+    <text x="858" y="487" style="font: 600 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">real</text>
+    <text x="858" y="522" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">RKF Bank</text>
+    <text x="1162" y="522" text-anchor="end" style="font: 600 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#3fb950">✅ praticada</text>
+  </g>
+  <g class="card" style="animation-delay:1.23s">
+    <rect x="16" y="558" width="376" height="104" rx="12" fill="#161b22" stroke="#d29922" stroke-opacity=".55"/>
+    <rect x="16" y="572" width="4" height="76" rx="2" fill="#d29922" class="pulsa"/>
+    
+    <text x="36" y="594" style="font: 24px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">☁️</text>
+    <text x="74" y="588" style="font: 600 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Deploy em nuvem</text>
+    <text x="74" y="642" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">em andamento</text>
+    <text x="378" y="642" text-anchor="end" style="font: 600 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#d29922">🔄 em andamento</text>
+  </g>
+  <g class="card" style="animation-delay:1.32s">
+    <rect x="408" y="558" width="376" height="104" rx="12" fill="#161b22" stroke="#d29922" stroke-opacity=".55"/>
+    <rect x="408" y="572" width="4" height="76" rx="2" fill="#d29922" class="pulsa"/>
+    
+    <text x="428" y="594" style="font: 24px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">🗣️</text>
+    <text x="466" y="588" style="font: 600 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Inglês técnico</text>
+    <text x="466" y="642" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">em andamento</text>
+    <text x="770" y="642" text-anchor="end" style="font: 600 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#d29922">🔄 em andamento</text>
+  </g>
+  <g class="card" style="animation-delay:1.41s">
+    <rect x="800" y="558" width="376" height="104" rx="12" fill="#161b22" stroke="#8b949e" stroke-opacity=".55" stroke-dasharray="6 5"/>
+    <rect x="800" y="572" width="4" height="76" rx="2" fill="#8b949e"/>
+    
+    <text x="820" y="594" style="font: 24px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">📨</text>
+    <text x="858" y="588" style="font: 600 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Mensageria e microsserviços</text>
+    <text x="858" y="642" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">próximo ciclo</text>
+    <text x="1162" y="642" text-anchor="end" style="font: 600 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">⏳ planejada</text>
+  </g>
+</svg>

@@ -201,7 +201,10 @@ const apelido = (n) => apelidos.find(([re]) => re.test(n))?.[1] ?? n.split(' ').
 
 function svgRumoAoPleno() {
   const largura = Math.round((742 * regua.praticadas) / regua.total);
-  const nomes = regua.itens.filter((i) => i.status === 'praticada').map((i) => apelido(i.nome)).join(' · ');
+  // Em duas linhas: numa só, os nomes passavam por cima do "2 em andamento" do lado direito.
+  const lista = regua.itens.filter((i) => i.status === 'praticada').map((i) => apelido(i.nome));
+  const meio = Math.ceil(lista.length / 2);
+  const nomes = [lista.slice(0, meio).join(' · '), lista.slice(meio).join(' · ')];
   return `<svg xmlns="http://www.w3.org/2000/svg" width="820" height="230" viewBox="0 0 820 230" role="img" aria-label="Rumo ao Pleno: ${regua.praticadas} de ${regua.total} competências praticadas em projeto">
   <!-- Gerado por scripts/atualizar-readme.mjs a partir de progresso.json. Não edite à mão. -->
   <defs>
@@ -233,7 +236,8 @@ function svgRumoAoPleno() {
   <g class="pop" style="animation-delay:2.6s">
     <text x="30" y="196" class="t" font-size="30" font-weight="800" fill="#EC7000">${regua.praticadas} / ${regua.total}</text>
     <text x="150" y="186" class="t" font-size="13">✅ praticadas</text>
-    <text x="150" y="205" class="t dim" font-size="11.5">${xml(nomes)}</text>
+    <text x="150" y="204" class="t dim" font-size="11.5">${xml(nomes[0])}</text>
+    <text x="150" y="219" class="t dim" font-size="11.5">${xml(nomes[1])}</text>
   </g>
   <g class="pop" style="animation-delay:3.1s">
     <text x="790" y="196" text-anchor="end" class="t" font-size="13">🔄 ${regua.andamento} em andamento</text>
@@ -646,6 +650,35 @@ if (usarApi) {
 }
 readme = substituirBloco(readme, 'agora', blocoAgora());
 
+// Visual de site: cards animados das competências (a tabela continua logo abaixo, recolhida) e um cabeçalho animado
+// em cada seção ## (estilo terminal: kevin@portfolio:~$ cd ~/secao). Os cabeçalhos saem dos próprios títulos.
+const IMG_COMPETENCIAS = '<img src="assets/competencias.svg" width="100%" alt="Competências de Pleno em cards: praticadas, em andamento e planejadas, cada uma com a evidência"/>';
+const MARCA_TABELA = '<summary><b>✅ Competências e evidências</b></summary>';
+if (!readme.includes(IMG_COMPETENCIAS)) {
+  readme = readme.replace(`<details open>\n${MARCA_TABELA}`, `<div align="center">\n  ${IMG_COMPETENCIAS}\n</div>\n\n<details>\n${MARCA_TABELA}`);
+}
+const slug = (titulo) => titulo.replace(/^[^A-Za-zÀ-ú0-9]+/, '').split(' — ')[0].normalize('NFD').replace(/[̀-ͯ]/g, '')
+  .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const secoes = [];
+{
+  const linhas = readme.split('\n');
+  let dentroDeCodigo = false;
+  linhas.forEach((l, i) => {
+    if (l.startsWith('```')) dentroDeCodigo = !dentroDeCodigo;
+    else if (!dentroDeCodigo && l.startsWith('## ')) secoes.push({ linha: i, titulo: l.slice(3).trim(), indice: secoes.length });
+  });
+  // De baixo para cima, para os índices das linhas não mudarem ao inserir.
+  for (const sec of [...secoes].reverse()) {
+    sec.caminho = slug(sec.titulo);
+    const img = `<img src="assets/secoes/${sec.caminho}.svg" width="100%" alt=""/>`;
+    let j = sec.linha - 1;
+    while (j >= 0 && linhas[j].trim() === '') j--;
+    if (/^<img src="assets\/(divisor|secoes\/[^"]+)\.svg" width="100%" alt=""\/>$/.test(linhas[j])) linhas[j] = img;
+    else linhas.splice(sec.linha, 0, img, '');
+  }
+  readme = linhas.join('\n');
+}
+
 // O pulso usa a página pública de contribuições: funciona com ou sem token. Se falhar, fica o anterior.
 let svgPulso = null;
 try {
@@ -705,6 +738,8 @@ const mudancas = [
   ...Object.entries(botoes).map(([nome, [texto, op]]) => escrever(path.join(RAIZ, 'assets', 'botoes', nome), svg.botao(texto, op)) && `assets/botoes/${nome}`),
   escrever(path.join(RAIZ, 'assets', 'banner.svg'), svgBanner()) && 'assets/banner.svg',
   escrever(path.join(RAIZ, 'assets', 'rumo-ao-pleno.svg'), svgRumoAoPleno()) && 'assets/rumo-ao-pleno.svg',
+  escrever(path.join(RAIZ, 'assets', 'competencias.svg'), svg.competencias(regua.itens)) && 'assets/competencias.svg',
+  ...secoes.map((sec) => escrever(path.join(RAIZ, 'assets', 'secoes', `${sec.caminho}.svg`), svg.secao(sec.indice, secoes.length, sec.caminho, sec.titulo)) && `assets/secoes/${sec.caminho}.svg`),
   escrever(path.join(RAIZ, 'assets', 'terminal.svg'), atualizarTerminal(ler(path.join(RAIZ, 'assets', 'terminal.svg')))) && 'assets/terminal.svg',
 ].filter(Boolean);
 console.log(mudancas.length ? `atualizado: ${mudancas.join(', ')}` : 'README e SVGs sem mudanças');

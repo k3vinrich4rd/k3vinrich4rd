@@ -341,3 +341,106 @@ ${estiloAvatar}
 </svg>
 `;
 }
+
+// ---------- 🧩 competências (cards) ----------
+
+const ICONES_COMPETENCIA = [
+  [/API REST/i, '🌐'], [/JPA/i, '🗃️'], [/Testes unit/i, '🧪'], [/Transa/i, '🔒'], [/API externa/i, '🔌'], [/Logs/i, '🔎'],
+  [/CI\/CD/i, '⚙️'], [/Git Flow/i, '🌿'], [/NoSQL/i, '🍃'], [/Migra/i, '🛫'], [/Autentica/i, '🛡️'], [/banco real/i, '🐳'],
+  [/nuvem/i, '☁️'], [/Ingl/i, '🗣️'], [/Mensageria/i, '📨'],
+];
+
+// Quebra o texto em até `max` linhas de no máximo `largura` caracteres (o SVG não quebra linha sozinho).
+function quebrar(texto, largura, max) {
+  const linhas = [''];
+  for (const palavra of texto.split(' ')) {
+    const atual = linhas[linhas.length - 1];
+    if ((atual + ' ' + palavra).trim().length <= largura) linhas[linhas.length - 1] = (atual + ' ' + palavra).trim();
+    else if (linhas.length < max) linhas.push(palavra);
+    else { linhas[linhas.length - 1] = `${atual.slice(0, largura - 1)}…`; break; }
+  }
+  return linhas;
+}
+
+/** Grade de cards das competências de Pleno: cada card entra em sequência; praticada brilha, em andamento pulsa. */
+export function competencias(itens) {
+  const COLUNAS = 3, W = 376, H = 104, GAP = 16, TOPO = 78;
+  const linhas = Math.ceil(itens.length / COLUNAS);
+  const altura = TOPO + linhas * (H + GAP) + 6;
+  const cor = { praticada: VERDE, andamento: '#d29922', planejada: APAGADO };
+  const selo = { praticada: '✅ praticada', andamento: '🔄 em andamento', planejada: '⏳ planejada' };
+  const praticadas = itens.filter((i) => i.status === 'praticada').length;
+  const cards = itens.map((item, n) => {
+    const x = 16 + (n % COLUNAS) * (W + GAP);
+    const y = TOPO + Math.floor(n / COLUNAS) * (H + GAP);
+    const icone = ICONES_COMPETENCIA.find(([re]) => re.test(item.nome))?.[1] ?? '⭐';
+    const evidencia = (item.evidencia || (item.status === 'planejada' ? 'próximo ciclo' : 'em andamento'))
+      .replace(/`/g, '').split(' · ')[0].replace(/\s*\(.*$/, '');
+    const nome = quebrar(item.nome, 34, 2);
+    const c = cor[item.status] ?? APAGADO;
+    const tracejado = item.status === 'planejada' ? ' stroke-dasharray="6 5"' : '';
+    return `  <g class="card" style="animation-delay:${(0.15 + n * 0.09).toFixed(2)}s">
+    <rect x="${x}" y="${y}" width="${W}" height="${H}" rx="12" fill="#161b22" stroke="${c}" stroke-opacity=".55"${tracejado}/>
+    <rect x="${x}" y="${y + 14}" width="4" height="${H - 28}" rx="2" fill="${c}"${item.status === 'andamento' ? ' class="pulsa"' : ''}/>
+    ${item.status === 'praticada' ? `<rect x="${x}" y="${y}" width="${W}" height="${H}" rx="12" fill="url(#brilho)" class="brilho" style="animation-delay:${(1.6 + n * 0.25).toFixed(2)}s"/>` : ''}
+    <text x="${x + 20}" y="${y + 36}" style="font: 24px ${SANS}">${icone}</text>
+    ${nome.map((l, i) => `<text x="${x + 58}" y="${y + 30 + i * 19}" style="font: 600 15px ${SANS}" fill="${TEXTO}">${xml(l)}</text>`).join('\n    ')}
+    <text x="${x + 58}" y="${y + 84}" style="font: 400 12.5px ${SANS}" fill="${APAGADO}">${xml(quebrar(evidencia, 30, 1)[0])}</text>
+    <text x="${x + W - 14}" y="${y + 84}" text-anchor="end" style="font: 600 12px ${SANS}" fill="${c}">${selo[item.status] ?? ''}</text>
+  </g>`;
+  });
+  return `${cabecalho(1200, altura, `Competências de Pleno: ${praticadas} de ${itens.length} praticadas. ${itens.map((i) => `${i.nome} (${i.status})`).join('; ')}`)}
+  <defs>${gradientes}
+    <linearGradient id="brilho" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".09"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  </defs>
+  <style>
+    .card { opacity: 0; animation: entra .6s cubic-bezier(.2,.8,.2,1) forwards; }
+    @keyframes entra { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+    .brilho { opacity: 0; animation: brilho 6s ease-in-out infinite; }
+    @keyframes brilho { 0%, 70%, 100% { opacity: 0; } 80% { opacity: 1; } }
+    .pulsa { animation: pulsa 1.4s ease-in-out infinite; }
+    @keyframes pulsa { 0%, 100% { opacity: .35; } 50% { opacity: 1; } }
+    .barra { transform: scaleX(0); transform-origin: left; animation: cresce 2s cubic-bezier(.2,.8,.2,1) .2s forwards; }
+    @keyframes cresce { to { transform: scaleX(1); } }
+  </style>
+  <rect width="1200" height="${altura}" rx="16" fill="${FUNDO}" stroke="${BORDA}"/>
+  <text x="18" y="38" style="font: 800 22px ${SANS}" fill="${TEXTO}">🧩 Competências de Pleno</text>
+  <text x="18" y="60" style="font: 400 13px ${SANS}" fill="${APAGADO}">cada uma com evidência em projeto público</text>
+  <rect x="860" y="30" width="320" height="12" rx="6" fill="#21262d"/>
+  <rect x="860" y="30" width="${Math.round((320 * praticadas) / itens.length)}" height="12" rx="6" fill="url(#marca)" class="barra"/>
+  <text x="1180" y="62" text-anchor="end" style="font: 700 14px ${SANS}" fill="${LARANJA}">${praticadas} / ${itens.length} praticadas</text>
+${cards.join('\n')}
+</svg>
+`;
+}
+
+// ---------- 🖥️ cabeçalho de seção (estilo terminal de site) ----------
+
+/** Faixa de navegação da seção: o comando "cd" digitando, cursor piscando e a posição da seção na página. */
+export function secao(indice, total, caminho, titulo) {
+  const comando = `cd ~/${caminho}`;
+  const largura = comando.length * 10.2;
+  const pontos = Array.from({ length: total }, (_, i) =>
+    `<circle cx="${1180 - (total - 1 - i) * 16}" cy="26" r="${i === indice ? 5 : 3.5}" fill="${i === indice ? LARANJA : i < indice ? AZUL : BORDA}"${i === indice ? ' class="atual"' : ''}/>`).join('');
+  return `${cabecalho(1200, 52, `Seção ${indice + 1} de ${total}: ${titulo}`)}
+  <defs>${gradientes}</defs>
+  <style>
+    .digita { clip-path: inset(0 100% 0 0); animation: digita 1.1s steps(${comando.length}) .25s forwards; }
+    @keyframes digita { to { clip-path: inset(0 0 0 0); } }
+    .cursor { animation: pisca 1s steps(1) infinite; }
+    @keyframes pisca { 50% { opacity: 0; } }
+    .linha { transform: scaleX(0); transform-origin: left; animation: cresce 1.4s cubic-bezier(.2,.8,.2,1) .2s forwards; }
+    @keyframes cresce { to { transform: scaleX(1); } }
+    .atual { animation: pulsa 1.6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes pulsa { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.35); } }
+  </style>
+  <rect y="49" width="1200" height="2" rx="1" fill="url(#marca)" class="linha"/>
+  <text x="4" y="32" style="font: 600 15px ${MONO}" fill="${VERDE}">kevin@portfolio</text>
+  <text x="152" y="32" style="font: 600 15px ${MONO}" fill="${APAGADO}">:~$</text>
+  <text x="192" y="32" class="digita" style="font: 600 15px ${MONO}" fill="${TEXTO}">${xml(comando)}</text>
+  <rect x="${Math.round(196 + largura)}" y="18" width="9" height="17" fill="${LARANJA}" class="cursor"/>
+  <text x="${1180 - total * 16 - 8}" y="31" text-anchor="end" style="font: 600 12px ${MONO}" fill="${APAGADO}">${String(indice + 1).padStart(2, '0')}/${String(total).padStart(2, '0')}</text>
+  ${pontos}
+</svg>
+`;
+}
