@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="236" viewBox="0 0 1200 236" role="img" aria-label="Formação e certificações: 18 cursos. ☕ Java e desenvolvimento backend: Formação Java com Orientação a Objetos (Alura), Java: consumindo API, gravando arquivos e lidando com erros (Alura), Java: aplicando a Orientação a Objetos (Alura), Java: trabalhando com listas e coleções de dados (Alura), Java: criando a sua primeira aplicação (Alura), Spring Boot 3: desenvolva uma API Rest em Java (Alura), TDD e Java: testes automatizados com JUnit (Alura), Mocks em Java: conhecendo o Mockito (Alura), Java COMPLETO Programação Orientada a Objetos + Projetos (Udemy); 🗄️ Banco de dados: SQL com MySQL: manipule e consulte dados (Alura), Comandos DML: manipulação de dados com MySQL (Alura), Consultas SQL: avançando no SQL com MySQL (Alura); ☁️ Cloud e infraestrutura: Formação Começando em Cloud Computing (Alura), Amazon EC2: alta disponibilidade e escalabilidade (Alura), Exam Readiness: AWS Certified Cloud Practitioner (AWS), Linux Onboarding: usando a CLI de forma prática (Alura); ➕ Complementares: Formação Linguagem Kotlin (Alura), Curso Git e GitHub (Workover)">
+  <!-- Gerado por scripts/visuais.mjs a partir do README e do progresso.json. Não edite à mão. -->
+  <defs><linearGradient id="marca" x1="0" x2="1"><stop offset="0" stop-color="#003D74"/><stop offset="1" stop-color="#EC7000"/></linearGradient></defs>
+  <style>
+    .entra { opacity: 0; animation: entra .6s cubic-bezier(.2,.8,.2,1) forwards; }
+    @keyframes entra { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+    .barra { transform: scaleX(0); transform-box: fill-box; transform-origin: left; animation: cresce 1.6s cubic-bezier(.2,.8,.2,1) forwards; }
+    @keyframes cresce { to { transform: scaleX(1); } }
+    .pulsa { animation: pulsa 1.6s ease-in-out infinite; }
+    @keyframes pulsa { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }</style>
+  <rect width="1200" height="236" rx="16" fill="#0d1117" stroke="#30363d"/>
+  <text x="22" y="40" style="font: 800 21px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">🎓 18 cursos e certificações</text>
+  <text x="1178" y="40" text-anchor="end" style="font: 400 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">abra cada área abaixo para ver a lista completa</text>
+  <g class="entra" style="animation-delay:0.10s">
+    <rect x="20" y="66" width="280" height="150" rx="14" fill="#161b22" stroke="#30363d"/>
+    <text x="40" y="108" style="font: 28px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">☕</text>
+    <text x="280" y="112" text-anchor="end" style="font: 800 40px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#EC7000">9</text>
+    <text x="40" y="146" style="font: 700 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Java e desenvolvimento backend</text>
+    <text x="40" y="200" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">Alura 8 · Udemy 1</text>
+  </g>
+  <g class="entra" style="animation-delay:0.24s">
+    <rect x="313.3" y="66" width="280" height="150" rx="14" fill="#161b22" stroke="#30363d"/>
+    <text x="333.3" y="108" style="font: 28px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">🗄️</text>
+    <text x="573.3" y="112" text-anchor="end" style="font: 800 40px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#EC7000">3</text>
+    <text x="333.3" y="146" style="font: 700 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Banco de dados</text>
+    <text x="333.3" y="200" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">Alura 3</text>
+  </g>
+  <g class="entra" style="animation-delay:0.38s">
+    <rect x="606.6" y="66" width="280" height="150" rx="14" fill="#161b22" stroke="#30363d"/>
+    <text x="626.6" y="108" style="font: 28px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">☁️</text>
+    <text x="866.6" y="112" text-anchor="end" style="font: 800 40px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#EC7000">4</text>
+    <text x="626.6" y="146" style="font: 700 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Cloud e infraestrutura</text>
+    <text x="626.6" y="200" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">Alura 3 · AWS 1</text>
+  </g>
+  <g class="entra" style="animation-delay:0.52s">
+    <rect x="899.9000000000001" y="66" width="280" height="150" rx="14" fill="#161b22" stroke="#30363d"/>
+    <text x="919.9000000000001" y="108" style="font: 28px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">➕</text>
+    <text x="1159.9" y="112" text-anchor="end" style="font: 800 40px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#EC7000">2</text>
+    <text x="919.9000000000001" y="146" style="font: 700 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Complementares</text>
+    <text x="919.9000000000001" y="200" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">Alura 1 · Workover 1</text>
+  </g>
+</svg>

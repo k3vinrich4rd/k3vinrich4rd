@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-label="PDI 2026, pilares: ☕ Java + Spring (Em andamento): Spring Boot, JPA, MongoDB, testes; ☁️ AWS (Em estudo): EC2, S3, Lambda, IAM, Cloud Practitioner; 🤖 Agent IA (Iniciando): LLMs, agentes, integração Java + IA; 🧠 Spec-Driven Dev (Iniciando): API First, OpenAPI, contratos; 📈 Skill em IA (Iniciando): Copilot, produtividade técnica com IA">
+  <!-- Gerado por scripts/visuais.mjs a partir do README e do progresso.json. Não edite à mão. -->
+  <defs><linearGradient id="marca" x1="0" x2="1"><stop offset="0" stop-color="#003D74"/><stop offset="1" stop-color="#EC7000"/></linearGradient></defs>
+  <style>
+    .entra { opacity: 0; animation: entra .6s cubic-bezier(.2,.8,.2,1) forwards; }
+    @keyframes entra { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+    .barra { transform: scaleX(0); transform-box: fill-box; transform-origin: left; animation: cresce 1.6s cubic-bezier(.2,.8,.2,1) forwards; }
+    @keyframes cresce { to { transform: scaleX(1); } }
+    .pulsa { animation: pulsa 1.6s ease-in-out infinite; }
+    @keyframes pulsa { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }</style>
+  <rect width="1200" height="280" rx="16" fill="#0d1117" stroke="#30363d"/>
+  <text x="22" y="40" style="font: 800 21px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">🎯 Pilares do PDI 2026</text>
+  <text x="1178" y="40" text-anchor="end" style="font: 400 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">da transição de Junior para Pleno</text>
+  <rect x="22" y="52" width="1156" height="2" rx="1" fill="url(#marca)" class="barra"/>
+  <g class="entra" style="animation-delay:0.10s">
+    <rect x="20" y="70" width="220" height="190" rx="14" fill="#161b22" stroke="#6DB33F" stroke-opacity=".6"/>
+    <rect x="20" y="70" width="220" height="5" rx="2.5" fill="#6DB33F"/>
+    <text x="40" y="118" style="font: 30px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">☕</text>
+    <text x="40" y="152" style="font: 700 17px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Java + Spring</text>
+    <rect x="40" y="164" width="115" height="24" rx="12" fill="#6DB33F" fill-opacity=".18" stroke="#6DB33F"/>
+    <circle cx="53" cy="176" r="4" fill="#6DB33F" class="pulsa"/>
+    <text x="63" y="181" style="font: 700 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Em andamento</text>
+    <text x="40" y="212" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">Spring Boot, JPA, MongoDB,</text>
+    <text x="40" y="229" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">testes</text>
+  </g>
+  <g class="entra" style="animation-delay:0.23s">
+    <rect x="255" y="70" width="220" height="190" rx="14" fill="#161b22" stroke="#FF9900" stroke-opacity=".6"/>
+    <rect x="255" y="70" width="220" height="5" rx="2.5" fill="#FF9900"/>
+    <text x="275" y="118" style="font: 30px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">☁️</text>
+    <text x="275" y="152" style="font: 700 17px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">AWS</text>
+    <rect x="275" y="164" width="92" height="24" rx="12" fill="#FF9900" fill-opacity=".18" stroke="#FF9900"/>
+    <circle cx="288" cy="176" r="4" fill="#FF9900" class="pulsa"/>
+    <text x="298" y="181" style="font: 700 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Em estudo</text>
+    <text x="275" y="212" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">EC2, S3, Lambda, IAM, Cloud</text>
+    <text x="275" y="229" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">Practitioner</text>
+  </g>
+  <g class="entra" style="animation-delay:0.36s">
+    <rect x="490" y="70" width="220" height="190" rx="14" fill="#161b22" stroke="#412991" stroke-opacity=".6"/>
+    <rect x="490" y="70" width="220" height="5" rx="2.5" fill="#412991"/>
+    <text x="510" y="118" style="font: 30px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">🤖</text>
+    <text x="510" y="152" style="font: 700 17px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Agent IA</text>
+    <rect x="510" y="164" width="92" height="24" rx="12" fill="#412991" fill-opacity=".18" stroke="#412991"/>
+    <circle cx="523" cy="176" r="4" fill="#412991" class="pulsa"/>
+    <text x="533" y="181" style="font: 700 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Iniciando</text>
+    <text x="510" y="212" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">LLMs, agentes, integração</text>
+    <text x="510" y="229" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">Java + IA</text>
+  </g>
+  <g class="entra" style="animation-delay:0.49s">
+    <rect x="725" y="70" width="220" height="190" rx="14" fill="#161b22" stroke="#0D47A1" stroke-opacity=".6"/>
+    <rect x="725" y="70" width="220" height="5" rx="2.5" fill="#0D47A1"/>
+    <text x="745" y="118" style="font: 30px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">🧠</text>
+    <text x="745" y="152" style="font: 700 17px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Spec-Driven Dev</text>
+    <rect x="745" y="164" width="92" height="24" rx="12" fill="#0D47A1" fill-opacity=".18" stroke="#0D47A1"/>
+    <circle cx="758" cy="176" r="4" fill="#0D47A1" class="pulsa"/>
+    <text x="768" y="181" style="font: 700 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Iniciando</text>
+    <text x="745" y="212" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">API First, OpenAPI,</text>
+    <text x="745" y="229" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">contratos</text>
+  </g>
+  <g class="entra" style="animation-delay:0.62s">
+    <rect x="960" y="70" width="220" height="190" rx="14" fill="#161b22" stroke="#EC7000" stroke-opacity=".6"/>
+    <rect x="960" y="70" width="220" height="5" rx="2.5" fill="#EC7000"/>
+    <text x="980" y="118" style="font: 30px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">📈</text>
+    <text x="980" y="152" style="font: 700 17px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Skill em IA</text>
+    <rect x="980" y="164" width="92" height="24" rx="12" fill="#EC7000" fill-opacity=".18" stroke="#EC7000"/>
+    <circle cx="993" cy="176" r="4" fill="#EC7000" class="pulsa"/>
+    <text x="1003" y="181" style="font: 700 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Iniciando</text>
+    <text x="980" y="212" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">Copilot, produtividade</text>
+    <text x="980" y="229" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">técnica com IA</text>
+  </g>
+</svg>

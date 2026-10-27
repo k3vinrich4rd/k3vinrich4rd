@@ -1843,6 +1843,14 @@ mindmap
 > De dia, entrego como **Java backend na Zup**, prestando serviço para o **Itaú**. Fora do expediente, sigo **duas trilhas de estudo** e transformo cada assunto em uma nota no meu Obsidian, com diagrama, exemplo **com × sem** usando o **RKF Bank** e como testar. Depois levo o que aprendi para o projeto. Este painel se atualiza sozinho a cada commit.
 
 <!-- AUTO:cerebro:START -->
+<div align="center">
+  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 10 dias com registro, 69 notas, 2 trilhas e 44 assuntos praticados; progresso de cada trilha e de cada módulo"/>
+</div>
+
+<details>
+<summary><b>📋 Os números em tabela</b></summary>
+<br/>
+
 <table align="center"><tr>
 <td align="center">🗓️<br/><b>10</b> dias com registro<br/><sub>nos últimos 30</sub></td>
 <td align="center">📚<br/><b>69</b> notas de estudo<br/><sub>60 com exemplo com × sem</sub></td>
@@ -1855,33 +1863,7 @@ mindmap
 | **☕🌱 Java & Spring** | 🟩🟩🟩🟩⬜<br/>**38/43** | 38 | 2 | 1 | 2 |
 | **🤖 Inteligência Artificial** | 🟩🟩⬜⬜⬜<br/>**5/15** | 5 | 0 | 1 | 9 |
 
-```mermaid
-flowchart LR
-    subgraph T0["☕🌱 Java & Spring"]
-        direction TB
-        t0m0["① Java moderno (Java 21 / 25)<br/>✅ 11/11"]:::forte
-        t0m1["② Spring Boot & arquitetura em camadas<br/>✅ 3/3"]:::forte
-        t0m2["③ Banco de dados & sincronização<br/>✅ 6/6"]:::forte
-        t0m3["④ Validação e tratamento de erros<br/>✅ 3/3"]:::forte
-        t0m4["⑤ Testes (manuais e automatizados)<br/>✅ 6/6"]:::forte
-        t0m5["⑥ Segurança e infraestrutura<br/>✅ 9/14"]:::forte
-        t0m0 --> t0m1 --> t0m2 --> t0m3 --> t0m4 --> t0m5
-    end
-    subgraph T1["🤖 Inteligência Artificial"]
-        direction TB
-        t1m0["① Fundamentos<br/>✅ 1/2"]:::meio
-        t1m1["② Conhecimento: RAG<br/>✅ 0/3"]:::novo
-        t1m2["③ Ação: ferramentas e agentes<br/>✅ 1/4"]:::meio
-        t1m3["④ Backend Java<br/>✅ 0/1"]:::novo
-        t1m4["⑤ Engenharia de software com IA<br/>✅ 1/3"]:::meio
-        t1m5["⑥ Ferramentas e automação ('vibe coding' com método)<br/>✅ 2/2"]:::forte
-        t1m0 --> t1m1 --> t1m2 --> t1m3 --> t1m4 --> t1m5
-    end
-    T0 ~~~ T1
-    classDef forte fill:#238636,stroke:#3fb950,color:#fff
-    classDef meio fill:#9e6a03,stroke:#d29922,color:#fff
-    classDef novo fill:#30363d,stroke:#8b949e,color:#fff
-```
+</details>
 
 <details>
 <summary><b>☕🌱 Java & Spring</b> · módulo a módulo</summary>
@@ -1986,6 +1968,13 @@ flowchart LR
 > *Objetivo:* consolidar a transição de **Junior para Pleno** com base técnica sólida.
 
 <div align="center">
+  <img src="assets/pdi.svg" width="100%" alt="Pilares do PDI 2026 em cards: Java + Spring, AWS, Agent IA, Spec-Driven Dev e Skill em IA, com o status e o foco de cada um"/>
+</div>
+
+<details>
+<summary><b>📋 Os pilares em tabela</b></summary>
+
+<div align="center">
 
 | Pilar | Status | Foco |
 |---|---|---|
@@ -1996,6 +1985,8 @@ flowchart LR
 | 📈 Skill em IA | ![](https://img.shields.io/badge/Iniciando-EC7000?style=flat-square) | Copilot, produtividade técnica com IA |
 
 </div>
+
+</details>
 
 ### 🗳️ Você decide: o que o RKF Bank ganha depois?
 
@@ -2244,6 +2235,13 @@ mindmap
 Atuo como **Desenvolvedor de Software Junior** contratado pela **[Zup Innovation](https://www.linkedin.com/company/zupinnovation/posts/?feedView=all)**, empresa do grupo **Itaú**, prestando serviço diretamente para o maior banco privado do Brasil.
 
 <div align="center">
+  <img src="assets/atuacao.svg" width="100%" alt="Atuação profissional em cards: técnico, colaboração, entregas, evolução e inglês"/>
+</div>
+
+<details>
+<summary><b>📋 As competências em tabela</b></summary>
+
+<div align="center">
 
 | Área | Competência |
 |---|---|
@@ -2255,6 +2253,8 @@ Atuo como **Desenvolvedor de Software Junior** contratado pela **[Zup Innovation
 
 </div>
 
+</details>
+
 <img src="assets/secoes/pergunte-ao-kevin.svg" width="100%" alt=""/>
 
 ## 💬 Pergunte ao Kevin
@@ -2262,6 +2262,10 @@ Atuo como **Desenvolvedor de Software Junior** contratado pela **[Zup Innovation
 > Perguntas que costumam aparecer em entrevista, respondidas com o que eu fiz de verdade. Clique para abrir.
 >
 > 🙋 **Ficou com uma dúvida que não está aqui?** [Faça sua pergunta](https://github.com/k3vinrich4rd/k3vinrich4rd/issues/new?template=pergunta.yml&title=%5Bpergunta%5D%20): eu respondo na issue, e as melhores viram resposta nesta seção.
+
+<div align="center">
+  <img src="assets/perguntas.svg" width="100%" alt="Conversa animada com as perguntas de entrevista desta seção; as respostas estão logo abaixo"/>
+</div>
 
 <details>
 <summary><b>Como você garante que uma transferência não deixa o saldo errado?</b></summary>
@@ -2436,6 +2440,10 @@ Tem: o GC só recolhe objetos inalcançáveis. Um <code>static Map</code> que nu
 <img src="assets/secoes/formacao-e-certificacoes.svg" width="100%" alt=""/>
 
 ## 🎓 Formação e certificações
+
+<div align="center">
+  <img src="assets/formacao.svg" width="100%" alt="Formação e certificações em cards por área, com o número de cursos e as instituições"/>
+</div>
 
 <details>
 <summary><b>☕ Java e desenvolvimento backend</b></summary>

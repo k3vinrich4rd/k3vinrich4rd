@@ -4,6 +4,7 @@
 import path from 'node:path';
 import { RAIZ, ler, escrever, substituirBloco, xml } from './lib.mjs';
 import * as svg from './svgs.mjs';
+import { aplicar as aplicarVisuais } from './visuais.mjs';
 
 const USUARIO = 'k3vinrich4rd';
 const usarApi = process.argv.includes('--api');
@@ -564,16 +565,6 @@ function blocoCerebro() {
     const n = todas(t);
     return `| **${capa[t.nome] ?? t.nome}** | ${fracao(conta(n, 'praticado'), n.length)} | ${conta(n, 'praticado')} | ${conta(n, 'andamento')} | ${conta(n, 'planejado')} | ${conta(n, 'referencia')} |`;
   };
-  // Fluxo das trilhas: cada módulo pintado pelo quanto já foi praticado
-  const nos = c.trilhas.map((t, i) => {
-    const ids = t.modulos.map((_, j) => `t${i}m${j}`);
-    const def = t.modulos.map((m, j) => {
-      const feitos = conta(m.notas, 'praticado');
-      const classe = feitos / (m.notas.length || 1) >= 0.6 ? 'forte' : feitos || conta(m.notas, 'andamento') ? 'meio' : 'novo';
-      return `        ${ids[j]}["${m.nome.replace(/"/g, "'")}<br/>✅ ${feitos}/${m.notas.length}"]:::${classe}`;
-    });
-    return `    subgraph T${i}["${capa[t.nome] ?? t.nome}"]\n        direction TB\n${def.join('\n')}\n        ${ids.join(' --> ')}\n    end`;
-  });
   const detalhe = (t) => `<details>
 <summary><b>${capa[t.nome] ?? t.nome}</b> · módulo a módulo</summary>
 <br/>
@@ -587,7 +578,17 @@ ${t.modulos.map((m) => `| ${m.nome} | ${fracao(conta(m.notas, 'praticado'), m.no
   const praticados = (p.estudos ?? []).filter((e) => e.status === 'praticado').length;
   const modulos = c.trilhas.reduce((s, t) => s + t.modulos.length, 0);
   const recentes = c.recentes.map((r) => `\`${r.area}\` ${r.nome}`).join(' · ');
-  return `<table align="center"><tr>
+  // Painel animado (scripts/visuais.mjs: números, anéis por trilha e barras por módulo); os mesmos números seguem em
+  // tabela logo abaixo, recolhidos.
+  return `<div align="center">
+  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: ${c.diasDiario30} dias com registro, ${b.notas ?? 0} notas, ${c.trilhas.length} trilhas e ${praticados} assuntos praticados; progresso de cada trilha e de cada módulo"/>
+</div>
+
+<details>
+<summary><b>📋 Os números em tabela</b></summary>
+<br/>
+
+<table align="center"><tr>
 <td align="center">🗓️<br/><b>${c.diasDiario30}</b> dias com registro<br/><sub>nos últimos 30</sub></td>
 <td align="center">📚<br/><b>${b.notas ?? 0}</b> notas de estudo<br/><sub>${b.comSem ?? 0} com exemplo com × sem</sub></td>
 <td align="center">🧭<br/><b>${c.trilhas.length}</b> trilhas<br/><sub>${modulos} módulos</sub></td>
@@ -598,14 +599,7 @@ ${t.modulos.map((m) => `| ${m.nome} | ${fracao(conta(m.notas, 'praticado'), m.no
 |---|---|:-:|:-:|:-:|:-:|
 ${c.trilhas.map(linhaTrilha).join('\n')}
 
-\`\`\`mermaid
-flowchart LR
-${nos.join('\n')}
-    T0 ~~~ T1
-    classDef forte fill:#238636,stroke:#3fb950,color:#fff
-    classDef meio fill:#9e6a03,stroke:#d29922,color:#fff
-    classDef novo fill:#30363d,stroke:#8b949e,color:#fff
-\`\`\`
+</details>
 
 ${c.trilhas.map(detalhe).join('\n\n')}
 
@@ -679,6 +673,10 @@ const secoes = [];
   readme = linhas.join('\n');
 }
 
+// Cards animados das seções (PDI, atuação, formação, perguntas) e o painel do cérebro: scripts/visuais.mjs.
+const visuais = aplicarVisuais(readme, p);
+readme = visuais.readme;
+
 // O pulso usa a página pública de contribuições: funciona com ou sem token. Se falhar, fica o anterior.
 let svgPulso = null;
 try {
@@ -738,6 +736,7 @@ const mudancas = [
   ...Object.entries(botoes).map(([nome, [texto, op]]) => escrever(path.join(RAIZ, 'assets', 'botoes', nome), svg.botao(texto, op)) && `assets/botoes/${nome}`),
   escrever(path.join(RAIZ, 'assets', 'banner.svg'), svgBanner()) && 'assets/banner.svg',
   escrever(path.join(RAIZ, 'assets', 'rumo-ao-pleno.svg'), svgRumoAoPleno()) && 'assets/rumo-ao-pleno.svg',
+  ...Object.entries(visuais.arquivos).map(([nome, conteudo]) => escrever(path.join(RAIZ, 'assets', nome), conteudo) && `assets/${nome}`),
   escrever(path.join(RAIZ, 'assets', 'competencias.svg'), svg.competencias(regua.itens)) && 'assets/competencias.svg',
   ...secoes.map((sec) => escrever(path.join(RAIZ, 'assets', 'secoes', `${sec.caminho}.svg`), svg.secao(sec.indice, secoes.length, sec.caminho, sec.titulo)) && `assets/secoes/${sec.caminho}.svg`),
   escrever(path.join(RAIZ, 'assets', 'terminal.svg'), atualizarTerminal(ler(path.join(RAIZ, 'assets', 'terminal.svg')))) && 'assets/terminal.svg',

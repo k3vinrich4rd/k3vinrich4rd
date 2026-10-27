@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="370" viewBox="0 0 1200 370" role="img" aria-label="Atuação profissional: Técnico: Java, Spring Boot, APIs REST, JPA/Hibernate, MongoDB, testes; Colaboração: trabalho em equipe, comunicação técnica, code review; Entregas: responsabilidade, proatividade, foco em qualidade; Evolução: aprendizado contínuo, mentoria, adaptação a desafios; Inglês: básico — em desenvolvimento ativo">
+  <!-- Gerado por scripts/visuais.mjs a partir do README e do progresso.json. Não edite à mão. -->
+  <defs><linearGradient id="marca" x1="0" x2="1"><stop offset="0" stop-color="#003D74"/><stop offset="1" stop-color="#EC7000"/></linearGradient></defs>
+  <style>
+    .entra { opacity: 0; animation: entra .6s cubic-bezier(.2,.8,.2,1) forwards; }
+    @keyframes entra { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+    .barra { transform: scaleX(0); transform-box: fill-box; transform-origin: left; animation: cresce 1.6s cubic-bezier(.2,.8,.2,1) forwards; }
+    @keyframes cresce { to { transform: scaleX(1); } }
+    .pulsa { animation: pulsa 1.6s ease-in-out infinite; }
+    @keyframes pulsa { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }</style>
+  <rect width="1200" height="370" rx="16" fill="#0d1117" stroke="#30363d"/>
+  <text x="22" y="40" style="font: 800 21px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">💼 O que eu levo para o time</text>
+  <text x="1178" y="40" text-anchor="end" style="font: 400 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">Zup Innovation · serviço para o Itaú</text>
+  <g class="entra" style="animation-delay:0.10s">
+    <rect x="20" y="64" width="1160" height="46" rx="12" fill="#161b22" stroke="#30363d"/>
+    <rect x="20" y="64" width="5" height="46" rx="2.5" fill="#58a6ff"/>
+    <text x="42" y="93" style="font: 700 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#58a6ff">Técnico</text>
+    <rect x="210" y="72" width="55" height="30" rx="15" fill="#58a6ff" fill-opacity=".12" stroke="#58a6ff" stroke-opacity=".5"/><text x="237.5" y="92" text-anchor="middle" style="font: 500 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Java</text><rect x="275" y="72" width="106" height="30" rx="15" fill="#58a6ff" fill-opacity=".12" stroke="#58a6ff" stroke-opacity=".5"/><text x="328" y="92" text-anchor="middle" style="font: 500 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Spring Boot</text><rect x="391" y="72" width="92" height="30" rx="15" fill="#58a6ff" fill-opacity=".12" stroke="#58a6ff" stroke-opacity=".5"/><text x="437" y="92" text-anchor="middle" style="font: 500 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">APIs REST</text><rect x="493" y="72" width="121" height="30" rx="15" fill="#58a6ff" fill-opacity=".12" stroke="#58a6ff" stroke-opacity=".5"/><text x="553.5" y="92" text-anchor="middle" style="font: 500 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">JPA/Hibernate</text><rect x="624" y="72" width="77" height="30" rx="15" fill="#58a6ff" fill-opacity=".12" stroke="#58a6ff" stroke-opacity=".5"/><text x="662.5" y="92" text-anchor="middle" style="font: 500 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">MongoDB</text><rect x="711" y="72" width="70" height="30" rx="15" fill="#58a6ff" fill-opacity=".12" stroke="#58a6ff" stroke-opacity=".5"/><text x="746" y="92" text-anchor="middle" style="font: 500 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">testes</text>
+  </g>
+  <g class="entra" style="animation-delay:0.24s">
+    <rect x="20" y="122" width="1160" height="46" rx="12" fill="#161b22" stroke="#30363d"/>
+    <rect x="20" y="122" width="5" height="46" rx="2.5" fill="#3fb950"/>
+    <text x="42" y="151" style="font: 700 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#3fb950">Colaboração</text>
+    <rect x="210" y="130" width="157" height="30" rx="15" fill="#3fb950" fill-opacity=".12" stroke="#3fb950" stroke-opacity=".5"/><text x="288.5" y="150" text-anchor="middle" style="font: 500 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">trabalho em equipe</text><rect x="377" y="130" width="165" height="30" rx="15" fill="#3fb950" fill-opacity=".12" stroke="#3fb950" stroke-opacity=".5"/><text x="459.5" y="150" text-anchor="middle" style="font: 500 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">comunicação técnica</text><rect x="552" y="130" width="106" height="30" rx="15" fill="#3fb950" fill-opacity=".12" stroke="#3fb950" stroke-opacity=".5"/><text x="605" y="150" text-anchor="middle" style="font: 500 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">code review</text>
+  </g>
+  <g class="entra" style="animation-delay:0.38s">
+    <rect x="20" y="180" width="1160" height="46" rx="12" fill="#161b22" stroke="#30363d"/>
+    <rect x="20" y="180" width="5" height="46" rx="2.5" fill="#EC7000"/>
+    <text x="42" y="209" style="font: 700 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#EC7000">Entregas</text>
+    <rect x="210" y="188" width="143" height="30" rx="15" fill="#EC7000" fill-opacity=".12" stroke="#EC7000" stroke-opacity=".5"/><text x="281.5" y="208" text-anchor="middle" style="font: 500 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">responsabilidade</text><rect x="363" y="188" width="114" height="30" rx="15" fill="#EC7000" fill-opacity=".12" stroke="#EC7000" stroke-opacity=".5"/><text x="420" y="208" text-anchor="middle" style="font: 500 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">proatividade</text><rect x="487" y="188" width="150" height="30" rx="15" fill="#EC7000" fill-opacity=".12" stroke="#EC7000" stroke-opacity=".5"/><text x="562" y="208" text-anchor="middle" style="font: 500 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">foco em qualidade</text>
+  </g>
+  <g class="entra" style="animation-delay:0.52s">
+    <rect x="20" y="238" width="1160" height="46" rx="12" fill="#161b22" stroke="#30363d"/>
+    <rect x="20" y="238" width="5" height="46" rx="2.5" fill="#a371f7"/>
+    <text x="42" y="267" style="font: 700 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#a371f7">Evolução</text>
+    <rect x="210" y="246" width="172" height="30" rx="15" fill="#a371f7" fill-opacity=".12" stroke="#a371f7" stroke-opacity=".5"/><text x="296" y="266" text-anchor="middle" style="font: 500 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">aprendizado contínuo</text><rect x="392" y="246" width="84" height="30" rx="15" fill="#a371f7" fill-opacity=".12" stroke="#a371f7" stroke-opacity=".5"/><text x="434" y="266" text-anchor="middle" style="font: 500 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">mentoria</text><rect x="486" y="246" width="172" height="30" rx="15" fill="#a371f7" fill-opacity=".12" stroke="#a371f7" stroke-opacity=".5"/><text x="572" y="266" text-anchor="middle" style="font: 500 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">adaptação a desafios</text>
+  </g>
+  <g class="entra" style="animation-delay:0.66s">
+    <rect x="20" y="296" width="1160" height="46" rx="12" fill="#161b22" stroke="#30363d"/>
+    <rect x="20" y="296" width="5" height="46" rx="2.5" fill="#d29922"/>
+    <text x="42" y="325" style="font: 700 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#d29922">Inglês</text>
+    <rect x="210" y="304" width="70" height="30" rx="15" fill="#d29922" fill-opacity=".12" stroke="#d29922" stroke-opacity=".5"/><text x="245" y="324" text-anchor="middle" style="font: 500 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">básico</text><rect x="290" y="304" width="201" height="30" rx="15" fill="#d29922" fill-opacity=".12" stroke="#d29922" stroke-opacity=".5"/><text x="390.5" y="324" text-anchor="middle" style="font: 500 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">em desenvolvimento ativo</text>
+  </g>
+</svg>

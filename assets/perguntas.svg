@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="490" viewBox="0 0 1200 490" role="img" aria-label="Pergunte ao Kevin: Como você garante que uma transferência não deixa o saldo errado? Por que testar repositório, se o Spring Data já gera as consultas? O que acontece se o ViaCEP cair? Como você rastreia um erro em produção? Como você lida com vulnerabilidades em dependências? Como você protege as contas de um cliente contra outro cliente? Por que trocar o ddl-auto=update pelo Flyway? As respostas estão logo abaixo.">
+  <!-- Gerado por scripts/visuais.mjs a partir do README e do progresso.json. Não edite à mão. -->
+  <defs><linearGradient id="marca" x1="0" x2="1"><stop offset="0" stop-color="#003D74"/><stop offset="1" stop-color="#EC7000"/></linearGradient></defs>
+  <style>
+    .entra { opacity: 0; animation: entra .6s cubic-bezier(.2,.8,.2,1) forwards; }
+    @keyframes entra { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+    .barra { transform: scaleX(0); transform-box: fill-box; transform-origin: left; animation: cresce 1.6s cubic-bezier(.2,.8,.2,1) forwards; }
+    @keyframes cresce { to { transform: scaleX(1); } }
+    .pulsa { animation: pulsa 1.6s ease-in-out infinite; }
+    @keyframes pulsa { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }
+    .digitando circle { animation: ponto 1.2s ease-in-out infinite; }
+    .digitando circle:nth-child(2) { animation-delay: .2s; } .digitando circle:nth-child(3) { animation-delay: .4s; }
+    @keyframes ponto { 0%, 100% { opacity: .3; } 50% { opacity: 1; } }
+  </style>
+  <rect width="1200" height="490" rx="16" fill="#0d1117" stroke="#30363d"/>
+  <text x="22" y="38" style="font: 800 19px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">💬 Perguntas de entrevista</text>
+  <text x="1178" y="38" text-anchor="end" style="font: 400 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">respondidas com o que eu fiz de verdade</text>
+  <g class="entra" style="animation-delay:0.30s">
+    <circle cx="44" cy="78" r="16" fill="#003D74"/>
+    <text x="44" y="84" text-anchor="middle" style="font: 800 16px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#fff">?</text>
+    <rect x="72" y="60" width="521" height="36" rx="18" fill="#161b22" stroke="#30363d"/>
+    <text x="92" y="83" style="font: 500 13.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Como você garante que uma transferência não deixa o saldo errado?</text>
+  </g>
+  <g class="entra" style="animation-delay:0.75s">
+    <circle cx="44" cy="128" r="16" fill="#003D74"/>
+    <text x="44" y="134" text-anchor="middle" style="font: 800 16px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#fff">?</text>
+    <rect x="72" y="110" width="528" height="36" rx="18" fill="#161b22" stroke="#30363d"/>
+    <text x="92" y="133" style="font: 500 13.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Por que testar repositório, se o Spring Data já gera as consultas?</text>
+  </g>
+  <g class="entra" style="animation-delay:1.20s">
+    <circle cx="44" cy="178" r="16" fill="#003D74"/>
+    <text x="44" y="184" text-anchor="middle" style="font: 800 16px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#fff">?</text>
+    <rect x="72" y="160" width="277" height="36" rx="18" fill="#161b22" stroke="#30363d"/>
+    <text x="92" y="183" style="font: 500 13.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">O que acontece se o ViaCEP cair?</text>
+  </g>
+  <g class="entra" style="animation-delay:1.65s">
+    <circle cx="44" cy="228" r="16" fill="#003D74"/>
+    <text x="44" y="234" text-anchor="middle" style="font: 800 16px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#fff">?</text>
+    <rect x="72" y="210" width="329" height="36" rx="18" fill="#161b22" stroke="#30363d"/>
+    <text x="92" y="233" style="font: 500 13.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Como você rastreia um erro em produção?</text>
+  </g>
+  <g class="entra" style="animation-delay:2.10s">
+    <circle cx="44" cy="278" r="16" fill="#003D74"/>
+    <text x="44" y="284" text-anchor="middle" style="font: 800 16px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#fff">?</text>
+    <rect x="72" y="260" width="425" height="36" rx="18" fill="#161b22" stroke="#30363d"/>
+    <text x="92" y="283" style="font: 500 13.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Como você lida com vulnerabilidades em dependências?</text>
+  </g>
+  <g class="entra" style="animation-delay:2.55s">
+    <circle cx="44" cy="328" r="16" fill="#003D74"/>
+    <text x="44" y="334" text-anchor="middle" style="font: 800 16px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#fff">?</text>
+    <rect x="72" y="310" width="506" height="36" rx="18" fill="#161b22" stroke="#30363d"/>
+    <text x="92" y="333" style="font: 500 13.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Como você protege as contas de um cliente contra outro cliente?</text>
+  </g>
+  <g class="entra" style="animation-delay:3.00s">
+    <circle cx="44" cy="378" r="16" fill="#003D74"/>
+    <text x="44" y="384" text-anchor="middle" style="font: 800 16px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#fff">?</text>
+    <rect x="72" y="360" width="373" height="36" rx="18" fill="#161b22" stroke="#30363d"/>
+    <text x="92" y="383" style="font: 500 13.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Por que trocar o ddl-auto=update pelo Flyway?</text>
+  </g>
+  <g class="entra" style="animation-delay:3.45s">
+    <rect x="658" y="416" width="470" height="40" rx="20" fill="url(#marca)"/>
+    <text x="893" y="442" text-anchor="middle" style="font: 700 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#fff">Respondo cada uma logo abaixo, é só clicar 👇</text>
+    <circle cx="1156" cy="436" r="16" fill="#EC7000"/>
+    <text x="1156" y="442" text-anchor="middle" style="font: 800 16px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#fff">K</text>
+  </g>
+  <g class="digitando" transform="translate(608 436)"><circle cx="0" r="4" fill="#8b949e"/><circle cx="12" r="4" fill="#8b949e"/><circle cx="24" r="4" fill="#8b949e"/></g>
+</svg>
