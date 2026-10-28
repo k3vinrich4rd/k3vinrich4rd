@@ -1875,7 +1875,7 @@ mindmap
 
 <!-- AUTO:cerebro:START -->
 <div align="center">
-  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 10 dias com registro, 70 notas, 2 trilhas e 44 assuntos praticados; progresso de cada trilha e de cada módulo"/>
+  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 11 dias com registro, 70 notas, 2 trilhas e 44 assuntos praticados; progresso de cada trilha e de cada módulo"/>
 </div>
 
 <details>
@@ -1883,7 +1883,7 @@ mindmap
 <br/>
 
 <table align="center"><tr>
-<td align="center">🗓️<br/><b>10</b> dias com registro<br/><sub>nos últimos 30</sub></td>
+<td align="center">🗓️<br/><b>11</b> dias com registro<br/><sub>nos últimos 30</sub></td>
 <td align="center">📚<br/><b>70</b> notas de estudo<br/><sub>60 com exemplo com × sem</sub></td>
 <td align="center">🧭<br/><b>2</b> trilhas<br/><sub>12 módulos</sub></td>
 <td align="center">✅<br/><b>44</b> assuntos<br/><sub>praticados em projeto</sub></td>
