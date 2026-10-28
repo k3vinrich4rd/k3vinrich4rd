@@ -2488,7 +2488,7 @@ Duas threads leem o mesmo valor e gravam por cima uma da outra. Em memória reso
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/progresso-35%25-EC7000?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/progresso-39%25-EC7000?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/cap%C3%ADtulos%20conclu%C3%ADdos-3%20de%206-3fb950?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/desafios%20entregues-3-58a6ff?style=for-the-badge"/>
 
@@ -2508,12 +2508,12 @@ flowchart LR
 
 | # | Capítulo | Aulas | Status | O que entreguei |
 |:-:|---|:-:|:-:|---|
-| 1 | Componentes e injeção de dependência | 12/14 | ✅ | [Cálculo de pedido](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) com `OrderService` + `ShippingService` injetados pelo Spring |
+| 1 | Componentes e injeção de dependência | 14/14 | ✅ | [Cálculo de pedido](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) com `OrderService` + `ShippingService` injetados pelo Spring |
 | 2 | Modelo de domínio e ORM | 15/15 | ✅ | [Sistema de eventos](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) no H2 e o modelo do [DSCommerce](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) |
 | 3 | API REST, camadas, CRUD, exceções, validações | 23/23 | ✅ | [CRUD de clientes](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) com **10/10** no checklist de correção |
-| 4 | JPA, consultas SQL e JPQL | 1/38 | 🔄 | Próximo: desafio *Consulta vendas* (relatório paginado + sumário por vendedor) |
-| 5 | Login e controle de acesso | 0/34 | 📅 | OAuth2, JWT e perfis `User`–`Role` |
-| 6 | Homologação e implantação com CI/CD | 0/18 | 📅 | Pipeline e deploy |
+| 4 | JPA, consultas SQL e JPQL | 4/38 | 🔄 | Próximo: desafio *Consulta vendas* (relatório paginado + sumário por vendedor) |
+| 5 | Login e controle de acesso | 0/34 | 📅 | DSCommerce completo com login (OAuth2 + JWT) e pedidos |
+| 6 | Homologação e implantação com CI/CD | 0/18 | 📅 | Perfis dev/prod, PostgreSQL no Docker e deploy com CI/CD |
 
 <details>
 <summary><b>① Componentes e injeção de dependência</b>: por que o Spring cria os objetos por mim</summary>
@@ -2569,6 +2569,27 @@ erDiagram
 - Sessão JPA e estados da entidade (*transient → managed → detached/removed*).
 - O grande vilão da JPA são as idas e voltas desnecessárias ao banco (**N+1**). A saída é usar `JOIN FETCH` ou, melhor ainda, consultas customizadas.
 - `@Transactional` e `open-in-view=false`; query methods, **JPQL** e SQL nativo, com estudos de caso do beecrowd no PostgreSQL.
+- No DSCommerce: busca de produtos por nome e consultas paginadas sem lentidão (`countQuery`).
+
+</details>
+
+<details>
+<summary><b>⑤ Login e controle de acesso</b>: próximo capítulo</summary>
+<br/>
+
+- Login com credenciais devolvendo um **token JWT** (OAuth2, *password grant*); sem token **401**, sem permissão **403**.
+- Spring Security: `User`–`Role`, senha com **BCrypt**, `UserDetailsService`, *Authorization server* e *Resource server*.
+- `@PreAuthorize` por perfil, usuário logado em `GET /users/me` e regra "o próprio cliente ou ADMIN" nos pedidos.
+- Desafio: o DSCommerce completo, com no mínimo 12 commits no GitHub.
+
+</details>
+
+<details>
+<summary><b>⑥ Homologação e implantação com CI/CD</b>: capítulo final</summary>
+<br/>
+
+- Perfis `test` (H2), `dev` (PostgreSQL + pgAdmin no Docker) e `prod`.
+- Deploy com CI/CD no Railway e no Heroku, com CORS configurado por variável de ambiente.
 
 </details>
 
