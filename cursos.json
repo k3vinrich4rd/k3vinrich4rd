@@ -7,14 +7,14 @@
       "plataforma": "DevSuperior",
       "url": "https://devsuperior.club/courses/5",
       "nota": "🎓 Curso - Java Spring Professional (DevSuperior)",
-      "progresso": 40,
-      "aulas": { "feitas": 57, "total": 142 },
+      "progresso": 42,
+      "aulas": { "feitas": 60, "total": 142 },
       "desafios": { "feitos": 3, "total": 5 },
       "capitulos": [
         { "nome": "Componentes e injeção de dependência", "feitas": 14, "total": 14, "duracao": "1h26", "entrega": "[Cálculo de pedido](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) com `OrderService` + `ShippingService` injetados pelo Spring" },
         { "nome": "Modelo de domínio e ORM", "feitas": 15, "total": 15, "duracao": "2h17", "entrega": "[Sistema de eventos](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) no H2 e o modelo do [DSCommerce](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM)" },
         { "nome": "API REST, camadas, CRUD, exceções, validações", "feitas": 23, "total": 23, "duracao": "3h14", "entrega": "[CRUD de clientes](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) com **10/10** no checklist de correção" },
-        { "nome": "JPA, consultas SQL e JPQL", "feitas": 5, "total": 38, "duracao": "6h52", "entrega": "Próximo: desafio *Consulta vendas* (relatório paginado + sumário por vendedor)" },
+        { "nome": "JPA, consultas SQL e JPQL", "feitas": 8, "total": 38, "duracao": "6h52", "entrega": "Próximo: desafio *Consulta vendas* (relatório paginado + sumário por vendedor)" },
         { "nome": "Login e controle de acesso", "feitas": 0, "total": 34, "duracao": "4h53", "entrega": "DSCommerce completo com login (OAuth2 + JWT) e pedidos" },
         { "nome": "Homologação e implantação com CI/CD", "feitas": 0, "total": 18, "duracao": "2h09", "entrega": "Perfis dev/prod, PostgreSQL no Docker e deploy com CI/CD" }
       ]
