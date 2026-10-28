@@ -181,16 +181,16 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:atividade:START -->
 | | Repositório | Commit | Quando |
 |:-:|---|---|---|
-| 🔧 | [`desafio-devsuperior-modelo-orm`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) | [`e064a39`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm/commit/e064a39a2f1f2588d08e475e4ddc955a57625a39) chore: junta o historico ao repositorio desafio-devsuperior-modelo-orm | há 1 min |
+| ♻️ | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`f430211`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/f430211de74e8756ebb6520b13b52ea0bae60578) refactor: renomeia OrdemItem para OrderItem | há 26 min |
+| ⏪ | [`desafio-devsuperior-componentes-injecao-dependencia`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) | [`4997708`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia/commit/4997708166e270a54829b3ea94912378a03fa100) revert: main volta a ter so o desafio de componentes (o ORM foi para des | há 44 min |
+| 🔧 | [`desafio-devsuperior-modelo-orm`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) | [`e064a39`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm/commit/e064a39a2f1f2588d08e475e4ddc955a57625a39) chore: junta o historico ao repositorio desafio-devsuperior-modelo-orm | há 44 min |
 | 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`9d3914f`](https://github.com/k3vinrich4rd/rkf_bank/commit/9d3914fdd4b404c57548bc1e3ec94a224607132c) docs: TDD na pratica e cartao do app no README | há 21 h |
 | ♻️ | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`e745cfb`](https://github.com/k3vinrich4rd/rkf_bank/commit/e745cfbe04b05e93848cf4c3d337992660e3cb1f) refactor(services): ContaService usa o dominio rico da Conta (TDD refato | há 21 h |
 | 📝 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`0849493`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/0849493f006f8569a3c9a93e9578c3ba795d6921) docs: adiciona README com modelo de dominio, endpoints e exemplos reais | há 13 dias |
-| 🐛 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`cf381a2`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/cf381a2b0fdf09b7ce7b3c3784be9cc876f6352e) fix: salva application-test.properties em UTF-8 | há 13 dias |
-| ✨ | [`crud-clientes`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) | [`9b0eb79`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes/commit/9b0eb794bf407bdbe22af1196065717ef72591a9) feat: implementando correcao sugerida no feedback | há 23 dias |
-| ✨ | [`crud-clientes`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) | [`081441f`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes/commit/081441fdfcf7970ac1da4a4c57bc751327618575) feat: implementando atualizacoes de readme | há 27 dias |
+| 📝 | [`desafio-devsuperior-componentes-injecao-dependencia`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) | [`757f944`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia/commit/757f944837b07f090ea785449adbc2b0e28cd45e) docs: atualiza informações do README | 27/10/2025 |
 | 📝 | [`desafio-devsuperior-modelo-orm`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) | [`757f944`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm/commit/757f944837b07f090ea785449adbc2b0e28cd45e) docs: atualiza informações do README | 27/10/2025 |
 
-<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 28/10 às 09:16</sub>
+<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 28/10 às 10:00</sub>
 <!-- AUTO:atividade:END -->
 
 </details>
