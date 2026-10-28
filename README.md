@@ -29,18 +29,19 @@
 
 <!-- AUTO:indice:START -->
 <details>
-<summary><b>🗺️ Índice do perfil</b> · 14 seções (clique para abrir)</summary>
+<summary><b>🗺️ Índice do perfil</b> · 15 seções (clique para abrir)</summary>
 <br/>
 
 | | |
 |---|---|
-| <a href="#-escolha-a-sua-trilha">01 · 🎮 Escolha a sua trilha</a> | <a href="#-github-stats">08 · 📊 GitHub Stats</a> |
-| <a href="#-ao-vivo">02 · 📡 Ao vivo</a> | <a href="#-pdi--roadmap-2026">09 · 🎯 PDI — Roadmap 2026</a> |
-| <a href="#-trajetória">03 · 🧭 Trajetória</a> | <a href="#️-tecnologias">10 · 🛠️ Tecnologias</a> |
-| <a href="#-sobre-mim">04 · 🚀 Sobre mim</a> | <a href="#-atuação-profissional">11 · 💼 Atuação profissional</a> |
-| <a href="#-projeto-atual--rkf-bank">05 · 🏦 Projeto atual — RKF Bank</a> | <a href="#-pergunte-ao-kevin">12 · 💬 Pergunte ao Kevin</a> |
-| <a href="#️-projetos-em-destaque">06 · 🗂️ Projetos em destaque</a> | <a href="#-formação-e-certificações">13 · 🎓 Formação e certificações</a> |
-| <a href="#-junior--pleno--onde-estou">07 · 📈 Junior → Pleno — onde estou</a> | <a href="#️-livro-de-visitas">14 · ✍️ Livro de visitas</a> |
+| <a href="#-escolha-a-sua-trilha">01 · 🎮 Escolha a sua trilha</a> | <a href="#-pdi--roadmap-2026">09 · 🎯 PDI — Roadmap 2026</a> |
+| <a href="#-ao-vivo">02 · 📡 Ao vivo</a> | <a href="#️-tecnologias">10 · 🛠️ Tecnologias</a> |
+| <a href="#-trajetória">03 · 🧭 Trajetória</a> | <a href="#-atuação-profissional">11 · 💼 Atuação profissional</a> |
+| <a href="#-sobre-mim">04 · 🚀 Sobre mim</a> | <a href="#-pergunte-ao-kevin">12 · 💬 Pergunte ao Kevin</a> |
+| <a href="#-projeto-atual--rkf-bank">05 · 🏦 Projeto atual — RKF Bank</a> | <a href="#-curso-em-andamento--java-spring-professional">13 · 📚 Curso em andamento — Java Spring Professional</a> |
+| <a href="#️-projetos-em-destaque">06 · 🗂️ Projetos em destaque</a> | <a href="#-formação-e-certificações">14 · 🎓 Formação e certificações</a> |
+| <a href="#-junior--pleno--onde-estou">07 · 📈 Junior → Pleno — onde estou</a> | <a href="#️-livro-de-visitas">15 · ✍️ Livro de visitas</a> |
+| <a href="#-github-stats">08 · 📊 GitHub Stats</a> |  |
 
 </details>
 <!-- AUTO:indice:END -->
@@ -1781,7 +1782,7 @@ quadrantChart
 | Inglês técnico | 🔄 | em andamento |
 | Mensageria e microsserviços | ⏳ | próximo ciclo |
 
-<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-10-27</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-10-28</sub>
 <!-- AUTO:regua:END -->
 
 </details>
@@ -1793,7 +1794,7 @@ quadrantChart
 <!-- AUTO:estudos:START -->
 **44** assuntos praticados em projeto · **2** em andamento · **2** planejados
 
-📚 **69** notas de estudo no segundo cérebro · **60** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
+📚 **70** notas de estudo no segundo cérebro · **60** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
 
 ```mermaid
 mindmap
@@ -1863,7 +1864,7 @@ mindmap
 | ⏳ Mensageria e Outbox | Arquitetura | <sub>6 a fazer</sub> |
 | ⏳ Spring AI | IA | <sub>5 a fazer</sub> |
 
-<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-10-27.</sub>
+<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-10-28.</sub>
 <!-- AUTO:estudos:END -->
 
 </details>
@@ -1874,7 +1875,7 @@ mindmap
 
 <!-- AUTO:cerebro:START -->
 <div align="center">
-  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 10 dias com registro, 69 notas, 2 trilhas e 44 assuntos praticados; progresso de cada trilha e de cada módulo"/>
+  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 10 dias com registro, 70 notas, 2 trilhas e 44 assuntos praticados; progresso de cada trilha e de cada módulo"/>
 </div>
 
 <details>
@@ -1883,7 +1884,7 @@ mindmap
 
 <table align="center"><tr>
 <td align="center">🗓️<br/><b>10</b> dias com registro<br/><sub>nos últimos 30</sub></td>
-<td align="center">📚<br/><b>69</b> notas de estudo<br/><sub>60 com exemplo com × sem</sub></td>
+<td align="center">📚<br/><b>70</b> notas de estudo<br/><sub>60 com exemplo com × sem</sub></td>
 <td align="center">🧭<br/><b>2</b> trilhas<br/><sub>12 módulos</sub></td>
 <td align="center">✅<br/><b>44</b> assuntos<br/><sub>praticados em projeto</sub></td>
 </tr></table>
@@ -1927,7 +1928,7 @@ mindmap
 
 📝 **Estudado por último:** `IA` Design Doc de arquitetura para IA · `IA` Ferramentas de dev com IA · `Spring` OAuth2 e OIDC · `Arquitetura` Pub-Sub e DLQ · `Testes` TDD e estratégia de testes · `Testes` Testes de aplicações com IA (evals) · `Testes` Testes manuais de API - Postman e Insomnia · `IA` Tool Calling (Function Calling)
 
-<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-10-27</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-10-28</sub>
 <!-- AUTO:cerebro:END -->
 
 <details>
@@ -2114,7 +2115,7 @@ gantt
 
 **🧹 Débitos técnicos:** 9/18 resolvidos
 
-<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-10-27.</sub>
+<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-10-28.</sub>
 <!-- AUTO:checklist:END -->
 
 </details>
@@ -2476,6 +2477,102 @@ Duas threads leem o mesmo valor e gravam por cima uma da outra. Em memória reso
 ❌ **Ainda não.** Compila e roda; o problema é silencioso, o que o torna mais perigoso num banco.
 
 </details>
+
+<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
+
+<img src="assets/secoes/curso-em-andamento.svg" width="100%" alt=""/>
+
+## 📚 Curso em andamento — Java Spring Professional
+
+> Formação **Desenvolvedor Moderno · Back end** da [DevSuperior](https://devsuperior.com.br), com o professor Nélio Alves. Cada capítulo termina com um **desafio entregue no GitHub**, e o projeto do curso, o **DSCommerce**, cresce a cada etapa. É a teoria por trás do que eu pratico no [RKF Bank](#-projeto-atual--rkf-bank).
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/progresso-35%25-EC7000?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/cap%C3%ADtulos%20conclu%C3%ADdos-3%20de%206-3fb950?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/desafios%20entregues-3-58a6ff?style=for-the-badge"/>
+
+</div>
+
+```mermaid
+flowchart LR
+    C1["① Componentes e DI ✅"] --> C2["② Domínio e ORM ✅"] --> C3["③ API REST e CRUD ✅"] --> C4["④ JPA, SQL e JPQL 🔄"] --> C5["⑤ Login e acesso"] --> C6["⑥ CI/CD"]
+    C2 -.-> DS[("🛒 DSCommerce")]
+    C3 -.-> DS
+    C4 -.-> DS
+    style C1 fill:#1f6f3f,color:#fff
+    style C2 fill:#1f6f3f,color:#fff
+    style C3 fill:#1f6f3f,color:#fff
+    style C4 fill:#9a6700,color:#fff
+```
+
+| # | Capítulo | Aulas | Status | O que entreguei |
+|:-:|---|:-:|:-:|---|
+| 1 | Componentes e injeção de dependência | 12/14 | ✅ | Cálculo de pedido com `OrderService` + `ShippingService` injetados pelo Spring |
+| 2 | Modelo de domínio e ORM | 15/15 | ✅ | Sistema de eventos no H2 e o modelo do [DSCommerce](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) |
+| 3 | API REST, camadas, CRUD, exceções, validações | 23/23 | ✅ | [CRUD de clientes](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) com **10/10** no checklist de correção |
+| 4 | JPA, consultas SQL e JPQL | 1/38 | 🔄 | Próximo: desafio *Consulta vendas* (relatório paginado + sumário por vendedor) |
+| 5 | Login e controle de acesso | 0/34 | 📅 | OAuth2, JWT e perfis `User`–`Role` |
+| 6 | Homologação e implantação com CI/CD | 0/18 | 📅 | Pipeline e deploy |
+
+<details>
+<summary><b>① Componentes e injeção de dependência</b>: por que o Spring cria os objetos por mim</summary>
+<br/>
+
+- Um sistema é feito de **componentes coesos** (uma responsabilidade cada) e **desacoplados**: fica fácil trocar, manter e reaproveitar.
+- **Inversão de controle:** se A depende de B, A não escolhe quem é B. É a analogia do carro: a bateria encaixa fora do motor, então dá para trocá-la sem abrir o motor.
+- **Injeção de dependência** por construtor, `set` ou container. No Spring são dois passos: registrar (`@Service`) e declarar a dependência; o framework instancia, resolve e reaproveita.
+
+**Desafio:** total do pedido = valor − desconto + frete (R$ 20 abaixo de R$ 100, R$ 12 até R$ 200, grátis acima). `OrderService.total()` pede o frete ao `ShippingService.shipment()`, recebido pelo construtor.
+
+</details>
+
+<details>
+<summary><b>② Modelo de domínio e ORM</b>: do diagrama às tabelas com JPA</summary>
+<br/>
+
+- Perfil `test` com **H2** em memória, `h2-console` e `open-in-view=false`.
+- Relacionamentos: `@ManyToOne`/`@OneToMany`, `@OneToOne` com `@MapsId` (Order ↔ Payment), `@ManyToMany` com `@JoinTable` (Product ↔ Category).
+- **N-N com dados próprios:** classe de associação com chave composta `@EmbeddedId` (`OrderItem` com quantidade e preço).
+- Seed com `import.sql`.
+
+```mermaid
+erDiagram
+    USER ||--o{ ORDER : "client"
+    ORDER ||--o| PAYMENT : "MapsId"
+    ORDER ||--|{ ORDER_ITEM : "items"
+    PRODUCT ||--o{ ORDER_ITEM : "items"
+    PRODUCT }o--o{ CATEGORY : "tb_product_category"
+```
+
+**Desafio:** sistema de eventos acadêmicos (atividades divididas em blocos de horário, categorias e participantes) criado e populado no H2.
+
+</details>
+
+<details>
+<summary><b>③ API REST, camadas, CRUD, exceções e validações</b>: a API de mercado</summary>
+<br/>
+
+- **REST:** recurso pelo nome (`GET /products/1`) e ação no verbo HTTP, nunca na rota (`POST /products`, e não `/insertProduct`).
+- **Camadas:** Controller (requisição) → Service (operação com sentido de negócio, `@Transactional`) → Repository (acesso ao banco).
+- **DTO** para projeção, segurança e economia de tráfego. Regra de ouro: nunca colocar uma entity dentro de um DTO.
+- **Erros centralizados** com `@ControllerAdvice`: 404 para recurso inexistente e 422 com uma mensagem por campo (Bean Validation).
+
+**Desafio:** CRUD completo de clientes com busca paginada (`?page=0&size=6&sort=name`), seed de 10 clientes, 404 e 422 com `@NotBlank` e `@PastOrPresent`.
+
+</details>
+
+<details>
+<summary><b>④ JPA, consultas SQL e JPQL</b>: em andamento</summary>
+<br/>
+
+- Sessão JPA e estados da entidade (*transient → managed → detached/removed*).
+- O grande vilão da JPA são as idas e voltas desnecessárias ao banco (**N+1**). A saída é usar `JOIN FETCH` ou, melhor ainda, consultas customizadas.
+- `@Transactional` e `open-in-view=false`; query methods, **JPQL** e SQL nativo, com estudos de caso do beecrowd no PostgreSQL.
+
+</details>
+
+<sub>🧠 O resumo completo de cada PDF do curso está no meu segundo cérebro (Obsidian), ligado às notas de Spring que alimentam a <a href="#-junior--pleno--onde-estou">régua Junior → Pleno</a>.</sub>
 
 <p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
 

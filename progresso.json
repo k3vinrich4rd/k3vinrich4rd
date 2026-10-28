@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-27",
+  "atualizado": "2026-10-28",
   "regua": {
     "praticadas": 12,
     "total": 15,
@@ -897,7 +897,7 @@
     }
   ],
   "biblioteca": {
-    "notas": 69,
+    "notas": 70,
     "comSem": 60,
     "sessoes": [
       "IA, Spring e LGPD",
