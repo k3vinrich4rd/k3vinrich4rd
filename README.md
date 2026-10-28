@@ -161,9 +161,9 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:agora:END -->
 
 <!-- AUTO:dica:START -->
-> 💡 **Dica do dia: `@Transactional(readOnly = true)`**  
-> Em métodos só de leitura, avisa o Hibernate para não checar mudanças nas entidades: menos trabalho e intenção clara.  
-> <sub>Muda todo dia sozinha · 1/20</sub>
+> 💡 **Dica do dia: `getReferenceById`**  
+> No update, devolve uma referência sem fazer SELECT. O banco só é consultado quando você realmente precisa dos dados.  
+> <sub>Muda todo dia sozinha · 2/20</sub>
 <!-- AUTO:dica:END -->
 
 <!-- A cobrinha é gerada pelo workflow .github/workflows/snake.yml deste repositório (branch "output"). -->
@@ -180,8 +180,8 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:atividade:START -->
 | | Repositório | Commit | Quando |
 |:-:|---|---|---|
-| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`9d3914f`](https://github.com/k3vinrich4rd/rkf_bank/commit/9d3914fdd4b404c57548bc1e3ec94a224607132c) docs: TDD na pratica e cartao do app no README | há 7 h |
-| ♻️ | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`e745cfb`](https://github.com/k3vinrich4rd/rkf_bank/commit/e745cfbe04b05e93848cf4c3d337992660e3cb1f) refactor(services): ContaService usa o dominio rico da Conta (TDD refato | há 7 h |
+| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`9d3914f`](https://github.com/k3vinrich4rd/rkf_bank/commit/9d3914fdd4b404c57548bc1e3ec94a224607132c) docs: TDD na pratica e cartao do app no README | há 14 h |
+| ♻️ | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`e745cfb`](https://github.com/k3vinrich4rd/rkf_bank/commit/e745cfbe04b05e93848cf4c3d337992660e3cb1f) refactor(services): ContaService usa o dominio rico da Conta (TDD refato | há 14 h |
 | 📝 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`0849493`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/0849493f006f8569a3c9a93e9578c3ba795d6921) docs: adiciona README com modelo de dominio, endpoints e exemplos reais | há 12 dias |
 | 🐛 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`cf381a2`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/cf381a2b0fdf09b7ce7b3c3784be9cc876f6352e) fix: salva application-test.properties em UTF-8 | há 12 dias |
 | ✨ | [`crud-clientes`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) | [`9b0eb79`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes/commit/9b0eb794bf407bdbe22af1196065717ef72591a9) feat: implementando correcao sugerida no feedback | há 23 dias |
@@ -189,7 +189,7 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 | ✨ | [`workshop-springboot4-mongodb`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb) | [`ecad5ce`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb/commit/ecad5cec16d1f5ef7b606e6f8b5daf5ce74ade25) feat: Implementando ajustes no projeto | 15/09/2026 |
 | ✨ | [`workshop-springboot4-mongodb`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb) | [`264463c`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb/commit/264463cd568db8f49e9a3b154dc305bfb5adc906) feat: Implementando ajustes de comentarios no projeto e README.md | 06/09/2026 |
 
-<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 27/10 às 19:18</sub>
+<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 28/10 às 02:47</sub>
 <!-- AUTO:atividade:END -->
 
 </details>
@@ -2375,26 +2375,26 @@ Com `update` o Hibernate adivinha o schema, não renomeia nem remove nada e não
 
 <!-- AUTO:flashcards:START -->
 <details>
-<summary><b>🃏 Java · Por que nunca usar double para dinheiro?</b></summary>
+<summary><b>🃏 Java · == ou equals para comparar dois BigDecimal?</b></summary>
 <br/>
 
-Porque double guarda em base 2 e 0.1 não tem representação exata: <code>0.1 + 0.2</code> dá <code>0.30000000000000004</code>. No RKF Bank o saldo é <code>BigDecimal</code> e a coluna é <code>DECIMAL(19,2)</code>.
+Nenhum dos dois: <code>==</code> compara endereço e <code>equals</code> compara a escala (<code>1.0</code> ≠ <code>1.00</code>). Para valor, use <code>compareTo(...) == 0</code>.
 
 </details>
 
 <details>
-<summary><b>🃏 Java · Diferença entre JDK, JRE e JVM?</b></summary>
+<summary><b>🃏 Java · Por que records são ótimos para DTO e péssimos para entidade JPA?</b></summary>
 <br/>
 
-A JVM executa bytecode; o JRE é JVM + bibliotecas para rodar; o JDK é JRE + ferramentas de desenvolvimento (<code>javac</code>). O mesmo <code>.jar</code> roda no Windows e no Linux do CI porque o bytecode é da JVM, não do sistema.
+Records são imutáveis e já trazem <code>equals</code>, <code>hashCode</code> e <code>toString</code>. O Hibernate precisa de construtor vazio e de alterar campos, o que record não permite. Cuidado: o <code>toString</code> automático pode vazar senha no log.
 
 </details>
 
 <details>
-<summary><b>🃏 Java · Java tem vazamento de memória?</b></summary>
+<summary><b>🃏 Java · O que é uma race condition?</b></summary>
 <br/>
 
-Tem: o GC só recolhe objetos inalcançáveis. Um <code>static Map</code> que nunca é limpo mantém tudo vivo até o <code>OutOfMemoryError</code>. A solução é cache com limite e expiração.
+Duas threads leem o mesmo valor e gravam por cima uma da outra. Em memória resolve com <code>AtomicInteger</code>/<code>synchronized</code>; no banco, com lock otimista (<code>@Version</code>), que no RKF Bank vira <code>409</code>.
 
 </details>
 
