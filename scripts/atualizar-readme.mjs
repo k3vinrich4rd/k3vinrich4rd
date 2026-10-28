@@ -5,6 +5,7 @@ import path from 'node:path';
 import { RAIZ, ler, escrever, substituirBloco, xml } from './lib.mjs';
 import * as svg from './svgs.mjs';
 import { aplicar as aplicarVisuais } from './visuais.mjs';
+import { blocoCursos } from './cursos.mjs';
 
 const USUARIO = 'k3vinrich4rd';
 const usarApi = process.argv.includes('--api');
@@ -620,6 +621,7 @@ readme = substituirBloco(readme, 'cerebro', blocoCerebro());
 readme = substituirBloco(readme, 'dica', blocoDica());
 readme = substituirBloco(readme, 'flashcards', blocoFlashcards());
 if (ck.gantt) readme = substituirBloco(readme, 'gantt', ck.gantt);
+readme = substituirBloco(readme, 'cursos', blocoCursos(JSON.parse(ler(path.join(RAIZ, 'cursos.json')) ?? '{}')));
 // Números soltos no texto que acompanham o progresso.
 readme = readme
   .replace(/\d+(?= testes, JaCoCo)/, rkf.testes)

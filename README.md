@@ -38,7 +38,7 @@
 | <a href="#-ao-vivo">02 · 📡 Ao vivo</a> | <a href="#️-tecnologias">10 · 🛠️ Tecnologias</a> |
 | <a href="#-trajetória">03 · 🧭 Trajetória</a> | <a href="#-atuação-profissional">11 · 💼 Atuação profissional</a> |
 | <a href="#-sobre-mim">04 · 🚀 Sobre mim</a> | <a href="#-pergunte-ao-kevin">12 · 💬 Pergunte ao Kevin</a> |
-| <a href="#-projeto-atual--rkf-bank">05 · 🏦 Projeto atual — RKF Bank</a> | <a href="#-curso-em-andamento--java-spring-professional">13 · 📚 Curso em andamento — Java Spring Professional</a> |
+| <a href="#-projeto-atual--rkf-bank">05 · 🏦 Projeto atual — RKF Bank</a> | <a href="#-cursos-em-andamento">13 · 📚 Cursos em andamento</a> |
 | <a href="#️-projetos-em-destaque">06 · 🗂️ Projetos em destaque</a> | <a href="#-formação-e-certificações">14 · 🎓 Formação e certificações</a> |
 | <a href="#-junior--pleno--onde-estou">07 · 📈 Junior → Pleno — onde estou</a> | <a href="#️-livro-de-visitas">15 · ✍️ Livro de visitas</a> |
 | <a href="#-github-stats">08 · 📊 GitHub Stats</a> |  |
@@ -2480,40 +2480,51 @@ Duas threads leem o mesmo valor e gravam por cima uma da outra. Em memória reso
 
 <p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
 
-<img src="assets/secoes/curso-em-andamento.svg" width="100%" alt=""/>
+<img src="assets/secoes/cursos-em-andamento.svg" width="100%" alt=""/>
 
-## 📚 Curso em andamento — Java Spring Professional
+## 📚 Cursos em andamento
 
-> Formação **Desenvolvedor Moderno · Back end** da [DevSuperior](https://devsuperior.com.br), com o professor Nélio Alves. Cada capítulo termina com um **desafio entregue no GitHub**, e o projeto do curso, o **DSCommerce**, cresce a cada etapa. É a teoria por trás do que eu pratico no [RKF Bank](#-projeto-atual--rkf-bank).
+> O que estou estudando agora, com o progresso lido da própria plataforma do curso. Cada capítulo termina com um **desafio entregue no GitHub**, e é a teoria por trás do que eu pratico no [RKF Bank](#-projeto-atual--rkf-bank).
+
+<!-- AUTO:cursos:START -->
+### ☕ [Java Spring Professional](https://devsuperior.club/courses/5) · DevSuperior
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/progresso-39%25-EC7000?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/progresso-40%25-EC7000?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/cap%C3%ADtulos%20conclu%C3%ADdos-3%20de%206-3fb950?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/desafios%20entregues-3-58a6ff?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/desafios%20entregues-3%20de%205-58a6ff?style=for-the-badge"/>
 
 </div>
 
 ```mermaid
 flowchart LR
-    C1["① Componentes e DI ✅"] --> C2["② Domínio e ORM ✅"] --> C3["③ API REST e CRUD ✅"] --> C4["④ JPA, SQL e JPQL 🔄"] --> C5["⑤ Login e acesso"] --> C6["⑥ CI/CD"]
-    C2 -.-> DS[("🛒 DSCommerce")]
-    C3 -.-> DS
-    C4 -.-> DS
+    C1["① Componentes e<br/>injeção de<br/>dependência<br/>✅ 14/14"] --> C2["② Modelo de domínio<br/>e ORM<br/>✅ 15/15"] --> C3["③ API REST, camadas,<br/>CRUD, exceções,<br/>validações<br/>✅ 23/23"] --> C4["④ JPA, consultas SQL<br/>e JPQL<br/>🔄 5/38"] --> C5["⑤ Login e controle<br/>de acesso<br/>📅 0/34"] --> C6["⑥ Homologação e<br/>implantação com<br/>CI/CD<br/>📅 0/18"]
     style C1 fill:#1f6f3f,color:#fff
     style C2 fill:#1f6f3f,color:#fff
     style C3 fill:#1f6f3f,color:#fff
     style C4 fill:#9a6700,color:#fff
 ```
 
-| # | Capítulo | Aulas | Status | O que entreguei |
-|:-:|---|:-:|:-:|---|
-| 1 | Componentes e injeção de dependência | 14/14 | ✅ | [Cálculo de pedido](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) com `OrderService` + `ShippingService` injetados pelo Spring |
-| 2 | Modelo de domínio e ORM | 15/15 | ✅ | [Sistema de eventos](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) no H2 e o modelo do [DSCommerce](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) |
-| 3 | API REST, camadas, CRUD, exceções, validações | 23/23 | ✅ | [CRUD de clientes](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) com **10/10** no checklist de correção |
-| 4 | JPA, consultas SQL e JPQL | 4/38 | 🔄 | Próximo: desafio *Consulta vendas* (relatório paginado + sumário por vendedor) |
-| 5 | Login e controle de acesso | 0/34 | 📅 | DSCommerce completo com login (OAuth2 + JWT) e pedidos |
-| 6 | Homologação e implantação com CI/CD | 0/18 | 📅 | Perfis dev/prod, PostgreSQL no Docker e deploy com CI/CD |
+| # | Capítulo | Aulas | Duração | Status | O que entreguei |
+|:-:|---|:-:|:-:|:-:|---|
+| 1 | Componentes e injeção de dependência | 14/14 | 1h26 | ✅ | [Cálculo de pedido](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) com `OrderService` + `ShippingService` injetados pelo Spring |
+| 2 | Modelo de domínio e ORM | 15/15 | 2h17 | ✅ | [Sistema de eventos](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) no H2 e o modelo do [DSCommerce](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) |
+| 3 | API REST, camadas, CRUD, exceções, validações | 23/23 | 3h14 | ✅ | [CRUD de clientes](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) com **10/10** no checklist de correção |
+| 4 | JPA, consultas SQL e JPQL | 5/38 | 6h52 | 🔄 | Próximo: desafio *Consulta vendas* (relatório paginado + sumário por vendedor) |
+| 5 | Login e controle de acesso | 0/34 | 4h53 | 📅 | DSCommerce completo com login (OAuth2 + JWT) e pedidos |
+| 6 | Homologação e implantação com CI/CD | 0/18 | 2h09 | 📅 | Perfis dev/prod, PostgreSQL no Docker e deploy com CI/CD |
+
+<sub>57 de 142 aulas assistidas</sub>
+
+**📌 Na fila (matriculado, ainda não comecei):** [Java Spring Expert](https://devsuperior.club/courses/6) (204 aulas) · [Java Spring Reference](https://devsuperior.club/courses/7) (151 aulas) · [Java Spring Tópicos Avançados](https://devsuperior.club/courses/63) (11 aulas) · [Análise de Requisitos Expert](https://devsuperior.club/courses/10) (50 aulas) · [Bônus Estudo de caso CI/CD AWS e Github Actions](https://devsuperior.club/courses/12) (17 aulas)
+
+<sub>🤖 Progresso lido da plataforma do curso pela minha automação em 2026-10-28.</sub>
+<!-- AUTO:cursos:END -->
+
+#### 📖 O que aprendi no Java Spring Professional
+
+Formação **Desenvolvedor Moderno · Back end** da [DevSuperior](https://devsuperior.com.br), com o professor Nélio Alves. O projeto do curso, o **DSCommerce**, cresce a cada capítulo.
 
 <details>
 <summary><b>① Componentes e injeção de dependência</b>: por que o Spring cria os objetos por mim</summary>

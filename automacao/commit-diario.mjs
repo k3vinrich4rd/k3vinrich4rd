@@ -44,7 +44,7 @@ function commitDiario() {
 
   execFileSync(process.execPath, [path.join(RAIZ, 'scripts', 'coletar-progresso.mjs')], { cwd: RAIZ, stdio: 'ignore' });
   execFileSync(process.execPath, [path.join(RAIZ, 'scripts', 'atualizar-readme.mjs')], { cwd: RAIZ, stdio: 'ignore' });
-  git(['add', 'README.md', 'progresso.json', 'assets']);
+  git(['add', 'README.md', 'progresso.json', 'cursos.json', 'assets']);
   if (!git(['diff', '--cached', '--name-only'])) return log('README sem mudanças hoje: sem commit');
   git(['commit', '-q', '-m', 'docs(perfil): atualização diária do README']);
   if (cfg.autoPush) {
