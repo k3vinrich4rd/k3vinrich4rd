@@ -2508,8 +2508,8 @@ flowchart LR
 
 | # | Capítulo | Aulas | Status | O que entreguei |
 |:-:|---|:-:|:-:|---|
-| 1 | Componentes e injeção de dependência | 12/14 | ✅ | Cálculo de pedido com `OrderService` + `ShippingService` injetados pelo Spring |
-| 2 | Modelo de domínio e ORM | 15/15 | ✅ | Sistema de eventos no H2 e o modelo do [DSCommerce](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) |
+| 1 | Componentes e injeção de dependência | 12/14 | ✅ | [Cálculo de pedido](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) com `OrderService` + `ShippingService` injetados pelo Spring |
+| 2 | Modelo de domínio e ORM | 15/15 | ✅ | [Sistema de eventos](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) no H2 e o modelo do [DSCommerce](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) |
 | 3 | API REST, camadas, CRUD, exceções, validações | 23/23 | ✅ | [CRUD de clientes](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) com **10/10** no checklist de correção |
 | 4 | JPA, consultas SQL e JPQL | 1/38 | 🔄 | Próximo: desafio *Consulta vendas* (relatório paginado + sumário por vendedor) |
 | 5 | Login e controle de acesso | 0/34 | 📅 | OAuth2, JWT e perfis `User`–`Role` |
