@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="270" viewBox="0 0 1200 270" role="img" aria-label="Pulso da semana: 3 dias seguidos, 210 contribuições em 7 dias, 400 em 30 dias, 22 dias ativos no mês. Último commit há 14 h.">
-=======
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="270" viewBox="0 0 1200 270" role="img" aria-label="Pulso da semana: 3 dias seguidos, 210 contribuições em 7 dias, 400 em 30 dias, 22 dias ativos no mês. Último commit ontem.">
->>>>>>> Stashed changes
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="270" viewBox="0 0 1200 270" role="img" aria-label="Pulso da semana: 3 dias seguidos, 210 contribuições em 7 dias, 400 em 30 dias, 22 dias ativos no mês. Último commit há 21 h.">
   <!-- Gerado por scripts/svgs.mjs. Não edite à mão. -->
   <style>
     .cel { opacity: 0; animation: acende .35s ease-out forwards; }
@@ -123,9 +119,5 @@
       <text x="826" y="189" style="font: 800 28px Consolas, 'Fira Code', 'JetBrains Mono', Menlo, monospace" fill="#d2a8ff">22</text>
       <text x="874" y="188" style="font: 400 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">dias ativos no mês</text>
     </g>
-<<<<<<< Updated upstream
-  <text x="368" y="246" style="font: 400 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">⏱️ Último commit <tspan fill="#e6edf3" font-weight="700">há 14 h</tspan> · atualizado em 28/10 às 02:47 (Brasília)</text>
-=======
-  <text x="368" y="246" style="font: 400 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">⏱️ Último commit <tspan fill="#e6edf3" font-weight="700">ontem</tspan> · atualizado em 28/10 às 09:11 (Brasília)</text>
->>>>>>> Stashed changes
+  <text x="368" y="246" style="font: 400 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">⏱️ Último commit <tspan fill="#e6edf3" font-weight="700">há 21 h</tspan> · atualizado em 28/10 às 09:11 (Brasília)</text>
 </svg>
