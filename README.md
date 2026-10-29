@@ -1792,9 +1792,9 @@ quadrantChart
 <br/>
 
 <!-- AUTO:estudos:START -->
-**44** assuntos praticados em projeto · **2** em andamento · **2** planejados
+**44** assuntos praticados em projeto · **3** em andamento · **2** planejados
 
-📚 **70** notas de estudo no segundo cérebro · **60** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
+📚 **71** notas de estudo no segundo cérebro · **61** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
 
 ```mermaid
 mindmap
@@ -1839,6 +1839,7 @@ mindmap
       ✅ POO e SOLID
     Spring
       ✅ Bean Validation
+      🔄 Carregamento EAGER e LAZY
       🔄 OAuth2 e OIDC
       ✅ Spring Boot - auto-configuração e starters
       ✅ Spring Boot Actuator
@@ -1860,6 +1861,7 @@ mindmap
 | Estudando agora | Área | Próximos passos |
 |---|---|---|
 | 🔄 AWS | Cloud | <sub>10 a fazer</sub> |
+| 🔄 Carregamento EAGER e LAZY | Spring | <sub>2 a fazer</sub> |
 | 🔄 OAuth2 e OIDC | Spring | <sub>2 a fazer</sub> |
 | ⏳ Mensageria e Outbox | Arquitetura | <sub>6 a fazer</sub> |
 | ⏳ Spring AI | IA | <sub>5 a fazer</sub> |
@@ -1875,7 +1877,7 @@ mindmap
 
 <!-- AUTO:cerebro:START -->
 <div align="center">
-  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 12 dias com registro, 70 notas, 2 trilhas e 44 assuntos praticados; progresso de cada trilha e de cada módulo"/>
+  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 12 dias com registro, 71 notas, 2 trilhas e 44 assuntos praticados; progresso de cada trilha e de cada módulo"/>
 </div>
 
 <details>
@@ -1884,14 +1886,14 @@ mindmap
 
 <table align="center"><tr>
 <td align="center">🗓️<br/><b>12</b> dias com registro<br/><sub>nos últimos 30</sub></td>
-<td align="center">📚<br/><b>70</b> notas de estudo<br/><sub>60 com exemplo com × sem</sub></td>
+<td align="center">📚<br/><b>71</b> notas de estudo<br/><sub>61 com exemplo com × sem</sub></td>
 <td align="center">🧭<br/><b>2</b> trilhas<br/><sub>12 módulos</sub></td>
 <td align="center">✅<br/><b>44</b> assuntos<br/><sub>praticados em projeto</sub></td>
 </tr></table>
 
 | Trilha | Praticado no RKF Bank | ✅ | 🔄 | 📅 | 📘 |
 |---|---|:-:|:-:|:-:|:-:|
-| **☕🌱 Java & Spring** | 🟩🟩🟩🟩⬜<br/>**38/43** | 38 | 2 | 1 | 2 |
+| **☕🌱 Java & Spring** | 🟩🟩🟩🟩⬜<br/>**38/44** | 38 | 3 | 1 | 2 |
 | **🤖 Inteligência Artificial** | 🟩🟩⬜⬜⬜<br/>**5/15** | 5 | 0 | 1 | 9 |
 
 </details>
@@ -1904,7 +1906,7 @@ mindmap
 |---|---|---|
 | ① Java moderno (Java 21 / 25) | 🟩🟩🟩🟩🟩<br/>**11/11** | ✅ JVM, JDK e bytecode · ✅ POO e SOLID · ✅ Java moderno (8 a 25) · ✅ Coleções Streams e Optional · ✅ Objetos - equals, hashCode e imutabilidade · ✅ Exceções em Java · ✅ Generics · ✅ BigDecimal e dinheiro · ✅ Concorrência e threads virtuais · ✅ Memória e Garbage Collector · ✅ Maven e build |
 | ② Spring Boot & arquitetura em camadas | 🟩🟩🟩🟩🟩<br/>**3/3** | ✅ Spring Framework - IoC DI e AOP · ✅ Spring Boot - auto-configuração e starters · ✅ Spring Boot e camadas |
-| ③ Banco de dados & sincronização | 🟩🟩🟩🟩🟩<br/>**6/6** | ✅ SQL e MySQL · ✅ Spring Data JPA e relacionamentos · ✅ H2 x MySQL · ✅ Flyway · ✅ Lock otimista e transações · ✅ MongoDB |
+| ③ Banco de dados & sincronização | 🟩🟩🟩🟩⬜<br/>**6/7** | ✅ SQL e MySQL · ✅ Spring Data JPA e relacionamentos · 🔄 Carregamento EAGER e LAZY · ✅ H2 x MySQL · ✅ Flyway · ✅ Lock otimista e transações · ✅ MongoDB |
 | ④ Validação e tratamento de erros | 🟩🟩🟩🟩🟩<br/>**3/3** | ✅ Bean Validation · ✅ Tratamento de erros REST · ✅ Swagger e OpenAPI |
 | ⑤ Testes (manuais e automatizados) | 🟩🟩🟩🟩🟩<br/>**6/6** | ✅ TDD e estratégia de testes · ✅ JUnit e Mockito · ✅ Spring Boot Test · ✅ DataJpaTest · ✅ Testcontainers · ✅ Testes manuais de API - Postman e Insomnia |
 | ⑥ Segurança e infraestrutura | 🟩🟩🟩⬜⬜<br/>**9/14** | ✅ Spring Security e JWT · 🔄 OAuth2 e OIDC · ✅ LGPD · 📅 Mensageria e Outbox · 📘 Pub-Sub e DLQ · ✅ Integração com APIs externas · ✅ Logs e observabilidade · ✅ Spring Boot Actuator · ✅ Docker e Compose · ✅ GitHub Actions · ✅ Git Flow e commits semânticos · ✅ Dependências e CVEs · 📘 Spring Cloud e microsserviços · 🔄 AWS |
@@ -1926,7 +1928,7 @@ mindmap
 
 </details>
 
-📝 **Estudado por último:** `IA` Design Doc de arquitetura para IA · `IA` Ferramentas de dev com IA · `Spring` OAuth2 e OIDC · `Arquitetura` Pub-Sub e DLQ · `Testes` TDD e estratégia de testes · `Testes` Testes de aplicações com IA (evals) · `Testes` Testes manuais de API - Postman e Insomnia · `IA` Tool Calling (Function Calling)
+📝 **Estudado por último:** `Spring` Carregamento EAGER e LAZY · `IA` Design Doc de arquitetura para IA · `IA` Ferramentas de dev com IA · `Spring` OAuth2 e OIDC · `Arquitetura` Pub-Sub e DLQ · `Testes` TDD e estratégia de testes · `Testes` Testes de aplicações com IA (evals) · `Testes` Testes manuais de API - Postman e Insomnia
 
 <sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-10-29</sub>
 <!-- AUTO:cerebro:END -->
@@ -2491,7 +2493,7 @@ BCrypt tem salt aleatório (senhas iguais viram hashes diferentes) e é lento de
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/progresso-42%25-EC7000?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/progresso-43%25-EC7000?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/cap%C3%ADtulos%20conclu%C3%ADdos-3%20de%206-3fb950?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/desafios%20entregues-3%20de%205-58a6ff?style=for-the-badge"/>
 
@@ -2499,7 +2501,7 @@ BCrypt tem salt aleatório (senhas iguais viram hashes diferentes) e é lento de
 
 ```mermaid
 flowchart LR
-    C1["① Componentes e<br/>injeção de<br/>dependência<br/>✅ 14/14"] --> C2["② Modelo de domínio<br/>e ORM<br/>✅ 15/15"] --> C3["③ API REST, camadas,<br/>CRUD, exceções,<br/>validações<br/>✅ 23/23"] --> C4["④ JPA, consultas SQL<br/>e JPQL<br/>🔄 8/38"] --> C5["⑤ Login e controle<br/>de acesso<br/>📅 0/34"] --> C6["⑥ Homologação e<br/>implantação com<br/>CI/CD<br/>📅 0/18"]
+    C1["① Componentes e<br/>injeção de<br/>dependência<br/>✅ 14/14"] --> C2["② Modelo de domínio<br/>e ORM<br/>✅ 15/15"] --> C3["③ API REST, camadas,<br/>CRUD, exceções,<br/>validações<br/>✅ 23/23"] --> C4["④ JPA, consultas SQL<br/>e JPQL<br/>🔄 9/38"] --> C5["⑤ Login e controle<br/>de acesso<br/>📅 0/34"] --> C6["⑥ Homologação e<br/>implantação com<br/>CI/CD<br/>📅 0/18"]
     style C1 fill:#1f6f3f,color:#fff
     style C2 fill:#1f6f3f,color:#fff
     style C3 fill:#1f6f3f,color:#fff
@@ -2511,15 +2513,15 @@ flowchart LR
 | 1 | Componentes e injeção de dependência | 14/14 | 1h26 | ✅ | [Cálculo de pedido](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) com `OrderService` + `ShippingService` injetados pelo Spring |
 | 2 | Modelo de domínio e ORM | 15/15 | 2h17 | ✅ | [Sistema de eventos](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) no H2 e o modelo do [DSCommerce](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) |
 | 3 | API REST, camadas, CRUD, exceções, validações | 23/23 | 3h14 | ✅ | [CRUD de clientes](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) com **10/10** no checklist de correção |
-| 4 | JPA, consultas SQL e JPQL | 8/38 | 6h52 | 🔄 | Próximo: desafio *Consulta vendas* (relatório paginado + sumário por vendedor) |
+| 4 | JPA, consultas SQL e JPQL | 9/38 | 6h52 | 🔄 | Próximo: desafio *Consulta vendas* (relatório paginado + sumário por vendedor) |
 | 5 | Login e controle de acesso | 0/34 | 4h53 | 📅 | DSCommerce completo com login (OAuth2 + JWT) e pedidos |
 | 6 | Homologação e implantação com CI/CD | 0/18 | 2h09 | 📅 | Perfis dev/prod, PostgreSQL no Docker e deploy com CI/CD |
 
-<sub>60 de 142 aulas assistidas</sub>
+<sub>61 de 142 aulas assistidas</sub>
 
 **📌 Na fila (matriculado, ainda não comecei):** [Java Spring Expert](https://devsuperior.club/courses/6) (204 aulas) · [Java Spring Reference](https://devsuperior.club/courses/7) (151 aulas) · [Java Spring Tópicos Avançados](https://devsuperior.club/courses/63) (11 aulas) · [Análise de Requisitos Expert](https://devsuperior.club/courses/10) (50 aulas) · [Bônus Estudo de caso CI/CD AWS e Github Actions](https://devsuperior.club/courses/12) (17 aulas)
 
-<sub>🤖 Progresso lido da plataforma do curso pela minha automação em 2026-10-28.</sub>
+<sub>🤖 Progresso lido da plataforma do curso pela minha automação em 2026-10-29.</sub>
 <!-- AUTO:cursos:END -->
 
 #### 📖 O que aprendi no Java Spring Professional
@@ -2578,7 +2580,19 @@ erDiagram
 <br/>
 
 - Sessão JPA e estados da entidade (*transient → managed → detached/removed*).
+- Salvar associados **para-um** (só o id no JSON) e **para-muitos** (um `getReferenceById` por item, um proxy sem `SELECT`).
+- **EAGER × LAZY:** relacionamento para-um carrega junto (EAGER), para-muitos só quando acessado (LAZY). No RKF Bank, `Conta.cliente` é EAGER (a regra de dono precisa dele) e `Cliente.contas` é LAZY, com a lista vindo de `findByClienteId` paginado.
 - O grande vilão da JPA são as idas e voltas desnecessárias ao banco (**N+1**). A saída é usar `JOIN FETCH` ou, melhor ainda, consultas customizadas.
+
+```mermaid
+flowchart LR
+    Q["buscar entidade"] --> T{"relacionamento"}
+    T -->|"para-um"| E["EAGER: vem junto"]
+    T -->|"para-muitos"| L["LAZY: proxy"]
+    L -->|"acesso em loop"| N["N+1 consultas"]
+    N -->|"JOIN FETCH ou consulta customizada"| OK["1 consulta"]
+```
+
 - `@Transactional` e `open-in-view=false`; query methods, **JPQL** e SQL nativo, com estudos de caso do beecrowd no PostgreSQL.
 - No DSCommerce: busca de produtos por nome e consultas paginadas sem lentidão (`countQuery`).
 
