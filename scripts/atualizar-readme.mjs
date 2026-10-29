@@ -81,7 +81,7 @@ function blocoChecklist() {
   }).join('\n');
   const recentes = ck.recentes.length ? `\n**✔️ Concluído recentemente** <sub>${ck.recentes.length} entregas</sub>\n${ck.recentes.map((r) => `- ✅ ${r}`).join('\n')}\n` : '';
   return `${recentes}
-**🚀 MVP do RKF Bank (31/10/2026)** ${progresso(ck.mvp.feitos, ck.mvp.total)}
+**🚀 MVP do RKF Bank (${ck.mvp.total && ck.mvp.feitos === ck.mvp.total ? 'concluído em 29/10/2026' : '31/10/2026'})** ${progresso(ck.mvp.feitos, ck.mvp.total)}
 
 ${mvp}
 
