@@ -156,7 +156,7 @@
     
     <text x="820" y="594" style="font: 24px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">📨</text>
     <text x="858" y="588" style="font: 600 15px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#e6edf3">Mensageria e microsserviços</text>
-    <text x="858" y="642" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">próximo ciclo</text>
+    <text x="858" y="642" style="font: 400 12.5px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">Outbox do comprovante pronto…</text>
     <text x="1162" y="642" text-anchor="end" style="font: 600 12px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">⏳ planejada</text>
   </g>
 </svg>

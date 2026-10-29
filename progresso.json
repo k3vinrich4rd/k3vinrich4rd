@@ -21,13 +21,13 @@
       {
         "nome": "Testes unitários, web e de repositório",
         "status": "praticada",
-        "evidencia": "RKF Bank",
+        "evidencia": "RKF Bank (360 testes; TDD na `Conta`, PR #79; N+1 medido pelo `ConsultasSqlIntegracaoTest`, PR #82)",
         "proximo": false
       },
       {
         "nome": "Transações e concorrência",
         "status": "praticada",
-        "evidencia": "RKF Bank (+ idempotência com `Idempotency-Key`, PR #35)",
+        "evidencia": "RKF Bank (+ idempotência com `Idempotency-Key`, PR #35; `ConcorrenciaMySqlTest` no MySQL real; threads virtuais, PR #77)",
         "proximo": false
       },
       {
@@ -93,7 +93,7 @@
       {
         "nome": "Mensageria e microsserviços",
         "status": "planejada",
-        "evidencia": "",
+        "evidencia": "Outbox do comprovante pronto na branch `refactor/monolito-modular` (em revisão); falta o broker",
         "proximo": false
       }
     ]
@@ -107,7 +107,7 @@
   "rkf": {
     "testes": 360,
     "checklist": {
-      "gantt": "```mermaid\ngantt\n    title Do MVP ao Pleno\n    dateFormat YYYY-MM-DD\n    axisFormat %d/%m\n    section MVP\n    Semana 2 - cliente e conta        :done,    s2, 2026-10-12, 7d\n    Semana 3 - movimentações          :active,  s3, 2026-10-19, 7d\n    Semana 4 - testar e lançar        :         s4, 2026-10-26, 6d\n    section Pleno\n    Flyway                            :done,    f1, 2026-10-15, 2d\n    Spring Security + JWT             :done,    f2, 2026-10-16, 2d\n    Testcontainers                    :crit,    f3, 2026-10-20, 4d\n    Swagger                           :         f6, after f3, 2d\n    Deploy AWS                        :         f4, after s4, 7d\n    Mensageria                        :         f5, after f6, 10d\n```",
+      "gantt": "```mermaid\ngantt\n    title Do MVP ao Pleno\n    dateFormat YYYY-MM-DD\n    axisFormat %d/%m\n    section MVP\n    Semana 2 - cliente e conta        :done,    s2, 2026-10-12, 7d\n    Semana 3 - movimentações          :done,    s3, 2026-10-19, 7d\n    Semana 4 - testar e lançar        :active,  s4, 2026-10-26, 6d\n    section Pleno\n    Flyway                            :done,    f1, 2026-10-15, 2d\n    Spring Security + JWT             :done,    f2, 2026-10-16, 2d\n    Testcontainers                    :done,    f3, 2026-10-20, 4d\n    Swagger                           :done,    f6, 2026-10-21, 3d\n    Fim do N+1 (LAZY e EntityGraph)   :done,    f7, 2026-10-29, 1d\n    Monólito modular (em revisão)     :active,  f8, 2026-10-29, 3d\n    Deploy AWS                        :         f4, after s4, 7d\n    Mensageria (broker no Outbox)     :         f5, after f4, 10d\n```",
       "agora": [
         {
           "feito": true,
@@ -138,8 +138,8 @@
           "texto": "LGPD mínimo antes do deploy (termos, meus dados, encerramento e encarregados)"
         },
         {
-          "feito": false,
-          "texto": "⏫ Reunião semanal: Kevin e Renan aprovam o PR #76 `develop` → `main` (CI verde, 360 testes)"
+          "feito": true,
+          "texto": "⏫ PR #76 `develop` → `main` mergeado pelo Renan (CI verde, 360 testes) — 2026-10-29"
         },
         {
           "feito": false,
@@ -244,7 +244,7 @@
         ]
       },
       "pleno": {
-        "feitos": 14,
+        "feitos": 21,
         "total": 29,
         "grupos": [
           {
@@ -314,48 +314,48 @@
             ]
           },
           {
-            "nome": "Testcontainers",
+            "nome": "Testcontainers ✅",
             "futuro": false,
-            "proximo": true,
-            "feitos": 1,
+            "proximo": false,
+            "feitos": 4,
             "total": 4,
             "itens": [
               {
-                "feito": false,
-                "texto": "Testes de repositório contra MySQL 8.4 real (`@ServiceConnection`)"
+                "feito": true,
+                "texto": "Testes contra MySQL 8.4 real com `@ServiceConnection` (`MigracoesMySqlTest`, `FluxoBancarioMySqlTest`, `MySqlIntegracaoBase`; PR #60) — 2026-10-25"
               },
               {
                 "feito": true,
                 "texto": "Teste de concorrência: duas transferências simultâneas → `409` e saldo correto (`ConcorrenciaMySqlTest`, MySQL real)"
               },
               {
-                "feito": false,
-                "texto": "Testes de rota com `MockMvc` (JSON de verdade)"
+                "feito": true,
+                "texto": "Testes de rota com `MockMvc` (JSON de verdade): `ClienteControllerTest` e `ContaControllerTest` com `@WebMvcTest`"
               },
               {
-                "feito": false,
-                "texto": "Rodar no GitHub Actions"
+                "feito": true,
+                "texto": "Rodar no GitHub Actions (os 7 testes do MySQL rodam no Backend CI)"
               }
             ]
           },
           {
-            "nome": "Swagger / OpenAPI",
+            "nome": "Swagger / OpenAPI ✅",
             "futuro": false,
             "proximo": false,
-            "feitos": 0,
+            "feitos": 3,
             "total": 3,
             "itens": [
               {
-                "feito": false,
-                "texto": "springdoc compatível com o Spring Boot 4"
+                "feito": true,
+                "texto": "springdoc 3.1.1, a linha do Spring Boot 4"
               },
               {
-                "feito": false,
+                "feito": true,
                 "texto": "Botão *Authorize* com o JWT"
               },
               {
-                "feito": false,
-                "texto": "Fluxo completo só pelo Swagger UI"
+                "feito": true,
+                "texto": "Fluxo completo só pelo Swagger UI (`VISITANTES.md`, \"sem Insomnia, use o Swagger\")"
               }
             ]
           },
@@ -363,12 +363,12 @@
             "nome": "Deploy AWS",
             "futuro": true,
             "proximo": false,
-            "feitos": 1,
+            "feitos": 2,
             "total": 5,
             "itens": [
               {
-                "feito": false,
-                "texto": "`Dockerfile` multi-stage do backend"
+                "feito": true,
+                "texto": "`Dockerfile` multi-stage do backend (JDK para o build, JRE na imagem; testado no `backend-docker.yml`)"
               },
               {
                 "feito": true,
@@ -405,7 +405,7 @@
               },
               {
                 "feito": false,
-                "texto": "Padrão Outbox + consumidor idempotente"
+                "texto": "Padrão Outbox + consumidor idempotente (Outbox pronto na branch `refactor/monolito-modular`, em revisão; falta o broker)"
               }
             ]
           },
@@ -433,16 +433,22 @@
         "total": 18
       },
       "recentes": [
+        "Release develop → main (PR #76, mergeado pelo Renan): TDD na `Conta`, threads virtuais, fim do N+1, contas por cliente só para o ADMIN, README com skills, diagnóstico e anotações — 2026-10-29",
         "Fim do N+1 nas listas do ADMIN: `Conta.cliente` e `Usuario.cliente` LAZY + `@EntityGraph`, provado pelo `ConsultasSqlIntegracaoTest` (PR #82) — 2026-10-29",
         "CI do PR #76 verde (teste do limitador dependia da ordem), `/entregar` no Git Flow do time e README com skills, diagnóstico de arquitetura e anotações (PRs #80, #81 e #83) — 2026-10-29",
         "Domínio rico na `Conta` com TDD, threads virtuais, entidades com `equals`/`hashCode` e respostas imutáveis (PRs #77 e #79) — 2026-10-27",
         "Trilhas curtas de teste: visitante em 13 passos, ADMIN em 25 e cliente em 36 (`BACKEND_E2E.md` reescrito), geradas de execução real (83/83; 119/119 no H2 e no MySQL) — 2026-10-26",
-        "Dependências do front (TypeScript 6, cn, radix-ui, CI) na develop (PR #69); só o PR #70 develop → main aberto — 2026-10-26",
-        "Release develop → main (PR #51): contrato 3.1, telas do Renan, Testcontainers, Swagger, refresh token e LGPD — 2026-10-25"
+        "Dependências do front (TypeScript 6, cn, radix-ui, CI) na develop (PR #69); só o PR #70 develop → main aberto — 2026-10-26"
       ]
     }
   },
   "historico": [
+    {
+      "data": "2026-10-29",
+      "branch": "PR #76 release `develop` → `main` (mergeado pelo Renan)",
+      "mudou": "tudo de 27 a 29/10 chega à main: TDD na `Conta`, threads virtuais, entidades com `equals`/`hashCode`, contas por cliente só para o ADMIN, teste do limitador corrigido, fim do N+1 e README com skills, diagnóstico e anotações",
+      "aprendizado": "a main só recebe o que passou pela revisão do outro: o CI verde do PR de release é o resumo de todos os PRs da semana"
+    },
     {
       "data": "2026-10-29",
       "branch": "PR #82 `perf/carregamento-lazy`",
@@ -466,12 +472,6 @@
       "branch": "PRs #77 e #79",
       "mudou": "threads virtuais, `equals`/`hashCode` nas entidades, respostas imutáveis, `GET /clientes/{id}/contas` só ADMIN e domínio rico na `Conta` com TDD",
       "aprendizado": "TDD de verdade em três commits (vermelho, verde, refatorar): a regra de saldo saiu do service e foi para a entidade"
-    },
-    {
-      "data": "2026-10-26",
-      "branch": "PR #69 (deps do front) + PR #71 `docs/testes-trilhas-curtas` + equipe #5",
-      "mudou": "`VISITANTES.md` em 13 passos; `.equipe/testes/BACKEND_E2E.md` reescrito (preparar → ADMIN 25 passos → cliente 36, com a ordem dos métodos HTTP), coleção da equipe com o ADMIN padrão, `.equipe` enxuta; gerador com modo `--passos`; bug do registro corrigido; revisão do MVP de 26/10; só o PR #70 develop → main aberto",
-      "aprendizado": "testar não pode exigir ler 5 mil linhas: trilha curta primeiro, referência depois, as duas geradas da mesma execução real"
     }
   ],
   "estudos": [
