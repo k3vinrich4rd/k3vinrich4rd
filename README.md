@@ -1800,9 +1800,9 @@ quadrantChart
 <br/>
 
 <!-- AUTO:estudos:START -->
-**45** assuntos praticados em projeto · **6** em andamento · **2** planejados
+**46** assuntos praticados em projeto · **6** em andamento · **2** planejados
 
-📚 **75** notas de estudo no segundo cérebro · **65** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
+📚 **76** notas de estudo no segundo cérebro · **66** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
 
 ```mermaid
 mindmap
@@ -1852,6 +1852,7 @@ mindmap
       ✅ Bean Validation
       🔄 Carregamento EAGER e LAZY
       🔄 JPQL e JOIN FETCH
+      ✅ N+1 consultas
       🔄 OAuth2 e OIDC
       ✅ Spring Boot - auto-configuração e starters
       ✅ Spring Boot Actuator
@@ -1892,7 +1893,7 @@ mindmap
 
 <!-- AUTO:cerebro:START -->
 <div align="center">
-  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 12 dias com registro, 75 notas, 2 trilhas e 45 assuntos praticados; progresso de cada trilha e de cada módulo"/>
+  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 12 dias com registro, 76 notas, 2 trilhas e 46 assuntos praticados; progresso de cada trilha e de cada módulo"/>
 </div>
 
 <details>
@@ -1901,14 +1902,14 @@ mindmap
 
 <table align="center"><tr>
 <td align="center">🗓️<br/><b>12</b> dias com registro<br/><sub>nos últimos 30</sub></td>
-<td align="center">📚<br/><b>75</b> notas de estudo<br/><sub>65 com exemplo com × sem</sub></td>
+<td align="center">📚<br/><b>76</b> notas de estudo<br/><sub>66 com exemplo com × sem</sub></td>
 <td align="center">🧭<br/><b>2</b> trilhas<br/><sub>12 módulos</sub></td>
-<td align="center">✅<br/><b>45</b> assuntos<br/><sub>praticados em projeto</sub></td>
+<td align="center">✅<br/><b>46</b> assuntos<br/><sub>praticados em projeto</sub></td>
 </tr></table>
 
 | Trilha | Praticado no RKF Bank | ✅ | 🔄 | 📅 | 📘 |
 |---|---|:-:|:-:|:-:|:-:|
-| **☕🌱 Java & Spring** | 🟩🟩🟩🟩⬜<br/>**40/48** | 40 | 5 | 1 | 2 |
+| **☕🌱 Java & Spring** | 🟩🟩🟩🟩⬜<br/>**41/49** | 41 | 5 | 1 | 2 |
 | **🤖 Inteligência Artificial** | 🟩🟩⬜⬜⬜<br/>**5/15** | 5 | 0 | 1 | 9 |
 
 </details>
@@ -1921,7 +1922,7 @@ mindmap
 |---|---|---|
 | ① Java moderno (Java 21 / 25) | 🟩🟩🟩🟩🟩<br/>**11/11** | ✅ JVM, JDK e bytecode · ✅ POO e SOLID · ✅ Java moderno (8 a 25) · ✅ Coleções Streams e Optional · ✅ Objetos - equals, hashCode e imutabilidade · ✅ Exceções em Java · ✅ Generics · ✅ BigDecimal e dinheiro · ✅ Concorrência e threads virtuais · ✅ Memória e Garbage Collector · ✅ Maven e build |
 | ② Spring Boot & arquitetura em camadas | 🟩🟩🟩🟩🟩<br/>**4/4** | ✅ Spring Framework - IoC DI e AOP · ✅ Spring Boot - auto-configuração e starters · ✅ Spring Boot e camadas · ✅ Anotações Java e Spring |
-| ③ Banco de dados & sincronização | 🟩🟩🟩🟩⬜<br/>**7/8** | ✅ SQL e MySQL · ✅ Spring Data JPA e relacionamentos · ✅ Carregamento EAGER e LAZY · 🔄 JPQL e JOIN FETCH · ✅ H2 x MySQL · ✅ Flyway · ✅ Lock otimista e transações · ✅ MongoDB |
+| ③ Banco de dados & sincronização | 🟩🟩🟩🟩⬜<br/>**8/9** | ✅ SQL e MySQL · ✅ Spring Data JPA e relacionamentos · ✅ Carregamento EAGER e LAZY · ✅ N+1 consultas · 🔄 JPQL e JOIN FETCH · ✅ H2 x MySQL · ✅ Flyway · ✅ Lock otimista e transações · ✅ MongoDB |
 | ④ Validação e tratamento de erros | 🟩🟩🟩🟩🟩<br/>**3/3** | ✅ Bean Validation · ✅ Tratamento de erros REST · ✅ Swagger e OpenAPI |
 | ⑤ Testes (manuais e automatizados) | 🟩🟩🟩🟩🟩<br/>**6/6** | ✅ TDD e estratégia de testes · ✅ JUnit e Mockito · ✅ Spring Boot Test · ✅ DataJpaTest · ✅ Testcontainers · ✅ Testes manuais de API - Postman e Insomnia |
 | ⑥ Segurança e infraestrutura | 🟩🟩🟩⬜⬜<br/>**9/16** | ✅ Spring Security e JWT · 🔄 OAuth2 e OIDC · ✅ LGPD · 📅 Mensageria e Outbox · 📘 Pub-Sub e DLQ · 🔄 Arquiteturas de software · 🔄 Síncrono e assíncrono · ✅ Integração com APIs externas · ✅ Logs e observabilidade · ✅ Spring Boot Actuator · ✅ Docker e Compose · ✅ GitHub Actions · ✅ Git Flow e commits semânticos · ✅ Dependências e CVEs · 📘 Spring Cloud e microsserviços · 🔄 AWS |
@@ -1943,7 +1944,7 @@ mindmap
 
 </details>
 
-📝 **Estudado por último:** `Spring` Anotações Java e Spring · `Arquitetura` Arquiteturas de software · `Spring` Carregamento EAGER e LAZY · `Spring` JPQL e JOIN FETCH · `Arquitetura` Síncrono e assíncrono · `IA` Design Doc de arquitetura para IA · `IA` Ferramentas de dev com IA · `Spring` OAuth2 e OIDC
+📝 **Estudado por último:** `Spring` Anotações Java e Spring · `Arquitetura` Arquiteturas de software · `Spring` Carregamento EAGER e LAZY · `Spring` JPQL e JOIN FETCH · `Spring` N+1 consultas · `Arquitetura` Síncrono e assíncrono · `IA` Design Doc de arquitetura para IA · `IA` Ferramentas de dev com IA
 
 <sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-10-29</sub>
 <!-- AUTO:cerebro:END -->

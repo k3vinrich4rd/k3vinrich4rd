@@ -818,6 +818,15 @@
       }
     },
     {
+      "nome": "N+1 consultas",
+      "area": "Spring",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
       "nome": "OAuth2 e OIDC",
       "area": "Spring",
       "status": "andamento",
@@ -954,8 +963,8 @@
     }
   ],
   "biblioteca": {
-    "notas": 75,
-    "comSem": 65,
+    "notas": 76,
+    "comSem": 66,
     "sessoes": [
       "IA, Spring e LGPD",
       "Java e seu universo"
@@ -1049,6 +1058,10 @@
               },
               {
                 "nome": "Carregamento EAGER e LAZY",
+                "status": "praticado"
+              },
+              {
+                "nome": "N+1 consultas",
                 "status": "praticado"
               },
               {
@@ -1309,6 +1322,11 @@
         "criado": "2026-10-29"
       },
       {
+        "nome": "N+1 consultas",
+        "area": "Spring",
+        "criado": "2026-10-29"
+      },
+      {
         "nome": "Síncrono e assíncrono",
         "area": "Arquitetura",
         "criado": "2026-10-29"
@@ -1321,11 +1339,6 @@
       {
         "nome": "Ferramentas de dev com IA",
         "area": "IA",
-        "criado": "2026-10-27"
-      },
-      {
-        "nome": "OAuth2 e OIDC",
-        "area": "Spring",
         "criado": "2026-10-27"
       }
     ]
