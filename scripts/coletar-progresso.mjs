@@ -64,7 +64,12 @@ function checklist() {
     mvp: { ...resumo(mvp.flatMap((g) => g.itens)), grupos: mvp },
     pleno: { ...resumo(pleno.flatMap((g) => g.itens)), grupos: pleno },
     debitos: resumo(tarefas(achar('Débitos'))),
-    recentes: tarefas(achar('Concluído recentemente')).map((t) => limparObsidian(t.texto)).slice(-6).reverse(),
+    // A lista do Obsidian nao fica em ordem (entregas novas entram no topo ou no fim): ordena pela data do fim
+    // de cada item ('— 2026-10-29'), a mais nova primeiro; item sem data vai para o fim.
+    recentes: tarefas(achar('Concluído recentemente')).map((t) => limparObsidian(t.texto))
+      .map((texto, i) => ({ texto, i, data: /(\d{4}-\d{2}-\d{2})\s*$/.exec(texto)?.[1] ?? '' }))
+      .sort((x, y) => y.data.localeCompare(x.data) || x.i - y.i)
+      .map((r) => r.texto).slice(0, 6),
   };
 }
 
