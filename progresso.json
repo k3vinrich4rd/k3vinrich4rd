@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-28",
+  "atualizado": "2026-10-29",
   "regua": {
     "praticadas": 12,
     "total": 15,
@@ -1209,7 +1209,7 @@
         ]
       }
     ],
-    "diasDiario30": 11,
+    "diasDiario30": 12,
     "recentes": [
       {
         "nome": "Design Doc de arquitetura para IA",

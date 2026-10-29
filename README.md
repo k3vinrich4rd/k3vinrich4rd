@@ -1782,7 +1782,7 @@ quadrantChart
 | Inglês técnico | 🔄 | em andamento |
 | Mensageria e microsserviços | ⏳ | próximo ciclo |
 
-<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-10-28</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-10-29</sub>
 <!-- AUTO:regua:END -->
 
 </details>
@@ -1864,7 +1864,7 @@ mindmap
 | ⏳ Mensageria e Outbox | Arquitetura | <sub>6 a fazer</sub> |
 | ⏳ Spring AI | IA | <sub>5 a fazer</sub> |
 
-<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-10-28.</sub>
+<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-10-29.</sub>
 <!-- AUTO:estudos:END -->
 
 </details>
@@ -1875,7 +1875,7 @@ mindmap
 
 <!-- AUTO:cerebro:START -->
 <div align="center">
-  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 11 dias com registro, 70 notas, 2 trilhas e 44 assuntos praticados; progresso de cada trilha e de cada módulo"/>
+  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 12 dias com registro, 70 notas, 2 trilhas e 44 assuntos praticados; progresso de cada trilha e de cada módulo"/>
 </div>
 
 <details>
@@ -1883,7 +1883,7 @@ mindmap
 <br/>
 
 <table align="center"><tr>
-<td align="center">🗓️<br/><b>11</b> dias com registro<br/><sub>nos últimos 30</sub></td>
+<td align="center">🗓️<br/><b>12</b> dias com registro<br/><sub>nos últimos 30</sub></td>
 <td align="center">📚<br/><b>70</b> notas de estudo<br/><sub>60 com exemplo com × sem</sub></td>
 <td align="center">🧭<br/><b>2</b> trilhas<br/><sub>12 módulos</sub></td>
 <td align="center">✅<br/><b>44</b> assuntos<br/><sub>praticados em projeto</sub></td>
@@ -1928,7 +1928,7 @@ mindmap
 
 📝 **Estudado por último:** `IA` Design Doc de arquitetura para IA · `IA` Ferramentas de dev com IA · `Spring` OAuth2 e OIDC · `Arquitetura` Pub-Sub e DLQ · `Testes` TDD e estratégia de testes · `Testes` Testes de aplicações com IA (evals) · `Testes` Testes manuais de API - Postman e Insomnia · `IA` Tool Calling (Function Calling)
 
-<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-10-28</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-10-29</sub>
 <!-- AUTO:cerebro:END -->
 
 <details>
@@ -2115,7 +2115,7 @@ gantt
 
 **🧹 Débitos técnicos:** 9/18 resolvidos
 
-<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-10-28.</sub>
+<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-10-29.</sub>
 <!-- AUTO:checklist:END -->
 
 </details>
