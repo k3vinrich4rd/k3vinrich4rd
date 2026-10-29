@@ -63,7 +63,7 @@
       {
         "nome": "Migrações versionadas",
         "status": "praticada",
-        "evidencia": "RKF Bank (V1, V2, V3; PR #23) · reorganizado em V1–V8 com callbacks de seed (PR #35)",
+        "evidencia": "RKF Bank (V1, V2, V3; PR #23) · reorganizado em V1–V8 com callbacks de seed (PR #35) · hoje V1–V15, revisadas pelo `/revisar-migracao`",
         "proximo": false
       },
       {
@@ -118,35 +118,47 @@
           "texto": "Revisão de arquitetura aplicada: idempotência, conta que não se apaga, gestão de usuários, troca de senha (PR #35) — 2026-10-20"
         },
         {
-          "feito": false,
-          "texto": "Renan revisar o frontend do contrato 2.1–2.3 (`feature/frontend-contrato-2-3`)"
+          "feito": true,
+          "texto": "Renan revisar o frontend do contrato 2.1–2.3 (`feature/frontend-contrato-2-3`) — superado pelo contrato 3.0 (PR #60)"
         },
         {
-          "feito": false,
+          "feito": true,
           "texto": "⏫ `/entregar` as 3 branches de 22/10 (ordem: fix → lgpd → docs) e o PR #1 do `rkf_bank-equipe`"
         },
         {
-          "feito": false,
-          "texto": "Domínio rico em `Conta` (`debitar`/`creditar`) antes do MVP"
+          "feito": true,
+          "texto": "Domínio rico em `Conta` (`depositar`/`sacar`/`transferirPara`) com TDD (PR #79)"
         },
         {
           "feito": true,
           "texto": "⏫ Começar a `feature/testcontainers` (na main em 25/10)"
         },
         {
+          "feito": true,
+          "texto": "LGPD mínimo antes do deploy (termos, meus dados, encerramento e encarregados)"
+        },
+        {
           "feito": false,
-          "texto": "LGPD mínimo antes do deploy"
+          "texto": "⏫ Reunião semanal: Kevin e Renan aprovam o PR #76 `develop` → `main` (CI verde, 360 testes)"
+        },
+        {
+          "feito": false,
+          "texto": "Revisar a branch `refactor/monolito-modular` (módulos, porta do CEP, ArchUnit, Outbox) pelo `REFATORACAO_MODULAR_E2E.md` da equipe"
+        },
+        {
+          "feito": false,
+          "texto": "Aceite do Fellipe como primeiro cliente e colocar no ar"
         }
       ],
       "mvp": {
-        "feitos": 9,
+        "feitos": 10,
         "total": 15,
         "grupos": [
           {
             "nome": "Backend",
             "futuro": false,
             "proximo": false,
-            "feitos": 2,
+            "feitos": 3,
             "total": 3,
             "itens": [
               {
@@ -154,8 +166,8 @@
                 "texto": "`GET /contas/{contaId}` (saldo) — contrato 3.1"
               },
               {
-                "feito": false,
-                "texto": "`GET /clientes/{clienteId}/contas`"
+                "feito": true,
+                "texto": "`GET /clientes/{clienteId}/contas` (só ADMIN, contrato 3.2, PR #77) — 2026-10-27"
               },
               {
                 "feito": true,
@@ -421,45 +433,45 @@
         "total": 18
       },
       "recentes": [
-        "README do RKF Bank interativo (aventura, Osasco, avatares) e os três como idealizadores (PRs #32–#34) — 2026-10-19",
-        "Notas de IA, universo Spring e análise de LGPD no Obsidian — 2026-10-19",
-        "Frontend: login, conta, movimentações e extrato (PRs #26 e #27) — 2026-10-17",
-        "Spring Security + JWT, BCrypt, perfis e regra de dono (PR #24) — 2026-10-16",
-        "Flyway com V1, V2 e V3, `ddl-auto=validate` (PR #23) — 2026-10-16",
-        "CVEs do Tomcat (3 críticas) e do Jackson (5 altas, 2 moderadas) corrigidas — 2026-10-15"
+        "Fim do N+1 nas listas do ADMIN: `Conta.cliente` e `Usuario.cliente` LAZY + `@EntityGraph`, provado pelo `ConsultasSqlIntegracaoTest` (PR #82) — 2026-10-29",
+        "CI do PR #76 verde (teste do limitador dependia da ordem), `/entregar` no Git Flow do time e README com skills, diagnóstico de arquitetura e anotações (PRs #80, #81 e #83) — 2026-10-29",
+        "Domínio rico na `Conta` com TDD, threads virtuais, entidades com `equals`/`hashCode` e respostas imutáveis (PRs #77 e #79) — 2026-10-27",
+        "Trilhas curtas de teste: visitante em 13 passos, ADMIN em 25 e cliente em 36 (`BACKEND_E2E.md` reescrito), geradas de execução real (83/83; 119/119 no H2 e no MySQL) — 2026-10-26",
+        "Dependências do front (TypeScript 6, cn, radix-ui, CI) na develop (PR #69); só o PR #70 develop → main aberto — 2026-10-26",
+        "Release develop → main (PR #51): contrato 3.1, telas do Renan, Testcontainers, Swagger, refresh token e LGPD — 2026-10-25"
       ]
     }
   },
   "historico": [
     {
+      "data": "2026-10-29",
+      "branch": "PR #82 `perf/carregamento-lazy`",
+      "mudou": "`Conta.cliente` e `Usuario.cliente` LAZY + `@EntityGraph` nas listas do ADMIN; `ConsultasSqlIntegracaoTest` conta as consultas (360 testes)",
+      "aprendizado": "medir antes de otimizar: o EAGER padrão do para-um fazia N+1 em `/contas` (7 → 17 consultas de 5 para 15 contas); depois, número constante"
+    },
+    {
+      "data": "2026-10-29",
+      "branch": "PR #80 (CI do PR #76) + PRs #81 e #83 (README)",
+      "mudou": "teste flaky do limitador corrigido; `/entregar` no Git Flow do time; README com skills, diagnóstico de arquitetura, 15 padrões e as 95 anotações",
+      "aprendizado": "teste que depende da ordem é bug: o H2 compartilhado guardava os logins errados de outro teste; reproduzir com `-Dsurefire.runOrder` antes de corrigir"
+    },
+    {
+      "data": "2026-10-29",
+      "branch": "branch `refactor/monolito-modular` (em revisão, fora da develop)",
+      "mudou": "pastas por assunto, porta `ConsultaCep`, ArchUnit nas fronteiras e comprovante por Outbox (V16); 395 testes, smoke, coleções e site verdes",
+      "aprendizado": "trocar a arquitetura sem mudar comportamento: mover primeiro com os testes verdes, depois uma peça por commit, e deixar o ArchUnit achar os acoplamentos"
+    },
+    {
+      "data": "2026-10-27",
+      "branch": "PRs #77 e #79",
+      "mudou": "threads virtuais, `equals`/`hashCode` nas entidades, respostas imutáveis, `GET /clientes/{id}/contas` só ADMIN e domínio rico na `Conta` com TDD",
+      "aprendizado": "TDD de verdade em três commits (vermelho, verde, refatorar): a regra de saldo saiu do service e foi para a entidade"
+    },
+    {
       "data": "2026-10-26",
       "branch": "PR #69 (deps do front) + PR #71 `docs/testes-trilhas-curtas` + equipe #5",
       "mudou": "`VISITANTES.md` em 13 passos; `.equipe/testes/BACKEND_E2E.md` reescrito (preparar → ADMIN 25 passos → cliente 36, com a ordem dos métodos HTTP), coleção da equipe com o ADMIN padrão, `.equipe` enxuta; gerador com modo `--passos`; bug do registro corrigido; revisão do MVP de 26/10; só o PR #70 develop → main aberto",
       "aprendizado": "testar não pode exigir ler 5 mil linhas: trilha curta primeiro, referência depois, as duas geradas da mesma execução real"
-    },
-    {
-      "data": "2026-10-25",
-      "branch": "PR #67 `fix/vulnerabilidades-frontend-2026-10-25` + #68 develop → main",
-      "mudou": "9 CVEs transitivas do front (shadcn 4.22.1 + overrides), coleção com o ADMIN derrubando a sessão do desativado (pública 83, equipe 119), README com os números atuais; 0 alertas do Dependabot na main",
-      "aprendizado": "CVE em dependência de dependência se resolve subindo quem a traz ou com `overrides`; o Dependabot só olha a branch padrão"
-    },
-    {
-      "data": "2026-10-25",
-      "branch": "PR #51 release `develop` → `main`",
-      "mudou": "contrato 3.1, telas novas do Renan, Testcontainers, Swagger, refresh token e LGPD chegam à main; CI verde",
-      "aprendizado": "levar à main só com tudo validado (307 testes, coleções 82/82 e 114/114, smoke 41/41)"
-    },
-    {
-      "data": "2026-10-25",
-      "branch": "PR #60 `refactor/contrato-3-0-integracao` (mergeado)",
-      "mudou": "CI corrigido (H2 próprio nos testes de repository); coleção pública só do cliente (82) e da equipe com ADMIN (114); \"💡 Em palavras simples\" em cada passo; guias para iniciantes com VM options e Swagger; script de forja de JWT consertado",
-      "aprendizado": "teste que passa no Windows e falha no Linux = dependência da **ordem** das classes (banco H2 compartilhado entre contextos)"
-    },
-    {
-      "data": "2026-10-23",
-      "branch": "PR #60 `refactor/contrato-3-0-integracao`",
-      "mudou": "integra #53–#58 do Renan; contrato 3.0 (rotas 2.x fora, `tipoConta`, `CodigoErroEnum` + `codigo` no erro); bug do CPF do admin (500 → 409); coleção E2E 91/91; guias de teste e `FLUXOS.md` interativo; 268 testes",
-      "aprendizado": "decidir erro por código, nunca por texto; rodar o roteiro escrito encontra o bug que o teste não tinha"
     }
   ],
   "estudos": [
@@ -770,6 +782,15 @@
       }
     },
     {
+      "nome": "Anotações Java e Spring",
+      "area": "Spring",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
       "nome": "Bean Validation",
       "area": "Spring",
       "status": "praticado",
@@ -933,8 +954,8 @@
     }
   ],
   "biblioteca": {
-    "notas": 74,
-    "comSem": 64,
+    "notas": 75,
+    "comSem": 65,
     "sessoes": [
       "IA, Spring e LGPD",
       "Java e seu universo"
@@ -1007,6 +1028,10 @@
               },
               {
                 "nome": "Spring Boot e camadas",
+                "status": "praticado"
+              },
+              {
+                "nome": "Anotações Java e Spring",
                 "status": "praticado"
               }
             ]
@@ -1264,6 +1289,11 @@
     "diasDiario30": 12,
     "recentes": [
       {
+        "nome": "Anotações Java e Spring",
+        "area": "Spring",
+        "criado": "2026-10-29"
+      },
+      {
         "nome": "Arquiteturas de software",
         "area": "Arquitetura",
         "criado": "2026-10-29"
@@ -1296,11 +1326,6 @@
       {
         "nome": "OAuth2 e OIDC",
         "area": "Spring",
-        "criado": "2026-10-27"
-      },
-      {
-        "nome": "Pub-Sub e DLQ",
-        "area": "Arquitetura",
         "criado": "2026-10-27"
       }
     ]

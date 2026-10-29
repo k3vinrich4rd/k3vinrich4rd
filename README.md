@@ -104,11 +104,12 @@ Sugestão de leitura, do mais simples ao mais completo:
 |---|---|
 | `services/ContaService.java` | transferência atômica, validação de saldo e regra de dono (404 → 403 → 422) |
 | `config/ConfiguracaoSeguranca.java` | `SecurityFilterChain`, JWT HS256 com algoritmo fixo e BCrypt |
-| `resources/db/migration/` | Flyway: `V1`–`V8`, uma tabela por migração (endereço, cliente, conta, lançamento, usuário, idempotência) e callbacks de seed |
+| `resources/db/migration/` | Flyway: `V1`–`V15`, uma tabela por versão e cada evolução numa versão nova (idempotência, LGPD, limite de login, refresh token), com callbacks de seed |
 | `entities/Conta.java` | `@Version` para lock otimista |
-| `controllers/handlers/ControllerExceptionHandler.java` | cada exceção vira o status certo |
+| `controllers/handlers/TratadorGlobalDeErros.java` | cada exceção vira o status certo, com o `codigo` do `CodigoErroEnum` |
 | `config/FiltroLogRequisicao.java` | `X-Request-Id` em todos os logs, com proteção contra log forjado |
 | `repositories/*Test.java` | testes de JPA de verdade: cascata, `orphanRemoval`, constraints |
+| `ConsultasSqlIntegracaoTest.java` | conta as consultas do Hibernate: as listas do ADMIN fazem o mesmo número de SQL com 5 ou 15 linhas (sem N+1) |
 
 </details>
 
@@ -145,7 +146,7 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:status:START -->
 <img src="https://img.shields.io/static/v1?label=R%C3%A9gua%20Pleno&message=12%2F15&color=EC7000&style=flat-square"/>
 <img src="https://img.shields.io/static/v1?label=Testes%20RKF%20Bank&message=360%20%E2%9C%94&color=3fb950&style=flat-square&logo=junit5&logoColor=white"/>
-<img src="https://img.shields.io/static/v1?label=MVP&message=9%2F15&color=003D74&style=flat-square"/>
+<img src="https://img.shields.io/static/v1?label=MVP&message=10%2F15&color=003D74&style=flat-square"/>
 <img src="https://img.shields.io/static/v1?label=Foco%20agora&message=AWS&color=6A1B9A&style=flat-square"/>
 <!-- AUTO:status:END -->
 
@@ -154,11 +155,11 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:agora:START -->
 **🔥 Esta semana**
 
-- 🔨 Renan revisar o frontend do contrato 2.1–2.3
-- 🔨 `/entregar` as 3 branches de 22/10
-- 🔨 Domínio rico em `Conta`
+- 🔨 Reunião semanal: Kevin e Renan aprovam o PR #76 `develop` → `main`
+- 🔨 Revisar a branch `refactor/monolito-modular`
+- 🔨 Aceite do Fellipe como primeiro cliente e colocar no ar
 - 🎯 Foco de estudo: **AWS**
-- ✅ Última entrega: README do RKF Bank interativo (aventura, Osasco, avatares) e os três como idealizadores (PRs #32–#34) — 2026-10-19
+- ✅ Última entrega: Fim do N+1 nas listas do ADMIN: `Conta.cliente` e `Usuario.cliente` LAZY + `@EntityGraph`, provado pelo `ConsultasSqlIntegracaoTest` (PR #82) — 2026-10-29
 <!-- AUTO:agora:END -->
 
 <!-- AUTO:dica:START -->
@@ -202,11 +203,11 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:diario:START -->
 | Quando | Onde | O que eu aprendi |
 |---|---|---|
+| 2026-10-29 | PR #82 `perf/carregamento-lazy` | medir antes de otimizar: o EAGER padrão do para-um fazia N+1 em `/contas` (7 → 17 consultas de 5 para 15 contas); depois, número constante |
+| 2026-10-29 | PR #80 (CI do PR #76) + PRs #81 e #83 (README) | teste que depende da ordem é bug: o H2 compartilhado guardava os logins errados de outro teste; reproduzir com `-Dsurefire.runOrder` antes de corrigir |
+| 2026-10-29 | branch `refactor/monolito-modular` (em revisão, fora da develop) | trocar a arquitetura sem mudar comportamento: mover primeiro com os testes verdes, depois uma peça por commit, e deixar o ArchUnit achar os acoplamentos |
+| 2026-10-27 | PRs #77 e #79 | TDD de verdade em três commits (vermelho, verde, refatorar): a regra de saldo saiu do service e foi para a entidade |
 | 2026-10-26 | PR #69 (deps do front) + PR #71 `docs/testes-trilhas-curtas` + equipe #5 | testar não pode exigir ler 5 mil linhas: trilha curta primeiro, referência depois, as duas geradas da mesma execução real |
-| 2026-10-25 | PR #67 `fix/vulnerabilidades-frontend-2026-10-25` + #68 develop → main | CVE em dependência de dependência se resolve subindo quem a traz ou com `overrides`; o Dependabot só olha a branch padrão |
-| 2026-10-25 | PR #51 release `develop` → `main` | levar à main só com tudo validado (307 testes, coleções 82/82 e 114/114, smoke 41/41) |
-| 2026-10-25 | PR #60 `refactor/contrato-3-0-integracao` (mergeado) | teste que passa no Windows e falha no Linux = dependência da **ordem** das classes (banco H2 compartilhado entre contextos) |
-| 2026-10-23 | PR #60 `refactor/contrato-3-0-integracao` | decidir erro por código, nunca por texto; rodar o roteiro escrito encontra o bug que o teste não tinha |
 <!-- AUTO:diario:END -->
 
 </details>
@@ -420,7 +421,7 @@ public class Kevin extends Developer implements AprendizContinuo {
 <img src="https://img.shields.io/badge/Docker-Compose-2496ED?style=flat-square&logo=docker&logoColor=white"/>
 <img src="https://img.shields.io/badge/Log4j2-X--Request--Id-D22128?style=flat-square&logo=apache&logoColor=white"/>
 <img src="https://img.shields.io/badge/Spring%20Security-OAuth2%20%2B%20JWT-6DB33F?style=flat-square&logo=springsecurity&logoColor=white"/>
-<img src="https://img.shields.io/badge/Flyway-V1%E2%86%92V8%20%2B%20seed-CC0200?style=flat-square&logo=flyway&logoColor=white"/>
+<img src="https://img.shields.io/badge/Flyway-V1%E2%86%92V15%20%2B%20seed-CC0200?style=flat-square&logo=flyway&logoColor=white"/>
 <img src="https://img.shields.io/badge/JUnit%205-Mockito-25A162?style=flat-square&logo=junit5&logoColor=white"/>
 <img src="https://img.shields.io/badge/JaCoCo-cobertura-C21325?style=flat-square"/>
 <img src="https://img.shields.io/badge/GitHub%20Actions-CI-2088FF?style=flat-square&logo=githubactions&logoColor=white"/>
@@ -607,7 +608,7 @@ existem no ambiente dela; visitantes têm um perfil próprio, com contas fictíc
 <summary><b>🚀 Capítulo 5 — O que vem agora</b></summary>
 <br/>
 
-Até o MVP (31/10): **Testcontainers** (MySQL real nos testes), `GET /contas/{id}`, **LGPD mínimo** e **deploy**. Depois: Swagger e **Pix**, já num monólito modular por funcionalidade.
+Já feito: **Testcontainers** (MySQL real nos testes), `GET /contas/{id}`, **LGPD mínimo**, **Swagger**, **TDD** no domínio da `Conta` e o fim do **N+1** nas listas do ADMIN. Até o MVP (31/10): aprovar o PR `develop` → `main`, o aceite do Fellipe e o **deploy**. Depois: **Pix**, já num monólito modular por assunto (a refatoração está **em revisão** na branch `refactor/monolito-modular`).
 
 </details>
 
@@ -624,6 +625,10 @@ timeline
     V6 : idempotência das movimentações
     V7 : usuário ativo (revogação)
     V8 : versão da senha (troca derruba tokens)
+    V9 e V10 : LGPD (encerramento e aceite dos termos)
+    V11 e V12 : ShedLock e limite de tentativas de login
+    V13 e V14 : tipos de lançamento e senha temporária
+    V15 : refresh token (sessão que se renova)
     toda subida : callback afterMigrate (contas de teste, idempotente)
 ```
 
@@ -706,8 +711,11 @@ flowchart LR
 <summary><b>🏛️ Arquitetura hoje e para onde vai</b></summary>
 <br/>
 
-**Hoje:** camadas (controller → service → repository), certo para o MVP. **Alvo:** monólito modular por funcionalidade
-quando entrar o Pix — um deploy só, código separado por domínio. Microsserviço foi descartado de propósito: três pessoas
+**Hoje (na `develop`):** monólito em camadas (controller → service → repository), certo para o MVP, com um BFF em Next.js na frente
+e 15 design patterns já no código ([diagnóstico](https://github.com/k3vinrich4rd/rkf_bank#-arquitetura)). **Alvo:** monólito modular por
+assunto: um deploy só, código separado por domínio. A refatoração já existe e está **em revisão** na branch
+`refactor/monolito-modular` (pastas por assunto, porta `ConsultaCep`, fronteiras verificadas com ArchUnit e comprovante
+assíncrono por Outbox, 395 testes verdes), fora da `develop` até a revisão do time. Microsserviço foi descartado de propósito: três pessoas
 e um banco não pagam o custo de rede e consistência eventual.
 
 ```mermaid
@@ -819,7 +827,7 @@ journey
 | Revogação na hora | rebaixar, desativar ou trocar a senha derruba o token antigo na próxima requisição (o usuário é conferido no banco a cada chamada) |
 | Idempotência | a mesma transferência repetida (rede caiu) não debita duas vezes: `Idempotency-Key` gravada na transação do dinheiro |
 | Regra de dono | cliente só movimenta e vê o extrato das **próprias** contas (`403`); listar clientes é só do `ADMIN` |
-| Banco versionado | schema só por migração do **Flyway** (V1–V8); o Hibernate apenas valida (`ddl-auto=validate`); contas de teste por callback `afterMigrate`, nunca em produção |
+| Banco versionado | schema só por migração do **Flyway** (V1–V15); o Hibernate apenas valida (`ddl-auto=validate`); contas de teste por callback `afterMigrate`, nunca em produção |
 | Erros | formato único de erro com status certo: `400`, `401`, `403`, `404`, `409`, `422` e `503` |
 
 </details>
@@ -1635,9 +1643,9 @@ flowchart LR
 <summary><b>🏁 1 · Testes finais do MVP do RKF Bank</b> — 🔄 agora</summary>
 <br/>
 
-Reta final do banco digital que construo com o Renan e o Fellipe: **346 testes** na API (todos verdes também num MySQL 8.4 real), coleção do Insomnia com **121/121** requisições passando contra a API real (equipe) e o contrato da API na versão **3.2**. Falta o aceite do Fellipe como primeiro cliente e colocar no ar.
+Reta final do banco digital que construo com o Renan e o Fellipe: **360 testes** na API e **31** no site (todos verdes também num MySQL 8.4 real), coleção do Insomnia com **121/121** requisições passando contra a API real (equipe) e o contrato da API na versão **3.2**. O PR `develop` → `main` está com o CI verde, esperando a reunião semanal. Falta o aceite do Fellipe como primeiro cliente e colocar no ar.
 
-**Últimos incrementos (27/10):** `equals`/`hashCode` nas entidades JPA, respostas imutáveis, **threads virtuais** (mantendo o Java 25) e `GET /clientes/{clienteId}/contas` só para o ADMIN — tudo com teste. Spring Cloud, Outbox, Pub/Sub + DLQ, AWS e OAuth2/OIDC ficaram **em estudo para implementação**, com plano escrito.
+**Últimos incrementos (27 a 29/10):** domínio rico na `Conta` com **TDD**, `equals`/`hashCode` nas entidades JPA, respostas imutáveis, **threads virtuais** (mantendo o Java 25), `GET /clientes/{clienteId}/contas` só para o ADMIN e o fim do **N+1** nas listas do ADMIN (`LAZY` + `@EntityGraph`, medido por teste) — tudo com teste. O README do projeto ganhou o diagnóstico de arquitetura, as **11 skills de IA** do time e as **95 anotações** explicadas. Spring Cloud, Outbox, Pub/Sub + DLQ, AWS e OAuth2/OIDC ficaram **em estudo para implementação**, com plano escrito.
 
 [🏦 Ver o projeto](https://github.com/k3vinrich4rd/rkf_bank) · [🔬 Laboratório de arquitetura](https://github.com/k3vinrich4rd/rkf_bank#-laboratório-de-arquitetura)
 
@@ -1775,7 +1783,7 @@ quadrantChart
 | CI/CD, segurança e dependências | ✅ | RKF Bank |
 | Git Flow, PRs e commits semânticos | ✅ | RKF Bank |
 | Banco NoSQL | ✅ | Workshop MongoDB |
-| Migrações versionadas | ✅ | RKF Bank (V1, V2, V3; PR #23) · reorganizado em V1–V8 com callbacks de seed (PR #35) |
+| Migrações versionadas | ✅ | RKF Bank (V1, V2, V3; PR #23) · reorganizado em V1–V8 com callbacks de seed (PR #35) · hoje V1–V15, revisadas pelo `/revisar-migracao` |
 | Autenticação e autorização | ✅ | RKF Bank (JWT, BCrypt, perfis, regra de dono; PR #24) · gestão de usuários, revogação imediata, troca de senha e limite de login (PR #35) |
 | Testes de integração com banco real | ✅ | RKF Bank (7 testes no MySQL 8.4 real com `@ServiceConnection`: migrações, fluxo bancário e concorrência; rodam no CI; PR #60, na main em 25/10/2026) |
 | Deploy em nuvem | 🔄 | ⏫ próximo da fila |
@@ -1792,9 +1800,9 @@ quadrantChart
 <br/>
 
 <!-- AUTO:estudos:START -->
-**44** assuntos praticados em projeto · **6** em andamento · **2** planejados
+**45** assuntos praticados em projeto · **6** em andamento · **2** planejados
 
-📚 **74** notas de estudo no segundo cérebro · **64** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
+📚 **75** notas de estudo no segundo cérebro · **65** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
 
 ```mermaid
 mindmap
@@ -1840,6 +1848,7 @@ mindmap
       ✅ Objetos - equals, hashCode e imutabilidade
       ✅ POO e SOLID
     Spring
+      ✅ Anotações Java e Spring
       ✅ Bean Validation
       🔄 Carregamento EAGER e LAZY
       🔄 JPQL e JOIN FETCH
@@ -1883,7 +1892,7 @@ mindmap
 
 <!-- AUTO:cerebro:START -->
 <div align="center">
-  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 12 dias com registro, 74 notas, 2 trilhas e 44 assuntos praticados; progresso de cada trilha e de cada módulo"/>
+  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 12 dias com registro, 75 notas, 2 trilhas e 45 assuntos praticados; progresso de cada trilha e de cada módulo"/>
 </div>
 
 <details>
@@ -1892,14 +1901,14 @@ mindmap
 
 <table align="center"><tr>
 <td align="center">🗓️<br/><b>12</b> dias com registro<br/><sub>nos últimos 30</sub></td>
-<td align="center">📚<br/><b>74</b> notas de estudo<br/><sub>64 com exemplo com × sem</sub></td>
+<td align="center">📚<br/><b>75</b> notas de estudo<br/><sub>65 com exemplo com × sem</sub></td>
 <td align="center">🧭<br/><b>2</b> trilhas<br/><sub>12 módulos</sub></td>
-<td align="center">✅<br/><b>44</b> assuntos<br/><sub>praticados em projeto</sub></td>
+<td align="center">✅<br/><b>45</b> assuntos<br/><sub>praticados em projeto</sub></td>
 </tr></table>
 
 | Trilha | Praticado no RKF Bank | ✅ | 🔄 | 📅 | 📘 |
 |---|---|:-:|:-:|:-:|:-:|
-| **☕🌱 Java & Spring** | 🟩🟩🟩🟩⬜<br/>**39/47** | 39 | 5 | 1 | 2 |
+| **☕🌱 Java & Spring** | 🟩🟩🟩🟩⬜<br/>**40/48** | 40 | 5 | 1 | 2 |
 | **🤖 Inteligência Artificial** | 🟩🟩⬜⬜⬜<br/>**5/15** | 5 | 0 | 1 | 9 |
 
 </details>
@@ -1911,7 +1920,7 @@ mindmap
 | Módulo | Praticado | Assuntos |
 |---|---|---|
 | ① Java moderno (Java 21 / 25) | 🟩🟩🟩🟩🟩<br/>**11/11** | ✅ JVM, JDK e bytecode · ✅ POO e SOLID · ✅ Java moderno (8 a 25) · ✅ Coleções Streams e Optional · ✅ Objetos - equals, hashCode e imutabilidade · ✅ Exceções em Java · ✅ Generics · ✅ BigDecimal e dinheiro · ✅ Concorrência e threads virtuais · ✅ Memória e Garbage Collector · ✅ Maven e build |
-| ② Spring Boot & arquitetura em camadas | 🟩🟩🟩🟩🟩<br/>**3/3** | ✅ Spring Framework - IoC DI e AOP · ✅ Spring Boot - auto-configuração e starters · ✅ Spring Boot e camadas |
+| ② Spring Boot & arquitetura em camadas | 🟩🟩🟩🟩🟩<br/>**4/4** | ✅ Spring Framework - IoC DI e AOP · ✅ Spring Boot - auto-configuração e starters · ✅ Spring Boot e camadas · ✅ Anotações Java e Spring |
 | ③ Banco de dados & sincronização | 🟩🟩🟩🟩⬜<br/>**7/8** | ✅ SQL e MySQL · ✅ Spring Data JPA e relacionamentos · ✅ Carregamento EAGER e LAZY · 🔄 JPQL e JOIN FETCH · ✅ H2 x MySQL · ✅ Flyway · ✅ Lock otimista e transações · ✅ MongoDB |
 | ④ Validação e tratamento de erros | 🟩🟩🟩🟩🟩<br/>**3/3** | ✅ Bean Validation · ✅ Tratamento de erros REST · ✅ Swagger e OpenAPI |
 | ⑤ Testes (manuais e automatizados) | 🟩🟩🟩🟩🟩<br/>**6/6** | ✅ TDD e estratégia de testes · ✅ JUnit e Mockito · ✅ Spring Boot Test · ✅ DataJpaTest · ✅ Testcontainers · ✅ Testes manuais de API - Postman e Insomnia |
@@ -1934,7 +1943,7 @@ mindmap
 
 </details>
 
-📝 **Estudado por último:** `Arquitetura` Arquiteturas de software · `Spring` Carregamento EAGER e LAZY · `Spring` JPQL e JOIN FETCH · `Arquitetura` Síncrono e assíncrono · `IA` Design Doc de arquitetura para IA · `IA` Ferramentas de dev com IA · `Spring` OAuth2 e OIDC · `Arquitetura` Pub-Sub e DLQ
+📝 **Estudado por último:** `Spring` Anotações Java e Spring · `Arquitetura` Arquiteturas de software · `Spring` Carregamento EAGER e LAZY · `Spring` JPQL e JOIN FETCH · `Arquitetura` Síncrono e assíncrono · `IA` Design Doc de arquitetura para IA · `IA` Ferramentas de dev com IA · `Spring` OAuth2 e OIDC
 
 <sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-10-29</sub>
 <!-- AUTO:cerebro:END -->
@@ -2078,19 +2087,19 @@ gantt
 
 <!-- AUTO:checklist:START -->
 **✔️ Concluído recentemente** <sub>6 entregas</sub>
-- ✅ README do RKF Bank interativo (aventura, Osasco, avatares) e os três como idealizadores (PRs #32–#34) — 2026-10-19
-- ✅ Notas de IA, universo Spring e análise de LGPD no Obsidian — 2026-10-19
-- ✅ Frontend: login, conta, movimentações e extrato (PRs #26 e #27) — 2026-10-17
-- ✅ Spring Security + JWT, BCrypt, perfis e regra de dono (PR #24) — 2026-10-16
-- ✅ Flyway com V1, V2 e V3, `ddl-auto=validate` (PR #23) — 2026-10-16
-- ✅ CVEs do Tomcat (3 críticas) e do Jackson (5 altas, 2 moderadas) corrigidas — 2026-10-15
+- ✅ Fim do N+1 nas listas do ADMIN: `Conta.cliente` e `Usuario.cliente` LAZY + `@EntityGraph`, provado pelo `ConsultasSqlIntegracaoTest` (PR #82) — 2026-10-29
+- ✅ CI do PR #76 verde (teste do limitador dependia da ordem), `/entregar` no Git Flow do time e README com skills, diagnóstico de arquitetura e anotações (PRs #80, #81 e #83) — 2026-10-29
+- ✅ Domínio rico na `Conta` com TDD, threads virtuais, entidades com `equals`/`hashCode` e respostas imutáveis (PRs #77 e #79) — 2026-10-27
+- ✅ Trilhas curtas de teste: visitante em 13 passos, ADMIN em 25 e cliente em 36 (`BACKEND_E2E.md` reescrito), geradas de execução real (83/83; 119/119 no H2 e no MySQL) — 2026-10-26
+- ✅ Dependências do front (TypeScript 6, cn, radix-ui, CI) na develop (PR #69); só o PR #70 develop → main aberto — 2026-10-26
+- ✅ Release develop → main (PR #51): contrato 3.1, telas do Renan, Testcontainers, Swagger, refresh token e LGPD — 2026-10-25
 
-**🚀 MVP do RKF Bank (31/10/2026)** `███████░░░░░` 9/15
+**🚀 MVP do RKF Bank (31/10/2026)** `████████░░░░` 10/15
 
-<b>Backend</b> `█████░░░` 2/3
+<b>Backend</b> `████████` 3/3
 
 - [x] `GET /contas/{contaId}` (saldo) — contrato 3.1
-- [ ] `GET /clientes/{clienteId}/contas`
+- [x] `GET /clientes/{clienteId}/contas` (só ADMIN, contrato 3.2, PR #77) — 2026-10-27
 - [x] Decidir como o usuário acessa a conta sem login (resolvido com o login)
 
 <b>Frontend (Renan)</b> `████████` 5/5
@@ -2324,7 +2333,7 @@ Duas camadas de proteção no RKF Bank:
 1. **Transação** (`@Transactional`): débito, crédito e lançamento do extrato são confirmados juntos, ou nada é salvo.
 2. **Lock otimista** (`@Version` na `Conta`): se duas operações leem a mesma conta ao mesmo tempo, a segunda a gravar recebe um conflito e a API responde `409`, em vez de sobrescrever o saldo.
 
-Os dois comportamentos são cobertos por testes (`ContaRepositoryTest` e `ControllerExceptionHandlerTest`).
+Os dois comportamentos são cobertos por testes (`ContaRepositoryTest` e `TratadorGlobalDeErrosTest`).
 
 </details>
 
@@ -2587,7 +2596,7 @@ erDiagram
 
 - Sessão JPA e estados da entidade (*transient → managed → detached/removed*).
 - Salvar associados **para-um** (só o id no JSON) e **para-muitos** (um `getReferenceById` por item, um proxy sem `SELECT`).
-- **EAGER × LAZY:** relacionamento para-um carrega junto (EAGER), para-muitos só quando acessado (LAZY). No RKF Bank, `Conta.cliente` é EAGER (a regra de dono precisa dele) e `Cliente.contas` é LAZY, com a lista vindo de `findByClienteId` paginado.
+- **EAGER × LAZY:** relacionamento para-um carrega junto (EAGER), para-muitos só quando acessado (LAZY). No RKF Bank, `Conta.cliente` virou **LAZY** (a regra de dono só lê o id, que o proxy já tem) e as listas do ADMIN buscam o associado junto com `@EntityGraph`: antes, `GET /contas` fazia 7 consultas com 5 contas e 17 com 15 (N+1); agora o número é constante.
 - O grande vilão da JPA são as idas e voltas desnecessárias ao banco (**N+1**). A saída é usar `JOIN FETCH` ou, melhor ainda, consultas customizadas.
 
 ```mermaid
