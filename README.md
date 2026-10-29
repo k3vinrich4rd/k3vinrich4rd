@@ -146,7 +146,7 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:status:START -->
 <img src="https://img.shields.io/static/v1?label=R%C3%A9gua%20Pleno&message=12%2F15&color=EC7000&style=flat-square"/>
 <img src="https://img.shields.io/static/v1?label=Testes%20RKF%20Bank&message=360%20%E2%9C%94&color=3fb950&style=flat-square&logo=junit5&logoColor=white"/>
-<img src="https://img.shields.io/static/v1?label=MVP&message=10%2F15&color=003D74&style=flat-square"/>
+<img src="https://img.shields.io/static/v1?label=MVP&message=13%2F13&color=003D74&style=flat-square"/>
 <img src="https://img.shields.io/static/v1?label=Foco%20agora&message=AWS&color=6A1B9A&style=flat-square"/>
 <!-- AUTO:status:END -->
 
@@ -156,7 +156,6 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 **🔥 Esta semana**
 
 - 🔨 Revisar a branch `refactor/monolito-modular`
-- 🔨 Aceite do Fellipe como primeiro cliente e colocar no ar
 - 🎯 Foco de estudo: **AWS**
 - ✅ Última entrega: Release develop → main (PR #76, mergeado pelo Renan): TDD na `Conta`, threads virtuais, fim do N+1, contas por cliente só para o ADMIN, README com skills, diagnóstico e anotações — 2026-10-29
 <!-- AUTO:agora:END -->
@@ -561,12 +560,11 @@ timeline
     15 out : Flyway assume o banco : Hibernate só valida
     16 out : Login com CPF + senha : Spring Security como OAuth2 Resource Server e JWT
     17 out : Token em cookie httpOnly no Next (BFF)
-    19 out : Os três como idealizadores : LGPD mínimo antes do deploy
+    19 out : Os três como idealizadores : LGPD mínimo desde o desenho
     20 out : Flyway reestruturado e contas da equipe sempre prontas : idempotência, conta que não se apaga e limite de login : perfil público de visitante
     25 out : primeira release develop → main : Testcontainers, Swagger, refresh token e LGPD
     27 out : domínio rico na Conta com TDD : threads virtuais e entidades com equals/hashCode
-    29 out : fim do N+1 nas listas do ADMIN : segunda release develop → main (PR #76, aprovada pelo Renan)
-    31 out : aceite do Fellipe como primeiro cliente e MVP no ar
+    29 out : fim do N+1 nas listas do ADMIN : segunda release develop → main (PR #76, aprovada pelo Renan) : MVP concluído, sem deploy: portfólio para rodar na sua máquina
 ```
 
 <details>
@@ -615,7 +613,7 @@ existem no ambiente dela; visitantes têm um perfil próprio, com contas fictíc
 <summary><b>🚀 Capítulo 5 — O que vem agora</b></summary>
 <br/>
 
-Já feito: **Testcontainers** (MySQL real nos testes), `GET /contas/{id}`, **LGPD mínimo**, **Swagger**, **TDD** no domínio da `Conta` e o fim do **N+1** nas listas do ADMIN. Tudo isso está na `main` desde 29/10 (PR #76). Até o MVP (31/10): o aceite do Fellipe e o **deploy**. Depois: **Pix**, já num monólito modular por assunto (a refatoração está **em revisão** na branch `refactor/monolito-modular`).
+Já feito: **Testcontainers** (MySQL real nos testes), `GET /contas/{id}`, **LGPD mínimo**, **Swagger**, **TDD** no domínio da `Conta` e o fim do **N+1** nas listas do ADMIN. Tudo isso está na `main` desde 29/10 (PR #76): **MVP concluído**. Sem fase de deploy, de propósito: o RKF Bank é um projeto de **portfólio**, e quem avalia roda na própria máquina em 1 comando (perfil `visitante`). Depois: **Pix**, já num monólito modular por assunto (a refatoração está **em revisão** na branch `refactor/monolito-modular`).
 
 </details>
 
@@ -1655,21 +1653,22 @@ endsolid repositorios_por_ano
 
 ```mermaid
 flowchart LR
-    A["🏁 1 · Testes finais<br/>do MVP do RKF Bank<br/>(entrega 31/10)"]:::agora --> B["🎓 2 · Finalizando o<br/>Java Spring Professional<br/>(DevSuperior)"]:::agora
+    A["✅ 1 · MVP do RKF Bank<br/>concluído em 29/10<br/>(portfólio, roda local)"]:::feito --> B["🎓 2 · Finalizando o<br/>Java Spring Professional<br/>(DevSuperior)"]:::agora
     B --> C["☕ 3 · Java Spring Expert<br/>API REST + testes<br/>(DevSuperior)"]:::proximo
     C --> D["☁️ 4 · AWS<br/>na prática<br/>(Udemy)"]:::proximo
     D --> E["🤖 5 · IA para backend<br/>(trilha do meu Obsidian)"]:::proximo
     classDef agora fill:#9e6a03,stroke:#d29922,color:#fff
+    classDef feito fill:#1f6f3f,stroke:#3fb950,color:#fff
     classDef proximo fill:#30363d,stroke:#8b949e,color:#fff
 ```
 
-<sub>🟧 em andamento agora · ⬛ próximos passos, nessa ordem</sub>
+<sub>🟩 concluído · 🟧 em andamento agora · ⬛ próximos passos, nessa ordem</sub>
 
 <details open>
-<summary><b>🏁 1 · Testes finais do MVP do RKF Bank</b> — 🔄 agora</summary>
+<summary><b>✅ 1 · MVP do RKF Bank concluído</b> — 29/10/2026</summary>
 <br/>
 
-Reta final do banco digital que construo com o Renan e o Fellipe: **360 testes** na API e **31** no site (todos verdes também num MySQL 8.4 real), coleção do Insomnia com **121/121** requisições passando contra a API real (equipe) e o contrato da API na versão **3.2**. Tudo isso já está na `main` desde 29/10 (PR #76, revisado e mergeado pelo Renan). Falta o aceite do Fellipe como primeiro cliente e colocar no ar.
+Banco digital que construí com o Renan e o Fellipe, **MVP concluído**: **360 testes** na API e **31** no site (todos verdes também num MySQL 8.4 real), coleção do Insomnia com **121/121** requisições passando contra a API real (equipe) e o contrato da API na versão **3.2**. Tudo isso está na `main` desde 29/10 (PR #76, revisado e mergeado pelo Renan). **Sem deploy, de propósito:** é um projeto de portfólio para devs e recrutadores rodarem na própria máquina ([1 comando, sem Docker](https://github.com/k3vinrich4rd/rkf_bank/blob/main/VISITANTES.md)).
 
 **Últimos incrementos (27 a 29/10):** domínio rico na `Conta` com **TDD**, `equals`/`hashCode` nas entidades JPA, respostas imutáveis, **threads virtuais** (mantendo o Java 25), `GET /clientes/{clienteId}/contas` só para o ADMIN e o fim do **N+1** nas listas do ADMIN (`LAZY` + `@EntityGraph`, medido por teste) — tudo com teste. O README do projeto ganhou o diagnóstico de arquitetura, as **11 skills de IA** do time e as **95 anotações** explicadas. O **Outbox** do comprovante já está implementado na branch `refactor/monolito-modular` (em revisão); Spring Cloud, Pub/Sub + DLQ, AWS e OAuth2/OIDC seguem **em estudo para implementação**, com plano escrito.
 
@@ -1697,7 +1696,7 @@ Reta final do banco digital que construo com o Renan e o Fellipe: **360 testes**
 <summary><b>☁️ 4 · AWS na prática</b> — ⏭️ depois</summary>
 <br/>
 
-Curso [AWS na Prática (Udemy)](https://www.udemy.com/course/aws-na-pratica/), aplicado direto no RKF Bank: o primeiro passo já está planejado — **ECS Fargate + RDS (MySQL) + Secrets Manager** com a imagem Docker do perfil `prod` que já existe, e depois **SNS + SQS** com DLQ para a mensageria.
+Curso [AWS na Prática (Udemy)](https://www.udemy.com/course/aws-na-pratica/), para dominar **ECS Fargate, RDS, Secrets Manager, SNS e SQS** na prática. O RKF Bank continua como portfólio local (sem deploy); o estudo usa a mesma imagem Docker do perfil `prod` como exercício.
 
 </details>
 
@@ -2079,7 +2078,6 @@ flowchart LR
 |---|---|:-:|
 | 💸 Pix simulado | transferência instantânea por chave entre contas do RKF Bank | <a href="https://github.com/k3vinrich4rd/k3vinrich4rd/issues/new?template=voto.yml&title=%5Bvoto%5D%20pix"><img src="https://img.shields.io/github/issues-search?query=repo%3Ak3vinrich4rd%2Fk3vinrich4rd%20is%3Aissue%20in%3Atitle%20%22%5Bvoto%5D%20pix%22&label=votos&color=32BCAD&style=for-the-badge&cacheSeconds=300" alt="votos em pix"/></a> |
 | 🤖 Assistente do extrato | perguntar sobre os gastos em português, com Spring AI e a regra de dono | <a href="https://github.com/k3vinrich4rd/k3vinrich4rd/issues/new?template=voto.yml&title=%5Bvoto%5D%20assistente-ia"><img src="https://img.shields.io/github/issues-search?query=repo%3Ak3vinrich4rd%2Fk3vinrich4rd%20is%3Aissue%20in%3Atitle%20%22%5Bvoto%5D%20assistente-ia%22&label=votos&color=412991&style=for-the-badge&cacheSeconds=300" alt="votos em assistente-ia"/></a> |
-| ☁️ Deploy na AWS | RKF Bank no ar para todo mundo | <a href="https://github.com/k3vinrich4rd/k3vinrich4rd/issues/new?template=voto.yml&title=%5Bvoto%5D%20aws"><img src="https://img.shields.io/github/issues-search?query=repo%3Ak3vinrich4rd%2Fk3vinrich4rd%20is%3Aissue%20in%3Atitle%20%22%5Bvoto%5D%20aws%22&label=votos&color=FF9900&style=for-the-badge&cacheSeconds=300" alt="votos em aws"/></a> |
 | 📨 Mensageria | comprovante por fila (RabbitMQ) em cima do Outbox que já existe | <a href="https://github.com/k3vinrich4rd/k3vinrich4rd/issues/new?template=voto.yml&title=%5Bvoto%5D%20mensageria"><img src="https://img.shields.io/github/issues-search?query=repo%3Ak3vinrich4rd%2Fk3vinrich4rd%20is%3Aissue%20in%3Atitle%20%22%5Bvoto%5D%20mensageria%22&label=votos&color=6A1B9A&style=for-the-badge&cacheSeconds=300" alt="votos em mensageria"/></a> |
 
 </div>
@@ -2097,7 +2095,8 @@ gantt
     section MVP
     Semana 2 - cliente e conta        :done,    s2, 2026-10-12, 7d
     Semana 3 - movimentações          :done,    s3, 2026-10-19, 7d
-    Semana 4 - testar e lançar        :active,  s4, 2026-10-26, 6d
+    Semana 4 - testar e fechar        :done,    s4, 2026-10-26, 4d
+    MVP concluído (PR #76)            :milestone, done, m1, 2026-10-29, 0d
     section Pleno
     Flyway                            :done,    f1, 2026-10-15, 2d
     Spring Security + JWT             :done,    f2, 2026-10-16, 2d
@@ -2105,8 +2104,7 @@ gantt
     Swagger                           :done,    f6, 2026-10-21, 3d
     Fim do N+1 (LAZY e EntityGraph)   :done,    f7, 2026-10-29, 1d
     Monólito modular (em revisão)     :active,  f8, 2026-10-29, 3d
-    Deploy AWS                        :         f4, after s4, 7d
-    Mensageria (broker no Outbox)     :         f5, after f4, 10d
+    Mensageria (broker no Outbox)     :         f5, after f8, 10d
 ```
 <!-- AUTO:gantt:END -->
 
@@ -2125,7 +2123,7 @@ gantt
 - ✅ Trilhas curtas de teste: visitante em 13 passos, ADMIN em 25 e cliente em 36 (`BACKEND_E2E.md` reescrito), geradas de execução real (83/83; 119/119 no H2 e no MySQL) — 2026-10-26
 - ✅ Dependências do front (TypeScript 6, cn, radix-ui, CI) na develop (PR #69); só o PR #70 develop → main aberto — 2026-10-26
 
-**🚀 MVP do RKF Bank (31/10/2026)** `████████░░░░` 10/15
+**🚀 MVP do RKF Bank (concluído em 29/10/2026)** `████████████` 13/13
 
 <b>Backend</b> `████████` 3/3
 
@@ -2141,23 +2139,20 @@ gantt
 - [x] Tela de extrato
 - [x] Tela de login com cookie `httpOnly`
 
-<b>Lançamento</b> `██░░░░░░` 2/7
+<b>Fechamento do MVP</b> `████████` 5/5
 
-- [ ] Decidir onde publicar (ver Decisões RKF Bank): proposta em `backend/README_DEPLOY.md`, A grátis (Render + Aiven + Vercel) ou B ~US$ 5/mês (Railway + Vercel)
+- [x] ~~Decidir onde publicar~~ → sem deploy: projeto de portfólio, roda localmente (`VISITANTES.md`) — 2026-10-29
 - [x] Perfil `prod` + `Dockerfile` testados num MySQL vazio (21/21, smoke 42/42) — 2026-10-26
 - [x] LGPD mínimo: política de privacidade, aceite dos termos e encarregados (Kevin e Renan, termos 2026-10-26) — 2026-10-26
-- [ ] Fellipe (PO & QA e primeiro cliente) testa tudo: roteiro pronto (`.equipe/testes/BACKEND_E2E.md`: Parte 2 ADMIN e Parte 3 cliente, H2 ou Docker)
-- [ ] Corrigir os bugs encontrados
-- [ ] Colocar no ar
-- [ ] Atualizar o README com link e prints
+- [x] Roteiros de aceite prontos: `VISITANTES.md` (público) e o guia da equipe para o Fellipe (PO & QA)
+- [x] ~~Colocar no ar~~ → fora do escopo (portfólio); Docker e perfil `prod` seguem testados no CI
 
-**📏 Rumo ao Pleno** `█████████░░░` 21/29 passos
+**📏 Rumo ao Pleno** `██████████░░` 19/24 passos
 
 - [x] **Flyway** `████████` 6/6
 - [x] **Spring Security + JWT** `████████` 6/6
 - [x] **Testcontainers ✅** `████████` 4/4
 - [x] **Swagger / OpenAPI ✅** `████████` 3/3
-- [ ] **Deploy AWS** 🔮 `███░░░░░` 2/5
 - [ ] **Mensageria** 🔮 <sub>3 a fazer</sub>
 - [ ] **Inglês** <sub>2 a fazer</sub>
 

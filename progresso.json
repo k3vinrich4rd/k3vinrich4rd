@@ -107,7 +107,7 @@
   "rkf": {
     "testes": 360,
     "checklist": {
-      "gantt": "```mermaid\ngantt\n    title Do MVP ao Pleno\n    dateFormat YYYY-MM-DD\n    axisFormat %d/%m\n    section MVP\n    Semana 2 - cliente e conta        :done,    s2, 2026-10-12, 7d\n    Semana 3 - movimentações          :done,    s3, 2026-10-19, 7d\n    Semana 4 - testar e lançar        :active,  s4, 2026-10-26, 6d\n    section Pleno\n    Flyway                            :done,    f1, 2026-10-15, 2d\n    Spring Security + JWT             :done,    f2, 2026-10-16, 2d\n    Testcontainers                    :done,    f3, 2026-10-20, 4d\n    Swagger                           :done,    f6, 2026-10-21, 3d\n    Fim do N+1 (LAZY e EntityGraph)   :done,    f7, 2026-10-29, 1d\n    Monólito modular (em revisão)     :active,  f8, 2026-10-29, 3d\n    Deploy AWS                        :         f4, after s4, 7d\n    Mensageria (broker no Outbox)     :         f5, after f4, 10d\n```",
+      "gantt": "```mermaid\ngantt\n    title Do MVP ao Pleno\n    dateFormat YYYY-MM-DD\n    axisFormat %d/%m\n    section MVP\n    Semana 2 - cliente e conta        :done,    s2, 2026-10-12, 7d\n    Semana 3 - movimentações          :done,    s3, 2026-10-19, 7d\n    Semana 4 - testar e fechar        :done,    s4, 2026-10-26, 4d\n    MVP concluído (PR #76)            :milestone, done, m1, 2026-10-29, 0d\n    section Pleno\n    Flyway                            :done,    f1, 2026-10-15, 2d\n    Spring Security + JWT             :done,    f2, 2026-10-16, 2d\n    Testcontainers                    :done,    f3, 2026-10-20, 4d\n    Swagger                           :done,    f6, 2026-10-21, 3d\n    Fim do N+1 (LAZY e EntityGraph)   :done,    f7, 2026-10-29, 1d\n    Monólito modular (em revisão)     :active,  f8, 2026-10-29, 3d\n    Mensageria (broker no Outbox)     :         f5, after f8, 10d\n```",
       "agora": [
         {
           "feito": true,
@@ -146,13 +146,13 @@
           "texto": "Revisar a branch `refactor/monolito-modular` (módulos, porta do CEP, ArchUnit, Outbox) pelo `REFATORACAO_MODULAR_E2E.md` da equipe"
         },
         {
-          "feito": false,
-          "texto": "Aceite do Fellipe como primeiro cliente e colocar no ar"
+          "feito": true,
+          "texto": "MVP concluído (PR #76 na main) e sem deploy: o RKF Bank é portfólio, roda na máquina de quem avalia — 2026-10-29"
         }
       ],
       "mvp": {
-        "feitos": 10,
-        "total": 15,
+        "feitos": 13,
+        "total": 13,
         "grupos": [
           {
             "nome": "Backend",
@@ -205,15 +205,15 @@
             ]
           },
           {
-            "nome": "Lançamento",
+            "nome": "Fechamento do MVP",
             "futuro": false,
             "proximo": false,
-            "feitos": 2,
-            "total": 7,
+            "feitos": 5,
+            "total": 5,
             "itens": [
               {
-                "feito": false,
-                "texto": "Decidir onde publicar (ver Decisões RKF Bank): proposta em `backend/README_DEPLOY.md`, A grátis (Render + Aiven + Vercel) ou B ~US$ 5/mês (Railway + Vercel)"
+                "feito": true,
+                "texto": "~~Decidir onde publicar~~ → sem deploy: projeto de portfólio, roda localmente (`VISITANTES.md`) — 2026-10-29"
               },
               {
                 "feito": true,
@@ -224,28 +224,20 @@
                 "texto": "LGPD mínimo: política de privacidade, aceite dos termos e encarregados (Kevin e Renan, termos 2026-10-26) — 2026-10-26"
               },
               {
-                "feito": false,
-                "texto": "Fellipe (PO & QA e primeiro cliente) testa tudo: roteiro pronto (`.equipe/testes/BACKEND_E2E.md`: Parte 2 ADMIN e Parte 3 cliente, H2 ou Docker)"
+                "feito": true,
+                "texto": "Roteiros de aceite prontos: `VISITANTES.md` (público) e o guia da equipe para o Fellipe (PO & QA)"
               },
               {
-                "feito": false,
-                "texto": "Corrigir os bugs encontrados"
-              },
-              {
-                "feito": false,
-                "texto": "Colocar no ar"
-              },
-              {
-                "feito": false,
-                "texto": "Atualizar o README com link e prints"
+                "feito": true,
+                "texto": "~~Colocar no ar~~ → fora do escopo (portfólio); Docker e perfil `prod` seguem testados no CI"
               }
             ]
           }
         ]
       },
       "pleno": {
-        "feitos": 21,
-        "total": 29,
+        "feitos": 19,
+        "total": 24,
         "grupos": [
           {
             "nome": "Flyway",
@@ -356,35 +348,6 @@
               {
                 "feito": true,
                 "texto": "Fluxo completo só pelo Swagger UI (`VISITANTES.md`, \"sem Insomnia, use o Swagger\")"
-              }
-            ]
-          },
-          {
-            "nome": "Deploy AWS",
-            "futuro": true,
-            "proximo": false,
-            "feitos": 2,
-            "total": 5,
-            "itens": [
-              {
-                "feito": true,
-                "texto": "`Dockerfile` multi-stage do backend (JDK para o build, JRE na imagem; testado no `backend-docker.yml`)"
-              },
-              {
-                "feito": true,
-                "texto": "Perfil `prod` + credenciais fora do código + Spring Boot Actuator (`health`) — 2026-10-26"
-              },
-              {
-                "feito": false,
-                "texto": "Banco no RDS MySQL"
-              },
-              {
-                "feito": false,
-                "texto": "App no ECS Fargate ou Elastic Beanstalk"
-              },
-              {
-                "feito": false,
-                "texto": "Deploy pelo GitHub Actions depois do merge"
               }
             ]
           },
