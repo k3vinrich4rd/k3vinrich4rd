@@ -464,6 +464,15 @@
   ],
   "estudos": [
     {
+      "nome": "Arquiteturas de software",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 3
+      }
+    },
+    {
       "nome": "Integração com APIs externas",
       "area": "Arquitetura",
       "status": "praticado",
@@ -515,6 +524,15 @@
       "passos": {
         "feitos": 0,
         "total": 4
+      }
+    },
+    {
+      "nome": "Síncrono e assíncrono",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 3
       }
     },
     {
@@ -906,8 +924,8 @@
     }
   ],
   "biblioteca": {
-    "notas": 71,
-    "comSem": 61,
+    "notas": 73,
+    "comSem": 63,
     "sessoes": [
       "IA, Spring e LGPD",
       "Java e seu universo"
@@ -1087,6 +1105,14 @@
                 "status": "referencia"
               },
               {
+                "nome": "Arquiteturas de software",
+                "status": "andamento"
+              },
+              {
+                "nome": "Síncrono e assíncrono",
+                "status": "andamento"
+              },
+              {
                 "nome": "Integração com APIs externas",
                 "status": "praticado"
               },
@@ -1225,8 +1251,18 @@
     "diasDiario30": 12,
     "recentes": [
       {
+        "nome": "Arquiteturas de software",
+        "area": "Arquitetura",
+        "criado": "2026-10-29"
+      },
+      {
         "nome": "Carregamento EAGER e LAZY",
         "area": "Spring",
+        "criado": "2026-10-29"
+      },
+      {
+        "nome": "Síncrono e assíncrono",
+        "area": "Arquitetura",
         "criado": "2026-10-29"
       },
       {
@@ -1251,16 +1287,6 @@
       },
       {
         "nome": "TDD e estratégia de testes",
-        "area": "Testes",
-        "criado": "2026-10-27"
-      },
-      {
-        "nome": "Testes de aplicações com IA (evals)",
-        "area": "Testes",
-        "criado": "2026-10-27"
-      },
-      {
-        "nome": "Testes manuais de API - Postman e Insomnia",
         "area": "Testes",
         "criado": "2026-10-27"
       }

@@ -1792,20 +1792,22 @@ quadrantChart
 <br/>
 
 <!-- AUTO:estudos:START -->
-**44** assuntos praticados em projeto · **3** em andamento · **2** planejados
+**44** assuntos praticados em projeto · **5** em andamento · **2** planejados
 
-📚 **71** notas de estudo no segundo cérebro · **61** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
+📚 **73** notas de estudo no segundo cérebro · **63** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
 
 ```mermaid
 mindmap
   root((🧠 Estudos))
     Arquitetura
+      🔄 Arquiteturas de software
       ✅ Integração com APIs externas
       ✅ LGPD
       ✅ Lock otimista e transações
       ✅ Logs e observabilidade
       ⏳ Mensageria e Outbox
       ✅ Padrões de projeto
+      🔄 Síncrono e assíncrono
     Cloud
       🔄 AWS
     Dados
@@ -1860,6 +1862,8 @@ mindmap
 
 | Estudando agora | Área | Próximos passos |
 |---|---|---|
+| 🔄 Arquiteturas de software | Arquitetura | <sub>3 a fazer</sub> |
+| 🔄 Síncrono e assíncrono | Arquitetura | <sub>3 a fazer</sub> |
 | 🔄 AWS | Cloud | <sub>10 a fazer</sub> |
 | 🔄 Carregamento EAGER e LAZY | Spring | <sub>2 a fazer</sub> |
 | 🔄 OAuth2 e OIDC | Spring | <sub>2 a fazer</sub> |
@@ -1877,7 +1881,7 @@ mindmap
 
 <!-- AUTO:cerebro:START -->
 <div align="center">
-  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 12 dias com registro, 71 notas, 2 trilhas e 44 assuntos praticados; progresso de cada trilha e de cada módulo"/>
+  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 12 dias com registro, 73 notas, 2 trilhas e 44 assuntos praticados; progresso de cada trilha e de cada módulo"/>
 </div>
 
 <details>
@@ -1886,14 +1890,14 @@ mindmap
 
 <table align="center"><tr>
 <td align="center">🗓️<br/><b>12</b> dias com registro<br/><sub>nos últimos 30</sub></td>
-<td align="center">📚<br/><b>71</b> notas de estudo<br/><sub>61 com exemplo com × sem</sub></td>
+<td align="center">📚<br/><b>73</b> notas de estudo<br/><sub>63 com exemplo com × sem</sub></td>
 <td align="center">🧭<br/><b>2</b> trilhas<br/><sub>12 módulos</sub></td>
 <td align="center">✅<br/><b>44</b> assuntos<br/><sub>praticados em projeto</sub></td>
 </tr></table>
 
 | Trilha | Praticado no RKF Bank | ✅ | 🔄 | 📅 | 📘 |
 |---|---|:-:|:-:|:-:|:-:|
-| **☕🌱 Java & Spring** | 🟩🟩🟩🟩⬜<br/>**38/44** | 38 | 3 | 1 | 2 |
+| **☕🌱 Java & Spring** | 🟩🟩🟩🟩⬜<br/>**38/46** | 38 | 5 | 1 | 2 |
 | **🤖 Inteligência Artificial** | 🟩🟩⬜⬜⬜<br/>**5/15** | 5 | 0 | 1 | 9 |
 
 </details>
@@ -1909,7 +1913,7 @@ mindmap
 | ③ Banco de dados & sincronização | 🟩🟩🟩🟩⬜<br/>**6/7** | ✅ SQL e MySQL · ✅ Spring Data JPA e relacionamentos · 🔄 Carregamento EAGER e LAZY · ✅ H2 x MySQL · ✅ Flyway · ✅ Lock otimista e transações · ✅ MongoDB |
 | ④ Validação e tratamento de erros | 🟩🟩🟩🟩🟩<br/>**3/3** | ✅ Bean Validation · ✅ Tratamento de erros REST · ✅ Swagger e OpenAPI |
 | ⑤ Testes (manuais e automatizados) | 🟩🟩🟩🟩🟩<br/>**6/6** | ✅ TDD e estratégia de testes · ✅ JUnit e Mockito · ✅ Spring Boot Test · ✅ DataJpaTest · ✅ Testcontainers · ✅ Testes manuais de API - Postman e Insomnia |
-| ⑥ Segurança e infraestrutura | 🟩🟩🟩⬜⬜<br/>**9/14** | ✅ Spring Security e JWT · 🔄 OAuth2 e OIDC · ✅ LGPD · 📅 Mensageria e Outbox · 📘 Pub-Sub e DLQ · ✅ Integração com APIs externas · ✅ Logs e observabilidade · ✅ Spring Boot Actuator · ✅ Docker e Compose · ✅ GitHub Actions · ✅ Git Flow e commits semânticos · ✅ Dependências e CVEs · 📘 Spring Cloud e microsserviços · 🔄 AWS |
+| ⑥ Segurança e infraestrutura | 🟩🟩🟩⬜⬜<br/>**9/16** | ✅ Spring Security e JWT · 🔄 OAuth2 e OIDC · ✅ LGPD · 📅 Mensageria e Outbox · 📘 Pub-Sub e DLQ · 🔄 Arquiteturas de software · 🔄 Síncrono e assíncrono · ✅ Integração com APIs externas · ✅ Logs e observabilidade · ✅ Spring Boot Actuator · ✅ Docker e Compose · ✅ GitHub Actions · ✅ Git Flow e commits semânticos · ✅ Dependências e CVEs · 📘 Spring Cloud e microsserviços · 🔄 AWS |
 
 </details>
 
@@ -1928,7 +1932,7 @@ mindmap
 
 </details>
 
-📝 **Estudado por último:** `Spring` Carregamento EAGER e LAZY · `IA` Design Doc de arquitetura para IA · `IA` Ferramentas de dev com IA · `Spring` OAuth2 e OIDC · `Arquitetura` Pub-Sub e DLQ · `Testes` TDD e estratégia de testes · `Testes` Testes de aplicações com IA (evals) · `Testes` Testes manuais de API - Postman e Insomnia
+📝 **Estudado por último:** `Arquitetura` Arquiteturas de software · `Spring` Carregamento EAGER e LAZY · `Arquitetura` Síncrono e assíncrono · `IA` Design Doc de arquitetura para IA · `IA` Ferramentas de dev com IA · `Spring` OAuth2 e OIDC · `Arquitetura` Pub-Sub e DLQ · `Testes` TDD e estratégia de testes
 
 <sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-10-29</sub>
 <!-- AUTO:cerebro:END -->
