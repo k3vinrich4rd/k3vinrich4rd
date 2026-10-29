@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="820" height="360" viewBox="0 0 820 360" role="img" aria-label="Terminal rodando os testes do RKF Bank: 356 testes, BUILD SUCCESS">
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="360" viewBox="0 0 820 360" role="img" aria-label="Terminal rodando os testes do RKF Bank: 360 testes, BUILD SUCCESS">
   <style>
     .t { font-family: Consolas, 'Fira Code', Menlo, 'Courier New', monospace; font-size: 15px; fill: #c9d1d9; }
     .p { fill: #EC7000; font-weight: bold; }
@@ -37,6 +37,6 @@
   <text x="24" y="246" class="t l" style="animation-delay:4.3s"><tspan class="ok">✔</tspan> Cliente/Conta/LancamentoRepositoryTest     <tspan class="dim">@DataJpaTest + H2</tspan></text>
   <text x="24" y="270" class="t l" style="animation-delay:4.8s"><tspan class="ok">✔</tspan> ViaCep · CPF · Logs · ExceptionHandler      <tspan class="dim">integração e infra</tspan></text>
 
-  <text x="24" y="306" class="t l" style="animation-delay:5.4s">[INFO] Tests run: <tspan class="ok">356</tspan>, Failures: <tspan class="ok">0</tspan>, Errors: <tspan class="ok">0</tspan>, Skipped: 0</text>
+  <text x="24" y="306" class="t l" style="animation-delay:5.4s">[INFO] Tests run: <tspan class="ok">360</tspan>, Failures: <tspan class="ok">0</tspan>, Errors: <tspan class="ok">0</tspan>, Skipped: 0</text>
   <text x="24" y="332" class="t l" style="animation-delay:5.9s">[INFO] <tspan class="ok">BUILD SUCCESS</tspan> <tspan class="dim">✨ pronto para o próximo PR</tspan><tspan class="p cursor"> ▌</tspan></text>
 </svg>

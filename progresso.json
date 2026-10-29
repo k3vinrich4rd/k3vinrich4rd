@@ -105,7 +105,7 @@
     "Mensageria e microsserviços"
   ],
   "rkf": {
-    "testes": 356,
+    "testes": 360,
     "checklist": {
       "gantt": "```mermaid\ngantt\n    title Do MVP ao Pleno\n    dateFormat YYYY-MM-DD\n    axisFormat %d/%m\n    section MVP\n    Semana 2 - cliente e conta        :done,    s2, 2026-10-12, 7d\n    Semana 3 - movimentações          :active,  s3, 2026-10-19, 7d\n    Semana 4 - testar e lançar        :         s4, 2026-10-26, 6d\n    section Pleno\n    Flyway                            :done,    f1, 2026-10-15, 2d\n    Spring Security + JWT             :done,    f2, 2026-10-16, 2d\n    Testcontainers                    :crit,    f3, 2026-10-20, 4d\n    Swagger                           :         f6, after f3, 2d\n    Deploy AWS                        :         f4, after s4, 7d\n    Mensageria                        :         f5, after f6, 10d\n```",
       "agora": [
@@ -788,6 +788,15 @@
       }
     },
     {
+      "nome": "JPQL e JOIN FETCH",
+      "area": "Spring",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 3
+      }
+    },
+    {
       "nome": "OAuth2 e OIDC",
       "area": "Spring",
       "status": "andamento",
@@ -924,8 +933,8 @@
     }
   ],
   "biblioteca": {
-    "notas": 73,
-    "comSem": 63,
+    "notas": 74,
+    "comSem": 64,
     "sessoes": [
       "IA, Spring e LGPD",
       "Java e seu universo"
@@ -1015,6 +1024,10 @@
               },
               {
                 "nome": "Carregamento EAGER e LAZY",
+                "status": "praticado"
+              },
+              {
+                "nome": "JPQL e JOIN FETCH",
                 "status": "andamento"
               },
               {
@@ -1261,6 +1274,11 @@
         "criado": "2026-10-29"
       },
       {
+        "nome": "JPQL e JOIN FETCH",
+        "area": "Spring",
+        "criado": "2026-10-29"
+      },
+      {
         "nome": "Síncrono e assíncrono",
         "area": "Arquitetura",
         "criado": "2026-10-29"
@@ -1283,11 +1301,6 @@
       {
         "nome": "Pub-Sub e DLQ",
         "area": "Arquitetura",
-        "criado": "2026-10-27"
-      },
-      {
-        "nome": "TDD e estratégia de testes",
-        "area": "Testes",
         "criado": "2026-10-27"
       }
     ]

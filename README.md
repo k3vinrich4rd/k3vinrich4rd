@@ -61,7 +61,7 @@
 | Pergunta | Resposta rápida |
 |---|---|
 | Quem é? | Dev **Java backend Junior** na **Zup Innovation**, prestando serviço para o **Itaú**, em transição para **Pleno** (**12/15** competências já praticadas) |
-| Melhor projeto? | **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **356 testes**, CI e logs rastreáveis |
+| Melhor projeto? | **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **360 testes**, CI e logs rastreáveis |
 | Stack principal? | Java · Spring Boot · JPA/Hibernate · MySQL/PostgreSQL · MongoDB · JUnit/Mockito · Docker · GitHub Actions |
 | O que está estudando? | AWS → inglês → mensageria |
 | Contato? | [LinkedIn](https://www.linkedin.com/in/kevin-richard-b68a54203/) · [kevinrichardve@gmail.com](mailto:kevinrichardve@gmail.com) |
@@ -144,7 +144,7 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 
 <!-- AUTO:status:START -->
 <img src="https://img.shields.io/static/v1?label=R%C3%A9gua%20Pleno&message=12%2F15&color=EC7000&style=flat-square"/>
-<img src="https://img.shields.io/static/v1?label=Testes%20RKF%20Bank&message=356%20%E2%9C%94&color=3fb950&style=flat-square&logo=junit5&logoColor=white"/>
+<img src="https://img.shields.io/static/v1?label=Testes%20RKF%20Bank&message=360%20%E2%9C%94&color=3fb950&style=flat-square&logo=junit5&logoColor=white"/>
 <img src="https://img.shields.io/static/v1?label=MVP&message=9%2F15&color=003D74&style=flat-square"/>
 <img src="https://img.shields.io/static/v1?label=Foco%20agora&message=AWS&color=6A1B9A&style=flat-square"/>
 <!-- AUTO:status:END -->
@@ -356,7 +356,7 @@ public void sacar(UUID contaId, SaqueRequestDto request, UsuarioLogado usuario) 
 | ➖ Valor **zero ou negativo** passava (e um saque negativo era um depósito!) | `validarValor` recusa com `422` |
 | 🏃 Dois saques ao mesmo tempo **sobrescreviam** um ao outro | `@Transactional` + lock otimista com `@Version` → `409` |
 | 🧾 Nenhum **histórico**: o valor final só substituía o anterior | cada saque gera um lançamento no extrato |
-| 🔇 Sem log nem teste do caminho de erro | log com `X-Request-Id` e 356 testes automatizados |
+| 🔇 Sem log nem teste do caminho de erro | log com `X-Request-Id` e 360 testes automatizados |
 
 <sub>Quantos você achou? Conta pra mim no <a href="#️-livro-de-visitas">livro de visitas</a>. 😄</sub>
 
@@ -924,7 +924,7 @@ sequenceDiagram
 | **Meu papel** | todo o backend | projeto individual |
 | **Domínio** | clientes, contas, depósito, saque, transferência, extrato | usuários, pedidos, produtos, categorias, pagamento |
 | **O que mostra** | transação atômica, lock otimista, ViaCEP com falha tratada, logs com `X-Request-Id` | modelo de domínio rico, chave composta (`OrdemItemPK`), Bean Validation, erros padronizados |
-| **Qualidade** | 356 testes, JaCoCo, CI com CodeQL e Dependabot | camadas controller → service → repository, `DatabaseException` para integridade referencial |
+| **Qualidade** | 360 testes, JaCoCo, CI com CodeQL e Dependabot | camadas controller → service → repository, `DatabaseException` para integridade referencial |
 | **Stack** | Java 25 · Spring Boot 4 · MySQL · Docker · Next.js | Java · Spring Boot · JPA · H2 |
 | **README** | [roteiro do projeto](https://github.com/k3vinrich4rd/rkf_bank#readme) | [modelo de domínio, endpoints e respostas reais](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM#readme) |
 | **Ver primeiro** | [`ContaService`](https://github.com/k3vinrich4rd/rkf_bank) · [roteiro no README](#-projeto-atual--rkf-bank) | [`ProductService`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/services/ProductService.java) · [`ControllerExceptionHandler`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/controllers/handlers/ControllerExceptionHandler.java) |
@@ -1792,9 +1792,9 @@ quadrantChart
 <br/>
 
 <!-- AUTO:estudos:START -->
-**44** assuntos praticados em projeto · **5** em andamento · **2** planejados
+**44** assuntos praticados em projeto · **6** em andamento · **2** planejados
 
-📚 **73** notas de estudo no segundo cérebro · **63** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
+📚 **74** notas de estudo no segundo cérebro · **64** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
 
 ```mermaid
 mindmap
@@ -1842,6 +1842,7 @@ mindmap
     Spring
       ✅ Bean Validation
       🔄 Carregamento EAGER e LAZY
+      🔄 JPQL e JOIN FETCH
       🔄 OAuth2 e OIDC
       ✅ Spring Boot - auto-configuração e starters
       ✅ Spring Boot Actuator
@@ -1866,6 +1867,7 @@ mindmap
 | 🔄 Síncrono e assíncrono | Arquitetura | <sub>3 a fazer</sub> |
 | 🔄 AWS | Cloud | <sub>10 a fazer</sub> |
 | 🔄 Carregamento EAGER e LAZY | Spring | <sub>2 a fazer</sub> |
+| 🔄 JPQL e JOIN FETCH | Spring | <sub>3 a fazer</sub> |
 | 🔄 OAuth2 e OIDC | Spring | <sub>2 a fazer</sub> |
 | ⏳ Mensageria e Outbox | Arquitetura | <sub>6 a fazer</sub> |
 | ⏳ Spring AI | IA | <sub>5 a fazer</sub> |
@@ -1881,7 +1883,7 @@ mindmap
 
 <!-- AUTO:cerebro:START -->
 <div align="center">
-  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 12 dias com registro, 73 notas, 2 trilhas e 44 assuntos praticados; progresso de cada trilha e de cada módulo"/>
+  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 12 dias com registro, 74 notas, 2 trilhas e 44 assuntos praticados; progresso de cada trilha e de cada módulo"/>
 </div>
 
 <details>
@@ -1890,14 +1892,14 @@ mindmap
 
 <table align="center"><tr>
 <td align="center">🗓️<br/><b>12</b> dias com registro<br/><sub>nos últimos 30</sub></td>
-<td align="center">📚<br/><b>73</b> notas de estudo<br/><sub>63 com exemplo com × sem</sub></td>
+<td align="center">📚<br/><b>74</b> notas de estudo<br/><sub>64 com exemplo com × sem</sub></td>
 <td align="center">🧭<br/><b>2</b> trilhas<br/><sub>12 módulos</sub></td>
 <td align="center">✅<br/><b>44</b> assuntos<br/><sub>praticados em projeto</sub></td>
 </tr></table>
 
 | Trilha | Praticado no RKF Bank | ✅ | 🔄 | 📅 | 📘 |
 |---|---|:-:|:-:|:-:|:-:|
-| **☕🌱 Java & Spring** | 🟩🟩🟩🟩⬜<br/>**38/46** | 38 | 5 | 1 | 2 |
+| **☕🌱 Java & Spring** | 🟩🟩🟩🟩⬜<br/>**39/47** | 39 | 5 | 1 | 2 |
 | **🤖 Inteligência Artificial** | 🟩🟩⬜⬜⬜<br/>**5/15** | 5 | 0 | 1 | 9 |
 
 </details>
@@ -1910,7 +1912,7 @@ mindmap
 |---|---|---|
 | ① Java moderno (Java 21 / 25) | 🟩🟩🟩🟩🟩<br/>**11/11** | ✅ JVM, JDK e bytecode · ✅ POO e SOLID · ✅ Java moderno (8 a 25) · ✅ Coleções Streams e Optional · ✅ Objetos - equals, hashCode e imutabilidade · ✅ Exceções em Java · ✅ Generics · ✅ BigDecimal e dinheiro · ✅ Concorrência e threads virtuais · ✅ Memória e Garbage Collector · ✅ Maven e build |
 | ② Spring Boot & arquitetura em camadas | 🟩🟩🟩🟩🟩<br/>**3/3** | ✅ Spring Framework - IoC DI e AOP · ✅ Spring Boot - auto-configuração e starters · ✅ Spring Boot e camadas |
-| ③ Banco de dados & sincronização | 🟩🟩🟩🟩⬜<br/>**6/7** | ✅ SQL e MySQL · ✅ Spring Data JPA e relacionamentos · 🔄 Carregamento EAGER e LAZY · ✅ H2 x MySQL · ✅ Flyway · ✅ Lock otimista e transações · ✅ MongoDB |
+| ③ Banco de dados & sincronização | 🟩🟩🟩🟩⬜<br/>**7/8** | ✅ SQL e MySQL · ✅ Spring Data JPA e relacionamentos · ✅ Carregamento EAGER e LAZY · 🔄 JPQL e JOIN FETCH · ✅ H2 x MySQL · ✅ Flyway · ✅ Lock otimista e transações · ✅ MongoDB |
 | ④ Validação e tratamento de erros | 🟩🟩🟩🟩🟩<br/>**3/3** | ✅ Bean Validation · ✅ Tratamento de erros REST · ✅ Swagger e OpenAPI |
 | ⑤ Testes (manuais e automatizados) | 🟩🟩🟩🟩🟩<br/>**6/6** | ✅ TDD e estratégia de testes · ✅ JUnit e Mockito · ✅ Spring Boot Test · ✅ DataJpaTest · ✅ Testcontainers · ✅ Testes manuais de API - Postman e Insomnia |
 | ⑥ Segurança e infraestrutura | 🟩🟩🟩⬜⬜<br/>**9/16** | ✅ Spring Security e JWT · 🔄 OAuth2 e OIDC · ✅ LGPD · 📅 Mensageria e Outbox · 📘 Pub-Sub e DLQ · 🔄 Arquiteturas de software · 🔄 Síncrono e assíncrono · ✅ Integração com APIs externas · ✅ Logs e observabilidade · ✅ Spring Boot Actuator · ✅ Docker e Compose · ✅ GitHub Actions · ✅ Git Flow e commits semânticos · ✅ Dependências e CVEs · 📘 Spring Cloud e microsserviços · 🔄 AWS |
@@ -1932,7 +1934,7 @@ mindmap
 
 </details>
 
-📝 **Estudado por último:** `Arquitetura` Arquiteturas de software · `Spring` Carregamento EAGER e LAZY · `Arquitetura` Síncrono e assíncrono · `IA` Design Doc de arquitetura para IA · `IA` Ferramentas de dev com IA · `Spring` OAuth2 e OIDC · `Arquitetura` Pub-Sub e DLQ · `Testes` TDD e estratégia de testes
+📝 **Estudado por último:** `Arquitetura` Arquiteturas de software · `Spring` Carregamento EAGER e LAZY · `Spring` JPQL e JOIN FETCH · `Arquitetura` Síncrono e assíncrono · `IA` Design Doc de arquitetura para IA · `IA` Ferramentas de dev com IA · `Spring` OAuth2 e OIDC · `Arquitetura` Pub-Sub e DLQ
 
 <sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-10-29</sub>
 <!-- AUTO:cerebro:END -->
