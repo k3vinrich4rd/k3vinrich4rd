@@ -161,9 +161,9 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:agora:END -->
 
 <!-- AUTO:dica:START -->
-> 💡 **Dica do dia: `@Version`**  
-> Lock otimista: se duas transações alteram a mesma linha, a segunda recebe conflito em vez de sobrescrever o dado.  
-> <sub>Muda todo dia sozinha · 3/20</sub>
+> 💡 **Dica do dia: `BigDecimal`**  
+> Dinheiro nunca em double: 0.1 + 0.2 em double dá 0.30000000000000004.  
+> <sub>Muda todo dia sozinha · 4/20</sub>
 <!-- AUTO:dica:END -->
 
 <!-- A cobrinha é gerada pelo workflow .github/workflows/snake.yml deste repositório (branch "output"). -->
@@ -180,16 +180,16 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:atividade:START -->
 | | Repositório | Commit | Quando |
 |:-:|---|---|---|
-| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`9bef9b7`](https://github.com/k3vinrich4rd/rkf_bank/commit/9bef9b711852194a1acaa40cfae90637c0192193) docs: MVP concluido e sem fase de deploy (projeto de portfolio) | há 5 min |
-| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`e647865`](https://github.com/k3vinrich4rd/rkf_bank/commit/e64786502d6037cdf23cd87d02d26e221a54df40) docs(readme): anotacoes do projeto, o que cada uma faz e por que esta aq | há 4 h |
-| ♻️ | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`f430211`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/f430211de74e8756ebb6520b13b52ea0bae60578) refactor: renomeia OrdemItem para OrderItem | ontem |
-| ⏪ | [`desafio-devsuperior-componentes-injecao-dependencia`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) | [`4997708`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia/commit/4997708166e270a54829b3ea94912378a03fa100) revert: main volta a ter so o desafio de componentes (o ORM foi para des | ontem |
-| 🔧 | [`desafio-devsuperior-modelo-orm`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) | [`e064a39`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm/commit/e064a39a2f1f2588d08e475e4ddc955a57625a39) chore: junta o historico ao repositorio desafio-devsuperior-modelo-orm | ontem |
+| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`221a48b`](https://github.com/k3vinrich4rd/rkf_bank/commit/221a48ba2a80c04091ba3c8e476c2173c07ed17d) docs(readme): sem "lancamento" no card do Fellipe e nos banners | há 6 h |
+| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`9bef9b7`](https://github.com/k3vinrich4rd/rkf_bank/commit/9bef9b711852194a1acaa40cfae90637c0192193) docs: MVP concluido e sem fase de deploy (projeto de portfolio) | há 6 h |
+| ♻️ | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`f430211`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/f430211de74e8756ebb6520b13b52ea0bae60578) refactor: renomeia OrdemItem para OrderItem | há 2 dias |
+| ⏪ | [`desafio-devsuperior-componentes-injecao-dependencia`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) | [`4997708`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia/commit/4997708166e270a54829b3ea94912378a03fa100) revert: main volta a ter so o desafio de componentes (o ORM foi para des | há 2 dias |
+| 🔧 | [`desafio-devsuperior-modelo-orm`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) | [`e064a39`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm/commit/e064a39a2f1f2588d08e475e4ddc955a57625a39) chore: junta o historico ao repositorio desafio-devsuperior-modelo-orm | há 2 dias |
 | 📝 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`0849493`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/0849493f006f8569a3c9a93e9578c3ba795d6921) docs: adiciona README com modelo de dominio, endpoints e exemplos reais | há 14 dias |
 | 📝 | [`desafio-devsuperior-componentes-injecao-dependencia`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) | [`757f944`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia/commit/757f944837b07f090ea785449adbc2b0e28cd45e) docs: atualiza informações do README | 27/10/2025 |
 | 📝 | [`desafio-devsuperior-modelo-orm`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) | [`757f944`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm/commit/757f944837b07f090ea785449adbc2b0e28cd45e) docs: atualiza informações do README | 27/10/2025 |
 
-<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 29/10 às 20:35</sub>
+<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 30/10 às 02:54</sub>
 <!-- AUTO:atividade:END -->
 
 </details>
@@ -2433,26 +2433,26 @@ dono só usa o id, que o proxy já tem) e `@EntityGraph` nas listas que mostram 
 
 <!-- AUTO:flashcards:START -->
 <details>
-<summary><b>🃏 Java · Por que exceção de negócio deve ser unchecked num projeto Spring?</b></summary>
+<summary><b>🃏 Spring · O que acontece se eu editar uma migração do Flyway já aplicada?</b></summary>
 <br/>
 
-O <code>@Transactional</code> só faz rollback automático em <code>RuntimeException</code>. Uma exceção checked deixaria o débito gravado pela metade.
+O checksum não bate e a aplicação não sobe (<code>Migration checksum mismatch</code>). Mudança nova = arquivo novo (<code>V6__...</code>). É uma proteção: todo banco fica igual.
 
 </details>
 
 <details>
-<summary><b>🃏 Spring · Qual a diferença entre 401 e 403?</b></summary>
+<summary><b>🃏 Spring · Por que o @Transactional não funciona numa chamada interna?</b></summary>
 <br/>
 
-<code>401</code>: não sei quem você é (sem token, vencido ou adulterado). <code>403</code>: sei quem você é, mas não pode (conta de outro cliente). No RKF Bank a regra de dono mora no <code>ContaService</code>.
+Ele é implementado por um proxy (AOP). Chamar outro método da mesma classe não passa pelo proxy, então a transação não abre.
 
 </details>
 
 <details>
-<summary><b>🃏 Spring · Por que a senha vai em BCrypt e não em SHA-256?</b></summary>
+<summary><b>🃏 Spring · Por que injeção de dependência pelo construtor?</b></summary>
 <br/>
 
-BCrypt tem salt aleatório (senhas iguais viram hashes diferentes) e é lento de propósito, o que encarece a força bruta. SHA-256 é rápido demais para senha.
+Campos <code>final</code>, dependências explícitas e teste sem Spring: <code>new ContaService(mock(ContaRepository.class))</code>.
 
 </details>
 
