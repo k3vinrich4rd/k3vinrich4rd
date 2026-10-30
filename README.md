@@ -2576,7 +2576,7 @@ flowchart LR
 
 **📌 Na fila (matriculado, ainda não comecei):** [Java Spring Expert](https://devsuperior.club/courses/6) (204 aulas) · [Java Spring Reference](https://devsuperior.club/courses/7) (151 aulas) · [Java Spring Tópicos Avançados](https://devsuperior.club/courses/63) (11 aulas) · [Análise de Requisitos Expert](https://devsuperior.club/courses/10) (50 aulas) · [Bônus Estudo de caso CI/CD AWS e Github Actions](https://devsuperior.club/courses/12) (17 aulas)
 
-<sub>🤖 Progresso lido da plataforma do curso pela minha automação em 2026-10-29.</sub>
+<sub>🤖 Progresso lido da plataforma do curso pela minha automação em 2026-10-30.</sub>
 <!-- AUTO:cursos:END -->
 
 #### 📖 O que aprendi no Java Spring Professional
