@@ -1,7 +1,8 @@
 // Disparado todo dia pelo Agendador de Tarefas do Windows (tarefa "Perfil GitHub - commit diario").
 // Se ainda não há commit do Kevin no perfil hoje, regenera o README (dica do dia, progresso do Obsidian, pulso)
 // e publica. Commit só com mudança real: nada de commit vazio. Os commits do github-actions[bot] não contam para a
-// ofensiva, por isso isto roda na máquina, com o e-mail do Kevin.
+// ofensiva, por isso isto roda na máquina, com o e-mail do Kevin. Com o PC desligado, quem garante o dia é o
+// workflow atualizar-readme.yml: a primeira atualização do dia sai com o autor Kevin se ainda não houver commit dele.
 // Uso: node automacao/commit-diario.mjs        Instalar o agendamento: powershell -File automacao/agendar-commit-diario.ps1
 import fs from 'node:fs';
 import path from 'node:path';

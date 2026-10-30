@@ -49,7 +49,9 @@ function notaDoProjeto(remoto) {
 }
 
 function anotarNoDiario(c, nota) {
-  const arquivo = path.join(cfg.vault, '05 Diário', `${hoje()}.md`);
+  // Diário por mês (05 Diário/AAAA-MM/), igual ao formato do plugin Daily notes; respeita uma nota de hoje já na raiz.
+  const naRaiz = path.join(cfg.vault, '05 Diário', `${hoje()}.md`);
+  const arquivo = fs.existsSync(naRaiz) ? naRaiz : path.join(cfg.vault, '05 Diário', hoje().slice(0, 7), `${hoje()}.md`);
   let md = ler(arquivo) ?? (ler(path.join(cfg.vault, 'Templates', 'Diário.md')) ?? '# 🗓️ {{date}}\n\n## ✅ Feito\n').replaceAll('{{date}}', hoje());
   if (md.includes(c.curto)) return;
   const link = nota ? `[[${path.basename(nota, '.md')}]]` : `\`${c.nome}\``;

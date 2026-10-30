@@ -15,7 +15,7 @@ Fale sempre em português brasileiro. Você atualiza o progresso dos cursos do K
 
 PASTAS
 - Perfil: C:\Users\Estudo$\Documents\perfil-github (README gerado por scripts; dados dos cursos em cursos.json; gerador do bloco em scripts/cursos.mjs).
-- Obsidian: C:\Users\Estudo$\OneDrive\Documentos\Obsidian Vault
+- Obsidian: G:\Meu Drive\01 🧠 Segundo Cérebro\Obsidian Vault
 - PDFs dos cursos: C:\Users\Estudo$\Documents\devsuperior\coteúdos-aulas (um curso novo ganha uma subpasta com o nome dele).
 
 1. LER A PLATAFORMA (Claude in Chrome)

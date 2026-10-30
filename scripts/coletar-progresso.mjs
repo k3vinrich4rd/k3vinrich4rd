@@ -187,7 +187,10 @@ function cerebro() {
   });
   // "Na ativa": dias com nota no diário nos últimos 30 dias e as notas de estudo criadas por último.
   const limite = new Date(Date.now() - 30 * 864e5).toLocaleDateString('sv-SE', { timeZone: 'America/Sao_Paulo' });
-  const diario = fs.existsSync(vault('05 Diário')) ? fs.readdirSync(vault('05 Diário')).filter((f) => /^\d{4}-\d{2}-\d{2}\.md$/.test(f)) : [];
+  // O diário fica em subpastas por mês (05 Diário/AAAA-MM/AAAA-MM-DD.md); notas antigas na raiz também contam.
+  const diario = fs.existsSync(vault('05 Diário'))
+    ? fs.readdirSync(vault('05 Diário'), { recursive: true }).map((f) => path.basename(f)).filter((f) => /^\d{4}-\d{2}-\d{2}\.md$/.test(f))
+    : [];
   const recentes = [];
   const raiz = vault('03 Estudos');
   for (const area of fs.readdirSync(raiz, { withFileTypes: true }).filter((e) => e.isDirectory() && !e.name.startsWith('00'))) {
