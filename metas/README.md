@@ -33,5 +33,6 @@ percentual da meta = **média dos cursos com percentual conhecido**. Curso com `
 | `cursos[].url` | não | link do curso (`null` se não houver) |
 | `cursos[].percentual` | sim | 0 a 100, ou `null` = “a atualizar” |
 | `cursos[].atualizado` | não | dia em que o percentual foi lido (`AAAA-MM-DD`) |
+| `cursos[].capitulos` | não | `[{ nome, feitas, total, opcional? }]`: mini-checklist sob o curso (✅ fechado, 🔄 em andamento, ⬜ não começado; `opcional: true` fica fora da conta de capítulos fechados) |
 
 Meta sem curso mostra “📅 curso a definir”.

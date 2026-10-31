@@ -142,6 +142,17 @@ ${w > 0 ? `<rect x="2" y="2" width="${Math.max(w, 14)}" height="14" rx="7" fill=
 `;
 }
 const barra = (pct) => (pct === null ? '░'.repeat(10) : '█'.repeat(Math.round(pct / 10)) + '░'.repeat(10 - Math.round(pct / 10)));
+const iconeCap = (c) => (c.total && c.feitas >= c.total ? '✅' : c.feitas > 0 ? '🔄' : '⬜');
+/** Mini-checklist dos capítulos do curso (opcional: cursos[].capitulos = [{ nome, feitas, total }]). */
+function capitulos(c, html) {
+  const caps = c.capitulos ?? [];
+  if (!caps.length) return '';
+  const obrig = caps.filter((x) => !x.opcional); // capítulo opcional não entra na conta (a plataforma mostra "3/5")
+  const fechados = obrig.filter((x) => x.total && x.feitas >= x.total).length;
+  const opc = (x) => (x.opcional ? ' (opcional)' : '');
+  if (!html) return `\n${caps.map((x) => `  - [${x.total && x.feitas >= x.total ? 'x' : ' '}] ${x.nome}${opc(x)} (${x.feitas}/${x.total})`).join('\n')}`;
+  return `<br/><sub>📚 ${fechados}/${obrig.length} capítulos fechados</sub><br/>${caps.map((x) => `<sub>${iconeCap(x)} ${xml(x.nome)}${opc(x)} <code>${x.feitas}/${x.total}</code></sub>`).join('<br/>')}`;
+}
 const nomeCurso = (c, html) => {
   const nome = html ? xml(c.nome) : c.nome;
   const link = c.url ? (html ? `<a href="${xml(c.url)}">${nome}</a>` : `[${nome}](${c.url})`) : nome;
@@ -155,7 +166,7 @@ function blocoMetas(m) {
 <p align="center"><img src="${selo('', meta.pct, 'for-the-badge')}" alt="${meta.pct === null ? 'a atualizar' : `${meta.pct}%`}"/><br/><img src="assets/metas/${meta.id}.svg" width="100%" alt="Barra de progresso de ${xml(meta.titulo)}"/></p>
 
 ${meta.cursos.length
-    ? meta.cursos.map((c) => `<img src="${selo('', c.percentual)}" alt="${c.percentual === null ? 'a atualizar' : `${c.percentual}%`}"/> ${nomeCurso(c, true)}${c.atualizado ? `<br/><sub>atualizado em ${diaBR(`${c.atualizado}T12:00:00Z`)}</sub>` : ''}`).join('<br/><br/>\n')
+    ? meta.cursos.map((c) => `<img src="${selo('', c.percentual)}" alt="${c.percentual === null ? 'a atualizar' : `${c.percentual}%`}"/> ${nomeCurso(c, true)}${c.atualizado ? `<br/><sub>atualizado em ${diaBR(`${c.atualizado}T12:00:00Z`)}</sub>` : ''}${capitulos(c, true)}`).join('<br/><br/>\n')
     : '<p align="center"><sub>📅 curso a definir</sub></p>'}
 
 </td>`;
@@ -175,7 +186,7 @@ function metasMarkdown(m) {
 
 \`${barra(meta.pct)}\` ${meta.pct === null ? 'a atualizar' : `${meta.pct}%`}
 
-${meta.cursos.length ? meta.cursos.map((c) => `- **${c.percentual === null ? 'a atualizar' : `${c.percentual}%`}** · ${nomeCurso(c, false)}${c.atualizado ? ` (atualizado em ${c.atualizado})` : ''}`).join('\n') : '- 📅 curso a definir'}`).join('\n\n') + `\n\n<sub>Dados de ${m.atualizado ?? '—'}</sub>`;
+${meta.cursos.length ? meta.cursos.map((c) => `- **${c.percentual === null ? 'a atualizar' : `${c.percentual}%`}** · ${nomeCurso(c, false)}${c.atualizado ? ` (atualizado em ${c.atualizado})` : ''}${capitulos(c, false)}`).join('\n') : '- 📅 curso a definir'}`).join('\n\n') + `\n\n<sub>Dados de ${m.atualizado ?? '—'}</sub>`;
 }
 
 // ---------- 3. Diário do dia ----------

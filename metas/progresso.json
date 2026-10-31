@@ -1,19 +1,71 @@
 {
   "atualizado": "2026-10-30",
-  "observacao": "Próximos estudos, em conjunto: Java + AWS + IA. Percentual da meta = média dos cursos com percentual conhecido; null = 'a atualizar'. Fontes: cofre Obsidian (🎓 Curso - Java Spring Professional, Certificações, Cloud/AWS). O Kevin pode mudar quando quiser.",
+  "observacao": "Próximos estudos, em conjunto: Java + AWS + IA. Percentual da meta = média dos cursos com percentual conhecido; null = 'a atualizar' (fora da média). Java Spring Professional lido na página do curso em 30/10/2026 22:33 (Brasília); demais do cofre Obsidian.",
   "metas": [
     {
       "id": "java",
       "titulo": "Java",
       "cursos": [
-        { "nome": "Java Spring Professional", "plataforma": "DevSuperior", "url": "https://devsuperior.club/courses/5", "percentual": 46, "atualizado": "2026-10-30" }
+        {
+          "nome": "Java Spring Professional",
+          "plataforma": "DevSuperior",
+          "url": "https://devsuperior.club/courses/5/lessons?lessonId=248",
+          "percentual": 45,
+          "atualizado": "2026-10-30",
+          "capitulos": [
+            {
+              "nome": "Componentes e injeção de dependência",
+              "feitas": 14,
+              "total": 14
+            },
+            {
+              "nome": "Modelo de domínio e ORM",
+              "feitas": 15,
+              "total": 15
+            },
+            {
+              "nome": "API REST, camadas, CRUD, exceções, validações",
+              "feitas": 23,
+              "total": 23
+            },
+            {
+              "nome": "JPA, consultas SQL e JPQL",
+              "feitas": 13,
+              "total": 38
+            },
+            {
+              "nome": "Login e controle de acesso",
+              "feitas": 0,
+              "total": 34
+            },
+            {
+              "nome": "Homologação e implantação com CI/CD",
+              "feitas": 0,
+              "total": 18,
+              "opcional": true
+            }
+          ]
+        },
+        {
+          "nome": "Java Spring Expert",
+          "plataforma": "DevSuperior",
+          "url": null,
+          "percentual": null,
+          "atualizado": null
+        }
       ]
     },
     {
       "id": "aws",
       "titulo": "AWS",
       "cursos": [
-        { "nome": "AWS na Prática", "plataforma": "Udemy", "url": null, "percentual": null, "atualizado": null }
+        {
+          "nome": "AWS na Prática",
+          "plataforma": "Udemy",
+          "url": null,
+          "percentual": null,
+          "atualizado": null
+        }
       ]
     },
     {
