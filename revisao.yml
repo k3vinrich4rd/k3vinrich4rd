@@ -1,0 +1,24 @@
+# Tópicos de revisão do dia: usados pelo scripts/perfil-diario.mjs só quando não há
+# diario/inbox/AAAA-MM-DD.md nem atividade pública do Kevin nas últimas 24h.
+# Um por dia, em rodízio pela data. Edite à vontade (uma linha por tópico, começando com "- ").
+topicos:
+  - "Java: records, sealed interfaces e pattern matching no switch"
+  - "Java: threads virtuais (Project Loom) e quando não usar"
+  - "Java: Stream API, coletores e Optional sem abuso"
+  - "Java: equals/hashCode em entidades JPA"
+  - "Java: BigDecimal, arredondamento e dinheiro"
+  - "Spring: ciclo de vida de beans e injeção por construtor"
+  - "Spring: @Transactional, propagação e rollback"
+  - "Spring: Spring Security com JWT (OAuth2 Resource Server)"
+  - "Spring: Bean Validation e tratamento global de erros"
+  - "Spring Data JPA: LAZY x EAGER, N+1 e @EntityGraph"
+  - "Spring: Flyway e migrações versionadas"
+  - "Testes: JUnit 5, Mockito e Testcontainers"
+  - "AWS: IAM, usuários, roles e políticas de menor privilégio"
+  - "AWS: EC2, security groups e chaves"
+  - "AWS: S3, classes de armazenamento e políticas de bucket"
+  - "AWS: RDS (MySQL/PostgreSQL), backups e Multi-AZ"
+  - "AWS: SQS e SNS para mensageria assíncrona"
+  - "AWS: Lambda, gatilhos e cold start"
+  - "AWS: VPC, sub-redes públicas e privadas"
+  - "AWS: CloudWatch, logs e alarmes"

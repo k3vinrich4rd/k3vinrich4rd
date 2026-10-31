@@ -1,0 +1,66 @@
+# Rotina diária do perfil: últimos commits por projeto, metas (metas/progresso.json), diario/AAAA-MM-DD.md e progresso.md.
+# Garante a ofensiva com o PC desligado: o commit sai com autor e committer = Kevin (e-mail verificado) e com conteúdo
+# real (o diário do dia). Sem mudança, não há commit.
+#
+# Tokens (fine-grained PATs do Kevin; passo a passo em automacao/PROFILE_TOKEN.md):
+#   PROFILE_TOKEN       Contents: read and write, só neste repositório (checkout e push).
+#   PROFILE_READ_TOKEN  Contents: read-only, todos os repositórios (ler commits, inclusive dos privados). Opcional.
+# Sem eles, cai no GITHUB_TOKEN: funciona, mas só enxerga repositórios públicos (projetos privados somem da tabela).
+name: Perfil diário
+
+on:
+  schedule:
+    - cron: "0 12 * * *" # 09:00 em Brasília
+  workflow_dispatch:
+  repository_dispatch:
+    types: [projeto-push] # disparado por outros repositórios do Kevin a cada push (ver automacao/PROFILE_TOKEN.md)
+
+permissions:
+  contents: write
+
+concurrency:
+  group: atualizar-readme # mesma fila do atualizar-readme.yml: os dois nunca disputam o README
+  cancel-in-progress: false
+
+jobs:
+  diario:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      KEVIN_NOME: ${{ vars.KEVIN_NOME || 'k3vinrich4rd' }}
+      KEVIN_EMAIL: ${{ vars.KEVIN_EMAIL || 'kevinrichardve@gmail.com' }}
+      TEM_PAT: ${{ secrets.PROFILE_TOKEN != '' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }} # o push abaixo usa este mesmo token
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Aviso quando o PROFILE_TOKEN não existe
+        if: env.TEM_PAT != 'true'
+        run: echo "::warning::PROFILE_TOKEN não configurado; usando GITHUB_TOKEN (só repositórios públicos). Veja automacao/PROFILE_TOKEN.md."
+
+      - name: Últimos commits, metas, diário e progresso.md
+        id: perfil
+        run: node scripts/perfil-diario.mjs
+        env:
+          # leitura dos outros repositórios: o token só-leitura (todos os repos), senão o de escrita, senão o GITHUB_TOKEN
+          GH_TOKEN: ${{ secrets.PROFILE_READ_TOKEN || secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Cabeçalhos e índice do README (seção nova ganha o SVG dela)
+        run: node scripts/atualizar-readme.mjs --api
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commitar como Kevin, só se mudou
+        run: |
+          git add README.md progresso.md diario assets
+          if git diff --cached --quiet; then echo "Nada mudou: sem commit."; exit 0; fi
+          git config user.name "$KEVIN_NOME"
+          git config user.email "$KEVIN_EMAIL"
+          fonte="${{ steps.perfil.outputs.fonte }}"
+          git commit -m "docs(diario): ${{ steps.perfil.outputs.dia }}${fonte:+ ($fonte)}"
+          git push || { git pull --rebase -X theirs && git push; }

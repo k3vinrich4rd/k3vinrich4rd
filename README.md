@@ -29,19 +29,19 @@
 
 <!-- AUTO:indice:START -->
 <details>
-<summary><b>🗺️ Índice do perfil</b> · 15 seções (clique para abrir)</summary>
+<summary><b>🗺️ Índice do perfil</b> · 16 seções (clique para abrir)</summary>
 <br/>
 
 | | |
 |---|---|
-| <a href="#-escolha-a-sua-trilha">01 · 🎮 Escolha a sua trilha</a> | <a href="#-pdi--roadmap-2026">09 · 🎯 PDI — Roadmap 2026</a> |
-| <a href="#-ao-vivo">02 · 📡 Ao vivo</a> | <a href="#️-tecnologias">10 · 🛠️ Tecnologias</a> |
-| <a href="#-trajetória">03 · 🧭 Trajetória</a> | <a href="#-atuação-profissional">11 · 💼 Atuação profissional</a> |
-| <a href="#-sobre-mim">04 · 🚀 Sobre mim</a> | <a href="#-pergunte-ao-kevin">12 · 💬 Pergunte ao Kevin</a> |
-| <a href="#-projeto-atual--rkf-bank">05 · 🏦 Projeto atual — RKF Bank</a> | <a href="#-cursos-em-andamento">13 · 📚 Cursos em andamento</a> |
-| <a href="#️-projetos-em-destaque">06 · 🗂️ Projetos em destaque</a> | <a href="#-formação-e-certificações">14 · 🎓 Formação e certificações</a> |
-| <a href="#-junior--pleno--onde-estou">07 · 📈 Junior → Pleno — onde estou</a> | <a href="#️-livro-de-visitas">15 · ✍️ Livro de visitas</a> |
-| <a href="#-github-stats">08 · 📊 GitHub Stats</a> |  |
+| <a href="#-escolha-a-sua-trilha">01 · 🎮 Escolha a sua trilha</a> | <a href="#-github-stats">09 · 📊 GitHub Stats</a> |
+| <a href="#-ao-vivo">02 · 📡 Ao vivo</a> | <a href="#-pdi--roadmap-2026">10 · 🎯 PDI — Roadmap 2026</a> |
+| <a href="#️-últimos-commits-e-metas">03 · ⏱️ Últimos commits e metas</a> | <a href="#️-tecnologias">11 · 🛠️ Tecnologias</a> |
+| <a href="#-trajetória">04 · 🧭 Trajetória</a> | <a href="#-atuação-profissional">12 · 💼 Atuação profissional</a> |
+| <a href="#-sobre-mim">05 · 🚀 Sobre mim</a> | <a href="#-pergunte-ao-kevin">13 · 💬 Pergunte ao Kevin</a> |
+| <a href="#-projeto-atual--rkf-bank">06 · 🏦 Projeto atual — RKF Bank</a> | <a href="#-cursos-em-andamento">14 · 📚 Cursos em andamento</a> |
+| <a href="#️-projetos-em-destaque">07 · 🗂️ Projetos em destaque</a> | <a href="#-formação-e-certificações">15 · 🎓 Formação e certificações</a> |
+| <a href="#-junior--pleno--onde-estou">08 · 📈 Junior → Pleno — onde estou</a> | <a href="#️-livro-de-visitas">16 · ✍️ Livro de visitas</a> |
 
 </details>
 <!-- AUTO:indice:END -->
@@ -218,6 +218,43 @@ flowchart LR
     D --> E["🌐 este README<br/>banner, gráficos, cobrinha"]
     click E "https://github.com/k3vinrich4rd" _blank
 ```
+
+<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
+
+<img src="assets/secoes/ultimos-commits-e-metas.svg" width="100%" alt=""/>
+
+## ⏱️ Últimos commits e metas
+
+> Atualizada todo dia pelo GitHub Actions (workflow `perfil-diario`), mesmo com o meu PC desligado: o último commit de cada projeto e o andamento das minhas metas. Projeto privado aparece só com a data.
+
+<!-- ULTIMOS-COMMITS:START -->
+| | Projeto | Último commit | Data |
+|:-:|---|---|---|
+| 🔒 | projeto privado | — | 30/10/2026 |
+| 📦 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`221a48b`](https://github.com/k3vinrich4rd/rkf_bank/commit/221a48ba2a80c04091ba3c8e476c2173c07ed17d) docs(readme): sem "lancamento" no card do Fellipe e nos banners | 29/10/2026 |
+| 📦 | [`JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`f430211`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/f430211de74e8756ebb6520b13b52ea0bae60578) refactor: renomeia OrdemItem para OrderItem | 28/10/2026 |
+| 📦 | [`desafio-devsuperior-componentes-injecao-dependencia`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) | [`4997708`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia/commit/4997708166e270a54829b3ea94912378a03fa100) revert: main volta a ter so o desafio de componentes (o ORM foi para desafio-dev | 28/10/2026 |
+| 🔒 | projeto privado | — | 27/10/2026 |
+| 📦 | [`desafio-devsuperior-crud-clientes`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) | [`9b0eb79`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes/commit/9b0eb794bf407bdbe22af1196065717ef72591a9) feat: implementando correcao sugerida no feedback | 05/10/2026 |
+| 📦 | [`workshop-springboot4-mongodb`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb) | [`ecad5ce`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb/commit/ecad5cec16d1f5ef7b606e6f8b5daf5ce74ade25) feat: Implementando ajustes no projeto | 15/09/2026 |
+| 📦 | [`desafio-devsuperior-modelo-orm`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) | [`757f944`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm/commit/757f944837b07f090ea785449adbc2b0e28cd45e) docs: atualiza informações do README | 27/10/2025 |
+
+<sub>🤖 Atualizado em 30/10/2026 (horário de Brasília) pelo workflow <code>perfil-diario</code> · branch padrão e <code>develop</code> · 🔒 projeto privado: só a data</sub>
+<!-- ULTIMOS-COMMITS:END -->
+
+### 🎯 Metas em andamento
+
+<!-- METAS:START -->
+| Meta | Progresso | Último commit que contou |
+|---|---|---|
+| **AWS na prática (a confirmar pelo Kevin)** <sub>⏳ a confirmar</sub> | `░░░░░░░░░░` <img src="https://img.shields.io/badge/0%25-0%2F10-EC7000?style=flat-square" alt="0%"/> | — |
+| **Inglês técnico: PRs e README em inglês (a confirmar pelo Kevin)** <sub>⏳ a confirmar</sub> | `░░░░░░░░░░` <img src="https://img.shields.io/badge/0%25-0%2F10-EC7000?style=flat-square" alt="0%"/> | — |
+| **Mensageria no RKF Bank: eventos, broker e Outbox (a confirmar pelo Kevin)** <sub>⏳ a confirmar</sub> | `░░░░░░░░░░` <img src="https://img.shields.io/badge/0%25-0%2F10-EC7000?style=flat-square" alt="0%"/> | — |
+
+<sub>🎯 Só contam commits meus que a minha rotina de revisão classificou pelo conteúdo (mensagem, arquivos, diff e dependências). Nada sobe sozinho com o tempo · dados de 2026-10-30</sub>
+<!-- METAS:END -->
+
+<sub>📓 Um resumo por dia em <a href="diario/">diario/</a> · tudo isso também em <a href="progresso.md">progresso.md</a></sub>
 
 <p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
 
