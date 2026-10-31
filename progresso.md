@@ -1,5 +1,5 @@
 ---
-atualizado: 2026-10-30
+atualizado: 2026-10-31
 fonte: https://github.com/k3vinrich4rd/k3vinrich4rd
 ---
 # Progresso do Kevin
@@ -10,8 +10,8 @@ fonte: https://github.com/k3vinrich4rd/k3vinrich4rd
 
 | | Projeto | Último commit | Data |
 |:-:|---|---|---|
+| 📦 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`88e2093`](https://github.com/k3vinrich4rd/rkf_bank/commit/88e20933f34c5646ad977fbed18ea3463e018043) fix(scripts): rodar a coleção da equipe por padrão quando a pasta .equipe existe | 31/10/2026 |
 | 🔒 | projeto privado | — | 30/10/2026 |
-| 📦 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`221a48b`](https://github.com/k3vinrich4rd/rkf_bank/commit/221a48ba2a80c04091ba3c8e476c2173c07ed17d) docs(readme): sem "lancamento" no card do Fellipe e nos banners | 29/10/2026 |
 | 📦 | [`JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`f430211`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/f430211de74e8756ebb6520b13b52ea0bae60578) refactor: renomeia OrdemItem para OrderItem | 28/10/2026 |
 | 📦 | [`desafio-devsuperior-componentes-injecao-dependencia`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) | [`4997708`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia/commit/4997708166e270a54829b3ea94912378a03fa100) revert: main volta a ter so o desafio de componentes (o ORM foi para desafio-dev | 28/10/2026 |
 | 🔒 | projeto privado | — | 27/10/2026 |
@@ -19,7 +19,7 @@ fonte: https://github.com/k3vinrich4rd/k3vinrich4rd
 | 📦 | [`workshop-springboot4-mongodb`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb) | [`ecad5ce`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb/commit/ecad5cec16d1f5ef7b606e6f8b5daf5ce74ade25) feat: Implementando ajustes no projeto | 15/09/2026 |
 | 📦 | [`desafio-devsuperior-modelo-orm`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) | [`757f944`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm/commit/757f944837b07f090ea785449adbc2b0e28cd45e) docs: atualiza informações do README | 27/10/2025 |
 
-<sub>🤖 Atualizado em 30/10/2026 (horário de Brasília) pela rotina diária (<code>scripts/rodar-diario.sh</code>) · branch padrão e <code>develop</code> · 🔒 projeto privado: só a data</sub>
+<sub>🤖 Atualizado em 31/10/2026 (horário de Brasília) pela rotina diária (<code>scripts/rodar-diario.sh</code>) · branch padrão e <code>develop</code> · 🔒 projeto privado: só a data</sub>
 
 ## 🎯 Metas (Java + AWS + IA, em conjunto)
 
@@ -52,4 +52,4 @@ fonte: https://github.com/k3vinrich4rd/k3vinrich4rd
 
 ## 📓 Diário de hoje
 
-[diario/2026-10-30.md](https://github.com/k3vinrich4rd/k3vinrich4rd/blob/main/diario/2026-10-30.md) · fonte: revisao
+[diario/2026-10-31.md](https://github.com/k3vinrich4rd/k3vinrich4rd/blob/main/diario/2026-10-31.md) · fonte: obsidian
