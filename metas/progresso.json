@@ -1,30 +1,25 @@
 {
   "atualizado": "2026-10-30",
-  "observacao": "Próximos estudos, em conjunto: Java + AWS + IA. Um mesmo commit pode contar para mais de uma meta. Quem preenche 'feitos' e 'commits' é a rotina diária, que classifica cada commit novo do Kevin pelo conteúdo; o workflow só desenha. O Kevin pode mudar títulos e alvos quando quiser.",
+  "observacao": "Próximos estudos, em conjunto: Java + AWS + IA. Percentual da meta = média dos cursos com percentual conhecido; null = 'a atualizar'. Fontes: cofre Obsidian (🎓 Curso - Java Spring Professional, Certificações, Cloud/AWS). O Kevin pode mudar quando quiser.",
   "metas": [
     {
       "id": "java",
-      "titulo": "Java avançado",
-      "alvo": 20,
-      "feitos": 0,
-      "confirmada": true,
-      "commits": []
+      "titulo": "Java",
+      "cursos": [
+        { "nome": "Java Spring Professional", "plataforma": "DevSuperior", "url": "https://devsuperior.club/courses/5", "percentual": 46, "atualizado": "2026-10-30" }
+      ]
     },
     {
       "id": "aws",
-      "titulo": "AWS na prática",
-      "alvo": 15,
-      "feitos": 0,
-      "confirmada": true,
-      "commits": []
+      "titulo": "AWS",
+      "cursos": [
+        { "nome": "AWS na Prática", "plataforma": "Udemy", "url": null, "percentual": null, "atualizado": null }
+      ]
     },
     {
       "id": "ia",
-      "titulo": "IA aplicada (Spring AI, LLM, RAG, agentes)",
-      "alvo": 15,
-      "feitos": 0,
-      "confirmada": true,
-      "commits": []
+      "titulo": "IA",
+      "cursos": []
     }
   ]
 }

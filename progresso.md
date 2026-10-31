@@ -19,17 +19,29 @@ fonte: https://github.com/k3vinrich4rd/k3vinrich4rd
 | 📦 | [`workshop-springboot4-mongodb`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb) | [`ecad5ce`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb/commit/ecad5cec16d1f5ef7b606e6f8b5daf5ce74ade25) feat: Implementando ajustes no projeto | 15/09/2026 |
 | 📦 | [`desafio-devsuperior-modelo-orm`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) | [`757f944`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm/commit/757f944837b07f090ea785449adbc2b0e28cd45e) docs: atualiza informações do README | 27/10/2025 |
 
-<sub>🤖 Atualizado em 30/10/2026 (horário de Brasília) pelo workflow <code>perfil-diario</code> · branch padrão e <code>develop</code> · 🔒 projeto privado: só a data</sub>
+<sub>🤖 Atualizado em 30/10/2026 (horário de Brasília) pela rotina diária (<code>scripts/rodar-diario.sh</code>) · branch padrão e <code>develop</code> · 🔒 projeto privado: só a data</sub>
 
-## 🎯 Metas
+## 🎯 Metas (Java + AWS + IA, em conjunto)
 
-| Meta | Progresso | Último commit que contou |
-|---|---|---|
-| **Java avançado** | `░░░░░░░░░░` <img src="https://img.shields.io/badge/0%25-0%2F20-EC7000?style=flat-square" alt="0%"/> | — |
-| **AWS na prática** | `░░░░░░░░░░` <img src="https://img.shields.io/badge/0%25-0%2F15-EC7000?style=flat-square" alt="0%"/> | — |
-| **IA aplicada (Spring AI, LLM, RAG, agentes)** | `░░░░░░░░░░` <img src="https://img.shields.io/badge/0%25-0%2F15-EC7000?style=flat-square" alt="0%"/> | — |
+### ☕ Java · 46%
 
-<sub>🎯 Só contam commits meus que a minha rotina de revisão classificou pelo conteúdo (mensagem, arquivos, diff e dependências). Nada sobe sozinho com o tempo · dados de 2026-10-30</sub>
+`█████░░░░░` 46%
+
+- **46%** · [Java Spring Professional](https://devsuperior.club/courses/5) · DevSuperior (atualizado em 2026-10-30)
+
+### ☁️ AWS · a atualizar
+
+`░░░░░░░░░░` a atualizar
+
+- **a atualizar** · AWS na Prática · Udemy
+
+### 🤖 IA · a atualizar
+
+`░░░░░░░░░░` a atualizar
+
+- 📅 curso a definir
+
+<sub>Dados de 2026-10-30</sub>
 
 ## 📓 Diário de hoje
 

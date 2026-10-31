@@ -103,44 +103,79 @@ async function blocoUltimosCommits(repos) {
 |:-:|---|---|---|
 ${linhas.map((l) => l.md).join('\n')}
 
-<sub>🤖 Atualizado em ${diaBR(agora)} (horário de Brasília) pelo workflow <code>perfil-diario</code> · branch padrão e <code>develop</code> · 🔒 projeto privado: só a data</sub>`;
+<sub>🤖 Atualizado em ${diaBR(agora)} (horário de Brasília) pela rotina diária (<code>scripts/rodar-diario.sh</code>) · branch padrão e <code>develop</code> · 🔒 projeto privado: só a data</sub>`;
 }
 
 // ---------- 2. Metas (só desenha metas/progresso.json) ----------
+// Cada meta (Java, AWS, IA, estudadas em conjunto) é medida pela porcentagem dos cursos dela: percentual da meta = média
+// dos cursos com percentual conhecido. Curso com "percentual": null aparece como "a atualizar" e fica fora da média.
+// Nada sobe sozinho: quem atualiza os percentuais é a rotina diária, com o que o Kevin registra. Formato em metas/README.md.
+const ICONES = { java: '☕', aws: '☁️', ia: '🤖' };
+const xml = (t) => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const pctValido = (v) => (v === null || v === undefined || v === '' || Number.isNaN(Number(v)) ? null : Math.max(0, Math.min(100, Math.round(Number(v)))));
 function lerMetas() {
   const bruto = ler(path.join(RAIZ, 'metas', 'progresso.json'));
   if (!bruto) return null;
   const m = JSON.parse(bruto);
   for (const meta of m.metas ?? []) {
-    meta.alvo = Number(meta.alvo) || 0;
-    meta.feitos = Number(meta.feitos) || 0;
-    meta.pct = meta.alvo ? Math.min(100, Math.round((meta.feitos / meta.alvo) * 100)) : 0;
+    meta.cursos = (meta.cursos ?? []).map((c) => ({ ...c, percentual: pctValido(c.percentual) }));
+    const conhecidos = meta.cursos.filter((c) => c.percentual !== null);
+    meta.pct = conhecidos.length ? Math.round(conhecidos.reduce((s, c) => s + c.percentual, 0) / conhecidos.length) : null;
+    meta.icone = meta.icone ?? ICONES[meta.id] ?? '🎯';
   }
   return m;
 }
-const barra = (pct) => '█'.repeat(Math.round(pct / 10)) + '░'.repeat(10 - Math.round(pct / 10));
-function ultimoDaMeta(meta, privado) {
-  const c = [...(meta.commits ?? [])].sort((a, b) => String(b.data).localeCompare(String(a.data)))[0];
-  if (!c) return '—';
-  const quando = c.data ? diaBR(c.data) : '';
-  if (privado(c.repo)) return `🔒 projeto privado · ${quando}`;
-  const nome = String(c.repo).split('/').pop();
-  const url = `https://github.com/${String(c.repo).includes('/') ? c.repo : `${USUARIO}/${c.repo}`}`;
-  return `[\`${nome}\`](${url}) [\`${String(c.sha).slice(0, 7)}\`](${url}/commit/${c.sha}) ${String(c.motivo ?? '').replace(/\|/g, '\\|').slice(0, 70)} · ${quando}`;
+const corPct = (pct) => (pct === null ? '8b949e' : pct >= 100 ? '3fb950' : pct > 0 ? 'EC7000' : '8b949e');
+const esc = (t) => encodeURIComponent(String(t)).replace(/-/g, '--').replace(/_/g, '__');
+const selo = (rotulo, pct, estilo = 'flat-square') =>
+  `https://img.shields.io/badge/${rotulo ? `${esc(rotulo)}-` : ''}${esc(pct === null ? 'a atualizar' : `${pct}%`)}-${corPct(pct)}?style=${estilo}`;
+/** Barra de progresso em SVG (assets/metas/<id>.svg), gerada sem API, no laranja do perfil. */
+function svgBarra(meta) {
+  const largura = 240, w = meta.pct ? Math.round((largura - 4) * meta.pct / 100) : 0;
+  const cor = meta.pct >= 100 ? '#3fb950' : '#EC7000';
+  const texto = meta.pct === null ? 'a atualizar' : `${meta.pct}%`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${largura}" height="18" viewBox="0 0 ${largura} 18" role="img" aria-label="${xml(meta.titulo)}: ${texto}">
+<rect x="0.5" y="0.5" width="${largura - 1}" height="17" rx="8.5" fill="#161b22" stroke="#30363d"/>
+${w > 0 ? `<rect x="2" y="2" width="${Math.max(w, 14)}" height="14" rx="7" fill="${cor}"/>` : ''}
+<text x="${largura / 2}" y="13" text-anchor="middle" font-family="Segoe UI,Ubuntu,sans-serif" font-size="11" font-weight="600" fill="#ffffff">${texto}</text>
+</svg>
+`;
 }
-function blocoMetas(m, privado) {
+const barra = (pct) => (pct === null ? '░'.repeat(10) : '█'.repeat(Math.round(pct / 10)) + '░'.repeat(10 - Math.round(pct / 10)));
+const nomeCurso = (c, html) => {
+  const nome = html ? xml(c.nome) : c.nome;
+  const link = c.url ? (html ? `<a href="${xml(c.url)}">${nome}</a>` : `[${nome}](${c.url})`) : nome;
+  return `${link}${c.plataforma ? ` · ${html ? xml(c.plataforma) : c.plataforma}` : ''}`;
+};
+function blocoMetas(m) {
   if (!m?.metas?.length) return '_Nenhuma meta em `metas/progresso.json` ainda._';
-  const linhas = m.metas.map((meta) => {
-    const cor = meta.pct >= 100 ? '3fb950' : 'EC7000';
-    const selo = `<img src="https://img.shields.io/badge/${meta.pct}%25-${meta.feitos}%2F${meta.alvo}-${cor}?style=flat-square" alt="${meta.pct}%"/>`;
-    const status = meta.confirmada === false ? ' <sub>⏳ a confirmar</sub>' : '';
-    return `| **${meta.titulo}**${status} | \`${barra(meta.pct)}\` ${selo} | ${ultimoDaMeta(meta, privado)} |`;
-  });
-  return `| Meta | Progresso | Último commit que contou |
-|---|---|---|
-${linhas.join('\n')}
+  const coluna = (meta) => `<td valign="top" width="${Math.floor(100 / m.metas.length)}%">
 
-<sub>🎯 Só contam commits meus que a minha rotina de revisão classificou pelo conteúdo (mensagem, arquivos, diff e dependências). Nada sobe sozinho com o tempo · dados de ${m.atualizado ?? '—'}</sub>`;
+<h3 align="center">${meta.icone} ${xml(meta.titulo)}</h3>
+<p align="center"><img src="${selo('', meta.pct, 'for-the-badge')}" alt="${meta.pct === null ? 'a atualizar' : `${meta.pct}%`}"/><br/><img src="assets/metas/${meta.id}.svg" width="100%" alt="Barra de progresso de ${xml(meta.titulo)}"/></p>
+
+${meta.cursos.length
+    ? meta.cursos.map((c) => `<img src="${selo('', c.percentual)}" alt="${c.percentual === null ? 'a atualizar' : `${c.percentual}%`}"/> ${nomeCurso(c, true)}${c.atualizado ? `<br/><sub>atualizado em ${diaBR(`${c.atualizado}T12:00:00Z`)}</sub>` : ''}`).join('<br/><br/>\n')
+    : '<p align="center"><sub>📅 curso a definir</sub></p>'}
+
+</td>`;
+  return `<p align="center"><img src="https://img.shields.io/badge/${esc('Java + AWS + IA')}-${esc('em conjunto')}-EC7000?style=for-the-badge" alt="Java + AWS + IA em conjunto"/></p>
+
+<table>
+<tr>
+${m.metas.map(coluna).join('\n')}
+</tr>
+</table>
+
+<sub>🎯 Cada meta é medida pelo progresso real dos cursos dela (média dos cursos com porcentagem registrada); "a atualizar" = curso sem porcentagem registrada ainda. Nada sobe sozinho · dados de ${m.atualizado ?? '—'}</sub>`;
+}
+function metasMarkdown(m) {
+  if (!m?.metas?.length) return '_Nenhuma meta ainda._';
+  return m.metas.map((meta) => `### ${meta.icone} ${meta.titulo} · ${meta.pct === null ? 'a atualizar' : `${meta.pct}%`}
+
+\`${barra(meta.pct)}\` ${meta.pct === null ? 'a atualizar' : `${meta.pct}%`}
+
+${meta.cursos.length ? meta.cursos.map((c) => `- **${c.percentual === null ? 'a atualizar' : `${c.percentual}%`}** · ${nomeCurso(c, false)}${c.atualizado ? ` (atualizado em ${c.atualizado})` : ''}`).join('\n') : '- 📅 curso a definir'}`).join('\n\n') + `\n\n<sub>Dados de ${m.atualizado ?? '—'}</sub>`;
 }
 
 // ---------- 3. Diário do dia ----------
@@ -228,7 +263,9 @@ if (SO_METAS) {
   diario = await diarioDoDia(repos);
   if (diario) { diario.dia = dia; escrever(`diario/${dia}.md`, diario.md); }
 }
-const metasMd = blocoMetas(lerMetas(), privado);
+const metas = lerMetas();
+for (const meta of metas?.metas ?? []) escrever(`assets/metas/${meta.id}.svg`, svgBarra(meta));
+const metasMd = blocoMetas(metas);
 if (!SO_METAS) readme = substituir(readme, 'ULTIMOS-COMMITS', ultimos);
 readme = substituir(readme, 'METAS', metasMd);
 escrever('README.md', readme);
@@ -245,9 +282,9 @@ fonte: https://github.com/${USUARIO}/${USUARIO}
 
 ${ultimos}
 
-## 🎯 Metas
+## 🎯 Metas (Java + AWS + IA, em conjunto)
 
-${metasMd}
+${metasMarkdown(metas)}
 
 ## 📓 Diário de hoje
 

@@ -225,7 +225,7 @@ flowchart LR
 
 ## ⏱️ Últimos commits e metas
 
-> Atualizada todo dia pelo GitHub Actions (workflow `perfil-diario`), mesmo com o meu PC desligado: o último commit de cada projeto e o andamento das minhas metas. Projeto privado aparece só com a data.
+> Atualizada todo dia pela minha rotina de automação, mesmo com o meu PC desligado: o último commit de cada projeto e o andamento das minhas metas, marco a marco. Projeto privado aparece só com a data.
 
 <!-- ULTIMOS-COMMITS:START -->
 | | Projeto | Último commit | Data |
@@ -239,19 +239,44 @@ flowchart LR
 | 📦 | [`workshop-springboot4-mongodb`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb) | [`ecad5ce`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb/commit/ecad5cec16d1f5ef7b606e6f8b5daf5ce74ade25) feat: Implementando ajustes no projeto | 15/09/2026 |
 | 📦 | [`desafio-devsuperior-modelo-orm`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) | [`757f944`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm/commit/757f944837b07f090ea785449adbc2b0e28cd45e) docs: atualiza informações do README | 27/10/2025 |
 
-<sub>🤖 Atualizado em 30/10/2026 (horário de Brasília) pelo workflow <code>perfil-diario</code> · branch padrão e <code>develop</code> · 🔒 projeto privado: só a data</sub>
+<sub>🤖 Atualizado em 30/10/2026 (horário de Brasília) pela rotina diária (<code>scripts/rodar-diario.sh</code>) · branch padrão e <code>develop</code> · 🔒 projeto privado: só a data</sub>
 <!-- ULTIMOS-COMMITS:END -->
 
 ### 🎯 Metas em andamento: Java + AWS + IA em conjunto
 
 <!-- METAS:START -->
-| Meta | Progresso | Último commit que contou |
-|---|---|---|
-| **Java avançado** | `░░░░░░░░░░` <img src="https://img.shields.io/badge/0%25-0%2F20-EC7000?style=flat-square" alt="0%"/> | — |
-| **AWS na prática** | `░░░░░░░░░░` <img src="https://img.shields.io/badge/0%25-0%2F15-EC7000?style=flat-square" alt="0%"/> | — |
-| **IA aplicada (Spring AI, LLM, RAG, agentes)** | `░░░░░░░░░░` <img src="https://img.shields.io/badge/0%25-0%2F15-EC7000?style=flat-square" alt="0%"/> | — |
+<p align="center"><img src="https://img.shields.io/badge/Java%20%2B%20AWS%20%2B%20IA-em%20conjunto-EC7000?style=for-the-badge" alt="Java + AWS + IA em conjunto"/></p>
 
-<sub>🎯 Só contam commits meus que a minha rotina de revisão classificou pelo conteúdo (mensagem, arquivos, diff e dependências). Nada sobe sozinho com o tempo · dados de 2026-10-30</sub>
+<table>
+<tr>
+<td valign="top" width="33%">
+
+<h3 align="center">☕ Java</h3>
+<p align="center"><img src="https://img.shields.io/badge/46%25-EC7000?style=for-the-badge" alt="46%"/><br/><img src="assets/metas/java.svg" width="100%" alt="Barra de progresso de Java"/></p>
+
+<img src="https://img.shields.io/badge/46%25-EC7000?style=flat-square" alt="46%"/> <a href="https://devsuperior.club/courses/5">Java Spring Professional</a> · DevSuperior<br/><sub>atualizado em 30/10/2026</sub>
+
+</td>
+<td valign="top" width="33%">
+
+<h3 align="center">☁️ AWS</h3>
+<p align="center"><img src="https://img.shields.io/badge/a%20atualizar-8b949e?style=for-the-badge" alt="a atualizar"/><br/><img src="assets/metas/aws.svg" width="100%" alt="Barra de progresso de AWS"/></p>
+
+<img src="https://img.shields.io/badge/a%20atualizar-8b949e?style=flat-square" alt="a atualizar"/> AWS na Prática · Udemy
+
+</td>
+<td valign="top" width="33%">
+
+<h3 align="center">🤖 IA</h3>
+<p align="center"><img src="https://img.shields.io/badge/a%20atualizar-8b949e?style=for-the-badge" alt="a atualizar"/><br/><img src="assets/metas/ia.svg" width="100%" alt="Barra de progresso de IA"/></p>
+
+<p align="center"><sub>📅 curso a definir</sub></p>
+
+</td>
+</tr>
+</table>
+
+<sub>🎯 Cada meta é medida pelo progresso real dos cursos dela (média dos cursos com porcentagem registrada); "a atualizar" = curso sem porcentagem registrada ainda. Nada sobe sozinho · dados de 2026-10-30</sub>
 <!-- METAS:END -->
 
 <sub>📓 Um resumo por dia em <a href="diario/">diario/</a> · tudo isso também em <a href="progresso.md">progresso.md</a></sub>
@@ -1688,7 +1713,7 @@ endsolid repositorios_por_ano
 
 ### 🎯 Agora, em ordem
 
-> 🔥 **Próximos estudos: Java + AWS + IA, em conjunto.** Um mesmo commit pode avançar mais de uma meta; o andamento de cada uma está em [⏱️ Últimos commits e metas](#️-últimos-commits-e-metas).
+> 🔥 **Próximos estudos: Java + AWS + IA, em conjunto.** O progresso de cada uma, pela porcentagem dos cursos, está em [⏱️ Últimos commits e metas](#️-últimos-commits-e-metas).
 
 ```mermaid
 flowchart LR
