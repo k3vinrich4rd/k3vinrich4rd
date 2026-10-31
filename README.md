@@ -228,7 +228,7 @@ flowchart LR
 <!-- História em cenas gerada por scripts/svgs.mjs com os números do progresso.json. -->
 <img src="assets/historia.svg" width="100%" alt="Minha história em cenas: 2022 Programa Catalisa, 2023 Kotlin e testes, 2024 Spring Boot Essentials, 2025 Formação Spring Professional, 2026 RKF Bank, agora rumo ao Pleno"/>
 
-<img align="right" width="300" src="https://github-readme-stats.vercel.app/api/top-langs/?username=k3vinrich4rd&layout=donut&theme=tokyonight&hide_border=true&langs_count=6&bg_color=0d1117&title_color=EC7000&text_color=ffffff" alt="Linguagens"/>
+<img align="right" width="300" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=k3vinrich4rd&theme=tokyonight" alt="Linguagens"/>
 
 > 24 anos. Osasco, SP. Dev Junior. Sempre estudando. Sempre evoluindo.
 
@@ -564,7 +564,7 @@ timeline
     20 out : Flyway reestruturado e contas da equipe sempre prontas : idempotência, conta que não se apaga e limite de login : perfil público de visitante
     25 out : primeira release develop → main : Testcontainers, Swagger, refresh token e LGPD
     27 out : domínio rico na Conta com TDD : threads virtuais e entidades com equals/hashCode
-    29 out : fim do N+1 nas listas do ADMIN : segunda release develop → main (PR #76, aprovada pelo Renan) : MVP concluído, sem deploy: portfólio para rodar na sua máquina
+    29 out : fim do N+1 nas listas do ADMIN : segunda release develop → main (PR #76, aprovada pelo Renan) : MVP concluído, sem deploy (release PR #85): portfólio para rodar na sua máquina
 ```
 
 <details>
@@ -945,8 +945,8 @@ sequenceDiagram
 
 <div align="center">
 
-<a href="https://github.com/k3vinrich4rd/rkf_bank" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=k3vinrich4rd&repo=rkf_bank&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=EC7000&icon_color=003D74&text_color=ffffff&show_owner=false" alt="RKF Bank" width="49%"/></a>
-<a href="https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=k3vinrich4rd&repo=JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=EC7000&icon_color=003D74&text_color=ffffff&show_owner=false" alt="DSCommerce" width="49%"/></a>
+<a href="https://github.com/k3vinrich4rd/rkf_bank" target="_blank"><img src="assets/cards/rkf_bank.svg" alt="RKF Bank" width="49%"/></a>
+<a href="https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM" target="_blank"><img src="assets/cards/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM.svg" alt="DSCommerce" width="49%"/></a>
 
 </div>
 
@@ -977,10 +977,10 @@ sequenceDiagram
 
 <div align="center">
 
-<a href="https://github.com/k3vinrich4rd/workshop-springboot4-jpa" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=k3vinrich4rd&repo=workshop-springboot4-jpa&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=EC7000&icon_color=003D74&text_color=ffffff&show_owner=false" alt="Workshop Spring Boot 4 JPA"/></a>
-<a href="https://github.com/k3vinrich4rd/workshop-springboot4-mongodb" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=k3vinrich4rd&repo=workshop-springboot4-mongodb&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=EC7000&icon_color=003D74&text_color=ffffff&show_owner=false" alt="Workshop Spring Boot 4 MongoDB"/></a>
-<a href="https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=k3vinrich4rd&repo=desafio-devsuperior-crud-clientes&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=EC7000&icon_color=003D74&text_color=ffffff&show_owner=false" alt="CRUD de Clientes DevSuperior"/></a>
-<a href="https://github.com/k3vinrich4rd/BookMarket" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=k3vinrich4rd&repo=BookMarket&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=EC7000&icon_color=003D74&text_color=ffffff&show_owner=false" alt="BookMarket"/></a>
+<a href="https://github.com/k3vinrich4rd/workshop-springboot4-jpa" target="_blank"><img src="assets/cards/workshop-springboot4-jpa.svg" alt="Workshop Spring Boot 4 JPA"/></a>
+<a href="https://github.com/k3vinrich4rd/workshop-springboot4-mongodb" target="_blank"><img src="assets/cards/workshop-springboot4-mongodb.svg" alt="Workshop Spring Boot 4 MongoDB"/></a>
+<a href="https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes" target="_blank"><img src="assets/cards/desafio-devsuperior-crud-clientes.svg" alt="CRUD de Clientes DevSuperior"/></a>
+<a href="https://github.com/k3vinrich4rd/BookMarket" target="_blank"><img src="assets/cards/BookMarket.svg" alt="BookMarket"/></a>
 
 </div>
 
@@ -2025,8 +2025,14 @@ flowchart LR
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=k3vinrich4rd&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&rank_icon=github&bg_color=0d1117&title_color=EC7000&icon_color=003D74&text_color=ffffff" alt="GitHub Stats" width="49%"/>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=k3vinrich4rd&theme=tokyonight&hide_border=true&background=0d1117&ring=EC7000&fire=EC7000&currStreakLabel=EC7000&sideLabels=003D74" alt="GitHub Streak" width="49%"/>
+<!-- Cards do github-profile-summary-cards e do streak (demolab): o github-readme-stats.vercel.app público saiu do ar (503). -->
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=k3vinrich4rd&theme=tokyonight" alt="Contribuições no GitHub mês a mês" width="100%"/>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=k3vinrich4rd&theme=tokyonight" alt="GitHub Stats" width="49%"/>
+<img src="https://streak-stats.demolab.com/?user=k3vinrich4rd&theme=tokyonight&hide_border=true&background=0d1117&ring=EC7000&fire=EC7000&currStreakLabel=EC7000&sideLabels=003D74" alt="GitHub Streak" width="49%"/>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=k3vinrich4rd&theme=tokyonight" alt="Linguagens por repositório" width="49%"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=k3vinrich4rd&theme=tokyonight" alt="Linguagens por commit" width="49%"/>
 
 </div>
 
