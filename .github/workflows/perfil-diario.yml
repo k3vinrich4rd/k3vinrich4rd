@@ -1,0 +1,44 @@
+# Renderizador das metas: quando a rotina diária publica diario/** ou metas/** na main, redesenha a tabela de metas do
+# README (<!-- METAS:START/END -->) e o progresso.md a partir de metas/progresso.json. Não chama a API do GitHub:
+# a tabela de últimos commits (que precisa enxergar os repositórios privados, mostrados só como "projeto privado")
+# é gerada na máquina de automação por scripts/rodar-diario.sh, que também faz o commit diário como o Kevin.
+# Este workflow só commita se algo mudou (como github-actions[bot]; quem garante a ofensiva é o commit da rotina).
+name: Perfil diário (metas)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "diario/**"
+      - "metas/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: atualizar-readme # mesma fila do atualizar-readme.yml: os dois nunca disputam o README
+  cancel-in-progress: false
+
+jobs:
+  metas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Redesenhar metas e progresso.md
+        run: node scripts/perfil-diario.mjs --so-metas
+
+      - name: Commitar se mudou
+        run: |
+          git add README.md progresso.md assets/metas
+          if git diff --cached --quiet; then echo "Nada mudou: sem commit."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "docs(perfil): metas redesenhadas"
+          git push || { git pull --rebase -X theirs && git push; }

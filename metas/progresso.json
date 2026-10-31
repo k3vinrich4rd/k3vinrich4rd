@@ -1,0 +1,25 @@
+{
+  "atualizado": "2026-10-30",
+  "observacao": "Próximos estudos, em conjunto: Java + AWS + IA. Percentual da meta = média dos cursos com percentual conhecido; null = 'a atualizar'. Fontes: cofre Obsidian (🎓 Curso - Java Spring Professional, Certificações, Cloud/AWS). O Kevin pode mudar quando quiser.",
+  "metas": [
+    {
+      "id": "java",
+      "titulo": "Java",
+      "cursos": [
+        { "nome": "Java Spring Professional", "plataforma": "DevSuperior", "url": "https://devsuperior.club/courses/5", "percentual": 46, "atualizado": "2026-10-30" }
+      ]
+    },
+    {
+      "id": "aws",
+      "titulo": "AWS",
+      "cursos": [
+        { "nome": "AWS na Prática", "plataforma": "Udemy", "url": null, "percentual": null, "atualizado": null }
+      ]
+    },
+    {
+      "id": "ia",
+      "titulo": "IA",
+      "cursos": []
+    }
+  ]
+}
