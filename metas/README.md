@@ -1,6 +1,6 @@
 # Metas
 
-`metas/progresso.json` é a única fonte das metas do perfil. O workflow `perfil-diario` só **desenha** o que está aqui
+`metas/progresso.json` é a única fonte das metas do perfil. O workflow `perfil-diario` (e o `scripts/rodar-diario.sh`) só **desenham** o que está aqui
 (no README, entre `<!-- METAS:START -->` e `<!-- METAS:END -->`, e no `progresso.md`). Ele não calcula nada:
 o progresso não sobe com o tempo nem com commit qualquer.
 
@@ -40,4 +40,4 @@ arquivos alterados, diff e dependências) e decide pelo conteúdo se o commit co
 Commit de repositório privado (ou que o token não enxerga) aparece só como “🔒 projeto privado” e a data:
 sem nome, SHA, link ou motivo.
 
-As três metas iniciais (AWS, inglês, mensageria) são sugestões da régua Junior → Pleno, **a confirmar pelo Kevin**.
+Metas atuais (confirmadas pelo Kevin, estudadas em conjunto): `java` (Java avançado, alvo 20), `aws` (AWS na prática, alvo 15) e `ia` (IA aplicada: Spring AI, LLM, RAG, agentes; alvo 15). **Um mesmo commit pode contar para mais de uma meta**: basta listá-lo em `commits` de cada uma e somar em `feitos` de cada uma.

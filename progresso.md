@@ -25,9 +25,9 @@ fonte: https://github.com/k3vinrich4rd/k3vinrich4rd
 
 | Meta | Progresso | Último commit que contou |
 |---|---|---|
-| **AWS na prática (a confirmar pelo Kevin)** <sub>⏳ a confirmar</sub> | `░░░░░░░░░░` <img src="https://img.shields.io/badge/0%25-0%2F10-EC7000?style=flat-square" alt="0%"/> | — |
-| **Inglês técnico: PRs e README em inglês (a confirmar pelo Kevin)** <sub>⏳ a confirmar</sub> | `░░░░░░░░░░` <img src="https://img.shields.io/badge/0%25-0%2F10-EC7000?style=flat-square" alt="0%"/> | — |
-| **Mensageria no RKF Bank: eventos, broker e Outbox (a confirmar pelo Kevin)** <sub>⏳ a confirmar</sub> | `░░░░░░░░░░` <img src="https://img.shields.io/badge/0%25-0%2F10-EC7000?style=flat-square" alt="0%"/> | — |
+| **Java avançado** | `░░░░░░░░░░` <img src="https://img.shields.io/badge/0%25-0%2F20-EC7000?style=flat-square" alt="0%"/> | — |
+| **AWS na prática** | `░░░░░░░░░░` <img src="https://img.shields.io/badge/0%25-0%2F15-EC7000?style=flat-square" alt="0%"/> | — |
+| **IA aplicada (Spring AI, LLM, RAG, agentes)** | `░░░░░░░░░░` <img src="https://img.shields.io/badge/0%25-0%2F15-EC7000?style=flat-square" alt="0%"/> | — |
 
 <sub>🎯 Só contam commits meus que a minha rotina de revisão classificou pelo conteúdo (mensagem, arquivos, diff e dependências). Nada sobe sozinho com o tempo · dados de 2026-10-30</sub>
 

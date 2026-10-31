@@ -11,9 +11,13 @@
 //     c) um tópico de revisão do dia, em rodízio, tirado de revisao.yml.
 //  4. progresso.md: os mesmos dados em Markdown puro, para espelhar no Obsidian.
 //
-// Token: GH_TOKEN (no Actions: secrets.PROFILE_TOKEN, ou o GITHUB_TOKEN como plano B, que só enxerga repositórios
-// públicos). Sem GH_TOKEN, usa o `gh api` já logado na máquina.
-// Uso: node scripts/perfil-diario.mjs [--seco]   (--seco: só mostra o que mudaria, sem gravar)
+// Dois modos:
+//  - completo (padrão): 1 a 4. Roda na máquina de automação pelo scripts/rodar-diario.sh, com o `gh` logado como o
+//    Kevin (enxerga os repositórios privados, que saem só como "projeto privado" + data).
+//  - --so-metas: só 2 e 4, sem chamar a API (o workflow perfil-diario.yml usa este modo com o GITHUB_TOKEN padrão,
+//    que não enxerga privados; a tabela de últimos commits fica como a máquina gerou).
+// Token: GH_TOKEN se existir; sem ele, usa o `gh api` já logado.
+// Uso: node scripts/perfil-diario.mjs [--so-metas] [--seco]   (--seco: só mostra o que mudaria, sem gravar)
 import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
@@ -22,6 +26,7 @@ import { fileURLToPath } from 'node:url';
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const USUARIO = process.env.PERFIL_USUARIO || 'k3vinrich4rd';
 const SECO = process.argv.includes('--seco');
+const SO_METAS = process.argv.includes('--so-metas');
 const TZ = 'America/Sao_Paulo';
 const MAX_PROJETOS = 8;
 const agora = new Date();
@@ -198,27 +203,38 @@ function substituir(md, nome, conteudo) {
   return md.replace(re, () => `<!-- ${nome}:START -->\n${conteudo.trim()}\n<!-- ${nome}:END -->`);
 }
 
-const repos = await repositorios();
+const repos = SO_METAS ? [] : await repositorios();
 const porNome = new Map(repos.map((r) => [r.full_name.toLowerCase(), r]));
+const publicosDaTabela = new Set(); // no modo --so-metas, sem API: só é público o que a tabela gerada na máquina já mostra
 const privado = (repo) => {
   const nome = String(repo ?? '').toLowerCase();
-  const r = porNome.get(nome.includes('/') ? nome : `${USUARIO.toLowerCase()}/${nome}`);
+  const cheio = nome.includes('/') ? nome : `${USUARIO.toLowerCase()}/${nome}`;
+  if (SO_METAS) return !publicosDaTabela.has(cheio);
+  const r = porNome.get(cheio);
   return !r || r.private; // desconhecido conta como privado: na dúvida, não expõe
 };
-const ultimos = await blocoUltimosCommits(repos);
-const metas = lerMetas();
-const metasMd = blocoMetas(metas, privado);
-const diario = await diarioDoDia(repos);
-if (diario) escrever(`diario/${dia}.md`, diario.md);
-
 const arquivoReadme = path.join(RAIZ, 'README.md');
 let readme = ler(arquivoReadme);
-readme = substituir(readme, 'ULTIMOS-COMMITS', ultimos);
+const blocoAtual = (nome) => new RegExp(`<!-- ${nome}:START -->\\n?([\\s\\S]*?)\\n?<!-- ${nome}:END -->`).exec(readme)?.[1] ?? '';
+let ultimos;
+let diario = null;
+if (SO_METAS) {
+  ultimos = blocoAtual('ULTIMOS-COMMITS').trim() || '_Gerado pela rotina diária._';
+  for (const m of ultimos.matchAll(/\(https:\/\/github\.com\/([^/\s)]+\/[^/\s)]+)\)/g)) publicosDaTabela.add(m[1].toLowerCase());
+  const visto = /\[diario\/(\d{4}-\d{2}-\d{2})\.md\][^\n]*fonte: (\w+)/.exec(ler(path.join(RAIZ, 'progresso.md')) ?? '');
+  if (visto) diario = { dia: visto[1], fonte: visto[2] };
+} else {
+  ultimos = await blocoUltimosCommits(repos);
+  diario = await diarioDoDia(repos);
+  if (diario) { diario.dia = dia; escrever(`diario/${dia}.md`, diario.md); }
+}
+const metasMd = blocoMetas(lerMetas(), privado);
+if (!SO_METAS) readme = substituir(readme, 'ULTIMOS-COMMITS', ultimos);
 readme = substituir(readme, 'METAS', metasMd);
 escrever('README.md', readme);
 
 escrever('progresso.md', `---
-atualizado: ${dia}
+atualizado: ${diario?.dia ?? dia}
 fonte: https://github.com/${USUARIO}/${USUARIO}
 ---
 # Progresso do Kevin
@@ -235,8 +251,8 @@ ${metasMd}
 
 ## 📓 Diário de hoje
 
-${diario ? `[diario/${dia}.md](https://github.com/${USUARIO}/${USUARIO}/blob/main/diario/${dia}.md) · fonte: ${diario.fonte}` : '—'}
+${diario ? `[diario/${diario.dia}.md](https://github.com/${USUARIO}/${USUARIO}/blob/main/diario/${diario.dia}.md) · fonte: ${diario.fonte}` : '—'}
 `);
 
 console.log(mudancas.length ? `${SECO ? 'mudaria' : 'atualizado'}: ${mudancas.join(', ')}` : 'nada mudou');
-if (process.env.GITHUB_OUTPUT && diario) fs.appendFileSync(process.env.GITHUB_OUTPUT, `fonte=${diario.fonte}\ndia=${dia}\n`);
+if (process.env.GITHUB_OUTPUT && diario) fs.appendFileSync(process.env.GITHUB_OUTPUT, `fonte=${diario.fonte}\ndia=${diario.dia}\n`);

@@ -1,29 +1,29 @@
 {
   "atualizado": "2026-10-30",
-  "observacao": "Metas sugeridas a partir da régua Junior → Pleno (foco atual: AWS, depois inglês e mensageria). Alvos e títulos a confirmar pelo Kevin. Quem preenche 'feitos' e 'commits' é a rotina diária do Black, que classifica cada commit novo do Kevin pelo conteúdo; o workflow só desenha.",
+  "observacao": "Próximos estudos, em conjunto: Java + AWS + IA. Um mesmo commit pode contar para mais de uma meta. Quem preenche 'feitos' e 'commits' é a rotina diária, que classifica cada commit novo do Kevin pelo conteúdo; o workflow só desenha. O Kevin pode mudar títulos e alvos quando quiser.",
   "metas": [
     {
+      "id": "java",
+      "titulo": "Java avançado",
+      "alvo": 20,
+      "feitos": 0,
+      "confirmada": true,
+      "commits": []
+    },
+    {
       "id": "aws",
-      "titulo": "AWS na prática (a confirmar pelo Kevin)",
-      "alvo": 10,
+      "titulo": "AWS na prática",
+      "alvo": 15,
       "feitos": 0,
-      "confirmada": false,
+      "confirmada": true,
       "commits": []
     },
     {
-      "id": "ingles",
-      "titulo": "Inglês técnico: PRs e README em inglês (a confirmar pelo Kevin)",
-      "alvo": 10,
+      "id": "ia",
+      "titulo": "IA aplicada (Spring AI, LLM, RAG, agentes)",
+      "alvo": 15,
       "feitos": 0,
-      "confirmada": false,
-      "commits": []
-    },
-    {
-      "id": "mensageria",
-      "titulo": "Mensageria no RKF Bank: eventos, broker e Outbox (a confirmar pelo Kevin)",
-      "alvo": 10,
-      "feitos": 0,
-      "confirmada": false,
+      "confirmada": true,
       "commits": []
     }
   ]

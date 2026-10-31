@@ -242,14 +242,14 @@ flowchart LR
 <sub>🤖 Atualizado em 30/10/2026 (horário de Brasília) pelo workflow <code>perfil-diario</code> · branch padrão e <code>develop</code> · 🔒 projeto privado: só a data</sub>
 <!-- ULTIMOS-COMMITS:END -->
 
-### 🎯 Metas em andamento
+### 🎯 Metas em andamento: Java + AWS + IA em conjunto
 
 <!-- METAS:START -->
 | Meta | Progresso | Último commit que contou |
 |---|---|---|
-| **AWS na prática (a confirmar pelo Kevin)** <sub>⏳ a confirmar</sub> | `░░░░░░░░░░` <img src="https://img.shields.io/badge/0%25-0%2F10-EC7000?style=flat-square" alt="0%"/> | — |
-| **Inglês técnico: PRs e README em inglês (a confirmar pelo Kevin)** <sub>⏳ a confirmar</sub> | `░░░░░░░░░░` <img src="https://img.shields.io/badge/0%25-0%2F10-EC7000?style=flat-square" alt="0%"/> | — |
-| **Mensageria no RKF Bank: eventos, broker e Outbox (a confirmar pelo Kevin)** <sub>⏳ a confirmar</sub> | `░░░░░░░░░░` <img src="https://img.shields.io/badge/0%25-0%2F10-EC7000?style=flat-square" alt="0%"/> | — |
+| **Java avançado** | `░░░░░░░░░░` <img src="https://img.shields.io/badge/0%25-0%2F20-EC7000?style=flat-square" alt="0%"/> | — |
+| **AWS na prática** | `░░░░░░░░░░` <img src="https://img.shields.io/badge/0%25-0%2F15-EC7000?style=flat-square" alt="0%"/> | — |
+| **IA aplicada (Spring AI, LLM, RAG, agentes)** | `░░░░░░░░░░` <img src="https://img.shields.io/badge/0%25-0%2F15-EC7000?style=flat-square" alt="0%"/> | — |
 
 <sub>🎯 Só contam commits meus que a minha rotina de revisão classificou pelo conteúdo (mensagem, arquivos, diff e dependências). Nada sobe sozinho com o tempo · dados de 2026-10-30</sub>
 <!-- METAS:END -->
@@ -1687,6 +1687,8 @@ endsolid repositorios_por_ano
 > Trabalho como **Java backend na Zup**, prestando serviço para o **Itaú**, e **estudo todos os dias** com um objetivo claro: **chegar a Pleno**. O que separa um Junior de um Pleno não é só saber mais tecnologia: é **entregar com autonomia, qualidade e visão do todo**. Abaixo, o que estou fazendo **agora**, na ordem, e a minha régua com evidências.
 
 ### 🎯 Agora, em ordem
+
+> 🔥 **Próximos estudos: Java + AWS + IA, em conjunto.** Um mesmo commit pode avançar mais de uma meta; o andamento de cada uma está em [⏱️ Últimos commits e metas](#️-últimos-commits-e-metas).
 
 ```mermaid
 flowchart LR
