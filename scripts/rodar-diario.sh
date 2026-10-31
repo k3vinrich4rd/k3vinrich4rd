@@ -29,8 +29,12 @@ node scripts/atualizar-readme.mjs >/dev/null # cabeçalhos das seções, índice
 git add README.md progresso.md diario metas assets
 if git diff --cached --quiet; then echo "Nada mudou: sem commit."; exit 0; fi
 dia="$(TZ=America/Sao_Paulo date +%F)"
-fonte="$(sed -n 's/^> Fonte: \([^.(]*\).*/\1/p' "diario/$dia.md" 2>/dev/null | head -1 | sed 's/ *$//')"
-git commit -q -m "docs(diario): $dia${fonte:+ — $fonte}"
+if git diff --cached --name-only | grep -qx "diario/$dia.md"; then
+  fonte="$(sed -n 's/^> Fonte: \([^.(]*\).*/\1/p' "diario/$dia.md" | head -1 | sed 's/ *$//')"
+  git commit -q -m "docs(diario): $dia${fonte:+ — $fonte}"
+else
+  git commit -q -m "docs(perfil): atualização diária ($dia)" # diário do dia já publicado; mudaram últimos commits, metas ou SVGs
+fi
 for tentativa in 1 2 3; do
   git push -q origin main && break
   git pull -q --rebase -X theirs origin main
