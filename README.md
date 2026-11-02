@@ -161,9 +161,9 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:agora:END -->
 
 <!-- AUTO:dica:START -->
-> 💡 **Dica do dia: `@MapsId`**  
-> Faz a entidade filha usar o mesmo id da mãe, sem coluna extra. Ótimo para relações 1:1 que nascem juntas.  
-> <sub>Muda todo dia sozinha · 6/20</sub>
+> 💡 **Dica do dia: `@EmbeddedId`**  
+> Quando uma relação N:N tem dados próprios (quantidade, preço), ela vira entidade com chave composta.  
+> <sub>Muda todo dia sozinha · 7/20</sub>
 <!-- AUTO:dica:END -->
 
 <!-- A cobrinha é gerada pelo workflow .github/workflows/snake.yml deste repositório (branch "output"). -->
@@ -180,16 +180,16 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:atividade:START -->
 | | Repositório | Commit | Quando |
 |:-:|---|---|---|
-| 🐛 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`88e2093`](https://github.com/k3vinrich4rd/rkf_bank/commit/88e20933f34c5646ad977fbed18ea3463e018043) fix(scripts): rodar a coleção da equipe por padrão quando a pasta .equip | ontem |
-| 🐛 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`3689784`](https://github.com/k3vinrich4rd/rkf_bank/commit/36897849c65538c50bbe892160317cb39a69ccaa) fix(scripts): resolver o caminho da coleção do Insomnia a partir da raiz | ontem |
-| ♻️ | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`f430211`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/f430211de74e8756ebb6520b13b52ea0bae60578) refactor: renomeia OrdemItem para OrderItem | há 4 dias |
-| ⏪ | [`desafio-devsuperior-componentes-injecao-dependencia`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) | [`4997708`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia/commit/4997708166e270a54829b3ea94912378a03fa100) revert: main volta a ter so o desafio de componentes (o ORM foi para des | há 4 dias |
-| 🔧 | [`desafio-devsuperior-modelo-orm`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) | [`e064a39`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm/commit/e064a39a2f1f2588d08e475e4ddc955a57625a39) chore: junta o historico ao repositorio desafio-devsuperior-modelo-orm | há 4 dias |
+| 🐛 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`88e2093`](https://github.com/k3vinrich4rd/rkf_bank/commit/88e20933f34c5646ad977fbed18ea3463e018043) fix(scripts): rodar a coleção da equipe por padrão quando a pasta .equip | há 2 dias |
+| 🐛 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`3689784`](https://github.com/k3vinrich4rd/rkf_bank/commit/36897849c65538c50bbe892160317cb39a69ccaa) fix(scripts): resolver o caminho da coleção do Insomnia a partir da raiz | há 2 dias |
+| ♻️ | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`f430211`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/f430211de74e8756ebb6520b13b52ea0bae60578) refactor: renomeia OrdemItem para OrderItem | há 5 dias |
+| ⏪ | [`desafio-devsuperior-componentes-injecao-dependencia`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) | [`4997708`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia/commit/4997708166e270a54829b3ea94912378a03fa100) revert: main volta a ter so o desafio de componentes (o ORM foi para des | há 5 dias |
+| 🔧 | [`desafio-devsuperior-modelo-orm`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) | [`e064a39`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm/commit/e064a39a2f1f2588d08e475e4ddc955a57625a39) chore: junta o historico ao repositorio desafio-devsuperior-modelo-orm | há 5 dias |
 | 📝 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`0849493`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/0849493f006f8569a3c9a93e9578c3ba795d6921) docs: adiciona README com modelo de dominio, endpoints e exemplos reais | há 17 dias |
 | 📝 | [`desafio-devsuperior-componentes-injecao-dependencia`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) | [`757f944`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia/commit/757f944837b07f090ea785449adbc2b0e28cd45e) docs: atualiza informações do README | 27/10/2025 |
 | 📝 | [`desafio-devsuperior-modelo-orm`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) | [`757f944`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm/commit/757f944837b07f090ea785449adbc2b0e28cd45e) docs: atualiza informações do README | 27/10/2025 |
 
-<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 01/11 às 19:05</sub>
+<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 02/11 às 03:13</sub>
 <!-- AUTO:atividade:END -->
 
 </details>
@@ -2504,26 +2504,26 @@ dono só usa o id, que o proxy já tem) e `@EntityGraph` nas listas que mostram 
 
 <!-- AUTO:flashcards:START -->
 <details>
-<summary><b>🃏 IA · Que problema o MCP resolve?</b></summary>
+<summary><b>🃏 Java · Por que nunca usar double para dinheiro?</b></summary>
 <br/>
 
-O N × M de integrações: cada sistema expõe um servidor MCP e qualquer IA compatível usa, como o USB-C fez com cabos.
+Porque double guarda em base 2 e 0.1 não tem representação exata: <code>0.1 + 0.2</code> dá <code>0.30000000000000004</code>. No RKF Bank o saldo é <code>BigDecimal</code> e a coluna é <code>DECIMAL(19,2)</code>.
 
 </details>
 
 <details>
-<summary><b>🃏 IA · Por que o saldo não deve ser calculado pelo LLM?</b></summary>
+<summary><b>🃏 Java · Diferença entre JDK, JRE e JVM?</b></summary>
 <br/>
 
-O LLM prevê texto, não faz conta exata. Regra exata (saldo, CPF, limite) é código; o LLM interpreta e o código valida e executa.
+A JVM executa bytecode; o JRE é JVM + bibliotecas para rodar; o JDK é JRE + ferramentas de desenvolvimento (<code>javac</code>). O mesmo <code>.jar</code> roda no Windows e no Linux do CI porque o bytecode é da JVM, não do sistema.
 
 </details>
 
 <details>
-<summary><b>🃏 LGPD · O cliente pede para apagar os dados. O banco pode dar DELETE?</b></summary>
+<summary><b>🃏 Java · Java tem vazamento de memória?</b></summary>
 <br/>
 
-Não: registros financeiros têm guarda obrigatória por outras leis. O certo é encerrar a conta, bloquear o acesso e anonimizar ao fim do prazo.
+Tem: o GC só recolhe objetos inalcançáveis. Um <code>static Map</code> que nunca é limpo mantém tudo vivo até o <code>OutOfMemoryError</code>. A solução é cache com limite e expiração.
 
 </details>
 
