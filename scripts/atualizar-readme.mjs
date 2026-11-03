@@ -48,7 +48,7 @@ function blocoRecrutador() {
   return `| Pergunta | Resposta rápida |
 |---|---|
 | Quem é? | Dev **Java backend Junior** na **Zup Innovation**, prestando serviço para o **Itaú**, em transição para **Pleno** (**${regua.praticadas}/${regua.total}** competências já praticadas) |
-| Melhor projeto? | **[RKF Bank](https://github.com/${USUARIO}/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **${rkf.testes} testes**, CI e logs rastreáveis |
+| Melhor projeto? | **[RKF Bank](https://github.com/${USUARIO}/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **${rkf.testes} testes**, CI e logs rastreáveis · ✅ **em produção**: [abrir o banco](https://rkfbank.vercel.app) |
 | Stack principal? | Java · Spring Boot · JPA/Hibernate · MySQL/PostgreSQL · MongoDB · JUnit/Mockito · Docker · GitHub Actions |
 | O que está estudando? | ${p.trilha.map(apelido).join(' → ')} |
 | Contato? | [LinkedIn](https://www.linkedin.com/in/kevin-richard-b68a54203/) · [kevinrichardve@gmail.com](mailto:kevinrichardve@gmail.com) |`;

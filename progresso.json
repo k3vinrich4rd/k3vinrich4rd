@@ -1,9 +1,9 @@
 {
   "atualizado": "2026-11-03",
   "regua": {
-    "praticadas": 12,
+    "praticadas": 13,
     "total": 15,
-    "andamento": 2,
+    "andamento": 1,
     "planejadas": 1,
     "itens": [
       {
@@ -80,9 +80,9 @@
       },
       {
         "nome": "Deploy em nuvem",
-        "status": "andamento",
-        "evidencia": "",
-        "proximo": true
+        "status": "praticada",
+        "evidencia": "RKF Bank em produção: site na Vercel, API no Render e MySQL no Aiven, R$ 0 (03/11/2026)",
+        "proximo": false
       },
       {
         "nome": "Inglês técnico",
@@ -98,9 +98,8 @@
       }
     ]
   },
-  "foco": "Deploy em nuvem",
+  "foco": "Inglês técnico",
   "trilha": [
-    "Deploy em nuvem",
     "Inglês técnico",
     "Mensageria e microsserviços"
   ],
@@ -147,7 +146,15 @@
         },
         {
           "feito": true,
-          "texto": "MVP concluído (PR #76 na main) e sem deploy: o RKF Bank é portfólio, roda na máquina de quem avalia — 2026-10-29"
+          "texto": "MVP concluído (PR #76 na main): o RKF Bank é portfólio, roda na máquina de quem avalia — 2026-10-29"
+        },
+        {
+          "feito": true,
+          "texto": "✅ **Entregue em produção**: [site](https://rkfbank.vercel.app) · [API](https://rkfbank-api-zncu.onrender.com/actuator/health) · [Swagger só leitura](https://rkfbank-api-zncu.onrender.com/swagger-ui.html), smoke 41/41 no ar — 2026-11-03"
+        },
+        {
+          "feito": false,
+          "texto": "Mergear o PR #101 `develop` → `main` (Swagger só leitura + links): Kevin ou Renan"
         }
       ],
       "mvp": {
@@ -213,7 +220,7 @@
             "itens": [
               {
                 "feito": true,
-                "texto": "~~Decidir onde publicar~~ → sem deploy: projeto de portfólio, roda localmente (`VISITANTES.md`) — 2026-10-29"
+                "texto": "Publicar: Vercel (site) + Render (API, Docker) + Aiven (MySQL Free), tudo no plano grátis e sem cartão — 2026-11-03 (em 29/10 a decisão tinha sido não publicar)"
               },
               {
                 "feito": true,
@@ -407,6 +414,12 @@
   },
   "historico": [
     {
+      "data": "2026-11-03",
+      "branch": "PRs #100 e #102 (develop) + #101 `develop` → `main` (aguardando merge)",
+      "mudou": "**RKF Bank em produção**: MySQL Free no Aiven (DigitalOcean, São Francisco), API Docker no Render Free (Oregon, health em `/actuator/health`), site na Vercel Hobby (`rkfbank.vercel.app`); Swagger só leitura com `SWAGGER_ATIVO=true`; READMEs com os links; smoke 41/41 e BFF conferidos no ar",
+      "aprendizado": "plano grátis exige escolher o plano à mão: o Aiven sugeria Developer (US$ 5) e Professional (US$ 300); segredo nunca passa pela IA (quem cola a senha do banco e gera o JWT é o dono da conta)"
+    },
+    {
       "data": "2026-10-29",
       "branch": "PR #76 release `develop` → `main` (mergeado pelo Renan)",
       "mudou": "tudo de 27 a 29/10 chega à main: TDD na `Conta`, threads virtuais, entidades com `equals`/`hashCode`, contas por cliente só para o ADMIN, teste do limitador corrigido, fim do N+1 e README com skills, diagnóstico e anotações",
@@ -429,12 +442,6 @@
       "branch": "branch `refactor/monolito-modular` (em revisão, fora da develop)",
       "mudou": "pastas por assunto, porta `ConsultaCep`, ArchUnit nas fronteiras e comprovante por Outbox (V16); 395 testes, smoke, coleções e site verdes",
       "aprendizado": "trocar a arquitetura sem mudar comportamento: mover primeiro com os testes verdes, depois uma peça por commit, e deixar o ArchUnit achar os acoplamentos"
-    },
-    {
-      "data": "2026-10-27",
-      "branch": "PRs #77 e #79",
-      "mudou": "threads virtuais, `equals`/`hashCode` nas entidades, respostas imutáveis, `GET /clientes/{id}/contas` só ADMIN e domínio rico na `Conta` com TDD",
-      "aprendizado": "TDD de verdade em três commits (vermelho, verde, refatorar): a regra de saldo saiu do service e foi para a entidade"
     }
   ],
   "estudos": [

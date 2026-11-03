@@ -60,10 +60,10 @@
 <!-- AUTO:recrutador:START -->
 | Pergunta | Resposta rápida |
 |---|---|
-| Quem é? | Dev **Java backend Junior** na **Zup Innovation**, prestando serviço para o **Itaú**, em transição para **Pleno** (**12/15** competências já praticadas) |
-| Melhor projeto? | **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **360 testes**, CI e logs rastreáveis |
+| Quem é? | Dev **Java backend Junior** na **Zup Innovation**, prestando serviço para o **Itaú**, em transição para **Pleno** (**13/15** competências já praticadas) |
+| Melhor projeto? | **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **360 testes**, CI e logs rastreáveis · ✅ **em produção**: [abrir o banco](https://rkfbank.vercel.app) |
 | Stack principal? | Java · Spring Boot · JPA/Hibernate · MySQL/PostgreSQL · MongoDB · JUnit/Mockito · Docker · GitHub Actions |
-| O que está estudando? | AWS → inglês → mensageria |
+| O que está estudando? | inglês → mensageria |
 | Contato? | [LinkedIn](https://www.linkedin.com/in/kevin-richard-b68a54203/) · [kevinrichardve@gmail.com](mailto:kevinrichardve@gmail.com) |
 <!-- AUTO:recrutador:END -->
 
@@ -144,10 +144,10 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <div align="center">
 
 <!-- AUTO:status:START -->
-<img src="https://img.shields.io/static/v1?label=R%C3%A9gua%20Pleno&message=12%2F15&color=EC7000&style=flat-square"/>
+<img src="https://img.shields.io/static/v1?label=R%C3%A9gua%20Pleno&message=13%2F15&color=EC7000&style=flat-square"/>
 <img src="https://img.shields.io/static/v1?label=Testes%20RKF%20Bank&message=360%20%E2%9C%94&color=3fb950&style=flat-square&logo=junit5&logoColor=white"/>
 <img src="https://img.shields.io/static/v1?label=MVP&message=13%2F13&color=003D74&style=flat-square"/>
-<img src="https://img.shields.io/static/v1?label=Foco%20agora&message=AWS&color=6A1B9A&style=flat-square"/>
+<img src="https://img.shields.io/static/v1?label=Foco%20agora&message=ingl%C3%AAs&color=6A1B9A&style=flat-square"/>
 <!-- AUTO:status:END -->
 
 </div>
@@ -156,7 +156,8 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 **🔥 Esta semana**
 
 - 🔨 Revisar a branch `refactor/monolito-modular`
-- 🎯 Foco de estudo: **AWS**
+- 🔨 Mergear o PR #101 `develop` → `main`
+- 🎯 Foco de estudo: **inglês**
 - ✅ Última entrega: Release develop → main (PR #76, mergeado pelo Renan): TDD na `Conta`, threads virtuais, fim do N+1, contas por cliente só para o ADMIN, README com skills, diagnóstico e anotações — 2026-10-29
 <!-- AUTO:agora:END -->
 
@@ -200,11 +201,11 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:diario:START -->
 | Quando | Onde | O que eu aprendi |
 |---|---|---|
+| 2026-11-03 | PRs #100 e #102 (develop) + #101 `develop` → `main` (aguardando merge) | plano grátis exige escolher o plano à mão: o Aiven sugeria Developer (US$ 5) e Professional (US$ 300); segredo nunca passa pela IA (quem cola a senha do banco e gera o JWT é o dono da conta) |
 | 2026-10-29 | PR #76 release `develop` → `main` (mergeado pelo Renan) | a main só recebe o que passou pela revisão do outro: o CI verde do PR de release é o resumo de todos os PRs da semana |
 | 2026-10-29 | PR #82 `perf/carregamento-lazy` | medir antes de otimizar: o EAGER padrão do para-um fazia N+1 em `/contas` (7 → 17 consultas de 5 para 15 contas); depois, número constante |
 | 2026-10-29 | PR #80 (CI do PR #76) + PRs #81 e #83 (README) | teste que depende da ordem é bug: o H2 compartilhado guardava os logins errados de outro teste; reproduzir com `-Dsurefire.runOrder` antes de corrigir |
 | 2026-10-29 | branch `refactor/monolito-modular` (em revisão, fora da develop) | trocar a arquitetura sem mudar comportamento: mover primeiro com os testes verdes, depois uma peça por commit, e deixar o ArchUnit achar os acoplamentos |
-| 2026-10-27 | PRs #77 e #79 | TDD de verdade em três commits (vermelho, verde, refatorar): a regra de saldo saiu do service e foi para a entidade |
 <!-- AUTO:diario:END -->
 
 </details>
@@ -615,7 +616,7 @@ no perfil visitante a chave nem existe fora da memória da API: é sorteada a ca
 
 ```mermaid
 timeline
-    title RKF Bank — de uma ideia em Osasco ao MVP
+    title RKF Bank — de uma ideia em Osasco à produção
     25 set : Três amigos de Osasco decidem construir um banco de verdade : Java + Spring no backend, Next.js no frontend
     02 out : MySQL 8.4 no Docker : primeiras regras — saldo, depósito, saque
     13 out : Logs com X-Request-Id : roteiro E2E com 38 itens aprovados
@@ -626,7 +627,8 @@ timeline
     20 out : Flyway reestruturado e contas da equipe sempre prontas : idempotência, conta que não se apaga e limite de login : perfil público de visitante
     25 out : primeira release develop → main : Testcontainers, Swagger, refresh token e LGPD
     27 out : domínio rico na Conta com TDD : threads virtuais e entidades com equals/hashCode
-    29 out : fim do N+1 nas listas do ADMIN : segunda release develop → main (PR #76, aprovada pelo Renan) : MVP concluído, sem deploy (release PR #85): portfólio para rodar na sua máquina
+    29 out : fim do N+1 nas listas do ADMIN : segunda release develop → main (PR #76, aprovada pelo Renan) : MVP concluído (release PR #85): portfólio para rodar na sua máquina
+    03 nov : em produção na Vercel, no Render e no Aiven, de graça : Swagger só leitura e smoke 41/41 no ar
 ```
 
 <details>
@@ -675,7 +677,7 @@ existem no ambiente dela; visitantes têm um perfil próprio, com contas fictíc
 <summary><b>🚀 Capítulo 5 — O que vem agora</b></summary>
 <br/>
 
-Já feito: **Testcontainers** (MySQL real nos testes), `GET /contas/{id}`, **LGPD mínimo**, **Swagger**, **TDD** no domínio da `Conta` e o fim do **N+1** nas listas do ADMIN. Tudo isso está na `main` desde 29/10 (PR #76): **MVP concluído**. Sem fase de deploy, de propósito: o RKF Bank é um projeto de **portfólio**, e quem avalia roda na própria máquina em 1 comando (perfil `visitante`). Depois: **Pix**, já num monólito modular por assunto (a refatoração está **em revisão** na branch `refactor/monolito-modular`).
+Já feito: **Testcontainers** (MySQL real nos testes), `GET /contas/{id}`, **LGPD mínimo**, **Swagger**, **TDD** no domínio da `Conta` e o fim do **N+1** nas listas do ADMIN. Tudo isso está na `main` desde 29/10 (PR #76): **MVP concluído**. Desde 03/11 está **em produção** ([site](https://rkfbank.vercel.app) · [API e Swagger](https://rkfbank-api-zncu.onrender.com/swagger-ui.html)), e quem preferir ainda roda na própria máquina em 1 comando (perfil `visitante`). Depois: **Pix**, já num monólito modular por assunto (a refatoração está **em revisão** na branch `refactor/monolito-modular`).
 
 </details>
 
@@ -1717,7 +1719,7 @@ endsolid repositorios_por_ano
 
 ```mermaid
 flowchart LR
-    A["✅ 1 · MVP do RKF Bank<br/>concluído em 29/10<br/>(portfólio, roda local)"]:::feito --> B["🎓 2 · Finalizando o<br/>Java Spring Professional<br/>(DevSuperior)"]:::agora
+    A["✅ 1 · RKF Bank<br/>MVP em 29/10 e<br/>em produção em 03/11"]:::feito --> B["🎓 2 · Finalizando o<br/>Java Spring Professional<br/>(DevSuperior)"]:::agora
     B --> C["☕ 3 · Java Spring Expert<br/>API REST + testes<br/>(DevSuperior)"]:::proximo
     C --> D["☁️ 4 · AWS<br/>na prática<br/>(Udemy)"]:::proximo
     D --> E["🤖 5 · IA para backend<br/>(trilha do meu Obsidian)"]:::proximo
@@ -1729,10 +1731,10 @@ flowchart LR
 <sub>🟩 concluído · 🟧 em andamento agora · ⬛ próximos passos, nessa ordem</sub>
 
 <details open>
-<summary><b>✅ 1 · MVP do RKF Bank concluído</b> — 29/10/2026</summary>
+<summary><b>✅ 1 · RKF Bank: MVP concluído e em produção</b> — 29/10 e 03/11/2026</summary>
 <br/>
 
-Banco digital que construí com o Renan e o Fellipe, **MVP concluído**: **360 testes** na API e **31** no site (todos verdes também num MySQL 8.4 real), coleção do Insomnia com **121/121** requisições passando contra a API real (equipe) e o contrato da API na versão **3.2**. Tudo isso está na `main` desde 29/10 (PR #76, revisado e mergeado pelo Renan). **Sem deploy, de propósito:** é um projeto de portfólio para devs e recrutadores rodarem na própria máquina ([1 comando, sem Docker](https://github.com/k3vinrich4rd/rkf_bank/blob/main/VISITANTES.md)).
+Banco digital que construí com o Renan e o Fellipe, **MVP concluído**: **360 testes** na API e **31** no site (todos verdes também num MySQL 8.4 real), coleção do Insomnia com **121/121** requisições passando contra a API real (equipe) e o contrato da API na versão **3.2**. Tudo isso está na `main` desde 29/10 (PR #76, revisado e mergeado pelo Renan). **✅ Em produção desde 03/11/2026**, de graça: [site na Vercel](https://rkfbank.vercel.app), [API no Render](https://rkfbank-api-zncu.onrender.com/actuator/health) ([Swagger só leitura](https://rkfbank-api-zncu.onrender.com/swagger-ui.html)) e MySQL no Aiven, com o smoke de **41/41** verificações passando no ar. Quem preferir roda na própria máquina ([1 comando, sem Docker](https://github.com/k3vinrich4rd/rkf_bank/blob/main/VISITANTES.md)).
 
 **Últimos incrementos (27 a 29/10):** domínio rico na `Conta` com **TDD**, `equals`/`hashCode` nas entidades JPA, respostas imutáveis, **threads virtuais** (mantendo o Java 25), `GET /clientes/{clienteId}/contas` só para o ADMIN e o fim do **N+1** nas listas do ADMIN (`LAZY` + `@EntityGraph`, medido por teste) — tudo com teste. O README do projeto ganhou o diagnóstico de arquitetura, as **11 skills de IA** do time e as **95 anotações** explicadas. O **Outbox** do comprovante já está implementado na branch `refactor/monolito-modular` (em revisão); Spring Cloud, Pub/Sub + DLQ, AWS e OAuth2/OIDC seguem **em estudo para implementação**, com plano escrito.
 
@@ -1760,7 +1762,7 @@ Banco digital que construí com o Renan e o Fellipe, **MVP concluído**: **360 t
 <summary><b>☁️ 4 · AWS na prática</b> — ⏭️ depois</summary>
 <br/>
 
-Curso [AWS na Prática (Udemy)](https://www.udemy.com/course/aws-na-pratica/), para dominar **ECS Fargate, RDS, Secrets Manager, SNS e SQS** na prática. O RKF Bank continua como portfólio local (sem deploy); o estudo usa a mesma imagem Docker do perfil `prod` como exercício.
+Curso [AWS na Prática (Udemy)](https://www.udemy.com/course/aws-na-pratica/), para dominar **ECS Fargate, RDS, Secrets Manager, SNS e SQS** na prática. O RKF Bank já está no ar de graça (Vercel + Render + Aiven); o estudo leva a mesma imagem Docker do perfil `prod` para a AWS como exercício.
 
 </details>
 
@@ -1817,7 +1819,7 @@ Porque **arquitetura resolve problema que existe**. O primeiro passo já foi dad
 </details>
 
 <div align="center">
-  <img src="assets/rumo-ao-pleno.svg" width="100%" alt="Rumo ao Pleno: 12 de 15 competências praticadas em projeto"/>
+  <img src="assets/rumo-ao-pleno.svg" width="100%" alt="Rumo ao Pleno: 13 de 15 competências praticadas em projeto"/>
 </div>
 
 <details>
@@ -1875,7 +1877,7 @@ quadrantChart
 | Migrações versionadas | ✅ | RKF Bank (V1, V2, V3; PR #23) · reorganizado em V1–V8 com callbacks de seed (PR #35) · hoje V1–V15, revisadas pelo `/revisar-migracao` |
 | Autenticação e autorização | ✅ | RKF Bank (JWT, BCrypt, perfis, regra de dono; PR #24) · gestão de usuários, revogação imediata, troca de senha e limite de login (PR #35) |
 | Testes de integração com banco real | ✅ | RKF Bank (7 testes no MySQL 8.4 real com `@ServiceConnection`: migrações, fluxo bancário e concorrência; rodam no CI; PR #60, na main em 25/10/2026) |
-| Deploy em nuvem | 🔄 | ⏫ próximo da fila |
+| Deploy em nuvem | ✅ | RKF Bank em produção: site na Vercel, API no Render e MySQL no Aiven, R$ 0 (03/11/2026) |
 | Inglês técnico | 🔄 | em andamento |
 | Mensageria e microsserviços | ⏳ | Outbox do comprovante pronto na branch `refactor/monolito-modular` (em revisão); falta o broker |
 
@@ -2211,7 +2213,7 @@ gantt
 
 <b>Fechamento do MVP</b> `████████` 5/5
 
-- [x] ~~Decidir onde publicar~~ → sem deploy: projeto de portfólio, roda localmente (`VISITANTES.md`) — 2026-10-29
+- [x] Publicar: Vercel (site) + Render (API, Docker) + Aiven (MySQL Free), tudo no plano grátis e sem cartão — 2026-11-03 (em 29/10 a decisão tinha sido não publicar)
 - [x] Perfil `prod` + `Dockerfile` testados num MySQL vazio (21/21, smoke 42/42) — 2026-10-26
 - [x] LGPD mínimo: política de privacidade, aceite dos termos e encarregados (Kevin e Renan, termos 2026-10-26) — 2026-10-26
 - [x] Roteiros de aceite prontos: `VISITANTES.md` (público) e o guia da equipe para o Fellipe (PO & QA)
