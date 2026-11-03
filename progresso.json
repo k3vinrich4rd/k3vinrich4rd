@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-31",
+  "atualizado": "2026-11-03",
   "regua": {
     "praticadas": 12,
     "total": 15,
@@ -1262,7 +1262,7 @@
         ]
       }
     ],
-    "diasDiario30": 13,
+    "diasDiario30": 14,
     "recentes": [
       {
         "nome": "Anotações Java e Spring",
