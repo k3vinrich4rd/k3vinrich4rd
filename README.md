@@ -156,7 +156,7 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 **🔥 Esta semana**
 
 - 🔨 Revisar a branch `refactor/monolito-modular`
-- 🔨 Mergear o PR #101 `develop` → `main`
+- 🔨 Conectar o GitHub no Render para a API publicar sozinha
 - 🎯 Foco de estudo: **inglês**
 - ✅ Última entrega: Release develop → main (PR #76, mergeado pelo Renan): TDD na `Conta`, threads virtuais, fim do N+1, contas por cliente só para o ADMIN, README com skills, diagnóstico e anotações — 2026-10-29
 <!-- AUTO:agora:END -->

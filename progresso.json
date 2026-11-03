@@ -153,8 +153,12 @@
           "texto": "✅ **Entregue em produção**: [site](https://rkfbank.vercel.app) · [API](https://rkfbank-api-zncu.onrender.com/actuator/health) · [Swagger só leitura](https://rkfbank-api-zncu.onrender.com/swagger-ui.html), smoke 41/41 no ar — 2026-11-03"
         },
         {
+          "feito": true,
+          "texto": "PRs #101 e #104 `develop` → `main` mergeados (Swagger no ar + README de produção); nenhum PR aberto — 2026-11-03"
+        },
+        {
           "feito": false,
-          "texto": "Mergear o PR #101 `develop` → `main` (Swagger só leitura + links): Kevin ou Renan"
+          "texto": "Conectar o GitHub no Render para a API publicar sozinha"
         }
       ],
       "mvp": {
