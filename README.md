@@ -1883,7 +1883,7 @@ quadrantChart
 | Inglês técnico | 🔄 | em andamento |
 | Mensageria e microsserviços | ⏳ | Outbox do comprovante pronto na branch `refactor/monolito-modular` (em revisão); falta o broker |
 
-<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-11-03</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-11-04</sub>
 <!-- AUTO:regua:END -->
 
 </details>
@@ -1893,9 +1893,9 @@ quadrantChart
 <br/>
 
 <!-- AUTO:estudos:START -->
-**46** assuntos praticados em projeto · **6** em andamento · **2** planejados
+**46** assuntos praticados em projeto · **8** em andamento · **2** planejados
 
-📚 **76** notas de estudo no segundo cérebro · **66** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
+📚 **78** notas de estudo no segundo cérebro · **68** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
 
 ```mermaid
 mindmap
@@ -1956,6 +1956,9 @@ mindmap
       ✅ Spring Security e JWT
       ✅ Swagger e OpenAPI
       ✅ Tratamento de erros REST
+    spring
+      🔄 Paginação e countQuery
+      🔄 Perfis do Spring e homologação
     Testes
       ✅ DataJpaTest
       ✅ JUnit e Mockito
@@ -1972,10 +1975,12 @@ mindmap
 | 🔄 Carregamento EAGER e LAZY | Spring | <sub>2 a fazer</sub> |
 | 🔄 JPQL e JOIN FETCH | Spring | <sub>3 a fazer</sub> |
 | 🔄 OAuth2 e OIDC | Spring | <sub>2 a fazer</sub> |
+| 🔄 Paginação e countQuery | spring | — |
+| 🔄 Perfis do Spring e homologação | spring | — |
 | ⏳ Mensageria e Outbox | Arquitetura | <sub>6 a fazer</sub> |
 | ⏳ Spring AI | IA | <sub>5 a fazer</sub> |
 
-<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-11-03.</sub>
+<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-11-04.</sub>
 <!-- AUTO:estudos:END -->
 
 </details>
@@ -1986,7 +1991,7 @@ mindmap
 
 <!-- AUTO:cerebro:START -->
 <div align="center">
-  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 14 dias com registro, 76 notas, 2 trilhas e 46 assuntos praticados; progresso de cada trilha e de cada módulo"/>
+  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 15 dias com registro, 78 notas, 2 trilhas e 46 assuntos praticados; progresso de cada trilha e de cada módulo"/>
 </div>
 
 <details>
@@ -1994,15 +1999,15 @@ mindmap
 <br/>
 
 <table align="center"><tr>
-<td align="center">🗓️<br/><b>14</b> dias com registro<br/><sub>nos últimos 30</sub></td>
-<td align="center">📚<br/><b>76</b> notas de estudo<br/><sub>66 com exemplo com × sem</sub></td>
+<td align="center">🗓️<br/><b>15</b> dias com registro<br/><sub>nos últimos 30</sub></td>
+<td align="center">📚<br/><b>78</b> notas de estudo<br/><sub>68 com exemplo com × sem</sub></td>
 <td align="center">🧭<br/><b>2</b> trilhas<br/><sub>12 módulos</sub></td>
 <td align="center">✅<br/><b>46</b> assuntos<br/><sub>praticados em projeto</sub></td>
 </tr></table>
 
 | Trilha | Praticado no RKF Bank | ✅ | 🔄 | 📅 | 📘 |
 |---|---|:-:|:-:|:-:|:-:|
-| **☕🌱 Java & Spring** | 🟩🟩🟩🟩⬜<br/>**41/49** | 41 | 5 | 1 | 2 |
+| **☕🌱 Java & Spring** | 🟩🟩🟩🟩⬜<br/>**41/51** | 41 | 7 | 1 | 2 |
 | **🤖 Inteligência Artificial** | 🟩🟩⬜⬜⬜<br/>**5/15** | 5 | 0 | 1 | 9 |
 
 </details>
@@ -2015,10 +2020,10 @@ mindmap
 |---|---|---|
 | ① Java moderno (Java 21 / 25) | 🟩🟩🟩🟩🟩<br/>**11/11** | ✅ JVM, JDK e bytecode · ✅ POO e SOLID · ✅ Java moderno (8 a 25) · ✅ Coleções Streams e Optional · ✅ Objetos - equals, hashCode e imutabilidade · ✅ Exceções em Java · ✅ Generics · ✅ BigDecimal e dinheiro · ✅ Concorrência e threads virtuais · ✅ Memória e Garbage Collector · ✅ Maven e build |
 | ② Spring Boot & arquitetura em camadas | 🟩🟩🟩🟩🟩<br/>**4/4** | ✅ Spring Framework - IoC DI e AOP · ✅ Spring Boot - auto-configuração e starters · ✅ Spring Boot e camadas · ✅ Anotações Java e Spring |
-| ③ Banco de dados & sincronização | 🟩🟩🟩🟩⬜<br/>**8/9** | ✅ SQL e MySQL · ✅ Spring Data JPA e relacionamentos · ✅ Carregamento EAGER e LAZY · ✅ N+1 consultas · 🔄 JPQL e JOIN FETCH · ✅ H2 x MySQL · ✅ Flyway · ✅ Lock otimista e transações · ✅ MongoDB |
+| ③ Banco de dados & sincronização | 🟩🟩🟩🟩⬜<br/>**8/10** | ✅ SQL e MySQL · ✅ Spring Data JPA e relacionamentos · ✅ Carregamento EAGER e LAZY · ✅ N+1 consultas · 🔄 JPQL e JOIN FETCH · 🔄 Paginação e countQuery · ✅ H2 x MySQL · ✅ Flyway · ✅ Lock otimista e transações · ✅ MongoDB |
 | ④ Validação e tratamento de erros | 🟩🟩🟩🟩🟩<br/>**3/3** | ✅ Bean Validation · ✅ Tratamento de erros REST · ✅ Swagger e OpenAPI |
 | ⑤ Testes (manuais e automatizados) | 🟩🟩🟩🟩🟩<br/>**6/6** | ✅ TDD e estratégia de testes · ✅ JUnit e Mockito · ✅ Spring Boot Test · ✅ DataJpaTest · ✅ Testcontainers · ✅ Testes manuais de API - Postman e Insomnia |
-| ⑥ Segurança e infraestrutura | 🟩🟩🟩⬜⬜<br/>**9/16** | ✅ Spring Security e JWT · 🔄 OAuth2 e OIDC · ✅ LGPD · 📅 Mensageria e Outbox · 📘 Pub-Sub e DLQ · 🔄 Arquiteturas de software · 🔄 Síncrono e assíncrono · ✅ Integração com APIs externas · ✅ Logs e observabilidade · ✅ Spring Boot Actuator · ✅ Docker e Compose · ✅ GitHub Actions · ✅ Git Flow e commits semânticos · ✅ Dependências e CVEs · 📘 Spring Cloud e microsserviços · 🔄 AWS |
+| ⑥ Segurança e infraestrutura | 🟩🟩🟩⬜⬜<br/>**9/17** | ✅ Spring Security e JWT · 🔄 OAuth2 e OIDC · ✅ LGPD · 📅 Mensageria e Outbox · 📘 Pub-Sub e DLQ · 🔄 Arquiteturas de software · 🔄 Síncrono e assíncrono · ✅ Integração com APIs externas · ✅ Logs e observabilidade · ✅ Spring Boot Actuator · 🔄 Perfis do Spring e homologação · ✅ Docker e Compose · ✅ GitHub Actions · ✅ Git Flow e commits semânticos · ✅ Dependências e CVEs · 📘 Spring Cloud e microsserviços · 🔄 AWS |
 
 </details>
 
@@ -2037,9 +2042,9 @@ mindmap
 
 </details>
 
-📝 **Estudado por último:** `Spring` Anotações Java e Spring · `Arquitetura` Arquiteturas de software · `Spring` Carregamento EAGER e LAZY · `Spring` JPQL e JOIN FETCH · `Spring` N+1 consultas · `Arquitetura` Síncrono e assíncrono · `IA` Design Doc de arquitetura para IA · `IA` Ferramentas de dev com IA
+📝 **Estudado por último:** `Spring` Paginação e countQuery · `Spring` Perfis do Spring e homologação · `Spring` Anotações Java e Spring · `Arquitetura` Arquiteturas de software · `Spring` Carregamento EAGER e LAZY · `Spring` JPQL e JOIN FETCH · `Spring` N+1 consultas · `Arquitetura` Síncrono e assíncrono
 
-<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-11-03</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-11-04</sub>
 <!-- AUTO:cerebro:END -->
 
 <details>
@@ -2232,7 +2237,7 @@ gantt
 
 **🧹 Débitos técnicos:** 9/18 resolvidos
 
-<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-11-03.</sub>
+<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-11-04.</sub>
 <!-- AUTO:checklist:END -->
 
 </details>
