@@ -230,16 +230,16 @@ flowchart LR
 <!-- ULTIMOS-COMMITS:START -->
 | | Projeto | Último commit | Data |
 |:-:|---|---|---|
-| 📦 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`88e2093`](https://github.com/k3vinrich4rd/rkf_bank/commit/88e20933f34c5646ad977fbed18ea3463e018043) fix(scripts): rodar a coleção da equipe por padrão quando a pasta .equipe existe | 31/10/2026 |
+| 📦 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`4558293`](https://github.com/k3vinrich4rd/rkf_bank/commit/4558293c34c59e797d417b723ac8877ffa1aacd2) docs(deploy): checagem diária de integridade da produção | 03/11/2026 |
+| 🔒 | projeto privado | — | 03/11/2026 |
 | 🔒 | projeto privado | — | 30/10/2026 |
 | 📦 | [`JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`f430211`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/f430211de74e8756ebb6520b13b52ea0bae60578) refactor: renomeia OrdemItem para OrderItem | 28/10/2026 |
 | 📦 | [`desafio-devsuperior-componentes-injecao-dependencia`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) | [`4997708`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia/commit/4997708166e270a54829b3ea94912378a03fa100) revert: main volta a ter so o desafio de componentes (o ORM foi para desafio-dev | 28/10/2026 |
-| 🔒 | projeto privado | — | 27/10/2026 |
 | 📦 | [`desafio-devsuperior-crud-clientes`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) | [`9b0eb79`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes/commit/9b0eb794bf407bdbe22af1196065717ef72591a9) feat: implementando correcao sugerida no feedback | 05/10/2026 |
 | 📦 | [`workshop-springboot4-mongodb`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb) | [`ecad5ce`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb/commit/ecad5cec16d1f5ef7b606e6f8b5daf5ce74ade25) feat: Implementando ajustes no projeto | 15/09/2026 |
 | 📦 | [`desafio-devsuperior-modelo-orm`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) | [`757f944`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm/commit/757f944837b07f090ea785449adbc2b0e28cd45e) docs: atualiza informações do README | 27/10/2025 |
 
-<sub>🤖 Atualizado em 02/11/2026 (horário de Brasília) pela rotina diária (<code>scripts/rodar-diario.sh</code>) · branch padrão e <code>develop</code> · 🔒 projeto privado: só a data</sub>
+<sub>🤖 Atualizado em 04/11/2026 (horário de Brasília) pela rotina diária (<code>scripts/rodar-diario.sh</code>) · branch padrão e <code>develop</code> · 🔒 projeto privado: só a data</sub>
 <!-- ULTIMOS-COMMITS:END -->
 
 ### 🎯 Metas em andamento: Java + AWS + IA em conjunto
@@ -252,18 +252,18 @@ flowchart LR
 <td valign="top" width="33%">
 
 <h3 align="center">☕ Java</h3>
-<p align="center"><img src="https://img.shields.io/badge/45%25-EC7000?style=for-the-badge" alt="45%"/><br/><img src="assets/metas/java.svg" width="100%" alt="Barra de progresso de Java"/></p>
+<p align="center"><img src="https://img.shields.io/badge/46%25-EC7000?style=for-the-badge" alt="46%"/><br/><img src="assets/metas/java.svg" width="100%" alt="Barra de progresso de Java"/></p>
 
-<img src="https://img.shields.io/badge/45%25-EC7000?style=flat-square" alt="45%"/> <a href="https://devsuperior.club/courses/5/lessons?lessonId=248">Java Spring Professional</a> · DevSuperior<br/><sub>atualizado em 30/10/2026</sub><br/><sub>📚 3/5 capítulos fechados</sub><br/><sub>✅ Componentes e injeção de dependência <code>14/14</code></sub><br/><sub>✅ Modelo de domínio e ORM <code>15/15</code></sub><br/><sub>✅ API REST, camadas, CRUD, exceções, validações <code>23/23</code></sub><br/><sub>🔄 JPA, consultas SQL e JPQL <code>13/38</code></sub><br/><sub>⬜ Login e controle de acesso <code>0/34</code></sub><br/><sub>⬜ Homologação e implantação com CI/CD (opcional) <code>0/18</code></sub><br/><br/>
+<img src="https://img.shields.io/badge/46%25-EC7000?style=flat-square" alt="46%"/> <a href="https://devsuperior.club/courses/5/lessons?lessonId=248">Java Spring Professional</a> · DevSuperior<br/><sub>atualizado em 03/11/2026</sub><br/><sub>📚 3/5 capítulos fechados</sub><br/><sub>✅ Componentes e injeção de dependência <code>14/14</code></sub><br/><sub>✅ Modelo de domínio e ORM <code>15/15</code></sub><br/><sub>✅ API REST, camadas, CRUD, exceções, validações <code>23/23</code></sub><br/><sub>🔄 JPA, consultas SQL e JPQL <code>13/38</code></sub><br/><sub>⬜ Login e controle de acesso <code>0/34</code></sub><br/><sub>⬜ Homologação e implantação com CI/CD (opcional) <code>0/18</code></sub><br/><br/>
 <img src="https://img.shields.io/badge/a%20atualizar-8b949e?style=flat-square" alt="a atualizar"/> Java Spring Expert · DevSuperior
 
 </td>
 <td valign="top" width="33%">
 
 <h3 align="center">☁️ AWS</h3>
-<p align="center"><img src="https://img.shields.io/badge/a%20atualizar-8b949e?style=for-the-badge" alt="a atualizar"/><br/><img src="assets/metas/aws.svg" width="100%" alt="Barra de progresso de AWS"/></p>
+<p align="center"><img src="https://img.shields.io/badge/0%25-8b949e?style=for-the-badge" alt="0%"/><br/><img src="assets/metas/aws.svg" width="100%" alt="Barra de progresso de AWS"/></p>
 
-<img src="https://img.shields.io/badge/a%20atualizar-8b949e?style=flat-square" alt="a atualizar"/> AWS na Prática · Udemy
+<img src="https://img.shields.io/badge/0%25-8b949e?style=flat-square" alt="0%"/> <a href="https://www.udemy.com/course/aws-na-pratica/learn/lecture/23121466?start=75#overview">AWS na Prática</a> · Udemy<br/><sub>atualizado em 04/11/2026</sub>
 
 </td>
 <td valign="top" width="33%">
@@ -271,13 +271,13 @@ flowchart LR
 <h3 align="center">🤖 IA</h3>
 <p align="center"><img src="https://img.shields.io/badge/a%20atualizar-8b949e?style=for-the-badge" alt="a atualizar"/><br/><img src="assets/metas/ia.svg" width="100%" alt="Barra de progresso de IA"/></p>
 
-<p align="center"><sub>📅 curso a definir</sub></p>
+<img src="https://img.shields.io/badge/a%20atualizar-8b949e?style=flat-square" alt="a atualizar"/> <a href="https://www.udemy.com/course/java-spring-ai/">From Java Dev to AI Engineer: Spring AI Fast Track</a> · Udemy
 
 </td>
 </tr>
 </table>
 
-<sub>🎯 Cada meta é medida pelo progresso real dos cursos dela (média dos cursos com porcentagem registrada); "a atualizar" = curso sem porcentagem registrada ainda. Nada sobe sozinho · dados de 2026-10-30</sub>
+<sub>🎯 Cada meta é medida pelo progresso real dos cursos dela (média dos cursos com porcentagem registrada); "a atualizar" = curso sem porcentagem registrada ainda. Nada sobe sozinho · dados de 2026-11-04</sub>
 <!-- METAS:END -->
 
 <sub>📓 Um resumo por dia em <a href="diario/">diario/</a> · tudo isso também em <a href="progresso.md">progresso.md</a></sub>

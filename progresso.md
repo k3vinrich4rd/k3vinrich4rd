@@ -1,5 +1,5 @@
 ---
-atualizado: 2026-11-02
+atualizado: 2026-11-04
 fonte: https://github.com/k3vinrich4rd/k3vinrich4rd
 ---
 # Progresso do Kevin
@@ -10,24 +10,24 @@ fonte: https://github.com/k3vinrich4rd/k3vinrich4rd
 
 | | Projeto | Último commit | Data |
 |:-:|---|---|---|
-| 📦 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`88e2093`](https://github.com/k3vinrich4rd/rkf_bank/commit/88e20933f34c5646ad977fbed18ea3463e018043) fix(scripts): rodar a coleção da equipe por padrão quando a pasta .equipe existe | 31/10/2026 |
+| 📦 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`4558293`](https://github.com/k3vinrich4rd/rkf_bank/commit/4558293c34c59e797d417b723ac8877ffa1aacd2) docs(deploy): checagem diária de integridade da produção | 03/11/2026 |
+| 🔒 | projeto privado | — | 03/11/2026 |
 | 🔒 | projeto privado | — | 30/10/2026 |
 | 📦 | [`JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`f430211`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/f430211de74e8756ebb6520b13b52ea0bae60578) refactor: renomeia OrdemItem para OrderItem | 28/10/2026 |
 | 📦 | [`desafio-devsuperior-componentes-injecao-dependencia`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) | [`4997708`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia/commit/4997708166e270a54829b3ea94912378a03fa100) revert: main volta a ter so o desafio de componentes (o ORM foi para desafio-dev | 28/10/2026 |
-| 🔒 | projeto privado | — | 27/10/2026 |
 | 📦 | [`desafio-devsuperior-crud-clientes`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) | [`9b0eb79`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes/commit/9b0eb794bf407bdbe22af1196065717ef72591a9) feat: implementando correcao sugerida no feedback | 05/10/2026 |
 | 📦 | [`workshop-springboot4-mongodb`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb) | [`ecad5ce`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb/commit/ecad5cec16d1f5ef7b606e6f8b5daf5ce74ade25) feat: Implementando ajustes no projeto | 15/09/2026 |
 | 📦 | [`desafio-devsuperior-modelo-orm`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) | [`757f944`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm/commit/757f944837b07f090ea785449adbc2b0e28cd45e) docs: atualiza informações do README | 27/10/2025 |
 
-<sub>🤖 Atualizado em 02/11/2026 (horário de Brasília) pela rotina diária (<code>scripts/rodar-diario.sh</code>) · branch padrão e <code>develop</code> · 🔒 projeto privado: só a data</sub>
+<sub>🤖 Atualizado em 04/11/2026 (horário de Brasília) pela rotina diária (<code>scripts/rodar-diario.sh</code>) · branch padrão e <code>develop</code> · 🔒 projeto privado: só a data</sub>
 
 ## 🎯 Metas (Java + AWS + IA, em conjunto)
 
-### ☕ Java · 45%
+### ☕ Java · 46%
 
-`█████░░░░░` 45%
+`█████░░░░░` 46%
 
-- **45%** · [Java Spring Professional](https://devsuperior.club/courses/5/lessons?lessonId=248) · DevSuperior (atualizado em 2026-10-30)
+- **46%** · [Java Spring Professional](https://devsuperior.club/courses/5/lessons?lessonId=248) · DevSuperior (atualizado em 2026-11-03)
   - [x] Componentes e injeção de dependência (14/14)
   - [x] Modelo de domínio e ORM (15/15)
   - [x] API REST, camadas, CRUD, exceções, validações (23/23)
@@ -36,20 +36,20 @@ fonte: https://github.com/k3vinrich4rd/k3vinrich4rd
   - [ ] Homologação e implantação com CI/CD (opcional) (0/18)
 - **a atualizar** · Java Spring Expert · DevSuperior
 
-### ☁️ AWS · a atualizar
+### ☁️ AWS · 0%
 
-`░░░░░░░░░░` a atualizar
+`░░░░░░░░░░` 0%
 
-- **a atualizar** · AWS na Prática · Udemy
+- **0%** · [AWS na Prática](https://www.udemy.com/course/aws-na-pratica/learn/lecture/23121466?start=75#overview) · Udemy (atualizado em 2026-11-04)
 
 ### 🤖 IA · a atualizar
 
 `░░░░░░░░░░` a atualizar
 
-- 📅 curso a definir
+- **a atualizar** · [From Java Dev to AI Engineer: Spring AI Fast Track](https://www.udemy.com/course/java-spring-ai/) · Udemy
 
-<sub>Dados de 2026-10-30</sub>
+<sub>Dados de 2026-11-04</sub>
 
 ## 📓 Diário de hoje
 
-[diario/2026-11-02.md](https://github.com/k3vinrich4rd/k3vinrich4rd/blob/main/diario/2026-11-02.md) · fonte: obsidian
+[diario/2026-11-04.md](https://github.com/k3vinrich4rd/k3vinrich4rd/blob/main/diario/2026-11-04.md) · fonte: github
