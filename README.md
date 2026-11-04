@@ -233,9 +233,9 @@ flowchart LR
 <!-- ULTIMOS-COMMITS:START -->
 | | Projeto | Último commit | Data |
 |:-:|---|---|---|
+| 🔒 | projeto privado | — | 04/11/2026 |
 | 📦 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`4558293`](https://github.com/k3vinrich4rd/rkf_bank/commit/4558293c34c59e797d417b723ac8877ffa1aacd2) docs(deploy): checagem diária de integridade da produção | 03/11/2026 |
 | 🔒 | projeto privado | — | 03/11/2026 |
-| 🔒 | projeto privado | — | 30/10/2026 |
 | 📦 | [`JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`f430211`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/f430211de74e8756ebb6520b13b52ea0bae60578) refactor: renomeia OrdemItem para OrderItem | 28/10/2026 |
 | 📦 | [`desafio-devsuperior-componentes-injecao-dependencia`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) | [`4997708`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia/commit/4997708166e270a54829b3ea94912378a03fa100) revert: main volta a ter so o desafio de componentes (o ORM foi para desafio-dev | 28/10/2026 |
 | 📦 | [`desafio-devsuperior-crud-clientes`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) | [`9b0eb79`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes/commit/9b0eb794bf407bdbe22af1196065717ef72591a9) feat: implementando correcao sugerida no feedback | 05/10/2026 |
@@ -255,9 +255,9 @@ flowchart LR
 <td valign="top" width="33%">
 
 <h3 align="center">☕ Java</h3>
-<p align="center"><img src="https://img.shields.io/badge/46%25-EC7000?style=for-the-badge" alt="46%"/><br/><img src="assets/metas/java.svg" width="100%" alt="Barra de progresso de Java"/></p>
+<p align="center"><img src="https://img.shields.io/badge/49%25-EC7000?style=for-the-badge" alt="49%"/><br/><img src="assets/metas/java.svg" width="100%" alt="Barra de progresso de Java"/></p>
 
-<img src="https://img.shields.io/badge/46%25-EC7000?style=flat-square" alt="46%"/> <a href="https://devsuperior.club/courses/5/lessons?lessonId=248">Java Spring Professional</a> · DevSuperior<br/><sub>atualizado em 03/11/2026</sub><br/><sub>📚 3/5 capítulos fechados</sub><br/><sub>✅ Componentes e injeção de dependência <code>14/14</code></sub><br/><sub>✅ Modelo de domínio e ORM <code>15/15</code></sub><br/><sub>✅ API REST, camadas, CRUD, exceções, validações <code>23/23</code></sub><br/><sub>🔄 JPA, consultas SQL e JPQL <code>13/38</code></sub><br/><sub>⬜ Login e controle de acesso <code>0/34</code></sub><br/><sub>⬜ Homologação e implantação com CI/CD (opcional) <code>0/18</code></sub><br/><br/>
+<img src="https://img.shields.io/badge/49%25-EC7000?style=flat-square" alt="49%"/> <a href="https://devsuperior.club/courses/5/lessons?lessonId=248">Java Spring Professional</a> · DevSuperior<br/><sub>atualizado em 04/11/2026</sub><br/><sub>📚 3/5 capítulos fechados</sub><br/><sub>✅ Componentes e injeção de dependência <code>14/14</code></sub><br/><sub>✅ Modelo de domínio e ORM <code>15/15</code></sub><br/><sub>✅ API REST, camadas, CRUD, exceções, validações <code>23/23</code></sub><br/><sub>🔄 JPA, consultas SQL e JPQL <code>17/38</code></sub><br/><sub>⬜ Login e controle de acesso <code>0/34</code></sub><br/><sub>⬜ Homologação e implantação com CI/CD (opcional) <code>0/18</code></sub><br/><br/>
 <img src="https://img.shields.io/badge/a%20atualizar-8b949e?style=flat-square" alt="a atualizar"/> Java Spring Expert · DevSuperior
 
 </td>

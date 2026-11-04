@@ -10,9 +10,9 @@ fonte: https://github.com/k3vinrich4rd/k3vinrich4rd
 
 | | Projeto | Último commit | Data |
 |:-:|---|---|---|
+| 🔒 | projeto privado | — | 04/11/2026 |
 | 📦 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`4558293`](https://github.com/k3vinrich4rd/rkf_bank/commit/4558293c34c59e797d417b723ac8877ffa1aacd2) docs(deploy): checagem diária de integridade da produção | 03/11/2026 |
 | 🔒 | projeto privado | — | 03/11/2026 |
-| 🔒 | projeto privado | — | 30/10/2026 |
 | 📦 | [`JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`f430211`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/f430211de74e8756ebb6520b13b52ea0bae60578) refactor: renomeia OrdemItem para OrderItem | 28/10/2026 |
 | 📦 | [`desafio-devsuperior-componentes-injecao-dependencia`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) | [`4997708`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia/commit/4997708166e270a54829b3ea94912378a03fa100) revert: main volta a ter so o desafio de componentes (o ORM foi para desafio-dev | 28/10/2026 |
 | 📦 | [`desafio-devsuperior-crud-clientes`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) | [`9b0eb79`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes/commit/9b0eb794bf407bdbe22af1196065717ef72591a9) feat: implementando correcao sugerida no feedback | 05/10/2026 |
@@ -23,15 +23,15 @@ fonte: https://github.com/k3vinrich4rd/k3vinrich4rd
 
 ## 🎯 Metas (Java + AWS + IA, em conjunto)
 
-### ☕ Java · 46%
+### ☕ Java · 49%
 
-`█████░░░░░` 46%
+`█████░░░░░` 49%
 
-- **46%** · [Java Spring Professional](https://devsuperior.club/courses/5/lessons?lessonId=248) · DevSuperior (atualizado em 2026-11-03)
+- **49%** · [Java Spring Professional](https://devsuperior.club/courses/5/lessons?lessonId=248) · DevSuperior (atualizado em 2026-11-04)
   - [x] Componentes e injeção de dependência (14/14)
   - [x] Modelo de domínio e ORM (15/15)
   - [x] API REST, camadas, CRUD, exceções, validações (23/23)
-  - [ ] JPA, consultas SQL e JPQL (13/38)
+  - [ ] JPA, consultas SQL e JPQL (17/38)
   - [ ] Login e controle de acesso (0/34)
   - [ ] Homologação e implantação com CI/CD (opcional) (0/18)
 - **a atualizar** · Java Spring Expert · DevSuperior

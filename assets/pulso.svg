@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="270" viewBox="0 0 1200 270" role="img" aria-label="Pulso da semana: 11 dias seguidos, 201 contribuições em 7 dias, 595 em 30 dias, 24 dias ativos no mês. Último commit há 21 h.">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="270" viewBox="0 0 1200 270" role="img" aria-label="Pulso da semana: 11 dias seguidos, 201 contribuições em 7 dias, 595 em 30 dias, 24 dias ativos no mês. Último commit hoje.">
   <!-- Gerado por scripts/svgs.mjs. Não edite à mão. -->
   <style>
     .cel { opacity: 0; animation: acende .35s ease-out forwards; }
@@ -119,5 +119,5 @@
       <text x="826" y="189" style="font: 800 28px Consolas, 'Fira Code', 'JetBrains Mono', Menlo, monospace" fill="#d2a8ff">24</text>
       <text x="874" y="188" style="font: 400 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">dias ativos no mês</text>
     </g>
-  <text x="368" y="246" style="font: 400 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">⏱️ Último commit <tspan fill="#e6edf3" font-weight="700">há 21 h</tspan> · atualizado em 04/11 às 19:39 (Brasília)</text>
+  <text x="368" y="246" style="font: 400 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" fill="#8b949e">⏱️ Último commit <tspan fill="#e6edf3" font-weight="700">hoje</tspan> · atualizado em 04/11 às 20:45 (Brasília)</text>
 </svg>
