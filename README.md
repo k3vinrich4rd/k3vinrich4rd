@@ -13,10 +13,11 @@
 <a href="#-escolha-a-sua-trilha"><img src="assets/botoes/trilhas.svg" alt="🎮 Trilhas" height="46"/></a>
 <a href="#-ao-vivo"><img src="assets/botoes/ao-vivo.svg" alt="📡 Ao vivo" height="46"/></a>
 <a href="#-trajetória"><img src="assets/botoes/historia.svg" alt="🧭 Trajetória" height="46"/></a>
-<a href="#-projeto-atual--rkf-bank"><img src="assets/botoes/rkf-bank.svg" alt="🏦 Projeto atual" height="46"/></a>
-<a href="#️-projetos-em-destaque"><img src="assets/botoes/projetos.svg" alt="🗂️ Projetos" height="46"/></a>
+<a href="#-projeto-atual--rkf-bank"><img src="assets/botoes/rkf-bank.svg" alt="🏦 RKF Bank" height="46"/></a>
+<a href="#-wisdom--o-próximo-projeto"><img src="assets/botoes/wisdom.svg" alt="🦊 Wisdom" height="46"/></a>
 <br/>
-<a href="#-junior--pleno--onde-estou"><img src="assets/botoes/pleno.svg" alt="📈 Junior → Pleno" height="46"/></a>
+<a href="#️-projetos-em-destaque"><img src="assets/botoes/projetos.svg" alt="🗂️ Projetos" height="46"/></a>
+<a href="#-junior--pleno--onde-estou"><img src="assets/botoes/pleno.svg" alt="📈 Pleno" height="46"/></a>
 <a href="#-pdi--roadmap-2026"><img src="assets/botoes/roadmap.svg" alt="🎯 Roadmap" height="46"/></a>
 <a href="#️-tecnologias"><img src="assets/botoes/stack.svg" alt="🛠️ Stack" height="46"/></a>
 <a href="#-pergunte-ao-kevin"><img src="assets/botoes/perguntas.svg" alt="💬 Perguntas" height="46"/></a>
@@ -29,19 +30,20 @@
 
 <!-- AUTO:indice:START -->
 <details>
-<summary><b>🗺️ Índice do perfil</b> · 16 seções (clique para abrir)</summary>
+<summary><b>🗺️ Índice do perfil</b> · 17 seções (clique para abrir)</summary>
 <br/>
 
 | | |
 |---|---|
-| <a href="#-escolha-a-sua-trilha">01 · 🎮 Escolha a sua trilha</a> | <a href="#-github-stats">09 · 📊 GitHub Stats</a> |
-| <a href="#-ao-vivo">02 · 📡 Ao vivo</a> | <a href="#-pdi--roadmap-2026">10 · 🎯 PDI — Roadmap 2026</a> |
-| <a href="#️-últimos-commits-e-metas">03 · ⏱️ Últimos commits e metas</a> | <a href="#️-tecnologias">11 · 🛠️ Tecnologias</a> |
-| <a href="#-trajetória">04 · 🧭 Trajetória</a> | <a href="#-atuação-profissional">12 · 💼 Atuação profissional</a> |
-| <a href="#-sobre-mim">05 · 🚀 Sobre mim</a> | <a href="#-pergunte-ao-kevin">13 · 💬 Pergunte ao Kevin</a> |
-| <a href="#-projeto-atual--rkf-bank">06 · 🏦 Projeto atual — RKF Bank</a> | <a href="#-cursos-em-andamento">14 · 📚 Cursos em andamento</a> |
-| <a href="#️-projetos-em-destaque">07 · 🗂️ Projetos em destaque</a> | <a href="#-formação-e-certificações">15 · 🎓 Formação e certificações</a> |
-| <a href="#-junior--pleno--onde-estou">08 · 📈 Junior → Pleno — onde estou</a> | <a href="#️-livro-de-visitas">16 · ✍️ Livro de visitas</a> |
+| <a href="#-escolha-a-sua-trilha">01 · 🎮 Escolha a sua trilha</a> | <a href="#-github-stats">10 · 📊 GitHub Stats</a> |
+| <a href="#-ao-vivo">02 · 📡 Ao vivo</a> | <a href="#-pdi--roadmap-2026">11 · 🎯 PDI — Roadmap 2026</a> |
+| <a href="#️-últimos-commits-e-metas">03 · ⏱️ Últimos commits e metas</a> | <a href="#️-tecnologias">12 · 🛠️ Tecnologias</a> |
+| <a href="#-trajetória">04 · 🧭 Trajetória</a> | <a href="#-atuação-profissional">13 · 💼 Atuação profissional</a> |
+| <a href="#-sobre-mim">05 · 🚀 Sobre mim</a> | <a href="#-pergunte-ao-kevin">14 · 💬 Pergunte ao Kevin</a> |
+| <a href="#-projeto-atual--rkf-bank">06 · 🏦 Projeto atual — RKF Bank</a> | <a href="#-cursos-em-andamento">15 · 📚 Cursos em andamento</a> |
+| <a href="#-wisdom--o-próximo-projeto">07 · 🦊 Wisdom — o próximo projeto</a> | <a href="#-formação-e-certificações">16 · 🎓 Formação e certificações</a> |
+| <a href="#️-projetos-em-destaque">08 · 🗂️ Projetos em destaque</a> | <a href="#️-livro-de-visitas">17 · ✍️ Livro de visitas</a> |
+| <a href="#-junior--pleno--onde-estou">09 · 📈 Junior → Pleno — onde estou</a> |  |
 
 </details>
 <!-- AUTO:indice:END -->
@@ -62,6 +64,7 @@
 |---|---|
 | Quem é? | Dev **Java backend Junior** na **Zup Innovation**, prestando serviço para o **Itaú**, em transição para **Pleno** (**13/15** competências já praticadas) |
 | Melhor projeto? | **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **360 testes**, CI e logs rastreáveis · ✅ **em produção**: [abrir o banco](https://rkfbank.vercel.app) |
+| Projeto novo? | **🦊 Wisdom** 🔒 (privado): app gamificado de inglês com cinco fundadores; eu sou o dono do backend e do contrato da API (Java 25, Spring Boot 4.1, Spring Modulith, PostgreSQL 18, OpenAPI) · [ver resumo](#-wisdom--o-próximo-projeto) |
 | Stack principal? | Java · Spring Boot · JPA/Hibernate · MySQL/PostgreSQL · MongoDB · JUnit/Mockito · Docker · GitHub Actions |
 | O que está estudando? | inglês → mensageria |
 | Contato? | [LinkedIn](https://www.linkedin.com/in/kevin-richard-b68a54203/) · [kevinrichardve@gmail.com](mailto:kevinrichardve@gmail.com) |
@@ -1001,29 +1004,75 @@ sequenceDiagram
 
 <p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
 
+<img src="assets/secoes/wisdom.svg" width="100%" alt=""/>
+
+## 🦊 Wisdom — o próximo projeto
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/fase-funda%C3%A7%C3%A3o_pronta-FF6B00?style=flat-square"/>
+<img src="https://img.shields.io/badge/reposit%C3%B3rio-privado_(fundadores)-141414?style=flat-square&logo=github"/>
+<img src="https://img.shields.io/badge/Java-25-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/>
+<img src="https://img.shields.io/badge/Spring%20Boot-4.1-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
+<img src="https://img.shields.io/badge/Spring%20Modulith-2.1-6DB33F?style=flat-square&logo=spring&logoColor=white"/>
+<img src="https://img.shields.io/badge/PostgreSQL-18-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
+<img src="https://img.shields.io/badge/OpenAPI-contract--first-6BA539?style=flat-square&logo=openapiinitiative&logoColor=white"/>
+
+</div>
+
+> **O Wisdom é um app gamificado para aprender inglês, nascido em Osasco, SP, com cinco fundadores.** Eu sou o dono do
+> **backend** e do **contrato da API**; o **[Renan Barros](https://www.linkedin.com/in/renan-costa-barros/)** faz o frontend.
+> 🔒 O repositório é **privado**: o produto e a marca são confidenciais dos fundadores, então aqui fica só a parte técnica.
+
+| | 🏦 RKF Bank | 🦊 Wisdom |
+|---|---|---|
+| **Fase** | ✅ em produção desde 03/11/2026 | 🧱 fundação pronta; a Fase 1 (cadastro e login) é a próxima |
+| **Arquitetura** | monólito em camadas + BFF | **monólito modular** com Spring Modulith, fronteiras verificadas por teste (ADR 0001) |
+| **Contrato da API** | evoluiu junto com o código | **contract-first**: OpenAPI 1.3 com 102 operações escrito **antes** do código, lint sem erros |
+| **Banco** | MySQL 8.4 + Flyway | PostgreSQL 18 + Flyway, testado no banco real com Testcontainers |
+| **Testes** | 360 testes, com regra de negócio | 80 testes **da fundação** (segurança, erros, perfis); os de negócio começam na Fase 1 |
+| **IA no time** | Claude Code com skills do time | time de agentes: Claude, Gemini, Copilot e bots do Grok, cada um com um papel |
+
+<details>
+<summary><b>🧱 O que já está pronto no Wisdom (clique)</b></summary>
+<br/>
+
+- **Esqueleto** em Java 25 + Spring Boot 4.1, com threads virtuais.
+- **Segurança fechada por padrão:** JWT HS256 validado com emissor e expiração obrigatórios, CORS só para o site e erros 401 no formato padrão.
+- **Um formato de erro** para a API inteira, com um código estável que o front usa para decidir o que mostrar.
+- **Perfis** `visitante`, `equipe` e `prod`: em produção, a API não sobe sem os segredos.
+- **CI** com PostgreSQL real e a imagem Docker `prod` testada com 512 MB.
+- **Decisões registradas:** ADR 0001 (monólito modular) e ADR 0002 (a API é a única dona do domínio).
+
+</details>
+
+<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
+
 <img src="assets/secoes/projetos-em-destaque.svg" width="100%" alt=""/>
 
 ## 🗂️ Projetos em destaque
 
-### ⭐ Os dois que eu mostraria numa entrevista
+### ⭐ Os projetos atuais, lado a lado
 
 <div align="center">
 
 <a href="https://github.com/k3vinrich4rd/rkf_bank" target="_blank"><img src="assets/cards/rkf_bank.svg" alt="RKF Bank" width="49%"/></a>
+<a href="#-wisdom--o-próximo-projeto"><img src="assets/cards/wisdom.svg" alt="Wisdom (repositório privado)" width="49%"/></a>
+
 <a href="https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM" target="_blank"><img src="assets/cards/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM.svg" alt="DSCommerce" width="49%"/></a>
 
 </div>
 
-| | 🏦 [RKF Bank](https://github.com/k3vinrich4rd/rkf_bank) | 🛒 [DSCommerce](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) |
-|---|---|---|
-| **O que é** | banco digital full stack, time de três (Osasco, SP) | e-commerce da formação Spring Professional (DevSuperior) |
-| **Meu papel** | todo o backend | projeto individual |
-| **Domínio** | clientes, contas, depósito, saque, transferência, extrato | usuários, pedidos, produtos, categorias, pagamento |
-| **O que mostra** | transação atômica, lock otimista, ViaCEP com falha tratada, logs com `X-Request-Id` | modelo de domínio rico, chave composta (`OrderItemPK`), Bean Validation, erros padronizados |
-| **Qualidade** | 360 testes, JaCoCo, CI com CodeQL e Dependabot | camadas controller → service → repository, `DatabaseException` para integridade referencial |
-| **Stack** | Java 25 · Spring Boot 4 · MySQL · Docker · Next.js | Java · Spring Boot · JPA · H2 |
-| **README** | [roteiro do projeto](https://github.com/k3vinrich4rd/rkf_bank#readme) | [modelo de domínio, endpoints e respostas reais](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM#readme) |
-| **Ver primeiro** | [`ContaService`](https://github.com/k3vinrich4rd/rkf_bank) · [roteiro no README](#-projeto-atual--rkf-bank) | [`ProductService`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/services/ProductService.java) · [`ControllerExceptionHandler`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/controllers/handlers/ControllerExceptionHandler.java) |
+| | 🏦 [RKF Bank](https://github.com/k3vinrich4rd/rkf_bank) | 🦊 [Wisdom](#-wisdom--o-próximo-projeto) 🔒 | 🛒 [DSCommerce](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) |
+|---|---|---|---|
+| **O que é** | banco digital full stack, time de três (Osasco, SP) | app gamificado para aprender inglês, feito em Osasco, SP | e-commerce da formação Spring Professional (DevSuperior) |
+| **Meu papel** | todo o backend | fundador, todo o backend e o contrato da API | projeto individual |
+| **Domínio** | clientes, contas, depósito, saque, transferência, extrato | estudo de inglês gamificado (detalhes do produto são confidenciais) | usuários, pedidos, produtos, categorias, pagamento |
+| **O que mostra** | transação atômica, lock otimista, ViaCEP com falha tratada, logs com `X-Request-Id` | **contract-first** com OpenAPI (102 operações), monólito modular com Spring Modulith, ADRs | modelo de domínio rico, chave composta (`OrderItemPK`), Bean Validation, erros padronizados |
+| **Qualidade** | 360 testes, JaCoCo, CI com CodeQL e Dependabot | 80 testes da fundação (segurança, erros, perfis), CI e imagem Docker | camadas controller → service → repository, `DatabaseException` para integridade referencial |
+| **Stack** | Java 25 · Spring Boot 4 · MySQL · Docker · Next.js | Java 25 · Spring Boot 4.1 · Spring Modulith · PostgreSQL 18 · Next.js | Java · Spring Boot · JPA · H2 |
+| **README** | [roteiro do projeto](https://github.com/k3vinrich4rd/rkf_bank#readme) | 🔒 repositório privado (só fundadores) | [modelo de domínio, endpoints e respostas reais](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM#readme) |
+| **Ver primeiro** | [`ContaService`](https://github.com/k3vinrich4rd/rkf_bank) · [roteiro no README](#-projeto-atual--rkf-bank) | a seção [🦊 Wisdom](#-wisdom--o-próximo-projeto) aqui no perfil | [`ProductService`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/services/ProductService.java) · [`ControllerExceptionHandler`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/controllers/handlers/ControllerExceptionHandler.java) |
 
 <div align="center">
 

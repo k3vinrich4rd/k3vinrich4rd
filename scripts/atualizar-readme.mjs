@@ -49,6 +49,7 @@ function blocoRecrutador() {
 |---|---|
 | Quem é? | Dev **Java backend Junior** na **Zup Innovation**, prestando serviço para o **Itaú**, em transição para **Pleno** (**${regua.praticadas}/${regua.total}** competências já praticadas) |
 | Melhor projeto? | **[RKF Bank](https://github.com/${USUARIO}/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **${rkf.testes} testes**, CI e logs rastreáveis · ✅ **em produção**: [abrir o banco](https://rkfbank.vercel.app) |
+| Projeto novo? | **🦊 Wisdom** 🔒 (privado): app gamificado de inglês com cinco fundadores; eu sou o dono do backend e do contrato da API (Java 25, Spring Boot 4.1, Spring Modulith, PostgreSQL 18, OpenAPI) · [ver resumo](#-wisdom--o-próximo-projeto) |
 | Stack principal? | Java · Spring Boot · JPA/Hibernate · MySQL/PostgreSQL · MongoDB · JUnit/Mockito · Docker · GitHub Actions |
 | O que está estudando? | ${p.trilha.map(apelido).join(' → ')} |
 | Contato? | [LinkedIn](https://www.linkedin.com/in/kevin-richard-b68a54203/) · [kevinrichardve@gmail.com](mailto:kevinrichardve@gmail.com) |`;
@@ -753,9 +754,10 @@ const botoes = {
   'trilhas.svg': ['Trilhas', { icone: '🎮', largura: 128 }],
   'ao-vivo.svg': ['Ao vivo', { icone: '📡', largura: 132 }],
   'historia.svg': ['Trajetória', { icone: '🧭', largura: 148 }],
-  'rkf-bank.svg': ['Projeto atual', { icone: '🏦', largura: 168, destaque: true }],
+  'rkf-bank.svg': ['RKF Bank', { icone: '🏦', largura: 150, destaque: true }],
+  'wisdom.svg': ['Wisdom', { icone: '🦊', largura: 130, cor: '#FF6B00' }],
   'projetos.svg': ['Projetos', { icone: '🗂️', largura: 138 }],
-  'pleno.svg': ['Junior → Pleno', { icone: '📈', largura: 176 }],
+  'pleno.svg': ['Pleno', { icone: '📈', largura: 112 }],
   'roadmap.svg': ['Roadmap', { icone: '🎯', largura: 142 }],
   'stack.svg': ['Stack', { icone: '🛠️', largura: 118 }],
   'perguntas.svg': ['Perguntas', { icone: '💬', largura: 148 }],
