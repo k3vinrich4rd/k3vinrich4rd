@@ -46,7 +46,7 @@ fonte: https://github.com/k3vinrich4rd/k3vinrich4rd
 
 `░░░░░░░░░░` a atualizar
 
-- **a atualizar** · [From Java Dev to AI Engineer: Spring AI Fast Track](https://www.udemy.com/course/java-spring-ai/) · Udemy
+- **a atualizar** · [Formação Inteligência Artificial: Do Zero ao Avançado (2026)](https://www.udemy.com/course/inteligencia-artificial-para-iniciantes/) · Udemy
 
 <sub>Dados de 2026-11-04</sub>
 

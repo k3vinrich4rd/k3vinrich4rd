@@ -271,7 +271,7 @@ flowchart LR
 <h3 align="center">🤖 IA</h3>
 <p align="center"><img src="https://img.shields.io/badge/a%20atualizar-8b949e?style=for-the-badge" alt="a atualizar"/><br/><img src="assets/metas/ia.svg" width="100%" alt="Barra de progresso de IA"/></p>
 
-<img src="https://img.shields.io/badge/a%20atualizar-8b949e?style=flat-square" alt="a atualizar"/> <a href="https://www.udemy.com/course/java-spring-ai/">From Java Dev to AI Engineer: Spring AI Fast Track</a> · Udemy
+<img src="https://img.shields.io/badge/a%20atualizar-8b949e?style=flat-square" alt="a atualizar"/> <a href="https://www.udemy.com/course/inteligencia-artificial-para-iniciantes/">Formação Inteligência Artificial: Do Zero ao Avançado (2026)</a> · Udemy
 
 </td>
 </tr>
