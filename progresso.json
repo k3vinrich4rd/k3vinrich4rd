@@ -157,8 +157,8 @@
           "texto": "PRs #101 e #104 `develop` → `main` mergeados (Swagger no ar + README de produção); nenhum PR aberto — 2026-11-03"
         },
         {
-          "feito": false,
-          "texto": "Conectar o GitHub no Render para a API publicar sozinha"
+          "feito": true,
+          "texto": "GitHub ligado ao Render: a API publica sozinha (PR #108, 03/11)"
         }
       ],
       "mvp": {
