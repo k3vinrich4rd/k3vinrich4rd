@@ -1762,7 +1762,7 @@ Banco digital que construí com o Renan e o Fellipe, **MVP concluído**: **360 t
 <summary><b>☁️ 4 · AWS na prática</b> — ⏭️ depois</summary>
 <br/>
 
-Curso [AWS na Prática (Udemy)](https://www.udemy.com/course/aws-na-pratica/), para dominar **ECS Fargate, RDS, Secrets Manager, SNS e SQS** na prática. O RKF Bank já está no ar de graça (Vercel + Render + Aiven); o estudo leva a mesma imagem Docker do perfil `prod` para a AWS como exercício.
+Curso [AWS na Prática (Udemy)](https://www.udemy.com/course/aws-na-pratica/learn/lecture/23121466?start=75#overview), para dominar **ECS Fargate, RDS, Secrets Manager, SNS e SQS** na prática. O RKF Bank já está no ar de graça (Vercel + Render + Aiven); o estudo leva a mesma imagem Docker do perfil `prod` para a AWS como exercício.
 
 </details>
 
@@ -1771,6 +1771,8 @@ Curso [AWS na Prática (Udemy)](https://www.udemy.com/course/aws-na-pratica/), p
 <br/>
 
 Os mesmos conteúdos da trilha de IA do meu Obsidian, na ordem: **LLM e tokens → RAG (embeddings) → tool calling → agentes → Spring AI → Spec-Driven Development → evals → ferramentas (Claude Code, Cursor, Copilot, n8n)**. Já uso IA no dia a dia com método (spec, testes e revisão); o próximo passo é **construir** com ela: um assistente de extrato no RKF Bank com `@Tool`, regra de dono e evals.
+
+Curso escolhido: [From Java Dev to AI Engineer: Spring AI Fast Track (Udemy)](https://www.udemy.com/course/java-spring-ai/), 18 h, nota 4,6 com 3,4 mil avaliações e atualizado em outubro de 2026. Cobre LLM, prompts, RAG, tool calling e agentes com **Spring AI**, na mesma stack do RKF Bank.
 
 </details>
 

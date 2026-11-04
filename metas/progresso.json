@@ -1,6 +1,6 @@
 {
-  "atualizado": "2026-10-30",
-  "observacao": "Próximos estudos, em conjunto: Java + AWS + IA. Percentual da meta = média dos cursos com percentual conhecido; null = 'a atualizar' (fora da média). Java Spring Professional lido na página do curso em 30/10/2026 22:33 (Brasília); demais do cofre Obsidian.",
+  "atualizado": "2026-11-04",
+  "observacao": "Próximos estudos, em conjunto: Java + AWS + IA. Percentual da meta = média dos cursos com percentual conhecido; null = 'a atualizar' (fora da média). Java Spring Professional: 46% lido na DevSuperior em 03/11/2026. AWS na Prática: 0% lido na Udemy em 04/11/2026 (curso começado). IA: Spring AI Fast Track escolhido em 04/11/2026 (nota 4,6 com 3,4 mil avaliações, atualizado em 10/2026), ainda sem matrícula.",
   "metas": [
     {
       "id": "java",
@@ -10,8 +10,8 @@
           "nome": "Java Spring Professional",
           "plataforma": "DevSuperior",
           "url": "https://devsuperior.club/courses/5/lessons?lessonId=248",
-          "percentual": 45,
-          "atualizado": "2026-10-30",
+          "percentual": 46,
+          "atualizado": "2026-11-03",
           "capitulos": [
             {
               "nome": "Componentes e injeção de dependência",
@@ -62,16 +62,24 @@
         {
           "nome": "AWS na Prática",
           "plataforma": "Udemy",
-          "url": null,
-          "percentual": null,
-          "atualizado": null
+          "url": "https://www.udemy.com/course/aws-na-pratica/learn/lecture/23121466?start=75#overview",
+          "percentual": 0,
+          "atualizado": "2026-11-04"
         }
       ]
     },
     {
       "id": "ia",
       "titulo": "IA",
-      "cursos": []
+      "cursos": [
+        {
+          "nome": "From Java Dev to AI Engineer: Spring AI Fast Track",
+          "plataforma": "Udemy",
+          "url": "https://www.udemy.com/course/java-spring-ai/",
+          "percentual": null,
+          "atualizado": null
+        }
+      ]
     }
   ]
 }
