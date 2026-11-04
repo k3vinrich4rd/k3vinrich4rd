@@ -1,6 +1,6 @@
 {
   "atualizado": "2026-11-04",
-  "observacao": "Próximos estudos, em conjunto: Java + AWS + IA. Percentual da meta = média dos cursos com percentual conhecido; null = 'a atualizar' (fora da média). Java Spring Professional: 46% lido na DevSuperior em 03/11/2026. AWS na Prática: 0% lido na Udemy em 04/11/2026 (curso começado). IA: Spring AI Fast Track escolhido em 04/11/2026 (nota 4,6 com 3,4 mil avaliações, atualizado em 10/2026), ainda sem matrícula.",
+  "observacao": "Próximos estudos, em conjunto: Java + AWS + IA. Percentual da meta = média dos cursos com percentual conhecido; null = 'a atualizar' (fora da média). Java Spring Professional: 46% lido na DevSuperior em 03/11/2026. AWS na Prática: 0% lido na Udemy em 04/11/2026 (curso começado). IA: Formação Inteligência Artificial: Do Zero ao Avançado (Udemy, Andre Iacono; nota 4,65 com 12,4 mil avaliações, 24,5 h, atualizado em 10/2026), escolhido pelo Kevin em 04/11/2026, ainda sem matrícula.",
   "metas": [
     {
       "id": "java",
@@ -73,9 +73,9 @@
       "titulo": "IA",
       "cursos": [
         {
-          "nome": "From Java Dev to AI Engineer: Spring AI Fast Track",
+          "nome": "Formação Inteligência Artificial: Do Zero ao Avançado (2026)",
           "plataforma": "Udemy",
-          "url": "https://www.udemy.com/course/java-spring-ai/",
+          "url": "https://www.udemy.com/course/inteligencia-artificial-para-iniciantes/",
           "percentual": null,
           "atualizado": null
         }

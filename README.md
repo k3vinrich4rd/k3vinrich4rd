@@ -1772,7 +1772,7 @@ Curso [AWS na Prática (Udemy)](https://www.udemy.com/course/aws-na-pratica/lear
 
 Os mesmos conteúdos da trilha de IA do meu Obsidian, na ordem: **LLM e tokens → RAG (embeddings) → tool calling → agentes → Spring AI → Spec-Driven Development → evals → ferramentas (Claude Code, Cursor, Copilot, n8n)**. Já uso IA no dia a dia com método (spec, testes e revisão); o próximo passo é **construir** com ela: um assistente de extrato no RKF Bank com `@Tool`, regra de dono e evals.
 
-Curso escolhido: [From Java Dev to AI Engineer: Spring AI Fast Track (Udemy)](https://www.udemy.com/course/java-spring-ai/), 18 h, nota 4,6 com 3,4 mil avaliações e atualizado em outubro de 2026. Cobre LLM, prompts, RAG, tool calling e agentes com **Spring AI**, na mesma stack do RKF Bank.
+Curso escolhido: [Formação Inteligência Artificial: Do Zero ao Avançado (Udemy)](https://www.udemy.com/course/inteligencia-artificial-para-iniciantes/), 24,5 h, nota 4,65 com 12,4 mil avaliações e atualizado em outubro de 2026. É a base de IA; depois dele vem o Spring AI, para levar o que aprendi para a stack do RKF Bank.
 
 </details>
 
