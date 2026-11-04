@@ -180,16 +180,16 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:atividade:START -->
 | | Repositório | Commit | Quando |
 |:-:|---|---|---|
-| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`e5ac154`](https://github.com/k3vinrich4rd/rkf_bank/commit/e5ac154cbf4c18b2381fdcfca7c03ed1553a9caf) docs: como o site (Vercel), a API (Render) e o banco (Aiven) se ligam em | há 53 min |
-| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`cde01e9`](https://github.com/k3vinrich4rd/rkf_bank/commit/cde01e95fe98ed69be9344512ce795e158eab2df) docs: RKF Bank em produção (Vercel + Render + Aiven) com os links reais | há 3 h |
-| ♻️ | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`f430211`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/f430211de74e8756ebb6520b13b52ea0bae60578) refactor: renomeia OrdemItem para OrderItem | há 6 dias |
-| ⏪ | [`desafio-devsuperior-componentes-injecao-dependencia`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) | [`4997708`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia/commit/4997708166e270a54829b3ea94912378a03fa100) revert: main volta a ter so o desafio de componentes (o ORM foi para des | há 6 dias |
-| 🔧 | [`desafio-devsuperior-modelo-orm`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) | [`e064a39`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm/commit/e064a39a2f1f2588d08e475e4ddc955a57625a39) chore: junta o historico ao repositorio desafio-devsuperior-modelo-orm | há 6 dias |
+| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`4558293`](https://github.com/k3vinrich4rd/rkf_bank/commit/4558293c34c59e797d417b723ac8877ffa1aacd2) docs(deploy): checagem diária de integridade da produção | há 10 min |
+| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`2d10b76`](https://github.com/k3vinrich4rd/rkf_bank/commit/2d10b7646f5903927e9e03e14cd80f6902a15ead) docs(deploy): API publica sozinha no Render a cada merge na main | há 22 min |
+| ♻️ | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`f430211`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/f430211de74e8756ebb6520b13b52ea0bae60578) refactor: renomeia OrdemItem para OrderItem | há 7 dias |
+| ⏪ | [`desafio-devsuperior-componentes-injecao-dependencia`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) | [`4997708`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia/commit/4997708166e270a54829b3ea94912378a03fa100) revert: main volta a ter so o desafio de componentes (o ORM foi para des | há 7 dias |
+| 🔧 | [`desafio-devsuperior-modelo-orm`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) | [`e064a39`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm/commit/e064a39a2f1f2588d08e475e4ddc955a57625a39) chore: junta o historico ao repositorio desafio-devsuperior-modelo-orm | há 7 dias |
 | 📝 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`0849493`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/0849493f006f8569a3c9a93e9578c3ba795d6921) docs: adiciona README com modelo de dominio, endpoints e exemplos reais | há 19 dias |
 | 📝 | [`desafio-devsuperior-componentes-injecao-dependencia`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) | [`757f944`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia/commit/757f944837b07f090ea785449adbc2b0e28cd45e) docs: atualiza informações do README | 27/10/2025 |
 | 📝 | [`desafio-devsuperior-modelo-orm`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) | [`757f944`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm/commit/757f944837b07f090ea785449adbc2b0e28cd45e) docs: atualiza informações do README | 27/10/2025 |
 
-<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 03/11 às 20:26</sub>
+<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 03/11 às 22:41</sub>
 <!-- AUTO:atividade:END -->
 
 </details>
