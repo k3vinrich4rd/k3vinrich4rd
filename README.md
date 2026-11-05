@@ -242,7 +242,7 @@ flowchart LR
 | 📦 | [`workshop-springboot4-mongodb`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb) | [`ecad5ce`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb/commit/ecad5cec16d1f5ef7b606e6f8b5daf5ce74ade25) feat: Implementando ajustes no projeto | 15/09/2026 |
 | 📦 | [`desafio-devsuperior-modelo-orm`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) | [`757f944`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm/commit/757f944837b07f090ea785449adbc2b0e28cd45e) docs: atualiza informações do README | 27/10/2025 |
 
-<sub>🤖 Atualizado em 04/11/2026 (horário de Brasília) pela rotina diária (<code>scripts/rodar-diario.sh</code>) · branch padrão e <code>develop</code> · 🔒 projeto privado: só a data</sub>
+<sub>🤖 Atualizado em 05/11/2026 (horário de Brasília) pela rotina diária (<code>scripts/rodar-diario.sh</code>) · branch padrão e <code>develop</code> · 🔒 projeto privado: só a data</sub>
 <!-- ULTIMOS-COMMITS:END -->
 
 ### 🎯 Metas em andamento: Java + AWS + IA em conjunto
@@ -257,7 +257,7 @@ flowchart LR
 <h3 align="center">☕ Java</h3>
 <p align="center"><img src="https://img.shields.io/badge/49%25-EC7000?style=for-the-badge" alt="49%"/><br/><img src="assets/metas/java.svg" width="100%" alt="Barra de progresso de Java"/></p>
 
-<img src="https://img.shields.io/badge/49%25-EC7000?style=flat-square" alt="49%"/> <a href="https://devsuperior.club/courses/5/lessons?lessonId=248">Java Spring Professional</a> · DevSuperior<br/><sub>atualizado em 04/11/2026</sub><br/><sub>📚 3/5 capítulos fechados</sub><br/><sub>✅ Componentes e injeção de dependência <code>14/14</code></sub><br/><sub>✅ Modelo de domínio e ORM <code>15/15</code></sub><br/><sub>✅ API REST, camadas, CRUD, exceções, validações <code>23/23</code></sub><br/><sub>🔄 JPA, consultas SQL e JPQL <code>17/38</code></sub><br/><sub>⬜ Login e controle de acesso <code>0/34</code></sub><br/><sub>⬜ Homologação e implantação com CI/CD (opcional) <code>0/18</code></sub><br/><br/>
+<img src="https://img.shields.io/badge/49%25-EC7000?style=flat-square" alt="49%"/> <a href="https://devsuperior.club/courses/5/lessons?lessonId=248">Java Spring Professional</a> · DevSuperior<br/><sub>atualizado em 05/11/2026</sub><br/><sub>📚 3/5 capítulos fechados</sub><br/><sub>✅ Componentes e injeção de dependência <code>14/14</code></sub><br/><sub>✅ Modelo de domínio e ORM <code>15/15</code></sub><br/><sub>✅ API REST, camadas, CRUD, exceções, validações <code>23/23</code></sub><br/><sub>🔄 JPA, consultas SQL e JPQL <code>17/38</code></sub><br/><sub>⬜ Login e controle de acesso <code>0/34</code></sub><br/><sub>⬜ Homologação e implantação com CI/CD (opcional) <code>0/18</code></sub><br/><br/>
 <img src="https://img.shields.io/badge/a%20atualizar-8b949e?style=flat-square" alt="a atualizar"/> Java Spring Expert · DevSuperior
 
 </td>
@@ -280,7 +280,7 @@ flowchart LR
 </tr>
 </table>
 
-<sub>🎯 Cada meta é medida pelo progresso real dos cursos dela (média dos cursos com porcentagem registrada); "a atualizar" = curso sem porcentagem registrada ainda. Nada sobe sozinho · dados de 2026-11-04</sub>
+<sub>🎯 Cada meta é medida pelo progresso real dos cursos dela (média dos cursos com porcentagem registrada); "a atualizar" = curso sem porcentagem registrada ainda. Nada sobe sozinho · dados de 2026-11-05</sub>
 <!-- METAS:END -->
 
 <sub>📓 Um resumo por dia em <a href="diario/">diario/</a> · tudo isso também em <a href="progresso.md">progresso.md</a></sub>

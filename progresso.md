@@ -1,5 +1,5 @@
 ---
-atualizado: 2026-11-04
+atualizado: 2026-11-05
 fonte: https://github.com/k3vinrich4rd/k3vinrich4rd
 ---
 # Progresso do Kevin
@@ -19,7 +19,7 @@ fonte: https://github.com/k3vinrich4rd/k3vinrich4rd
 | 📦 | [`workshop-springboot4-mongodb`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb) | [`ecad5ce`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb/commit/ecad5cec16d1f5ef7b606e6f8b5daf5ce74ade25) feat: Implementando ajustes no projeto | 15/09/2026 |
 | 📦 | [`desafio-devsuperior-modelo-orm`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) | [`757f944`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm/commit/757f944837b07f090ea785449adbc2b0e28cd45e) docs: atualiza informações do README | 27/10/2025 |
 
-<sub>🤖 Atualizado em 04/11/2026 (horário de Brasília) pela rotina diária (<code>scripts/rodar-diario.sh</code>) · branch padrão e <code>develop</code> · 🔒 projeto privado: só a data</sub>
+<sub>🤖 Atualizado em 05/11/2026 (horário de Brasília) pela rotina diária (<code>scripts/rodar-diario.sh</code>) · branch padrão e <code>develop</code> · 🔒 projeto privado: só a data</sub>
 
 ## 🎯 Metas (Java + AWS + IA, em conjunto)
 
@@ -27,7 +27,7 @@ fonte: https://github.com/k3vinrich4rd/k3vinrich4rd
 
 `█████░░░░░` 49%
 
-- **49%** · [Java Spring Professional](https://devsuperior.club/courses/5/lessons?lessonId=248) · DevSuperior (atualizado em 2026-11-04)
+- **49%** · [Java Spring Professional](https://devsuperior.club/courses/5/lessons?lessonId=248) · DevSuperior (atualizado em 2026-11-05)
   - [x] Componentes e injeção de dependência (14/14)
   - [x] Modelo de domínio e ORM (15/15)
   - [x] API REST, camadas, CRUD, exceções, validações (23/23)
@@ -48,8 +48,8 @@ fonte: https://github.com/k3vinrich4rd/k3vinrich4rd
 
 - **a atualizar** · [Formação Inteligência Artificial: Do Zero ao Avançado (2026)](https://www.udemy.com/course/inteligencia-artificial-para-iniciantes/) · Udemy
 
-<sub>Dados de 2026-11-04</sub>
+<sub>Dados de 2026-11-05</sub>
 
 ## 📓 Diário de hoje
 
-[diario/2026-11-04.md](https://github.com/k3vinrich4rd/k3vinrich4rd/blob/main/diario/2026-11-04.md) · fonte: github
+[diario/2026-11-05.md](https://github.com/k3vinrich4rd/k3vinrich4rd/blob/main/diario/2026-11-05.md) · fonte: github
