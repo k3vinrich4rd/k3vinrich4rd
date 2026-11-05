@@ -52,4 +52,4 @@ fonte: https://github.com/k3vinrich4rd/k3vinrich4rd
 
 ## 📓 Diário de hoje
 
-[diario/2026-11-05.md](https://github.com/k3vinrich4rd/k3vinrich4rd/blob/main/diario/2026-11-05.md) · fonte: github
+[diario/2026-11-05.md](https://github.com/k3vinrich4rd/k3vinrich4rd/blob/main/diario/2026-11-05.md) · fonte: obsidian
