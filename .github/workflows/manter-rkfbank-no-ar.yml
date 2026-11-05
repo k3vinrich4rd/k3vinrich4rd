@@ -15,7 +15,7 @@ permissions: {}
 jobs:
   ping:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     # O deploy do Renan não deixa o job do Kevin vermelho (ele cuida do dele).
     continue-on-error: ${{ matrix.quem == 'Renan' }}
     strategy:
