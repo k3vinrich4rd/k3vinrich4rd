@@ -54,8 +54,8 @@
 | <a href="#️-últimos-commits-e-metas">03 · ⏱️ Últimos commits e metas</a> | <a href="#️-tecnologias">12 · 🛠️ Tecnologias</a> |
 | <a href="#-trajetória">04 · 🧭 Trajetória</a> | <a href="#-atuação-profissional">13 · 💼 Atuação profissional</a> |
 | <a href="#-sobre-mim">05 · 🚀 Sobre mim</a> | <a href="#-pergunte-ao-kevin">14 · 💬 Pergunte ao Kevin</a> |
-| <a href="#-projeto-atual--rkf-bank">06 · 🏦 Projeto atual — RKF Bank</a> | <a href="#-cursos-em-andamento">15 · 📚 Cursos em andamento</a> |
-| <a href="#-wisdom--o-próximo-projeto">07 · 🦊 Wisdom — o próximo projeto</a> | <a href="#-formação-e-certificações">16 · 🎓 Formação e certificações</a> |
+| <a href="#-rkf-bank--em-produção">06 · 🏦 RKF Bank — em produção</a> | <a href="#-cursos-em-andamento">15 · 📚 Cursos em andamento</a> |
+| <a href="#-wisdom--projeto-atual-em-construção">07 · 🦊 Wisdom — projeto atual (em construção)</a> | <a href="#-formação-e-certificações">16 · 🎓 Formação e certificações</a> |
 | <a href="#️-projetos-em-destaque">08 · 🗂️ Projetos em destaque</a> | <a href="#️-livro-de-visitas">17 · ✍️ Livro de visitas</a> |
 | <a href="#-junior--pleno--onde-estou">09 · 📈 Junior → Pleno — onde estou</a> |  |
 
@@ -77,8 +77,8 @@
 | Pergunta | Resposta rápida |
 |---|---|
 | Quem é? | Dev **Java backend Junior** na **Zup Innovation**, prestando serviço para o **Itaú**, em transição para **Pleno** (**13/15** competências já praticadas) |
-| Melhor projeto? | **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **360 testes**, CI e logs rastreáveis · ✅ **em produção**: [abrir o banco](https://rkfbank.vercel.app) |
-| Projeto novo? | **🦊 Wisdom** 🔒 (privado): app gamificado de inglês com cinco fundadores; eu sou o dono do backend e do contrato da API (Java 25, Spring Boot 4.1, Spring Modulith, PostgreSQL 18, OpenAPI) · [ver resumo](#-wisdom--o-próximo-projeto) |
+| Em produção? | **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **360 testes**, CI e logs rastreáveis · ✅ **no ar**: [abrir o banco](https://rkfbank.vercel.app) |
+| Projeto atual? | **Wisdom** 🔒 (repositório privado): app gamificado de inglês com cinco fundadores; eu sou o dono do backend e do contrato da API (Java 25, Spring Boot 4.1, Spring Modulith, PostgreSQL 18, OpenAPI) · [ver resumo](#-wisdom--projeto-atual-em-construção) |
 | Stack principal? | Java · Spring Boot · JPA/Hibernate · MySQL/PostgreSQL · MongoDB · JUnit/Mockito · Docker · GitHub Actions |
 | O que está estudando? | inglês → mensageria |
 | Contato? | [LinkedIn](https://www.linkedin.com/in/kevinrichard-java/) · [kevinrichardve@gmail.com](mailto:kevinrichardve@gmail.com) |
@@ -484,11 +484,11 @@ public class Kevin extends Developer implements AprendizContinuo {
 
 </details>
 
+<a name="-projeto-atual--rkf-bank"></a>
+
 <p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
 
-<img src="assets/secoes/projeto-atual.svg" width="100%" alt=""/>
-
-<a name="-projeto-atual--rkf-bank"></a>
+<img src="assets/secoes/rkf-bank.svg" width="100%" alt=""/>
 
 ## 🏦 RKF Bank — em produção
 
@@ -1018,11 +1018,11 @@ sequenceDiagram
 
 </details>
 
+<a name="-wisdom--o-próximo-projeto"></a>
+
 <p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
 
 <img src="assets/secoes/wisdom.svg" width="100%" alt=""/>
-
-<a name="-wisdom--o-próximo-projeto"></a>
 
 ## 🦊 Wisdom — projeto atual (em construção)
 
