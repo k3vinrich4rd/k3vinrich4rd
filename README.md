@@ -1,13 +1,26 @@
 <div align="center">
 
 <!-- O banner é gerado por scripts/atualizar-readme.mjs com os números do progresso.json (régua, testes, MVP). -->
-<a href="https://www.linkedin.com/in/kevin-richard-b68a54203/" target="_blank"><img src="assets/banner.svg" width="100%" alt="Kevin Richard, desenvolvedor Java backend na Zup Innovation"/></a>
+<a href="https://www.linkedin.com/in/kevinrichard-java/" target="_blank"><img src="assets/banner.svg" width="100%" alt="Kevin Richard, desenvolvedor Java backend na Zup Innovation"/></a>
 
-<a href="https://www.linkedin.com/in/kevin-richard-b68a54203/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Kevin%20Richard-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="https://www.linkedin.com/in/kevinrichard-java/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Kevin%20Richard-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 <a href="mailto:kevinrichardve@gmail.com"><img src="https://img.shields.io/badge/Gmail-kevinrichardve-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
 <a href="https://www.linkedin.com/company/zupinnovation/posts/?feedView=all" target="_blank"><img src="https://img.shields.io/badge/Contratado-Zup%20Innovation-003D74?style=for-the-badge"/></a>
 <a href="https://www.itau.com.br/" target="_blank"><img src="https://img.shields.io/badge/Servi%C3%A7o-Ita%C3%BA%20Unibanco-EC7000?style=for-the-badge"/></a>
 <a href="https://www.linkedin.com/school/anhanguera-educacional-sa/" target="_blank"><img src="https://img.shields.io/badge/Forma%C3%A7%C3%A3o-Anhanguera-6A1B9A?style=for-the-badge"/></a>
+
+<!-- Vitrine · GitHub: resumo de 30 segundos (bloco manual, fora dos marcadores AUTO) -->
+<p align="center">
+  <b>Dev Java backend</b> · Spring Boot · Spring Data JPA/Hibernate · Spring Security · +4 anos na Zup Innovation (grupo Itaú)<br/>
+  🏦 <b>Em produção:</b> <a href="https://rkfbank.vercel.app">RKF Bank</a>: Java 25 + Spring Boot 4.1 · JWT · <code>Idempotency-Key</code> · lock otimista (<code>@Version</code>) · Flyway · CI com CodeQL<br/>
+  <a href="https://github.com/k3vinrich4rd/rkf_bank"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fk3vinrich4rd%2Fk3vinrich4rd%2Fmain%2Fprogresso.json&query=%24.rkf.testes&label=testes%20no%20RKF%20Bank&color=22C55E&style=flat-square&logo=junit5&logoColor=white" alt="Testes no RKF Bank"/></a>
+  <a href="https://github.com/k3vinrich4rd/rkf_bank/actions/workflows/backend-ci.yml"><img src="https://github.com/k3vinrich4rd/rkf_bank/actions/workflows/backend-ci.yml/badge.svg?branch=develop" alt="CI do RKF Bank"/></a><br/>
+  <a href="https://github.com/k3vinrich4rd/rkf_bank">📂 código</a> ·
+  <a href="https://github.com/k3vinrich4rd/rkf_bank/blob/main/planing/decisoes.md">🧭 decisões técnicas</a> ·
+  <a href="https://github.com/k3vinrich4rd/rkf_bank#-arquitetura">🧱 arquitetura</a> ·
+  <a href="https://github.com/k3vinrich4rd/rkf_bank#-qualidade-e-testes">🧪 testes</a> ·
+  <a href="diario/">📓 diário de estudos</a>
+</p>
 
 <!-- Botões gerados por scripts/svgs.mjs. Cada um leva a uma seção. -->
 <a href="#-escolha-a-sua-trilha"><img src="assets/botoes/trilhas.svg" alt="🎮 Trilhas" height="46"/></a>
@@ -71,7 +84,7 @@
 <!-- AUTO:recrutador:END -->
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/kevin-richard-b68a54203/" target="_blank"><img src="assets/botoes/linkedin.svg" alt="📩 Vamos conversar? Chamar no LinkedIn" height="46"/></a>
+  <a href="https://www.linkedin.com/in/kevinrichard-java/" target="_blank"><img src="assets/botoes/linkedin.svg" alt="📩 Vamos conversar? Chamar no LinkedIn" height="46"/></a>
   <a href="mailto:kevinrichardve@gmail.com?subject=Oportunidade%20-%20Java%20Backend"><img src="assets/botoes/email.svg" alt="✉️ Enviar e-mail" height="46"/></a>
 </p>
 
@@ -755,9 +768,9 @@ flowchart LR
 <table>
   <tr>
     <td align="center" valign="top" width="33%">
-      <a href="https://www.linkedin.com/in/kevin-richard-b68a54203/"><img src="https://github.com/k3vinrich4rd.png" width="88" alt="Kevin Richard"/></a>
+      <a href="https://www.linkedin.com/in/kevinrichard-java/"><img src="https://github.com/k3vinrich4rd.png" width="88" alt="Kevin Richard"/></a>
       <h4>Kevin Richard · Backend</h4>
-      <a href="https://www.linkedin.com/in/kevin-richard-b68a54203/"><img src="https://img.shields.io/badge/LinkedIn-Kevin_Richard-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn de Kevin Richard"/></a>
+      <a href="https://www.linkedin.com/in/kevinrichard-java/"><img src="https://img.shields.io/badge/LinkedIn-Kevin_Richard-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn de Kevin Richard"/></a>
       <p align="left"><sub><i>“Conhecimento nunca é demais.”</i> Busca aprendizado constante para evoluir como pessoa e profissional, com determinação, foco, persistência, ambição, espírito coletivo e empatia. No RKF Bank: API, banco, segurança e testes.</sub></p>
     </td>
     <td align="center" valign="top" width="33%">
@@ -2891,7 +2904,7 @@ flowchart LR
 
 <div align="center">
 
-<a href="https://www.linkedin.com/in/kevin-richard-b68a54203/" target="_blank"><img src="assets/chamada.svg" width="100%" alt="Vamos conversar? Desenvolvedor Java backend na Zup Innovation. Falar no LinkedIn"/></a>
+<a href="https://www.linkedin.com/in/kevinrichard-java/" target="_blank"><img src="assets/chamada.svg" width="100%" alt="Vamos conversar? Desenvolvedor Java backend na Zup Innovation. Falar no LinkedIn"/></a>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:EC7000,50:003D74,100:1a1a1a&height=130&section=footer&animation=twinkling&text=Informa%C3%A7%C3%A3o%20e%20conhecimento%20nunca%20s%C3%A3o%20demais&fontSize=18&fontColor=ffffff&fontAlignY=65" alt="footer"/>
 
