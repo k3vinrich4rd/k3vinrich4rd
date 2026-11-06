@@ -1773,6 +1773,14 @@ endsolid repositorios_por_ano
 
 ## 📈 Junior → Pleno — onde estou
 
+<!-- Vitrine · GitHub: evolução contínua (só LÊ diario/ e cursos.json; não altera scripts nem o bloco de cursos) -->
+<p align="center">
+  <a href="diario/"><img src="https://img.shields.io/github/last-commit/k3vinrich4rd/k3vinrich4rd/main?path=diario&label=di%C3%A1rio%20de%20estudos%20atualizado&style=for-the-badge&color=1f6f3f" alt="Diário de estudos atualizado"/></a>
+  <a href="diario/"><img src="https://img.shields.io/github/directory-file-count/k3vinrich4rd/k3vinrich4rd/diario?type=file&extension=md&label=dias%20registrados&style=for-the-badge&color=003D74" alt="Dias registrados no diário"/></a>
+  <a href="https://devsuperior.club/courses/5"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fk3vinrich4rd%2Fk3vinrich4rd%2Fmain%2Fcursos.json&query=%24.cursos%5B0%5D.progresso&label=Java%20Spring%20Professional&suffix=%25" alt="Progresso do curso em andamento (cursos.json)"/></a>
+</p>
+<p align="center"><sub>Evolução profissional com método: cada dia de estudo vira uma entrada em <a href="diario/">diario/</a> e, quando cabe, código testado no <a href="https://github.com/k3vinrich4rd/rkf_bank">RKF Bank</a>.</sub></p>
+
 > Trabalho como **Java backend na Zup**, prestando serviço para o **Itaú**, e **estudo todos os dias** com um objetivo claro: **chegar a Pleno**. O que separa um Junior de um Pleno não é só saber mais tecnologia: é **entregar com autonomia, qualidade e visão do todo**. Abaixo, o que estou fazendo **agora**, na ordem, e a minha régua com evidências.
 
 ### 🎯 Agora, em ordem
