@@ -80,7 +80,7 @@
 | Projeto novo? | **🦊 Wisdom** 🔒 (privado): app gamificado de inglês com cinco fundadores; eu sou o dono do backend e do contrato da API (Java 25, Spring Boot 4.1, Spring Modulith, PostgreSQL 18, OpenAPI) · [ver resumo](#-wisdom--o-próximo-projeto) |
 | Stack principal? | Java · Spring Boot · JPA/Hibernate · MySQL/PostgreSQL · MongoDB · JUnit/Mockito · Docker · GitHub Actions |
 | O que está estudando? | inglês → mensageria |
-| Contato? | [LinkedIn](https://www.linkedin.com/in/kevin-richard-b68a54203/) · [kevinrichardve@gmail.com](mailto:kevinrichardve@gmail.com) |
+| Contato? | [LinkedIn](https://www.linkedin.com/in/kevinrichard-java/) · [kevinrichardve@gmail.com](mailto:kevinrichardve@gmail.com) |
 <!-- AUTO:recrutador:END -->
 
 <p align="center">
