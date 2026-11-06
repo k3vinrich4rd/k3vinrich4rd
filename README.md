@@ -546,7 +546,7 @@ public class Kevin extends Developer implements AprendizContinuo {
 | 👔 Recrutador | entrega de ponta a ponta com time, prazo e documentação | [README do projeto](https://github.com/k3vinrich4rd/rkf_bank) |
 | 🧑‍💻 Tech lead | Spring Security como **OAuth2 Resource Server**, `@Version`, `@Transactional`, Flyway com `ddl-auto=validate`, testes em todas as camadas | [guia técnico](https://github.com/k3vinrich4rd/rkf_bank/blob/develop/backend/README_IMPLEMENTACAO.md) |
 | 🧪 QA | roteiro do zero (IntelliJ, Swagger, Insomnia e `curl`) e a coleção com **83** requisições do cliente, cada uma com a resposta esperada | [guia de testes manuais](https://github.com/k3vinrich4rd/rkf_bank/blob/develop/backend/README_TESTES_E2E.md) |
-| 🏛️ Arquiteto | diagnóstico da arquitetura (monólito em camadas + BFF, 15 design patterns) e o alvo de **monólito modular**, já em revisão | [diagnóstico](https://github.com/k3vinrich4rd/rkf_bank#-arquitetura) · [revisão de 20/10](https://github.com/k3vinrich4rd/rkf_bank/blob/develop/backend/README_IMPLEMENTACAO.md#8-revisão-de-arquitetura-20102026) |
+| 🏛️ Arquiteto | diagnóstico da arquitetura na **main em produção** (monólito em camadas + BFF, 15 design patterns) e a revisão de riscos aplicada no mesmo dia | [diagnóstico](https://github.com/k3vinrich4rd/rkf_bank#-arquitetura) · [revisão de 20/10](https://github.com/k3vinrich4rd/rkf_bank/blob/develop/backend/README_IMPLEMENTACAO.md#8-revisão-de-arquitetura-20102026) |
 
 <div align="center">
 
@@ -692,10 +692,10 @@ existem no ambiente dela; visitantes têm um perfil próprio, com contas fictíc
 </details>
 
 <details>
-<summary><b>🚀 Capítulo 5 — O que vem agora</b></summary>
+<summary><b>🚀 Capítulo 5 — Produção (03/11)</b></summary>
 <br/>
 
-Já feito: **Testcontainers** (MySQL real nos testes), `GET /contas/{id}`, **LGPD mínimo**, **Swagger**, **TDD** no domínio da `Conta` e o fim do **N+1** nas listas do ADMIN. Tudo isso está na `main` desde 29/10 (PR #76): **MVP concluído**. Desde 03/11 está **em produção** ([site](https://rkfbank.vercel.app) · [API e Swagger](https://rkfbank-api-zncu.onrender.com/swagger-ui.html)), e quem preferir ainda roda na própria máquina em 1 comando (perfil `visitante`). Depois: **Pix**, já num monólito modular por assunto (a refatoração está **em revisão** na branch `refactor/monolito-modular`).
+**Testcontainers** (MySQL real nos testes), `GET /contas/{id}`, **LGPD mínimo**, **Swagger**, **TDD** no domínio da `Conta` e o fim do **N+1** nas listas do ADMIN estão na `main` desde 29/10 (PR #76): **MVP concluído**. Desde **03/11** o RKF Bank está **em produção** ([site](https://rkfbank.vercel.app) · [API e Swagger](https://rkfbank-api-zncu.onrender.com/swagger-ui.html)), e quem preferir ainda roda na própria máquina em 1 comando (perfil `visitante`). O produto está **completo** nessa entrega: sem novas funcionalidades previstas no momento.
 
 </details>
 
@@ -795,32 +795,23 @@ flowchart LR
 </div>
 
 <details>
-<summary><b>🏛️ Arquitetura hoje e para onde vai</b></summary>
+<summary><b>🏛️ Arquitetura na produção</b></summary>
 <br/>
 
-**Hoje (na `main`, desde o PR #76 de 29/10):** monólito em camadas (controller → service → repository), certo para o MVP, com um BFF em Next.js na frente
-e 15 design patterns já no código ([diagnóstico](https://github.com/k3vinrich4rd/rkf_bank#-arquitetura)). **Alvo:** monólito modular por
-assunto: um deploy só, código separado por domínio. A refatoração já existe e está **em revisão** na branch
-`refactor/monolito-modular` (pastas por assunto, porta `ConsultaCep`, fronteiras verificadas com ArchUnit e comprovante
-assíncrono por Outbox, 395 testes verdes), fora da `develop` até a revisão do time. Microsserviço foi descartado de propósito: três pessoas
-e um banco não pagam o custo de rede e consistência eventual.
+**Na `main` em produção (desde o PR #76 de 29/10):** monólito em camadas (controller → service → repository), com um BFF em Next.js na frente
+e 15 design patterns já no código ([diagnóstico](https://github.com/k3vinrich4rd/rkf_bank#-arquitetura)). Microsserviço foi descartado de propósito: três pessoas
+e um banco não pagam o custo de rede e consistência eventual. O produto fecha nessa arquitetura.
 
 ```mermaid
 flowchart LR
-    subgraph Hoje["Hoje na main — camadas"]
+    subgraph Prod["Produção na main — camadas"]
         C[controllers] --> S[services] --> R[repositories]
+        R --> DB[(MySQL 8.4)]
     end
-    subgraph Alvo["Em revisão — monólito modular"]
-        CLI[clientes] --> CEP{{"porta ConsultaCep"}}
-        CONTA[contas] --> OUT[("Outbox do comprovante")]
-        AUTH[autenticacao]
-        TIT["titular (LGPD)"]
-        PIX["pix (futuro)"] -.-> CONTA
-    end
-    Hoje -- "branch refactor/monolito-modular<br/>ArchUnit nas fronteiras" --> Alvo
+    BFF[BFF Next.js] --> C
 ```
 
-Os cinco riscos apontados na revisão (idempotência, cascata, número de conta, conciliação e health check) foram
+Os cinco riscos apontados na revisão de 20/10 (idempotência, cascata, número de conta, conciliação e health check) foram
 resolvidos no mesmo dia, com testes.
 [Revisão completa](https://github.com/k3vinrich4rd/rkf_bank/blob/develop/backend/README_IMPLEMENTACAO.md#8-revisão-de-arquitetura-20102026).
 
@@ -1819,7 +1810,7 @@ flowchart LR
 
 Banco digital que construí com o Renan e o Fellipe, **MVP concluído**: **360 testes** na API e **31** no site (todos verdes também num MySQL 8.4 real), coleção do Insomnia com **121/121** requisições passando contra a API real (equipe) e o contrato da API na versão **3.2**. Tudo isso está na `main` desde 29/10 (PR #76, revisado e mergeado pelo Renan). **✅ Em produção desde 03/11/2026**, de graça: [site na Vercel](https://rkfbank.vercel.app), [API no Render](https://rkfbank-api-zncu.onrender.com/actuator/health) ([Swagger só leitura](https://rkfbank-api-zncu.onrender.com/swagger-ui.html)) e MySQL no Aiven, com o smoke de **41/41** verificações passando no ar. Quem preferir roda na própria máquina ([1 comando, sem Docker](https://github.com/k3vinrich4rd/rkf_bank/blob/main/VISITANTES.md)).
 
-**Últimos incrementos (27 a 29/10):** domínio rico na `Conta` com **TDD**, `equals`/`hashCode` nas entidades JPA, respostas imutáveis, **threads virtuais** (mantendo o Java 25), `GET /clientes/{clienteId}/contas` só para o ADMIN e o fim do **N+1** nas listas do ADMIN (`LAZY` + `@EntityGraph`, medido por teste) — tudo com teste. O README do projeto ganhou o diagnóstico de arquitetura, as **11 skills de IA** do time e as **95 anotações** explicadas. O **Outbox** do comprovante já está implementado na branch `refactor/monolito-modular` (em revisão); Spring Cloud, Pub/Sub + DLQ, AWS e OAuth2/OIDC seguem **em estudo para implementação**, com plano escrito.
+**Últimos incrementos até a produção:** domínio rico na `Conta` com **TDD**, `equals`/`hashCode` nas entidades JPA, respostas imutáveis, **threads virtuais** (mantendo o Java 25), `GET /clientes/{clienteId}/contas` só para o ADMIN e o fim do **N+1** nas listas do ADMIN (`LAZY` + `@EntityGraph`, medido por teste) — tudo com teste (27 a 29/10). O README do projeto ganhou o diagnóstico de arquitetura, as **11 skills de IA** do time e as **95 anotações** explicadas. Em **03/11/2026** o RKF Bank entrou **em produção** (Vercel + Render + Aiven) e o produto ficou **completo** nessa entrega.
 
 [🏦 Ver o projeto](https://github.com/k3vinrich4rd/rkf_bank) · [🔬 Laboratório de arquitetura](https://github.com/k3vinrich4rd/rkf_bank#-laboratório-de-arquitetura)
 
@@ -1853,9 +1844,9 @@ Curso [AWS na Prática (Udemy)](https://www.udemy.com/course/aws-na-pratica/lear
 <summary><b>🤖 5 · IA para backend</b> — ⏭️ depois</summary>
 <br/>
 
-Os mesmos conteúdos da trilha de IA do meu Obsidian, na ordem: **LLM e tokens → RAG (embeddings) → tool calling → agentes → Spring AI → Spec-Driven Development → evals → ferramentas (Claude Code, Cursor, Copilot, n8n)**. Já uso IA no dia a dia com método (spec, testes e revisão); o próximo passo é **construir** com ela: um assistente de extrato no RKF Bank com `@Tool`, regra de dono e evals.
+Os mesmos conteúdos da trilha de IA do meu Obsidian, na ordem: **LLM e tokens → RAG (embeddings) → tool calling → agentes → Spring AI → Spec-Driven Development → evals → ferramentas (Claude Code, Cursor, Copilot, n8n)**. Já uso IA no dia a dia com método (spec, testes e revisão); o próximo passo é **estudar** essa trilha e levar o que aprender para o **Wisdom** (projeto atual), não para novas features no RKF Bank.
 
-Curso escolhido: [Formação Inteligência Artificial: Do Zero ao Avançado (Udemy)](https://www.udemy.com/course/inteligencia-artificial-para-iniciantes/), 24,5 h, nota 4,65 com 12,4 mil avaliações e atualizado em outubro de 2026. É a base de IA; depois dele vem o Spring AI, para levar o que aprendi para a stack do RKF Bank.
+Curso escolhido: [Formação Inteligência Artificial: Do Zero ao Avançado (Udemy)](https://www.udemy.com/course/inteligencia-artificial-para-iniciantes/), 24,5 h, nota 4,65 com 12,4 mil avaliações e atualizado em outubro de 2026. É a base de IA; depois dele vem o Spring AI, na stack do projeto atual.
 
 </details>
 
@@ -1899,7 +1890,7 @@ Com **threads virtuais** (Java 21+; o RKF Bank segue no 25), ele **não fica na 
 <summary><b>5. 📨 Por que ainda não tem broker de mensageria nem microsserviços no RKF Bank?</b></summary>
 <br/>
 
-Porque **arquitetura resolve problema que existe**. O primeiro passo já foi dado sem broker: o comprovante sai por **Outbox**, gravado na transação do dinheiro (branch `refactor/monolito-modular`, em revisão). Spring Cloud, Pub/Sub com DLQ, AWS e OAuth2/OIDC estão **em estudo para implementação**, com plano e um **gatilho** escrito para cada um ([ver o plano](https://github.com/k3vinrich4rd/rkf_bank/blob/develop/planing/estudos-arquitetura.md)). O MVP vem primeiro.
+Porque **arquitetura resolve problema que existe**. O RKF Bank é um monólito em camadas com três pessoas e um banco: broker e microsserviços não pagariam o custo de rede e de consistência eventual. O produto está **completo em produção sem broker** — de propósito. O plano de estudos de arquitetura (com gatilhos escritos) fica no [laboratório do projeto](https://github.com/k3vinrich4rd/rkf_bank/blob/develop/planing/estudos-arquitetura.md) como referência de estudo, não como fila de features do RKF.
 
 </details>
 
@@ -2230,21 +2221,25 @@ flowchart LR
 
 </details>
 
-### 🗳️ Você decide: o que o RKF Bank ganha depois?
+<a name="-️-você-decide-o-que-o-rkf-bank-ganha-depois"></a>
+<a name="️-você-decide-o-que-o-rkf-bank-ganha-depois"></a>
+<a name="-você-decide-o-que-o-rkf-bank-ganha-depois"></a>
 
-> Enquete **ao vivo**. Clique no placar da opção que você quer ver: abre uma issue já preenchida, é só enviar. Ela fecha sozinha e o voto entra na conta em alguns minutos. A mais votada sobe na fila do meu PDI. 🚀
->
-> ✅ **Já entregues**, que estavam nesta enquete: **Testcontainers** (7 testes no MySQL 8.4 real, no CI) e **Swagger / OpenAPI** (springdoc com o botão *Authorize*).
+### ✅ Entregue no RKF Bank (produto concluído)
 
-<div align="center">
+> O RKF Bank está **completo e em produção** desde **03/11/2026**. Não há fila de novas funcionalidades no momento. Abaixo, o que já existe de fato — fatos do próprio README e do repositório.
 
-| Opção | O que significa | Placar (clique para votar) |
-|---|---|:-:|
-| 💸 Pix simulado | transferência instantânea por chave entre contas do RKF Bank | <a href="https://github.com/k3vinrich4rd/k3vinrich4rd/issues/new?template=voto.yml&title=%5Bvoto%5D%20pix"><img src="https://img.shields.io/github/issues-search?query=repo%3Ak3vinrich4rd%2Fk3vinrich4rd%20is%3Aissue%20in%3Atitle%20%22%5Bvoto%5D%20pix%22&label=votos&color=32BCAD&style=for-the-badge&cacheSeconds=300" alt="votos em pix"/></a> |
-| 🤖 Assistente do extrato | perguntar sobre os gastos em português, com Spring AI e a regra de dono | <a href="https://github.com/k3vinrich4rd/k3vinrich4rd/issues/new?template=voto.yml&title=%5Bvoto%5D%20assistente-ia"><img src="https://img.shields.io/github/issues-search?query=repo%3Ak3vinrich4rd%2Fk3vinrich4rd%20is%3Aissue%20in%3Atitle%20%22%5Bvoto%5D%20assistente-ia%22&label=votos&color=412991&style=for-the-badge&cacheSeconds=300" alt="votos em assistente-ia"/></a> |
-| 📨 Mensageria | comprovante por fila (RabbitMQ) em cima do Outbox que já existe | <a href="https://github.com/k3vinrich4rd/k3vinrich4rd/issues/new?template=voto.yml&title=%5Bvoto%5D%20mensageria"><img src="https://img.shields.io/github/issues-search?query=repo%3Ak3vinrich4rd%2Fk3vinrich4rd%20is%3Aissue%20in%3Atitle%20%22%5Bvoto%5D%20mensageria%22&label=votos&color=6A1B9A&style=for-the-badge&cacheSeconds=300" alt="votos em mensageria"/></a> |
+| Entrega | O que é | Onde conferir |
+|---|---|---|
+| 🏦 Conta, depósito, saque, transferência e extrato | regras de banco: saldo nunca negativo, transferência atômica, lock otimista (`@Version`) | [site](https://rkfbank.vercel.app) · [código](https://github.com/k3vinrich4rd/rkf_bank) |
+| 🔐 Login JWT + regra de dono | Spring Security como OAuth2 Resource Server, BCrypt, `401`/`403` | [guia técnico](https://github.com/k3vinrich4rd/rkf_bank/blob/develop/backend/README_IMPLEMENTACAO.md) |
+| 🗃️ Flyway V1→V15 + seed | schema versionado; Hibernate só valida | [migrações no projeto](https://github.com/k3vinrich4rd/rkf_bank) |
+| 🧪 **360** testes + Testcontainers | 7 testes no MySQL 8.4 real no CI | badge de testes · CI do backend |
+| 📘 Swagger / OpenAPI | springdoc com botão *Authorize* | [Swagger só leitura](https://rkfbank-api-zncu.onrender.com/swagger-ui.html) |
+| ☁️ Produção no ar | site na Vercel, API no Render, MySQL no Aiven (R$ 0) | [rkfbank.vercel.app](https://rkfbank.vercel.app) |
+| ✅ Já saíram de enquetes antigas | **Testcontainers** e **Swagger / OpenAPI** (entregues e na `main`) | PR #76 · produção 03/11 |
 
-</div>
+<sub>Produto fechado nessa entrega. Estudos rumo ao Pleno (inglês, mensageria como competência, Spring Professional) ficam no PDI abaixo — sem virar feature nova do RKF.</sub>
 
 <details open>
 <summary><b>📅 Cronograma: do MVP do RKF Bank ao Pleno</b></summary>
