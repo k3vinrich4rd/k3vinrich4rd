@@ -828,6 +828,15 @@
       }
     },
     {
+      "nome": "Projeção de dados",
+      "area": "Spring",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
       "nome": "Spring Boot - auto-configuração e starters",
       "area": "Spring",
       "status": "praticado",
@@ -955,7 +964,7 @@
     }
   ],
   "biblioteca": {
-    "notas": 79,
+    "notas": 80,
     "comSem": 68,
     "sessoes": [
       "IA, Spring e LGPD",
@@ -1299,8 +1308,13 @@
         ]
       }
     ],
-    "diasDiario30": 16,
+    "diasDiario30": 17,
     "recentes": [
+      {
+        "nome": "Projeção de dados",
+        "area": "Spring",
+        "criado": "2026-11-06"
+      },
       {
         "nome": "Paginação e countQuery",
         "area": "Spring",
@@ -1334,11 +1348,6 @@
       {
         "nome": "N+1 consultas",
         "area": "Spring",
-        "criado": "2026-10-29"
-      },
-      {
-        "nome": "Síncrono e assíncrono",
-        "area": "Arquitetura",
         "criado": "2026-10-29"
       }
     ]

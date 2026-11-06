@@ -1,6 +1,6 @@
 {
   "atualizado": "2026-11-06",
-  "observacao": "Próximos estudos, em conjunto: Java + AWS + IA. Percentual da meta = média dos cursos com percentual conhecido; null = 'a atualizar' (fora da média). Java Spring Professional: 50% (71 de 142 aulas) lido na DevSuperior em 06/11/2026. AWS na Prática: 0% lido na Udemy em 04/11/2026 (curso começado). IA: Formação Inteligência Artificial: Do Zero ao Avançado (Udemy, Andre Iacono; nota 4,65 com 12,4 mil avaliações, 24,5 h, atualizado em 10/2026), escolhido pelo Kevin em 04/11/2026, ainda sem matrícula.",
+  "observacao": "Próximos estudos, em conjunto: Java + AWS + IA. Percentual da meta = média dos cursos com percentual conhecido; null = 'a atualizar' (fora da média). Java Spring Professional: 52% (74 de 142 aulas) lido na DevSuperior em 06/11/2026. AWS na Prática: 0% lido na Udemy em 04/11/2026 (curso começado). IA: Formação Inteligência Artificial: Do Zero ao Avançado (Udemy, Andre Iacono; nota 4,65 com 12,4 mil avaliações, 24,5 h, atualizado em 10/2026), escolhido pelo Kevin em 04/11/2026, ainda sem matrícula.",
   "metas": [
     {
       "id": "java",
@@ -10,7 +10,7 @@
           "nome": "Java Spring Professional",
           "plataforma": "DevSuperior",
           "url": "https://devsuperior.club/courses/5/lessons?lessonId=248",
-          "percentual": 50,
+          "percentual": 52,
           "atualizado": "2026-11-06",
           "capitulos": [
             {
@@ -30,7 +30,7 @@
             },
             {
               "nome": "JPA, consultas SQL e JPQL",
-              "feitas": 19,
+              "feitas": 22,
               "total": 38
             },
             {

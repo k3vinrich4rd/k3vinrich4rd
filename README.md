@@ -1963,9 +1963,9 @@ quadrantChart
 <br/>
 
 <!-- AUTO:estudos:START -->
-**46** assuntos praticados em projeto · **8** em andamento · **2** planejados
+**46** assuntos praticados em projeto · **9** em andamento · **2** planejados
 
-📚 **79** notas de estudo no segundo cérebro · **68** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
+📚 **80** notas de estudo no segundo cérebro · **68** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
 
 ```mermaid
 mindmap
@@ -2017,6 +2017,7 @@ mindmap
       🔄 JPQL e JOIN FETCH
       ✅ N+1 consultas
       🔄 OAuth2 e OIDC
+      🔄 Projeção de dados
       ✅ Spring Boot - auto-configuração e starters
       ✅ Spring Boot Actuator
       ✅ Spring Boot Test
@@ -2047,6 +2048,7 @@ mindmap
 | 🔄 OAuth2 e OIDC | Spring | <sub>2 a fazer</sub> |
 | 🔄 Paginação e countQuery | spring | — |
 | 🔄 Perfis do Spring e homologação | spring | — |
+| 🔄 Projeção de dados | Spring | — |
 | ⏳ Mensageria e Outbox | Arquitetura | <sub>6 a fazer</sub> |
 | ⏳ Spring AI | IA | <sub>5 a fazer</sub> |
 
@@ -2061,7 +2063,7 @@ mindmap
 
 <!-- AUTO:cerebro:START -->
 <div align="center">
-  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 16 dias com registro, 79 notas, 2 trilhas e 46 assuntos praticados; progresso de cada trilha e de cada módulo"/>
+  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 17 dias com registro, 80 notas, 2 trilhas e 46 assuntos praticados; progresso de cada trilha e de cada módulo"/>
 </div>
 
 <details>
@@ -2069,8 +2071,8 @@ mindmap
 <br/>
 
 <table align="center"><tr>
-<td align="center">🗓️<br/><b>16</b> dias com registro<br/><sub>nos últimos 30</sub></td>
-<td align="center">📚<br/><b>79</b> notas de estudo<br/><sub>68 com exemplo com × sem</sub></td>
+<td align="center">🗓️<br/><b>17</b> dias com registro<br/><sub>nos últimos 30</sub></td>
+<td align="center">📚<br/><b>80</b> notas de estudo<br/><sub>68 com exemplo com × sem</sub></td>
 <td align="center">🧭<br/><b>2</b> trilhas<br/><sub>12 módulos</sub></td>
 <td align="center">✅<br/><b>46</b> assuntos<br/><sub>praticados em projeto</sub></td>
 </tr></table>
@@ -2112,7 +2114,7 @@ mindmap
 
 </details>
 
-📝 **Estudado por último:** `Spring` Paginação e countQuery · `Spring` Perfis do Spring e homologação · `Spring` Anotações Java e Spring · `Arquitetura` Arquiteturas de software · `Spring` Carregamento EAGER e LAZY · `Spring` JPQL e JOIN FETCH · `Spring` N+1 consultas · `Arquitetura` Síncrono e assíncrono
+📝 **Estudado por último:** `Spring` Projeção de dados · `Spring` Paginação e countQuery · `Spring` Perfis do Spring e homologação · `Spring` Anotações Java e Spring · `Arquitetura` Arquiteturas de software · `Spring` Carregamento EAGER e LAZY · `Spring` JPQL e JOIN FETCH · `Spring` N+1 consultas
 
 <sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-11-06</sub>
 <!-- AUTO:cerebro:END -->
@@ -2697,7 +2699,7 @@ O chatbot responde; o agente usa ferramentas em loop até cumprir um objetivo. P
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/progresso-50%25-EC7000?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/progresso-52%25-EC7000?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/cap%C3%ADtulos%20conclu%C3%ADdos-3%20de%206-3fb950?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/desafios%20entregues-3%20de%205-58a6ff?style=for-the-badge"/>
 
@@ -2705,7 +2707,7 @@ O chatbot responde; o agente usa ferramentas em loop até cumprir um objetivo. P
 
 ```mermaid
 flowchart LR
-    C1["① Componentes e<br/>injeção de<br/>dependência<br/>✅ 14/14"] --> C2["② Modelo de domínio<br/>e ORM<br/>✅ 15/15"] --> C3["③ API REST, camadas,<br/>CRUD, exceções,<br/>validações<br/>✅ 23/23"] --> C4["④ JPA, consultas SQL<br/>e JPQL<br/>🔄 19/38"] --> C5["⑤ Login e controle<br/>de acesso<br/>📅 0/34"] --> C6["⑥ Homologação e<br/>implantação com<br/>CI/CD<br/>📅 0/18"]
+    C1["① Componentes e<br/>injeção de<br/>dependência<br/>✅ 14/14"] --> C2["② Modelo de domínio<br/>e ORM<br/>✅ 15/15"] --> C3["③ API REST, camadas,<br/>CRUD, exceções,<br/>validações<br/>✅ 23/23"] --> C4["④ JPA, consultas SQL<br/>e JPQL<br/>🔄 22/38"] --> C5["⑤ Login e controle<br/>de acesso<br/>📅 0/34"] --> C6["⑥ Homologação e<br/>implantação com<br/>CI/CD<br/>📅 0/18"]
     style C1 fill:#1f6f3f,color:#fff
     style C2 fill:#1f6f3f,color:#fff
     style C3 fill:#1f6f3f,color:#fff
@@ -2717,11 +2719,11 @@ flowchart LR
 | 1 | Componentes e injeção de dependência | 14/14 | 1h26 | ✅ | [Cálculo de pedido](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) com `OrderService` + `ShippingService` injetados pelo Spring |
 | 2 | Modelo de domínio e ORM | 15/15 | 2h17 | ✅ | [Sistema de eventos](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) no H2 e o modelo do [DSCommerce](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) |
 | 3 | API REST, camadas, CRUD, exceções, validações | 23/23 | 3h14 | ✅ | [CRUD de clientes](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) com **10/10** no checklist de correção |
-| 4 | JPA, consultas SQL e JPQL | 19/38 | 6h52 | 🔄 | Próximo: desafio *Consulta vendas* (relatório paginado + sumário por vendedor) |
+| 4 | JPA, consultas SQL e JPQL | 22/38 | 6h52 | 🔄 | Próximo: desafio *Consulta vendas* (relatório paginado + sumário por vendedor) |
 | 5 | Login e controle de acesso | 0/34 | 4h53 | 📅 | DSCommerce completo com login (OAuth2 + JWT) e pedidos |
 | 6 | Homologação e implantação com CI/CD | 0/18 | 2h09 | 📅 | Perfis dev/prod, PostgreSQL no Docker e deploy com CI/CD |
 
-<sub>71 de 142 aulas assistidas</sub>
+<sub>74 de 142 aulas assistidas</sub>
 
 **📌 Na fila (matriculado, ainda não comecei):** [Java Spring Expert](https://devsuperior.club/courses/6) (204 aulas) · [Java Spring Reference](https://devsuperior.club/courses/7) (151 aulas) · [Java Spring Tópicos Avançados](https://devsuperior.club/courses/63) (11 aulas) · [Análise de Requisitos Expert](https://devsuperior.club/courses/10) (50 aulas) · [Bônus Estudo de caso CI/CD AWS e Github Actions](https://devsuperior.club/courses/12) (17 aulas)
 
