@@ -172,7 +172,6 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <!-- AUTO:agora:START -->
 **🔥 Esta semana**
 
-- 🔨 Revisar a branch `refactor/monolito-modular`
 - 🎯 Foco de estudo: **inglês**
 - ✅ Última entrega: Release develop → main (PR #76, mergeado pelo Renan): TDD na `Conta`, threads virtuais, fim do N+1, contas por cliente só para o ADMIN, README com skills, diagnóstico e anotações — 2026-10-29
 <!-- AUTO:agora:END -->
@@ -1965,7 +1964,7 @@ quadrantChart
 | Testes de integração com banco real | ✅ | RKF Bank (7 testes no MySQL 8.4 real com `@ServiceConnection`: migrações, fluxo bancário e concorrência; rodam no CI; PR #60, na main em 25/10/2026) |
 | Deploy em nuvem | ✅ | RKF Bank em produção: site na Vercel, API no Render e MySQL no Aiven, R$ 0 (03/11/2026) |
 | Inglês técnico | 🔄 | em andamento |
-| Mensageria e microsserviços | ⏳ | Outbox do comprovante pronto na branch `refactor/monolito-modular` (em revisão); falta o broker |
+| Mensageria e microsserviços | ⏳ | Estudo planejado para o próximo ciclo / projeto futuro (competência de Pleno); não é pendência do RKF Bank, já em produção |
 
 <sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-11-06</sub>
 <!-- AUTO:regua:END -->
@@ -2254,7 +2253,7 @@ flowchart LR
 <!-- AUTO:gantt:START -->
 ```mermaid
 gantt
-    title Do MVP ao Pleno
+    title Histórico: do MVP à produção
     dateFormat YYYY-MM-DD
     axisFormat %d/%m
     section MVP
@@ -2262,14 +2261,13 @@ gantt
     Semana 3 - movimentações          :done,    s3, 2026-10-19, 7d
     Semana 4 - testar e fechar        :done,    s4, 2026-10-26, 4d
     MVP concluído (PR #76)            :milestone, done, m1, 2026-10-29, 0d
-    section Pleno
+    section Até a produção
     Flyway                            :done,    f1, 2026-10-15, 2d
     Spring Security + JWT             :done,    f2, 2026-10-16, 2d
     Testcontainers                    :done,    f3, 2026-10-20, 4d
     Swagger                           :done,    f6, 2026-10-21, 3d
     Fim do N+1 (LAZY e EntityGraph)   :done,    f7, 2026-10-29, 1d
-    Monólito modular (em revisão)     :active,  f8, 2026-10-29, 3d
-    Mensageria (broker no Outbox)     :         f5, after f8, 10d
+    Produção (site + API no ar)       :milestone, done, m2, 2026-11-03, 0d
 ```
 <!-- AUTO:gantt:END -->
 
@@ -2288,7 +2286,7 @@ gantt
 - ✅ Trilhas curtas de teste: visitante em 13 passos, ADMIN em 25 e cliente em 36 (`BACKEND_E2E.md` reescrito), geradas de execução real (83/83; 119/119 no H2 e no MySQL) — 2026-10-26
 - ✅ Dependências do front (TypeScript 6, cn, radix-ui, CI) na develop (PR #69); só o PR #70 develop → main aberto — 2026-10-26
 
-**🚀 MVP do RKF Bank (concluído em 29/10/2026)** `████████████` 13/13
+**📜 Histórico do MVP do RKF Bank (concluído · em produção desde 03/11/2026)** `████████████` 13/13
 
 <b>Backend</b> `████████` 3/3
 
@@ -2312,13 +2310,12 @@ gantt
 - [x] Roteiros de aceite prontos: `VISITANTES.md` (público) e o guia da equipe para o Fellipe (PO & QA)
 - [x] ~~Colocar no ar~~ → fora do escopo (portfólio); Docker e perfil `prod` seguem testados no CI
 
-**📏 Rumo ao Pleno** `██████████░░` 19/24 passos
+**📏 Rumo ao Pleno (estudos)** `███████████░` 19/21 passos
 
 - [x] **Flyway** `████████` 6/6
 - [x] **Spring Security + JWT** `████████` 6/6
 - [x] **Testcontainers ✅** `████████` 4/4
 - [x] **Swagger / OpenAPI ✅** `████████` 3/3
-- [ ] **Mensageria** 🔮 <sub>3 a fazer</sub>
 - [ ] **Inglês** <sub>2 a fazer</sub>
 
 **🧹 Débitos técnicos:** 9/18 resolvidos

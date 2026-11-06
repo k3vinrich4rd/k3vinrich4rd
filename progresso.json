@@ -93,7 +93,7 @@
       {
         "nome": "Mensageria e microsserviços",
         "status": "planejada",
-        "evidencia": "Outbox do comprovante pronto na branch `refactor/monolito-modular` (em revisão); falta o broker",
+        "evidencia": "Estudo planejado para o próximo ciclo / projeto futuro (competência de Pleno); não é pendência do RKF Bank, já em produção",
         "proximo": false
       }
     ]
@@ -106,7 +106,7 @@
   "rkf": {
     "testes": 360,
     "checklist": {
-      "gantt": "```mermaid\ngantt\n    title Do MVP ao Pleno\n    dateFormat YYYY-MM-DD\n    axisFormat %d/%m\n    section MVP\n    Semana 2 - cliente e conta        :done,    s2, 2026-10-12, 7d\n    Semana 3 - movimentações          :done,    s3, 2026-10-19, 7d\n    Semana 4 - testar e fechar        :done,    s4, 2026-10-26, 4d\n    MVP concluído (PR #76)            :milestone, done, m1, 2026-10-29, 0d\n    section Pleno\n    Flyway                            :done,    f1, 2026-10-15, 2d\n    Spring Security + JWT             :done,    f2, 2026-10-16, 2d\n    Testcontainers                    :done,    f3, 2026-10-20, 4d\n    Swagger                           :done,    f6, 2026-10-21, 3d\n    Fim do N+1 (LAZY e EntityGraph)   :done,    f7, 2026-10-29, 1d\n    Monólito modular (em revisão)     :active,  f8, 2026-10-29, 3d\n    Mensageria (broker no Outbox)     :         f5, after f8, 10d\n```",
+      "gantt": "```mermaid\ngantt\n    title Histórico: do MVP à produção\n    dateFormat YYYY-MM-DD\n    axisFormat %d/%m\n    section MVP\n    Semana 2 - cliente e conta        :done,    s2, 2026-10-12, 7d\n    Semana 3 - movimentações          :done,    s3, 2026-10-19, 7d\n    Semana 4 - testar e fechar        :done,    s4, 2026-10-26, 4d\n    MVP concluído (PR #76)            :milestone, done, m1, 2026-10-29, 0d\n    section Até a produção\n    Flyway                            :done,    f1, 2026-10-15, 2d\n    Spring Security + JWT             :done,    f2, 2026-10-16, 2d\n    Testcontainers                    :done,    f3, 2026-10-20, 4d\n    Swagger                           :done,    f6, 2026-10-21, 3d\n    Fim do N+1 (LAZY e EntityGraph)   :done,    f7, 2026-10-29, 1d\n    Produção (site + API no ar)       :milestone, done, m2, 2026-11-03, 0d\n```",
       "agora": [
         {
           "feito": true,
@@ -139,10 +139,6 @@
         {
           "feito": true,
           "texto": "⏫ PR #76 `develop` → `main` mergeado pelo Renan (CI verde, 360 testes) — 2026-10-29"
-        },
-        {
-          "feito": false,
-          "texto": "Revisar a branch `refactor/monolito-modular` (módulos, porta do CEP, ArchUnit, Outbox) pelo `REFATORACAO_MODULAR_E2E.md` da equipe"
         },
         {
           "feito": true,
@@ -248,7 +244,7 @@
       },
       "pleno": {
         "feitos": 19,
-        "total": 24,
+        "total": 21,
         "grupos": [
           {
             "nome": "Flyway",
@@ -359,27 +355,6 @@
               {
                 "feito": true,
                 "texto": "Fluxo completo só pelo Swagger UI (`VISITANTES.md`, \"sem Insomnia, use o Swagger\")"
-              }
-            ]
-          },
-          {
-            "nome": "Mensageria",
-            "futuro": true,
-            "proximo": false,
-            "feitos": 0,
-            "total": 3,
-            "itens": [
-              {
-                "feito": false,
-                "texto": "`TransferenciaRealizadaEvent` com `@TransactionalEventListener`"
-              },
-              {
-                "feito": false,
-                "texto": "RabbitMQ no `docker-compose` + consumidor de notificação/comprovante"
-              },
-              {
-                "feito": false,
-                "texto": "Padrão Outbox + consumidor idempotente (Outbox pronto na branch `refactor/monolito-modular`, em revisão; falta o broker)"
               }
             ]
           },
