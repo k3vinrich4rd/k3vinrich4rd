@@ -13,6 +13,7 @@
 <p align="center">
   <b>Dev Java backend</b> · Spring Boot · Spring Data JPA/Hibernate · Spring Security · +4 anos na Zup Innovation (grupo Itaú)<br/>
   🏦 <b>Em produção:</b> <a href="https://rkfbank.vercel.app">RKF Bank</a>: Java 25 + Spring Boot 4.1 · JWT · <code>Idempotency-Key</code> · lock otimista (<code>@Version</code>) · Flyway · CI com CodeQL<br/>
+  🦊 <b>Construindo agora:</b> <a href="#-wisdom--o-próximo-projeto">Wisdom</a> (repositório privado), app gamificado para aprender inglês · dono do backend e do contrato da API · Java 25 · Spring Boot 4.1 · Spring Modulith · PostgreSQL 18 · OpenAPI contract-first · fundação pronta, Fase 1 a seguir<br/>
   <a href="https://github.com/k3vinrich4rd/rkf_bank"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fk3vinrich4rd%2Fk3vinrich4rd%2Fmain%2Fprogresso.json&query=%24.rkf.testes&label=testes%20no%20RKF%20Bank&color=22C55E&style=flat-square&logo=junit5&logoColor=white" alt="Testes no RKF Bank"/></a>
   <a href="https://github.com/k3vinrich4rd/rkf_bank/actions/workflows/backend-ci.yml"><img src="https://github.com/k3vinrich4rd/rkf_bank/actions/workflows/backend-ci.yml/badge.svg?branch=develop" alt="CI do RKF Bank"/></a><br/>
   <a href="https://github.com/k3vinrich4rd/rkf_bank">📂 código</a> ·
@@ -487,7 +488,9 @@ public class Kevin extends Developer implements AprendizContinuo {
 
 <img src="assets/secoes/projeto-atual.svg" width="100%" alt=""/>
 
-## 🏦 Projeto atual — RKF Bank
+<a name="-projeto-atual--rkf-bank"></a>
+
+## 🏦 RKF Bank — em produção
 
 <div align="center">
 
@@ -1019,7 +1022,9 @@ sequenceDiagram
 
 <img src="assets/secoes/wisdom.svg" width="100%" alt=""/>
 
-## 🦊 Wisdom — o próximo projeto
+<a name="-wisdom--o-próximo-projeto"></a>
+
+## 🦊 Wisdom — projeto atual (em construção)
 
 <div align="center">
 
@@ -1036,6 +1041,8 @@ sequenceDiagram
 > **O Wisdom é um app gamificado para aprender inglês, nascido em Osasco, SP, com cinco fundadores.** Eu sou o dono do
 > **backend** e do **contrato da API**; o **[Renan Barros](https://www.linkedin.com/in/renan-costa-barros/)** faz o frontend.
 > 🔒 O repositório é **privado**: o produto e a marca são confidenciais dos fundadores, então aqui fica só a parte técnica.
+
+> 🔒 **Por que não há link:** o repositório é privado porque o produto ainda não foi lançado. Aqui fica a parte técnica; a arquitetura e as decisões eu mostro numa conversa técnica.
 
 | | 🏦 RKF Bank | 🦊 Wisdom |
 |---|---|---|
@@ -1056,6 +1063,13 @@ sequenceDiagram
 - **Perfis** `visitante`, `equipe` e `prod`: em produção, a API não sobe sem os segredos.
 - **CI** com PostgreSQL real e a imagem Docker `prod` testada com 512 MB.
 - **Decisões registradas:** ADR 0001 (monólito modular) e ADR 0002 (a API é a única dona do domínio).
+
+```mermaid
+flowchart LR
+    S["Site<br/>Next.js"] -->|"contrato OpenAPI<br/>(escrito antes do codigo)"| A["API Java 25 + Spring Boot 4.1<br/>monolito modular Spring Modulith<br/>fronteiras verificadas por teste"]
+    A --> D[("PostgreSQL 18<br/>Flyway")]
+    CI["CI<br/>PostgreSQL real + imagem Docker prod"] -.->|testa| A
+```
 
 </details>
 
