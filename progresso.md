@@ -23,15 +23,15 @@ fonte: https://github.com/k3vinrich4rd/k3vinrich4rd
 
 ## 🎯 Metas (Java + AWS + IA, em conjunto)
 
-### ☕ Java · 52%
+### ☕ Java · 53%
 
-`█████░░░░░` 52%
+`█████░░░░░` 53%
 
-- **52%** · [Java Spring Professional](https://devsuperior.club/courses/5/lessons?lessonId=248) · DevSuperior (atualizado em 2026-11-06)
+- **53%** · [Java Spring Professional](https://devsuperior.club/courses/5/lessons?lessonId=248) · DevSuperior (atualizado em 2026-11-06)
   - [x] Componentes e injeção de dependência (14/14)
   - [x] Modelo de domínio e ORM (15/15)
   - [x] API REST, camadas, CRUD, exceções, validações (23/23)
-  - [ ] JPA, consultas SQL e JPQL (22/38)
+  - [ ] JPA, consultas SQL e JPQL (23/38)
   - [ ] Login e controle de acesso (0/34)
   - [ ] Homologação e implantação com CI/CD (opcional) (0/18)
 - **a atualizar** · Java Spring Expert · DevSuperior
