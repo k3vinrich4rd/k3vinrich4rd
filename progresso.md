@@ -1,5 +1,5 @@
 ---
-atualizado: 2026-11-06
+atualizado: 2026-11-07
 fonte: https://github.com/k3vinrich4rd/k3vinrich4rd
 ---
 # Progresso do Kevin
@@ -10,16 +10,16 @@ fonte: https://github.com/k3vinrich4rd/k3vinrich4rd
 
 | | Projeto | Último commit | Data |
 |:-:|---|---|---|
+| 📦 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`8510d19`](https://github.com/k3vinrich4rd/rkf_bank/commit/8510d19697631c6fda2f728aaa4803462ef4a1c5) docs(readme): bloco de revisão técnica em 2 minutos no topo | 06/11/2026 |
 | 🔒 | projeto privado | — | 04/11/2026 |
-| 📦 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`4558293`](https://github.com/k3vinrich4rd/rkf_bank/commit/4558293c34c59e797d417b723ac8877ffa1aacd2) docs(deploy): checagem diária de integridade da produção | 03/11/2026 |
 | 🔒 | projeto privado | — | 03/11/2026 |
 | 📦 | [`JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`f430211`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/f430211de74e8756ebb6520b13b52ea0bae60578) refactor: renomeia OrdemItem para OrderItem | 28/10/2026 |
 | 📦 | [`desafio-devsuperior-componentes-injecao-dependencia`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) | [`4997708`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia/commit/4997708166e270a54829b3ea94912378a03fa100) revert: main volta a ter so o desafio de componentes (o ORM foi para desafio-dev | 28/10/2026 |
 | 📦 | [`desafio-devsuperior-crud-clientes`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) | [`9b0eb79`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes/commit/9b0eb794bf407bdbe22af1196065717ef72591a9) feat: implementando correcao sugerida no feedback | 05/10/2026 |
-| 📦 | [`workshop-springboot4-mongodb`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb) | [`ecad5ce`](https://github.com/k3vinrich4rd/workshop-springboot4-mongodb/commit/ecad5cec16d1f5ef7b606e6f8b5daf5ce74ade25) feat: Implementando ajustes no projeto | 15/09/2026 |
 | 📦 | [`desafio-devsuperior-modelo-orm`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) | [`757f944`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm/commit/757f944837b07f090ea785449adbc2b0e28cd45e) docs: atualiza informações do README | 27/10/2025 |
+| 📦 | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`68de4a9`](https://github.com/k3vinrich4rd/cpf-utils/commit/68de4a91b903988d82c6cddc349121e0c9b9093d) Update README.md | 30/06/2025 |
 
-<sub>🤖 Atualizado em 06/11/2026 (horário de Brasília) pela rotina diária (<code>scripts/rodar-diario.sh</code>) · branch padrão e <code>develop</code> · 🔒 projeto privado: só a data</sub>
+<sub>🤖 Atualizado em 07/11/2026 (horário de Brasília) pela rotina diária (<code>scripts/rodar-diario.sh</code>) · branch padrão e <code>develop</code> · 🔒 projeto privado: só a data</sub>
 
 ## 🎯 Metas (Java + AWS + IA, em conjunto)
 
@@ -52,4 +52,4 @@ fonte: https://github.com/k3vinrich4rd/k3vinrich4rd
 
 ## 📓 Diário de hoje
 
-[diario/2026-11-06.md](https://github.com/k3vinrich4rd/k3vinrich4rd/blob/main/diario/2026-11-06.md) · fonte: revisao
+[diario/2026-11-07.md](https://github.com/k3vinrich4rd/k3vinrich4rd/blob/main/diario/2026-11-07.md) · fonte: obsidian
