@@ -1,6 +1,6 @@
 {
-  "atualizado": "2026-11-06",
-  "observacao": "Próximos estudos, em conjunto: Java + AWS + IA. Percentual da meta = média dos cursos com percentual conhecido; null = 'a atualizar' (fora da média). Java Spring Professional: 53% (75 de 142 aulas) lido na DevSuperior em 06/11/2026. AWS na Prática: 0% lido na Udemy em 04/11/2026 (curso começado). IA: Formação Inteligência Artificial: Do Zero ao Avançado (Udemy, Andre Iacono; nota 4,65 com 12,4 mil avaliações, 24,5 h, atualizado em 10/2026), escolhido pelo Kevin em 04/11/2026, ainda sem matrícula.",
+  "atualizado": "2026-11-09",
+  "observacao": "Próximos estudos, em conjunto: Java + AWS + IA. Percentual da meta = média dos cursos com percentual conhecido; null = 'a atualizar' (fora da média). Java Spring Professional: 53% (75 de 142 aulas) lido na DevSuperior em 09/11/2026. AWS na Prática: 0% lido na Udemy em 04/11/2026 (curso começado). IA: Formação Inteligência Artificial: Do Zero ao Avançado (Udemy, Andre Iacono; nota 4,65 com 12,4 mil avaliações, 24,5 h, atualizado em 10/2026), escolhido pelo Kevin em 04/11/2026, ainda sem matrícula.",
   "metas": [
     {
       "id": "java",
@@ -11,7 +11,7 @@
           "plataforma": "DevSuperior",
           "url": "https://devsuperior.club/courses/5/lessons?lessonId=248",
           "percentual": 53,
-          "atualizado": "2026-11-06",
+          "atualizado": "2026-11-09",
           "capitulos": [
             {
               "nome": "Componentes e injeção de dependência",

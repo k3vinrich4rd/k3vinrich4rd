@@ -1958,7 +1958,7 @@ quadrantChart
 | Inglês técnico | 🔄 | em andamento |
 | Mensageria e microsserviços | ⏳ | Outbox do comprovante pronto na branch `refactor/monolito-modular` (em revisão); falta o broker |
 
-<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-11-06</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-11-09</sub>
 <!-- AUTO:regua:END -->
 
 </details>
@@ -1968,21 +1968,35 @@ quadrantChart
 <br/>
 
 <!-- AUTO:estudos:START -->
-**46** assuntos praticados em projeto · **9** em andamento · **2** planejados
+**46** assuntos praticados em projeto · **23** em andamento · **2** planejados
 
-📚 **122** notas de estudo no segundo cérebro · **68** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
+📚 **138** notas de estudo no segundo cérebro · **83** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
 
 ```mermaid
 mindmap
   root((🧠 Estudos))
     Arquitetura
+      🔄 Arquitetura em camadas
+      🔄 Arquitetura hexagonal
+      🔄 Arquitetura orientada a eventos
       🔄 Arquiteturas de software
+      🔄 BFF (Backend for Frontend)
+      🔄 CQRS
+      🔄 Clean Architecture
+      🔄 Event Sourcing
       ✅ Integração com APIs externas
       ✅ LGPD
       ✅ Lock otimista e transações
       ✅ Logs e observabilidade
+      🔄 MVC
       ⏳ Mensageria e Outbox
+      🔄 Microsserviços
+      🔄 Monólito modular
+      🔄 Monólito
+      🔄 Onion Architecture
       ✅ Padrões de projeto
+      🔄 SOA
+      🔄 Serverless
       🔄 Síncrono e assíncrono
     Cloud
       🔄 AWS
@@ -2045,7 +2059,21 @@ mindmap
 
 | Estudando agora | Área | Próximos passos |
 |---|---|---|
+| 🔄 Arquitetura em camadas | Arquitetura | <sub>2 a fazer</sub> |
+| 🔄 Arquitetura hexagonal | Arquitetura | <sub>3 a fazer</sub> |
+| 🔄 Arquitetura orientada a eventos | Arquitetura | <sub>2 a fazer</sub> |
 | 🔄 Arquiteturas de software | Arquitetura | <sub>3 a fazer</sub> |
+| 🔄 BFF (Backend for Frontend) | Arquitetura | <sub>1 a fazer</sub> |
+| 🔄 CQRS | Arquitetura | <sub>2 a fazer</sub> |
+| 🔄 Clean Architecture | Arquitetura | <sub>2 a fazer</sub> |
+| 🔄 Event Sourcing | Arquitetura | <sub>2 a fazer</sub> |
+| 🔄 MVC | Arquitetura | <sub>2 a fazer</sub> |
+| 🔄 Microsserviços | Arquitetura | <sub>2 a fazer</sub> |
+| 🔄 Monólito modular | Arquitetura | <sub>2 a fazer</sub> |
+| 🔄 Monólito | Arquitetura | <sub>2 a fazer</sub> |
+| 🔄 Onion Architecture | Arquitetura | <sub>2 a fazer</sub> |
+| 🔄 SOA | Arquitetura | <sub>1 a fazer</sub> |
+| 🔄 Serverless | Arquitetura | <sub>2 a fazer</sub> |
 | 🔄 Síncrono e assíncrono | Arquitetura | <sub>3 a fazer</sub> |
 | 🔄 AWS | Cloud | <sub>10 a fazer</sub> |
 | 🔄 Carregamento EAGER e LAZY | Spring | <sub>2 a fazer</sub> |
@@ -2057,7 +2085,7 @@ mindmap
 | ⏳ Mensageria e Outbox | Arquitetura | <sub>6 a fazer</sub> |
 | ⏳ Spring AI | IA | <sub>5 a fazer</sub> |
 
-<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-11-06.</sub>
+<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-11-09.</sub>
 <!-- AUTO:estudos:END -->
 
 </details>
@@ -2068,7 +2096,7 @@ mindmap
 
 <!-- AUTO:cerebro:START -->
 <div align="center">
-  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 17 dias com registro, 122 notas, 2 trilhas e 46 assuntos praticados; progresso de cada trilha e de cada módulo"/>
+  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 19 dias com registro, 138 notas, 2 trilhas e 46 assuntos praticados; progresso de cada trilha e de cada módulo"/>
 </div>
 
 <details>
@@ -2076,8 +2104,8 @@ mindmap
 <br/>
 
 <table align="center"><tr>
-<td align="center">🗓️<br/><b>17</b> dias com registro<br/><sub>nos últimos 30</sub></td>
-<td align="center">📚<br/><b>122</b> notas de estudo<br/><sub>68 com exemplo com × sem</sub></td>
+<td align="center">🗓️<br/><b>19</b> dias com registro<br/><sub>nos últimos 30</sub></td>
+<td align="center">📚<br/><b>138</b> notas de estudo<br/><sub>83 com exemplo com × sem</sub></td>
 <td align="center">🧭<br/><b>2</b> trilhas<br/><sub>12 módulos</sub></td>
 <td align="center">✅<br/><b>46</b> assuntos<br/><sub>praticados em projeto</sub></td>
 </tr></table>
@@ -2119,9 +2147,9 @@ mindmap
 
 </details>
 
-📝 **Estudado por último:** `Definições` Agentes · `Definições` API REST · `Definições` Bean Validation · `Definições` CI-CD e GitHub Actions · `Definições` Diário · `Definições` Docker · `Definições` DTO · `Definições` Flyway
+📝 **Estudado por último:** `Arquitetura` Arquitetura em camadas · `Arquitetura` Arquitetura hexagonal · `Arquitetura` Arquitetura orientada a eventos · `Arquitetura` BFF (Backend for Frontend) · `Arquitetura` Clean Architecture · `Arquitetura` CQRS · `Arquitetura` Event Sourcing · `Definições` Idempotência e Idempotency-Key
 
-<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-11-06</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-11-09</sub>
 <!-- AUTO:cerebro:END -->
 
 <details>
@@ -2323,7 +2351,7 @@ gantt
 
 **🧹 Débitos técnicos:** 9/18 resolvidos
 
-<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-11-06.</sub>
+<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-11-09.</sub>
 <!-- AUTO:checklist:END -->
 
 </details>
@@ -2741,7 +2769,7 @@ flowchart LR
 
 **📌 Na fila (matriculado, ainda não comecei):** [Java Spring Expert](https://devsuperior.club/courses/6) (204 aulas) · [Java Spring Reference](https://devsuperior.club/courses/7) (151 aulas) · [Java Spring Tópicos Avançados](https://devsuperior.club/courses/63) (11 aulas) · [Análise de Requisitos Expert](https://devsuperior.club/courses/10) (50 aulas) · [Bônus Estudo de caso CI/CD AWS e Github Actions](https://devsuperior.club/courses/12) (17 aulas)
 
-<sub>🤖 Progresso lido da plataforma do curso pela minha automação em 2026-11-06.</sub>
+<sub>🤖 Progresso lido da plataforma do curso pela minha automação em 2026-11-09.</sub>
 <!-- AUTO:cursos:END -->
 
 #### 📖 O que aprendi no Java Spring Professional

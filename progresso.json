@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-06",
+  "atualizado": "2026-11-09",
   "regua": {
     "praticadas": 13,
     "total": 15,
@@ -450,12 +450,75 @@
   ],
   "estudos": [
     {
+      "nome": "Arquitetura em camadas",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
+      "nome": "Arquitetura hexagonal",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 3
+      }
+    },
+    {
+      "nome": "Arquitetura orientada a eventos",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
       "nome": "Arquiteturas de software",
       "area": "Arquitetura",
       "status": "andamento",
       "passos": {
         "feitos": 0,
         "total": 3
+      }
+    },
+    {
+      "nome": "BFF (Backend for Frontend)",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 1
+      }
+    },
+    {
+      "nome": "CQRS",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
+      "nome": "Clean Architecture",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
+      "nome": "Event Sourcing",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 2
       }
     },
     {
@@ -495,6 +558,15 @@
       }
     },
     {
+      "nome": "MVC",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
       "nome": "Mensageria e Outbox",
       "area": "Arquitetura",
       "status": "planejado",
@@ -504,12 +576,66 @@
       }
     },
     {
+      "nome": "Microsserviços",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
+      "nome": "Monólito modular",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
+      "nome": "Monólito",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
+      "nome": "Onion Architecture",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
       "nome": "Padrões de projeto",
       "area": "Arquitetura",
       "status": "praticado",
       "passos": {
         "feitos": 0,
         "total": 4
+      }
+    },
+    {
+      "nome": "SOA",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 1
+      }
+    },
+    {
+      "nome": "Serverless",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 2
       }
     },
     {
@@ -964,8 +1090,8 @@
     }
   ],
   "biblioteca": {
-    "notas": 122,
-    "comSem": 68,
+    "notas": 138,
+    "comSem": 83,
     "sessoes": [
       "IA, Spring e LGPD",
       "Java e seu universo"
@@ -1308,47 +1434,47 @@
         ]
       }
     ],
-    "diasDiario30": 17,
+    "diasDiario30": 19,
     "recentes": [
       {
-        "nome": "Agentes",
-        "area": "Definições",
-        "criado": "2026-11-06"
+        "nome": "Arquitetura em camadas",
+        "area": "Arquitetura",
+        "criado": "2026-11-09"
       },
       {
-        "nome": "API REST",
-        "area": "Definições",
-        "criado": "2026-11-06"
+        "nome": "Arquitetura hexagonal",
+        "area": "Arquitetura",
+        "criado": "2026-11-09"
       },
       {
-        "nome": "Bean Validation",
-        "area": "Definições",
-        "criado": "2026-11-06"
+        "nome": "Arquitetura orientada a eventos",
+        "area": "Arquitetura",
+        "criado": "2026-11-09"
       },
       {
-        "nome": "CI-CD e GitHub Actions",
-        "area": "Definições",
-        "criado": "2026-11-06"
+        "nome": "BFF (Backend for Frontend)",
+        "area": "Arquitetura",
+        "criado": "2026-11-09"
       },
       {
-        "nome": "Diário",
-        "area": "Definições",
-        "criado": "2026-11-06"
+        "nome": "Clean Architecture",
+        "area": "Arquitetura",
+        "criado": "2026-11-09"
       },
       {
-        "nome": "Docker",
-        "area": "Definições",
-        "criado": "2026-11-06"
+        "nome": "CQRS",
+        "area": "Arquitetura",
+        "criado": "2026-11-09"
       },
       {
-        "nome": "DTO",
-        "area": "Definições",
-        "criado": "2026-11-06"
+        "nome": "Event Sourcing",
+        "area": "Arquitetura",
+        "criado": "2026-11-09"
       },
       {
-        "nome": "Flyway",
+        "nome": "Idempotência e Idempotency-Key",
         "area": "Definições",
-        "criado": "2026-11-06"
+        "criado": "2026-11-09"
       }
     ]
   }
