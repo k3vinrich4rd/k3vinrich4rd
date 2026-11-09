@@ -247,6 +247,7 @@ flowchart LR
 <!-- ULTIMOS-COMMITS:START -->
 | | Projeto | Último commit | Data |
 |:-:|---|---|---|
+| 📦 | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`664c4f0`](https://github.com/k3vinrich4rd/cpf-utils/commit/664c4f02c74492d8e520af9514600e4e2f7bee4c) docs(readme): adiciona Por que existe e O que aprendi | 09/11/2026 |
 | 📦 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`8510d19`](https://github.com/k3vinrich4rd/rkf_bank/commit/8510d19697631c6fda2f728aaa4803462ef4a1c5) docs(readme): bloco de revisão técnica em 2 minutos no topo | 06/11/2026 |
 | 🔒 | projeto privado | — | 04/11/2026 |
 | 🔒 | projeto privado | — | 03/11/2026 |
@@ -254,9 +255,8 @@ flowchart LR
 | 📦 | [`desafio-devsuperior-componentes-injecao-dependencia`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) | [`4997708`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia/commit/4997708166e270a54829b3ea94912378a03fa100) revert: main volta a ter so o desafio de componentes (o ORM foi para desafio-dev | 28/10/2026 |
 | 📦 | [`desafio-devsuperior-crud-clientes`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) | [`9b0eb79`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes/commit/9b0eb794bf407bdbe22af1196065717ef72591a9) feat: implementando correcao sugerida no feedback | 05/10/2026 |
 | 📦 | [`desafio-devsuperior-modelo-orm`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) | [`757f944`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm/commit/757f944837b07f090ea785449adbc2b0e28cd45e) docs: atualiza informações do README | 27/10/2025 |
-| 📦 | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`68de4a9`](https://github.com/k3vinrich4rd/cpf-utils/commit/68de4a91b903988d82c6cddc349121e0c9b9093d) Update README.md | 30/06/2025 |
 
-<sub>🤖 Atualizado em 08/11/2026 (horário de Brasília) pela rotina diária (<code>scripts/rodar-diario.sh</code>) · branch padrão e <code>develop</code> · 🔒 projeto privado: só a data</sub>
+<sub>🤖 Atualizado em 09/11/2026 (horário de Brasília) pela rotina diária (<code>scripts/rodar-diario.sh</code>) · branch padrão e <code>develop</code> · 🔒 projeto privado: só a data</sub>
 <!-- ULTIMOS-COMMITS:END -->
 
 ### 🎯 Metas em andamento: Java + AWS + IA em conjunto
