@@ -1784,9 +1784,9 @@ endsolid repositorios_por_ano
   <a href="diario/"><img src="https://img.shields.io/github/directory-file-count/k3vinrich4rd/k3vinrich4rd/diario?type=file&extension=md&label=dias%20registrados&style=for-the-badge&color=003D74" alt="Dias registrados no diário"/></a>
   <a href="https://devsuperior.club/courses/5"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fk3vinrich4rd%2Fk3vinrich4rd%2Fmain%2Fcursos.json&query=%24.cursos%5B0%5D.progresso&label=Java%20Spring%20Professional&suffix=%25" alt="Progresso do curso em andamento (cursos.json)"/></a>
 </p>
-<p align="center"><sub>Evolução profissional com método: cada dia de estudo vira uma entrada em <a href="diario/">diario/</a> e, quando cabe, código testado no <a href="https://github.com/k3vinrich4rd/rkf_bank">RKF Bank</a>.</sub></p>
+<p align="center"><sub>Evolução profissional com método: registro meus estudos em público no <a href="diario/">diario/</a> (desde 30/10/2026) e, quando cabe, viram código testado no <a href="https://github.com/k3vinrich4rd/rkf_bank">RKF Bank</a>. As porcentagens dos cursos vêm do <code>cursos.json</code>.</sub></p>
 
-> Trabalho como **Java backend na Zup**, prestando serviço para o **Itaú**, e **estudo todos os dias** com um objetivo claro: **chegar a Pleno**. O que separa um Junior de um Pleno não é só saber mais tecnologia: é **entregar com autonomia, qualidade e visão do todo**. Abaixo, o que estou fazendo **agora**, na ordem, e a minha régua com evidências.
+> Trabalho como **Java backend na Zup**, prestando serviço para o **Itaú**, e **estudo com constância** com um objetivo claro: **chegar a Pleno**. O que separa um Junior de um Pleno não é só saber mais tecnologia: é **entregar com autonomia, qualidade e visão do todo**. Abaixo, o que estou fazendo **agora**, na ordem, e a minha régua com evidências.
 
 ### 🎯 Agora, em ordem
 
@@ -2173,6 +2173,9 @@ flowchart LR
 
 ## 📊 GitHub Stats
 
+<details>
+<summary><b>Ver detalhes</b></summary>
+
 <div align="center">
 
 <!-- Cards do github-profile-summary-cards e do streak (demolab): o github-readme-stats.vercel.app público saiu do ar (503). -->
@@ -2192,6 +2195,8 @@ flowchart LR
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/k3vinrich4rd/k3vinrich4rd/output/profile-season-animate.svg" />
   <img width="100%" src="https://raw.githubusercontent.com/k3vinrich4rd/k3vinrich4rd/output/profile-night-rainbow.svg" alt="Meus commits em 3D" />
 </picture>
+
+</details>
 
 <p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
 
