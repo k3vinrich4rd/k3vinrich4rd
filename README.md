@@ -9,11 +9,35 @@
 <a href="https://www.itau.com.br/" target="_blank"><img src="https://img.shields.io/badge/Servi%C3%A7o-Ita%C3%BA%20Unibanco-EC7000?style=for-the-badge"/></a>
 <a href="https://www.linkedin.com/school/anhanguera-educacional-sa/" target="_blank"><img src="https://img.shields.io/badge/Forma%C3%A7%C3%A3o-Anhanguera-6A1B9A?style=for-the-badge"/></a>
 
+<!-- Vitrine · GitHub: "comece por aqui" em 10 segundos. Cada card leva a uma seção; tema claro/escuro com <picture>. -->
+<table>
+  <tr>
+    <td width="33%" align="center" valign="top">
+      <a href="#-rkf-bank--em-produção"><picture>
+        <source media="(prefers-color-scheme: light)" srcset="assets/bento/rkf-bank-claro.svg"/>
+        <img src="assets/bento/rkf-bank-escuro.svg" width="100%" alt="RKF Bank, banco digital em produção: ver o projeto"/>
+      </picture></a>
+    </td>
+    <td width="33%" align="center" valign="top">
+      <a href="#-wisdom--projeto-atual-em-construção"><picture>
+        <source media="(prefers-color-scheme: light)" srcset="assets/bento/wisdom-claro.svg"/>
+        <img src="assets/bento/wisdom-escuro.svg" width="100%" alt="Wisdom, app para aprender inglês em construção"/>
+      </picture></a>
+    </td>
+    <td width="33%" align="center" valign="top">
+      <a href="#-junior--pleno--onde-estou"><picture>
+        <source media="(prefers-color-scheme: light)" srcset="assets/bento/pleno-claro.svg"/>
+        <img src="assets/bento/pleno-escuro.svg" width="100%" alt="Júnior para Pleno: onde estou"/>
+      </picture></a>
+    </td>
+  </tr>
+</table>
+
 <!-- Vitrine · GitHub: resumo de 30 segundos (bloco manual, fora dos marcadores AUTO) -->
 <p align="center">
   <b>Dev Java backend</b> · Spring Boot · Spring Data JPA/Hibernate · Spring Security · +4 anos na Zup Innovation (grupo Itaú)<br/>
   🏦 <b>Em produção:</b> <a href="https://rkfbank.vercel.app">RKF Bank</a>: Java 25 + Spring Boot 4.1 · JWT · <code>Idempotency-Key</code> · lock otimista (<code>@Version</code>) · Flyway · CI com CodeQL<br/>
-  💻 <b>Construindo agora:</b> <a href="#-wisdom--o-próximo-projeto">Wisdom</a> (repositório privado), app gamificado para aprender inglês · dono do backend e do contrato da API · Java 25 · Spring Boot 4.1 · Spring Modulith · PostgreSQL 18 · OpenAPI contract-first · fundação pronta, Fase 1 a seguir<br/>
+  💻 <b>Construindo agora:</b> <a href="#-wisdom--projeto-atual-em-construção">Wisdom</a> (repositório privado), app gamificado para aprender inglês · dono do backend e do contrato da API · Java 25 · Spring Boot 4.1 · Spring Modulith · PostgreSQL 18 · OpenAPI contract-first · fundação pronta, Fase 1 a seguir<br/>
   <a href="https://github.com/k3vinrich4rd/rkf_bank"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fk3vinrich4rd%2Fk3vinrich4rd%2Fmain%2Fprogresso.json&query=%24.rkf.testes&label=testes%20no%20RKF%20Bank&color=22C55E&style=flat-square&logo=junit5&logoColor=white" alt="Testes no RKF Bank"/></a>
   <a href="https://github.com/k3vinrich4rd/rkf_bank/actions/workflows/backend-ci.yml"><img src="https://github.com/k3vinrich4rd/rkf_bank/actions/workflows/backend-ci.yml/badge.svg?branch=develop" alt="CI do RKF Bank"/></a><br/>
   <a href="https://github.com/k3vinrich4rd/rkf_bank">📂 código</a> ·
@@ -25,17 +49,17 @@
 
 <!-- Botões gerados por scripts/svgs.mjs. Cada um leva a uma seção. -->
 <a href="#-escolha-a-sua-trilha"><img src="assets/botoes/trilhas.svg" alt="🎮 Trilhas" height="46"/></a>
-<a href="#-ao-vivo"><img src="assets/botoes/ao-vivo.svg" alt="📡 Ao vivo" height="46"/></a>
-<a href="#-trajetória"><img src="assets/botoes/historia.svg" alt="🧭 Trajetória" height="46"/></a>
-<a href="#-projeto-atual--rkf-bank"><img src="assets/botoes/rkf-bank.svg" alt="🏦 RKF Bank" height="46"/></a>
-<a href="#-wisdom--o-próximo-projeto"><img src="assets/botoes/wisdom.svg" alt="💻 Wisdom" height="46"/></a>
-<br/>
+<a href="#-rkf-bank--em-produção"><img src="assets/botoes/rkf-bank.svg" alt="🏦 RKF Bank" height="46"/></a>
+<a href="#-wisdom--projeto-atual-em-construção"><img src="assets/botoes/wisdom.svg" alt="💻 Wisdom" height="46"/></a>
 <a href="#️-projetos-em-destaque"><img src="assets/botoes/projetos.svg" alt="🗂️ Projetos" height="46"/></a>
 <a href="#-junior--pleno--onde-estou"><img src="assets/botoes/pleno.svg" alt="📈 Pleno" height="46"/></a>
-<a href="#-pdi--roadmap-2026"><img src="assets/botoes/roadmap.svg" alt="🎯 Roadmap" height="46"/></a>
 <a href="#️-tecnologias"><img src="assets/botoes/stack.svg" alt="🛠️ Stack" height="46"/></a>
-<a href="#-pergunte-ao-kevin"><img src="assets/botoes/perguntas.svg" alt="💬 Perguntas" height="46"/></a>
+<br/>
+<a href="#-trajetória"><img src="assets/botoes/historia.svg" alt="🧭 Trajetória" height="46"/></a>
+<a href="#-ao-vivo"><img src="assets/botoes/ao-vivo.svg" alt="📡 Ao vivo" height="46"/></a>
+<a href="#-pdi--roadmap-2026"><img src="assets/botoes/roadmap.svg" alt="🎯 Roadmap" height="46"/></a>
 <a href="#-formação-e-certificações"><img src="assets/botoes/formacao.svg" alt="🎓 Formação" height="46"/></a>
+<a href="#-pergunte-ao-kevin"><img src="assets/botoes/perguntas.svg" alt="💬 Perguntas" height="46"/></a>
 
 <!-- Números gerados a partir do progresso.json: rolam a cada visita. -->
 <img src="assets/numeros.svg" width="100%" alt="Kevin em números: anos codando, repositórios, testes no RKF Bank, régua Pleno, assuntos praticados e certificações"/>
@@ -49,15 +73,15 @@
 
 | | |
 |---|---|
-| <a href="#-escolha-a-sua-trilha">01 · 🎮 Escolha a sua trilha</a> | <a href="#-github-stats">10 · 📊 GitHub Stats</a> |
-| <a href="#-ao-vivo">02 · 📡 Ao vivo</a> | <a href="#-pdi--roadmap-2026">11 · 🎯 PDI — Roadmap 2026</a> |
-| <a href="#️-últimos-commits-e-metas">03 · ⏱️ Últimos commits e metas</a> | <a href="#️-tecnologias">12 · 🛠️ Tecnologias</a> |
-| <a href="#-trajetória">04 · 🧭 Trajetória</a> | <a href="#-atuação-profissional">13 · 💼 Atuação profissional</a> |
-| <a href="#-sobre-mim">05 · 🚀 Sobre mim</a> | <a href="#-pergunte-ao-kevin">14 · 💬 Pergunte ao Kevin</a> |
-| <a href="#-rkf-bank--em-produção">06 · 🏦 RKF Bank — em produção</a> | <a href="#-cursos-em-andamento">15 · 📚 Cursos em andamento</a> |
-| <a href="#-wisdom--projeto-atual-em-construção">07 · 💻 Wisdom — projeto atual (em construção)</a> | <a href="#-formação-e-certificações">16 · 🎓 Formação e certificações</a> |
-| <a href="#️-projetos-em-destaque">08 · 🗂️ Projetos em destaque</a> | <a href="#️-livro-de-visitas">17 · ✍️ Livro de visitas</a> |
-| <a href="#-junior--pleno--onde-estou">09 · 📈 Junior → Pleno — onde estou</a> |  |
+| <a href="#-escolha-a-sua-trilha">01 · 🎮 Escolha a sua trilha</a> | <a href="#-ao-vivo">10 · 📡 Ao vivo</a> |
+| <a href="#-rkf-bank--em-produção">02 · 🏦 RKF Bank — em produção</a> | <a href="#️-últimos-commits-e-metas">11 · ⏱️ Últimos commits e metas</a> |
+| <a href="#-wisdom--projeto-atual-em-construção">03 · 💻 Wisdom — projeto atual (em construção)</a> | <a href="#-pdi--roadmap-2026">12 · 🎯 PDI — Roadmap 2026</a> |
+| <a href="#-atuação-profissional">04 · 💼 Atuação profissional</a> | <a href="#-cursos-em-andamento">13 · 📚 Cursos em andamento</a> |
+| <a href="#️-projetos-em-destaque">05 · 🗂️ Projetos em destaque</a> | <a href="#-formação-e-certificações">14 · 🎓 Formação e certificações</a> |
+| <a href="#-junior--pleno--onde-estou">06 · 📈 Junior → Pleno — onde estou</a> | <a href="#-github-stats">15 · 📊 GitHub Stats</a> |
+| <a href="#️-tecnologias">07 · 🛠️ Tecnologias</a> | <a href="#-pergunte-ao-kevin">16 · 💬 Pergunte ao Kevin</a> |
+| <a href="#-sobre-mim">08 · 🚀 Sobre mim</a> | <a href="#️-livro-de-visitas">17 · ✍️ Livro de visitas</a> |
+| <a href="#-trajetória">09 · 🧭 Trajetória</a> |  |
 
 </details>
 <!-- AUTO:indice:END -->
@@ -94,7 +118,7 @@
 <br/>
 
 - Régua de competências com evidência por projeto: [📈 Junior → Pleno](#-junior--pleno--onde-estou)
-- Regras de negócio e qualidade do RKF Bank: [🏦 Projeto atual](#-projeto-atual--rkf-bank)
+- Regras de negócio e qualidade do RKF Bank: [🏦 Projeto atual](#-rkf-bank--em-produção)
 - Perguntas técnicas respondidas: [💬 Pergunte ao Kevin](#-pergunte-ao-kevin)
 
 </details>
@@ -149,348 +173,11 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 
 <p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
 
-<img src="assets/secoes/ao-vivo.svg" width="100%" alt=""/>
-
-## 📡 Ao vivo
-
-> Esta seção se atualiza sozinha. Cada commit que eu faço alimenta o meu Obsidian, que alimenta este README. 🤖
-
-<!-- Pulso gerado por scripts/svgs.mjs a partir do calendário público de contribuições, a cada 6 horas. -->
-<img src="assets/pulso.svg" width="100%" alt="Pulso das últimas semanas: mapa de calor de contribuições, dias seguidos, contribuições em 7 e 30 dias e último commit"/>
-
-<div align="center">
-
-<!-- AUTO:status:START -->
-<img src="https://img.shields.io/static/v1?label=R%C3%A9gua%20Pleno&message=13%2F15&color=EC7000&style=flat-square"/>
-<img src="https://img.shields.io/static/v1?label=Testes%20RKF%20Bank&message=360%20%E2%9C%94&color=3fb950&style=flat-square&logo=junit5&logoColor=white"/>
-<img src="https://img.shields.io/static/v1?label=MVP&message=13%2F13&color=003D74&style=flat-square"/>
-<img src="https://img.shields.io/static/v1?label=Foco%20agora&message=ingl%C3%AAs&color=6A1B9A&style=flat-square"/>
-<!-- AUTO:status:END -->
-
-</div>
-
-<!-- AUTO:agora:START -->
-**🔥 Esta semana**
-
-- 🔨 Revisar a branch `refactor/monolito-modular`
-- 🎯 Foco de estudo: **inglês**
-- ✅ Última entrega: Release develop → main (PR #76, mergeado pelo Renan): TDD na `Conta`, threads virtuais, fim do N+1, contas por cliente só para o ADMIN, README com skills, diagnóstico e anotações — 2026-10-29
-<!-- AUTO:agora:END -->
-
-<!-- AUTO:dica:START -->
-> 💡 **Dica do dia: `Flyway`**  
-> Cada mudança de schema vira um V__*.sql versionado. Nada de ddl-auto=update em produção.  
-> <sub>Muda todo dia sozinha · 15/20</sub>
-<!-- AUTO:dica:END -->
-
-<!-- A cobrinha é gerada pelo workflow .github/workflows/snake.yml deste repositório (branch "output"). -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/k3vinrich4rd/k3vinrich4rd/output/snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/k3vinrich4rd/k3vinrich4rd/output/snake.svg" />
-  <img width="100%" src="https://raw.githubusercontent.com/k3vinrich4rd/k3vinrich4rd/output/snake-dark.svg" alt="Cobrinha comendo o meu gráfico de commits" />
-</picture>
-
-<details open>
-<summary><b>⚡ Meus últimos commits</b></summary>
-<br/>
-
-<!-- AUTO:atividade:START -->
-| | Repositório | Commit | Quando |
-|:-:|---|---|---|
-| 📝 | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`664c4f0`](https://github.com/k3vinrich4rd/cpf-utils/commit/664c4f02c74492d8e520af9514600e4e2f7bee4c) docs(readme): adiciona Por que existe e O que aprendi | ontem |
-| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`8510d19`](https://github.com/k3vinrich4rd/rkf_bank/commit/8510d19697631c6fda2f728aaa4803462ef4a1c5) docs(readme): bloco de revisão técnica em 2 minutos no topo | há 4 dias |
-| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`4558293`](https://github.com/k3vinrich4rd/rkf_bank/commit/4558293c34c59e797d417b723ac8877ffa1aacd2) docs(deploy): checagem diária de integridade da produção | há 7 dias |
-| ♻️ | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`f430211`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/f430211de74e8756ebb6520b13b52ea0bae60578) refactor: renomeia OrdemItem para OrderItem | há 13 dias |
-| ⏪ | [`desafio-devsuperior-componentes-injecao-dependencia`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) | [`4997708`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia/commit/4997708166e270a54829b3ea94912378a03fa100) revert: main volta a ter so o desafio de componentes (o ORM foi para des | há 13 dias |
-| 📝 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`0849493`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/0849493f006f8569a3c9a93e9578c3ba795d6921) docs: adiciona README com modelo de dominio, endpoints e exemplos reais | há 26 dias |
-| 📝 | [`desafio-devsuperior-componentes-injecao-dependencia`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) | [`757f944`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia/commit/757f944837b07f090ea785449adbc2b0e28cd45e) docs: atualiza informações do README | 27/10/2025 |
-| • | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`68de4a9`](https://github.com/k3vinrich4rd/cpf-utils/commit/68de4a91b903988d82c6cddc349121e0c9b9093d) Update README.md | 30/06/2025 |
-
-<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 10/11 às 10:20</sub>
-<!-- AUTO:atividade:END -->
-
-</details>
-
-<details>
-<summary><b>📓 Diário de bordo: o que cada entrega me ensinou</b></summary>
-<br/>
-
-<!-- AUTO:diario:START -->
-| Quando | Onde | O que eu aprendi |
-|---|---|---|
-| 2026-11-03 | PRs #100 e #102 (develop) + #101 `develop` → `main` (aguardando merge) | plano grátis exige escolher o plano à mão: o Aiven sugeria Developer (US$ 5) e Professional (US$ 300); segredo nunca passa pela IA (quem cola a senha do banco e gera o JWT é o dono da conta) |
-| 2026-10-29 | PR #76 release `develop` → `main` (mergeado pelo Renan) | a main só recebe o que passou pela revisão do outro: o CI verde do PR de release é o resumo de todos os PRs da semana |
-| 2026-10-29 | PR #82 `perf/carregamento-lazy` | medir antes de otimizar: o EAGER padrão do para-um fazia N+1 em `/contas` (7 → 17 consultas de 5 para 15 contas); depois, número constante |
-| 2026-10-29 | PR #80 (CI do PR #76) + PRs #81 e #83 (README) | teste que depende da ordem é bug: o H2 compartilhado guardava os logins errados de outro teste; reproduzir com `-Dsurefire.runOrder` antes de corrigir |
-| 2026-10-29 | branch `refactor/monolito-modular` (em revisão, fora da develop) | trocar a arquitetura sem mudar comportamento: mover primeiro com os testes verdes, depois uma peça por commit, e deixar o ArchUnit achar os acoplamentos |
-<!-- AUTO:diario:END -->
-
-</details>
-
-```mermaid
-flowchart LR
-    A["💻 git commit<br/>em qualquer projeto"] -->|hook post-commit| B["🧠 Obsidian<br/>diário + nota do projeto"]
-    B -->|régua, checklist, testes| C["📦 progresso.json"]
-    C -->|git push| D["⚙️ GitHub Actions<br/>a cada 6h"]
-    D --> E["🌐 este README<br/>banner, gráficos, cobrinha"]
-    click E "https://github.com/k3vinrich4rd" _blank
-```
-
-<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
-
-<img src="assets/secoes/ultimos-commits-e-metas.svg" width="100%" alt=""/>
-
-## ⏱️ Últimos commits e metas
-
-> Atualizada todo dia pela minha rotina de automação, mesmo com o meu PC desligado: o último commit de cada projeto e o andamento das minhas metas, marco a marco. Projeto privado aparece só com a data.
-
-<!-- ULTIMOS-COMMITS:START -->
-| | Projeto | Último commit | Data |
-|:-:|---|---|---|
-| 📦 | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`664c4f0`](https://github.com/k3vinrich4rd/cpf-utils/commit/664c4f02c74492d8e520af9514600e4e2f7bee4c) docs(readme): adiciona Por que existe e O que aprendi | 09/11/2026 |
-| 📦 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`8510d19`](https://github.com/k3vinrich4rd/rkf_bank/commit/8510d19697631c6fda2f728aaa4803462ef4a1c5) docs(readme): bloco de revisão técnica em 2 minutos no topo | 06/11/2026 |
-| 🔒 | projeto privado | — | 04/11/2026 |
-| 🔒 | projeto privado | — | 03/11/2026 |
-| 📦 | [`JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`f430211`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/f430211de74e8756ebb6520b13b52ea0bae60578) refactor: renomeia OrdemItem para OrderItem | 28/10/2026 |
-| 📦 | [`desafio-devsuperior-componentes-injecao-dependencia`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) | [`4997708`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia/commit/4997708166e270a54829b3ea94912378a03fa100) revert: main volta a ter so o desafio de componentes (o ORM foi para desafio-dev | 28/10/2026 |
-| 📦 | [`desafio-devsuperior-crud-clientes`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) | [`9b0eb79`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes/commit/9b0eb794bf407bdbe22af1196065717ef72591a9) feat: implementando correcao sugerida no feedback | 05/10/2026 |
-| 📦 | [`desafio-devsuperior-modelo-orm`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) | [`757f944`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm/commit/757f944837b07f090ea785449adbc2b0e28cd45e) docs: atualiza informações do README | 27/10/2025 |
-
-<sub>🤖 Atualizado em 09/11/2026 (horário de Brasília) pela rotina diária (<code>scripts/rodar-diario.sh</code>) · branch padrão e <code>develop</code> · 🔒 projeto privado: só a data</sub>
-<!-- ULTIMOS-COMMITS:END -->
-
-### 🎯 Metas em andamento: Java + AWS + IA em conjunto
-
-<!-- METAS:START -->
-<p align="center"><img src="https://img.shields.io/badge/Java%20%2B%20AWS%20%2B%20IA-em%20conjunto-EC7000?style=for-the-badge" alt="Java + AWS + IA em conjunto"/></p>
-
-<table>
-<tr>
-<td valign="top" width="33%">
-
-<h3 align="center">☕ Java</h3>
-<p align="center"><img src="https://img.shields.io/badge/53%25-EC7000?style=for-the-badge" alt="53%"/><br/><img src="assets/metas/java.svg" width="100%" alt="Barra de progresso de Java"/></p>
-
-<img src="https://img.shields.io/badge/53%25-EC7000?style=flat-square" alt="53%"/> <a href="https://devsuperior.club/courses/5/lessons?lessonId=248">Java Spring Professional</a> · DevSuperior<br/><sub>atualizado em 10/11/2026</sub><br/><sub>📚 3/5 capítulos fechados</sub><br/><sub>✅ Componentes e injeção de dependência <code>14/14</code></sub><br/><sub>✅ Modelo de domínio e ORM <code>15/15</code></sub><br/><sub>✅ API REST, camadas, CRUD, exceções, validações <code>23/23</code></sub><br/><sub>🔄 JPA, consultas SQL e JPQL <code>23/38</code></sub><br/><sub>⬜ Login e controle de acesso <code>0/34</code></sub><br/><sub>⬜ Homologação e implantação com CI/CD (opcional) <code>0/18</code></sub><br/><br/>
-<img src="https://img.shields.io/badge/a%20atualizar-8b949e?style=flat-square" alt="a atualizar"/> Java Spring Expert · DevSuperior
-
-</td>
-<td valign="top" width="33%">
-
-<h3 align="center">☁️ AWS</h3>
-<p align="center"><img src="https://img.shields.io/badge/0%25-8b949e?style=for-the-badge" alt="0%"/><br/><img src="assets/metas/aws.svg" width="100%" alt="Barra de progresso de AWS"/></p>
-
-<img src="https://img.shields.io/badge/0%25-8b949e?style=flat-square" alt="0%"/> <a href="https://www.udemy.com/course/aws-na-pratica/learn/lecture/23121466?start=75#overview">AWS na Prática</a> · Udemy<br/><sub>atualizado em 04/11/2026</sub>
-
-</td>
-<td valign="top" width="33%">
-
-<h3 align="center">🤖 IA</h3>
-<p align="center"><img src="https://img.shields.io/badge/a%20atualizar-8b949e?style=for-the-badge" alt="a atualizar"/><br/><img src="assets/metas/ia.svg" width="100%" alt="Barra de progresso de IA"/></p>
-
-<img src="https://img.shields.io/badge/a%20atualizar-8b949e?style=flat-square" alt="a atualizar"/> <a href="https://www.udemy.com/course/inteligencia-artificial-para-iniciantes/">Formação Inteligência Artificial: Do Zero ao Avançado (2026)</a> · Udemy
-
-</td>
-</tr>
-</table>
-
-<sub>🎯 Cada meta é medida pelo progresso real dos cursos dela (média dos cursos com porcentagem registrada); "a atualizar" = curso sem porcentagem registrada ainda. Nada sobe sozinho · dados de 2026-11-10</sub>
-<!-- METAS:END -->
-
-<sub>📓 Um resumo por dia em <a href="diario/">diario/</a> · tudo isso também em <a href="progresso.md">progresso.md</a></sub>
-
-<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
-
-<img src="assets/secoes/trajetoria.svg" width="100%" alt=""/>
-
-## 🧭 Trajetória
-
-<!-- História em cenas gerada por scripts/svgs.mjs com os números do progresso.json. -->
-<img src="assets/historia.svg" width="100%" alt="Minha história em cenas: 2022 Programa Catalisa, 2023 Kotlin e testes, 2024 Spring Boot Essentials, 2025 Formação Spring Professional, 2026 RKF Bank, agora rumo ao Pleno"/>
-
-<img align="right" width="300" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=k3vinrich4rd&theme=tokyonight" alt="Linguagens"/>
-
-> 24 anos. Osasco, SP. Dev Junior. Sempre estudando. Sempre evoluindo.
-
-Tenho 24 anos, sou homem negro, pessoa com deficiência física e moro em Osasco, SP.
-
-Entrei na tecnologia pelo **[Programa Catalisa](https://www.linkedin.com/company/zupinnovation/posts/?feedView=all)** da **Zup Innovation**. Hoje sou **Desenvolvedor de Software Junior na Zup**, empresa do grupo **[Itaú](https://www.itau.com.br/)**, e presto serviço para o maior banco privado do Brasil. Estudo todos os dias para chegar ao nível **Pleno**.
-
-> *Conhecimento não tem teto. Código não tem limite. Só tem próximo nível.*
-
-<br clear="right"/>
-
-<details>
-<summary><b>📍 De onde eu codo (mapa interativo — arraste e dê zoom)</b></summary>
-<br/>
-
-```geojson
-{
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "title": "Osasco, SP",
-        "description": "Kevin Richard — Java Backend Developer",
-        "marker-color": "#EC7000",
-        "marker-size": "large",
-        "marker-symbol": "rocket"
-      },
-      "geometry": { "type": "Point", "coordinates": [-46.7917, -23.5329] }
-    }
-  ]
-}
-```
-
-</details>
-
-<details>
-<summary><b>📅 Ver minha linha do tempo no GitHub (2022 → 2026)</b></summary>
-<br/>
-
-Cada fase abaixo tem repositórios públicos como evidência.
-
-```mermaid
-timeline
-    title De exercícios de lógica a uma aplicação bancária completa
-    2022 : Programa Catalisa (Zup)
-         : Lógica, POO e SOLID (OCP / SRP)
-         : Design Patterns - Factory e State
-         : Spring Boot, Validation e relacionamentos JPA
-         : Testes com Mockito, MockMvc e TDD
-         : Spring Security e criptografia de senhas
-    2023 : Kotlin + Spring Boot (BookMarket)
-         : Testes automatizados e Mockito (Alura)
-         : Spring Boot 3
-    2024 : Spring Boot Essentials (DevDojo)
-         : API REST de cadastro de estudantes
-    2025 : Formação Spring Professional (DevSuperior)
-         : Injeção de dependência e componentes
-         : Projetos colaborativos (LkBank)
-    2026 : Java 25 + Spring Boot 4
-         : Workshops JPA e MongoDB
-         : CRUD DevSuperior (10/10)
-         : RKF Bank - backend completo com CI, testes e logs
-         : Flyway e Spring Security + JWT no RKF Bank
-         : TDD no domínio, MySQL real nos testes e fim do N+1
-```
-
-</details>
-
-### 🔀 2022 × 2026: o mesmo saque, quatro anos depois
-
-> Em 2022, no Catalisa, eu fiz um "banco" pela primeira vez. Em 2026, fiz de novo no RKF Bank. Antes de abrir, tente achar **3 problemas** no código de 2022. 🕵️
-
-<details>
-<summary><b>📼 2022 — <a href="https://github.com/k3vinrich4rd/ContaBancariaSpring">ContaBancariaSpring</a> (clique para ver)</b></summary>
-<br/>
-
-```java
-public class Saque implements CalculoContaBancaria {
-    @Override
-    public BigDecimal calculoDeTransacoes(ContaBancariaModel conta) {
-        return conta.getValorAtualDaConta()
-                .subtract(new BigDecimal(String.valueOf(conta.getValorFonercidoSaqueDeposito())));
-    }
-}
-// e no service: o saldo e o valor do saque vêm no MESMO corpo da requisição
-contaBancariaModel.setValorFinal(resultado);
-return contaBancariaRepository.save(contaBancariaModel);
-```
-
-</details>
-
-<details>
-<summary><b>🏦 2026 — <a href="https://github.com/k3vinrich4rd/rkf_bank">RKF Bank</a> (clique para ver)</b></summary>
-<br/>
-
-```java
-@Transactional
-public void sacar(UUID contaId, SaqueRequestDto request, UsuarioLogado usuario) {
-    Conta conta = buscarDoDono(contaId, usuario);          // 404 se não existe, 403 se não é sua
-    BigDecimal valor = validarValor(request.valor());      // 422 (VALOR_INVALIDO) se for zero ou negativo
-
-    conta.sacar(valor);              // a regra mora na Conta (TDD): sem saldo, 422 SALDO_INSUFICIENTE
-    contaRepository.save(conta);     // @Version na Conta: duas operações ao mesmo tempo, a segunda leva 409
-    salvarLancamento(TipoLancamentoEnum.SAQUE, valor, conta.getId(), null, request.descricao());
-}
-
-// Conta.java: domínio rico, coberto pelo ContaTest antes do código existir (vermelho → verde → refatorar)
-public void sacar(BigDecimal valor) {
-    exigirValorPositivo(valor);
-    if (saldo.compareTo(valor) < 0) {
-        throw new RegraNegocioException(CodigoErroEnum.SALDO_INSUFICIENTE);
-    }
-    saldo = saldo.subtract(valor);
-}
-```
-
-</details>
-
-<details>
-<summary><b>✅ Gabarito: o que mudou (abra depois de tentar)</b></summary>
-<br/>
-
-| Problema em 2022 | Como resolvi em 2026 |
-|---|---|
-| 💸 O **cliente mandava o próprio saldo** no JSON; bastava escrever um saldo maior | o saldo só existe no banco; a requisição traz apenas o valor |
-| 🕳️ **Saldo podia ficar negativo**: não havia regra nenhuma | `Saldo insuficiente` vira `422` antes de debitar |
-| 🔓 **Qualquer pessoa mexia em qualquer conta**: não havia login | JWT + regra de dono: conta de outro cliente vira `403` |
-| ➖ Valor **zero ou negativo** passava (e um saque negativo era um depósito!) | `validarValor` recusa com `422` |
-| 🏃 Dois saques ao mesmo tempo **sobrescreviam** um ao outro | `@Transactional` + lock otimista com `@Version` → `409` |
-| 🧾 Nenhum **histórico**: o valor final só substituía o anterior | cada saque gera um lançamento no extrato |
-| 🔇 Sem log nem teste do caminho de erro | log com `X-Request-Id` e 360 testes automatizados |
-
-<sub>Quantos você achou? Conta pra mim no <a href="#️-livro-de-visitas">livro de visitas</a>. 😄</sub>
-
-</details>
-
-<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
-
-<img src="assets/secoes/sobre-mim.svg" width="100%" alt=""/>
-
-## 🚀 Sobre mim
-
-<img src="assets/sobre-mim.svg" width="100%" alt="Classe Java Kevin aberta numa IDE, linha por linha"/>
-
-<details>
-<summary><b>📄 Ver como texto (para copiar)</b></summary>
-<br/>
-
-```java
-public class Kevin extends Developer implements AprendizContinuo {
-
-    String nome     = "Kevin Richard";
-    String cidade   = "Osasco, SP";
-    String empresa  = "Zup Innovation (grupo Itaú)";
-    String nivel    = "Junior -> Pleno (em progresso)";
-    String entrada  = "Programa Catalisa - Zup Innovation";
-
-    List<String> foco       = List.of("Java", "Spring Boot", "APIs REST", "JPA/Hibernate", "Testes", "MongoDB");
-    List<String> aprendendo = List.of("AWS", "AI Agents", "Spec-Driven Development", "Skill em IA");
-    String ingles           = "Básico (em desenvolvimento ativo)";
-
-    @Override
-    public String proximoPasso() {
-        return "Dominar o ecossistema Spring, evoluir para Pleno e ampliar meu impacto técnico.";
-    }
-
-    public String mentalidade() {
-        return "Informação e conhecimento nunca são demais.";
-    }
-}
-```
-
-</details>
-
-<a name="-projeto-atual--rkf-bank"></a>
-
-<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
-
 <img src="assets/secoes/rkf-bank.svg" width="100%" alt=""/>
 
 ## 🏦 RKF Bank — em produção
+
+<a href="https://rkfbank.vercel.app"><img src="assets/rkf-bank-banner.png" width="100%" alt="RKF Bank: banco digital full stack em produção. Confiança, tecnologia, liberdade."/></a>
 
 <div align="center">
 
@@ -1066,6 +753,35 @@ flowchart LR
 
 <p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
 
+<img src="assets/secoes/atuacao-profissional.svg" width="100%" alt=""/>
+
+## 💼 Atuação profissional
+
+Atuo como **Desenvolvedor de Software Junior** contratado pela **[Zup Innovation](https://www.linkedin.com/company/zupinnovation/posts/?feedView=all)**, empresa do grupo **Itaú**, prestando serviço diretamente para o maior banco privado do Brasil.
+
+<div align="center">
+  <img src="assets/atuacao.svg" width="100%" alt="Atuação profissional em cards: técnico, colaboração, entregas, evolução e inglês"/>
+</div>
+
+<details>
+<summary><b>📋 As competências em tabela</b></summary>
+
+<div align="center">
+
+| Área | Competência |
+|---|---|
+| Técnico | Java, Spring Boot, APIs REST, JPA/Hibernate, MongoDB, testes |
+| Colaboração | trabalho em equipe, comunicação técnica, code review |
+| Entregas | responsabilidade, proatividade, foco em qualidade |
+| Evolução | aprendizado contínuo, mentoria, adaptação a desafios |
+| Inglês | básico — em desenvolvimento ativo |
+
+</div>
+
+</details>
+
+<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
+
 <img src="assets/secoes/projetos-em-destaque.svg" width="100%" alt=""/>
 
 ## 🗂️ Projetos em destaque
@@ -1075,13 +791,13 @@ flowchart LR
 <div align="center">
 
 <a href="https://github.com/k3vinrich4rd/rkf_bank" target="_blank"><img src="assets/cards/rkf_bank.svg" alt="RKF Bank" width="49%"/></a>
-<a href="#-wisdom--o-próximo-projeto"><img src="assets/cards/wisdom.svg" alt="Wisdom (repositório privado)" width="49%"/></a>
+<a href="#-wisdom--projeto-atual-em-construção"><img src="assets/cards/wisdom.svg" alt="Wisdom (repositório privado)" width="49%"/></a>
 
 <a href="https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM" target="_blank"><img src="assets/cards/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM.svg" alt="DSCommerce" width="49%"/></a>
 
 </div>
 
-| | 🏦 [RKF Bank](https://github.com/k3vinrich4rd/rkf_bank) | 💻 [Wisdom](#-wisdom--o-próximo-projeto) 🔒 | 🛒 [DSCommerce](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) |
+| | 🏦 [RKF Bank](https://github.com/k3vinrich4rd/rkf_bank) | 💻 [Wisdom](#-wisdom--projeto-atual-em-construção) 🔒 | 🛒 [DSCommerce](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) |
 |---|---|---|---|
 | **O que é** | banco digital full stack, time de três (Osasco, SP) | app gamificado para aprender inglês, feito em Osasco, SP | e-commerce da formação Spring Professional (DevSuperior) |
 | **Meu papel** | todo o backend | fundador, todo o backend e o contrato da API | projeto individual |
@@ -1090,7 +806,7 @@ flowchart LR
 | **Qualidade** | 360 testes, JaCoCo, CI com CodeQL e Dependabot | 80 testes da fundação (segurança, erros, perfis), CI e imagem Docker | camadas controller → service → repository, `DatabaseException` para integridade referencial |
 | **Stack** | Java 25 · Spring Boot 4 · MySQL · Docker · Next.js | Java 25 · Spring Boot 4.1 · Spring Modulith · PostgreSQL 18 · Next.js | Java · Spring Boot · JPA · H2 |
 | **README** | [roteiro do projeto](https://github.com/k3vinrich4rd/rkf_bank#readme) | 🔒 repositório privado (só fundadores) | [modelo de domínio, endpoints e respostas reais](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM#readme) |
-| **Ver primeiro** | [`ContaService`](https://github.com/k3vinrich4rd/rkf_bank) · [roteiro no README](#-projeto-atual--rkf-bank) | a seção [💻 Wisdom](#-wisdom--o-próximo-projeto) aqui no perfil | [`ProductService`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/services/ProductService.java) · [`ControllerExceptionHandler`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/controllers/handlers/ControllerExceptionHandler.java) |
+| **Ver primeiro** | [`ContaService`](https://github.com/k3vinrich4rd/rkf_bank) · [roteiro no README](#-rkf-bank--em-produção) | a seção [💻 Wisdom](#-wisdom--projeto-atual-em-construção) aqui no perfil | [`ProductService`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/services/ProductService.java) · [`ControllerExceptionHandler`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/controllers/handlers/ControllerExceptionHandler.java) |
 
 <div align="center">
 
@@ -2197,34 +1913,406 @@ flowchart LR
 
 <p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
 
-<img src="assets/secoes/github-stats.svg" width="100%" alt=""/>
+<img src="assets/secoes/tecnologias.svg" width="100%" alt=""/>
 
-## 📊 GitHub Stats
-
-<details>
-<summary><b>Ver detalhes</b></summary>
+## 🛠️ Tecnologias
 
 <div align="center">
 
-<!-- Cards do github-profile-summary-cards e do streak (demolab): o github-readme-stats.vercel.app público saiu do ar (503). -->
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=k3vinrich4rd&theme=tokyonight" alt="Contribuições no GitHub mês a mês" width="100%"/>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=k3vinrich4rd&theme=tokyonight" alt="GitHub Stats" width="49%"/>
-<img src="https://streak-stats.demolab.com/?user=k3vinrich4rd&theme=tokyonight&hide_border=true&background=0d1117&ring=EC7000&fire=EC7000&currStreakLabel=EC7000&sideLabels=003D74" alt="GitHub Streak" width="49%"/>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=k3vinrich4rd&theme=tokyonight" alt="Linguagens por repositório" width="49%"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=k3vinrich4rd&theme=tokyonight" alt="Linguagens por commit" width="49%"/>
+<img src="https://skillicons.dev/icons?i=java,kotlin,spring,mysql,postgres,mongodb,docker,aws,githubactions,git,github,maven,idea,postman,linux&perline=8" alt="Skills"/>
 
 </div>
 
-<!-- Gerado pelo workflow .github/workflows/snake.yml (branch "output"). -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/k3vinrich4rd/k3vinrich4rd/output/profile-night-rainbow.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/k3vinrich4rd/k3vinrich4rd/output/profile-season-animate.svg" />
-  <img width="100%" src="https://raw.githubusercontent.com/k3vinrich4rd/k3vinrich4rd/output/profile-night-rainbow.svg" alt="Meus commits em 3D" />
-</picture>
+<details>
+<summary><b>🧠 Mapa mental da stack</b></summary>
+<br/>
+
+```mermaid
+mindmap
+  root((☕ Kevin))
+    Backend
+      Java 25
+      Spring Boot 4
+      Spring Data JPA
+      Spring Security
+      Bean Validation
+    Dados
+      MySQL
+      PostgreSQL
+      MongoDB
+      H2 nos testes
+    Qualidade
+      JUnit 5
+      Mockito
+      DataJpaTest
+      Testcontainers
+      JaCoCo
+    DevOps
+      Docker Compose
+      GitHub Actions
+      CodeQL e Dependabot
+      AWS em estudo
+    Observabilidade
+      Log4j2
+      X-Request-Id
+```
 
 </details>
+
+<details>
+<summary><b>Ver a stack por categoria</b></summary>
+<br/>
+
+| Categoria | Tecnologias |
+|---|---|
+| Linguagens | ![](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) ![](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) |
+| Frameworks | ![](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white) ![](https://img.shields.io/badge/Spring%20Data%20JPA-6DB33F?style=flat-square&logo=spring&logoColor=white) ![](https://img.shields.io/badge/Spring%20Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white) ![](https://img.shields.io/badge/Hibernate-59666C?style=flat-square&logo=hibernate&logoColor=white) |
+| Bancos | ![](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) ![](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) ![](https://img.shields.io/badge/H2-003545?style=flat-square) |
+| Testes | ![](https://img.shields.io/badge/JUnit%205-25A162?style=flat-square&logo=junit5&logoColor=white) ![](https://img.shields.io/badge/Mockito-78A641?style=flat-square) ![](https://img.shields.io/badge/MockMvc-6DB33F?style=flat-square) ![](https://img.shields.io/badge/Testcontainers-2496ED?style=flat-square&logo=docker&logoColor=white) ![](https://img.shields.io/badge/JaCoCo-C21325?style=flat-square) |
+| DevOps | ![](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) ![](https://img.shields.io/badge/Maven-C71A36?style=flat-square&logo=apachemaven&logoColor=white) ![](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white) |
+| Observabilidade | ![](https://img.shields.io/badge/Log4j2-D22128?style=flat-square&logo=apache&logoColor=white) |
+| Ferramentas | ![](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![](https://img.shields.io/badge/IntelliJ%20IDEA-000000?style=flat-square&logo=intellijidea&logoColor=white) ![](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white) ![](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) |
+
+</details>
+
+<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
+
+<img src="assets/secoes/sobre-mim.svg" width="100%" alt=""/>
+
+## 🚀 Sobre mim
+
+<img src="assets/sobre-mim.svg" width="100%" alt="Classe Java Kevin aberta numa IDE, linha por linha"/>
+
+<details>
+<summary><b>📄 Ver como texto (para copiar)</b></summary>
+<br/>
+
+```java
+public class Kevin extends Developer implements AprendizContinuo {
+
+    String nome     = "Kevin Richard";
+    String cidade   = "Osasco, SP";
+    String empresa  = "Zup Innovation (grupo Itaú)";
+    String nivel    = "Junior -> Pleno (em progresso)";
+    String entrada  = "Programa Catalisa - Zup Innovation";
+
+    List<String> foco       = List.of("Java", "Spring Boot", "APIs REST", "JPA/Hibernate", "Testes", "MongoDB");
+    List<String> aprendendo = List.of("AWS", "AI Agents", "Spec-Driven Development", "Skill em IA");
+    String ingles           = "Básico (em desenvolvimento ativo)";
+
+    @Override
+    public String proximoPasso() {
+        return "Dominar o ecossistema Spring, evoluir para Pleno e ampliar meu impacto técnico.";
+    }
+
+    public String mentalidade() {
+        return "Informação e conhecimento nunca são demais.";
+    }
+}
+```
+
+</details>
+
+<a name="-projeto-atual--rkf-bank"></a>
+
+<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
+
+<img src="assets/secoes/trajetoria.svg" width="100%" alt=""/>
+
+## 🧭 Trajetória
+
+<!-- História em cenas gerada por scripts/svgs.mjs com os números do progresso.json. -->
+<img src="assets/historia.svg" width="100%" alt="Minha história em cenas: 2022 Programa Catalisa, 2023 Kotlin e testes, 2024 Spring Boot Essentials, 2025 Formação Spring Professional, 2026 RKF Bank, agora rumo ao Pleno"/>
+
+<img align="right" width="300" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=k3vinrich4rd&theme=tokyonight" alt="Linguagens"/>
+
+> 24 anos. Osasco, SP. Dev Junior. Sempre estudando. Sempre evoluindo.
+
+Tenho 24 anos, sou homem negro, pessoa com deficiência física e moro em Osasco, SP.
+
+Entrei na tecnologia pelo **[Programa Catalisa](https://www.linkedin.com/company/zupinnovation/posts/?feedView=all)** da **Zup Innovation**. Hoje sou **Desenvolvedor de Software Junior na Zup**, empresa do grupo **[Itaú](https://www.itau.com.br/)**, e presto serviço para o maior banco privado do Brasil. Estudo todos os dias para chegar ao nível **Pleno**.
+
+> *Conhecimento não tem teto. Código não tem limite. Só tem próximo nível.*
+
+<br clear="right"/>
+
+<details>
+<summary><b>📍 De onde eu codo (mapa interativo — arraste e dê zoom)</b></summary>
+<br/>
+
+```geojson
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Osasco, SP",
+        "description": "Kevin Richard — Java Backend Developer",
+        "marker-color": "#EC7000",
+        "marker-size": "large",
+        "marker-symbol": "rocket"
+      },
+      "geometry": { "type": "Point", "coordinates": [-46.7917, -23.5329] }
+    }
+  ]
+}
+```
+
+</details>
+
+<details>
+<summary><b>📅 Ver minha linha do tempo no GitHub (2022 → 2026)</b></summary>
+<br/>
+
+Cada fase abaixo tem repositórios públicos como evidência.
+
+```mermaid
+timeline
+    title De exercícios de lógica a uma aplicação bancária completa
+    2022 : Programa Catalisa (Zup)
+         : Lógica, POO e SOLID (OCP / SRP)
+         : Design Patterns - Factory e State
+         : Spring Boot, Validation e relacionamentos JPA
+         : Testes com Mockito, MockMvc e TDD
+         : Spring Security e criptografia de senhas
+    2023 : Kotlin + Spring Boot (BookMarket)
+         : Testes automatizados e Mockito (Alura)
+         : Spring Boot 3
+    2024 : Spring Boot Essentials (DevDojo)
+         : API REST de cadastro de estudantes
+    2025 : Formação Spring Professional (DevSuperior)
+         : Injeção de dependência e componentes
+         : Projetos colaborativos (LkBank)
+    2026 : Java 25 + Spring Boot 4
+         : Workshops JPA e MongoDB
+         : CRUD DevSuperior (10/10)
+         : RKF Bank - backend completo com CI, testes e logs
+         : Flyway e Spring Security + JWT no RKF Bank
+         : TDD no domínio, MySQL real nos testes e fim do N+1
+```
+
+</details>
+
+### 🔀 2022 × 2026: o mesmo saque, quatro anos depois
+
+> Em 2022, no Catalisa, eu fiz um "banco" pela primeira vez. Em 2026, fiz de novo no RKF Bank. Antes de abrir, tente achar **3 problemas** no código de 2022. 🕵️
+
+<details>
+<summary><b>📼 2022 — <a href="https://github.com/k3vinrich4rd/ContaBancariaSpring">ContaBancariaSpring</a> (clique para ver)</b></summary>
+<br/>
+
+```java
+public class Saque implements CalculoContaBancaria {
+    @Override
+    public BigDecimal calculoDeTransacoes(ContaBancariaModel conta) {
+        return conta.getValorAtualDaConta()
+                .subtract(new BigDecimal(String.valueOf(conta.getValorFonercidoSaqueDeposito())));
+    }
+}
+// e no service: o saldo e o valor do saque vêm no MESMO corpo da requisição
+contaBancariaModel.setValorFinal(resultado);
+return contaBancariaRepository.save(contaBancariaModel);
+```
+
+</details>
+
+<details>
+<summary><b>🏦 2026 — <a href="https://github.com/k3vinrich4rd/rkf_bank">RKF Bank</a> (clique para ver)</b></summary>
+<br/>
+
+```java
+@Transactional
+public void sacar(UUID contaId, SaqueRequestDto request, UsuarioLogado usuario) {
+    Conta conta = buscarDoDono(contaId, usuario);          // 404 se não existe, 403 se não é sua
+    BigDecimal valor = validarValor(request.valor());      // 422 (VALOR_INVALIDO) se for zero ou negativo
+
+    conta.sacar(valor);              // a regra mora na Conta (TDD): sem saldo, 422 SALDO_INSUFICIENTE
+    contaRepository.save(conta);     // @Version na Conta: duas operações ao mesmo tempo, a segunda leva 409
+    salvarLancamento(TipoLancamentoEnum.SAQUE, valor, conta.getId(), null, request.descricao());
+}
+
+// Conta.java: domínio rico, coberto pelo ContaTest antes do código existir (vermelho → verde → refatorar)
+public void sacar(BigDecimal valor) {
+    exigirValorPositivo(valor);
+    if (saldo.compareTo(valor) < 0) {
+        throw new RegraNegocioException(CodigoErroEnum.SALDO_INSUFICIENTE);
+    }
+    saldo = saldo.subtract(valor);
+}
+```
+
+</details>
+
+<details>
+<summary><b>✅ Gabarito: o que mudou (abra depois de tentar)</b></summary>
+<br/>
+
+| Problema em 2022 | Como resolvi em 2026 |
+|---|---|
+| 💸 O **cliente mandava o próprio saldo** no JSON; bastava escrever um saldo maior | o saldo só existe no banco; a requisição traz apenas o valor |
+| 🕳️ **Saldo podia ficar negativo**: não havia regra nenhuma | `Saldo insuficiente` vira `422` antes de debitar |
+| 🔓 **Qualquer pessoa mexia em qualquer conta**: não havia login | JWT + regra de dono: conta de outro cliente vira `403` |
+| ➖ Valor **zero ou negativo** passava (e um saque negativo era um depósito!) | `validarValor` recusa com `422` |
+| 🏃 Dois saques ao mesmo tempo **sobrescreviam** um ao outro | `@Transactional` + lock otimista com `@Version` → `409` |
+| 🧾 Nenhum **histórico**: o valor final só substituía o anterior | cada saque gera um lançamento no extrato |
+| 🔇 Sem log nem teste do caminho de erro | log com `X-Request-Id` e 360 testes automatizados |
+
+<sub>Quantos você achou? Conta pra mim no <a href="#️-livro-de-visitas">livro de visitas</a>. 😄</sub>
+
+</details>
+
+<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
+
+<img src="assets/secoes/ao-vivo.svg" width="100%" alt=""/>
+
+## 📡 Ao vivo
+
+> Esta seção se atualiza sozinha. Cada commit que eu faço alimenta o meu Obsidian, que alimenta este README. 🤖
+
+<!-- Pulso gerado por scripts/svgs.mjs a partir do calendário público de contribuições, a cada 6 horas. -->
+<img src="assets/pulso.svg" width="100%" alt="Pulso das últimas semanas: mapa de calor de contribuições, dias seguidos, contribuições em 7 e 30 dias e último commit"/>
+
+<div align="center">
+
+<!-- AUTO:status:START -->
+<img src="https://img.shields.io/static/v1?label=R%C3%A9gua%20Pleno&message=13%2F15&color=EC7000&style=flat-square"/>
+<img src="https://img.shields.io/static/v1?label=Testes%20RKF%20Bank&message=360%20%E2%9C%94&color=3fb950&style=flat-square&logo=junit5&logoColor=white"/>
+<img src="https://img.shields.io/static/v1?label=MVP&message=13%2F13&color=003D74&style=flat-square"/>
+<img src="https://img.shields.io/static/v1?label=Foco%20agora&message=ingl%C3%AAs&color=6A1B9A&style=flat-square"/>
+<!-- AUTO:status:END -->
+
+</div>
+
+<!-- AUTO:agora:START -->
+**🔥 Esta semana**
+
+- 🔨 Revisar a branch `refactor/monolito-modular`
+- 🎯 Foco de estudo: **inglês**
+- ✅ Última entrega: Release develop → main (PR #76, mergeado pelo Renan): TDD na `Conta`, threads virtuais, fim do N+1, contas por cliente só para o ADMIN, README com skills, diagnóstico e anotações — 2026-10-29
+<!-- AUTO:agora:END -->
+
+<!-- AUTO:dica:START -->
+> 💡 **Dica do dia: `Flyway`**  
+> Cada mudança de schema vira um V__*.sql versionado. Nada de ddl-auto=update em produção.  
+> <sub>Muda todo dia sozinha · 15/20</sub>
+<!-- AUTO:dica:END -->
+
+<!-- A cobrinha é gerada pelo workflow .github/workflows/snake.yml deste repositório (branch "output"). -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/k3vinrich4rd/k3vinrich4rd/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/k3vinrich4rd/k3vinrich4rd/output/snake.svg" />
+  <img width="100%" src="https://raw.githubusercontent.com/k3vinrich4rd/k3vinrich4rd/output/snake-dark.svg" alt="Cobrinha comendo o meu gráfico de commits" />
+</picture>
+
+<details>
+<summary><b>⚡ Meus últimos commits</b></summary>
+<br/>
+
+<!-- AUTO:atividade:START -->
+| | Repositório | Commit | Quando |
+|:-:|---|---|---|
+| 📝 | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`664c4f0`](https://github.com/k3vinrich4rd/cpf-utils/commit/664c4f02c74492d8e520af9514600e4e2f7bee4c) docs(readme): adiciona Por que existe e O que aprendi | ontem |
+| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`8510d19`](https://github.com/k3vinrich4rd/rkf_bank/commit/8510d19697631c6fda2f728aaa4803462ef4a1c5) docs(readme): bloco de revisão técnica em 2 minutos no topo | há 4 dias |
+| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`4558293`](https://github.com/k3vinrich4rd/rkf_bank/commit/4558293c34c59e797d417b723ac8877ffa1aacd2) docs(deploy): checagem diária de integridade da produção | há 7 dias |
+| ♻️ | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`f430211`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/f430211de74e8756ebb6520b13b52ea0bae60578) refactor: renomeia OrdemItem para OrderItem | há 13 dias |
+| ⏪ | [`desafio-devsuperior-componentes-injecao-dependencia`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) | [`4997708`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia/commit/4997708166e270a54829b3ea94912378a03fa100) revert: main volta a ter so o desafio de componentes (o ORM foi para des | há 13 dias |
+| 📝 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`0849493`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/0849493f006f8569a3c9a93e9578c3ba795d6921) docs: adiciona README com modelo de dominio, endpoints e exemplos reais | há 26 dias |
+| 📝 | [`desafio-devsuperior-componentes-injecao-dependencia`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) | [`757f944`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia/commit/757f944837b07f090ea785449adbc2b0e28cd45e) docs: atualiza informações do README | 27/10/2025 |
+| • | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`68de4a9`](https://github.com/k3vinrich4rd/cpf-utils/commit/68de4a91b903988d82c6cddc349121e0c9b9093d) Update README.md | 30/06/2025 |
+
+<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 10/11 às 10:20</sub>
+<!-- AUTO:atividade:END -->
+
+</details>
+
+<details>
+<summary><b>📓 Diário de bordo: o que cada entrega me ensinou</b></summary>
+<br/>
+
+<!-- AUTO:diario:START -->
+| Quando | Onde | O que eu aprendi |
+|---|---|---|
+| 2026-11-03 | PRs #100 e #102 (develop) + #101 `develop` → `main` (aguardando merge) | plano grátis exige escolher o plano à mão: o Aiven sugeria Developer (US$ 5) e Professional (US$ 300); segredo nunca passa pela IA (quem cola a senha do banco e gera o JWT é o dono da conta) |
+| 2026-10-29 | PR #76 release `develop` → `main` (mergeado pelo Renan) | a main só recebe o que passou pela revisão do outro: o CI verde do PR de release é o resumo de todos os PRs da semana |
+| 2026-10-29 | PR #82 `perf/carregamento-lazy` | medir antes de otimizar: o EAGER padrão do para-um fazia N+1 em `/contas` (7 → 17 consultas de 5 para 15 contas); depois, número constante |
+| 2026-10-29 | PR #80 (CI do PR #76) + PRs #81 e #83 (README) | teste que depende da ordem é bug: o H2 compartilhado guardava os logins errados de outro teste; reproduzir com `-Dsurefire.runOrder` antes de corrigir |
+| 2026-10-29 | branch `refactor/monolito-modular` (em revisão, fora da develop) | trocar a arquitetura sem mudar comportamento: mover primeiro com os testes verdes, depois uma peça por commit, e deixar o ArchUnit achar os acoplamentos |
+<!-- AUTO:diario:END -->
+
+</details>
+
+```mermaid
+flowchart LR
+    A["💻 git commit<br/>em qualquer projeto"] -->|hook post-commit| B["🧠 Obsidian<br/>diário + nota do projeto"]
+    B -->|régua, checklist, testes| C["📦 progresso.json"]
+    C -->|git push| D["⚙️ GitHub Actions<br/>a cada 6h"]
+    D --> E["🌐 este README<br/>banner, gráficos, cobrinha"]
+    click E "https://github.com/k3vinrich4rd" _blank
+```
+
+<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
+
+<img src="assets/secoes/ultimos-commits-e-metas.svg" width="100%" alt=""/>
+
+## ⏱️ Últimos commits e metas
+
+> Atualizada todo dia pela minha rotina de automação, mesmo com o meu PC desligado: o último commit de cada projeto e o andamento das minhas metas, marco a marco. Projeto privado aparece só com a data.
+
+<!-- ULTIMOS-COMMITS:START -->
+| | Projeto | Último commit | Data |
+|:-:|---|---|---|
+| 📦 | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`664c4f0`](https://github.com/k3vinrich4rd/cpf-utils/commit/664c4f02c74492d8e520af9514600e4e2f7bee4c) docs(readme): adiciona Por que existe e O que aprendi | 09/11/2026 |
+| 📦 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`8510d19`](https://github.com/k3vinrich4rd/rkf_bank/commit/8510d19697631c6fda2f728aaa4803462ef4a1c5) docs(readme): bloco de revisão técnica em 2 minutos no topo | 06/11/2026 |
+| 🔒 | projeto privado | — | 04/11/2026 |
+| 🔒 | projeto privado | — | 03/11/2026 |
+| 📦 | [`JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`f430211`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/f430211de74e8756ebb6520b13b52ea0bae60578) refactor: renomeia OrdemItem para OrderItem | 28/10/2026 |
+| 📦 | [`desafio-devsuperior-componentes-injecao-dependencia`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) | [`4997708`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia/commit/4997708166e270a54829b3ea94912378a03fa100) revert: main volta a ter so o desafio de componentes (o ORM foi para desafio-dev | 28/10/2026 |
+| 📦 | [`desafio-devsuperior-crud-clientes`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) | [`9b0eb79`](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes/commit/9b0eb794bf407bdbe22af1196065717ef72591a9) feat: implementando correcao sugerida no feedback | 05/10/2026 |
+| 📦 | [`desafio-devsuperior-modelo-orm`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) | [`757f944`](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm/commit/757f944837b07f090ea785449adbc2b0e28cd45e) docs: atualiza informações do README | 27/10/2025 |
+
+<sub>🤖 Atualizado em 09/11/2026 (horário de Brasília) pela rotina diária (<code>scripts/rodar-diario.sh</code>) · branch padrão e <code>develop</code> · 🔒 projeto privado: só a data</sub>
+<!-- ULTIMOS-COMMITS:END -->
+
+### 🎯 Metas em andamento: Java + AWS + IA em conjunto
+
+<!-- METAS:START -->
+<p align="center"><img src="https://img.shields.io/badge/Java%20%2B%20AWS%20%2B%20IA-em%20conjunto-EC7000?style=for-the-badge" alt="Java + AWS + IA em conjunto"/></p>
+
+<table>
+<tr>
+<td valign="top" width="33%">
+
+<h3 align="center">☕ Java</h3>
+<p align="center"><img src="https://img.shields.io/badge/53%25-EC7000?style=for-the-badge" alt="53%"/><br/><img src="assets/metas/java.svg" width="100%" alt="Barra de progresso de Java"/></p>
+
+<img src="https://img.shields.io/badge/53%25-EC7000?style=flat-square" alt="53%"/> <a href="https://devsuperior.club/courses/5/lessons?lessonId=248">Java Spring Professional</a> · DevSuperior<br/><sub>atualizado em 10/11/2026</sub><br/><sub>📚 3/5 capítulos fechados</sub><br/><sub>✅ Componentes e injeção de dependência <code>14/14</code></sub><br/><sub>✅ Modelo de domínio e ORM <code>15/15</code></sub><br/><sub>✅ API REST, camadas, CRUD, exceções, validações <code>23/23</code></sub><br/><sub>🔄 JPA, consultas SQL e JPQL <code>23/38</code></sub><br/><sub>⬜ Login e controle de acesso <code>0/34</code></sub><br/><sub>⬜ Homologação e implantação com CI/CD (opcional) <code>0/18</code></sub><br/><br/>
+<img src="https://img.shields.io/badge/a%20atualizar-8b949e?style=flat-square" alt="a atualizar"/> Java Spring Expert · DevSuperior
+
+</td>
+<td valign="top" width="33%">
+
+<h3 align="center">☁️ AWS</h3>
+<p align="center"><img src="https://img.shields.io/badge/0%25-8b949e?style=for-the-badge" alt="0%"/><br/><img src="assets/metas/aws.svg" width="100%" alt="Barra de progresso de AWS"/></p>
+
+<img src="https://img.shields.io/badge/0%25-8b949e?style=flat-square" alt="0%"/> <a href="https://www.udemy.com/course/aws-na-pratica/learn/lecture/23121466?start=75#overview">AWS na Prática</a> · Udemy<br/><sub>atualizado em 04/11/2026</sub>
+
+</td>
+<td valign="top" width="33%">
+
+<h3 align="center">🤖 IA</h3>
+<p align="center"><img src="https://img.shields.io/badge/a%20atualizar-8b949e?style=for-the-badge" alt="a atualizar"/><br/><img src="assets/metas/ia.svg" width="100%" alt="Barra de progresso de IA"/></p>
+
+<img src="https://img.shields.io/badge/a%20atualizar-8b949e?style=flat-square" alt="a atualizar"/> <a href="https://www.udemy.com/course/inteligencia-artificial-para-iniciantes/">Formação Inteligência Artificial: Do Zero ao Avançado (2026)</a> · Udemy
+
+</td>
+</tr>
+</table>
+
+<sub>🎯 Cada meta é medida pelo progresso real dos cursos dela (média dos cursos com porcentagem registrada); "a atualizar" = curso sem porcentagem registrada ainda. Nada sobe sozinho · dados de 2026-11-10</sub>
+<!-- METAS:END -->
+
+<sub>📓 Um resumo por dia em <a href="diario/">diario/</a> · tudo isso também em <a href="progresso.md">progresso.md</a></sub>
 
 <p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
 
@@ -2441,94 +2529,236 @@ gantt
 
 <p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
 
-<img src="assets/secoes/tecnologias.svg" width="100%" alt=""/>
+<img src="assets/secoes/cursos-em-andamento.svg" width="100%" alt=""/>
 
-## 🛠️ Tecnologias
+## 📚 Cursos em andamento
+
+> O que estou estudando agora, com o progresso lido da própria plataforma do curso. Cada capítulo termina com um **desafio entregue no GitHub**, e é a teoria por trás do que eu pratico no [RKF Bank](#-rkf-bank--em-produção).
+
+<!-- AUTO:cursos:START -->
+### ☕ [Java Spring Professional](https://devsuperior.club/courses/5) · DevSuperior
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=java,kotlin,spring,mysql,postgres,mongodb,docker,aws,githubactions,git,github,maven,idea,postman,linux&perline=8" alt="Skills"/>
+<img src="https://img.shields.io/badge/progresso-53%25-EC7000?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/cap%C3%ADtulos%20conclu%C3%ADdos-3%20de%206-3fb950?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/desafios%20entregues-3%20de%205-58a6ff?style=for-the-badge"/>
 
 </div>
 
+```mermaid
+flowchart LR
+    C1["① Componentes e<br/>injeção de<br/>dependência<br/>✅ 14/14"] --> C2["② Modelo de domínio<br/>e ORM<br/>✅ 15/15"] --> C3["③ API REST, camadas,<br/>CRUD, exceções,<br/>validações<br/>✅ 23/23"] --> C4["④ JPA, consultas SQL<br/>e JPQL<br/>🔄 23/38"] --> C5["⑤ Login e controle<br/>de acesso<br/>📅 0/34"] --> C6["⑥ Homologação e<br/>implantação com<br/>CI/CD<br/>📅 0/18"]
+    style C1 fill:#1f6f3f,color:#fff
+    style C2 fill:#1f6f3f,color:#fff
+    style C3 fill:#1f6f3f,color:#fff
+    style C4 fill:#9a6700,color:#fff
+```
+
+| # | Capítulo | Aulas | Duração | Status | O que entreguei |
+|:-:|---|:-:|:-:|:-:|---|
+| 1 | Componentes e injeção de dependência | 14/14 | 1h26 | ✅ | [Cálculo de pedido](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) com `OrderService` + `ShippingService` injetados pelo Spring |
+| 2 | Modelo de domínio e ORM | 15/15 | 2h17 | ✅ | [Sistema de eventos](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) no H2 e o modelo do [DSCommerce](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) |
+| 3 | API REST, camadas, CRUD, exceções, validações | 23/23 | 3h14 | ✅ | [CRUD de clientes](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) com **10/10** no checklist de correção |
+| 4 | JPA, consultas SQL e JPQL | 23/38 | 6h52 | 🔄 | Próximo: desafio *Consulta vendas* (relatório paginado + sumário por vendedor) |
+| 5 | Login e controle de acesso | 0/34 | 4h53 | 📅 | DSCommerce completo com login (OAuth2 + JWT) e pedidos |
+| 6 | Homologação e implantação com CI/CD | 0/18 | 2h09 | 📅 | Perfis dev/prod, PostgreSQL no Docker e deploy com CI/CD |
+
+<sub>75 de 142 aulas assistidas</sub>
+
+**📌 Na fila (matriculado, ainda não comecei):** [Java Spring Expert](https://devsuperior.club/courses/6) (204 aulas) · [Java Spring Reference](https://devsuperior.club/courses/7) (151 aulas) · [Java Spring Tópicos Avançados](https://devsuperior.club/courses/63) (11 aulas) · [Análise de Requisitos Expert](https://devsuperior.club/courses/10) (50 aulas) · [Bônus Estudo de caso CI/CD AWS e Github Actions](https://devsuperior.club/courses/12) (17 aulas)
+
+<sub>🤖 Progresso lido da plataforma do curso pela minha automação em 2026-11-10.</sub>
+<!-- AUTO:cursos:END -->
+
+#### 📖 O que aprendi no Java Spring Professional
+
+Formação **Desenvolvedor Moderno · Back end** da [DevSuperior](https://devsuperior.com.br), com o professor Nélio Alves. O projeto do curso, o **DSCommerce**, cresce a cada capítulo.
+
 <details>
-<summary><b>🧠 Mapa mental da stack</b></summary>
+<summary><b>① Componentes e injeção de dependência</b>: por que o Spring cria os objetos por mim</summary>
 <br/>
 
-```mermaid
-mindmap
-  root((☕ Kevin))
-    Backend
-      Java 25
-      Spring Boot 4
-      Spring Data JPA
-      Spring Security
-      Bean Validation
-    Dados
-      MySQL
-      PostgreSQL
-      MongoDB
-      H2 nos testes
-    Qualidade
-      JUnit 5
-      Mockito
-      DataJpaTest
-      Testcontainers
-      JaCoCo
-    DevOps
-      Docker Compose
-      GitHub Actions
-      CodeQL e Dependabot
-      AWS em estudo
-    Observabilidade
-      Log4j2
-      X-Request-Id
-```
+- Um sistema é feito de **componentes coesos** (uma responsabilidade cada) e **desacoplados**: fica fácil trocar, manter e reaproveitar.
+- **Inversão de controle:** se A depende de B, A não escolhe quem é B. É a analogia do carro: a bateria encaixa fora do motor, então dá para trocá-la sem abrir o motor.
+- **Injeção de dependência** por construtor, `set` ou container. No Spring são dois passos: registrar (`@Service`) e declarar a dependência; o framework instancia, resolve e reaproveita.
+
+**Desafio:** total do pedido = valor − desconto + frete (R$ 20 abaixo de R$ 100, R$ 12 até R$ 200, grátis acima). `OrderService.total()` pede o frete ao `ShippingService.shipment()`, recebido pelo construtor.
 
 </details>
 
 <details>
-<summary><b>Ver a stack por categoria</b></summary>
+<summary><b>② Modelo de domínio e ORM</b>: do diagrama às tabelas com JPA</summary>
 <br/>
 
-| Categoria | Tecnologias |
+- Perfil `test` com **H2** em memória, `h2-console` e `open-in-view=false`.
+- Relacionamentos: `@ManyToOne`/`@OneToMany`, `@OneToOne` com `@MapsId` (Order ↔ Payment), `@ManyToMany` com `@JoinTable` (Product ↔ Category).
+- **N-N com dados próprios:** classe de associação com chave composta `@EmbeddedId` (`OrderItem` com quantidade e preço).
+- Seed com `import.sql`.
+
+```mermaid
+erDiagram
+    USER ||--o{ ORDER : "client"
+    ORDER ||--o| PAYMENT : "MapsId"
+    ORDER ||--|{ ORDER_ITEM : "items"
+    PRODUCT ||--o{ ORDER_ITEM : "items"
+    PRODUCT }o--o{ CATEGORY : "tb_product_category"
+```
+
+**Desafio:** sistema de eventos acadêmicos (atividades divididas em blocos de horário, categorias e participantes) criado e populado no H2.
+
+</details>
+
+<details>
+<summary><b>③ API REST, camadas, CRUD, exceções e validações</b>: a API de mercado</summary>
+<br/>
+
+- **REST:** recurso pelo nome (`GET /products/1`) e ação no verbo HTTP, nunca na rota (`POST /products`, e não `/insertProduct`).
+- **Camadas:** Controller (requisição) → Service (operação com sentido de negócio, `@Transactional`) → Repository (acesso ao banco).
+- **DTO** para projeção, segurança e economia de tráfego. Regra de ouro: nunca colocar uma entity dentro de um DTO.
+- **Erros centralizados** com `@ControllerAdvice`: 404 para recurso inexistente e 422 com uma mensagem por campo (Bean Validation).
+
+**Desafio:** CRUD completo de clientes com busca paginada (`?page=0&size=6&sort=name`), seed de 10 clientes, 404 e 422 com `@NotBlank` e `@PastOrPresent`.
+
+</details>
+
+<details>
+<summary><b>④ JPA, consultas SQL e JPQL</b>: em andamento</summary>
+<br/>
+
+- Sessão JPA e estados da entidade (*transient → managed → detached/removed*).
+- Salvar associados **para-um** (só o id no JSON) e **para-muitos** (um `getReferenceById` por item, um proxy sem `SELECT`).
+- **EAGER × LAZY:** relacionamento para-um carrega junto (EAGER), para-muitos só quando acessado (LAZY). No RKF Bank, `Conta.cliente` virou **LAZY** (a regra de dono só lê o id, que o proxy já tem) e as listas do ADMIN buscam o associado junto com `@EntityGraph`: antes, `GET /contas` fazia 7 consultas com 5 contas e 17 com 15 (N+1); agora o número é constante.
+- O grande vilão da JPA são as idas e voltas desnecessárias ao banco (**N+1**). A saída é usar `JOIN FETCH` ou, melhor ainda, consultas customizadas.
+
+```mermaid
+flowchart LR
+    Q["buscar entidade"] --> T{"relacionamento"}
+    T -->|"para-um"| E["EAGER: vem junto"]
+    T -->|"para-muitos"| L["LAZY: proxy"]
+    L -->|"acesso em loop"| N["N+1 consultas"]
+    N -->|"JOIN FETCH ou consulta customizada"| OK["1 consulta"]
+```
+
+- `@Transactional` e `open-in-view=false`; query methods, **JPQL** e SQL nativo, com estudos de caso do beecrowd no PostgreSQL.
+- No DSCommerce: busca de produtos por nome e consultas paginadas sem lentidão (`countQuery`).
+
+</details>
+
+<details>
+<summary><b>⑤ Login e controle de acesso</b>: próximo capítulo</summary>
+<br/>
+
+- Login com credenciais devolvendo um **token JWT** (OAuth2, *password grant*); sem token **401**, sem permissão **403**.
+- Spring Security: `User`–`Role`, senha com **BCrypt**, `UserDetailsService`, *Authorization server* e *Resource server*.
+- `@PreAuthorize` por perfil, usuário logado em `GET /users/me` e regra "o próprio cliente ou ADMIN" nos pedidos.
+- Desafio: o DSCommerce completo, com no mínimo 12 commits no GitHub.
+
+</details>
+
+<details>
+<summary><b>⑥ Homologação e implantação com CI/CD</b>: capítulo final</summary>
+<br/>
+
+- Perfis `test` (H2), `dev` (PostgreSQL + pgAdmin no Docker) e `prod`.
+- Deploy com CI/CD no Railway e no Heroku, com CORS configurado por variável de ambiente.
+
+</details>
+
+<sub>🧠 O resumo completo de cada PDF do curso está no meu segundo cérebro (Obsidian), ligado às notas de Spring que alimentam a <a href="#-junior--pleno--onde-estou">régua Junior → Pleno</a>.</sub>
+
+<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
+
+<img src="assets/secoes/formacao-e-certificacoes.svg" width="100%" alt=""/>
+
+## 🎓 Formação e certificações
+
+<div align="center">
+  <img src="assets/formacao.svg" width="100%" alt="Formação e certificações em cards por área, com o número de cursos e as instituições"/>
+</div>
+
+<details>
+<summary><b>☕ Java e desenvolvimento backend</b></summary>
+<br/>
+
+| Certificação | Instituição |
 |---|---|
-| Linguagens | ![](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) ![](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) |
-| Frameworks | ![](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white) ![](https://img.shields.io/badge/Spring%20Data%20JPA-6DB33F?style=flat-square&logo=spring&logoColor=white) ![](https://img.shields.io/badge/Spring%20Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white) ![](https://img.shields.io/badge/Hibernate-59666C?style=flat-square&logo=hibernate&logoColor=white) |
-| Bancos | ![](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) ![](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) ![](https://img.shields.io/badge/H2-003545?style=flat-square) |
-| Testes | ![](https://img.shields.io/badge/JUnit%205-25A162?style=flat-square&logo=junit5&logoColor=white) ![](https://img.shields.io/badge/Mockito-78A641?style=flat-square) ![](https://img.shields.io/badge/MockMvc-6DB33F?style=flat-square) ![](https://img.shields.io/badge/Testcontainers-2496ED?style=flat-square&logo=docker&logoColor=white) ![](https://img.shields.io/badge/JaCoCo-C21325?style=flat-square) |
-| DevOps | ![](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) ![](https://img.shields.io/badge/Maven-C71A36?style=flat-square&logo=apachemaven&logoColor=white) ![](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white) |
-| Observabilidade | ![](https://img.shields.io/badge/Log4j2-D22128?style=flat-square&logo=apache&logoColor=white) |
-| Ferramentas | ![](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![](https://img.shields.io/badge/IntelliJ%20IDEA-000000?style=flat-square&logo=intellijidea&logoColor=white) ![](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white) ![](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) |
+| Formação Java com Orientação a Objetos | Alura |
+| Java: consumindo API, gravando arquivos e lidando com erros | Alura |
+| Java: aplicando a Orientação a Objetos | Alura |
+| Java: trabalhando com listas e coleções de dados | Alura |
+| Java: criando a sua primeira aplicação | Alura |
+| Spring Boot 3: desenvolva uma API Rest em Java | Alura |
+| TDD e Java: testes automatizados com JUnit | Alura |
+| Mocks em Java: conhecendo o Mockito | Alura |
+| Java COMPLETO Programação Orientada a Objetos + Projetos | Udemy |
+
+</details>
+
+<details>
+<summary><b>🗄️ Banco de dados</b></summary>
+<br/>
+
+| Certificação | Instituição |
+|---|---|
+| SQL com MySQL: manipule e consulte dados | Alura |
+| Comandos DML: manipulação de dados com MySQL | Alura |
+| Consultas SQL: avançando no SQL com MySQL | Alura |
+
+</details>
+
+<details>
+<summary><b>☁️ Cloud e infraestrutura</b></summary>
+<br/>
+
+| Certificação | Instituição |
+|---|---|
+| Formação Começando em Cloud Computing | Alura |
+| Amazon EC2: alta disponibilidade e escalabilidade | Alura |
+| Exam Readiness: AWS Certified Cloud Practitioner | AWS |
+| Linux Onboarding: usando a CLI de forma prática | Alura |
+
+</details>
+
+<details>
+<summary><b>➕ Complementares</b></summary>
+<br/>
+
+| Certificação | Instituição |
+|---|---|
+| Formação Linguagem Kotlin | Alura |
+| Curso Git e GitHub | Workover |
 
 </details>
 
 <p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
 
-<img src="assets/secoes/atuacao-profissional.svg" width="100%" alt=""/>
+<img src="assets/secoes/github-stats.svg" width="100%" alt=""/>
 
-## 💼 Atuação profissional
-
-Atuo como **Desenvolvedor de Software Junior** contratado pela **[Zup Innovation](https://www.linkedin.com/company/zupinnovation/posts/?feedView=all)**, empresa do grupo **Itaú**, prestando serviço diretamente para o maior banco privado do Brasil.
-
-<div align="center">
-  <img src="assets/atuacao.svg" width="100%" alt="Atuação profissional em cards: técnico, colaboração, entregas, evolução e inglês"/>
-</div>
+## 📊 GitHub Stats
 
 <details>
-<summary><b>📋 As competências em tabela</b></summary>
+<summary><b>Ver detalhes</b></summary>
 
 <div align="center">
 
-| Área | Competência |
-|---|---|
-| Técnico | Java, Spring Boot, APIs REST, JPA/Hibernate, MongoDB, testes |
-| Colaboração | trabalho em equipe, comunicação técnica, code review |
-| Entregas | responsabilidade, proatividade, foco em qualidade |
-| Evolução | aprendizado contínuo, mentoria, adaptação a desafios |
-| Inglês | básico — em desenvolvimento ativo |
+<!-- Cards do github-profile-summary-cards e do streak (demolab): o github-readme-stats.vercel.app público saiu do ar (503). -->
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=k3vinrich4rd&theme=tokyonight" alt="Contribuições no GitHub mês a mês" width="100%"/>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=k3vinrich4rd&theme=tokyonight" alt="GitHub Stats" width="49%"/>
+<img src="https://streak-stats.demolab.com/?user=k3vinrich4rd&theme=tokyonight&hide_border=true&background=0d1117&ring=EC7000&fire=EC7000&currStreakLabel=EC7000&sideLabels=003D74" alt="GitHub Streak" width="49%"/>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=k3vinrich4rd&theme=tokyonight" alt="Linguagens por repositório" width="49%"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=k3vinrich4rd&theme=tokyonight" alt="Linguagens por commit" width="49%"/>
 
 </div>
+
+<!-- Gerado pelo workflow .github/workflows/snake.yml (branch "output"). -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/k3vinrich4rd/k3vinrich4rd/output/profile-night-rainbow.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/k3vinrich4rd/k3vinrich4rd/output/profile-season-animate.svg" />
+  <img width="100%" src="https://raw.githubusercontent.com/k3vinrich4rd/k3vinrich4rd/output/profile-night-rainbow.svg" alt="Meus commits em 3D" />
+</picture>
 
 </details>
 
@@ -2730,210 +2960,6 @@ BCrypt tem salt aleatório (senhas iguais viram hashes diferentes) e é lento de
 
 <p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
 
-<img src="assets/secoes/cursos-em-andamento.svg" width="100%" alt=""/>
-
-## 📚 Cursos em andamento
-
-> O que estou estudando agora, com o progresso lido da própria plataforma do curso. Cada capítulo termina com um **desafio entregue no GitHub**, e é a teoria por trás do que eu pratico no [RKF Bank](#-projeto-atual--rkf-bank).
-
-<!-- AUTO:cursos:START -->
-### ☕ [Java Spring Professional](https://devsuperior.club/courses/5) · DevSuperior
-
-<div align="center">
-
-<img src="https://img.shields.io/badge/progresso-53%25-EC7000?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/cap%C3%ADtulos%20conclu%C3%ADdos-3%20de%206-3fb950?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/desafios%20entregues-3%20de%205-58a6ff?style=for-the-badge"/>
-
-</div>
-
-```mermaid
-flowchart LR
-    C1["① Componentes e<br/>injeção de<br/>dependência<br/>✅ 14/14"] --> C2["② Modelo de domínio<br/>e ORM<br/>✅ 15/15"] --> C3["③ API REST, camadas,<br/>CRUD, exceções,<br/>validações<br/>✅ 23/23"] --> C4["④ JPA, consultas SQL<br/>e JPQL<br/>🔄 23/38"] --> C5["⑤ Login e controle<br/>de acesso<br/>📅 0/34"] --> C6["⑥ Homologação e<br/>implantação com<br/>CI/CD<br/>📅 0/18"]
-    style C1 fill:#1f6f3f,color:#fff
-    style C2 fill:#1f6f3f,color:#fff
-    style C3 fill:#1f6f3f,color:#fff
-    style C4 fill:#9a6700,color:#fff
-```
-
-| # | Capítulo | Aulas | Duração | Status | O que entreguei |
-|:-:|---|:-:|:-:|:-:|---|
-| 1 | Componentes e injeção de dependência | 14/14 | 1h26 | ✅ | [Cálculo de pedido](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) com `OrderService` + `ShippingService` injetados pelo Spring |
-| 2 | Modelo de domínio e ORM | 15/15 | 2h17 | ✅ | [Sistema de eventos](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) no H2 e o modelo do [DSCommerce](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) |
-| 3 | API REST, camadas, CRUD, exceções, validações | 23/23 | 3h14 | ✅ | [CRUD de clientes](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) com **10/10** no checklist de correção |
-| 4 | JPA, consultas SQL e JPQL | 23/38 | 6h52 | 🔄 | Próximo: desafio *Consulta vendas* (relatório paginado + sumário por vendedor) |
-| 5 | Login e controle de acesso | 0/34 | 4h53 | 📅 | DSCommerce completo com login (OAuth2 + JWT) e pedidos |
-| 6 | Homologação e implantação com CI/CD | 0/18 | 2h09 | 📅 | Perfis dev/prod, PostgreSQL no Docker e deploy com CI/CD |
-
-<sub>75 de 142 aulas assistidas</sub>
-
-**📌 Na fila (matriculado, ainda não comecei):** [Java Spring Expert](https://devsuperior.club/courses/6) (204 aulas) · [Java Spring Reference](https://devsuperior.club/courses/7) (151 aulas) · [Java Spring Tópicos Avançados](https://devsuperior.club/courses/63) (11 aulas) · [Análise de Requisitos Expert](https://devsuperior.club/courses/10) (50 aulas) · [Bônus Estudo de caso CI/CD AWS e Github Actions](https://devsuperior.club/courses/12) (17 aulas)
-
-<sub>🤖 Progresso lido da plataforma do curso pela minha automação em 2026-11-10.</sub>
-<!-- AUTO:cursos:END -->
-
-#### 📖 O que aprendi no Java Spring Professional
-
-Formação **Desenvolvedor Moderno · Back end** da [DevSuperior](https://devsuperior.com.br), com o professor Nélio Alves. O projeto do curso, o **DSCommerce**, cresce a cada capítulo.
-
-<details>
-<summary><b>① Componentes e injeção de dependência</b>: por que o Spring cria os objetos por mim</summary>
-<br/>
-
-- Um sistema é feito de **componentes coesos** (uma responsabilidade cada) e **desacoplados**: fica fácil trocar, manter e reaproveitar.
-- **Inversão de controle:** se A depende de B, A não escolhe quem é B. É a analogia do carro: a bateria encaixa fora do motor, então dá para trocá-la sem abrir o motor.
-- **Injeção de dependência** por construtor, `set` ou container. No Spring são dois passos: registrar (`@Service`) e declarar a dependência; o framework instancia, resolve e reaproveita.
-
-**Desafio:** total do pedido = valor − desconto + frete (R$ 20 abaixo de R$ 100, R$ 12 até R$ 200, grátis acima). `OrderService.total()` pede o frete ao `ShippingService.shipment()`, recebido pelo construtor.
-
-</details>
-
-<details>
-<summary><b>② Modelo de domínio e ORM</b>: do diagrama às tabelas com JPA</summary>
-<br/>
-
-- Perfil `test` com **H2** em memória, `h2-console` e `open-in-view=false`.
-- Relacionamentos: `@ManyToOne`/`@OneToMany`, `@OneToOne` com `@MapsId` (Order ↔ Payment), `@ManyToMany` com `@JoinTable` (Product ↔ Category).
-- **N-N com dados próprios:** classe de associação com chave composta `@EmbeddedId` (`OrderItem` com quantidade e preço).
-- Seed com `import.sql`.
-
-```mermaid
-erDiagram
-    USER ||--o{ ORDER : "client"
-    ORDER ||--o| PAYMENT : "MapsId"
-    ORDER ||--|{ ORDER_ITEM : "items"
-    PRODUCT ||--o{ ORDER_ITEM : "items"
-    PRODUCT }o--o{ CATEGORY : "tb_product_category"
-```
-
-**Desafio:** sistema de eventos acadêmicos (atividades divididas em blocos de horário, categorias e participantes) criado e populado no H2.
-
-</details>
-
-<details>
-<summary><b>③ API REST, camadas, CRUD, exceções e validações</b>: a API de mercado</summary>
-<br/>
-
-- **REST:** recurso pelo nome (`GET /products/1`) e ação no verbo HTTP, nunca na rota (`POST /products`, e não `/insertProduct`).
-- **Camadas:** Controller (requisição) → Service (operação com sentido de negócio, `@Transactional`) → Repository (acesso ao banco).
-- **DTO** para projeção, segurança e economia de tráfego. Regra de ouro: nunca colocar uma entity dentro de um DTO.
-- **Erros centralizados** com `@ControllerAdvice`: 404 para recurso inexistente e 422 com uma mensagem por campo (Bean Validation).
-
-**Desafio:** CRUD completo de clientes com busca paginada (`?page=0&size=6&sort=name`), seed de 10 clientes, 404 e 422 com `@NotBlank` e `@PastOrPresent`.
-
-</details>
-
-<details>
-<summary><b>④ JPA, consultas SQL e JPQL</b>: em andamento</summary>
-<br/>
-
-- Sessão JPA e estados da entidade (*transient → managed → detached/removed*).
-- Salvar associados **para-um** (só o id no JSON) e **para-muitos** (um `getReferenceById` por item, um proxy sem `SELECT`).
-- **EAGER × LAZY:** relacionamento para-um carrega junto (EAGER), para-muitos só quando acessado (LAZY). No RKF Bank, `Conta.cliente` virou **LAZY** (a regra de dono só lê o id, que o proxy já tem) e as listas do ADMIN buscam o associado junto com `@EntityGraph`: antes, `GET /contas` fazia 7 consultas com 5 contas e 17 com 15 (N+1); agora o número é constante.
-- O grande vilão da JPA são as idas e voltas desnecessárias ao banco (**N+1**). A saída é usar `JOIN FETCH` ou, melhor ainda, consultas customizadas.
-
-```mermaid
-flowchart LR
-    Q["buscar entidade"] --> T{"relacionamento"}
-    T -->|"para-um"| E["EAGER: vem junto"]
-    T -->|"para-muitos"| L["LAZY: proxy"]
-    L -->|"acesso em loop"| N["N+1 consultas"]
-    N -->|"JOIN FETCH ou consulta customizada"| OK["1 consulta"]
-```
-
-- `@Transactional` e `open-in-view=false`; query methods, **JPQL** e SQL nativo, com estudos de caso do beecrowd no PostgreSQL.
-- No DSCommerce: busca de produtos por nome e consultas paginadas sem lentidão (`countQuery`).
-
-</details>
-
-<details>
-<summary><b>⑤ Login e controle de acesso</b>: próximo capítulo</summary>
-<br/>
-
-- Login com credenciais devolvendo um **token JWT** (OAuth2, *password grant*); sem token **401**, sem permissão **403**.
-- Spring Security: `User`–`Role`, senha com **BCrypt**, `UserDetailsService`, *Authorization server* e *Resource server*.
-- `@PreAuthorize` por perfil, usuário logado em `GET /users/me` e regra "o próprio cliente ou ADMIN" nos pedidos.
-- Desafio: o DSCommerce completo, com no mínimo 12 commits no GitHub.
-
-</details>
-
-<details>
-<summary><b>⑥ Homologação e implantação com CI/CD</b>: capítulo final</summary>
-<br/>
-
-- Perfis `test` (H2), `dev` (PostgreSQL + pgAdmin no Docker) e `prod`.
-- Deploy com CI/CD no Railway e no Heroku, com CORS configurado por variável de ambiente.
-
-</details>
-
-<sub>🧠 O resumo completo de cada PDF do curso está no meu segundo cérebro (Obsidian), ligado às notas de Spring que alimentam a <a href="#-junior--pleno--onde-estou">régua Junior → Pleno</a>.</sub>
-
-<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
-
-<img src="assets/secoes/formacao-e-certificacoes.svg" width="100%" alt=""/>
-
-## 🎓 Formação e certificações
-
-<div align="center">
-  <img src="assets/formacao.svg" width="100%" alt="Formação e certificações em cards por área, com o número de cursos e as instituições"/>
-</div>
-
-<details>
-<summary><b>☕ Java e desenvolvimento backend</b></summary>
-<br/>
-
-| Certificação | Instituição |
-|---|---|
-| Formação Java com Orientação a Objetos | Alura |
-| Java: consumindo API, gravando arquivos e lidando com erros | Alura |
-| Java: aplicando a Orientação a Objetos | Alura |
-| Java: trabalhando com listas e coleções de dados | Alura |
-| Java: criando a sua primeira aplicação | Alura |
-| Spring Boot 3: desenvolva uma API Rest em Java | Alura |
-| TDD e Java: testes automatizados com JUnit | Alura |
-| Mocks em Java: conhecendo o Mockito | Alura |
-| Java COMPLETO Programação Orientada a Objetos + Projetos | Udemy |
-
-</details>
-
-<details>
-<summary><b>🗄️ Banco de dados</b></summary>
-<br/>
-
-| Certificação | Instituição |
-|---|---|
-| SQL com MySQL: manipule e consulte dados | Alura |
-| Comandos DML: manipulação de dados com MySQL | Alura |
-| Consultas SQL: avançando no SQL com MySQL | Alura |
-
-</details>
-
-<details>
-<summary><b>☁️ Cloud e infraestrutura</b></summary>
-<br/>
-
-| Certificação | Instituição |
-|---|---|
-| Formação Começando em Cloud Computing | Alura |
-| Amazon EC2: alta disponibilidade e escalabilidade | Alura |
-| Exam Readiness: AWS Certified Cloud Practitioner | AWS |
-| Linux Onboarding: usando a CLI de forma prática | Alura |
-
-</details>
-
-<details>
-<summary><b>➕ Complementares</b></summary>
-<br/>
-
-| Certificação | Instituição |
-|---|---|
-| Formação Linguagem Kotlin | Alura |
-| Curso Git e GitHub | Workover |
-
-</details>
-
-<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
-
 <img src="assets/secoes/livro-de-visitas.svg" width="100%" alt=""/>
 
 ## ✍️ Livro de visitas
@@ -2962,6 +2988,6 @@ flowchart LR
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:EC7000,50:003D74,100:1a1a1a&height=130&section=footer&animation=twinkling&text=Informa%C3%A7%C3%A3o%20e%20conhecimento%20nunca%20s%C3%A3o%20demais&fontSize=18&fontColor=ffffff&fontAlignY=65" alt="footer"/>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=15&duration=4000&pause=1500&color=EC7000&center=true&vCenter=true&width=500&lines=Sempre+tem+mais+para+aprender.;Sempre+tem+pr%C3%B3ximo+n%C3%ADvel.;C%C3%B3digo+todo+dia.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&duration=4000&pause=1500&color=EC7000&center=true&vCenter=true&width=500&lines=Sempre+tem+mais+para+aprender.;Sempre+tem+pr%C3%B3ximo+n%C3%ADvel.;C%C3%B3digo+todo+dia.)](https://git.io/typing-svg)
 
 </div>
