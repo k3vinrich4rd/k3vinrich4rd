@@ -1684,9 +1684,9 @@ quadrantChart
 <br/>
 
 <!-- AUTO:estudos:START -->
-**46** assuntos praticados em projeto · **23** em andamento · **2** planejados
+**29** assuntos praticados em projeto · **19** em andamento · **1** planejados
 
-📚 **138** notas de estudo no segundo cérebro · **83** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
+📚 **141** notas de estudo no segundo cérebro · **53** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
 
 ```mermaid
 mindmap
@@ -1702,7 +1702,6 @@ mindmap
       🔄 Event Sourcing
       ✅ Integração com APIs externas
       ✅ LGPD
-      ✅ Lock otimista e transações
       ✅ Logs e observabilidade
       🔄 MVC
       ⏳ Mensageria e Outbox
@@ -1717,22 +1716,11 @@ mindmap
     Cloud
       🔄 AWS
     Dados
-      ✅ Flyway
       ✅ H2 x MySQL
       ✅ MongoDB
       ✅ SQL e MySQL
     DevOps
       ✅ Dependências e CVEs
-      ✅ Docker e Compose
-      ✅ Git Flow e commits semânticos
-      ✅ GitHub Actions
-    IA
-      ✅ Agentes e IA aplicada
-      ✅ Ferramentas de dev com IA
-      ✅ Prompt e engenharia de contexto
-      ✅ Skills
-      ✅ Spec-Driven Development
-      ⏳ Spring AI
     Java
       ✅ BigDecimal e dinheiro
       ✅ Coleções Streams e Optional
@@ -1747,27 +1735,16 @@ mindmap
       ✅ POO e SOLID
     Spring
       ✅ Anotações Java e Spring
-      ✅ Bean Validation
       🔄 Carregamento EAGER e LAZY
-      🔄 JPQL e JOIN FETCH
       ✅ N+1 consultas
-      🔄 OAuth2 e OIDC
-      🔄 Projeção de dados
       ✅ Spring Boot - auto-configuração e starters
       ✅ Spring Boot Actuator
       ✅ Spring Boot Test
-      ✅ Spring Boot e camadas
-      ✅ Spring Data JPA e relacionamentos
-      ✅ Spring Framework - IoC DI e AOP
-      ✅ Spring Security e JWT
       ✅ Swagger e OpenAPI
-      ✅ Tratamento de erros REST
     spring
-      🔄 Paginação e countQuery
       🔄 Perfis do Spring e homologação
     Testes
       ✅ DataJpaTest
-      ✅ JUnit e Mockito
       ✅ TDD e estratégia de testes
       ✅ Testcontainers
       ✅ Testes manuais de API - Postman e Insomnia
@@ -1793,13 +1770,8 @@ mindmap
 | 🔄 Síncrono e assíncrono | Arquitetura | <sub>3 a fazer</sub> |
 | 🔄 AWS | Cloud | <sub>10 a fazer</sub> |
 | 🔄 Carregamento EAGER e LAZY | Spring | <sub>2 a fazer</sub> |
-| 🔄 JPQL e JOIN FETCH | Spring | <sub>3 a fazer</sub> |
-| 🔄 OAuth2 e OIDC | Spring | <sub>2 a fazer</sub> |
-| 🔄 Paginação e countQuery | spring | — |
 | 🔄 Perfis do Spring e homologação | spring | — |
-| 🔄 Projeção de dados | Spring | — |
 | ⏳ Mensageria e Outbox | Arquitetura | <sub>6 a fazer</sub> |
-| ⏳ Spring AI | IA | <sub>5 a fazer</sub> |
 
 <sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-11-10.</sub>
 <!-- AUTO:estudos:END -->
@@ -1812,7 +1784,7 @@ mindmap
 
 <!-- AUTO:cerebro:START -->
 <div align="center">
-  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 20 dias com registro, 138 notas, 2 trilhas e 46 assuntos praticados; progresso de cada trilha e de cada módulo"/>
+  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 20 dias com registro, 141 notas, 2 trilhas e 29 assuntos praticados; progresso de cada trilha e de cada módulo"/>
 </div>
 
 <details>
@@ -1821,9 +1793,9 @@ mindmap
 
 <table align="center"><tr>
 <td align="center">🗓️<br/><b>20</b> dias com registro<br/><sub>nos últimos 30</sub></td>
-<td align="center">📚<br/><b>138</b> notas de estudo<br/><sub>83 com exemplo com × sem</sub></td>
+<td align="center">📚<br/><b>141</b> notas de estudo<br/><sub>53 com exemplo com × sem</sub></td>
 <td align="center">🧭<br/><b>2</b> trilhas<br/><sub>12 módulos</sub></td>
-<td align="center">✅<br/><b>46</b> assuntos<br/><sub>praticados em projeto</sub></td>
+<td align="center">✅<br/><b>29</b> assuntos<br/><sub>praticados em projeto</sub></td>
 </tr></table>
 
 | Trilha | Praticado no RKF Bank | ✅ | 🔄 | 📅 | 📘 |
@@ -1863,7 +1835,7 @@ mindmap
 
 </details>
 
-📝 **Estudado por último:** `Arquitetura` Arquitetura em camadas · `Arquitetura` Arquitetura hexagonal · `Arquitetura` Arquitetura orientada a eventos · `Arquitetura` BFF (Backend for Frontend) · `Arquitetura` Clean Architecture · `Arquitetura` CQRS · `Arquitetura` Event Sourcing · `Definições` Idempotência e Idempotency-Key
+📝 **Estudado por último:** `IA` Guardrails · `IA` Structured output · `IA` Testes de aplicações com IA (evals) · `Arquitetura` Arquitetura em camadas · `Arquitetura` Arquitetura hexagonal · `Arquitetura` Arquitetura orientada a eventos · `Arquitetura` BFF (Backend for Frontend) · `Arquitetura` Clean Architecture
 
 <sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-11-10</sub>
 <!-- AUTO:cerebro:END -->
