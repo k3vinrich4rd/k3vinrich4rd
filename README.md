@@ -1958,7 +1958,7 @@ quadrantChart
 | Inglês técnico | 🔄 | em andamento |
 | Mensageria e microsserviços | ⏳ | Outbox do comprovante pronto na branch `refactor/monolito-modular` (em revisão); falta o broker |
 
-<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-11-09</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-11-10</sub>
 <!-- AUTO:regua:END -->
 
 </details>
@@ -2085,7 +2085,7 @@ mindmap
 | ⏳ Mensageria e Outbox | Arquitetura | <sub>6 a fazer</sub> |
 | ⏳ Spring AI | IA | <sub>5 a fazer</sub> |
 
-<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-11-09.</sub>
+<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-11-10.</sub>
 <!-- AUTO:estudos:END -->
 
 </details>
@@ -2096,7 +2096,7 @@ mindmap
 
 <!-- AUTO:cerebro:START -->
 <div align="center">
-  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 19 dias com registro, 138 notas, 2 trilhas e 46 assuntos praticados; progresso de cada trilha e de cada módulo"/>
+  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 20 dias com registro, 138 notas, 2 trilhas e 46 assuntos praticados; progresso de cada trilha e de cada módulo"/>
 </div>
 
 <details>
@@ -2104,7 +2104,7 @@ mindmap
 <br/>
 
 <table align="center"><tr>
-<td align="center">🗓️<br/><b>19</b> dias com registro<br/><sub>nos últimos 30</sub></td>
+<td align="center">🗓️<br/><b>20</b> dias com registro<br/><sub>nos últimos 30</sub></td>
 <td align="center">📚<br/><b>138</b> notas de estudo<br/><sub>83 com exemplo com × sem</sub></td>
 <td align="center">🧭<br/><b>2</b> trilhas<br/><sub>12 módulos</sub></td>
 <td align="center">✅<br/><b>46</b> assuntos<br/><sub>praticados em projeto</sub></td>
@@ -2149,7 +2149,7 @@ mindmap
 
 📝 **Estudado por último:** `Arquitetura` Arquitetura em camadas · `Arquitetura` Arquitetura hexagonal · `Arquitetura` Arquitetura orientada a eventos · `Arquitetura` BFF (Backend for Frontend) · `Arquitetura` Clean Architecture · `Arquitetura` CQRS · `Arquitetura` Event Sourcing · `Definições` Idempotência e Idempotency-Key
 
-<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-11-09</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-11-10</sub>
 <!-- AUTO:cerebro:END -->
 
 <details>
@@ -2351,7 +2351,7 @@ gantt
 
 **🧹 Débitos técnicos:** 9/18 resolvidos
 
-<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-11-09.</sub>
+<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-11-10.</sub>
 <!-- AUTO:checklist:END -->
 
 </details>
@@ -2769,7 +2769,7 @@ flowchart LR
 
 **📌 Na fila (matriculado, ainda não comecei):** [Java Spring Expert](https://devsuperior.club/courses/6) (204 aulas) · [Java Spring Reference](https://devsuperior.club/courses/7) (151 aulas) · [Java Spring Tópicos Avançados](https://devsuperior.club/courses/63) (11 aulas) · [Análise de Requisitos Expert](https://devsuperior.club/courses/10) (50 aulas) · [Bônus Estudo de caso CI/CD AWS e Github Actions](https://devsuperior.club/courses/12) (17 aulas)
 
-<sub>🤖 Progresso lido da plataforma do curso pela minha automação em 2026-11-09.</sub>
+<sub>🤖 Progresso lido da plataforma do curso pela minha automação em 2026-11-10.</sub>
 <!-- AUTO:cursos:END -->
 
 #### 📖 O que aprendi no Java Spring Professional

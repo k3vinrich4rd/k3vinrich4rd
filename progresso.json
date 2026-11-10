@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-09",
+  "atualizado": "2026-11-10",
   "regua": {
     "praticadas": 13,
     "total": 15,
@@ -1434,7 +1434,7 @@
         ]
       }
     ],
-    "diasDiario30": 19,
+    "diasDiario30": 20,
     "recentes": [
       {
         "nome": "Arquitetura em camadas",
