@@ -27,7 +27,7 @@ fonte: https://github.com/k3vinrich4rd/k3vinrich4rd
 
 `█████░░░░░` 53%
 
-- **53%** · [Java Spring Professional](https://devsuperior.club/courses/5/lessons?lessonId=248) · DevSuperior (atualizado em 2026-11-10)
+- **53%** · [Java Spring Professional](https://devsuperior.club/courses/5/lessons?lessonId=248) · DevSuperior (atualizado em 2026-11-11)
   - [x] Componentes e injeção de dependência (14/14)
   - [x] Modelo de domínio e ORM (15/15)
   - [x] API REST, camadas, CRUD, exceções, validações (23/23)
@@ -48,7 +48,7 @@ fonte: https://github.com/k3vinrich4rd/k3vinrich4rd
 
 - **a atualizar** · [Formação Inteligência Artificial: Do Zero ao Avançado (2026)](https://www.udemy.com/course/inteligencia-artificial-para-iniciantes/) · Udemy
 
-<sub>Dados de 2026-11-10</sub>
+<sub>Dados de 2026-11-11</sub>
 
 ## 📓 Diário de hoje
 
