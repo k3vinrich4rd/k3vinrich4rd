@@ -1674,7 +1674,7 @@ quadrantChart
 | Inglês técnico | 🔄 | em andamento |
 | Mensageria e microsserviços | ⏳ | Outbox do comprovante pronto na branch `refactor/monolito-modular` (em revisão); falta o broker |
 
-<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-11-10</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-11-11</sub>
 <!-- AUTO:regua:END -->
 
 </details>
@@ -1686,7 +1686,7 @@ quadrantChart
 <!-- AUTO:estudos:START -->
 **29** assuntos praticados em projeto · **19** em andamento · **1** planejados
 
-📚 **141** notas de estudo no segundo cérebro · **53** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
+📚 **122** notas de estudo no segundo cérebro · **52** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
 
 ```mermaid
 mindmap
@@ -1773,7 +1773,7 @@ mindmap
 | 🔄 Perfis do Spring e homologação | spring | — |
 | ⏳ Mensageria e Outbox | Arquitetura | <sub>6 a fazer</sub> |
 
-<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-11-10.</sub>
+<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-11-11.</sub>
 <!-- AUTO:estudos:END -->
 
 </details>
@@ -1784,7 +1784,7 @@ mindmap
 
 <!-- AUTO:cerebro:START -->
 <div align="center">
-  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 20 dias com registro, 141 notas, 2 trilhas e 29 assuntos praticados; progresso de cada trilha e de cada módulo"/>
+  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 21 dias com registro, 122 notas, 2 trilhas e 29 assuntos praticados; progresso de cada trilha e de cada módulo"/>
 </div>
 
 <details>
@@ -1792,8 +1792,8 @@ mindmap
 <br/>
 
 <table align="center"><tr>
-<td align="center">🗓️<br/><b>20</b> dias com registro<br/><sub>nos últimos 30</sub></td>
-<td align="center">📚<br/><b>141</b> notas de estudo<br/><sub>53 com exemplo com × sem</sub></td>
+<td align="center">🗓️<br/><b>21</b> dias com registro<br/><sub>nos últimos 30</sub></td>
+<td align="center">📚<br/><b>122</b> notas de estudo<br/><sub>52 com exemplo com × sem</sub></td>
 <td align="center">🧭<br/><b>2</b> trilhas<br/><sub>12 módulos</sub></td>
 <td align="center">✅<br/><b>29</b> assuntos<br/><sub>praticados em projeto</sub></td>
 </tr></table>
@@ -1837,7 +1837,7 @@ mindmap
 
 📝 **Estudado por último:** `IA` Guardrails · `IA` Structured output · `IA` Testes de aplicações com IA (evals) · `Arquitetura` Arquitetura em camadas · `Arquitetura` Arquitetura hexagonal · `Arquitetura` Arquitetura orientada a eventos · `Arquitetura` BFF (Backend for Frontend) · `Arquitetura` Clean Architecture
 
-<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-11-10</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-11-11</sub>
 <!-- AUTO:cerebro:END -->
 
 <details>
@@ -2165,9 +2165,9 @@ public void sacar(BigDecimal valor) {
 <!-- AUTO:agora:END -->
 
 <!-- AUTO:dica:START -->
-> 💡 **Dica do dia: `Flyway`**  
-> Cada mudança de schema vira um V__*.sql versionado. Nada de ddl-auto=update em produção.  
-> <sub>Muda todo dia sozinha · 15/20</sub>
+> 💡 **Dica do dia: `Testcontainers`**  
+> Testa contra o MySQL de verdade num container, e não contra um H2 que se comporta diferente.  
+> <sub>Muda todo dia sozinha · 16/20</sub>
 <!-- AUTO:dica:END -->
 
 <!-- A cobrinha é gerada pelo workflow .github/workflows/snake.yml deste repositório (branch "output"). -->
@@ -2411,7 +2411,7 @@ gantt
 
 **🧹 Débitos técnicos:** 9/18 resolvidos
 
-<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-11-10.</sub>
+<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-11-11.</sub>
 <!-- AUTO:checklist:END -->
 
 </details>
@@ -2540,7 +2540,7 @@ flowchart LR
 
 **📌 Na fila (matriculado, ainda não comecei):** [Java Spring Expert](https://devsuperior.club/courses/6) (204 aulas) · [Java Spring Reference](https://devsuperior.club/courses/7) (151 aulas) · [Java Spring Tópicos Avançados](https://devsuperior.club/courses/63) (11 aulas) · [Análise de Requisitos Expert](https://devsuperior.club/courses/10) (50 aulas) · [Bônus Estudo de caso CI/CD AWS e Github Actions](https://devsuperior.club/courses/12) (17 aulas)
 
-<sub>🤖 Progresso lido da plataforma do curso pela minha automação em 2026-11-10.</sub>
+<sub>🤖 Progresso lido da plataforma do curso pela minha automação em 2026-11-11.</sub>
 <!-- AUTO:cursos:END -->
 
 #### 📖 O que aprendi no Java Spring Professional
@@ -2828,26 +2828,26 @@ dono só usa o id, que o proxy já tem) e `@EntityGraph` nas listas que mostram 
 
 <!-- AUTO:flashcards:START -->
 <details>
-<summary><b>🃏 Java · Por que exceção de negócio deve ser unchecked num projeto Spring?</b></summary>
+<summary><b>🃏 Spring · O que acontece se eu editar uma migração do Flyway já aplicada?</b></summary>
 <br/>
 
-O <code>@Transactional</code> só faz rollback automático em <code>RuntimeException</code>. Uma exceção checked deixaria o débito gravado pela metade.
+O checksum não bate e a aplicação não sobe (<code>Migration checksum mismatch</code>). Mudança nova = arquivo novo (<code>V6__...</code>). É uma proteção: todo banco fica igual.
 
 </details>
 
 <details>
-<summary><b>🃏 Spring · Qual a diferença entre 401 e 403?</b></summary>
+<summary><b>🃏 Spring · Por que o @Transactional não funciona numa chamada interna?</b></summary>
 <br/>
 
-<code>401</code>: não sei quem você é (sem token, vencido ou adulterado). <code>403</code>: sei quem você é, mas não pode (conta de outro cliente). No RKF Bank a regra de dono mora no <code>ContaService</code>.
+Ele é implementado por um proxy (AOP). Chamar outro método da mesma classe não passa pelo proxy, então a transação não abre.
 
 </details>
 
 <details>
-<summary><b>🃏 Spring · Por que a senha vai em BCrypt e não em SHA-256?</b></summary>
+<summary><b>🃏 Spring · Por que injeção de dependência pelo construtor?</b></summary>
 <br/>
 
-BCrypt tem salt aleatório (senhas iguais viram hashes diferentes) e é lento de propósito, o que encarece a força bruta. SHA-256 é rápido demais para senha.
+Campos <code>final</code>, dependências explícitas e teste sem Spring: <code>new ContaService(mock(ContaRepository.class))</code>.
 
 </details>
 

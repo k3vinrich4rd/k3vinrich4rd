@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-10",
+  "atualizado": "2026-11-11",
   "regua": {
     "praticadas": 13,
     "total": 15,
@@ -892,8 +892,8 @@
     }
   ],
   "biblioteca": {
-    "notas": 141,
-    "comSem": 53,
+    "notas": 122,
+    "comSem": 52,
     "sessoes": [
       "IA, Spring e LGPD",
       "Java e seu universo"
@@ -1236,7 +1236,7 @@
         ]
       }
     ],
-    "diasDiario30": 20,
+    "diasDiario30": 21,
     "recentes": [
       {
         "nome": "Guardrails",
