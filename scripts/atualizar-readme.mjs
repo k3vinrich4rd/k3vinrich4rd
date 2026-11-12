@@ -49,7 +49,6 @@ function blocoRecrutador() {
 |---|---|
 | Quem é? | Dev **Java backend Junior** na **Zup Innovation**, prestando serviço para o **Itaú**, em transição para **Pleno** (**${regua.praticadas}/${regua.total}** competências já praticadas) |
 | Em produção? | **[RKF Bank](https://github.com/${USUARIO}/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **${rkf.testes} testes**, CI e logs rastreáveis · ✅ **no ar**: [abrir o banco](https://rkfbank.vercel.app) |
-| Projeto atual? | **Wisdom** 🔒 (repositório privado): app gamificado de inglês com cinco fundadores; eu sou o dono do backend e do contrato da API (Java 25, Spring Boot 4.1, Spring Modulith, PostgreSQL 18, OpenAPI) · [ver resumo](#-wisdom--projeto-atual-em-construção) |
 | Stack principal? | Java · Spring Boot · JPA/Hibernate · MySQL/PostgreSQL · MongoDB · JUnit/Mockito · Docker · GitHub Actions |
 | O que está estudando? | ${p.trilha.map(apelido).join(' → ')} |
 | Contato? | [LinkedIn](https://www.linkedin.com/in/kevinrichard-java/) · [kevinrichardve@gmail.com](mailto:kevinrichardve@gmail.com) |`;
@@ -755,7 +754,6 @@ const botoes = {
   'ao-vivo.svg': ['Ao vivo', { icone: '📡', largura: 132 }],
   'historia.svg': ['Trajetória', { icone: '🧭', largura: 148 }],
   'rkf-bank.svg': ['RKF Bank', { icone: '🏦', largura: 150, destaque: true }],
-  'wisdom.svg': ['Wisdom', { icone: '💻', largura: 130, cor: '#FF6B00' }],
   'projetos.svg': ['Projetos', { icone: '🗂️', largura: 138 }],
   'pleno.svg': ['Pleno', { icone: '📈', largura: 112 }],
   'roadmap.svg': ['Roadmap', { icone: '🎯', largura: 142 }],
