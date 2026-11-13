@@ -174,7 +174,7 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 <a href="https://github.com/k3vinrich4rd/rkf_bank/actions/workflows/backend-ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/k3vinrich4rd/rkf_bank/backend-ci.yml?branch=develop&style=flat-square&label=CI%20RKF%20Bank&logo=githubactions&logoColor=white"/></a>
 <a href="https://github.com/k3vinrich4rd/rkf_bank/commits/develop"><img src="https://img.shields.io/github/last-commit/k3vinrich4rd/rkf_bank/develop?style=flat-square&label=%C3%BAltimo%20commit&color=003D74"/></a>
 <a href="https://github.com/k3vinrich4rd/rkf_bank/pulse"><img src="https://img.shields.io/github/commit-activity/m/k3vinrich4rd/rkf_bank?style=flat-square&label=commits%2Fm%C3%AAs&color=EC7000"/></a>
-<a href="https://github.com/k3vinrich4rd/rkf_bank/pulls?q=is%3Apr+is%3Amerged"><img src="https://img.shields.io/github/issues-pr-closed/k3vinrich4rd/rkf_bank?style=flat-square&label=PRs%20fechados&color=6DB33F"/></a>
+<a href="https://github.com/k3vinrich4rd/rkf_bank/pulls?q=is%3Apr+is%3Amerged"><img src="https://img.shields.io/github/issues-search/k3vinrich4rd/rkf_bank?query=is%3Apr+is%3Amerged&label=PRs%20mesclados&color=6DB33F&style=flat-square"/></a>
 
 
 <img src="https://img.shields.io/badge/Java-25-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/>
