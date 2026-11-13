@@ -1,8 +1,9 @@
 // Rotina diária do perfil (workflow .github/workflows/perfil-diario.yml, também roda na máquina do Kevin).
 //
 // O que faz, sem nunca criar commit vazio (quem commita é o workflow, só se algum arquivo mudou):
-//  1. README, entre <!-- ULTIMOS-COMMITS:START/END -->: o último commit de cada projeto recente do Kevin
-//     (branch padrão e develop). Repositório privado aparece só como "projeto privado" + data: sem nome, mensagem nem link.
+//  1. README, entre <!-- ULTIMOS-COMMITS:START/END -->: o último commit de cada projeto público recente do Kevin
+//     (branch padrão e develop). Repositório privado não aparece (nem nome, nem data, nem link). A frase de abertura
+//     imediatamente acima do marcador também é mantida por este script.
 //  2. README, entre <!-- METAS:START/END -->: desenha o que estiver em metas/progresso.json. Este script NÃO calcula
 //     meta nenhuma: quem decide quais commits contam é a rotina do Black, que reescreve aquele arquivo.
 //  3. diario/AAAA-MM-DD.md (data de Brasília): o resumo do dia. Fonte, nesta ordem:
@@ -13,9 +14,9 @@
 //
 // Dois modos:
 //  - completo (padrão): 1 a 4. Roda na máquina de automação pelo scripts/rodar-diario.sh, com o `gh` logado como o
-//    Kevin (enxerga os repositórios privados, que saem só como "projeto privado" + data).
-//  - --so-metas: só 2 e 4, sem chamar a API (o workflow perfil-diario.yml usa este modo com o GITHUB_TOKEN padrão,
-//    que não enxerga privados; a tabela de últimos commits fica como a máquina gerou).
+//    Kevin. A tabela lista só projetos públicos; os privados ficam de fora.
+//  - --so-metas: só 2 e 4, sem chamar a API (o workflow perfil-diario.yml usa este modo com o GITHUB_TOKEN padrão;
+//    a tabela de últimos commits fica como a máquina gerou).
 // Token: GH_TOKEN se existir; sem ele, usa o `gh api` já logado.
 // Uso: node scripts/perfil-diario.mjs [--so-metas] [--seco]   (--seco: só mostra o que mudaria, sem gravar)
 import fs from 'node:fs';
@@ -85,25 +86,25 @@ const dataDe = (c) => c.commit.committer?.date ?? c.commit.author.date;
 const titulo = (c) => c.commit.message.split('\n')[0].replace(/\|/g, '\\|').slice(0, 80);
 
 // ---------- 1. Últimos commits ----------
+const FRASE_ABERTURA = 'Atualizada todo dia pela minha rotina de automação, mesmo com o meu PC desligado: o último commit de cada projeto público e o andamento das minhas metas, marco a marco.';
+const ehWisdom = (r) => /wisdom/i.test(r.name ?? '') || /wisdom/i.test(r.full_name ?? '');
 async function blocoUltimosCommits(repos) {
   const recentes = repos
-    .filter((r) => !r.fork && !r.archived && r.name.toLowerCase() !== USUARIO.toLowerCase() && r.pushed_at)
+    .filter((r) => !r.private && !r.fork && !r.archived && !ehWisdom(r) && r.name.toLowerCase() !== USUARIO.toLowerCase() && r.pushed_at)
     .sort((a, b) => b.pushed_at.localeCompare(a.pushed_at))
     .slice(0, MAX_PROJETOS);
   const linhas = [];
   for (const r of recentes) {
     const [c] = await commitsDe(r);
     if (!c) continue;
-    linhas.push(r.private
-      ? { data: dataDe(c), md: `| 🔒 | projeto privado | — | ${diaBR(dataDe(c))} |` }
-      : { data: dataDe(c), md: `| 📦 | [\`${r.name}\`](${r.html_url}) | [\`${c.sha.slice(0, 7)}\`](${c.html_url}) ${titulo(c)} | ${diaBR(dataDe(c))} |` });
+    linhas.push({ data: dataDe(c), md: `| 📦 | [\`${r.name}\`](${r.html_url}) | [\`${c.sha.slice(0, 7)}\`](${c.html_url}) ${titulo(c)} | ${diaBR(dataDe(c))} |` });
   }
   linhas.sort((a, b) => b.data.localeCompare(a.data));
   return `| | Projeto | Último commit | Data |
 |:-:|---|---|---|
 ${linhas.map((l) => l.md).join('\n')}
 
-<sub>🤖 Atualizado em ${diaBR(agora)} (horário de Brasília) pela rotina diária (<code>scripts/rodar-diario.sh</code>) · branch padrão e <code>develop</code> · 🔒 projeto privado: só a data</sub>`;
+<sub>🤖 Atualizado em ${diaBR(agora)} (horário de Brasília) pela rotina diária (<code>scripts/rodar-diario.sh</code>) · branch padrão e <code>develop</code></sub>`;
 }
 
 // ---------- 2. Metas (só desenha metas/progresso.json) ----------
@@ -202,7 +203,7 @@ async function atividade24h(repos) {
   const desde = new Date(agora.getTime() - horas * 3600 * 1000).toISOString();
   const commits = [];
   let privados = 0;
-  for (const r of repos.filter((r) => !r.fork && r.name.toLowerCase() !== USUARIO.toLowerCase() && r.pushed_at >= desde)) {
+  for (const r of repos.filter((r) => !r.fork && !ehWisdom(r) && r.name.toLowerCase() !== USUARIO.toLowerCase() && r.pushed_at >= desde)) {
     const lote = await commitsDe(r, `&author=${USUARIO}&since=${desde}`);
     if (r.private) privados += lote.length;
     else for (const c of lote) commits.push({ repo: r, c });
@@ -279,7 +280,9 @@ for (const meta of metas?.metas ?? []) escrever(`assets/metas/${meta.id}.svg`, s
 const metasMd = blocoMetas(metas);
 if (!SO_METAS) readme = substituir(readme, 'ULTIMOS-COMMITS', ultimos);
 readme = substituir(readme, 'METAS', metasMd);
-escrever('README.md', readme);
+const comFrase = readme.replace(/(## ⏱️ Últimos commits e metas\n\n)> [^\n]+/, `$1> ${FRASE_ABERTURA}`);
+if (comFrase === readme && !readme.includes(`> ${FRASE_ABERTURA}`)) console.warn('aviso: frase de abertura do bloco de últimos commits não encontrada no README');
+escrever('README.md', comFrase);
 
 escrever('progresso.md', `---
 atualizado: ${diario?.dia ?? dia}

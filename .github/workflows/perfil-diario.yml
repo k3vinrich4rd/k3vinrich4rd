@@ -1,7 +1,7 @@
 # Renderizador das metas: quando a rotina diária publica diario/** ou metas/** na main, redesenha a tabela de metas do
 # README (<!-- METAS:START/END -->) e o progresso.md a partir de metas/progresso.json. Não chama a API do GitHub:
-# a tabela de últimos commits (que precisa enxergar os repositórios privados, mostrados só como "projeto privado")
-# é gerada na máquina de automação por scripts/rodar-diario.sh, que também faz o commit diário como o Kevin.
+# a tabela de últimos commits (somente projetos públicos; os privados não aparecem) é gerada na máquina de
+# automação por scripts/rodar-diario.sh, que também faz o commit diário como o Kevin.
 # Este workflow só commita se algo mudou (como github-actions[bot]; quem garante a ofensiva é o commit da rotina).
 name: Perfil diário (metas)
 

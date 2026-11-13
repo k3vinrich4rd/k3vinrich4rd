@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Rotina diária do perfil, rodada na máquina de automação (gh logado como k3vinrich4rd).
-# Faz tudo: atualiza a main, gera o diário do dia, a tabela de últimos commits (privados só como "projeto privado"),
+# Faz tudo: atualiza a main, gera o diário do dia, a tabela de últimos commits (só projetos públicos; privados não entram),
 # as metas e o progresso.md, ajusta cabeçalhos/índice do README, commita como o Kevin (conta na ofensiva) e dá push.
 # Sem mudança, não commita.
 #
