@@ -2099,9 +2099,9 @@ public void sacar(BigDecimal valor) {
 <!-- AUTO:agora:END -->
 
 <!-- AUTO:dica:START -->
-> 💡 **Dica do dia: `Pageable`**  
-> Receba Pageable no controller e o Spring monta page, size e sort direto da URL.  
-> <sub>Muda todo dia sozinha · 17/20</sub>
+> 💡 **Dica do dia: `@Valid + Bean Validation`**  
+> Validação declarativa no DTO: a regra mora perto do dado e a mensagem sai pronta para o front.  
+> <sub>Muda todo dia sozinha · 18/20</sub>
 <!-- AUTO:dica:END -->
 
 <!-- A cobrinha é gerada pelo workflow .github/workflows/snake.yml deste repositório (branch "output"). -->
@@ -2127,7 +2127,7 @@ public void sacar(BigDecimal valor) {
 | 📝 | [`desafio-devsuperior-componentes-injecao-dependencia`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) | [`757f944`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia/commit/757f944837b07f090ea785449adbc2b0e28cd45e) docs: atualiza informações do README | 27/10/2025 |
 | • | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`68de4a9`](https://github.com/k3vinrich4rd/cpf-utils/commit/68de4a91b903988d82c6cddc349121e0c9b9093d) Update README.md | 30/06/2025 |
 
-<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 12/11 às 23:18</sub>
+<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 13/11 às 03:50</sub>
 <!-- AUTO:atividade:END -->
 
 </details>
@@ -2762,26 +2762,26 @@ dono só usa o id, que o proxy já tem) e `@EntityGraph` nas listas que mostram 
 
 <!-- AUTO:flashcards:START -->
 <details>
-<summary><b>🃏 Spring · O que o MockMvc testa que chamar o controller direto não testa?</b></summary>
+<summary><b>🃏 IA · Que problema o MCP resolve?</b></summary>
 <br/>
 
-O JSON de verdade, o <code>@Valid</code>, a serialização e o status HTTP. Um <code>{"valor":"abc"}</code> só é pego passando pelo MockMvc.
+O N × M de integrações: cada sistema expõe um servidor MCP e qualquer IA compatível usa, como o USB-C fez com cabos.
 
 </details>
 
 <details>
-<summary><b>🃏 IA · RAG ou fine-tuning para responder sobre as decisões do time?</b></summary>
+<summary><b>🃏 IA · Por que o saldo não deve ser calculado pelo LLM?</b></summary>
 <br/>
 
-RAG: o conhecimento muda e precisa citar a fonte. Fine-tuning ensina jeito e tarefa, não fatos atualizados.
+O LLM prevê texto, não faz conta exata. Regra exata (saldo, CPF, limite) é código; o LLM interpreta e o código valida e executa.
 
 </details>
 
 <details>
-<summary><b>🃏 IA · Qual a diferença entre chatbot e agente de IA?</b></summary>
+<summary><b>🃏 LGPD · O cliente pede para apagar os dados. O banco pode dar DELETE?</b></summary>
 <br/>
 
-O chatbot responde; o agente usa ferramentas em loop até cumprir um objetivo. Por isso precisa de guardrails: ler pode ser automático, mexer em dinheiro exige confirmação humana.
+Não: registros financeiros têm guarda obrigatória por outras leis. O certo é encerrar a conta, bloquear o acesso e anonimizar ao fim do prazo.
 
 </details>
 
