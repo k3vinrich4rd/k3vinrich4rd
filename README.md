@@ -1471,6 +1471,8 @@ Banco digital que construí com o Renan e o Fellipe, **MVP concluído**: **360 t
 <summary><b>🎓 2 · Finalizando o Java Spring Professional (DevSuperior)</b> — 🔄 agora</summary>
 <br/>
 
+📈 **Andamento:** <a href="https://devsuperior.club/courses/5"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fk3vinrich4rd%2Fk3vinrich4rd%2Fmain%2Fcursos.json&query=%24.cursos%5B0%5D.progresso&label=Java%20Spring%20Professional&suffix=%25&color=EC7000&style=flat-square" alt="Progresso do Java Spring Professional (cursos.json)"/></a> · 75 de 142 aulas · ✅ 3 de 5 desafios entregues · ⏭️ próximo: desafio *Consulta vendas* (relatório paginado + resumo por vendedor), no capítulo de JPA, SQL e JPQL
+
 [**Java Spring Professional**](https://devsuperior.club/courses/5), *"seja um profissional no desenvolvimento de API Rest com Java e Spring"*: arquitetura em camadas, DTOs, validação, tratamento de erros (`404`/`422`), Spring Security e testes. Cada aula vira nota no meu Obsidian, com exemplo **com × sem** usando o RKF Bank — por isso vários assuntos já aparecem como **praticados** no painel abaixo.
 
 </details>
