@@ -835,28 +835,32 @@ Atuo como **Desenvolvedor de Software Junior** contratado pela **[Zup Innovation
 
 <div align="center">
 
-<a href="https://github.com/k3vinrich4rd/rkf_bank" target="_blank"><img src="assets/cards/rkf_bank.svg" alt="RKF Bank" width="49%"/></a>
-
-<a href="https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM" target="_blank"><img src="assets/cards/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM.svg" alt="DSCommerce" width="49%"/></a>
+<a href="https://github.com/k3vinrich4rd/rkf_bank" target="_blank"><img src="assets/cards/rkf_bank.svg" alt="RKF Bank" width="32%"/></a>
+<a href="https://github.com/k3vinrich4rd/barbearia-altas-horas" target="_blank"><img src="assets/cards/barbearia-altas-horas.svg" alt="Barbearia Altas Horas" width="32%"/></a>
+<a href="https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM" target="_blank"><img src="assets/cards/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM.svg" alt="DSCommerce" width="32%"/></a>
 
 </div>
 
-| | 🏦 [RKF Bank](https://github.com/k3vinrich4rd/rkf_bank) | 🛒 [DSCommerce](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) |
-|---|---|---|
-| **O que é** | banco digital full stack, time de três (Osasco, SP) | e-commerce da formação Spring Professional (DevSuperior) |
-| **Meu papel** | todo o backend | projeto individual |
-| **Domínio** | clientes, contas, depósito, saque, transferência, extrato | usuários, pedidos, produtos, categorias, pagamento |
-| **O que mostra** | transação atômica, lock otimista, ViaCEP com falha tratada, logs com `X-Request-Id` | modelo de domínio rico, chave composta (`OrderItemPK`), Bean Validation, erros padronizados |
-| **Qualidade** | 360 testes, JaCoCo, CI com CodeQL e Dependabot | camadas controller → service → repository, `DatabaseException` para integridade referencial |
-| **Stack** | Java 25 · Spring Boot 4 · MySQL · Docker · Next.js | Java · Spring Boot · JPA · H2 |
-| **README** | [roteiro do projeto](https://github.com/k3vinrich4rd/rkf_bank#readme) | [modelo de domínio, endpoints e respostas reais](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM#readme) |
-| **Ver primeiro** | [`ContaService`](https://github.com/k3vinrich4rd/rkf_bank) · [roteiro no README](#-rkf-bank--em-produção) | [`ProductService`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/services/ProductService.java) · [`ControllerExceptionHandler`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/controllers/handlers/ControllerExceptionHandler.java) |
+| | 🏦 [RKF Bank](https://github.com/k3vinrich4rd/rkf_bank) | ✂️ [Barbearia Altas Horas](https://github.com/k3vinrich4rd/barbearia-altas-horas) | 🛒 [DSCommerce](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) |
+|---|---|---|---|
+| **O que é** | banco digital full stack, time de três (Osasco, SP) | agendamento online da barbearia do meu pai, aberta em 1997 (em planejamento) | e-commerce da formação Spring Professional (DevSuperior) |
+| **Meu papel** | todo o backend | backend e arquitetura | projeto individual |
+| **Domínio** | clientes, contas, depósito, saque, transferência, extrato | agenda, serviços e barbeiros, sinal via Pix (sandbox), painel admin | usuários, pedidos, produtos, categorias, pagamento |
+| **O que mostra** | transação atômica, lock otimista, ViaCEP com falha tratada, logs com `X-Request-Id` | horário duplicado barrado no banco (`EXCLUDE` com `tstzrange`), webhook idempotente, erros RFC 9457, LGPD, monólito modular com Spring Modulith | modelo de domínio rico, chave composta (`OrderItemPK`), Bean Validation, erros padronizados |
+| **Qualidade** | 360 testes, JaCoCo, CI com CodeQL e Dependabot | em construção: contrato, ADRs e plano de fatias prontos | camadas controller → service → repository, `DatabaseException` para integridade referencial |
+| **Stack** | Java 25 · Spring Boot 4 · MySQL · Docker · Next.js | Java 25 · Spring Boot 4.1.2 · PostgreSQL · Testcontainers · Next.js | Java · Spring Boot · JPA · H2 |
+| **README** | [roteiro do projeto](https://github.com/k3vinrich4rd/rkf_bank#readme) | [README e docs na `develop`](https://github.com/k3vinrich4rd/barbearia-altas-horas/tree/develop) | [modelo de domínio, endpoints e respostas reais](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM#readme) |
+| **Ver primeiro** | [`ContaService`](https://github.com/k3vinrich4rd/rkf_bank) · [roteiro no README](#-rkf-bank--em-produção) | [ADRs](https://github.com/k3vinrich4rd/barbearia-altas-horas/tree/develop/docs/adr) · [seção no perfil](#️-barbearia-altas-horas--em-planejamento) | [`ProductService`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/services/ProductService.java) · [`ControllerExceptionHandler`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/blob/HEAD/src/main/java/com/devsuperior/dscommerce/controllers/handlers/ControllerExceptionHandler.java) |
 
 <div align="center">
 
 <b>🏦 RKF Bank</b>&nbsp;&nbsp;
 <a href="https://github.com/k3vinrich4rd/rkf_bank" target="_blank"><img src="assets/botoes/ver-codigo.svg" alt="📂 Ver código do RKF Bank" height="46"/></a>
 <a href="https://github.com/k3vinrich4rd/rkf_bank#readme" target="_blank"><img src="assets/botoes/ler-readme.svg" alt="📖 Ler o README do RKF Bank" height="46"/></a>
+<br/>
+<b>✂️ Barbearia Altas Horas</b>&nbsp;&nbsp;
+<a href="https://github.com/k3vinrich4rd/barbearia-altas-horas" target="_blank"><img src="assets/botoes/ver-codigo.svg" alt="📂 Ver código da Barbearia Altas Horas" height="46"/></a>
+<a href="https://github.com/k3vinrich4rd/barbearia-altas-horas#readme" target="_blank"><img src="assets/botoes/ler-readme.svg" alt="📖 Ler o README da Barbearia Altas Horas" height="46"/></a>
 <br/>
 <b>🛒 DSCommerce</b>&nbsp;&nbsp;
 <a href="https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM" target="_blank"><img src="assets/botoes/ver-codigo.svg" alt="📂 Ver código do DSCommerce" height="46"/></a>
