@@ -25,7 +25,7 @@
       </picture></a>
     </td>
     <td width="33%" align="center" valign="top">
-      <a href="#-em-planejamento"><picture>
+      <a href="#️-barbearia-altas-horas--em-planejamento"><picture>
         <source media="(prefers-color-scheme: light)" srcset="assets/bento/barbearia-claro.svg"/>
         <img src="assets/bento/barbearia-escuro.svg" width="100%" alt="Barbearia Altas Horas, agendamento online em planejamento: ver o projeto"/>
       </picture></a>
@@ -66,19 +66,20 @@
 
 <!-- AUTO:indice:START -->
 <details>
-<summary><b>🗺️ Índice do perfil</b> · 16 seções (clique para abrir)</summary>
+<summary><b>🗺️ Índice do perfil</b> · 17 seções (clique para abrir)</summary>
 <br/>
 
 | | |
 |---|---|
-| <a href="#-escolha-a-sua-trilha">01 · 🎮 Escolha a sua trilha</a> | <a href="#-ao-vivo">09 · 📡 Ao vivo</a> |
-| <a href="#-rkf-bank--em-produção">02 · 🏦 RKF Bank — em produção</a> | <a href="#️-últimos-commits-e-metas">10 · ⏱️ Últimos commits e metas</a> |
-| <a href="#-atuação-profissional">03 · 💼 Atuação profissional</a> | <a href="#-pdi--roadmap-2026">11 · 🎯 PDI — Roadmap 2026</a> |
-| <a href="#️-projetos-em-destaque">04 · 🗂️ Projetos em destaque</a> | <a href="#-cursos-em-andamento">12 · 📚 Cursos em andamento</a> |
-| <a href="#-junior--pleno--onde-estou">05 · 📈 Junior → Pleno — onde estou</a> | <a href="#-formação-e-certificações">13 · 🎓 Formação e certificações</a> |
-| <a href="#️-tecnologias">06 · 🛠️ Tecnologias</a> | <a href="#-github-stats">14 · 📊 GitHub Stats</a> |
-| <a href="#-sobre-mim">07 · 🚀 Sobre mim</a> | <a href="#-pergunte-ao-kevin">15 · 💬 Pergunte ao Kevin</a> |
-| <a href="#-trajetória">08 · 🧭 Trajetória</a> | <a href="#️-livro-de-visitas">16 · ✍️ Livro de visitas</a> |
+| <a href="#-escolha-a-sua-trilha">01 · 🎮 Escolha a sua trilha</a> | <a href="#-ao-vivo">10 · 📡 Ao vivo</a> |
+| <a href="#-rkf-bank--em-produção">02 · 🏦 RKF Bank — em produção</a> | <a href="#️-últimos-commits-e-metas">11 · ⏱️ Últimos commits e metas</a> |
+| <a href="#️-barbearia-altas-horas--em-planejamento">03 · ✂️ Barbearia Altas Horas — em planejamento</a> | <a href="#-pdi--roadmap-2026">12 · 🎯 PDI — Roadmap 2026</a> |
+| <a href="#-atuação-profissional">04 · 💼 Atuação profissional</a> | <a href="#-cursos-em-andamento">13 · 📚 Cursos em andamento</a> |
+| <a href="#️-projetos-em-destaque">05 · 🗂️ Projetos em destaque</a> | <a href="#-formação-e-certificações">14 · 🎓 Formação e certificações</a> |
+| <a href="#-junior--pleno--onde-estou">06 · 📈 Junior → Pleno — onde estou</a> | <a href="#-github-stats">15 · 📊 GitHub Stats</a> |
+| <a href="#️-tecnologias">07 · 🛠️ Tecnologias</a> | <a href="#-pergunte-ao-kevin">16 · 💬 Pergunte ao Kevin</a> |
+| <a href="#-sobre-mim">08 · 🚀 Sobre mim</a> | <a href="#️-livro-de-visitas">17 · ✍️ Livro de visitas</a> |
+| <a href="#-trajetória">09 · 🧭 Trajetória</a> |  |
 
 </details>
 <!-- AUTO:indice:END -->
@@ -691,6 +692,109 @@ sequenceDiagram
 ```
 
 </details>
+
+<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
+
+<img src="assets/secoes/barbearia-altas-horas.svg" width="100%" alt=""/>
+
+## ✂️ Barbearia Altas Horas — em planejamento
+
+<!-- Vitrine · GitHub: seção manual. Só fatos do README do projeto; números entram só depois de execução real. -->
+<a href="https://github.com/k3vinrich4rd/barbearia-altas-horas"><img src="https://raw.githubusercontent.com/k3vinrich4rd/barbearia-altas-horas/main/docs/assets/banner.svg" width="100%" alt="Barbearia Altas Horas: agendamento online, sinal de 50% para quem marca sem conta, desde 1997"/></a>
+
+<div align="center">
+
+<a href="https://github.com/k3vinrich4rd/barbearia-altas-horas#-roadmap-do-beta"><img src="https://img.shields.io/badge/status-beta_planejado-0A0A0A?style=flat-square&labelColor=2B2B2B"/></a>
+<a href="https://github.com/k3vinrich4rd/barbearia-altas-horas/commits/main"><img src="https://img.shields.io/github/last-commit/k3vinrich4rd/barbearia-altas-horas?style=flat-square&label=%C3%BAltimo%20commit&color=0A0A0A&labelColor=2B2B2B"/></a>
+<img src="https://img.shields.io/badge/Java-25_LTS-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/>
+<img src="https://img.shields.io/badge/Spring%20Boot-4-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
+<img src="https://img.shields.io/badge/Spring%20Security-JWT%20%2B%20refresh-6DB33F?style=flat-square&logo=springsecurity&logoColor=white"/>
+<img src="https://img.shields.io/badge/PostgreSQL-Flyway-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
+<img src="https://img.shields.io/badge/Testcontainers-Postgres%20real-2496ED?style=flat-square&logo=testcontainers&logoColor=white"/>
+<img src="https://img.shields.io/badge/Next.js-frontend-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
+<img src="https://img.shields.io/badge/erros-RFC%209457-8b949e?style=flat-square"/>
+
+</div>
+
+> **A Barbearia Altas Horas é a barbearia do meu pai, aberta desde 1997.** Hoje a agenda vive no WhatsApp e no
+> caderno, e horário marcado e não cumprido é cadeira vazia. Estou desenhando um **agendamento online** com
+> disponibilidade em tempo real, **sinal de 50% via Pix** para quem marca sem conta e um **painel admin** para a
+> barbearia cuidar da operação. O projeto está na **fase de desenho**: ainda não há código, testes nem deploy, e cada
+> item vira realidade numa fatia pequena, testada e revisada.
+
+<table>
+  <tr>
+    <td valign="top" width="33%">
+      <h4>🎯 O problema</h4>
+      <sub>Agenda no WhatsApp e no caderno, e faltas (<i>no-show</i>) que deixam a cadeira vazia.</sub>
+    </td>
+    <td valign="top" width="33%">
+      <h4>💈 A resposta</h4>
+      <sub>Agendamento online com horários livres em tempo real, sinal de 50% para quem não tem conta e confirmação automática pelo aviso de pagamento.</sub>
+    </td>
+    <td valign="top" width="33%">
+      <h4>📈 Por que é nível Pleno</h4>
+      <sub>Concorrência resolvida no banco, pagamento idempotente, integração externa que falha sem derrubar o sistema, LGPD desde a primeira linha e testes com PostgreSQL real.</sub>
+    </td>
+  </tr>
+</table>
+
+**Três decisões que mostram o raciocínio**
+
+1. **Dois clientes no mesmo horário é impossível pelo banco:** constraint `EXCLUDE USING gist` com `tstzrange`. Se duas reservas chegam juntas, o PostgreSQL deixa passar só uma.
+2. **Aviso de pagamento idempotente:** o id do evento do gateway é chave única, então o mesmo aviso chegando duas vezes não confirma duas vezes.
+3. **CEP que não derruba o cadastro:** ViaCEP com BrasilAPI de reserva, timeout curto e cache. Se as duas caírem, o cliente se cadastra mesmo assim.
+
+<details>
+<summary><b>🧱 Arquitetura planejada: monólito modular</b></summary>
+<br/>
+
+```mermaid
+flowchart LR
+    cliente([Cliente / sem conta]) --> front[Next.js<br/>Vercel]
+    barbeiro([Barbeiro / Admin]) --> front
+    front -- "BFF · cookie HttpOnly" --> api
+    subgraph api [API Spring Boot · Render]
+        direction TB
+        auth[identidade]
+        agenda[agenda]
+        pagamento[pagamento]
+        endereco[endereço / CEP]
+        admin[painel admin]
+    end
+    api --> db[(PostgreSQL<br/>Aiven)]
+    endereco -- "timeout curto + cache" --> viacep[ViaCEP]
+    endereco -. reserva .-> brasilapi[BrasilAPI]
+    pagamento -- "Pix (sandbox)" --> gateway[Gateway de pagamento]
+    gateway -- "aviso assinado" --> pagamento
+```
+
+Um deploy só, módulos com fronteiras verificadas por teste de arquitetura e deploy planejado todo em plano gratuito (Vercel, Render e Aiven).
+
+</details>
+
+<details>
+<summary><b>🚧 Roadmap do beta</b> — tudo planejado, em fatias pequenas na <code>develop</code></summary>
+<br/>
+
+- [ ] Contrato da API v1.0, ADRs e modelo de domínio
+- [ ] Esqueleto: monorepo, `compose.yaml`, perfis `dev`/`test`/`prod` e CI (build, testes, CodeQL, gitleaks)
+- [ ] Agenda, disponibilidade e teste de concorrência contra horário duplicado
+- [ ] Autenticação com JWT e refresh rotativo
+- [ ] Sinal de 50% para quem não tem conta, aviso de pagamento idempotente e expiração em 15 minutos
+- [ ] CEP com cache e reserva, e LGPD (consentimento, exportar e excluir dados)
+- [ ] Painel admin, front Next.js na identidade da barbearia e deploy
+
+</details>
+
+<div align="center">
+
+<a href="https://github.com/k3vinrich4rd/barbearia-altas-horas" target="_blank"><img src="assets/botoes/ver-codigo.svg" alt="📂 Ver o repositório da Barbearia Altas Horas" height="46"/></a>
+<a href="https://github.com/k3vinrich4rd/barbearia-altas-horas#readme" target="_blank"><img src="assets/botoes/ler-readme.svg" alt="📖 Ler o README da Barbearia Altas Horas" height="46"/></a>
+
+<sub>🖤 <b>Para o meu pai</b>, que mantém a cadeira girando desde 1997. <b>★ 19 ✂ 97 ★</b></sub>
+
+</div>
 
 <p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></sub></p>
 
