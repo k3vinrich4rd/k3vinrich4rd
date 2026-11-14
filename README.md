@@ -2218,9 +2218,9 @@ public void sacar(BigDecimal valor) {
 <!-- AUTO:agora:END -->
 
 <!-- AUTO:dica:START -->
-> 💡 **Dica do dia: `@Valid + Bean Validation`**  
-> Validação declarativa no DTO: a regra mora perto do dado e a mensagem sai pronta para o front.  
-> <sub>Muda todo dia sozinha · 18/20</sub>
+> 💡 **Dica do dia: `equals/hashCode por id`**  
+> Entidades em Set precisam de equals e hashCode consistentes, senão itens somem ou duplicam.  
+> <sub>Muda todo dia sozinha · 19/20</sub>
 <!-- AUTO:dica:END -->
 
 <!-- A cobrinha é gerada pelo workflow .github/workflows/snake.yml deste repositório (branch "output"). -->
@@ -2237,16 +2237,16 @@ public void sacar(BigDecimal valor) {
 <!-- AUTO:atividade:START -->
 | | Repositório | Commit | Quando |
 |:-:|---|---|---|
-| 📝 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`58a4d6e`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/58a4d6ecce2373f2cc41b85307b806daff8724c6) docs: adiciona painel admin e guia de testes de ponta a ponta | há 14 min |
-| 📝 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`8bc880a`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/8bc880a599a1771e33c46dd0d21d55dc6f832703) docs: cria README visual do beta da Barbearia Altas Horas | há 16 min |
+| 📝 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`5465aea`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/5465aea7d78a5aa054b169e6bd08d3822deb5463) docs(planejamento): adiciona plano de fatias, decisões e recados | há 6 h |
+| 📝 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`26e35bb`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/26e35bb1c85ed47f57a6167710339e8dcb6240a2) docs(testes): alinha guia e2e ao contrato e cria .env.example | há 6 h |
 | 📝 | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`664c4f0`](https://github.com/k3vinrich4rd/cpf-utils/commit/664c4f02c74492d8e520af9514600e4e2f7bee4c) docs(readme): adiciona Por que existe e O que aprendi | há 5 dias |
-| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`8510d19`](https://github.com/k3vinrich4rd/rkf_bank/commit/8510d19697631c6fda2f728aaa4803462ef4a1c5) docs(readme): bloco de revisão técnica em 2 minutos no topo | há 7 dias |
+| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`8510d19`](https://github.com/k3vinrich4rd/rkf_bank/commit/8510d19697631c6fda2f728aaa4803462ef4a1c5) docs(readme): bloco de revisão técnica em 2 minutos no topo | há 8 dias |
 | 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`4558293`](https://github.com/k3vinrich4rd/rkf_bank/commit/4558293c34c59e797d417b723ac8877ffa1aacd2) docs(deploy): checagem diária de integridade da produção | há 10 dias |
 | ♻️ | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`f430211`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/f430211de74e8756ebb6520b13b52ea0bae60578) refactor: renomeia OrdemItem para OrderItem | há 17 dias |
 | 📝 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`0849493`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/0849493f006f8569a3c9a93e9578c3ba795d6921) docs: adiciona README com modelo de dominio, endpoints e exemplos reais | há 29 dias |
 | • | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`68de4a9`](https://github.com/k3vinrich4rd/cpf-utils/commit/68de4a91b903988d82c6cddc349121e0c9b9093d) Update README.md | 30/06/2025 |
 
-<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 13/11 às 21:14</sub>
+<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 14/11 às 03:30</sub>
 <!-- AUTO:atividade:END -->
 
 </details>
@@ -2881,26 +2881,26 @@ dono só usa o id, que o proxy já tem) e `@EntityGraph` nas listas que mostram 
 
 <!-- AUTO:flashcards:START -->
 <details>
-<summary><b>🃏 IA · Que problema o MCP resolve?</b></summary>
+<summary><b>🃏 Java · Por que nunca usar double para dinheiro?</b></summary>
 <br/>
 
-O N × M de integrações: cada sistema expõe um servidor MCP e qualquer IA compatível usa, como o USB-C fez com cabos.
+Porque double guarda em base 2 e 0.1 não tem representação exata: <code>0.1 + 0.2</code> dá <code>0.30000000000000004</code>. No RKF Bank o saldo é <code>BigDecimal</code> e a coluna é <code>DECIMAL(19,2)</code>.
 
 </details>
 
 <details>
-<summary><b>🃏 IA · Por que o saldo não deve ser calculado pelo LLM?</b></summary>
+<summary><b>🃏 Java · Diferença entre JDK, JRE e JVM?</b></summary>
 <br/>
 
-O LLM prevê texto, não faz conta exata. Regra exata (saldo, CPF, limite) é código; o LLM interpreta e o código valida e executa.
+A JVM executa bytecode; o JRE é JVM + bibliotecas para rodar; o JDK é JRE + ferramentas de desenvolvimento (<code>javac</code>). O mesmo <code>.jar</code> roda no Windows e no Linux do CI porque o bytecode é da JVM, não do sistema.
 
 </details>
 
 <details>
-<summary><b>🃏 LGPD · O cliente pede para apagar os dados. O banco pode dar DELETE?</b></summary>
+<summary><b>🃏 Java · Java tem vazamento de memória?</b></summary>
 <br/>
 
-Não: registros financeiros têm guarda obrigatória por outras leis. O certo é encerrar a conta, bloquear o acesso e anonimizar ao fim do prazo.
+Tem: o GC só recolhe objetos inalcançáveis. Um <code>static Map</code> que nunca é limpo mantém tudo vivo até o <code>OutOfMemoryError</code>. A solução é cache com limite e expiração.
 
 </details>
 
