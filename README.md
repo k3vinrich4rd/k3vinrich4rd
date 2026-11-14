@@ -2198,9 +2198,9 @@ flowchart LR
 <td valign="top" width="33%">
 
 <h3 align="center">☕ Java</h3>
-<p align="center"><img src="https://img.shields.io/badge/53%25-EC7000?style=for-the-badge" alt="53%"/><br/><img src="assets/metas/java.svg" width="100%" alt="Barra de progresso de Java"/></p>
+<p align="center"><img src="https://img.shields.io/badge/58%25-EC7000?style=for-the-badge" alt="58%"/><br/><img src="assets/metas/java.svg" width="100%" alt="Barra de progresso de Java"/></p>
 
-<img src="https://img.shields.io/badge/53%25-EC7000?style=flat-square" alt="53%"/> <a href="https://devsuperior.club/courses/5/lessons?lessonId=248">Java Spring Professional</a> · DevSuperior<br/><sub>atualizado em 11/11/2026</sub><br/><sub>📚 3/5 capítulos fechados</sub><br/><sub>✅ Componentes e injeção de dependência <code>14/14</code></sub><br/><sub>✅ Modelo de domínio e ORM <code>15/15</code></sub><br/><sub>✅ API REST, camadas, CRUD, exceções, validações <code>23/23</code></sub><br/><sub>🔄 JPA, consultas SQL e JPQL <code>23/38</code></sub><br/><sub>⬜ Login e controle de acesso <code>0/34</code></sub><br/><sub>⬜ Homologação e implantação com CI/CD (opcional) <code>0/18</code></sub><br/><br/>
+<img src="https://img.shields.io/badge/58%25-EC7000?style=flat-square" alt="58%"/> <a href="https://devsuperior.club/courses/5/lessons?lessonId=248">Java Spring Professional</a> · DevSuperior<br/><sub>atualizado em 13/11/2026</sub><br/><sub>📚 3/5 capítulos fechados</sub><br/><sub>✅ Componentes e injeção de dependência <code>14/14</code></sub><br/><sub>✅ Modelo de domínio e ORM <code>15/15</code></sub><br/><sub>✅ API REST, camadas, CRUD, exceções, validações <code>23/23</code></sub><br/><sub>🔄 JPA, consultas SQL e JPQL <code>31/38</code></sub><br/><sub>⬜ Login e controle de acesso <code>0/34</code></sub><br/><sub>⬜ Homologação e implantação com CI/CD (opcional) <code>0/18</code></sub><br/><br/>
 <img src="https://img.shields.io/badge/a%20atualizar-8b949e?style=flat-square" alt="a atualizar"/> Java Spring Expert · DevSuperior
 
 </td>
@@ -2223,7 +2223,7 @@ flowchart LR
 </tr>
 </table>
 
-<sub>🎯 Cada meta é medida pelo progresso real dos cursos dela (média dos cursos com porcentagem registrada); "a atualizar" = curso sem porcentagem registrada ainda. Nada sobe sozinho · dados de 2026-11-11</sub>
+<sub>🎯 Cada meta é medida pelo progresso real dos cursos dela (média dos cursos com porcentagem registrada); "a atualizar" = curso sem porcentagem registrada ainda. Nada sobe sozinho · dados de 2026-11-13</sub>
 <!-- METAS:END -->
 
 <sub>📓 Um resumo por dia em <a href="diario/">diario/</a> · tudo isso também em <a href="progresso.md">progresso.md</a></sub>
