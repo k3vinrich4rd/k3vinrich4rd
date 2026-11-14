@@ -754,6 +754,12 @@ Atuo como **Desenvolvedor de Software Junior** contratado pela **[Zup Innovation
 
 </div>
 
+### 🆕 Em planejamento
+
+| | Projeto | Por que vale a pena olhar | Stack |
+|:-:|---|---|---|
+| ✂️ | **[Barbearia Altas Horas](https://github.com/k3vinrich4rd/barbearia-altas-horas)** | sistema de agendamento para a barbearia do meu pai, aberta desde 1997; beta em planejamento | Java 25 · Spring Boot · PostgreSQL · Next.js · Vercel + Render (planejada) |
+
 ### 🧩 Outros projetos que valem o clique
 
 <div align="center">
