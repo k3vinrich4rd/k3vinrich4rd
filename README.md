@@ -784,7 +784,7 @@ Atuo como **Desenvolvedor de Software Junior** contratado pela **[Zup Innovation
 
 <!-- AUTO:repos:START -->
 <details>
-<summary><b>📊 Meus 88 repositórios em números (gráficos, atualizados sozinhos)</b></summary>
+<summary><b>📊 Meus 89 repositórios em números (gráficos, atualizados sozinhos)</b></summary>
 <br/>
 
 ```mermaid
@@ -792,8 +792,8 @@ pie showData
     title Linguagem principal dos repositórios
     "Java" : 67
     "Kotlin" : 8
+    "Sem linguagem" : 4
     "HTML" : 4
-    "Sem linguagem" : 3
     "JavaScript" : 3
     "Python" : 3
 ```
@@ -803,8 +803,8 @@ xychart-beta
     title "Repositórios criados por ano"
     x-axis [2022, 2023, 2024, 2025, 2026]
     y-axis "Repositórios" 0 --> 70
-    bar [53, 18, 2, 11, 4]
-    line [53, 18, 2, 11, 4]
+    bar [53, 18, 2, 11, 5]
+    line [53, 18, 2, 11, 5]
 ```
 
 > 2022 foi o ano do volume (dezenas de exercícios do Catalisa). De 2025 em diante, a troca foi por **menos repositórios e projetos mais completos**, como o RKF Bank.
@@ -1249,57 +1249,57 @@ solid repositorios_por_ano
   endfacet
   facet normal 0.0000 0.0000 1.0000
     outer loop
-      vertex 48.000 0.000 2.400
-      vertex 56.000 0.000 2.400
-      vertex 56.000 8.000 2.400
+      vertex 48.000 0.000 3.000
+      vertex 56.000 0.000 3.000
+      vertex 56.000 8.000 3.000
     endloop
   endfacet
   facet normal 0.0000 0.0000 1.0000
     outer loop
-      vertex 48.000 0.000 2.400
-      vertex 56.000 8.000 2.400
-      vertex 48.000 8.000 2.400
+      vertex 48.000 0.000 3.000
+      vertex 56.000 8.000 3.000
+      vertex 48.000 8.000 3.000
     endloop
   endfacet
   facet normal 0.0000 -1.0000 0.0000
     outer loop
       vertex 48.000 0.000 0.000
       vertex 56.000 0.000 0.000
-      vertex 56.000 0.000 2.400
+      vertex 56.000 0.000 3.000
     endloop
   endfacet
   facet normal 0.0000 -1.0000 0.0000
     outer loop
       vertex 48.000 0.000 0.000
-      vertex 56.000 0.000 2.400
-      vertex 48.000 0.000 2.400
+      vertex 56.000 0.000 3.000
+      vertex 48.000 0.000 3.000
     endloop
   endfacet
   facet normal 0.0000 1.0000 0.0000
     outer loop
       vertex 48.000 8.000 0.000
-      vertex 48.000 8.000 2.400
-      vertex 56.000 8.000 2.400
+      vertex 48.000 8.000 3.000
+      vertex 56.000 8.000 3.000
     endloop
   endfacet
   facet normal 0.0000 1.0000 0.0000
     outer loop
       vertex 48.000 8.000 0.000
-      vertex 56.000 8.000 2.400
+      vertex 56.000 8.000 3.000
       vertex 56.000 8.000 0.000
     endloop
   endfacet
   facet normal -1.0000 0.0000 0.0000
     outer loop
       vertex 48.000 0.000 0.000
-      vertex 48.000 0.000 2.400
-      vertex 48.000 8.000 2.400
+      vertex 48.000 0.000 3.000
+      vertex 48.000 8.000 3.000
     endloop
   endfacet
   facet normal -1.0000 0.0000 0.0000
     outer loop
       vertex 48.000 0.000 0.000
-      vertex 48.000 8.000 2.400
+      vertex 48.000 8.000 3.000
       vertex 48.000 8.000 0.000
     endloop
   endfacet
@@ -1307,14 +1307,14 @@ solid repositorios_por_ano
     outer loop
       vertex 56.000 0.000 0.000
       vertex 56.000 8.000 0.000
-      vertex 56.000 8.000 2.400
+      vertex 56.000 8.000 3.000
     endloop
   endfacet
   facet normal 1.0000 0.0000 0.0000
     outer loop
       vertex 56.000 0.000 0.000
-      vertex 56.000 8.000 2.400
-      vertex 56.000 0.000 2.400
+      vertex 56.000 8.000 3.000
+      vertex 56.000 0.000 3.000
     endloop
   endfacet
 endsolid repositorios_por_ano
@@ -2126,16 +2126,16 @@ public void sacar(BigDecimal valor) {
 <!-- AUTO:atividade:START -->
 | | Repositório | Commit | Quando |
 |:-:|---|---|---|
-| 📝 | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`664c4f0`](https://github.com/k3vinrich4rd/cpf-utils/commit/664c4f02c74492d8e520af9514600e4e2f7bee4c) docs(readme): adiciona Por que existe e O que aprendi | há 4 dias |
+| 📝 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`58a4d6e`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/58a4d6ecce2373f2cc41b85307b806daff8724c6) docs: adiciona painel admin e guia de testes de ponta a ponta | há 14 min |
+| 📝 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`8bc880a`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/8bc880a599a1771e33c46dd0d21d55dc6f832703) docs: cria README visual do beta da Barbearia Altas Horas | há 16 min |
+| 📝 | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`664c4f0`](https://github.com/k3vinrich4rd/cpf-utils/commit/664c4f02c74492d8e520af9514600e4e2f7bee4c) docs(readme): adiciona Por que existe e O que aprendi | há 5 dias |
 | 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`8510d19`](https://github.com/k3vinrich4rd/rkf_bank/commit/8510d19697631c6fda2f728aaa4803462ef4a1c5) docs(readme): bloco de revisão técnica em 2 minutos no topo | há 7 dias |
 | 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`4558293`](https://github.com/k3vinrich4rd/rkf_bank/commit/4558293c34c59e797d417b723ac8877ffa1aacd2) docs(deploy): checagem diária de integridade da produção | há 10 dias |
-| ♻️ | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`f430211`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/f430211de74e8756ebb6520b13b52ea0bae60578) refactor: renomeia OrdemItem para OrderItem | há 16 dias |
-| ⏪ | [`desafio-devsuperior-componentes-injecao-dependencia`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) | [`4997708`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia/commit/4997708166e270a54829b3ea94912378a03fa100) revert: main volta a ter so o desafio de componentes (o ORM foi para des | há 16 dias |
+| ♻️ | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`f430211`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/f430211de74e8756ebb6520b13b52ea0bae60578) refactor: renomeia OrdemItem para OrderItem | há 17 dias |
 | 📝 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`0849493`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/0849493f006f8569a3c9a93e9578c3ba795d6921) docs: adiciona README com modelo de dominio, endpoints e exemplos reais | há 29 dias |
-| 📝 | [`desafio-devsuperior-componentes-injecao-dependencia`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) | [`757f944`](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia/commit/757f944837b07f090ea785449adbc2b0e28cd45e) docs: atualiza informações do README | 27/10/2025 |
 | • | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`68de4a9`](https://github.com/k3vinrich4rd/cpf-utils/commit/68de4a91b903988d82c6cddc349121e0c9b9093d) Update README.md | 30/06/2025 |
 
-<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 13/11 às 16:46</sub>
+<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 13/11 às 21:14</sub>
 <!-- AUTO:atividade:END -->
 
 </details>
