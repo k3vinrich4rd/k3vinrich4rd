@@ -12,16 +12,22 @@
 <!-- Vitrine · GitHub: "comece por aqui" em 10 segundos. Cada card leva a uma seção; tema claro/escuro com <picture>. -->
 <table>
   <tr>
-    <td width="50%" align="center" valign="top">
+    <td width="33%" align="center" valign="top">
       <a href="#-rkf-bank--em-produção"><picture>
         <source media="(prefers-color-scheme: light)" srcset="assets/bento/rkf-bank-claro.svg"/>
         <img src="assets/bento/rkf-bank-escuro.svg" width="100%" alt="RKF Bank, banco digital em produção: ver o projeto"/>
       </picture></a>
     </td>
-    <td width="50%" align="center" valign="top">
+    <td width="33%" align="center" valign="top">
       <a href="#-junior--pleno--onde-estou"><picture>
         <source media="(prefers-color-scheme: light)" srcset="assets/bento/pleno-claro.svg"/>
         <img src="assets/bento/pleno-escuro.svg" width="100%" alt="Júnior para Pleno: onde estou"/>
+      </picture></a>
+    </td>
+    <td width="33%" align="center" valign="top">
+      <a href="#-em-planejamento"><picture>
+        <source media="(prefers-color-scheme: light)" srcset="assets/bento/barbearia-claro.svg"/>
+        <img src="assets/bento/barbearia-escuro.svg" width="100%" alt="Barbearia Altas Horas, agendamento online em planejamento: ver o projeto"/>
       </picture></a>
     </td>
   </tr>
