@@ -1727,7 +1727,7 @@ quadrantChart
 | Inglês técnico | 🔄 | em andamento |
 | Mensageria e microsserviços | ⏳ | Outbox do comprovante pronto na branch `refactor/monolito-modular` (em revisão); falta o broker |
 
-<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-11-13</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-11-16</sub>
 <!-- AUTO:regua:END -->
 
 </details>
@@ -1737,96 +1737,7 @@ quadrantChart
 <br/>
 
 <!-- AUTO:estudos:START -->
-**29** assuntos praticados em projeto · **19** em andamento · **1** planejados
-
-📚 **122** notas de estudo no segundo cérebro · **52** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
-
-```mermaid
-mindmap
-  root((🧠 Estudos))
-    Arquitetura
-      🔄 Arquitetura em camadas
-      🔄 Arquitetura hexagonal
-      🔄 Arquitetura orientada a eventos
-      🔄 Arquiteturas de software
-      🔄 BFF (Backend for Frontend)
-      🔄 CQRS
-      🔄 Clean Architecture
-      🔄 Event Sourcing
-      ✅ Integração com APIs externas
-      ✅ LGPD
-      ✅ Logs e observabilidade
-      🔄 MVC
-      ⏳ Mensageria e Outbox
-      🔄 Microsserviços
-      🔄 Monólito modular
-      🔄 Monólito
-      🔄 Onion Architecture
-      ✅ Padrões de projeto
-      🔄 SOA
-      🔄 Serverless
-      🔄 Síncrono e assíncrono
-    Cloud
-      🔄 AWS
-    Dados
-      ✅ H2 x MySQL
-      ✅ MongoDB
-      ✅ SQL e MySQL
-    DevOps
-      ✅ Dependências e CVEs
-    Java
-      ✅ BigDecimal e dinheiro
-      ✅ Coleções Streams e Optional
-      ✅ Concorrência e threads virtuais
-      ✅ Exceções em Java
-      ✅ Generics
-      ✅ JVM, JDK e bytecode
-      ✅ Java moderno (8 a 25)
-      ✅ Maven e build
-      ✅ Memória e Garbage Collector
-      ✅ Objetos - equals, hashCode e imutabilidade
-      ✅ POO e SOLID
-    Spring
-      ✅ Anotações Java e Spring
-      🔄 Carregamento EAGER e LAZY
-      ✅ N+1 consultas
-      ✅ Spring Boot - auto-configuração e starters
-      ✅ Spring Boot Actuator
-      ✅ Spring Boot Test
-      ✅ Swagger e OpenAPI
-    spring
-      🔄 Perfis do Spring e homologação
-    Testes
-      ✅ DataJpaTest
-      ✅ TDD e estratégia de testes
-      ✅ Testcontainers
-      ✅ Testes manuais de API - Postman e Insomnia
-```
-
-| Estudando agora | Área | Próximos passos |
-|---|---|---|
-| 🔄 Arquitetura em camadas | Arquitetura | <sub>2 a fazer</sub> |
-| 🔄 Arquitetura hexagonal | Arquitetura | <sub>3 a fazer</sub> |
-| 🔄 Arquitetura orientada a eventos | Arquitetura | <sub>2 a fazer</sub> |
-| 🔄 Arquiteturas de software | Arquitetura | <sub>3 a fazer</sub> |
-| 🔄 BFF (Backend for Frontend) | Arquitetura | <sub>1 a fazer</sub> |
-| 🔄 CQRS | Arquitetura | <sub>2 a fazer</sub> |
-| 🔄 Clean Architecture | Arquitetura | <sub>2 a fazer</sub> |
-| 🔄 Event Sourcing | Arquitetura | <sub>2 a fazer</sub> |
-| 🔄 MVC | Arquitetura | <sub>2 a fazer</sub> |
-| 🔄 Microsserviços | Arquitetura | <sub>2 a fazer</sub> |
-| 🔄 Monólito modular | Arquitetura | <sub>2 a fazer</sub> |
-| 🔄 Monólito | Arquitetura | <sub>2 a fazer</sub> |
-| 🔄 Onion Architecture | Arquitetura | <sub>2 a fazer</sub> |
-| 🔄 SOA | Arquitetura | <sub>1 a fazer</sub> |
-| 🔄 Serverless | Arquitetura | <sub>2 a fazer</sub> |
-| 🔄 Síncrono e assíncrono | Arquitetura | <sub>3 a fazer</sub> |
-| 🔄 AWS | Cloud | <sub>10 a fazer</sub> |
-| 🔄 Carregamento EAGER e LAZY | Spring | <sub>2 a fazer</sub> |
-| 🔄 Perfis do Spring e homologação | spring | — |
-| ⏳ Mensageria e Outbox | Arquitetura | <sub>6 a fazer</sub> |
-
-<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-11-13.</sub>
+_Em breve._
 <!-- AUTO:estudos:END -->
 
 </details>
@@ -1837,7 +1748,7 @@ mindmap
 
 <!-- AUTO:cerebro:START -->
 <div align="center">
-  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 24 dias com registro, 122 notas, 2 trilhas e 29 assuntos praticados; progresso de cada trilha e de cada módulo"/>
+  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 23 dias com registro, 123 notas, 2 trilhas e 0 assuntos praticados; progresso de cada trilha e de cada módulo"/>
 </div>
 
 <details>
@@ -1845,10 +1756,10 @@ mindmap
 <br/>
 
 <table align="center"><tr>
-<td align="center">🗓️<br/><b>24</b> dias com registro<br/><sub>nos últimos 30</sub></td>
-<td align="center">📚<br/><b>122</b> notas de estudo<br/><sub>52 com exemplo com × sem</sub></td>
+<td align="center">🗓️<br/><b>23</b> dias com registro<br/><sub>nos últimos 30</sub></td>
+<td align="center">📚<br/><b>123</b> notas de estudo<br/><sub>52 com exemplo com × sem</sub></td>
 <td align="center">🧭<br/><b>2</b> trilhas<br/><sub>12 módulos</sub></td>
-<td align="center">✅<br/><b>29</b> assuntos<br/><sub>praticados em projeto</sub></td>
+<td align="center">✅<br/><b>0</b> assuntos<br/><sub>praticados em projeto</sub></td>
 </tr></table>
 
 | Trilha | Praticado no RKF Bank | ✅ | 🔄 | 📅 | 📘 |
@@ -1890,7 +1801,7 @@ mindmap
 
 📝 **Estudado por último:** `IA` Guardrails · `IA` Structured output · `IA` Testes de aplicações com IA (evals) · `Arquitetura` Arquitetura em camadas · `Arquitetura` Arquitetura hexagonal · `Arquitetura` Arquitetura orientada a eventos · `Arquitetura` BFF (Backend for Frontend) · `Arquitetura` Clean Architecture
 
-<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-11-13</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-11-16</sub>
 <!-- AUTO:cerebro:END -->
 
 <details>
@@ -2464,7 +2375,7 @@ gantt
 
 **🧹 Débitos técnicos:** 9/18 resolvidos
 
-<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-11-13.</sub>
+<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-11-16.</sub>
 <!-- AUTO:checklist:END -->
 
 </details>
