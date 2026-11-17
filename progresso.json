@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-16",
+  "atualizado": "2026-11-17",
   "regua": {
     "praticadas": 13,
     "total": 15,
@@ -794,7 +794,7 @@
         ]
       }
     ],
-    "diasDiario30": 23,
+    "diasDiario30": 24,
     "recentes": [
       {
         "nome": "Guardrails",

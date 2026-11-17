@@ -1753,7 +1753,7 @@ quadrantChart
 | Inglês técnico | 🔄 | em andamento |
 | Mensageria e microsserviços | ⏳ | Outbox do comprovante pronto na branch `refactor/monolito-modular` (em revisão); falta o broker |
 
-<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-11-16</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-11-17</sub>
 <!-- AUTO:regua:END -->
 
 </details>
@@ -1774,7 +1774,7 @@ _Em breve._
 
 <!-- AUTO:cerebro:START -->
 <div align="center">
-  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 23 dias com registro, 123 notas, 2 trilhas e 0 assuntos praticados; progresso de cada trilha e de cada módulo"/>
+  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 24 dias com registro, 123 notas, 2 trilhas e 0 assuntos praticados; progresso de cada trilha e de cada módulo"/>
 </div>
 
 <details>
@@ -1782,7 +1782,7 @@ _Em breve._
 <br/>
 
 <table align="center"><tr>
-<td align="center">🗓️<br/><b>23</b> dias com registro<br/><sub>nos últimos 30</sub></td>
+<td align="center">🗓️<br/><b>24</b> dias com registro<br/><sub>nos últimos 30</sub></td>
 <td align="center">📚<br/><b>123</b> notas de estudo<br/><sub>52 com exemplo com × sem</sub></td>
 <td align="center">🧭<br/><b>2</b> trilhas<br/><sub>12 módulos</sub></td>
 <td align="center">✅<br/><b>0</b> assuntos<br/><sub>praticados em projeto</sub></td>
@@ -1827,7 +1827,7 @@ _Em breve._
 
 📝 **Estudado por último:** `IA` Guardrails · `IA` Structured output · `IA` Testes de aplicações com IA (evals) · `Arquitetura` Arquitetura em camadas · `Arquitetura` Arquitetura hexagonal · `Arquitetura` Arquitetura orientada a eventos · `Arquitetura` BFF (Backend for Frontend) · `Arquitetura` Clean Architecture
 
-<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-11-16</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-11-17</sub>
 <!-- AUTO:cerebro:END -->
 
 <details>
@@ -2155,9 +2155,9 @@ public void sacar(BigDecimal valor) {
 <!-- AUTO:agora:END -->
 
 <!-- AUTO:dica:START -->
-> 💡 **Dica do dia: `@Transactional(readOnly = true)`**  
-> Em métodos só de leitura, avisa o Hibernate para não checar mudanças nas entidades: menos trabalho e intenção clara.  
-> <sub>Muda todo dia sozinha · 1/20</sub>
+> 💡 **Dica do dia: `getReferenceById`**  
+> No update, devolve uma referência sem fazer SELECT. O banco só é consultado quando você realmente precisa dos dados.  
+> <sub>Muda todo dia sozinha · 2/20</sub>
 <!-- AUTO:dica:END -->
 
 <!-- A cobrinha é gerada pelo workflow .github/workflows/snake.yml deste repositório (branch "output"). -->
@@ -2401,7 +2401,7 @@ gantt
 
 **🧹 Débitos técnicos:** 9/18 resolvidos
 
-<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-11-16.</sub>
+<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-11-17.</sub>
 <!-- AUTO:checklist:END -->
 
 </details>
@@ -2818,26 +2818,26 @@ dono só usa o id, que o proxy já tem) e `@EntityGraph` nas listas que mostram 
 
 <!-- AUTO:flashcards:START -->
 <details>
-<summary><b>🃏 Java · Por que exceção de negócio deve ser unchecked num projeto Spring?</b></summary>
+<summary><b>🃏 Spring · O que acontece se eu editar uma migração do Flyway já aplicada?</b></summary>
 <br/>
 
-O <code>@Transactional</code> só faz rollback automático em <code>RuntimeException</code>. Uma exceção checked deixaria o débito gravado pela metade.
+O checksum não bate e a aplicação não sobe (<code>Migration checksum mismatch</code>). Mudança nova = arquivo novo (<code>V6__...</code>). É uma proteção: todo banco fica igual.
 
 </details>
 
 <details>
-<summary><b>🃏 Spring · Qual a diferença entre 401 e 403?</b></summary>
+<summary><b>🃏 Spring · Por que o @Transactional não funciona numa chamada interna?</b></summary>
 <br/>
 
-<code>401</code>: não sei quem você é (sem token, vencido ou adulterado). <code>403</code>: sei quem você é, mas não pode (conta de outro cliente). No RKF Bank a regra de dono mora no <code>ContaService</code>.
+Ele é implementado por um proxy (AOP). Chamar outro método da mesma classe não passa pelo proxy, então a transação não abre.
 
 </details>
 
 <details>
-<summary><b>🃏 Spring · Por que a senha vai em BCrypt e não em SHA-256?</b></summary>
+<summary><b>🃏 Spring · Por que injeção de dependência pelo construtor?</b></summary>
 <br/>
 
-BCrypt tem salt aleatório (senhas iguais viram hashes diferentes) e é lento de propósito, o que encarece a força bruta. SHA-256 é rápido demais para senha.
+Campos <code>final</code>, dependências explícitas e teste sem Spring: <code>new ContaService(mock(ContaRepository.class))</code>.
 
 </details>
 
