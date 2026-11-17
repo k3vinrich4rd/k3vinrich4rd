@@ -700,7 +700,7 @@ sequenceDiagram
 ## ✂️ Barbearia Altas Horas — em construção
 
 <!-- Vitrine · GitHub: seção manual. Só fatos do README do projeto; números entram só depois de execução real. -->
-<a href="https://github.com/k3vinrich4rd/barbearia-altas-horas"><img src="assets/barbearia/banner.svg" width="100%" alt="Barbearia Altas Horas: barbearia e academy em Osasco, agenda online com horário garantido, desde 1997"/></a>
+<a href="https://github.com/k3vinrich4rd/barbearia-altas-horas"><img src="assets/barbearia/banner.svg" width="100%" alt="Barbearia e Academy em Osasco, desde 1997. A agenda online do Eduardo Cândido, com horário garantido."/></a>
 
 <div align="center">
 
