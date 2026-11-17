@@ -2194,16 +2194,16 @@ public void sacar(BigDecimal valor) {
 <!-- AUTO:atividade:START -->
 | | Repositório | Commit | Quando |
 |:-:|---|---|---|
-| 🔧 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`6299d24`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/6299d242b88e3cc320f32534e28a0c439272a78c) chore(repo): normaliza o fim de linha do mvnw.cmd depois da atualização  | há 1 h |
-| 📝 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`f3ae34b`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/f3ae34b0bd3c31b1317fd4a68205fccd0ac67b19) docs(readme): troca o retrato do Eduardo pela foto de camisa branca e gr | há 1 h |
+| 📝 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`b12c5e9`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/b12c5e9da6fa3dd9365afa0bd2168e48f9051c48) docs(readme): conta a história em ordem cronológica, com 1995 como está  | há 14 min |
+| 📝 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`426f9fa`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/426f9fad43de93b4054b898918b0871b1723841d) docs(readme): tira o ano de 1995, que não estava confirmado | há 22 min |
 | 📝 | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`664c4f0`](https://github.com/k3vinrich4rd/cpf-utils/commit/664c4f02c74492d8e520af9514600e4e2f7bee4c) docs(readme): adiciona Por que existe e O que aprendi | há 8 dias |
 | 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`8510d19`](https://github.com/k3vinrich4rd/rkf_bank/commit/8510d19697631c6fda2f728aaa4803462ef4a1c5) docs(readme): bloco de revisão técnica em 2 minutos no topo | há 11 dias |
-| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`4558293`](https://github.com/k3vinrich4rd/rkf_bank/commit/4558293c34c59e797d417b723ac8877ffa1aacd2) docs(deploy): checagem diária de integridade da produção | há 13 dias |
+| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`4558293`](https://github.com/k3vinrich4rd/rkf_bank/commit/4558293c34c59e797d417b723ac8877ffa1aacd2) docs(deploy): checagem diária de integridade da produção | há 14 dias |
 | ♻️ | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`f430211`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/f430211de74e8756ebb6520b13b52ea0bae60578) refactor: renomeia OrdemItem para OrderItem | há 20 dias |
 | 📝 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`0849493`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/0849493f006f8569a3c9a93e9578c3ba795d6921) docs: adiciona README com modelo de dominio, endpoints e exemplos reais | 15/10/2026 |
 | • | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`68de4a9`](https://github.com/k3vinrich4rd/cpf-utils/commit/68de4a91b903988d82c6cddc349121e0c9b9093d) Update README.md | 30/06/2025 |
 
-<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 17/11 às 04:58</sub>
+<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 17/11 às 11:12</sub>
 <!-- AUTO:atividade:END -->
 
 </details>
