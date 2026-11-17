@@ -25,9 +25,9 @@
       </picture></a>
     </td>
     <td width="33%" align="center" valign="top">
-      <a href="#️-barbearia-altas-horas--em-planejamento"><picture>
+      <a href="#️-barbearia-altas-horas--em-construção"><picture>
         <source media="(prefers-color-scheme: light)" srcset="assets/bento/barbearia-claro.svg"/>
-        <img src="assets/bento/barbearia-escuro.svg" width="100%" alt="Barbearia Altas Horas, agendamento online em planejamento: ver o projeto"/>
+        <img src="assets/bento/barbearia-escuro.svg" width="100%" alt="Barbearia Altas Horas, agendamento online em construção: ver o projeto"/>
       </picture></a>
     </td>
   </tr>
@@ -73,7 +73,7 @@
 |---|---|
 | <a href="#-escolha-a-sua-trilha">01 · 🎮 Escolha a sua trilha</a> | <a href="#-ao-vivo">10 · 📡 Ao vivo</a> |
 | <a href="#-rkf-bank--em-produção">02 · 🏦 RKF Bank — em produção</a> | <a href="#️-últimos-commits-e-metas">11 · ⏱️ Últimos commits e metas</a> |
-| <a href="#️-barbearia-altas-horas--em-planejamento">03 · ✂️ Barbearia Altas Horas — em planejamento</a> | <a href="#-pdi--roadmap-2026">12 · 🎯 PDI — Roadmap 2026</a> |
+| <a href="#️-barbearia-altas-horas--em-construção">03 · ✂️ Barbearia Altas Horas — em construção</a> | <a href="#-pdi--roadmap-2026">12 · 🎯 PDI — Roadmap 2026</a> |
 | <a href="#-atuação-profissional">04 · 💼 Atuação profissional</a> | <a href="#-cursos-em-andamento">13 · 📚 Cursos em andamento</a> |
 | <a href="#️-projetos-em-destaque">05 · 🗂️ Projetos em destaque</a> | <a href="#-formação-e-certificações">14 · 🎓 Formação e certificações</a> |
 | <a href="#-junior--pleno--onde-estou">06 · 📈 Junior → Pleno — onde estou</a> | <a href="#-github-stats">15 · 📊 GitHub Stats</a> |
@@ -697,30 +697,44 @@ sequenceDiagram
 
 <img src="assets/secoes/barbearia-altas-horas.svg" width="100%" alt=""/>
 
-## ✂️ Barbearia Altas Horas — em planejamento
+## ✂️ Barbearia Altas Horas — em construção
 
 <!-- Vitrine · GitHub: seção manual. Só fatos do README do projeto; números entram só depois de execução real. -->
-<a href="https://github.com/k3vinrich4rd/barbearia-altas-horas"><img src="https://raw.githubusercontent.com/k3vinrich4rd/barbearia-altas-horas/main/docs/assets/banner.svg" width="100%" alt="Barbearia Altas Horas: agendamento online, sinal de 50% para quem marca sem conta, desde 1997"/></a>
+<a href="https://github.com/k3vinrich4rd/barbearia-altas-horas"><img src="assets/barbearia/banner.svg" width="100%" alt="Barbearia Altas Horas: a agenda online do Eduardo Cândido, Pix ou cartão 100% antecipado, desde 1997"/></a>
 
 <div align="center">
 
-<a href="https://github.com/k3vinrich4rd/barbearia-altas-horas#-roadmap-do-beta"><img src="https://img.shields.io/badge/status-beta_planejado-0A0A0A?style=flat-square&labelColor=2B2B2B"/></a>
-<a href="https://github.com/k3vinrich4rd/barbearia-altas-horas/commits/main"><img src="https://img.shields.io/github/last-commit/k3vinrich4rd/barbearia-altas-horas?style=flat-square&label=%C3%BAltimo%20commit&color=0A0A0A&labelColor=2B2B2B"/></a>
+<a href="https://github.com/k3vinrich4rd/barbearia-altas-horas/pulls"><img src="https://img.shields.io/badge/status-fatia_2_de_8-0A0A0A?style=flat-square&labelColor=2B2B2B"/></a>
+<a href="https://github.com/k3vinrich4rd/barbearia-altas-horas/pulls"><img src="https://img.shields.io/badge/testes-69_%E2%9C%94_PostgreSQL_real-0A0A0A?style=flat-square&labelColor=2B2B2B"/></a>
+<img src="https://img.shields.io/badge/m%C3%A9todo-Spec--Driven_Development-0A0A0A?style=flat-square&labelColor=2B2B2B"/>
+<img src="https://img.shields.io/badge/projeto-individual-0A0A0A?style=flat-square&labelColor=2B2B2B"/>
+<br/>
 <img src="https://img.shields.io/badge/Java-25_LTS-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/>
-<img src="https://img.shields.io/badge/Spring%20Boot-4-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
-<img src="https://img.shields.io/badge/Spring%20Security-JWT%20%2B%20refresh-6DB33F?style=flat-square&logo=springsecurity&logoColor=white"/>
-<img src="https://img.shields.io/badge/PostgreSQL-Flyway-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
+<img src="https://img.shields.io/badge/Spring%20Boot-4.1-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
+<img src="https://img.shields.io/badge/PostgreSQL-EXCLUDE%20gist-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
 <img src="https://img.shields.io/badge/Testcontainers-Postgres%20real-2496ED?style=flat-square&logo=testcontainers&logoColor=white"/>
-<img src="https://img.shields.io/badge/Next.js-frontend-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
+<img src="https://img.shields.io/badge/Next.js-frontend%20com%20IA-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
 <img src="https://img.shields.io/badge/erros-RFC%209457-8b949e?style=flat-square"/>
 
 </div>
 
-> **A Barbearia Altas Horas é a barbearia do meu pai, aberta desde 1997.** Hoje a agenda vive no WhatsApp e no
-> caderno, e horário marcado e não cumprido é cadeira vazia. Estou desenhando um **agendamento online** com
-> disponibilidade em tempo real, **sinal de 50% via Pix** para quem marca sem conta e um **painel admin** para a
-> barbearia cuidar da operação. O projeto está na **fase de desenho**: ainda não há código, testes nem deploy, e cada
-> item vira realidade numa fatia pequena, testada e revisada.
+<table>
+<tr>
+<td width="170" align="center" valign="top">
+<img src="assets/barbearia/eduardo-candido-avatar.png" width="140" alt="Eduardo Cândido, barbeiro da Altas Horas"/>
+<br/><b>Eduardo Cândido</b><br/><sub>meu pai · barbeiro desde 1997</sub>
+</td>
+<td valign="top">
+
+**Estou construindo a agenda do meu pai.** Ele corta cabelo na Barbearia Altas Horas, em Osasco, desde 1997, com a agenda no caderno e no WhatsApp: cliente marca, não aparece, e a cadeira fica vazia. Na agenda online, o cliente escolhe o serviço e o horário, **paga 100% antes** (Pix ou cartão) e só então o horário é dele.
+
+É um projeto **só meu**: backend escrito por mim com IA como par de programação, frontend gerado com IA e revisado por mim, e **Spec-Driven Development** segurando a qualidade (cada entrega começa por uma especificação, e cada critério dela vira um teste cobrado no CI).
+
+</td>
+</tr>
+</table>
+
+<img src="assets/barbearia/agenda-semana.svg" width="100%" alt="Página da agenda da Barbearia Altas Horas: terça a sábado, das 7h às 20h, com almoço das 12h às 13h; horários de 30 em 30 minutos"/>
 
 <table>
   <tr>
@@ -730,60 +744,72 @@ sequenceDiagram
     </td>
     <td valign="top" width="33%">
       <h4>💈 A resposta</h4>
-      <sub>Agendamento online com horários livres em tempo real, sinal de 50% para quem não tem conta e confirmação automática pelo aviso de pagamento.</sub>
+      <sub>Horários livres em tempo real, pagamento 100% antecipado e confirmação só pelo aviso do gateway. Sem cancelamento nem remarcação pelo cliente, com aceite obrigatório antes de pagar.</sub>
     </td>
     <td valign="top" width="33%">
       <h4>📈 Por que é nível Pleno</h4>
-      <sub>Concorrência resolvida no banco, pagamento idempotente, integração externa que falha sem derrubar o sistema, LGPD desde a primeira linha e testes com PostgreSQL real.</sub>
+      <sub>Concorrência resolvida no banco, pagamento idempotente, hexagonal onde paga o custo, LGPD desde a primeira linha e testes com PostgreSQL real.</sub>
     </td>
   </tr>
 </table>
 
+**O que já roda** (fatias 1 e 2, em revisão nas PRs [#4](https://github.com/k3vinrich4rd/barbearia-altas-horas/pull/4) e [#6](https://github.com/k3vinrich4rd/barbearia-altas-horas/pull/6))
+
+| | |
+|---|---|
+| 🗓 **Horários livres pela API** | jornada menos almoço, folgas e reservas; o serviço de 60 min não aparece às 11h30 nem às 19h30 |
+| 🔒 **Horário duplicado barrado no banco** | `EXCLUDE USING gist` com `tstzrange`; 12 conexões disputando o mesmo horário e só uma vence |
+| 🧪 **69 testes, 0 falhas** | com PostgreSQL 18 de verdade (Testcontainers), 96% de cobertura de instruções |
+| 📐 **29 critérios, 29 testes** | um script no CI quebra o build se um critério da especificação ficar sem teste |
+
 **Três decisões que mostram o raciocínio**
 
-1. **Dois clientes no mesmo horário é impossível pelo banco:** constraint `EXCLUDE USING gist` com `tstzrange`. Se duas reservas chegam juntas, o PostgreSQL deixa passar só uma.
-2. **Aviso de pagamento idempotente:** o id do evento do gateway é chave única, então o mesmo aviso chegando duas vezes não confirma duas vezes.
-3. **CEP que não derruba o cadastro:** ViaCEP com BrasilAPI de reserva, timeout curto e cache. Se as duas caírem, o cliente se cadastra mesmo assim.
+1. **Dois clientes no mesmo horário é impossível pelo banco**, não por um `if` no código: vale para qualquer caminho de escrita.
+2. **A regra dos horários é uma função pura**, sem Spring nem banco (arquitetura hexagonal só onde ela paga o custo): 12 testes em milissegundos.
+3. **Os testes pegaram o que eu não veria no olho:** o Hibernate lendo a jornada das 07:00 como 04:00 por causa do fuso. Corrigido antes de qualquer cliente ver.
 
 <details>
-<summary><b>🧱 Arquitetura planejada: monólito modular</b></summary>
+<summary><b>🧱 Arquitetura: monólito modular com hexagonal seletivo</b></summary>
 <br/>
 
 ```mermaid
 flowchart LR
-    cliente([Cliente / sem conta]) --> front[Next.js<br/>Vercel]
-    barbeiro([Barbeiro / Admin]) --> front
-    front -- "BFF · cookie HttpOnly" --> api
+    cliente([Cliente / sem conta]) --> front[Next.js + BFF<br/>Vercel]
+    barbeiro([Eduardo · Admin]) --> front
+    front -- "cookie HttpOnly" --> api
     subgraph api [API Spring Boot · Render]
         direction TB
-        auth[identidade]
+        conta[conta]
         agenda[agenda]
         pagamento[pagamento]
-        endereco[endereço / CEP]
+        cep[cep]
+        privacidade[privacidade]
         admin[painel admin]
     end
     api --> db[(PostgreSQL<br/>Aiven)]
-    endereco -- "timeout curto + cache" --> viacep[ViaCEP]
-    endereco -. reserva .-> brasilapi[BrasilAPI]
-    pagamento -- "Pix (sandbox)" --> gateway[Gateway de pagamento]
-    gateway -- "aviso assinado" --> pagamento
+    cep -- "timeout curto + cache" --> viacep[ViaCEP]
+    cep -. reserva .-> brasilapi[BrasilAPI]
+    pagamento -- "Pix / checkout de cartão" --> gateway[Gateway · sandbox]
+    gateway -- "aviso autenticado" --> pagamento
 ```
 
-Um deploy só, módulos com fronteiras verificadas por teste de arquitetura e deploy planejado todo em plano gratuito (Vercel, Render e Aiven).
+Um deploy só e 8 módulos com fronteiras verificadas por teste. Dentro deles, porta e adaptador só onde há regra difícil ou sistema externo (horários, pagamento, CEP); o que é cadastro simples fica em camadas.
 
 </details>
 
 <details>
-<summary><b>🚧 Roadmap do beta</b> — tudo planejado, em fatias pequenas na <code>develop</code></summary>
+<summary><b>🗺 Roadmap em fatias</b> — cada uma começa por uma especificação</summary>
 <br/>
 
-- [ ] Contrato da API v1.0, ADRs e modelo de domínio
-- [ ] Esqueleto: monorepo, `compose.yaml`, perfis `dev`/`test`/`prod` e CI (build, testes, CodeQL, gitleaks)
-- [ ] Agenda, disponibilidade e teste de concorrência contra horário duplicado
-- [ ] Autenticação com JWT e refresh rotativo
-- [ ] Sinal de 50% para quem não tem conta, aviso de pagamento idempotente e expiração em 15 minutos
-- [ ] CEP com cache e reserva, e LGPD (consentimento, exportar e excluir dados)
-- [ ] Painel admin, front Next.js na identidade da barbearia e deploy
+- [x] Especificação: domínio, contrato OpenAPI, banco e ADRs
+- [x] Fatia 1 · esqueleto, banco com a regra anti-sobreposição, erros RFC 9457, CI (build, CodeQL, gitleaks)
+- [x] Fatia 2 · catálogo, política de pagamento e horários livres
+- [ ] Fatia 3 · conta e acesso (JWT, refresh rotativo, admin)
+- [ ] Fatia 4 · agendamento, checkout Pix/cartão e aviso de pagamento idempotente
+- [ ] Fatia 5 · painel do barbeiro
+- [ ] Fatia 6 · CEP e LGPD
+- [ ] Fatia 7 · telas Next.js (geradas com IA)
+- [ ] Fatia 8 · deploy
 
 </details>
 
@@ -792,7 +818,7 @@ Um deploy só, módulos com fronteiras verificadas por teste de arquitetura e de
 <a href="https://github.com/k3vinrich4rd/barbearia-altas-horas" target="_blank"><img src="assets/botoes/ver-codigo.svg" alt="📂 Ver o repositório da Barbearia Altas Horas" height="46"/></a>
 <a href="https://github.com/k3vinrich4rd/barbearia-altas-horas#readme" target="_blank"><img src="assets/botoes/ler-readme.svg" alt="📖 Ler o README da Barbearia Altas Horas" height="46"/></a>
 
-<sub>🖤 <b>Para o meu pai</b>, que mantém a cadeira girando desde 1997. <b>★ 19 ✂ 97 ★</b></sub>
+<sub>🖤 <b>Para o meu pai, Eduardo Cândido</b>, que mantém a cadeira girando desde 1997. <b>★ 19 ✂ 97 ★</b></sub>
 
 </div>
 
@@ -842,14 +868,14 @@ Atuo como **Desenvolvedor de Software Junior** contratado pela **[Zup Innovation
 
 | | 🏦 [RKF Bank](https://github.com/k3vinrich4rd/rkf_bank) | ✂️ [Barbearia Altas Horas](https://github.com/k3vinrich4rd/barbearia-altas-horas) |
 |---|---|---|
-| **O que é** | banco digital full stack, time de três (Osasco, SP) | agendamento online da barbearia do meu pai, aberta em 1997 (em planejamento) |
-| **Meu papel** | todo o backend | backend e arquitetura |
-| **Domínio** | clientes, contas, depósito, saque, transferência, extrato | agenda, serviços e barbeiros, sinal via Pix (sandbox), painel admin |
+| **O que é** | banco digital full stack, time de três (Osasco, SP) | a agenda online do meu pai, Eduardo Cândido, barbeiro desde 1997 (em construção, projeto individual) |
+| **Meu papel** | todo o backend | tudo: especificação, backend e deploy; frontend gerado com IA e revisado por mim |
+| **Domínio** | clientes, contas, depósito, saque, transferência, extrato | agenda, serviços, pagamento 100% antecipado por Pix ou cartão (sandbox), painel admin |
 | **O que mostra** | transação atômica, lock otimista, ViaCEP com falha tratada, logs com `X-Request-Id` | horário duplicado barrado no banco (`EXCLUDE` com `tstzrange`), webhook idempotente, erros RFC 9457, LGPD, monólito modular com Spring Modulith |
-| **Qualidade** | 360 testes, JaCoCo, CI com CodeQL e Dependabot | em construção: contrato, ADRs e plano de fatias prontos |
+| **Qualidade** | 360 testes, JaCoCo, CI com CodeQL e Dependabot | 69 testes com PostgreSQL real e 96% de cobertura nas fatias 1 e 2 (em revisão nas PRs); Spec-Driven Development com um teste por critério cobrado no CI |
 | **Stack** | Java 25 · Spring Boot 4 · MySQL · Docker · Next.js | Java 25 · Spring Boot 4.1.2 · PostgreSQL · Testcontainers · Next.js |
 | **README** | [roteiro do projeto](https://github.com/k3vinrich4rd/rkf_bank#readme) | [README e docs na `develop`](https://github.com/k3vinrich4rd/barbearia-altas-horas/tree/develop) |
-| **Ver primeiro** | [`ContaService`](https://github.com/k3vinrich4rd/rkf_bank) · [roteiro no README](#-rkf-bank--em-produção) | [ADRs](https://github.com/k3vinrich4rd/barbearia-altas-horas/tree/develop/docs/adr) · [seção no perfil](#️-barbearia-altas-horas--em-planejamento) |
+| **Ver primeiro** | [`ContaService`](https://github.com/k3vinrich4rd/rkf_bank) · [roteiro no README](#-rkf-bank--em-produção) | [ADRs](https://github.com/k3vinrich4rd/barbearia-altas-horas/tree/develop/docs/adr) · [seção no perfil](#️-barbearia-altas-horas--em-construção) |
 
 <div align="center">
 
@@ -863,11 +889,11 @@ Atuo como **Desenvolvedor de Software Junior** contratado pela **[Zup Innovation
 
 </div>
 
-### 🆕 Em planejamento
+### 🆕 Em construção
 
 | | Projeto | Por que vale a pena olhar | Stack |
 |:-:|---|---|---|
-| ✂️ | **[Barbearia Altas Horas](https://github.com/k3vinrich4rd/barbearia-altas-horas)** | sistema de agendamento para a barbearia do meu pai, aberta desde 1997; beta em planejamento | Java 25 · Spring Boot · PostgreSQL · Next.js · Vercel + Render (planejada) |
+| ✂️ | **[Barbearia Altas Horas](https://github.com/k3vinrich4rd/barbearia-altas-horas)** | a agenda online do meu pai, barbeiro desde 1997: pagamento 100% antecipado, horário duplicado barrado no banco, feita com Spec-Driven Development e IA | Java 25 · Spring Boot 4 · PostgreSQL · Next.js · Vercel + Render (planejada) |
 
 ### 🧩 Outros projetos que valem o clique
 

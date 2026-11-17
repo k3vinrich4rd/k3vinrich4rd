@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-label="Página da agenda da Barbearia Altas Horas: terça a sábado, das 7h às 20h, com almoço das 12h às 13h">
+<defs><pattern id="almoco" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="10" height="10" fill="#1F1F1F"/><line x1="0" y1="0" x2="0" y2="10" stroke="#5A5A5A" stroke-width="3"/></pattern></defs>
+<rect width="1200" height="640" rx="18" fill="#0A0A0A"/>
+<rect x="60" y="24" width="1116" height="592" rx="10" fill="#141414" stroke="#8A8A8A"/>
+<circle cx="60" cy="60" r="9" fill="#0A0A0A" stroke="#C0C0C0" stroke-width="2"/>
+<path d="M 38 60 Q 49 46 60 60" fill="none" stroke="#C0C0C0" stroke-width="3" stroke-linecap="round"/>
+<circle cx="60" cy="100" r="9" fill="#0A0A0A" stroke="#C0C0C0" stroke-width="2"/>
+<path d="M 38 100 Q 49 86 60 100" fill="none" stroke="#C0C0C0" stroke-width="3" stroke-linecap="round"/>
+<circle cx="60" cy="140" r="9" fill="#0A0A0A" stroke="#C0C0C0" stroke-width="2"/>
+<path d="M 38 140 Q 49 126 60 140" fill="none" stroke="#C0C0C0" stroke-width="3" stroke-linecap="round"/>
+<circle cx="60" cy="180" r="9" fill="#0A0A0A" stroke="#C0C0C0" stroke-width="2"/>
+<path d="M 38 180 Q 49 166 60 180" fill="none" stroke="#C0C0C0" stroke-width="3" stroke-linecap="round"/>
+<circle cx="60" cy="220" r="9" fill="#0A0A0A" stroke="#C0C0C0" stroke-width="2"/>
+<path d="M 38 220 Q 49 206 60 220" fill="none" stroke="#C0C0C0" stroke-width="3" stroke-linecap="round"/>
+<circle cx="60" cy="260" r="9" fill="#0A0A0A" stroke="#C0C0C0" stroke-width="2"/>
+<path d="M 38 260 Q 49 246 60 260" fill="none" stroke="#C0C0C0" stroke-width="3" stroke-linecap="round"/>
+<circle cx="60" cy="300" r="9" fill="#0A0A0A" stroke="#C0C0C0" stroke-width="2"/>
+<path d="M 38 300 Q 49 286 60 300" fill="none" stroke="#C0C0C0" stroke-width="3" stroke-linecap="round"/>
+<circle cx="60" cy="340" r="9" fill="#0A0A0A" stroke="#C0C0C0" stroke-width="2"/>
+<path d="M 38 340 Q 49 326 60 340" fill="none" stroke="#C0C0C0" stroke-width="3" stroke-linecap="round"/>
+<circle cx="60" cy="380" r="9" fill="#0A0A0A" stroke="#C0C0C0" stroke-width="2"/>
+<path d="M 38 380 Q 49 366 60 380" fill="none" stroke="#C0C0C0" stroke-width="3" stroke-linecap="round"/>
+<circle cx="60" cy="420" r="9" fill="#0A0A0A" stroke="#C0C0C0" stroke-width="2"/>
+<path d="M 38 420 Q 49 406 60 420" fill="none" stroke="#C0C0C0" stroke-width="3" stroke-linecap="round"/>
+<circle cx="60" cy="460" r="9" fill="#0A0A0A" stroke="#C0C0C0" stroke-width="2"/>
+<path d="M 38 460 Q 49 446 60 460" fill="none" stroke="#C0C0C0" stroke-width="3" stroke-linecap="round"/>
+<circle cx="60" cy="500" r="9" fill="#0A0A0A" stroke="#C0C0C0" stroke-width="2"/>
+<path d="M 38 500 Q 49 486 60 500" fill="none" stroke="#C0C0C0" stroke-width="3" stroke-linecap="round"/>
+<circle cx="60" cy="540" r="9" fill="#0A0A0A" stroke="#C0C0C0" stroke-width="2"/>
+<path d="M 38 540 Q 49 526 60 540" fill="none" stroke="#C0C0C0" stroke-width="3" stroke-linecap="round"/>
+<circle cx="60" cy="580" r="9" fill="#0A0A0A" stroke="#C0C0C0" stroke-width="2"/>
+<path d="M 38 580 Q 49 566 60 580" fill="none" stroke="#C0C0C0" stroke-width="3" stroke-linecap="round"/>
+<text x="90" y="70" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="bold" fill="#FFFFFF" letter-spacing="3">AGENDA · ALTAS HORAS</text>
+<text x="1140" y="70" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#C0C0C0" letter-spacing="2">EDUARDO CÂNDIDO · ★ 19 ✂ 97 ★</text>
+<rect x="150" y="86" width="200" height="34" fill="#FFFFFF"/>
+<text x="250.0" y="109" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#0A0A0A" letter-spacing="3">TERÇA</text>
+<rect x="350" y="86" width="200" height="34" fill="#FFFFFF"/>
+<text x="450.0" y="109" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#0A0A0A" letter-spacing="3">QUARTA</text>
+<rect x="550" y="86" width="200" height="34" fill="#FFFFFF"/>
+<text x="650.0" y="109" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#0A0A0A" letter-spacing="3">QUINTA</text>
+<rect x="750" y="86" width="200" height="34" fill="#FFFFFF"/>
+<text x="850.0" y="109" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#0A0A0A" letter-spacing="3">SEXTA</text>
+<rect x="950" y="86" width="200" height="34" fill="#FFFFFF"/>
+<text x="1050.0" y="109" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#0A0A0A" letter-spacing="3">SÁBADO</text>
+<text x="136" y="143" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#FFFFFF">07h</text>
+<rect x="150" y="120" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="158" y1="137.0" x2="342" y2="137.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="350" y="120" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="358" y1="137.0" x2="542" y2="137.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="550" y="120" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="558" y1="137.0" x2="742" y2="137.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="750" y="120" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="758" y1="137.0" x2="942" y2="137.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="950" y="120" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="958" y1="137.0" x2="1142" y2="137.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<text x="136" y="177" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#FFFFFF">08h</text>
+<rect x="150" y="154" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="158" y1="171.0" x2="342" y2="171.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="350" y="154" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="358" y1="171.0" x2="542" y2="171.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="550" y="154" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="558" y1="171.0" x2="742" y2="171.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="750" y="154" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="758" y1="171.0" x2="942" y2="171.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="950" y="154" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="958" y1="171.0" x2="1142" y2="171.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<text x="136" y="211" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#FFFFFF">09h</text>
+<rect x="150" y="188" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="158" y1="205.0" x2="342" y2="205.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="350" y="188" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="358" y1="205.0" x2="542" y2="205.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="550" y="188" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="558" y1="205.0" x2="742" y2="205.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="750" y="188" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="758" y1="205.0" x2="942" y2="205.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="950" y="188" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="958" y1="205.0" x2="1142" y2="205.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<text x="136" y="245" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#FFFFFF">10h</text>
+<rect x="150" y="222" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="158" y1="239.0" x2="342" y2="239.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="350" y="222" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="358" y1="239.0" x2="542" y2="239.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="550" y="222" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="558" y1="239.0" x2="742" y2="239.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="750" y="222" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="758" y1="239.0" x2="942" y2="239.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="950" y="222" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="958" y1="239.0" x2="1142" y2="239.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<text x="136" y="279" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#FFFFFF">11h</text>
+<rect x="150" y="256" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="158" y1="273.0" x2="342" y2="273.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="350" y="256" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="358" y1="273.0" x2="542" y2="273.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="550" y="256" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="558" y1="273.0" x2="742" y2="273.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="750" y="256" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="758" y1="273.0" x2="942" y2="273.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="950" y="256" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="958" y1="273.0" x2="1142" y2="273.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<text x="136" y="313" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#8A8A8A">12h</text>
+<rect x="150" y="290" width="200" height="34" fill="url(#almoco)" stroke="#3A3A3A"/>
+<rect x="350" y="290" width="200" height="34" fill="url(#almoco)" stroke="#3A3A3A"/>
+<rect x="550" y="290" width="200" height="34" fill="url(#almoco)" stroke="#3A3A3A"/>
+<rect x="750" y="290" width="200" height="34" fill="url(#almoco)" stroke="#3A3A3A"/>
+<rect x="950" y="290" width="200" height="34" fill="url(#almoco)" stroke="#3A3A3A"/>
+<text x="650.0" y="313" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#E6E6E6" letter-spacing="8">ALMOÇO · 12H ÀS 13H</text>
+<text x="136" y="347" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#FFFFFF">13h</text>
+<rect x="150" y="324" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="158" y1="341.0" x2="342" y2="341.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="350" y="324" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="358" y1="341.0" x2="542" y2="341.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="550" y="324" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="558" y1="341.0" x2="742" y2="341.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="750" y="324" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="758" y1="341.0" x2="942" y2="341.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="950" y="324" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="958" y1="341.0" x2="1142" y2="341.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<text x="136" y="381" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#FFFFFF">14h</text>
+<rect x="150" y="358" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="158" y1="375.0" x2="342" y2="375.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="350" y="358" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="358" y1="375.0" x2="542" y2="375.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="550" y="358" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="558" y1="375.0" x2="742" y2="375.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="750" y="358" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="758" y1="375.0" x2="942" y2="375.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="950" y="358" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="958" y1="375.0" x2="1142" y2="375.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<text x="136" y="415" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#FFFFFF">15h</text>
+<rect x="150" y="392" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="158" y1="409.0" x2="342" y2="409.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="350" y="392" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="358" y1="409.0" x2="542" y2="409.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="550" y="392" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="558" y1="409.0" x2="742" y2="409.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="750" y="392" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="758" y1="409.0" x2="942" y2="409.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="950" y="392" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="958" y1="409.0" x2="1142" y2="409.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<text x="136" y="449" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#FFFFFF">16h</text>
+<rect x="150" y="426" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="158" y1="443.0" x2="342" y2="443.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="350" y="426" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="358" y1="443.0" x2="542" y2="443.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="550" y="426" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="558" y1="443.0" x2="742" y2="443.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="750" y="426" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="758" y1="443.0" x2="942" y2="443.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="950" y="426" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="958" y1="443.0" x2="1142" y2="443.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<text x="136" y="483" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#FFFFFF">17h</text>
+<rect x="150" y="460" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="158" y1="477.0" x2="342" y2="477.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="350" y="460" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="358" y1="477.0" x2="542" y2="477.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="550" y="460" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="558" y1="477.0" x2="742" y2="477.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="750" y="460" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="758" y1="477.0" x2="942" y2="477.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="950" y="460" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="958" y1="477.0" x2="1142" y2="477.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<text x="136" y="517" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#FFFFFF">18h</text>
+<rect x="150" y="494" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="158" y1="511.0" x2="342" y2="511.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="350" y="494" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="358" y1="511.0" x2="542" y2="511.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="550" y="494" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="558" y1="511.0" x2="742" y2="511.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="750" y="494" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="758" y1="511.0" x2="942" y2="511.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="950" y="494" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="958" y1="511.0" x2="1142" y2="511.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<text x="136" y="551" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#FFFFFF">19h</text>
+<rect x="150" y="528" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="158" y1="545.0" x2="342" y2="545.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="350" y="528" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="358" y1="545.0" x2="542" y2="545.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="550" y="528" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="558" y1="545.0" x2="742" y2="545.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="750" y="528" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="758" y1="545.0" x2="942" y2="545.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<rect x="950" y="528" width="200" height="34" fill="#141414" stroke="#3A3A3A"/>
+<line x1="958" y1="545.0" x2="1142" y2="545.0" stroke="#3A3A3A" stroke-dasharray="3 5"/>
+<line x1="150" y1="562" x2="1150" y2="562" stroke="#FFFFFF" stroke-width="2"/>
+<text x="136" y="567" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#8A8A8A">20h</text>
+<text x="650.0" y="600" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#C0C0C0">cada linha = 1 hora · horários de 30 em 30 min · agendar com 2 h de antecedência · até 30 dias à frente · domingo e segunda: fechado</text>
+</svg>
