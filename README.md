@@ -753,7 +753,7 @@ sequenceDiagram
   </tr>
 </table>
 
-**O que já roda** (fatias 1 e 2, em revisão nas PRs [#4](https://github.com/k3vinrich4rd/barbearia-altas-horas/pull/4) e [#6](https://github.com/k3vinrich4rd/barbearia-altas-horas/pull/6))
+**O que já roda** (fatias 1 e 2, na `main` desde 17/11/2026: [como testar](https://github.com/k3vinrich4rd/barbearia-altas-horas/blob/main/docs/guia-testes.md))
 
 | | |
 |---|---|
@@ -761,6 +761,7 @@ sequenceDiagram
 | 🔒 **Horário duplicado barrado no banco** | `EXCLUDE USING gist` com `tstzrange`; 12 conexões disputando o mesmo horário e só uma vence |
 | 🧪 **69 testes, 0 falhas** | com PostgreSQL 18 de verdade (Testcontainers), 96% de cobertura de instruções |
 | 📐 **29 critérios, 29 testes** | um script no CI quebra o build se um critério da especificação ficar sem teste |
+| 🔎 **RAG da documentação** | Spring AI + pgvector com embeddings locais; busca híbrida acerta 15 de 17 perguntas (só vetor: 10) |
 
 **Três decisões que mostram o raciocínio**
 
@@ -872,7 +873,7 @@ Atuo como **Desenvolvedor de Software Junior** contratado pela **[Zup Innovation
 | **Meu papel** | todo o backend | tudo: especificação, backend e deploy; frontend gerado com IA e revisado por mim |
 | **Domínio** | clientes, contas, depósito, saque, transferência, extrato | agenda, serviços, pagamento 100% antecipado por Pix ou cartão (sandbox), painel admin |
 | **O que mostra** | transação atômica, lock otimista, ViaCEP com falha tratada, logs com `X-Request-Id` | horário duplicado barrado no banco (`EXCLUDE` com `tstzrange`), webhook idempotente, erros RFC 9457, LGPD, monólito modular com Spring Modulith |
-| **Qualidade** | 360 testes, JaCoCo, CI com CodeQL e Dependabot | 69 testes com PostgreSQL real e 96% de cobertura nas fatias 1 e 2 (em revisão nas PRs); Spec-Driven Development com um teste por critério cobrado no CI |
+| **Qualidade** | 360 testes, JaCoCo, CI com CodeQL e Dependabot | 69 testes com PostgreSQL real e 96% de cobertura nas fatias 1 e 2; Spec-Driven Development com um teste por critério cobrado no CI |
 | **Stack** | Java 25 · Spring Boot 4 · MySQL · Docker · Next.js | Java 25 · Spring Boot 4.1.2 · PostgreSQL · Testcontainers · Next.js |
 | **README** | [roteiro do projeto](https://github.com/k3vinrich4rd/rkf_bank#readme) | [README e docs na `develop`](https://github.com/k3vinrich4rd/barbearia-altas-horas/tree/develop) |
 | **Ver primeiro** | [`ContaService`](https://github.com/k3vinrich4rd/rkf_bank) · [roteiro no README](#-rkf-bank--em-produção) | [ADRs](https://github.com/k3vinrich4rd/barbearia-altas-horas/tree/develop/docs/adr) · [seção no perfil](#️-barbearia-altas-horas--em-construção) |
