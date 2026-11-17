@@ -49,6 +49,7 @@ function blocoRecrutador() {
 |---|---|
 | Quem é? | Dev **Java backend Junior** na **Zup Innovation**, prestando serviço para o **Itaú**, em transição para **Pleno** (**${regua.praticadas}/${regua.total}** competências já praticadas) |
 | Em produção? | **[RKF Bank](https://github.com/${USUARIO}/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **${rkf.testes} testes**, CI e logs rastreáveis · ✅ **no ar**: [abrir o banco](https://rkfbank.vercel.app) |
+| Construindo agora? | **[Barbearia Altas Horas](https://github.com/${USUARIO}/barbearia-altas-horas)**: a agenda online da barbearia do meu pai, com pagamento antecipado e horário duplicado barrado no próprio PostgreSQL · 🚧 fatias 1 a 3 de 8 entregues, feita com Spec-Driven Development · [ver o andamento](#️-barbearia-altas-horas--em-construção) |
 | Stack principal? | Java · Spring Boot · JPA/Hibernate · MySQL/PostgreSQL · MongoDB · JUnit/Mockito · Docker · GitHub Actions |
 | O que está estudando? | ${p.trilha.map(apelido).join(' → ')} |
 | Contato? | [LinkedIn](https://www.linkedin.com/in/kevinrichard-java/) · [kevinrichardve@gmail.com](mailto:kevinrichardve@gmail.com) |`;

@@ -43,7 +43,8 @@
   <a href="https://github.com/k3vinrich4rd/rkf_bank/blob/main/planing/decisoes.md">🧭 decisões técnicas</a> ·
   <a href="https://github.com/k3vinrich4rd/rkf_bank#-arquitetura">🧱 arquitetura</a> ·
   <a href="https://github.com/k3vinrich4rd/rkf_bank#-qualidade-e-testes">🧪 testes</a> ·
-  <a href="diario/">📓 diário de estudos</a>
+  <a href="diario/">📓 diário de estudos</a><br/>
+  ✂️ <b>Em construção:</b> <a href="https://github.com/k3vinrich4rd/barbearia-altas-horas">Barbearia Altas Horas</a>: a agenda online da barbearia do meu pai · pagamento antecipado · <code>EXCLUDE USING gist</code> contra horário duplicado · Spec-Driven Development · fatias 1 a 3 de 8 na <code>main</code>
 </p>
 
 <!-- Botões gerados por scripts/svgs.mjs. Cada um leva a uma seção. -->
@@ -133,6 +134,7 @@ Sugestão de leitura, do mais simples ao mais completo:
 3. 🌐 **[Workshop JPA](https://github.com/k3vinrich4rd/workshop-springboot4-jpa)**: todos os relacionamentos JPA e chave composta.
 4. 📚 **[BookMarket](https://github.com/k3vinrich4rd/BookMarket)**: Kotlin, Spring Security e eventos de domínio.
 5. 🏦 **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: transações, lock otimista, Flyway, Spring Security + JWT, logs com `X-Request-Id`, testes `@DataJpaTest` e CI com CodeQL.
+6. ✂️ **[Barbearia Altas Horas](https://github.com/k3vinrich4rd/barbearia-altas-horas)**: o passo seguinte. Monólito modular (Spring Modulith), concorrência resolvida no PostgreSQL, Resource Server com refresh rotativo, RAG da documentação com Spring AI, e cada fatia especificada antes do código.
 
 <details>
 <summary>👉 Onde olhar primeiro no RKF Bank</summary>
@@ -704,10 +706,9 @@ sequenceDiagram
 
 <div align="center">
 
-<a href="https://github.com/k3vinrich4rd/barbearia-altas-horas/pulls"><img src="https://img.shields.io/badge/status-fatia_2_de_8-0A0A0A?style=flat-square&labelColor=2B2B2B"/></a>
-<a href="https://github.com/k3vinrich4rd/barbearia-altas-horas/pulls"><img src="https://img.shields.io/badge/testes-69_%E2%9C%94_PostgreSQL_real-0A0A0A?style=flat-square&labelColor=2B2B2B"/></a>
+<a href="https://github.com/k3vinrich4rd/barbearia-altas-horas/pulls"><img src="https://img.shields.io/badge/status-fatia_3_de_8_·_conta_e_acesso-0A0A0A?style=flat-square&labelColor=2B2B2B"/></a>
+<a href="https://github.com/k3vinrich4rd/barbearia-altas-horas/pulls"><img src="https://img.shields.io/badge/testes-115_%E2%9C%94_PostgreSQL_real-0A0A0A?style=flat-square&labelColor=2B2B2B"/></a>
 <img src="https://img.shields.io/badge/m%C3%A9todo-Spec--Driven_Development-0A0A0A?style=flat-square&labelColor=2B2B2B"/>
-<img src="https://img.shields.io/badge/projeto-individual-0A0A0A?style=flat-square&labelColor=2B2B2B"/>
 <br/>
 <img src="https://img.shields.io/badge/Java-25_LTS-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/>
 <img src="https://img.shields.io/badge/Spring%20Boot-4.1-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
@@ -726,9 +727,11 @@ sequenceDiagram
 </td>
 <td valign="top">
 
-**Estou construindo a agenda do meu pai.** A Barbearia Altas Horas está aberta em Osasco desde 1997, e o Eduardo, além de atender, ensina o ofício na **Altas Horas Barbearia Academy**. A agenda dele sempre coube no caderno e no WhatsApp, com um problema que se repete em quase toda barbearia de bairro: o cliente marca, não aparece, e a cadeira fica vazia. Na agenda online, o cliente escolhe o serviço e o horário, **paga 100% antes** (Pix ou cartão) e só então o horário é dele.
+**Quase três décadas de tradição, agora com agenda inteligente.** O Eduardo começou no ofício em 1995 e, em 1997, abriu a Barbearia Altas Horas no Jardim Bonança, em Osasco. Em 2017 foi reconhecido com o **Prêmio Barbeiros do Brasil** e o **Prêmio Master Barber · Êxito Profissional**, e hoje também ensina na **Altas Horas Barbearia Academy**.
 
-O que sustenta o projeto é o método: **Spec-Driven Development**. Cada entrega começa por uma especificação, cada critério dela vira um teste, e o CI barra o que não cumpre. O backend é Java e Spring; a IA entra como par de programação e na geração do frontend.
+A agenda dele sempre ficou no caderno e no WhatsApp, com o problema clássico da barbearia de bairro: o cliente marca, não aparece, e a cadeira fica vazia. Por isso estou construindo a agenda online da Altas Horas: o cliente escolhe o serviço e o horário, **paga antes** por Pix ou cartão, e só então o horário é dele.
+
+Cada entrega começa por uma **especificação** (Spec-Driven Development), cada critério vira um teste, e o CI barra o que não cumpre.
 
 </td>
 </tr>
@@ -753,14 +756,28 @@ O que sustenta o projeto é o método: **Spec-Driven Development**. Cada entrega
   </tr>
 </table>
 
-**O que já roda** (fatias 1 e 2, na `main` desde 17/11/2026: [como testar](https://github.com/k3vinrich4rd/barbearia-altas-horas/blob/main/docs/guia-testes.md))
+<details>
+<summary><b>🏆 Os prêmios do Eduardo (2017)</b></summary>
+<br/>
+
+<table>
+<tr>
+<td align="center" width="50%"><img src="assets/barbearia/premios/premio-barbeiros-do-brasil-2017.jpg" width="100%" alt="Eduardo Cândido segurando o troféu do Prêmio Barbeiros do Brasil"/><br/><sub><b>Prêmio Barbeiros do Brasil</b> · 2017</sub></td>
+<td align="center" width="50%"><img src="assets/barbearia/premios/premio-master-barber-2017.jpg" width="100%" alt="Eduardo Cândido segurando o troféu dourado do Prêmio Master Barber"/><br/><sub><b>Prêmio Master Barber · Êxito Profissional</b> · 2017</sub></td>
+</tr>
+</table>
+
+</details>
+
+**O que já roda** (fatias 1 a 3, na `main` desde 17/11/2026: [como testar](https://github.com/k3vinrich4rd/barbearia-altas-horas/blob/main/docs/guia-testes.md))
 
 | | |
 |---|---|
 | 🗓 **Horários livres pela API** | jornada menos almoço, folgas e reservas; o serviço de 60 min não aparece às 11h30 nem às 19h30 |
 | 🔒 **Horário duplicado barrado no banco** | `EXCLUDE USING gist` com `tstzrange`; 12 conexões disputando o mesmo horário e só uma vence |
-| 🧪 **69 testes, 0 falhas** | com PostgreSQL 18 de verdade (Testcontainers), 96% de cobertura de instruções |
-| 📐 **29 critérios, 29 testes** | um script no CI quebra o build se um critério da especificação ficar sem teste |
+| 🔑 **Contas e sessão** | cadastro, login, refresh rotativo (token copiado derruba a sessão), troca de senha e admin que nasce sem senha no repositório |
+| 🧪 **115 testes, 0 falhas** | com PostgreSQL 18 de verdade (Testcontainers), 97% de cobertura de instruções |
+| 📐 **Um teste por critério da spec** | 10, 29 e 44 critérios nas fatias 1 a 3, todos com teste; um script no CI quebra o build se faltar algum |
 | 🔎 **RAG da documentação** | Spring AI + pgvector com embeddings locais; busca híbrida acerta 15 de 17 perguntas (só vetor: 10) |
 
 **Três decisões que mostram o raciocínio**
@@ -805,7 +822,7 @@ Um deploy só e 8 módulos com fronteiras verificadas por teste. Dentro deles, p
 - [x] Especificação: domínio, contrato OpenAPI, banco e ADRs
 - [x] Fatia 1 · esqueleto, banco com a regra anti-sobreposição, erros RFC 9457, CI (build, CodeQL, gitleaks)
 - [x] Fatia 2 · catálogo, política de pagamento e horários livres
-- [ ] Fatia 3 · conta e acesso (JWT, refresh rotativo, admin)
+- [x] Fatia 3 · conta e acesso (JWT, refresh rotativo, admin, limite de tentativas)
 - [ ] Fatia 4 · agendamento, checkout Pix/cartão e aviso de pagamento idempotente
 - [ ] Fatia 5 · painel do barbeiro
 - [ ] Fatia 6 · CEP e LGPD
@@ -869,14 +886,15 @@ Atuo como **Desenvolvedor de Software Junior** contratado pela **[Zup Innovation
 
 | | 🏦 [RKF Bank](https://github.com/k3vinrich4rd/rkf_bank) | ✂️ [Barbearia Altas Horas](https://github.com/k3vinrich4rd/barbearia-altas-horas) |
 |---|---|---|
-| **O que é** | banco digital full stack, time de três (Osasco, SP) | a agenda online do meu pai, Eduardo Cândido, barbeiro desde 1997 (em construção, projeto individual) |
-| **Meu papel** | todo o backend | tudo: especificação, backend e deploy; frontend gerado com IA e revisado por mim |
-| **Domínio** | clientes, contas, depósito, saque, transferência, extrato | agenda, serviços, pagamento 100% antecipado por Pix ou cartão (sandbox), painel admin |
+| **O que é** | banco digital full stack, time de três (Osasco, SP) | a agenda online da barbearia do meu pai, Eduardo Cândido (Osasco, desde 1997) |
+| **Status** | ✅ em produção ([abrir o banco](https://rkfbank.vercel.app)) | 🚧 fatias 1 a 3 de 8 na `main`; próxima: agendamento com pagamento |
+| **Meu papel** | todo o backend | especificação, backend e deploy; frontend gerado com IA e revisado por mim |
+| **Domínio** | clientes, contas, depósito, saque, transferência, extrato | agenda, serviços, contas e sessão, pagamento 100% antecipado por Pix ou cartão (sandbox), painel do barbeiro |
 | **O que mostra** | transação atômica, lock otimista, ViaCEP com falha tratada, logs com `X-Request-Id` | horário duplicado barrado no banco (`EXCLUDE` com `tstzrange`), webhook idempotente, erros RFC 9457, LGPD, monólito modular com Spring Modulith |
-| **Qualidade** | 360 testes, JaCoCo, CI com CodeQL e Dependabot | 69 testes com PostgreSQL real e 96% de cobertura nas fatias 1 e 2; Spec-Driven Development com um teste por critério cobrado no CI |
+| **Qualidade** | 360 testes, JaCoCo, CI com CodeQL e Dependabot | 115 testes com PostgreSQL real e 97% de cobertura; um teste por critério da spec, cobrado no CI |
 | **Stack** | Java 25 · Spring Boot 4 · MySQL · Docker · Next.js | Java 25 · Spring Boot 4.1.2 · PostgreSQL · Testcontainers · Next.js |
-| **README** | [roteiro do projeto](https://github.com/k3vinrich4rd/rkf_bank#readme) | [README e docs na `develop`](https://github.com/k3vinrich4rd/barbearia-altas-horas/tree/develop) |
-| **Ver primeiro** | [`ContaService`](https://github.com/k3vinrich4rd/rkf_bank) · [roteiro no README](#-rkf-bank--em-produção) | [ADRs](https://github.com/k3vinrich4rd/barbearia-altas-horas/tree/develop/docs/adr) · [seção no perfil](#️-barbearia-altas-horas--em-construção) |
+| **README** | [roteiro do projeto](https://github.com/k3vinrich4rd/rkf_bank#readme) | [a história e o projeto](https://github.com/k3vinrich4rd/barbearia-altas-horas#readme) |
+| **Ver primeiro** | [`ContaService`](https://github.com/k3vinrich4rd/rkf_bank) · [roteiro no README](#-rkf-bank--em-produção) | [ADRs](https://github.com/k3vinrich4rd/barbearia-altas-horas/tree/main/docs/adr) · [specs SDD](https://github.com/k3vinrich4rd/barbearia-altas-horas/tree/main/docs/sdd) · [seção no perfil](#️-barbearia-altas-horas--em-construção) |
 
 <div align="center">
 
