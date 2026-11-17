@@ -700,7 +700,7 @@ sequenceDiagram
 ## ✂️ Barbearia Altas Horas — em construção
 
 <!-- Vitrine · GitHub: seção manual. Só fatos do README do projeto; números entram só depois de execução real. -->
-<a href="https://github.com/k3vinrich4rd/barbearia-altas-horas"><img src="assets/barbearia/banner.svg" width="100%" alt="Barbearia Altas Horas: a agenda online do Eduardo Cândido, Pix ou cartão 100% antecipado, desde 1997"/></a>
+<a href="https://github.com/k3vinrich4rd/barbearia-altas-horas"><img src="assets/barbearia/banner.svg" width="100%" alt="Barbearia Altas Horas: barbearia e academy em Osasco, agenda online com horário garantido, desde 1997"/></a>
 
 <div align="center">
 
@@ -722,13 +722,13 @@ sequenceDiagram
 <tr>
 <td width="170" align="center" valign="top">
 <img src="assets/barbearia/eduardo-candido-avatar.png" width="140" alt="Eduardo Cândido, barbeiro da Altas Horas"/>
-<br/><b>Eduardo Cândido</b><br/><sub>meu pai · barbeiro desde 1997</sub>
+<br/><b>Eduardo Cândido</b><br/><sub>meu pai · barbeiro e professor<br/>na ativa desde 1997</sub>
 </td>
 <td valign="top">
 
-**Estou construindo a agenda do meu pai.** Ele corta cabelo na Barbearia Altas Horas, em Osasco, desde 1997, com a agenda no caderno e no WhatsApp: cliente marca, não aparece, e a cadeira fica vazia. Na agenda online, o cliente escolhe o serviço e o horário, **paga 100% antes** (Pix ou cartão) e só então o horário é dele.
+**Estou construindo a agenda do meu pai.** A Barbearia Altas Horas está aberta em Osasco desde 1997, e o Eduardo, além de atender, ensina o ofício na **Altas Horas Barbearia Academy**. A agenda dele sempre coube no caderno e no WhatsApp, com um problema que se repete em quase toda barbearia de bairro: o cliente marca, não aparece, e a cadeira fica vazia. Na agenda online, o cliente escolhe o serviço e o horário, **paga 100% antes** (Pix ou cartão) e só então o horário é dele.
 
-É um projeto **só meu**: backend escrito por mim com IA como par de programação, frontend gerado com IA e revisado por mim, e **Spec-Driven Development** segurando a qualidade (cada entrega começa por uma especificação, e cada critério dela vira um teste cobrado no CI).
+O que sustenta o projeto é o método: **Spec-Driven Development**. Cada entrega começa por uma especificação, cada critério dela vira um teste, e o CI barra o que não cumpre. O backend é Java e Spring; a IA entra como par de programação e na geração do frontend.
 
 </td>
 </tr>
