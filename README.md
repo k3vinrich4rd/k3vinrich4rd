@@ -1773,7 +1773,7 @@ quadrantChart
 | Inglês técnico | 🔄 | em andamento |
 | Mensageria e microsserviços | ⏳ | Outbox do comprovante pronto na branch `refactor/monolito-modular` (em revisão); falta o broker |
 
-<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-11-17</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-11-18</sub>
 <!-- AUTO:regua:END -->
 
 </details>
@@ -1783,7 +1783,189 @@ quadrantChart
 <br/>
 
 <!-- AUTO:estudos:START -->
-_Em breve._
+**38** assuntos praticados em projeto · **58** em andamento · **1** planejados
+
+📚 **132** notas de estudo no segundo cérebro · **61** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
+
+```mermaid
+mindmap
+  root((🧠 Estudos))
+    arquitetura
+      ✅ Anonimização e k-anonimato
+      ✅ Cache e cache-aside
+      ✅ Fallback e degradação graciosa
+      🔄 Lock otimista e transações
+      ✅ Máquina de estados
+      ✅ Rate limiting
+      ✅ Webhook e HMAC
+      🔄 Idempotência e Idempotency-Key
+    Arquitetura
+      🔄 Arquitetura em camadas
+      🔄 Arquitetura hexagonal
+      🔄 Arquitetura orientada a eventos
+      🔄 Arquiteturas de software
+      🔄 BFF (Backend for Frontend)
+      🔄 CQRS
+      🔄 Clean Architecture
+      🔄 Event Sourcing
+      ✅ Integração com APIs externas
+      ✅ LGPD
+      ✅ Logs e observabilidade
+      🔄 MVC
+      ⏳ Mensageria e Outbox
+      🔄 Microsserviços
+      🔄 Monólito modular
+      🔄 Monólito
+      🔄 Onion Architecture
+      ✅ Padrões de projeto
+      🔄 Pub-Sub e DLQ
+      🔄 SOA
+      🔄 Serverless
+      🔄 Síncrono e assíncrono
+    Cloud
+      🔄 AWS
+    dados
+      ✅ Constraint de exclusão no PostgreSQL
+      🔄 Flyway
+    Dados
+      ✅ H2 x MySQL
+      ✅ MongoDB
+      ✅ SQL e MySQL
+    DevOps
+      ✅ Dependências e CVEs
+    devops
+      🔄 Docker e Compose
+      🔄 Git Flow e commits semânticos
+      🔄 GitHub Actions
+    IA
+      🔄 Agentes de IA
+      🔄 Agentes e IA aplicada
+      🔄 Design Doc de arquitetura para IA
+      🔄 Embeddings e banco vetorial
+      🔄 Ferramentas de dev com IA
+      🔄 Fine-tuning
+      🔄 Guardrails
+      🔄 LLM
+      🔄 MCP
+      🔄 Prompt e engenharia de contexto
+      🔄 RAG
+      🔄 Skills
+      🔄 Spec-Driven Development
+      🔄 Spring AI
+      🔄 Structured output
+      🔄 Testes de aplicações com IA (evals)
+      🔄 Tool Calling (Function Calling)
+    Java
+      ✅ BigDecimal e dinheiro
+      ✅ Coleções Streams e Optional
+      ✅ Concorrência e threads virtuais
+      ✅ Exceções em Java
+      ✅ Generics
+      ✅ JVM, JDK e bytecode
+      ✅ Java moderno (8 a 25)
+      ✅ Maven e build
+      ✅ Memória e Garbage Collector
+      ✅ Objetos - equals, hashCode e imutabilidade
+      ✅ POO e SOLID
+    java
+      ✅ Value Object
+    Spring
+      ✅ Anotações Java e Spring
+      🔄 Carregamento EAGER e LAZY
+      ✅ N+1 consultas
+      ✅ Spring Boot - auto-configuração e starters
+      ✅ Spring Boot Actuator
+      ✅ Spring Boot Test
+      🔄 Spring Cloud e microsserviços
+      ✅ Swagger e OpenAPI
+    spring
+      🔄 Bean Validation
+      🔄 JPQL e JOIN FETCH
+      ✅ Jobs agendados e ShedLock
+      🔄 OAuth2 e OIDC
+      🔄 Paginação e countQuery
+      🔄 Perfis do Spring e homologação
+      🔄 Projeção de dados
+      🔄 Spring Boot e camadas
+      🔄 Spring Data JPA e relacionamentos
+      🔄 Spring Framework - IoC DI e AOP
+      🔄 Spring Security e JWT
+      🔄 Tratamento de erros REST
+      🔄 API REST
+      🔄 DTO
+      🔄 ORM e modelo de domínio
+    Testes
+      ✅ DataJpaTest
+      ✅ TDD e estratégia de testes
+      ✅ Testcontainers
+      ✅ Testes manuais de API - Postman e Insomnia
+    testes
+      🔄 JUnit e Mockito
+```
+
+| Estudando agora | Área | Próximos passos |
+|---|---|---|
+| 🔄 Arquitetura em camadas | Arquitetura | <sub>2 a fazer</sub> |
+| 🔄 Arquitetura hexagonal | Arquitetura | <sub>3 a fazer</sub> |
+| 🔄 Arquitetura orientada a eventos | Arquitetura | <sub>2 a fazer</sub> |
+| 🔄 Arquiteturas de software | Arquitetura | <sub>3 a fazer</sub> |
+| 🔄 BFF (Backend for Frontend) | Arquitetura | <sub>1 a fazer</sub> |
+| 🔄 CQRS | Arquitetura | <sub>2 a fazer</sub> |
+| 🔄 Clean Architecture | Arquitetura | <sub>2 a fazer</sub> |
+| 🔄 Event Sourcing | Arquitetura | <sub>2 a fazer</sub> |
+| 🔄 Lock otimista e transações | arquitetura | — |
+| 🔄 MVC | Arquitetura | <sub>2 a fazer</sub> |
+| 🔄 Microsserviços | Arquitetura | <sub>2 a fazer</sub> |
+| 🔄 Monólito modular | Arquitetura | <sub>2 a fazer</sub> |
+| 🔄 Monólito | Arquitetura | <sub>2 a fazer</sub> |
+| 🔄 Onion Architecture | Arquitetura | <sub>2 a fazer</sub> |
+| 🔄 Pub-Sub e DLQ | Arquitetura | <sub>2 a fazer</sub> |
+| 🔄 SOA | Arquitetura | <sub>1 a fazer</sub> |
+| 🔄 Serverless | Arquitetura | <sub>2 a fazer</sub> |
+| 🔄 Síncrono e assíncrono | Arquitetura | <sub>3 a fazer</sub> |
+| 🔄 AWS | Cloud | <sub>10 a fazer</sub> |
+| 🔄 Flyway | dados | — |
+| 🔄 Docker e Compose | devops | — |
+| 🔄 Git Flow e commits semânticos | devops | — |
+| 🔄 GitHub Actions | devops | — |
+| 🔄 Agentes de IA | IA | — |
+| 🔄 Agentes e IA aplicada | IA | `███░░░░░░░` 1/4 |
+| 🔄 Design Doc de arquitetura para IA | IA | <sub>1 a fazer</sub> |
+| 🔄 Embeddings e banco vetorial | IA | — |
+| 🔄 Ferramentas de dev com IA | IA | — |
+| 🔄 Fine-tuning | IA | — |
+| 🔄 Guardrails | IA | — |
+| 🔄 LLM | IA | — |
+| 🔄 MCP | IA | — |
+| 🔄 Prompt e engenharia de contexto | IA | — |
+| 🔄 RAG | IA | — |
+| 🔄 Skills | IA | — |
+| 🔄 Spec-Driven Development | IA | `███░░░░░░░` 1/4 |
+| 🔄 Spring AI | IA | <sub>5 a fazer</sub> |
+| 🔄 Structured output | IA | — |
+| 🔄 Testes de aplicações com IA (evals) | IA | — |
+| 🔄 Tool Calling (Function Calling) | IA | — |
+| 🔄 Bean Validation | spring | — |
+| 🔄 Carregamento EAGER e LAZY | Spring | <sub>2 a fazer</sub> |
+| 🔄 JPQL e JOIN FETCH | spring | — |
+| 🔄 OAuth2 e OIDC | spring | — |
+| 🔄 Paginação e countQuery | spring | — |
+| 🔄 Perfis do Spring e homologação | spring | — |
+| 🔄 Projeção de dados | spring | — |
+| 🔄 Spring Boot e camadas | spring | — |
+| 🔄 Spring Cloud e microsserviços | Spring | — |
+| 🔄 Spring Data JPA e relacionamentos | spring | — |
+| 🔄 Spring Framework - IoC DI e AOP | spring | — |
+| 🔄 Spring Security e JWT | spring | — |
+| 🔄 Tratamento de erros REST | spring | — |
+| 🔄 JUnit e Mockito | testes | — |
+| 🔄 API REST | spring | — |
+| 🔄 DTO | spring | — |
+| 🔄 Idempotência e Idempotency-Key | arquitetura | — |
+| 🔄 ORM e modelo de domínio | spring | — |
+| ⏳ Mensageria e Outbox | Arquitetura | <sub>6 a fazer</sub> |
+
+<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-11-18.</sub>
 <!-- AUTO:estudos:END -->
 
 </details>
@@ -1794,7 +1976,7 @@ _Em breve._
 
 <!-- AUTO:cerebro:START -->
 <div align="center">
-  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 24 dias com registro, 123 notas, 2 trilhas e 0 assuntos praticados; progresso de cada trilha e de cada módulo"/>
+  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 25 dias com registro, 132 notas, 2 trilhas e 38 assuntos praticados; progresso de cada trilha e de cada módulo"/>
 </div>
 
 <details>
@@ -1802,15 +1984,15 @@ _Em breve._
 <br/>
 
 <table align="center"><tr>
-<td align="center">🗓️<br/><b>24</b> dias com registro<br/><sub>nos últimos 30</sub></td>
-<td align="center">📚<br/><b>123</b> notas de estudo<br/><sub>52 com exemplo com × sem</sub></td>
+<td align="center">🗓️<br/><b>25</b> dias com registro<br/><sub>nos últimos 30</sub></td>
+<td align="center">📚<br/><b>132</b> notas de estudo<br/><sub>61 com exemplo com × sem</sub></td>
 <td align="center">🧭<br/><b>2</b> trilhas<br/><sub>12 módulos</sub></td>
-<td align="center">✅<br/><b>0</b> assuntos<br/><sub>praticados em projeto</sub></td>
+<td align="center">✅<br/><b>38</b> assuntos<br/><sub>praticados em projeto</sub></td>
 </tr></table>
 
 | Trilha | Praticado no RKF Bank | ✅ | 🔄 | 📅 | 📘 |
 |---|---|:-:|:-:|:-:|:-:|
-| **☕🌱 Java & Spring** | 🟩🟩🟩🟩⬜<br/>**41/51** | 41 | 7 | 1 | 2 |
+| **☕🌱 Java & Spring** | 🟩🟩🟩🟩⬜<br/>**49/60** | 49 | 8 | 1 | 2 |
 | **🤖 Inteligência Artificial** | 🟩🟩⬜⬜⬜<br/>**5/15** | 5 | 0 | 1 | 9 |
 
 </details>
@@ -1821,12 +2003,12 @@ _Em breve._
 
 | Módulo | Praticado | Assuntos |
 |---|---|---|
-| ① Java moderno (Java 21 / 25) | 🟩🟩🟩🟩🟩<br/>**11/11** | ✅ JVM, JDK e bytecode · ✅ POO e SOLID · ✅ Java moderno (8 a 25) · ✅ Coleções Streams e Optional · ✅ Objetos - equals, hashCode e imutabilidade · ✅ Exceções em Java · ✅ Generics · ✅ BigDecimal e dinheiro · ✅ Concorrência e threads virtuais · ✅ Memória e Garbage Collector · ✅ Maven e build |
+| ① Java moderno (Java 21 / 25) | 🟩🟩🟩🟩🟩<br/>**13/13** | ✅ JVM, JDK e bytecode · ✅ POO e SOLID · ✅ Java moderno (8 a 25) · ✅ Coleções Streams e Optional · ✅ Objetos - equals, hashCode e imutabilidade · ✅ Exceções em Java · ✅ Generics · ✅ BigDecimal e dinheiro · ✅ Value Object · ✅ Máquina de estados · ✅ Concorrência e threads virtuais · ✅ Memória e Garbage Collector · ✅ Maven e build |
 | ② Spring Boot & arquitetura em camadas | 🟩🟩🟩🟩🟩<br/>**4/4** | ✅ Spring Framework - IoC DI e AOP · ✅ Spring Boot - auto-configuração e starters · ✅ Spring Boot e camadas · ✅ Anotações Java e Spring |
-| ③ Banco de dados & sincronização | 🟩🟩🟩🟩⬜<br/>**8/10** | ✅ SQL e MySQL · ✅ Spring Data JPA e relacionamentos · ✅ Carregamento EAGER e LAZY · ✅ N+1 consultas · 🔄 JPQL e JOIN FETCH · 🔄 Paginação e countQuery · ✅ H2 x MySQL · ✅ Flyway · ✅ Lock otimista e transações · ✅ MongoDB |
+| ③ Banco de dados & sincronização | 🟩🟩🟩🟩⬜<br/>**9/11** | ✅ SQL e MySQL · ✅ Spring Data JPA e relacionamentos · ✅ Carregamento EAGER e LAZY · ✅ N+1 consultas · 🔄 JPQL e JOIN FETCH · 🔄 Paginação e countQuery · ✅ H2 x MySQL · ✅ Flyway · ✅ Lock otimista e transações · ✅ Constraint de exclusão no PostgreSQL · ✅ MongoDB |
 | ④ Validação e tratamento de erros | 🟩🟩🟩🟩🟩<br/>**3/3** | ✅ Bean Validation · ✅ Tratamento de erros REST · ✅ Swagger e OpenAPI |
 | ⑤ Testes (manuais e automatizados) | 🟩🟩🟩🟩🟩<br/>**6/6** | ✅ TDD e estratégia de testes · ✅ JUnit e Mockito · ✅ Spring Boot Test · ✅ DataJpaTest · ✅ Testcontainers · ✅ Testes manuais de API - Postman e Insomnia |
-| ⑥ Segurança e infraestrutura | 🟩🟩🟩⬜⬜<br/>**9/17** | ✅ Spring Security e JWT · 🔄 OAuth2 e OIDC · ✅ LGPD · 📅 Mensageria e Outbox · 📘 Pub-Sub e DLQ · 🔄 Arquiteturas de software · 🔄 Síncrono e assíncrono · ✅ Integração com APIs externas · ✅ Logs e observabilidade · ✅ Spring Boot Actuator · 🔄 Perfis do Spring e homologação · ✅ Docker e Compose · ✅ GitHub Actions · ✅ Git Flow e commits semânticos · ✅ Dependências e CVEs · 📘 Spring Cloud e microsserviços · 🔄 AWS |
+| ⑥ Segurança e infraestrutura | 🟩🟩🟩⬜⬜<br/>**14/23** | ✅ Spring Security e JWT · 🔄 OAuth2 e OIDC · ✅ LGPD · 📅 Mensageria e Outbox · 📘 Pub-Sub e DLQ · 🔄 Arquiteturas de software · 🔄 Síncrono e assíncrono · ✅ Cache e cache-aside · ✅ Fallback e degradação graciosa · ✅ Rate limiting · ✅ Jobs agendados e ShedLock · ✅ Webhook e HMAC · 🔄 Anonimização e k-anonimato · ✅ Integração com APIs externas · ✅ Logs e observabilidade · ✅ Spring Boot Actuator · 🔄 Perfis do Spring e homologação · ✅ Docker e Compose · ✅ GitHub Actions · ✅ Git Flow e commits semânticos · ✅ Dependências e CVEs · 📘 Spring Cloud e microsserviços · 🔄 AWS |
 
 </details>
 
@@ -1845,9 +2027,9 @@ _Em breve._
 
 </details>
 
-📝 **Estudado por último:** `IA` Guardrails · `IA` Structured output · `IA` Testes de aplicações com IA (evals) · `Arquitetura` Arquitetura em camadas · `Arquitetura` Arquitetura hexagonal · `Arquitetura` Arquitetura orientada a eventos · `Arquitetura` BFF (Backend for Frontend) · `Arquitetura` Clean Architecture
+📝 **Estudado por último:** `Arquitetura` Anonimização e k-anonimato · `Arquitetura` Cache e cache-aside · `Dados` Constraint de exclusão no PostgreSQL · `Arquitetura` Fallback e degradação graciosa · `Spring` Jobs agendados e ShedLock · `Arquitetura` Máquina de estados · `Arquitetura` Rate limiting · `Java` Value Object
 
-<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-11-17</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-11-18</sub>
 <!-- AUTO:cerebro:END -->
 
 <details>
@@ -2194,16 +2376,16 @@ public void sacar(BigDecimal valor) {
 <!-- AUTO:atividade:START -->
 | | Repositório | Commit | Quando |
 |:-:|---|---|---|
-| • | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`ad33da8`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/ad33da8ee0ec8d932bb90b48e69412322f7383bf) merge: origin/develop (Fatia 8) na 6D; contagem de testes (384) e versão | há 2 h |
-| 📝 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`0374627`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/03746276307435a5a7dbbcf56e920873b7cac428) docs(6d): spec, contrato 1.6.0, decisões D121 a D129, guia com saída rea | há 6 h |
-| 📝 | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`664c4f0`](https://github.com/k3vinrich4rd/cpf-utils/commit/664c4f02c74492d8e520af9514600e4e2f7bee4c) docs(readme): adiciona Por que existe e O que aprendi | há 9 dias |
+| 🔧 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`4924de8`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/4924de80cc64fef8f131b27948cec33fca1e8f5a) chore(deploy): região do Render em Oregon, perto do banco Aiven (Digital | há 43 min |
+| 🔧 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`063bfba`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/063bfbabad290a068b73ff3684820206c3864eda) ci(gitleaks): libera só os dois commits com o token fictício já removido | há 5 h |
+| 📝 | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`664c4f0`](https://github.com/k3vinrich4rd/cpf-utils/commit/664c4f02c74492d8e520af9514600e4e2f7bee4c) docs(readme): adiciona Por que existe e O que aprendi | há 10 dias |
 | 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`8510d19`](https://github.com/k3vinrich4rd/rkf_bank/commit/8510d19697631c6fda2f728aaa4803462ef4a1c5) docs(readme): bloco de revisão técnica em 2 minutos no topo | há 12 dias |
 | 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`4558293`](https://github.com/k3vinrich4rd/rkf_bank/commit/4558293c34c59e797d417b723ac8877ffa1aacd2) docs(deploy): checagem diária de integridade da produção | há 15 dias |
-| ♻️ | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`f430211`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/f430211de74e8756ebb6520b13b52ea0bae60578) refactor: renomeia OrdemItem para OrderItem | há 21 dias |
+| ♻️ | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`f430211`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/f430211de74e8756ebb6520b13b52ea0bae60578) refactor: renomeia OrdemItem para OrderItem | há 22 dias |
 | 📝 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`0849493`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/0849493f006f8569a3c9a93e9578c3ba795d6921) docs: adiciona README com modelo de dominio, endpoints e exemplos reais | 15/10/2026 |
 | • | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`68de4a9`](https://github.com/k3vinrich4rd/cpf-utils/commit/68de4a91b903988d82c6cddc349121e0c9b9093d) Update README.md | 30/06/2025 |
 
-<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 18/11 às 17:36</sub>
+<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 18/11 às 22:43</sub>
 <!-- AUTO:atividade:END -->
 
 </details>
@@ -2421,7 +2603,7 @@ gantt
 
 **🧹 Débitos técnicos:** 9/18 resolvidos
 
-<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-11-17.</sub>
+<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-11-18.</sub>
 <!-- AUTO:checklist:END -->
 
 </details>
@@ -2522,7 +2704,7 @@ gantt
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/progresso-58%25-EC7000?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/progresso-60%25-EC7000?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/cap%C3%ADtulos%20conclu%C3%ADdos-3%20de%206-3fb950?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/desafios%20entregues-3%20de%205-58a6ff?style=for-the-badge"/>
 
@@ -2530,7 +2712,7 @@ gantt
 
 ```mermaid
 flowchart LR
-    C1["① Componentes e<br/>injeção de<br/>dependência<br/>✅ 14/14"] --> C2["② Modelo de domínio<br/>e ORM<br/>✅ 15/15"] --> C3["③ API REST, camadas,<br/>CRUD, exceções,<br/>validações<br/>✅ 23/23"] --> C4["④ JPA, consultas SQL<br/>e JPQL<br/>🔄 31/38"] --> C5["⑤ Login e controle<br/>de acesso<br/>📅 0/34"] --> C6["⑥ Homologação e<br/>implantação com<br/>CI/CD<br/>📅 0/18"]
+    C1["① Componentes e<br/>injeção de<br/>dependência<br/>✅ 14/14"] --> C2["② Modelo de domínio<br/>e ORM<br/>✅ 15/15"] --> C3["③ API REST, camadas,<br/>CRUD, exceções,<br/>validações<br/>✅ 23/23"] --> C4["④ JPA, consultas SQL<br/>e JPQL<br/>🔄 33/38"] --> C5["⑤ Login e controle<br/>de acesso<br/>📅 0/34"] --> C6["⑥ Homologação e<br/>implantação com<br/>CI/CD<br/>📅 0/18"]
     style C1 fill:#1f6f3f,color:#fff
     style C2 fill:#1f6f3f,color:#fff
     style C3 fill:#1f6f3f,color:#fff
@@ -2542,15 +2724,15 @@ flowchart LR
 | 1 | Componentes e injeção de dependência | 14/14 | 1h26 | ✅ | [Cálculo de pedido](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) com `OrderService` + `ShippingService` injetados pelo Spring |
 | 2 | Modelo de domínio e ORM | 15/15 | 2h17 | ✅ | [Sistema de eventos](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) no H2 e o modelo do [DSCommerce](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) |
 | 3 | API REST, camadas, CRUD, exceções, validações | 23/23 | 3h14 | ✅ | [CRUD de clientes](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) com **10/10** no checklist de correção |
-| 4 | JPA, consultas SQL e JPQL | 31/38 | 6h52 | 🔄 | Próximo: desafio *Consulta vendas* (relatório paginado + sumário por vendedor) |
+| 4 | JPA, consultas SQL e JPQL | 33/38 | 6h52 | 🔄 | Próximo: desafio *Consulta vendas* (relatório paginado + sumário por vendedor) |
 | 5 | Login e controle de acesso | 0/34 | 4h53 | 📅 | DSCommerce completo com login (OAuth2 + JWT) e pedidos |
 | 6 | Homologação e implantação com CI/CD | 0/18 | 2h09 | 📅 | Perfis dev/prod, PostgreSQL no Docker e deploy com CI/CD |
 
-<sub>83 de 142 aulas assistidas</sub>
+<sub>85 de 142 aulas assistidas</sub>
 
 **📌 Na fila (matriculado, ainda não comecei):** [Java Spring Expert](https://devsuperior.club/courses/6) (204 aulas) · [Java Spring Reference](https://devsuperior.club/courses/7) (151 aulas) · [Java Spring Tópicos Avançados](https://devsuperior.club/courses/63) (11 aulas) · [Análise de Requisitos Expert](https://devsuperior.club/courses/10) (50 aulas) · [Bônus Estudo de caso CI/CD AWS e Github Actions](https://devsuperior.club/courses/12) (17 aulas)
 
-<sub>🤖 Progresso lido da plataforma do curso pela minha automação em 2026-11-16.</sub>
+<sub>🤖 Progresso lido da plataforma do curso pela minha automação em 2026-11-18.</sub>
 <!-- AUTO:cursos:END -->
 
 #### 📖 O que aprendi no Java Spring Professional
