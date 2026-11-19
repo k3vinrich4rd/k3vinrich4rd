@@ -1,0 +1,39 @@
+# Mantém a Barbearia Altas Horas (API no Render Free + PostgreSQL Free na Aiven) no ar.
+# Por quê:
+#  - o Render Free dorme a API após 15 min sem uso; o primeiro acesso depois disso demora ~1 a 3 min;
+#  - a Aiven desliga o banco gratuito quando ele fica muito tempo sem conexão.
+# Como (sem estourar as 750 h/mês grátis do Render, que a API do RKF Bank também usa):
+#  - no horário da barbearia (terça a sábado, 7h às 20h de Brasília = 10h às 23h UTC) chama a API a cada 10 min,
+#    então ela fica acordada quando os clientes agendam (~300 h/mês);
+#  - fora disso, uma chamada a cada 3 horas só para o banco da Aiven não ser desligado.
+# Se falhar, o job fica vermelho e o GitHub manda e-mail ao Kevin.
+name: Manter Barbearia no ar
+
+on:
+  schedule:
+    - cron: "*/10 10-22 * * 2-6"   # horário da barbearia (UTC)
+    - cron: "41 */3 * * *"          # a cada 3 horas, para o banco não ser desligado
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Acordar a API e checar o banco
+        env:
+          API: https://altas-horas-api.onrender.com
+        run: |
+          for i in 1 2 3 4 5 6 7 8; do
+            codigo=$(curl -s -m 90 -o resposta.json -w '%{http_code}' "$API/actuator/health" || true)
+            echo "tentativa $i: HTTP $codigo $(cat resposta.json 2>/dev/null)"
+            if [ "$codigo" = "200" ] && grep -q '"UP"' resposta.json; then
+              echo "✅ $API no ar"
+              exit 0
+            fi
+            sleep 30
+          done
+          echo "::error::$API não respondeu UP. Veja se o PostgreSQL altas-horas-db está 'Powered off' (console.aiven.io) e os logs no Render."
+          exit 1
