@@ -23,15 +23,15 @@ fonte: https://github.com/k3vinrich4rd/k3vinrich4rd
 
 ## 🎯 Metas (Java + AWS + IA, em conjunto)
 
-### ☕ Java · 58%
+### ☕ Java · 60%
 
-`██████░░░░` 58%
+`██████░░░░` 60%
 
-- **58%** · [Java Spring Professional](https://devsuperior.club/courses/5/lessons?lessonId=248) · DevSuperior (atualizado em 2026-11-16)
+- **60%** · [Java Spring Professional](https://devsuperior.club/courses/5/lessons?lessonId=248) · DevSuperior (atualizado em 2026-11-18)
   - [x] Componentes e injeção de dependência (14/14)
   - [x] Modelo de domínio e ORM (15/15)
   - [x] API REST, camadas, CRUD, exceções, validações (23/23)
-  - [ ] JPA, consultas SQL e JPQL (31/38)
+  - [ ] JPA, consultas SQL e JPQL (33/38)
   - [ ] Login e controle de acesso (0/34)
   - [ ] Homologação e implantação com CI/CD (opcional) (0/18)
 - **a atualizar** · Java Spring Expert · DevSuperior
@@ -48,7 +48,7 @@ fonte: https://github.com/k3vinrich4rd/k3vinrich4rd
 
 - **a atualizar** · [Formação Inteligência Artificial: Do Zero ao Avançado (2026)](https://www.udemy.com/course/inteligencia-artificial-para-iniciantes/) · Udemy
 
-<sub>Dados de 2026-11-16</sub>
+<sub>Dados de 2026-11-18</sub>
 
 ## 📓 Diário de hoje
 
