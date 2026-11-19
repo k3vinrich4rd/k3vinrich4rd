@@ -92,12 +92,15 @@ function estudos() {
     for (const arq of fs.readdirSync(path.join(raiz, area.name)).filter((f) => f.endsWith('.md')).sort()) {
       const md = ler(path.join(raiz, area.name, arq));
       const fm = frontmatter(md);
-      if (fm.tipo !== 'estudo') continue;
+      // As notas de estudo eram "tipo: estudo"; desde nov/2026 o vault usa "tipo: conceito". Sem aceitar os dois,
+      // nenhuma nota passava aqui e o perfil mostrava 0 assuntos praticados.
+      if (fm.tipo !== 'estudo' && fm.tipo !== 'conceito') continue;
       const passos = tarefas(md); // todas as tarefas da nota, em qualquer seção
       lista.push({
         nome: arq.replace(/\.md$/, ''),
         area: fm.area ?? area.name,
-        status: fm.status ?? 'andamento',
+        // "completa" = estudo lido até o fim, ainda sem prática em projeto: conta como em andamento, não como praticado.
+        status: fm.status === 'completa' ? 'andamento' : (fm.status ?? 'andamento'),
         passos: { feitos: passos.filter((p) => p.feito).length, total: passos.length },
       });
     }
