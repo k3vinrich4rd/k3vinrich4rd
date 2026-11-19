@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-17",
+  "atualizado": "2026-11-18",
   "regua": {
     "praticadas": 13,
     "total": 15,
@@ -448,10 +448,884 @@
       "aprendizado": "trocar a arquitetura sem mudar comportamento: mover primeiro com os testes verdes, depois uma peça por commit, e deixar o ArchUnit achar os acoplamentos"
     }
   ],
-  "estudos": [],
+  "estudos": [
+    {
+      "nome": "Anonimização e k-anonimato",
+      "area": "arquitetura",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Arquitetura em camadas",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
+      "nome": "Arquitetura hexagonal",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 3
+      }
+    },
+    {
+      "nome": "Arquitetura orientada a eventos",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
+      "nome": "Arquiteturas de software",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 3
+      }
+    },
+    {
+      "nome": "BFF (Backend for Frontend)",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 1
+      }
+    },
+    {
+      "nome": "CQRS",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
+      "nome": "Cache e cache-aside",
+      "area": "arquitetura",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Clean Architecture",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
+      "nome": "Event Sourcing",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
+      "nome": "Fallback e degradação graciosa",
+      "area": "arquitetura",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Integração com APIs externas",
+      "area": "Arquitetura",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 3
+      }
+    },
+    {
+      "nome": "LGPD",
+      "area": "Arquitetura",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 5
+      }
+    },
+    {
+      "nome": "Lock otimista e transações",
+      "area": "arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Logs e observabilidade",
+      "area": "Arquitetura",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
+      "nome": "MVC",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
+      "nome": "Mensageria e Outbox",
+      "area": "Arquitetura",
+      "status": "planejado",
+      "passos": {
+        "feitos": 0,
+        "total": 6
+      }
+    },
+    {
+      "nome": "Microsserviços",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
+      "nome": "Monólito modular",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
+      "nome": "Monólito",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
+      "nome": "Máquina de estados",
+      "area": "arquitetura",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Onion Architecture",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
+      "nome": "Padrões de projeto",
+      "area": "Arquitetura",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 4
+      }
+    },
+    {
+      "nome": "Pub-Sub e DLQ",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
+      "nome": "Rate limiting",
+      "area": "arquitetura",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "SOA",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 1
+      }
+    },
+    {
+      "nome": "Serverless",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
+      "nome": "Síncrono e assíncrono",
+      "area": "Arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 3
+      }
+    },
+    {
+      "nome": "Webhook e HMAC",
+      "area": "arquitetura",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "AWS",
+      "area": "Cloud",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 10
+      }
+    },
+    {
+      "nome": "Constraint de exclusão no PostgreSQL",
+      "area": "dados",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Flyway",
+      "area": "dados",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "H2 x MySQL",
+      "area": "Dados",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "MongoDB",
+      "area": "Dados",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "SQL e MySQL",
+      "area": "Dados",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
+      "nome": "Dependências e CVEs",
+      "area": "DevOps",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Docker e Compose",
+      "area": "devops",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Git Flow e commits semânticos",
+      "area": "devops",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "GitHub Actions",
+      "area": "devops",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Agentes de IA",
+      "area": "IA",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Agentes e IA aplicada",
+      "area": "IA",
+      "status": "andamento",
+      "passos": {
+        "feitos": 1,
+        "total": 4
+      }
+    },
+    {
+      "nome": "Design Doc de arquitetura para IA",
+      "area": "IA",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 1
+      }
+    },
+    {
+      "nome": "Embeddings e banco vetorial",
+      "area": "IA",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Ferramentas de dev com IA",
+      "area": "IA",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Fine-tuning",
+      "area": "IA",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Guardrails",
+      "area": "IA",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "LLM",
+      "area": "IA",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "MCP",
+      "area": "IA",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Prompt e engenharia de contexto",
+      "area": "IA",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "RAG",
+      "area": "IA",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Skills",
+      "area": "IA",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Spec-Driven Development",
+      "area": "IA",
+      "status": "andamento",
+      "passos": {
+        "feitos": 1,
+        "total": 4
+      }
+    },
+    {
+      "nome": "Spring AI",
+      "area": "IA",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 5
+      }
+    },
+    {
+      "nome": "Structured output",
+      "area": "IA",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Testes de aplicações com IA (evals)",
+      "area": "IA",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Tool Calling (Function Calling)",
+      "area": "IA",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "BigDecimal e dinheiro",
+      "area": "Java",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Coleções Streams e Optional",
+      "area": "Java",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Concorrência e threads virtuais",
+      "area": "Java",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 3
+      }
+    },
+    {
+      "nome": "Exceções em Java",
+      "area": "Java",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Generics",
+      "area": "Java",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "JVM, JDK e bytecode",
+      "area": "Java",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Java moderno (8 a 25)",
+      "area": "Java",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 3
+      }
+    },
+    {
+      "nome": "Maven e build",
+      "area": "Java",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Memória e Garbage Collector",
+      "area": "Java",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Objetos - equals, hashCode e imutabilidade",
+      "area": "Java",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "POO e SOLID",
+      "area": "Java",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
+      "nome": "Value Object",
+      "area": "java",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Anotações Java e Spring",
+      "area": "Spring",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Bean Validation",
+      "area": "spring",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Carregamento EAGER e LAZY",
+      "area": "Spring",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 2
+      }
+    },
+    {
+      "nome": "JPQL e JOIN FETCH",
+      "area": "spring",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Jobs agendados e ShedLock",
+      "area": "spring",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "N+1 consultas",
+      "area": "Spring",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "OAuth2 e OIDC",
+      "area": "spring",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Paginação e countQuery",
+      "area": "spring",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Perfis do Spring e homologação",
+      "area": "spring",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Projeção de dados",
+      "area": "spring",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Spring Boot - auto-configuração e starters",
+      "area": "Spring",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Spring Boot Actuator",
+      "area": "Spring",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Spring Boot Test",
+      "area": "Spring",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Spring Boot e camadas",
+      "area": "spring",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Spring Cloud e microsserviços",
+      "area": "Spring",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Spring Data JPA e relacionamentos",
+      "area": "spring",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Spring Framework - IoC DI e AOP",
+      "area": "spring",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Spring Security e JWT",
+      "area": "spring",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Swagger e OpenAPI",
+      "area": "Spring",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 5
+      }
+    },
+    {
+      "nome": "Tratamento de erros REST",
+      "area": "spring",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "DataJpaTest",
+      "area": "Testes",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "JUnit e Mockito",
+      "area": "testes",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "TDD e estratégia de testes",
+      "area": "Testes",
+      "status": "praticado",
+      "passos": {
+        "feitos": 2,
+        "total": 4
+      }
+    },
+    {
+      "nome": "Testcontainers",
+      "area": "Testes",
+      "status": "praticado",
+      "passos": {
+        "feitos": 6,
+        "total": 7
+      }
+    },
+    {
+      "nome": "Testes manuais de API - Postman e Insomnia",
+      "area": "Testes",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 6
+      }
+    },
+    {
+      "nome": "API REST",
+      "area": "spring",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "DTO",
+      "area": "spring",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Idempotência e Idempotency-Key",
+      "area": "arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "ORM e modelo de domínio",
+      "area": "spring",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    }
+  ],
   "biblioteca": {
-    "notas": 123,
-    "comSem": 52,
+    "notas": 132,
+    "comSem": 61,
     "sessoes": [
       "IA, Spring e LGPD",
       "Java e seu universo"
@@ -495,6 +1369,14 @@
               },
               {
                 "nome": "BigDecimal e dinheiro",
+                "status": "praticado"
+              },
+              {
+                "nome": "Value Object",
+                "status": "praticado"
+              },
+              {
+                "nome": "Máquina de estados",
                 "status": "praticado"
               },
               {
@@ -569,6 +1451,10 @@
               },
               {
                 "nome": "Lock otimista e transações",
+                "status": "praticado"
+              },
+              {
+                "nome": "Constraint de exclusão no PostgreSQL",
                 "status": "praticado"
               },
               {
@@ -652,6 +1538,30 @@
               },
               {
                 "nome": "Síncrono e assíncrono",
+                "status": "andamento"
+              },
+              {
+                "nome": "Cache e cache-aside",
+                "status": "praticado"
+              },
+              {
+                "nome": "Fallback e degradação graciosa",
+                "status": "praticado"
+              },
+              {
+                "nome": "Rate limiting",
+                "status": "praticado"
+              },
+              {
+                "nome": "Jobs agendados e ShedLock",
+                "status": "praticado"
+              },
+              {
+                "nome": "Webhook e HMAC",
+                "status": "praticado"
+              },
+              {
+                "nome": "Anonimização e k-anonimato",
                 "status": "andamento"
               },
               {
@@ -794,47 +1704,47 @@
         ]
       }
     ],
-    "diasDiario30": 24,
+    "diasDiario30": 25,
     "recentes": [
       {
-        "nome": "Guardrails",
-        "area": "IA",
-        "criado": "2026-11-10"
-      },
-      {
-        "nome": "Structured output",
-        "area": "IA",
-        "criado": "2026-11-10"
-      },
-      {
-        "nome": "Testes de aplicações com IA (evals)",
-        "area": "IA",
-        "criado": "2026-11-10"
-      },
-      {
-        "nome": "Arquitetura em camadas",
+        "nome": "Anonimização e k-anonimato",
         "area": "Arquitetura",
-        "criado": "2026-11-09"
+        "criado": "2026-11-18"
       },
       {
-        "nome": "Arquitetura hexagonal",
+        "nome": "Cache e cache-aside",
         "area": "Arquitetura",
-        "criado": "2026-11-09"
+        "criado": "2026-11-18"
       },
       {
-        "nome": "Arquitetura orientada a eventos",
-        "area": "Arquitetura",
-        "criado": "2026-11-09"
+        "nome": "Constraint de exclusão no PostgreSQL",
+        "area": "Dados",
+        "criado": "2026-11-18"
       },
       {
-        "nome": "BFF (Backend for Frontend)",
+        "nome": "Fallback e degradação graciosa",
         "area": "Arquitetura",
-        "criado": "2026-11-09"
+        "criado": "2026-11-18"
       },
       {
-        "nome": "Clean Architecture",
+        "nome": "Jobs agendados e ShedLock",
+        "area": "Spring",
+        "criado": "2026-11-18"
+      },
+      {
+        "nome": "Máquina de estados",
         "area": "Arquitetura",
-        "criado": "2026-11-09"
+        "criado": "2026-11-18"
+      },
+      {
+        "nome": "Rate limiting",
+        "area": "Arquitetura",
+        "criado": "2026-11-18"
+      },
+      {
+        "nome": "Value Object",
+        "area": "Java",
+        "criado": "2026-11-18"
       }
     ]
   }
