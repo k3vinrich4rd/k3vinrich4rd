@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-18",
+  "atualizado": "2026-11-20",
   "regua": {
     "praticadas": 13,
     "total": 15,
@@ -1704,7 +1704,7 @@
         ]
       }
     ],
-    "diasDiario30": 25,
+    "diasDiario30": 24,
     "recentes": [
       {
         "nome": "Anonimização e k-anonimato",

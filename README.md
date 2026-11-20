@@ -1773,7 +1773,7 @@ quadrantChart
 | Inglês técnico | 🔄 | em andamento |
 | Mensageria e microsserviços | ⏳ | Outbox do comprovante pronto na branch `refactor/monolito-modular` (em revisão); falta o broker |
 
-<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-11-18</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-11-20</sub>
 <!-- AUTO:regua:END -->
 
 </details>
@@ -1965,7 +1965,7 @@ mindmap
 | 🔄 ORM e modelo de domínio | spring | — |
 | ⏳ Mensageria e Outbox | Arquitetura | <sub>6 a fazer</sub> |
 
-<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-11-18.</sub>
+<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-11-20.</sub>
 <!-- AUTO:estudos:END -->
 
 </details>
@@ -1976,7 +1976,7 @@ mindmap
 
 <!-- AUTO:cerebro:START -->
 <div align="center">
-  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 25 dias com registro, 132 notas, 2 trilhas e 38 assuntos praticados; progresso de cada trilha e de cada módulo"/>
+  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 24 dias com registro, 132 notas, 2 trilhas e 38 assuntos praticados; progresso de cada trilha e de cada módulo"/>
 </div>
 
 <details>
@@ -1984,7 +1984,7 @@ mindmap
 <br/>
 
 <table align="center"><tr>
-<td align="center">🗓️<br/><b>25</b> dias com registro<br/><sub>nos últimos 30</sub></td>
+<td align="center">🗓️<br/><b>24</b> dias com registro<br/><sub>nos últimos 30</sub></td>
 <td align="center">📚<br/><b>132</b> notas de estudo<br/><sub>61 com exemplo com × sem</sub></td>
 <td align="center">🧭<br/><b>2</b> trilhas<br/><sub>12 módulos</sub></td>
 <td align="center">✅<br/><b>38</b> assuntos<br/><sub>praticados em projeto</sub></td>
@@ -2029,7 +2029,7 @@ mindmap
 
 📝 **Estudado por último:** `Arquitetura` Anonimização e k-anonimato · `Arquitetura` Cache e cache-aside · `Dados` Constraint de exclusão no PostgreSQL · `Arquitetura` Fallback e degradação graciosa · `Spring` Jobs agendados e ShedLock · `Arquitetura` Máquina de estados · `Arquitetura` Rate limiting · `Java` Value Object
 
-<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-11-18</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-11-20</sub>
 <!-- AUTO:cerebro:END -->
 
 <details>
@@ -2603,7 +2603,7 @@ gantt
 
 **🧹 Débitos técnicos:** 9/18 resolvidos
 
-<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-11-18.</sub>
+<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-11-20.</sub>
 <!-- AUTO:checklist:END -->
 
 </details>
