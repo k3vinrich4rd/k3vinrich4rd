@@ -101,7 +101,7 @@
 |---|---|
 | Quem é? | Dev **Java backend Junior** na **Zup Innovation**, prestando serviço para o **Itaú**, em transição para **Pleno** (**13/15** competências já praticadas) |
 | Em produção? | **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **360 testes**, CI e logs rastreáveis · ✅ **no ar**: [abrir o banco](https://rkfbank.vercel.app) |
-| Construindo agora? | **[Barbearia Altas Horas](https://github.com/k3vinrich4rd/barbearia-altas-horas)**: a agenda online da barbearia do meu pai, com pagamento antecipado e horário duplicado barrado no próprio PostgreSQL · 🚧 fatias 1 a 3 de 8 entregues, feita com Spec-Driven Development · [ver o andamento](#️-barbearia-altas-horas--em-construção) |
+| Construindo agora? | **[Barbearia Altas Horas](https://github.com/k3vinrich4rd/barbearia-altas-horas)**: a agenda online da barbearia do meu pai, com pagamento antecipado (no beta o pagamento é simulado) e horário duplicado barrado no próprio PostgreSQL · 🚧 fatias 1 a 7B na main, no ar em beta, feita com Spec-Driven Development · [abrir a agenda](https://barbearia-altas-horas.vercel.app) · [ver o andamento](#️-barbearia-altas-horas--em-construção) |
 | Stack principal? | Java · Spring Boot · JPA/Hibernate · MySQL/PostgreSQL · MongoDB · JUnit/Mockito · Docker · GitHub Actions |
 | O que está estudando? | inglês → mensageria |
 | Contato? | [LinkedIn](https://www.linkedin.com/in/kevinrichard-java/) · [kevinrichardve@gmail.com](mailto:kevinrichardve@gmail.com) |
