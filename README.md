@@ -2384,8 +2384,8 @@ public void sacar(BigDecimal valor) {
 <!-- AUTO:atividade:START -->
 | | Repositório | Commit | Quando |
 |:-:|---|---|---|
-| 🔧 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`9c9005f`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/9c9005f271560e0f922116ffd0cb011868f51527) ci: a fatia 7 inteira (62 critérios) passa a ser exigida no front e no b | há 2 dias |
-| ✨ | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`3ae12e0`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/3ae12e075ca0c3779a7e42e7a3f8664c1250f21e) feat(front): painel do barbeiro (agenda, reserva manual, pendências, cad | há 2 dias |
+| 🧪 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`7f999de`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/7f999de33f9f10346adcc8ce52b14e83ca9e06c2) test(front): A63 cobre 200, 404 e 401 sem cookie na rota /pagamento-simu | há 29 min |
+| 🐛 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`c63661b`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/c63661b9bd0192f6860e5a3c3b138ce1bbe6380d) fix(front): rota /pagamento-simulado/{cobrancaId} para o checkout do car | há 53 min |
 | 📝 | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`664c4f0`](https://github.com/k3vinrich4rd/cpf-utils/commit/664c4f02c74492d8e520af9514600e4e2f7bee4c) docs(readme): adiciona Por que existe e O que aprendi | há 11 dias |
 | 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`8510d19`](https://github.com/k3vinrich4rd/rkf_bank/commit/8510d19697631c6fda2f728aaa4803462ef4a1c5) docs(readme): bloco de revisão técnica em 2 minutos no topo | há 14 dias |
 | 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`4558293`](https://github.com/k3vinrich4rd/rkf_bank/commit/4558293c34c59e797d417b723ac8877ffa1aacd2) docs(deploy): checagem diária de integridade da produção | há 17 dias |
@@ -2393,7 +2393,7 @@ public void sacar(BigDecimal valor) {
 | 📝 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`0849493`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/0849493f006f8569a3c9a93e9578c3ba795d6921) docs: adiciona README com modelo de dominio, endpoints e exemplos reais | 15/10/2026 |
 | • | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`68de4a9`](https://github.com/k3vinrich4rd/cpf-utils/commit/68de4a91b903988d82c6cddc349121e0c9b9093d) Update README.md | 30/06/2025 |
 
-<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 20/11 às 11:04</sub>
+<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 20/11 às 11:32</sub>
 <!-- AUTO:atividade:END -->
 
 </details>
