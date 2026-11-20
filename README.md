@@ -27,7 +27,7 @@
     <td width="33%" align="center" valign="top">
       <a href="#️-barbearia-altas-horas--em-construção"><picture>
         <source media="(prefers-color-scheme: light)" srcset="assets/bento/barbearia-claro.svg"/>
-        <img src="assets/bento/barbearia-escuro.svg" width="100%" alt="Barbearia Altas Horas, agendamento online em construção: ver o projeto"/>
+        <img src="assets/bento/barbearia-escuro.svg" width="100%" alt="Barbearia Altas Horas, agendamento online no ar (beta): ver o projeto"/>
       </picture></a>
     </td>
   </tr>
@@ -44,7 +44,7 @@
   <a href="https://github.com/k3vinrich4rd/rkf_bank#-arquitetura">🧱 arquitetura</a> ·
   <a href="https://github.com/k3vinrich4rd/rkf_bank#-qualidade-e-testes">🧪 testes</a> ·
   <a href="diario/">📓 diário de estudos</a><br/>
-  ✂️ <b>Em construção:</b> <a href="https://github.com/k3vinrich4rd/barbearia-altas-horas">Barbearia Altas Horas</a>: a agenda online da barbearia do meu pai · pagamento antecipado · <code>EXCLUDE USING gist</code> contra horário duplicado · Spec-Driven Development · fatias 1 a 3 de 8 na <code>main</code>
+  ✂️ <b>Em construção, já no ar (beta):</b> <a href="https://barbearia-altas-horas.vercel.app">Barbearia Altas Horas</a>: a agenda online da barbearia do meu pai · pagamento 100% antecipado (Pix ou cartão; no beta o pagamento é simulado) · <code>EXCLUDE USING gist</code> contra horário duplicado · Spec-Driven Development · fatias 1 a 7B na <code>main</code> · <a href="https://github.com/k3vinrich4rd/barbearia-altas-horas">📂 código</a>
 </p>
 
 <!-- Botões gerados por scripts/svgs.mjs. Cada um leva a uma seção. -->
@@ -707,8 +707,8 @@ sequenceDiagram
 
 <div align="center">
 
-<a href="https://github.com/k3vinrich4rd/barbearia-altas-horas/pulls"><img src="https://img.shields.io/badge/status-fatia_3_de_8_·_conta_e_acesso-0A0A0A?style=flat-square&labelColor=2B2B2B"/></a>
-<a href="https://github.com/k3vinrich4rd/barbearia-altas-horas/pulls"><img src="https://img.shields.io/badge/testes-115_%E2%9C%94_PostgreSQL_real-0A0A0A?style=flat-square&labelColor=2B2B2B"/></a>
+<a href="https://barbearia-altas-horas.vercel.app"><img src="https://img.shields.io/badge/status-fatias_1_a_7B_·_no_ar_(beta)-0A0A0A?style=flat-square&labelColor=2B2B2B"/></a>
+<a href="https://github.com/k3vinrich4rd/barbearia-altas-horas/actions/workflows/backend-ci.yml"><img src="https://img.shields.io/badge/testes-385_%E2%9C%94_PostgreSQL_real-0A0A0A?style=flat-square&labelColor=2B2B2B"/></a>
 <img src="https://img.shields.io/badge/m%C3%A9todo-Spec--Driven_Development-0A0A0A?style=flat-square&labelColor=2B2B2B"/>
 <br/>
 <img src="https://img.shields.io/badge/Java-25_LTS-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/>
@@ -770,16 +770,20 @@ Cada entrega começa por uma **especificação** (Spec-Driven Development), cada
 
 </details>
 
-**O que já roda** (fatias 1 a 3, na `main` desde 17/11/2026: [como testar](https://github.com/k3vinrich4rd/barbearia-altas-horas/blob/main/docs/guia-testes.md))
+**O que já roda** (fatias 1 a 7B, na `main` desde 18/11/2026: [abrir a agenda](https://barbearia-altas-horas.vercel.app) · [como testar](https://github.com/k3vinrich4rd/barbearia-altas-horas/blob/main/docs/guia-testes.md) — no beta o pagamento é simulado)
 
 | | |
 |---|---|
 | 🗓 **Horários livres pela API** | jornada menos almoço, folgas e reservas; o serviço de 60 min não aparece às 11h30 nem às 19h30 |
 | 🔒 **Horário duplicado barrado no banco** | `EXCLUDE USING gist` com `tstzrange`; 12 conexões disputando o mesmo horário e só uma vence |
 | 🔑 **Contas e sessão** | cadastro, login, refresh rotativo (token copiado derruba a sessão), troca de senha e admin que nasce sem senha no repositório |
-| 🧪 **115 testes, 0 falhas** | com PostgreSQL 18 de verdade (Testcontainers), 97% de cobertura de instruções |
-| 📐 **Um teste por critério da spec** | 10, 29 e 44 critérios nas fatias 1 a 3, todos com teste; um script no CI quebra o build se faltar algum |
+| 🧪 **385 testes no backend, 0 falhas** | com PostgreSQL 18 de verdade (Testcontainers); CI da `main` no merge da [PR #62](https://github.com/k3vinrich4rd/barbearia-altas-horas/pull/62) (18/11/2026) |
+| 📐 **Um teste por critério da spec** | 10, 29, 44, 45, 71, 75, 28 e 62 critérios nas fatias 1 a 6, 6D e 7, todos com teste; um script no CI quebra o build se faltar algum |
 | 🔎 **RAG da documentação** | Spring AI + pgvector com embeddings locais; busca híbrida acerta 15 de 17 perguntas (só vetor: 10) |
+| 💳 **Reserva e pagamento** | reserva com prazo de 3 min; no beta o pagamento é simulado (Pix ou cartão) |
+| 🧾 **Painel do barbeiro** | agenda do dia, reserva manual, pendências, cadastros, auditoria e alcance |
+| 📬 **CEP, LGPD, alcance e WhatsApp** | busca de CEP com degradação, consentimento/exportar/excluir, alcance por região e WhatsApp comercial |
+| 🖥️ **Telas no ar (beta)** | site na [Vercel](https://barbearia-altas-horas.vercel.app) e API no [Render](https://altas-horas-api.onrender.com/actuator/health) |
 
 **Três decisões que mostram o raciocínio**
 
@@ -824,16 +828,19 @@ Um deploy só e 8 módulos com fronteiras verificadas por teste. Dentro deles, p
 - [x] Fatia 1 · esqueleto, banco com a regra anti-sobreposição, erros RFC 9457, CI (build, CodeQL, gitleaks)
 - [x] Fatia 2 · catálogo, política de pagamento e horários livres
 - [x] Fatia 3 · conta e acesso (JWT, refresh rotativo, admin, limite de tentativas)
-- [ ] Fatia 4 · agendamento, checkout Pix/cartão e aviso de pagamento idempotente
-- [ ] Fatia 5 · painel do barbeiro
-- [ ] Fatia 6 · CEP e LGPD
-- [ ] Fatia 7 · telas Next.js (geradas com IA)
-- [ ] Fatia 8 · deploy
+- [x] Fatia 4 · agendamento, checkout Pix/cartão (pagamento simulado no beta) e aviso de pagamento idempotente
+- [x] Fatia 5 · painel do barbeiro
+- [x] Fatia 6 · CEP, LGPD, alcance e WhatsApp / reserva manual
+- [x] Fatia 7A e 7B · telas Next.js (geradas com IA) no ar (beta)
+- [ ] Fatia 7C · painel no canvas (em andamento)
+- [x] Fatia 8 · deploy: site na Vercel e API no Render, no ar (beta)
+- [ ] Fatia 9 · assistente de dúvidas (planejada)
 
 </details>
 
 <div align="center">
 
+<a href="https://barbearia-altas-horas.vercel.app"><b>✂️ abrir a agenda</b></a><br/>
 <a href="https://github.com/k3vinrich4rd/barbearia-altas-horas" target="_blank"><img src="assets/botoes/ver-codigo.svg" alt="📂 Ver o repositório da Barbearia Altas Horas" height="46"/></a>
 <a href="https://github.com/k3vinrich4rd/barbearia-altas-horas#readme" target="_blank"><img src="assets/botoes/ler-readme.svg" alt="📖 Ler o README da Barbearia Altas Horas" height="46"/></a>
 
@@ -888,11 +895,11 @@ Atuo como **Desenvolvedor de Software Junior** contratado pela **[Zup Innovation
 | | 🏦 [RKF Bank](https://github.com/k3vinrich4rd/rkf_bank) | ✂️ [Barbearia Altas Horas](https://github.com/k3vinrich4rd/barbearia-altas-horas) |
 |---|---|---|
 | **O que é** | banco digital full stack, time de três (Osasco, SP) | a agenda online da barbearia do meu pai, Eduardo Cândido (Osasco, desde 1997) |
-| **Status** | ✅ em produção ([abrir o banco](https://rkfbank.vercel.app)) | 🚧 fatias 1 a 3 de 8 na `main`; próxima: agendamento com pagamento |
+| **Status** | ✅ em produção ([abrir o banco](https://rkfbank.vercel.app)) | 🚧 no ar (beta): fatias 1 a 7B na `main` · [abrir a agenda](https://barbearia-altas-horas.vercel.app) (pagamento simulado no beta) |
 | **Meu papel** | todo o backend | especificação, backend e deploy; frontend gerado com IA e revisado por mim |
 | **Domínio** | clientes, contas, depósito, saque, transferência, extrato | agenda, serviços, contas e sessão, pagamento 100% antecipado por Pix ou cartão (sandbox), painel do barbeiro |
 | **O que mostra** | transação atômica, lock otimista, ViaCEP com falha tratada, logs com `X-Request-Id` | horário duplicado barrado no banco (`EXCLUDE` com `tstzrange`), webhook idempotente, erros RFC 9457, LGPD, monólito modular com Spring Modulith |
-| **Qualidade** | 360 testes, JaCoCo, CI com CodeQL e Dependabot | 115 testes com PostgreSQL real e 97% de cobertura; um teste por critério da spec, cobrado no CI |
+| **Qualidade** | 360 testes, JaCoCo, CI com CodeQL e Dependabot | 385 testes no backend com PostgreSQL real (CI da `main`, 18/11, 0 falhas); 72 unitários e 10 E2E no front |
 | **Stack** | Java 25 · Spring Boot 4 · MySQL · Docker · Next.js | Java 25 · Spring Boot 4.1.2 · PostgreSQL · Testcontainers · Next.js |
 | **README** | [roteiro do projeto](https://github.com/k3vinrich4rd/rkf_bank#readme) | [a história e o projeto](https://github.com/k3vinrich4rd/barbearia-altas-horas#readme) |
 | **Ver primeiro** | [`ContaService`](https://github.com/k3vinrich4rd/rkf_bank) · [roteiro no README](#-rkf-bank--em-produção) | [ADRs](https://github.com/k3vinrich4rd/barbearia-altas-horas/tree/main/docs/adr) · [specs SDD](https://github.com/k3vinrich4rd/barbearia-altas-horas/tree/main/docs/sdd) · [seção no perfil](#️-barbearia-altas-horas--em-construção) |
@@ -904,6 +911,7 @@ Atuo como **Desenvolvedor de Software Junior** contratado pela **[Zup Innovation
 <a href="https://github.com/k3vinrich4rd/rkf_bank#readme" target="_blank"><img src="assets/botoes/ler-readme.svg" alt="📖 Ler o README do RKF Bank" height="46"/></a>
 <br/>
 <b>✂️ Barbearia Altas Horas</b>&nbsp;&nbsp;
+<a href="https://barbearia-altas-horas.vercel.app"><b>✂️ abrir a agenda</b></a>
 <a href="https://github.com/k3vinrich4rd/barbearia-altas-horas" target="_blank"><img src="assets/botoes/ver-codigo.svg" alt="📂 Ver código da Barbearia Altas Horas" height="46"/></a>
 <a href="https://github.com/k3vinrich4rd/barbearia-altas-horas#readme" target="_blank"><img src="assets/botoes/ler-readme.svg" alt="📖 Ler o README da Barbearia Altas Horas" height="46"/></a>
 
@@ -913,7 +921,7 @@ Atuo como **Desenvolvedor de Software Junior** contratado pela **[Zup Innovation
 
 | | Projeto | Por que vale a pena olhar | Stack |
 |:-:|---|---|---|
-| ✂️ | **[Barbearia Altas Horas](https://github.com/k3vinrich4rd/barbearia-altas-horas)** | a agenda online do meu pai, barbeiro desde 1997: pagamento 100% antecipado, horário duplicado barrado no banco, feita com Spec-Driven Development e IA | Java 25 · Spring Boot 4 · PostgreSQL · Next.js · Vercel + Render (planejada) |
+| ✂️ | **[Barbearia Altas Horas](https://github.com/k3vinrich4rd/barbearia-altas-horas)** | a agenda online do meu pai, barbeiro desde 1997: pagamento 100% antecipado (no beta o pagamento é simulado), horário duplicado barrado no banco, feita com Spec-Driven Development e IA · [abrir a agenda](https://barbearia-altas-horas.vercel.app) | Java 25 · Spring Boot 4 · PostgreSQL · Next.js · Vercel + Render (no ar) |
 
 ### 🧩 Outros projetos que valem o clique
 
