@@ -2441,16 +2441,16 @@ public void sacar(BigDecimal valor) {
 <!-- AUTO:atividade:START -->
 | | Repositório | Commit | Quando |
 |:-:|---|---|---|
-| 📝 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`f3327e2`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/f3327e297310958ebfc4590240ff66e92917db3c) docs(sdd): spec da fatia 12, site mais fluido (home, agendar, galeria, T | há 23 min |
-| 📝 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`0365088`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/0365088b33d85c45861edad53a200b323e70f907) docs(sdd): Fatias 10 e 11 aprovadas pelo Kevin (D-1 da 10: o barbeiro di | há 5 h |
-| 📝 | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`664c4f0`](https://github.com/k3vinrich4rd/cpf-utils/commit/664c4f02c74492d8e520af9514600e4e2f7bee4c) docs(readme): adiciona Por que existe e O que aprendi | há 14 dias |
+| 🐛 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`6a18e0a`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/6a18e0a0b4af5a99fa3f8b57835b7b83e1aa4e55) fix(bff): repassa o IP real do cliente à API; BCrypt fictício no convite | há 3 h |
+| 🧪 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`a35cef5`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/a35cef5e58d03b52d3efb1a77a2e4f1d22fcccd0) test(e2e): A63 espera o alerta da página, não o anunciador de rota do Ne | há 7 h |
+| 📝 | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`664c4f0`](https://github.com/k3vinrich4rd/cpf-utils/commit/664c4f02c74492d8e520af9514600e4e2f7bee4c) docs(readme): adiciona Por que existe e O que aprendi | há 15 dias |
 | 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`8510d19`](https://github.com/k3vinrich4rd/rkf_bank/commit/8510d19697631c6fda2f728aaa4803462ef4a1c5) docs(readme): bloco de revisão técnica em 2 minutos no topo | há 17 dias |
 | 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`4558293`](https://github.com/k3vinrich4rd/rkf_bank/commit/4558293c34c59e797d417b723ac8877ffa1aacd2) docs(deploy): checagem diária de integridade da produção | há 20 dias |
 | ♻️ | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`f430211`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/f430211de74e8756ebb6520b13b52ea0bae60578) refactor: renomeia OrdemItem para OrderItem | há 26 dias |
 | 📝 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`0849493`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/0849493f006f8569a3c9a93e9578c3ba795d6921) docs: adiciona README com modelo de dominio, endpoints e exemplos reais | 15/10/2026 |
 | • | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`68de4a9`](https://github.com/k3vinrich4rd/cpf-utils/commit/68de4a91b903988d82c6cddc349121e0c9b9093d) Update README.md | 30/06/2025 |
 
-<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 23/11 às 13:35</sub>
+<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 23/11 às 20:57</sub>
 <!-- AUTO:atividade:END -->
 
 </details>
