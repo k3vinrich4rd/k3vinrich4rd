@@ -1781,7 +1781,7 @@ quadrantChart
 | Inglês técnico | 🔄 | em andamento |
 | Mensageria e microsserviços | ⏳ | Outbox do comprovante pronto na branch `refactor/monolito-modular` (em revisão); falta o broker |
 
-<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-11-20</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-11-23</sub>
 <!-- AUTO:regua:END -->
 
 </details>
@@ -1791,20 +1791,29 @@ quadrantChart
 <br/>
 
 <!-- AUTO:estudos:START -->
-**38** assuntos praticados em projeto · **58** em andamento · **1** planejados
+**38** assuntos praticados em projeto · **78** em andamento · **1** planejados
 
-📚 **132** notas de estudo no segundo cérebro · **61** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
+📚 **153** notas de estudo no segundo cérebro · **61** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
 
 ```mermaid
 mindmap
   root((🧠 Estudos))
     arquitetura
+      🔄 ADR
       ✅ Anonimização e k-anonimato
+      🔄 BOLA e IDOR
+      🔄 CEP com cache e degradação
+      🔄 CORS
       ✅ Cache e cache-aside
+      🔄 Cookie HttpOnly
       ✅ Fallback e degradação graciosa
       🔄 Lock otimista e transações
       ✅ Máquina de estados
+      🔄 Next.js
+      🔄 Pix
       ✅ Rate limiting
+      🔄 Spring Modulith
+      🔄 Token de visitante
       ✅ Webhook e HMAC
       🔄 Idempotência e Idempotency-Key
     Arquitetura
@@ -1832,19 +1841,28 @@ mindmap
       🔄 Síncrono e assíncrono
     Cloud
       🔄 AWS
+    cloud
+      🔄 Aiven
+      🔄 Render
+      🔄 Vercel
     dados
       ✅ Constraint de exclusão no PostgreSQL
       🔄 Flyway
+      🔄 PostgreSQL
     Dados
       ✅ H2 x MySQL
       ✅ MongoDB
       ✅ SQL e MySQL
-    DevOps
-      ✅ Dependências e CVEs
     devops
+      🔄 CodeQL
       🔄 Docker e Compose
       🔄 Git Flow e commits semânticos
       🔄 GitHub Actions
+      🔄 OWASP
+      🔄 Redocly
+      🔄 gitleaks
+    DevOps
+      ✅ Dependências e CVEs
     IA
       🔄 Agentes de IA
       🔄 Agentes e IA aplicada
@@ -1894,6 +1912,7 @@ mindmap
       🔄 Paginação e countQuery
       🔄 Perfis do Spring e homologação
       🔄 Projeção de dados
+      🔄 RFC 9457
       🔄 Spring Boot e camadas
       🔄 Spring Data JPA e relacionamentos
       🔄 Spring Framework - IoC DI e AOP
@@ -1909,33 +1928,52 @@ mindmap
       ✅ Testes manuais de API - Postman e Insomnia
     testes
       🔄 JUnit e Mockito
+      🔄 Playwright
+      🔄 Vitest
 ```
 
 | Estudando agora | Área | Próximos passos |
 |---|---|---|
+| 🔄 ADR | arquitetura | — |
 | 🔄 Arquitetura em camadas | Arquitetura | <sub>2 a fazer</sub> |
 | 🔄 Arquitetura hexagonal | Arquitetura | <sub>3 a fazer</sub> |
 | 🔄 Arquitetura orientada a eventos | Arquitetura | <sub>2 a fazer</sub> |
 | 🔄 Arquiteturas de software | Arquitetura | <sub>3 a fazer</sub> |
 | 🔄 BFF (Backend for Frontend) | Arquitetura | <sub>1 a fazer</sub> |
+| 🔄 BOLA e IDOR | arquitetura | — |
+| 🔄 CEP com cache e degradação | arquitetura | — |
+| 🔄 CORS | arquitetura | — |
 | 🔄 CQRS | Arquitetura | <sub>2 a fazer</sub> |
 | 🔄 Clean Architecture | Arquitetura | <sub>2 a fazer</sub> |
+| 🔄 Cookie HttpOnly | arquitetura | — |
 | 🔄 Event Sourcing | Arquitetura | <sub>2 a fazer</sub> |
 | 🔄 Lock otimista e transações | arquitetura | — |
 | 🔄 MVC | Arquitetura | <sub>2 a fazer</sub> |
 | 🔄 Microsserviços | Arquitetura | <sub>2 a fazer</sub> |
 | 🔄 Monólito modular | Arquitetura | <sub>2 a fazer</sub> |
 | 🔄 Monólito | Arquitetura | <sub>2 a fazer</sub> |
+| 🔄 Next.js | arquitetura | — |
 | 🔄 Onion Architecture | Arquitetura | <sub>2 a fazer</sub> |
+| 🔄 Pix | arquitetura | — |
 | 🔄 Pub-Sub e DLQ | Arquitetura | <sub>2 a fazer</sub> |
 | 🔄 SOA | Arquitetura | <sub>1 a fazer</sub> |
 | 🔄 Serverless | Arquitetura | <sub>2 a fazer</sub> |
+| 🔄 Spring Modulith | arquitetura | — |
 | 🔄 Síncrono e assíncrono | Arquitetura | <sub>3 a fazer</sub> |
+| 🔄 Token de visitante | arquitetura | — |
 | 🔄 AWS | Cloud | <sub>10 a fazer</sub> |
+| 🔄 Aiven | cloud | — |
+| 🔄 Render | cloud | — |
+| 🔄 Vercel | cloud | — |
 | 🔄 Flyway | dados | — |
+| 🔄 PostgreSQL | dados | — |
+| 🔄 CodeQL | devops | — |
 | 🔄 Docker e Compose | devops | — |
 | 🔄 Git Flow e commits semânticos | devops | — |
 | 🔄 GitHub Actions | devops | — |
+| 🔄 OWASP | devops | — |
+| 🔄 Redocly | devops | — |
+| 🔄 gitleaks | devops | — |
 | 🔄 Agentes de IA | IA | — |
 | 🔄 Agentes e IA aplicada | IA | `███░░░░░░░` 1/4 |
 | 🔄 Design Doc de arquitetura para IA | IA | <sub>1 a fazer</sub> |
@@ -1960,6 +1998,7 @@ mindmap
 | 🔄 Paginação e countQuery | spring | — |
 | 🔄 Perfis do Spring e homologação | spring | — |
 | 🔄 Projeção de dados | spring | — |
+| 🔄 RFC 9457 | spring | — |
 | 🔄 Spring Boot e camadas | spring | — |
 | 🔄 Spring Cloud e microsserviços | Spring | — |
 | 🔄 Spring Data JPA e relacionamentos | spring | — |
@@ -1967,13 +2006,15 @@ mindmap
 | 🔄 Spring Security e JWT | spring | — |
 | 🔄 Tratamento de erros REST | spring | — |
 | 🔄 JUnit e Mockito | testes | — |
+| 🔄 Playwright | testes | — |
+| 🔄 Vitest | testes | — |
 | 🔄 API REST | spring | — |
 | 🔄 DTO | spring | — |
 | 🔄 Idempotência e Idempotency-Key | arquitetura | — |
 | 🔄 ORM e modelo de domínio | spring | — |
 | ⏳ Mensageria e Outbox | Arquitetura | <sub>6 a fazer</sub> |
 
-<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-11-20.</sub>
+<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-11-23.</sub>
 <!-- AUTO:estudos:END -->
 
 </details>
@@ -1984,7 +2025,7 @@ mindmap
 
 <!-- AUTO:cerebro:START -->
 <div align="center">
-  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 24 dias com registro, 132 notas, 2 trilhas e 38 assuntos praticados; progresso de cada trilha e de cada módulo"/>
+  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 22 dias com registro, 153 notas, 3 trilhas e 38 assuntos praticados; progresso de cada trilha e de cada módulo"/>
 </div>
 
 <details>
@@ -1992,9 +2033,9 @@ mindmap
 <br/>
 
 <table align="center"><tr>
-<td align="center">🗓️<br/><b>24</b> dias com registro<br/><sub>nos últimos 30</sub></td>
-<td align="center">📚<br/><b>132</b> notas de estudo<br/><sub>61 com exemplo com × sem</sub></td>
-<td align="center">🧭<br/><b>2</b> trilhas<br/><sub>12 módulos</sub></td>
+<td align="center">🗓️<br/><b>22</b> dias com registro<br/><sub>nos últimos 30</sub></td>
+<td align="center">📚<br/><b>153</b> notas de estudo<br/><sub>61 com exemplo com × sem</sub></td>
+<td align="center">🧭<br/><b>3</b> trilhas<br/><sub>18 módulos</sub></td>
 <td align="center">✅<br/><b>38</b> assuntos<br/><sub>praticados em projeto</sub></td>
 </tr></table>
 
@@ -2002,6 +2043,7 @@ mindmap
 |---|---|:-:|:-:|:-:|:-:|
 | **☕🌱 Java & Spring** | 🟩🟩🟩🟩⬜<br/>**49/60** | 49 | 8 | 1 | 2 |
 | **🤖 Inteligência Artificial** | 🟩🟩⬜⬜⬜<br/>**5/15** | 5 | 0 | 1 | 9 |
+| **Trilha 3 - Stack dos projetos** | ⬜⬜⬜⬜⬜<br/>**0/34** | 0 | 0 | 0 | 34 |
 
 </details>
 
@@ -2035,9 +2077,24 @@ mindmap
 
 </details>
 
-📝 **Estudado por último:** `Arquitetura` Anonimização e k-anonimato · `Arquitetura` Cache e cache-aside · `Dados` Constraint de exclusão no PostgreSQL · `Arquitetura` Fallback e degradação graciosa · `Spring` Jobs agendados e ShedLock · `Arquitetura` Máquina de estados · `Arquitetura` Rate limiting · `Java` Value Object
+<details>
+<summary><b>Trilha 3 - Stack dos projetos</b> · módulo a módulo</summary>
+<br/>
 
-<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-11-20</sub>
+| Módulo | Praticado | Assuntos |
+|---|---|---|
+| ① Como o time trabalha | ⬜⬜⬜⬜⬜<br/>**0/3** | 📘 Git Flow e commits semânticos · 📘 Spec-Driven Development · 📘 ADR |
+| ② Forma do sistema | ⬜⬜⬜⬜⬜<br/>**0/3** | 📘 Monólito modular · 📘 Spring Modulith · 📘 Arquitetura hexagonal |
+| ③ Front, sessão e contrato | ⬜⬜⬜⬜⬜<br/>**0/8** | 📘 Next.js · 📘 BFF (Backend for Frontend) · 📘 Cookie HttpOnly · 📘 Token de visitante · 📘 CORS · 📘 Swagger e OpenAPI · 📘 Redocly · 📘 RFC 9457 |
+| ④ Dados e testes | ⬜⬜⬜⬜⬜<br/>**0/7** | 📘 Flyway · 📘 PostgreSQL · 📘 SQL e MySQL · 📘 Testcontainers · 📘 JUnit e Mockito · 📘 Vitest · 📘 Playwright |
+| ⑤ Nuvem (o trio) | ⬜⬜⬜⬜⬜<br/>**0/3** | 📘 Aiven · 📘 Render · 📘 Vercel |
+| ⑥ Risco e pagamento | ⬜⬜⬜⬜⬜<br/>**0/10** | 📘 LGPD · 📘 BOLA e IDOR · 📘 OWASP · 📘 Idempotência e Idempotency-Key · 📘 Webhook e HMAC · 📘 Pix · 📘 CodeQL · 📘 gitleaks · 📘 CEP com cache e degradação · 📘 Java moderno (8 a 25) |
+
+</details>
+
+📝 **Estudado por último:** `Arquitetura` ADR · `Cloud` Aiven · `Arquitetura` BOLA e IDOR · `Arquitetura` CEP com cache e degradação · `DevOps` CodeQL · `Arquitetura` Cookie HttpOnly · `Arquitetura` CORS · `DevOps` gitleaks
+
+<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-11-23</sub>
 <!-- AUTO:cerebro:END -->
 
 <details>
@@ -2611,7 +2668,7 @@ gantt
 
 **🧹 Débitos técnicos:** 9/18 resolvidos
 
-<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-11-20.</sub>
+<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-11-23.</sub>
 <!-- AUTO:checklist:END -->
 
 </details>

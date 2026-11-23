@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-20",
+  "atualizado": "2026-11-23",
   "regua": {
     "praticadas": 13,
     "total": 15,
@@ -450,6 +450,15 @@
   ],
   "estudos": [
     {
+      "nome": "ADR",
+      "area": "arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
       "nome": "Anonimização e k-anonimato",
       "area": "arquitetura",
       "status": "praticado",
@@ -504,6 +513,33 @@
       }
     },
     {
+      "nome": "BOLA e IDOR",
+      "area": "arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "CEP com cache e degradação",
+      "area": "arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "CORS",
+      "area": "arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
       "nome": "CQRS",
       "area": "Arquitetura",
       "status": "andamento",
@@ -528,6 +564,15 @@
       "passos": {
         "feitos": 0,
         "total": 2
+      }
+    },
+    {
+      "nome": "Cookie HttpOnly",
+      "area": "arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
       }
     },
     {
@@ -639,6 +684,15 @@
       }
     },
     {
+      "nome": "Next.js",
+      "area": "arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
       "nome": "Onion Architecture",
       "area": "Arquitetura",
       "status": "andamento",
@@ -654,6 +708,15 @@
       "passos": {
         "feitos": 0,
         "total": 4
+      }
+    },
+    {
+      "nome": "Pix",
+      "area": "arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
       }
     },
     {
@@ -693,12 +756,30 @@
       }
     },
     {
+      "nome": "Spring Modulith",
+      "area": "arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
       "nome": "Síncrono e assíncrono",
       "area": "Arquitetura",
       "status": "andamento",
       "passos": {
         "feitos": 0,
         "total": 3
+      }
+    },
+    {
+      "nome": "Token de visitante",
+      "area": "arquitetura",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
       }
     },
     {
@@ -717,6 +798,33 @@
       "passos": {
         "feitos": 0,
         "total": 10
+      }
+    },
+    {
+      "nome": "Aiven",
+      "area": "cloud",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Render",
+      "area": "cloud",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Vercel",
+      "area": "cloud",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
       }
     },
     {
@@ -756,12 +864,30 @@
       }
     },
     {
+      "nome": "PostgreSQL",
+      "area": "dados",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
       "nome": "SQL e MySQL",
       "area": "Dados",
       "status": "praticado",
       "passos": {
         "feitos": 0,
         "total": 2
+      }
+    },
+    {
+      "nome": "CodeQL",
+      "area": "devops",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
       }
     },
     {
@@ -793,6 +919,33 @@
     },
     {
       "nome": "GitHub Actions",
+      "area": "devops",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "OWASP",
+      "area": "devops",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Redocly",
+      "area": "devops",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "gitleaks",
       "area": "devops",
       "status": "andamento",
       "passos": {
@@ -1152,6 +1305,15 @@
       }
     },
     {
+      "nome": "RFC 9457",
+      "area": "spring",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
       "nome": "Spring Boot - auto-configuração e starters",
       "area": "Spring",
       "status": "praticado",
@@ -1260,6 +1422,15 @@
       }
     },
     {
+      "nome": "Playwright",
+      "area": "testes",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
       "nome": "TDD e estratégia de testes",
       "area": "Testes",
       "status": "praticado",
@@ -1284,6 +1455,15 @@
       "passos": {
         "feitos": 0,
         "total": 6
+      }
+    },
+    {
+      "nome": "Vitest",
+      "area": "testes",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
       }
     },
     {
@@ -1324,7 +1504,7 @@
     }
   ],
   "biblioteca": {
-    "notas": 132,
+    "notas": 153,
     "comSem": 61,
     "sessoes": [
       "IA, Spring e LGPD",
@@ -1702,49 +1882,220 @@
             ]
           }
         ]
+      },
+      {
+        "nome": "Trilha 3 - Stack dos projetos",
+        "modulos": [
+          {
+            "nome": "① Como o time trabalha",
+            "notas": [
+              {
+                "nome": "Git Flow e commits semânticos",
+                "status": "referencia"
+              },
+              {
+                "nome": "Spec-Driven Development",
+                "status": "referencia"
+              },
+              {
+                "nome": "ADR",
+                "status": "referencia"
+              }
+            ]
+          },
+          {
+            "nome": "② Forma do sistema",
+            "notas": [
+              {
+                "nome": "Monólito modular",
+                "status": "referencia"
+              },
+              {
+                "nome": "Spring Modulith",
+                "status": "referencia"
+              },
+              {
+                "nome": "Arquitetura hexagonal",
+                "status": "referencia"
+              }
+            ]
+          },
+          {
+            "nome": "③ Front, sessão e contrato",
+            "notas": [
+              {
+                "nome": "Next.js",
+                "status": "referencia"
+              },
+              {
+                "nome": "BFF (Backend for Frontend)",
+                "status": "referencia"
+              },
+              {
+                "nome": "Cookie HttpOnly",
+                "status": "referencia"
+              },
+              {
+                "nome": "Token de visitante",
+                "status": "referencia"
+              },
+              {
+                "nome": "CORS",
+                "status": "referencia"
+              },
+              {
+                "nome": "Swagger e OpenAPI",
+                "status": "referencia"
+              },
+              {
+                "nome": "Redocly",
+                "status": "referencia"
+              },
+              {
+                "nome": "RFC 9457",
+                "status": "referencia"
+              }
+            ]
+          },
+          {
+            "nome": "④ Dados e testes",
+            "notas": [
+              {
+                "nome": "Flyway",
+                "status": "referencia"
+              },
+              {
+                "nome": "PostgreSQL",
+                "status": "referencia"
+              },
+              {
+                "nome": "SQL e MySQL",
+                "status": "referencia"
+              },
+              {
+                "nome": "Testcontainers",
+                "status": "referencia"
+              },
+              {
+                "nome": "JUnit e Mockito",
+                "status": "referencia"
+              },
+              {
+                "nome": "Vitest",
+                "status": "referencia"
+              },
+              {
+                "nome": "Playwright",
+                "status": "referencia"
+              }
+            ]
+          },
+          {
+            "nome": "⑤ Nuvem (o trio)",
+            "notas": [
+              {
+                "nome": "Aiven",
+                "status": "referencia"
+              },
+              {
+                "nome": "Render",
+                "status": "referencia"
+              },
+              {
+                "nome": "Vercel",
+                "status": "referencia"
+              }
+            ]
+          },
+          {
+            "nome": "⑥ Risco e pagamento",
+            "notas": [
+              {
+                "nome": "LGPD",
+                "status": "referencia"
+              },
+              {
+                "nome": "BOLA e IDOR",
+                "status": "referencia"
+              },
+              {
+                "nome": "OWASP",
+                "status": "referencia"
+              },
+              {
+                "nome": "Idempotência e Idempotency-Key",
+                "status": "referencia"
+              },
+              {
+                "nome": "Webhook e HMAC",
+                "status": "referencia"
+              },
+              {
+                "nome": "Pix",
+                "status": "referencia"
+              },
+              {
+                "nome": "CodeQL",
+                "status": "referencia"
+              },
+              {
+                "nome": "gitleaks",
+                "status": "referencia"
+              },
+              {
+                "nome": "CEP com cache e degradação",
+                "status": "referencia"
+              },
+              {
+                "nome": "Java moderno (8 a 25)",
+                "status": "referencia"
+              }
+            ]
+          }
+        ]
       }
     ],
-    "diasDiario30": 24,
+    "diasDiario30": 22,
     "recentes": [
       {
-        "nome": "Anonimização e k-anonimato",
+        "nome": "ADR",
         "area": "Arquitetura",
-        "criado": "2026-11-18"
+        "criado": "2026-11-20"
       },
       {
-        "nome": "Cache e cache-aside",
+        "nome": "Aiven",
+        "area": "Cloud",
+        "criado": "2026-11-20"
+      },
+      {
+        "nome": "BOLA e IDOR",
         "area": "Arquitetura",
-        "criado": "2026-11-18"
+        "criado": "2026-11-20"
       },
       {
-        "nome": "Constraint de exclusão no PostgreSQL",
-        "area": "Dados",
-        "criado": "2026-11-18"
-      },
-      {
-        "nome": "Fallback e degradação graciosa",
+        "nome": "CEP com cache e degradação",
         "area": "Arquitetura",
-        "criado": "2026-11-18"
+        "criado": "2026-11-20"
       },
       {
-        "nome": "Jobs agendados e ShedLock",
-        "area": "Spring",
-        "criado": "2026-11-18"
+        "nome": "CodeQL",
+        "area": "DevOps",
+        "criado": "2026-11-20"
       },
       {
-        "nome": "Máquina de estados",
+        "nome": "Cookie HttpOnly",
         "area": "Arquitetura",
-        "criado": "2026-11-18"
+        "criado": "2026-11-20"
       },
       {
-        "nome": "Rate limiting",
+        "nome": "CORS",
         "area": "Arquitetura",
-        "criado": "2026-11-18"
+        "criado": "2026-11-20"
       },
       {
-        "nome": "Value Object",
-        "area": "Java",
-        "criado": "2026-11-18"
+        "nome": "gitleaks",
+        "area": "DevOps",
+        "criado": "2026-11-20"
       }
     ]
   }
