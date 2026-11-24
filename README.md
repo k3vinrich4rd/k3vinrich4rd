@@ -1781,7 +1781,7 @@ quadrantChart
 | Inglês técnico | 🔄 | em andamento |
 | Mensageria e microsserviços | ⏳ | Outbox do comprovante pronto na branch `refactor/monolito-modular` (em revisão); falta o broker |
 
-<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-11-23</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-11-24</sub>
 <!-- AUTO:regua:END -->
 
 </details>
@@ -2014,7 +2014,7 @@ mindmap
 | 🔄 ORM e modelo de domínio | spring | — |
 | ⏳ Mensageria e Outbox | Arquitetura | <sub>6 a fazer</sub> |
 
-<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-11-23.</sub>
+<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-11-24.</sub>
 <!-- AUTO:estudos:END -->
 
 </details>
@@ -2025,7 +2025,7 @@ mindmap
 
 <!-- AUTO:cerebro:START -->
 <div align="center">
-  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 22 dias com registro, 153 notas, 3 trilhas e 38 assuntos praticados; progresso de cada trilha e de cada módulo"/>
+  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 23 dias com registro, 153 notas, 3 trilhas e 38 assuntos praticados; progresso de cada trilha e de cada módulo"/>
 </div>
 
 <details>
@@ -2033,7 +2033,7 @@ mindmap
 <br/>
 
 <table align="center"><tr>
-<td align="center">🗓️<br/><b>22</b> dias com registro<br/><sub>nos últimos 30</sub></td>
+<td align="center">🗓️<br/><b>23</b> dias com registro<br/><sub>nos últimos 30</sub></td>
 <td align="center">📚<br/><b>153</b> notas de estudo<br/><sub>61 com exemplo com × sem</sub></td>
 <td align="center">🧭<br/><b>3</b> trilhas<br/><sub>18 módulos</sub></td>
 <td align="center">✅<br/><b>38</b> assuntos<br/><sub>praticados em projeto</sub></td>
@@ -2094,7 +2094,7 @@ mindmap
 
 📝 **Estudado por último:** `Arquitetura` ADR · `Cloud` Aiven · `Arquitetura` BOLA e IDOR · `Arquitetura` CEP com cache e degradação · `DevOps` CodeQL · `Arquitetura` Cookie HttpOnly · `Arquitetura` CORS · `DevOps` gitleaks
 
-<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-11-23</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-11-24</sub>
 <!-- AUTO:cerebro:END -->
 
 <details>
@@ -2422,9 +2422,9 @@ public void sacar(BigDecimal valor) {
 <!-- AUTO:agora:END -->
 
 <!-- AUTO:dica:START -->
-> 💡 **Dica do dia: `@DataJpaTest`**  
-> Sobe só a camada JPA: ideal para testar consultas derivadas, cascata e constraints sem subir a aplicação inteira.  
-> <sub>Muda todo dia sozinha · 8/20</sub>
+> 💡 **Dica do dia: `Optional.orElseThrow`**  
+> Transforma "não achei" em exceção de negócio numa linha, sem if de null espalhado pelo código.  
+> <sub>Muda todo dia sozinha · 9/20</sub>
 <!-- AUTO:dica:END -->
 
 <!-- A cobrinha é gerada pelo workflow .github/workflows/snake.yml deste repositório (branch "output"). -->
@@ -2441,16 +2441,16 @@ public void sacar(BigDecimal valor) {
 <!-- AUTO:atividade:START -->
 | | Repositório | Commit | Quando |
 |:-:|---|---|---|
-| 🐛 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`6a18e0a`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/6a18e0a0b4af5a99fa3f8b57835b7b83e1aa4e55) fix(bff): repassa o IP real do cliente à API; BCrypt fictício no convite | há 3 h |
-| 🧪 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`a35cef5`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/a35cef5e58d03b52d3efb1a77a2e4f1d22fcccd0) test(e2e): A63 espera o alerta da página, não o anunciador de rota do Ne | há 7 h |
+| 🐛 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`6a18e0a`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/6a18e0a0b4af5a99fa3f8b57835b7b83e1aa4e55) fix(bff): repassa o IP real do cliente à API; BCrypt fictício no convite | há 6 h |
+| 🧪 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`a35cef5`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/a35cef5e58d03b52d3efb1a77a2e4f1d22fcccd0) test(e2e): A63 espera o alerta da página, não o anunciador de rota do Ne | há 10 h |
 | 📝 | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`664c4f0`](https://github.com/k3vinrich4rd/cpf-utils/commit/664c4f02c74492d8e520af9514600e4e2f7bee4c) docs(readme): adiciona Por que existe e O que aprendi | há 15 dias |
-| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`8510d19`](https://github.com/k3vinrich4rd/rkf_bank/commit/8510d19697631c6fda2f728aaa4803462ef4a1c5) docs(readme): bloco de revisão técnica em 2 minutos no topo | há 17 dias |
+| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`8510d19`](https://github.com/k3vinrich4rd/rkf_bank/commit/8510d19697631c6fda2f728aaa4803462ef4a1c5) docs(readme): bloco de revisão técnica em 2 minutos no topo | há 18 dias |
 | 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`4558293`](https://github.com/k3vinrich4rd/rkf_bank/commit/4558293c34c59e797d417b723ac8877ffa1aacd2) docs(deploy): checagem diária de integridade da produção | há 20 dias |
-| ♻️ | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`f430211`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/f430211de74e8756ebb6520b13b52ea0bae60578) refactor: renomeia OrdemItem para OrderItem | há 26 dias |
+| ♻️ | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`f430211`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/f430211de74e8756ebb6520b13b52ea0bae60578) refactor: renomeia OrdemItem para OrderItem | há 27 dias |
 | 📝 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`0849493`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/0849493f006f8569a3c9a93e9578c3ba795d6921) docs: adiciona README com modelo de dominio, endpoints e exemplos reais | 15/10/2026 |
 | • | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`68de4a9`](https://github.com/k3vinrich4rd/cpf-utils/commit/68de4a91b903988d82c6cddc349121e0c9b9093d) Update README.md | 30/06/2025 |
 
-<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 23/11 às 20:57</sub>
+<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 24/11 às 00:07</sub>
 <!-- AUTO:atividade:END -->
 
 </details>
@@ -2668,7 +2668,7 @@ gantt
 
 **🧹 Débitos técnicos:** 9/18 resolvidos
 
-<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-11-23.</sub>
+<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-11-24.</sub>
 <!-- AUTO:checklist:END -->
 
 </details>
@@ -2769,7 +2769,7 @@ gantt
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/progresso-60%25-EC7000?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/progresso-61%25-EC7000?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/cap%C3%ADtulos%20conclu%C3%ADdos-3%20de%206-3fb950?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/desafios%20entregues-3%20de%205-58a6ff?style=for-the-badge"/>
 
@@ -2777,7 +2777,7 @@ gantt
 
 ```mermaid
 flowchart LR
-    C1["① Componentes e<br/>injeção de<br/>dependência<br/>✅ 14/14"] --> C2["② Modelo de domínio<br/>e ORM<br/>✅ 15/15"] --> C3["③ API REST, camadas,<br/>CRUD, exceções,<br/>validações<br/>✅ 23/23"] --> C4["④ JPA, consultas SQL<br/>e JPQL<br/>🔄 33/38"] --> C5["⑤ Login e controle<br/>de acesso<br/>📅 0/34"] --> C6["⑥ Homologação e<br/>implantação com<br/>CI/CD<br/>📅 0/18"]
+    C1["① Componentes e<br/>injeção de<br/>dependência<br/>✅ 14/14"] --> C2["② Modelo de domínio<br/>e ORM<br/>✅ 15/15"] --> C3["③ API REST, camadas,<br/>CRUD, exceções,<br/>validações<br/>✅ 23/23"] --> C4["④ JPA, consultas SQL<br/>e JPQL<br/>🔄 34/38"] --> C5["⑤ Login e controle<br/>de acesso<br/>📅 0/34"] --> C6["⑥ Homologação e<br/>implantação com<br/>CI/CD<br/>📅 0/18"]
     style C1 fill:#1f6f3f,color:#fff
     style C2 fill:#1f6f3f,color:#fff
     style C3 fill:#1f6f3f,color:#fff
@@ -2789,15 +2789,15 @@ flowchart LR
 | 1 | Componentes e injeção de dependência | 14/14 | 1h26 | ✅ | [Cálculo de pedido](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) com `OrderService` + `ShippingService` injetados pelo Spring |
 | 2 | Modelo de domínio e ORM | 15/15 | 2h17 | ✅ | [Sistema de eventos](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) no H2 e o modelo do [DSCommerce](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) |
 | 3 | API REST, camadas, CRUD, exceções, validações | 23/23 | 3h14 | ✅ | [CRUD de clientes](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) com **10/10** no checklist de correção |
-| 4 | JPA, consultas SQL e JPQL | 33/38 | 6h52 | 🔄 | Próximo: desafio *Consulta vendas* (relatório paginado + sumário por vendedor) |
+| 4 | JPA, consultas SQL e JPQL | 34/38 | 6h52 | 🔄 | Próximo: desafio *Consulta vendas* (relatório paginado + sumário por vendedor) |
 | 5 | Login e controle de acesso | 0/34 | 4h53 | 📅 | DSCommerce completo com login (OAuth2 + JWT) e pedidos |
 | 6 | Homologação e implantação com CI/CD | 0/18 | 2h09 | 📅 | Perfis dev/prod, PostgreSQL no Docker e deploy com CI/CD |
 
-<sub>85 de 142 aulas assistidas</sub>
+<sub>86 de 142 aulas assistidas</sub>
 
 **📌 Na fila (matriculado, ainda não comecei):** [Java Spring Expert](https://devsuperior.club/courses/6) (204 aulas) · [Java Spring Reference](https://devsuperior.club/courses/7) (151 aulas) · [Java Spring Tópicos Avançados](https://devsuperior.club/courses/63) (11 aulas) · [Análise de Requisitos Expert](https://devsuperior.club/courses/10) (50 aulas) · [Bônus Estudo de caso CI/CD AWS e Github Actions](https://devsuperior.club/courses/12) (17 aulas)
 
-<sub>🤖 Progresso lido da plataforma do curso pela minha automação em 2026-11-18.</sub>
+<sub>🤖 Progresso lido da plataforma do curso pela minha automação em 2026-11-24.</sub>
 <!-- AUTO:cursos:END -->
 
 #### 📖 O que aprendi no Java Spring Professional
@@ -3085,26 +3085,26 @@ dono só usa o id, que o proxy já tem) e `@EntityGraph` nas listas que mostram 
 
 <!-- AUTO:flashcards:START -->
 <details>
-<summary><b>🃏 Spring · O que acontece se eu editar uma migração do Flyway já aplicada?</b></summary>
+<summary><b>🃏 Spring · O que o MockMvc testa que chamar o controller direto não testa?</b></summary>
 <br/>
 
-O checksum não bate e a aplicação não sobe (<code>Migration checksum mismatch</code>). Mudança nova = arquivo novo (<code>V6__...</code>). É uma proteção: todo banco fica igual.
+O JSON de verdade, o <code>@Valid</code>, a serialização e o status HTTP. Um <code>{"valor":"abc"}</code> só é pego passando pelo MockMvc.
 
 </details>
 
 <details>
-<summary><b>🃏 Spring · Por que o @Transactional não funciona numa chamada interna?</b></summary>
+<summary><b>🃏 IA · RAG ou fine-tuning para responder sobre as decisões do time?</b></summary>
 <br/>
 
-Ele é implementado por um proxy (AOP). Chamar outro método da mesma classe não passa pelo proxy, então a transação não abre.
+RAG: o conhecimento muda e precisa citar a fonte. Fine-tuning ensina jeito e tarefa, não fatos atualizados.
 
 </details>
 
 <details>
-<summary><b>🃏 Spring · Por que injeção de dependência pelo construtor?</b></summary>
+<summary><b>🃏 IA · Qual a diferença entre chatbot e agente de IA?</b></summary>
 <br/>
 
-Campos <code>final</code>, dependências explícitas e teste sem Spring: <code>new ContaService(mock(ContaRepository.class))</code>.
+O chatbot responde; o agente usa ferramentas em loop até cumprir um objetivo. Por isso precisa de guardrails: ler pode ser automático, mexer em dinheiro exige confirmação humana.
 
 </details>
 
