@@ -834,7 +834,7 @@ Um deploy só e 8 módulos com fronteiras verificadas por teste. Dentro deles, p
 - [x] Fatia 5 · painel do barbeiro
 - [x] Fatia 6 · CEP, LGPD, alcance e WhatsApp / reserva manual
 - [x] Fatia 7A e 7B · telas Next.js (geradas com IA) no ar (beta)
-- [ ] Fatia 7C · painel no canvas (em andamento)
+- [x] ~~Fatia 7C · painel no canvas~~ substituída pela agenda nova da Fatia 14C
 - [x] Fatia 8 e 8B · deploy: site na Vercel, API no Render e banco na Aiven, só com CI verde (beta 100% no ar desde 25/11/2026)
 - [x] Fatias 10 a 14 · convite de barbeiro, alcance por nível, site mais fluido, notificação Web Push e experiência premium
 - [ ] Fatia 9 · assistente de dúvidas (planejada, pós-beta)
