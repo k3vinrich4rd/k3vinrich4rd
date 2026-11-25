@@ -21,7 +21,7 @@
     }
   ],
   "naFila": [
-    { "nome": "Java Spring Expert", "plataforma": "DevSuperior", "url": "https://devsuperior.club/courses/6", "aulas": 204 },
+    { "nome": "Java Spring Expert", "plataforma": "DevSuperior", "url": "https://devsuperior.club/courses/6", "aulas": 206 },
     { "nome": "Java Spring Reference", "plataforma": "DevSuperior", "url": "https://devsuperior.club/courses/7", "aulas": 151 },
     { "nome": "Java Spring Tópicos Avançados", "plataforma": "DevSuperior", "url": "https://devsuperior.club/courses/63", "aulas": 11 },
     { "nome": "Análise de Requisitos Expert", "plataforma": "DevSuperior", "url": "https://devsuperior.club/courses/10", "aulas": 50 },

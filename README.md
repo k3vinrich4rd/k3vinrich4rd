@@ -2795,7 +2795,7 @@ flowchart LR
 
 <sub>86 de 142 aulas assistidas</sub>
 
-**📌 Na fila (matriculado, ainda não comecei):** [Java Spring Expert](https://devsuperior.club/courses/6) (204 aulas) · [Java Spring Reference](https://devsuperior.club/courses/7) (151 aulas) · [Java Spring Tópicos Avançados](https://devsuperior.club/courses/63) (11 aulas) · [Análise de Requisitos Expert](https://devsuperior.club/courses/10) (50 aulas) · [Bônus Estudo de caso CI/CD AWS e Github Actions](https://devsuperior.club/courses/12) (17 aulas)
+**📌 Na fila (matriculado, ainda não comecei):** [Java Spring Expert](https://devsuperior.club/courses/6) (206 aulas) · [Java Spring Reference](https://devsuperior.club/courses/7) (151 aulas) · [Java Spring Tópicos Avançados](https://devsuperior.club/courses/63) (11 aulas) · [Análise de Requisitos Expert](https://devsuperior.club/courses/10) (50 aulas) · [Bônus Estudo de caso CI/CD AWS e Github Actions](https://devsuperior.club/courses/12) (17 aulas)
 
 <sub>🤖 Progresso lido da plataforma do curso pela minha automação em 2026-11-24.</sub>
 <!-- AUTO:cursos:END -->
