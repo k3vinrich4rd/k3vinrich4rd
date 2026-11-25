@@ -49,7 +49,7 @@ function blocoRecrutador() {
 |---|---|
 | Quem é? | Dev **Java backend Junior** na **Zup Innovation**, prestando serviço para o **Itaú**, em transição para **Pleno** (**${regua.praticadas}/${regua.total}** competências já praticadas) |
 | Em produção? | **[RKF Bank](https://github.com/${USUARIO}/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **${rkf.testes} testes**, CI e logs rastreáveis · ✅ **no ar**: [abrir o banco](https://rkfbank.vercel.app) |
-| Construindo agora? | **[Barbearia Altas Horas](https://github.com/${USUARIO}/barbearia-altas-horas)**: a agenda online da barbearia do meu pai, com pagamento antecipado (no beta o pagamento é simulado) e horário duplicado barrado no próprio PostgreSQL · 🚧 fatias 1 a 7B na main, no ar em beta, feita com Spec-Driven Development · [abrir a agenda](https://barbearia-altas-horas.vercel.app) · [ver o andamento](#️-barbearia-altas-horas--em-construção) |
+| Construindo agora? | **[Barbearia Altas Horas](https://github.com/${USUARIO}/barbearia-altas-horas)**: a agenda online da barbearia do meu pai, com pagamento antecipado (Pix simulado no beta) e horário duplicado barrado no próprio PostgreSQL · ✅ **beta 100% no ar desde 25/11/2026**: fatias 1 a 14 e 8B, 588 testes no backend, 206 no front e 27 E2E, feita com Spec-Driven Development e IA · [abrir a agenda](https://barbearia-altas-horas.vercel.app) · [ver o projeto](#️-barbearia-altas-horas--beta-no-ar) |
 | Stack principal? | Java · Spring Boot · JPA/Hibernate · MySQL/PostgreSQL · MongoDB · JUnit/Mockito · Docker · GitHub Actions |
 | O que está estudando? | ${p.trilha.map(apelido).join(' → ')} |
 | Contato? | [LinkedIn](https://www.linkedin.com/in/kevinrichard-java/) · [kevinrichardve@gmail.com](mailto:kevinrichardve@gmail.com) |`;
