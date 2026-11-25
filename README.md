@@ -2425,9 +2425,9 @@ public void sacar(BigDecimal valor) {
 <!-- AUTO:agora:END -->
 
 <!-- AUTO:dica:START -->
-> 💡 **Dica do dia: `Optional.orElseThrow`**  
-> Transforma "não achei" em exceção de negócio numa linha, sem if de null espalhado pelo código.  
-> <sub>Muda todo dia sozinha · 9/20</sub>
+> 💡 **Dica do dia: `@RestControllerAdvice`**  
+> Centraliza o tratamento de erros: cada exceção vira um status HTTP e um JSON no mesmo formato.  
+> <sub>Muda todo dia sozinha · 10/20</sub>
 <!-- AUTO:dica:END -->
 
 <!-- A cobrinha é gerada pelo workflow .github/workflows/snake.yml deste repositório (branch "output"). -->
@@ -2444,16 +2444,16 @@ public void sacar(BigDecimal valor) {
 <!-- AUTO:atividade:START -->
 | | Repositório | Commit | Quando |
 |:-:|---|---|---|
-| 📝 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`d6d6ef0`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/d6d6ef08f377e8af2d673ec09c888c82fbcd7c77) docs(fatia-14a): E2E de ponta a ponta no guia de testes (23 de 23) | há 5 h |
-| 🧪 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`3d769cf`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/3d769cf7b46913f4f6232fbe64ee507630b998a6) test(agenda): A4 da reserva do cliente usa 09:30 (09:50 fica fora da gra | há 5 h |
+| 🐛 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`613e033`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/613e03379029df0268cd3fe1533ace2149357c44) fix(front): 1 s de folga na abertura do Acrescentar 1 minuto (abreEm vem | há 2 h |
+| 🧪 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`5686224`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/56862245b0e5de673c39a161dd92cb9e780d7729) test(front): folga de tempo nos testes do contador (A24) e da reserva de | há 2 h |
 | 📝 | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`664c4f0`](https://github.com/k3vinrich4rd/cpf-utils/commit/664c4f02c74492d8e520af9514600e4e2f7bee4c) docs(readme): adiciona Por que existe e O que aprendi | há 16 dias |
-| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`8510d19`](https://github.com/k3vinrich4rd/rkf_bank/commit/8510d19697631c6fda2f728aaa4803462ef4a1c5) docs(readme): bloco de revisão técnica em 2 minutos no topo | há 18 dias |
+| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`8510d19`](https://github.com/k3vinrich4rd/rkf_bank/commit/8510d19697631c6fda2f728aaa4803462ef4a1c5) docs(readme): bloco de revisão técnica em 2 minutos no topo | há 19 dias |
 | 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`4558293`](https://github.com/k3vinrich4rd/rkf_bank/commit/4558293c34c59e797d417b723ac8877ffa1aacd2) docs(deploy): checagem diária de integridade da produção | há 21 dias |
 | ♻️ | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`f430211`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/f430211de74e8756ebb6520b13b52ea0bae60578) refactor: renomeia OrdemItem para OrderItem | há 28 dias |
 | 📝 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`0849493`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/0849493f006f8569a3c9a93e9578c3ba795d6921) docs: adiciona README com modelo de dominio, endpoints e exemplos reais | 15/10/2026 |
 | • | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`68de4a9`](https://github.com/k3vinrich4rd/cpf-utils/commit/68de4a91b903988d82c6cddc349121e0c9b9093d) Update README.md | 30/06/2025 |
 
-<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 24/11 às 22:38</sub>
+<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 25/11 às 00:40</sub>
 <!-- AUTO:atividade:END -->
 
 </details>
@@ -3088,26 +3088,26 @@ dono só usa o id, que o proxy já tem) e `@EntityGraph` nas listas que mostram 
 
 <!-- AUTO:flashcards:START -->
 <details>
-<summary><b>🃏 Spring · O que o MockMvc testa que chamar o controller direto não testa?</b></summary>
+<summary><b>🃏 IA · Que problema o MCP resolve?</b></summary>
 <br/>
 
-O JSON de verdade, o <code>@Valid</code>, a serialização e o status HTTP. Um <code>{"valor":"abc"}</code> só é pego passando pelo MockMvc.
+O N × M de integrações: cada sistema expõe um servidor MCP e qualquer IA compatível usa, como o USB-C fez com cabos.
 
 </details>
 
 <details>
-<summary><b>🃏 IA · RAG ou fine-tuning para responder sobre as decisões do time?</b></summary>
+<summary><b>🃏 IA · Por que o saldo não deve ser calculado pelo LLM?</b></summary>
 <br/>
 
-RAG: o conhecimento muda e precisa citar a fonte. Fine-tuning ensina jeito e tarefa, não fatos atualizados.
+O LLM prevê texto, não faz conta exata. Regra exata (saldo, CPF, limite) é código; o LLM interpreta e o código valida e executa.
 
 </details>
 
 <details>
-<summary><b>🃏 IA · Qual a diferença entre chatbot e agente de IA?</b></summary>
+<summary><b>🃏 LGPD · O cliente pede para apagar os dados. O banco pode dar DELETE?</b></summary>
 <br/>
 
-O chatbot responde; o agente usa ferramentas em loop até cumprir um objetivo. Por isso precisa de guardrails: ler pode ser automático, mexer em dinheiro exige confirmação humana.
+Não: registros financeiros têm guarda obrigatória por outras leis. O certo é encerrar a conta, bloquear o acesso e anonimizar ao fim do prazo.
 
 </details>
 
