@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-24",
+  "atualizado": "2026-11-26",
   "regua": {
     "praticadas": 13,
     "total": 15,
@@ -506,7 +506,7 @@
     {
       "nome": "BFF (Backend for Frontend)",
       "area": "Arquitetura",
-      "status": "andamento",
+      "status": "praticado",
       "passos": {
         "feitos": 0,
         "total": 1
@@ -549,6 +549,15 @@
       }
     },
     {
+      "nome": "CSP com nonce",
+      "area": "arquitetura",
+      "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
       "nome": "Cache e cache-aside",
       "area": "arquitetura",
       "status": "praticado",
@@ -569,7 +578,7 @@
     {
       "nome": "Cookie HttpOnly",
       "area": "arquitetura",
-      "status": "andamento",
+      "status": "praticado",
       "passos": {
         "feitos": 0,
         "total": 0
@@ -614,7 +623,7 @@
     {
       "nome": "Lock otimista e transações",
       "area": "arquitetura",
-      "status": "andamento",
+      "status": "praticado",
       "passos": {
         "feitos": 0,
         "total": 0
@@ -641,7 +650,7 @@
     {
       "nome": "Mensageria e Outbox",
       "area": "Arquitetura",
-      "status": "planejado",
+      "status": "praticado",
       "passos": {
         "feitos": 0,
         "total": 6
@@ -758,7 +767,7 @@
     {
       "nome": "Spring Modulith",
       "area": "arquitetura",
-      "status": "andamento",
+      "status": "praticado",
       "passos": {
         "feitos": 0,
         "total": 0
@@ -777,6 +786,15 @@
       "nome": "Token de visitante",
       "area": "arquitetura",
       "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Web Push e VAPID",
+      "area": "arquitetura",
+      "status": "praticado",
       "passos": {
         "feitos": 0,
         "total": 0
@@ -839,7 +857,7 @@
     {
       "nome": "Flyway",
       "area": "dados",
-      "status": "andamento",
+      "status": "praticado",
       "passos": {
         "feitos": 0,
         "total": 0
@@ -956,7 +974,7 @@
     {
       "nome": "Agentes de IA",
       "area": "IA",
-      "status": "andamento",
+      "status": "praticado",
       "passos": {
         "feitos": 0,
         "total": 0
@@ -983,7 +1001,7 @@
     {
       "nome": "Embeddings e banco vetorial",
       "area": "IA",
-      "status": "andamento",
+      "status": "praticado",
       "passos": {
         "feitos": 0,
         "total": 0
@@ -1046,7 +1064,7 @@
     {
       "nome": "RAG",
       "area": "IA",
-      "status": "andamento",
+      "status": "praticado",
       "passos": {
         "feitos": 0,
         "total": 0
@@ -1055,7 +1073,7 @@
     {
       "nome": "Skills",
       "area": "IA",
-      "status": "andamento",
+      "status": "praticado",
       "passos": {
         "feitos": 0,
         "total": 0
@@ -1064,7 +1082,7 @@
     {
       "nome": "Spec-Driven Development",
       "area": "IA",
-      "status": "andamento",
+      "status": "praticado",
       "passos": {
         "feitos": 1,
         "total": 4
@@ -1307,7 +1325,7 @@
     {
       "nome": "RFC 9457",
       "area": "spring",
-      "status": "andamento",
+      "status": "praticado",
       "passos": {
         "feitos": 0,
         "total": 0
@@ -1424,7 +1442,7 @@
     {
       "nome": "Playwright",
       "area": "testes",
-      "status": "andamento",
+      "status": "praticado",
       "passos": {
         "feitos": 0,
         "total": 0
@@ -1504,7 +1522,7 @@
     }
   ],
   "biblioteca": {
-    "notas": 153,
+    "notas": 155,
     "comSem": 61,
     "sessoes": [
       "IA, Spring e LGPD",
@@ -1706,7 +1724,7 @@
               },
               {
                 "nome": "Mensageria e Outbox",
-                "status": "planejado"
+                "status": "praticado"
               },
               {
                 "nome": "Pub-Sub e DLQ",
@@ -1741,8 +1759,16 @@
                 "status": "praticado"
               },
               {
+                "nome": "Web Push e VAPID",
+                "status": "praticado"
+              },
+              {
+                "nome": "CSP com nonce",
+                "status": "praticado"
+              },
+              {
                 "nome": "Anonimização e k-anonimato",
-                "status": "andamento"
+                "status": "praticado"
               },
               {
                 "nome": "Integração com APIs externas",
@@ -1809,11 +1835,11 @@
             "notas": [
               {
                 "nome": "Embeddings e banco vetorial",
-                "status": "referencia"
+                "status": "praticado"
               },
               {
                 "nome": "RAG",
-                "status": "referencia"
+                "status": "praticado"
               },
               {
                 "nome": "Fine-tuning",
@@ -1838,7 +1864,7 @@
               },
               {
                 "nome": "Agentes de IA",
-                "status": "referencia"
+                "status": "praticado"
               }
             ]
           },
@@ -1895,7 +1921,7 @@
               },
               {
                 "nome": "Spec-Driven Development",
-                "status": "referencia"
+                "status": "praticado"
               },
               {
                 "nome": "ADR",
@@ -1912,7 +1938,7 @@
               },
               {
                 "nome": "Spring Modulith",
-                "status": "referencia"
+                "status": "praticado"
               },
               {
                 "nome": "Arquitetura hexagonal",
@@ -1929,11 +1955,11 @@
               },
               {
                 "nome": "BFF (Backend for Frontend)",
-                "status": "referencia"
+                "status": "praticado"
               },
               {
                 "nome": "Cookie HttpOnly",
-                "status": "referencia"
+                "status": "praticado"
               },
               {
                 "nome": "Token de visitante",
@@ -1953,7 +1979,15 @@
               },
               {
                 "nome": "RFC 9457",
-                "status": "referencia"
+                "status": "praticado"
+              },
+              {
+                "nome": "Web Push e VAPID",
+                "status": "praticado"
+              },
+              {
+                "nome": "CSP com nonce",
+                "status": "praticado"
               }
             ]
           },
@@ -1962,7 +1996,7 @@
             "notas": [
               {
                 "nome": "Flyway",
-                "status": "referencia"
+                "status": "praticado"
               },
               {
                 "nome": "PostgreSQL",
@@ -1974,7 +2008,7 @@
               },
               {
                 "nome": "Testcontainers",
-                "status": "referencia"
+                "status": "praticado"
               },
               {
                 "nome": "JUnit e Mockito",
@@ -1986,7 +2020,7 @@
               },
               {
                 "nome": "Playwright",
-                "status": "referencia"
+                "status": "praticado"
               }
             ]
           },
@@ -2055,8 +2089,18 @@
         ]
       }
     ],
-    "diasDiario30": 23,
+    "diasDiario30": 22,
     "recentes": [
+      {
+        "nome": "CSP com nonce",
+        "area": "Arquitetura",
+        "criado": "2026-11-26"
+      },
+      {
+        "nome": "Web Push e VAPID",
+        "area": "Arquitetura",
+        "criado": "2026-11-26"
+      },
       {
         "nome": "ADR",
         "area": "Arquitetura",
@@ -2085,16 +2129,6 @@
       {
         "nome": "Cookie HttpOnly",
         "area": "Arquitetura",
-        "criado": "2026-11-20"
-      },
-      {
-        "nome": "CORS",
-        "area": "Arquitetura",
-        "criado": "2026-11-20"
-      },
-      {
-        "nome": "gitleaks",
-        "area": "DevOps",
         "criado": "2026-11-20"
       }
     ]

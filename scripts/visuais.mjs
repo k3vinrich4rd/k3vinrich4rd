@@ -108,7 +108,7 @@ export function cerebro({ cerebro: c, biblioteca: b = {}, estudos = [] }) {
       stroke-dasharray="${volta.toFixed(1)}" stroke-dashoffset="${volta.toFixed(1)}" transform="rotate(-90 ${x + 70} ${y + 66})" class="anel" style="--alvo:${(volta * (1 - pct)).toFixed(1)}"/>
     <text x="${x + 70}" y="${y + 72}" text-anchor="middle" style="font: 800 18px ${SANS}" fill="${TEXTO}">${Math.round(pct * 100)}%</text>
     <text x="${x + 132}" y="${y + 52}" style="font: 800 19px ${SANS}" fill="${TEXTO}">${xml(capa[t.nome] ?? t.nome)}</text>
-    <text x="${x + 132}" y="${y + 76}" style="font: 400 13px ${SANS}" fill="${APAGADO}">${feitos} de ${todas.length} assuntos praticados no RKF Bank</text>
+    <text x="${x + 132}" y="${y + 76}" style="font: 400 13px ${SANS}" fill="${APAGADO}">${feitos} de ${todas.length} assuntos praticados no RKF Bank (portfólio) e na Barbearia Altas Horas</text>
     <text x="${x + 132}" y="${y + 100}" style="font: 600 13px ${SANS}" fill="${TEXTO}">✅ ${feitos}   🔄 ${conta(todas, 'andamento')}   📅 ${conta(todas, 'planejado')}   📘 ${conta(todas, 'referencia')}</text>
 ${linhas}
   </g>`;

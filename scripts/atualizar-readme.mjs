@@ -26,7 +26,7 @@ function blocoStatus() {
     : badge('Entregas recentes', `${ck.recentes.length} ✔`, '003D74');
   return [
     badge('Régua Pleno', `${regua.praticadas}/${regua.total}`, 'EC7000'),
-    badge('Testes RKF Bank', `${rkf.testes} ✔`, '3fb950', '&logo=junit5&logoColor=white'),
+    badge('Testes RKF Bank (portfólio)', `${rkf.testes} ✔`, '3fb950', '&logo=junit5&logoColor=white'),
     mvp,
     badge('Foco agora', apelido(p.foco), '6A1B9A'),
   ].join('\n');
@@ -48,7 +48,7 @@ function blocoRecrutador() {
   return `| Pergunta | Resposta rápida |
 |---|---|
 | Quem é? | Dev **Java backend Junior** na **Zup Innovation**, prestando serviço para o **Itaú**, em transição para **Pleno** (**${regua.praticadas}/${regua.total}** competências já praticadas) |
-| Em produção? | **[RKF Bank](https://github.com/${USUARIO}/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **${rkf.testes} testes**, CI e logs rastreáveis · ✅ **no ar**: [abrir o banco](https://rkfbank.vercel.app) |
+| Em produção? | **[RKF Bank](https://github.com/${USUARIO}/rkf_bank)** · projeto de portfólio: banco digital com Spring Boot 4, Java 25, MySQL, **${rkf.testes} testes**, CI e logs rastreáveis · ✅ **no ar**: [abrir o banco](https://rkfbank.vercel.app) |
 | Construindo agora? | **[Barbearia Altas Horas](https://github.com/${USUARIO}/barbearia-altas-horas)**: a agenda online da barbearia do meu pai, com pagamento antecipado (Pix simulado no beta) e horário duplicado barrado no próprio PostgreSQL · ✅ **beta 100% no ar desde 25/11/2026**: fatias 1 a 14 e 8B, 588 testes no backend, 206 no front e 27 E2E, feita com Spec-Driven Development e IA · [abrir a agenda](https://barbearia-altas-horas.vercel.app) · [ver o projeto](#️-barbearia-altas-horas--beta-no-ar) |
 | Stack principal? | Java · Spring Boot · JPA/Hibernate · MySQL/PostgreSQL · MongoDB · JUnit/Mockito · Docker · GitHub Actions |
 | O que está estudando? | ${p.trilha.map(apelido).join(' → ')} |
@@ -82,7 +82,7 @@ function blocoChecklist() {
   }).join('\n');
   const recentes = ck.recentes.length ? `\n**✔️ Concluído recentemente** <sub>${ck.recentes.length} entregas</sub>\n${ck.recentes.map((r) => `- ✅ ${r}`).join('\n')}\n` : '';
   return `${recentes}
-**📜 Histórico do MVP do RKF Bank (${ck.mvp.total && ck.mvp.feitos === ck.mvp.total ? 'concluído · em produção desde 03/11/2026' : '31/10/2026'})** ${progresso(ck.mvp.feitos, ck.mvp.total)}
+**📜 Histórico do MVP do RKF Bank · projeto de portfólio (${ck.mvp.total && ck.mvp.feitos === ck.mvp.total ? 'concluído · em produção desde 03/11/2026' : '31/10/2026'})** ${progresso(ck.mvp.feitos, ck.mvp.total)}
 
 ${mvp}
 
@@ -263,7 +263,7 @@ function svgBanner() {
     ['nível', 'Junior → Pleno', ''],
     ['empresa', 'Zup Innovation · Itaú', ''],
     ['stack', 'Java 25 · Spring Boot 4', ''],
-    ['projeto', 'RKF Bank (banco digital)', ''],
+    ['projeto', 'RKF Bank · projeto de portfólio', ''],
     ['testes', `${rkf.testes} ✔ BUILD SUCCESS`, 'ok'],
     ['foco', trilha, 'or'],
   ];
@@ -271,7 +271,7 @@ function svgBanner() {
     `<text x="24" y="${92 + i * 25}" class="mono ln" style="animation-delay:${(1.2 + i * 0.35).toFixed(2)}s"><tspan class="key">${xml(k)}</tspan><tspan x="110" class="${c || 'val'}">${xml(v)}</tspan></text>`).join('\n      ');
   const yBarra = 92 + linhas.length * 25;
   const atraso = (1.2 + linhas.length * 0.35).toFixed(2);
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-label="Kevin Richard, desenvolvedor Java backend. Régua Pleno ${regua.praticadas} de ${regua.total}, ${rkf.testes} testes no RKF Bank.">
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-label="Kevin Richard, desenvolvedor Java backend. Régua Pleno ${regua.praticadas} de ${regua.total}, ${rkf.testes} testes no RKF Bank · projeto de portfólio.">
   <!-- Gerado por scripts/atualizar-readme.mjs a partir de progresso.json. Não edite à mão. -->
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d1117"/><stop offset=".55" stop-color="#0b1b33"/><stop offset="1" stop-color="#0d1117"/></linearGradient>
@@ -324,7 +324,7 @@ function svgBanner() {
       <text x="56" y="342" font-size="12" fill="#8b949e">competências de Pleno</text>
       <rect x="222" y="296" width="170" height="58" rx="10" fill="#0d1117" stroke="#30363d"/>
       <text x="238" y="322" font-size="22" font-weight="800" fill="#3fb950">${rkf.testes}</text>
-      <text x="238" y="342" font-size="12" fill="#8b949e">testes verdes no RKF Bank</text>
+      <text x="238" y="342" font-size="12" fill="#8b949e">testes no RKF (portfólio)</text>
       <rect x="404" y="296" width="170" height="58" rx="10" fill="#0d1117" stroke="#30363d"/>
       <text x="420" y="322" font-size="22" font-weight="800" fill="#58a6ff">${ck.mvp.feitos ? `${ck.mvp.feitos}/${ck.mvp.total}` : ck.recentes.length}</text>
       <text x="420" y="342" font-size="12" fill="#8b949e">${ck.mvp.feitos ? 'entregas do MVP' : 'entregas recentes'}</text>
@@ -439,7 +439,7 @@ xychart-beta
     line [${serie}]
 \`\`\`
 
-> 2022 foi o ano do volume (dezenas de exercícios do Catalisa). De 2025 em diante, a troca foi por **menos repositórios e projetos mais completos**, como o RKF Bank.
+> 2022 foi o ano do volume (dezenas de exercícios do Catalisa). De 2025 em diante, a troca foi por **menos repositórios e projetos mais completos**, como o RKF Bank (projeto de portfólio).
 
 **🧊 Os mesmos números em 3D** (gire com o mouse, dê zoom com a roda). Da esquerda para a direita: ${anos.join(', ')}.
 
@@ -549,7 +549,7 @@ function dadosPulso(dias) {
 
 // ---------- execução ----------
 
-// Painel das trilhas do Obsidian: o quanto de cada módulo já virou prática no RKF Bank.
+// Painel das trilhas do Obsidian: o quanto de cada módulo já virou prática no RKF Bank e na Barbearia Altas Horas.
 function blocoCerebro() {
   const c = p.cerebro;
   if (!c?.trilhas?.length) return '_Em breve._';
@@ -597,7 +597,7 @@ ${t.modulos.map((m) => `| ${m.nome} | ${fracao(conta(m.notas, 'praticado'), m.no
 <td align="center">✅<br/><b>${praticados}</b> assuntos<br/><sub>praticados em projeto</sub></td>
 </tr></table>
 
-| Trilha | Praticado no RKF Bank | ✅ | 🔄 | 📅 | 📘 |
+| Trilha | Praticado no RKF Bank (portfólio) e na Barbearia | ✅ | 🔄 | 📅 | 📘 |
 |---|---|:-:|:-:|:-:|:-:|
 ${c.trilhas.map(linhaTrilha).join('\n')}
 
@@ -693,7 +693,8 @@ const VOLTAR = '<p align="right"><sub><a href="#top">⬆️ voltar ao topo</a></
     else if (!dentroDeCodigo && l.startsWith('## ')) titulos.push(l.slice(3).trim());
   });
   const metade = Math.ceil(titulos.length / 2);
-  const item = (t, i) => (t ? `<a href="${ancora(t)}">${String(i + 1).padStart(2, '0')} · ${t}</a>` : '');
+  const rotuloIndice = (t) => t.includes('RKF Bank') ? t.replace('RKF Bank', 'RKF Bank · projeto de portfólio') : t;
+  const item = (t, i) => (t ? `<a href="${ancora(t)}">${String(i + 1).padStart(2, '0')} · ${rotuloIndice(t)}</a>` : '');
   const indice = `<details>
 <summary><b>🗺️ Índice do perfil</b> · ${titulos.length} seções (clique para abrir)</summary>
 <br/>
@@ -739,7 +740,7 @@ const arquivosSvg = {
   'numeros.svg': svg.numeros([
     [anoAtual - 2022, 'anos codando', 'desde o Catalisa, em 2022', '#58a6ff'],
     [totalRepos, 'repositórios', 'de exercícios a projetos reais', '#EC7000'],
-    [rkf.testes, 'testes no RKF Bank', 'BUILD SUCCESS ✔', '#3fb950'],
+    [rkf.testes, 'testes no RKF Bank', 'projeto de portfólio · BUILD SUCCESS ✔', '#3fb950'],
     [`${regua.praticadas}/${regua.total}`, 'régua Pleno', 'competências praticadas', '#EC7000'],
     [estudos.filter((e) => e.status === 'praticado').length, 'assuntos praticados', `de ${estudos.length} no meu Obsidian`, '#d2a8ff'],
     [certificacoes, 'certificações', 'Alura · Udemy · AWS · Workover', '#58a6ff'],

@@ -15,7 +15,7 @@
     <td width="33%" align="center" valign="top">
       <a href="#-rkf-bank--em-produção"><picture>
         <source media="(prefers-color-scheme: light)" srcset="assets/bento/rkf-bank-claro.svg"/>
-        <img src="assets/bento/rkf-bank-escuro.svg" width="100%" alt="RKF Bank, banco digital em produção: ver o projeto"/>
+        <img src="assets/bento/rkf-bank-escuro.svg" width="100%" alt="RKF Bank · projeto de portfólio, banco digital em produção: ver o projeto"/>
       </picture></a>
     </td>
     <td width="33%" align="center" valign="top">
@@ -36,7 +36,7 @@
 <!-- Vitrine · GitHub: resumo de 30 segundos (bloco manual, fora dos marcadores AUTO) -->
 <p align="center">
   <b>Dev Java backend</b> · Spring Boot · Spring Data JPA/Hibernate · Spring Security · +4 anos na Zup Innovation (grupo Itaú)<br/>
-  🏦 <b>Em produção:</b> <a href="https://rkfbank.vercel.app">RKF Bank</a>: Java 25 + Spring Boot 4.1 · JWT · <code>Idempotency-Key</code> · lock otimista (<code>@Version</code>) · Flyway · CI com CodeQL<br/>
+  🏦 <b>Em produção:</b> <a href="https://rkfbank.vercel.app">RKF Bank</a> · projeto de portfólio: Java 25 + Spring Boot 4.1 · JWT · <code>Idempotency-Key</code> · lock otimista (<code>@Version</code>) · Flyway · CI com CodeQL<br/>
   <a href="https://github.com/k3vinrich4rd/rkf_bank"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fk3vinrich4rd%2Fk3vinrich4rd%2Fmain%2Fprogresso.json&query=%24.rkf.testes&label=testes%20no%20RKF%20Bank&color=22C55E&style=flat-square&logo=junit5&logoColor=white" alt="Testes no RKF Bank"/></a>
   <a href="https://github.com/k3vinrich4rd/rkf_bank/actions/workflows/backend-ci.yml"><img src="https://github.com/k3vinrich4rd/rkf_bank/actions/workflows/backend-ci.yml/badge.svg?branch=develop" alt="CI do RKF Bank"/></a><br/>
   <a href="https://github.com/k3vinrich4rd/rkf_bank">📂 código</a> ·
@@ -44,12 +44,12 @@
   <a href="https://github.com/k3vinrich4rd/rkf_bank#-arquitetura">🧱 arquitetura</a> ·
   <a href="https://github.com/k3vinrich4rd/rkf_bank#-qualidade-e-testes">🧪 testes</a> ·
   <a href="diario/">📓 diário de estudos</a><br/>
-  ✂️ <b>Beta 100% no ar (25/11/2026):</b> <a href="https://barbearia-altas-horas.vercel.app">Barbearia Altas Horas</a>: a agenda online da barbearia do meu pai · Java 25 + Spring Boot 4.2 · Spring Modulith · PostgreSQL 18 · Next.js · pagamento 100% antecipado (Pix simulado no beta) · <code>EXCLUDE USING gist</code> contra horário duplicado · 588 testes no backend · Spec-Driven Development · <a href="https://github.com/k3vinrich4rd/barbearia-altas-horas">📂 código</a>
+  ✂️ <b>Beta 100% no ar (25/11/2026):</b> <a href="https://barbearia-altas-horas.vercel.app">Barbearia Altas Horas</a>: a agenda online da barbearia do meu pai · Java 25 + Spring Boot 4.2 · Spring Modulith · PostgreSQL 18 · Next.js · pagamento 100% antecipado (Pix simulado no beta) · <code>EXCLUDE USING gist</code> contra horário duplicado · 588 testes no backend · Spec-Driven Development · <a href="https://github.com/k3vinrich4rd/barbearia-altas-horas">📂 código</a> · <b>próximo (planejado):</b> levar para produção e disponibilizar na Play Store
 </p>
 
 <!-- Botões gerados por scripts/svgs.mjs. Cada um leva a uma seção. -->
 <a href="#-escolha-a-sua-trilha"><img src="assets/botoes/trilhas.svg" alt="🎮 Trilhas" height="46"/></a>
-<a href="#-rkf-bank--em-produção"><img src="assets/botoes/rkf-bank.svg" alt="🏦 RKF Bank" height="46"/></a>
+<a href="#-rkf-bank--em-produção"><img src="assets/botoes/rkf-bank.svg" alt="🏦 RKF Bank · projeto de portfólio" height="46"/></a>
 <a href="#️-projetos-em-destaque"><img src="assets/botoes/projetos.svg" alt="🗂️ Projetos" height="46"/></a>
 <a href="#-junior--pleno--onde-estou"><img src="assets/botoes/pleno.svg" alt="📈 Pleno" height="46"/></a>
 <a href="#️-tecnologias"><img src="assets/botoes/stack.svg" alt="🛠️ Stack" height="46"/></a>
@@ -73,7 +73,7 @@
 | | |
 |---|---|
 | <a href="#-escolha-a-sua-trilha">01 · 🎮 Escolha a sua trilha</a> | <a href="#-ao-vivo">10 · 📡 Ao vivo</a> |
-| <a href="#-rkf-bank--em-produção">02 · 🏦 RKF Bank — em produção</a> | <a href="#️-últimos-commits-e-metas">11 · ⏱️ Últimos commits e metas</a> |
+| <a href="#-rkf-bank--em-produção">02 · 🏦 RKF Bank · projeto de portfólio — em produção</a> | <a href="#️-últimos-commits-e-metas">11 · ⏱️ Últimos commits e metas</a> |
 | <a href="#️-barbearia-altas-horas--beta-no-ar">03 · ✂️ Barbearia Altas Horas — beta no ar</a> | <a href="#-pdi--roadmap-2026">12 · 🎯 PDI — Roadmap 2026</a> |
 | <a href="#-atuação-profissional">04 · 💼 Atuação profissional</a> | <a href="#-cursos-em-andamento">13 · 📚 Cursos em andamento</a> |
 | <a href="#️-projetos-em-destaque">05 · 🗂️ Projetos em destaque</a> | <a href="#-formação-e-certificações">14 · 🎓 Formação e certificações</a> |
@@ -100,7 +100,7 @@
 | Pergunta | Resposta rápida |
 |---|---|
 | Quem é? | Dev **Java backend Junior** na **Zup Innovation**, prestando serviço para o **Itaú**, em transição para **Pleno** (**13/15** competências já praticadas) |
-| Em produção? | **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: banco digital com Spring Boot 4, Java 25, MySQL, **360 testes**, CI e logs rastreáveis · ✅ **no ar**: [abrir o banco](https://rkfbank.vercel.app) |
+| Em produção? | **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)** · projeto de portfólio: banco digital com Spring Boot 4, Java 25, MySQL, **360 testes**, CI e logs rastreáveis · ✅ **no ar**: [abrir o banco](https://rkfbank.vercel.app) |
 | Construindo agora? | **[Barbearia Altas Horas](https://github.com/k3vinrich4rd/barbearia-altas-horas)**: a agenda online da barbearia do meu pai, com pagamento antecipado (Pix simulado no beta) e horário duplicado barrado no próprio PostgreSQL · ✅ **beta 100% no ar desde 25/11/2026**: fatias 1 a 14 e 8B, 588 testes no backend, 206 no front e 27 E2E, feita com Spec-Driven Development e IA · [abrir a agenda](https://barbearia-altas-horas.vercel.app) · [ver o projeto](#️-barbearia-altas-horas--beta-no-ar) |
 | Stack principal? | Java · Spring Boot · JPA/Hibernate · MySQL/PostgreSQL · MongoDB · JUnit/Mockito · Docker · GitHub Actions |
 | O que está estudando? | inglês → mensageria |
@@ -117,7 +117,7 @@
 <br/>
 
 - Régua de competências com evidência por projeto: [📈 Junior → Pleno](#-junior--pleno--onde-estou)
-- Regras de negócio e qualidade do RKF Bank: [🏦 Projeto atual](#-rkf-bank--em-produção)
+- Regras de negócio e qualidade do RKF Bank · projeto de portfólio: [🏦 Projeto atual](#-rkf-bank--em-produção)
 - Perguntas técnicas respondidas: [💬 Pergunte ao Kevin](#-pergunte-ao-kevin)
 
 </details>
@@ -134,11 +134,11 @@ Sugestão de leitura, do mais simples ao mais completo:
 2. 👥 **[CRUD de Clientes](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes)**: API em camadas com validação e paginação.
 3. 🌐 **[Workshop JPA](https://github.com/k3vinrich4rd/workshop-springboot4-jpa)**: todos os relacionamentos JPA e chave composta.
 4. 📚 **[BookMarket](https://github.com/k3vinrich4rd/BookMarket)**: Kotlin, Spring Security e eventos de domínio.
-5. 🏦 **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)**: transações, lock otimista, Flyway, Spring Security + JWT, logs com `X-Request-Id`, testes `@DataJpaTest` e CI com CodeQL.
+5. 🏦 **[RKF Bank](https://github.com/k3vinrich4rd/rkf_bank)** · projeto de portfólio: transações, lock otimista, Flyway, Spring Security + JWT, logs com `X-Request-Id`, testes `@DataJpaTest` e CI com CodeQL.
 6. ✂️ **[Barbearia Altas Horas](https://github.com/k3vinrich4rd/barbearia-altas-horas)**: o passo seguinte. Monólito modular (Spring Modulith), concorrência resolvida no PostgreSQL, Resource Server com refresh rotativo, RAG da documentação com Spring AI, e cada fatia especificada antes do código.
 
 <details>
-<summary>👉 Onde olhar primeiro no RKF Bank</summary>
+<summary>👉 Onde olhar primeiro no RKF Bank · projeto de portfólio</summary>
 <br/>
 
 | Arquivo | Por que é interessante |
@@ -177,7 +177,9 @@ Dica: **um projeto completo vale mais que vinte exercícios soltos**. Em 2022 cr
 
 ## 🏦 RKF Bank — em produção
 
-<a href="https://rkfbank.vercel.app"><img src="assets/rkf-bank-banner.png" width="100%" alt="RKF Bank: banco digital full stack em produção. Confiança, tecnologia, liberdade."/></a>
+<sub>Projeto de portfólio · em produção desde 03/11/2026</sub>
+
+<a href="https://rkfbank.vercel.app"><img src="assets/rkf-bank-banner.png" width="100%" alt="RKF Bank · projeto de portfólio: banco digital full stack em produção. Confiança, tecnologia, liberdade."/></a>
 
 <div align="center">
 
@@ -770,7 +772,7 @@ Cada entrega começa por uma **especificação** (Spec-Driven Development), cada
 
 </details>
 
-**O que já roda** (beta 100% no ar desde 25/11/2026, fatias 1 a 14 e 8B: [abrir a agenda](https://barbearia-altas-horas.vercel.app) · [como testar](https://github.com/k3vinrich4rd/barbearia-altas-horas/blob/main/docs/guia-testes.md) — no beta o pagamento (Pix) é simulado)
+**O que já roda** (beta 100% no ar desde 25/11/2026, fatias 1 a 14 e 8B: [abrir a agenda](https://barbearia-altas-horas.vercel.app) · [como testar](https://github.com/k3vinrich4rd/barbearia-altas-horas/blob/main/docs/guia-testes.md) — no beta o pagamento (Pix) é simulado). **Próximo passo (planejado, ainda não feito):** levar a agenda de beta para produção e disponibilizar na Play Store.
 
 | | |
 |---|---|
@@ -838,6 +840,7 @@ Um deploy só e 8 módulos com fronteiras verificadas por teste. Dentro deles, p
 - [x] Fatia 8 e 8B · deploy: site na Vercel, API no Render e banco na Aiven, só com CI verde (beta 100% no ar desde 25/11/2026)
 - [x] Fatias 10 a 14 · convite de barbeiro, alcance por nível, site mais fluido, notificação Web Push e experiência premium
 - [ ] Fatia 9 · assistente de dúvidas (planejada, pós-beta)
+- [ ] Produção e publicação na Play Store (planejado — ainda não feito)
 
 </details>
 
@@ -1784,7 +1787,7 @@ quadrantChart
 | Inglês técnico | 🔄 | em andamento |
 | Mensageria e microsserviços | ⏳ | Outbox do comprovante pronto na branch `refactor/monolito-modular` (em revisão); falta o broker |
 
-<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-11-24</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-11-26</sub>
 <!-- AUTO:regua:END -->
 
 </details>
@@ -1794,9 +1797,9 @@ quadrantChart
 <br/>
 
 <!-- AUTO:estudos:START -->
-**38** assuntos praticados em projeto · **78** em andamento · **1** planejados
+**53** assuntos praticados em projeto · **66** em andamento · **0** planejados
 
-📚 **153** notas de estudo no segundo cérebro · **61** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
+📚 **155** notas de estudo no segundo cérebro · **61** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
 
 ```mermaid
 mindmap
@@ -1807,16 +1810,18 @@ mindmap
       🔄 BOLA e IDOR
       🔄 CEP com cache e degradação
       🔄 CORS
+      ✅ CSP com nonce
       ✅ Cache e cache-aside
-      🔄 Cookie HttpOnly
+      ✅ Cookie HttpOnly
       ✅ Fallback e degradação graciosa
-      🔄 Lock otimista e transações
+      ✅ Lock otimista e transações
       ✅ Máquina de estados
       🔄 Next.js
       🔄 Pix
       ✅ Rate limiting
-      🔄 Spring Modulith
+      ✅ Spring Modulith
       🔄 Token de visitante
+      ✅ Web Push e VAPID
       ✅ Webhook e HMAC
       🔄 Idempotência e Idempotency-Key
     Arquitetura
@@ -1824,7 +1829,7 @@ mindmap
       🔄 Arquitetura hexagonal
       🔄 Arquitetura orientada a eventos
       🔄 Arquiteturas de software
-      🔄 BFF (Backend for Frontend)
+      ✅ BFF (Backend for Frontend)
       🔄 CQRS
       🔄 Clean Architecture
       🔄 Event Sourcing
@@ -1832,7 +1837,7 @@ mindmap
       ✅ LGPD
       ✅ Logs e observabilidade
       🔄 MVC
-      ⏳ Mensageria e Outbox
+      ✅ Mensageria e Outbox
       🔄 Microsserviços
       🔄 Monólito modular
       🔄 Monólito
@@ -1850,7 +1855,7 @@ mindmap
       🔄 Vercel
     dados
       ✅ Constraint de exclusão no PostgreSQL
-      🔄 Flyway
+      ✅ Flyway
       🔄 PostgreSQL
     Dados
       ✅ H2 x MySQL
@@ -1867,19 +1872,19 @@ mindmap
     DevOps
       ✅ Dependências e CVEs
     IA
-      🔄 Agentes de IA
+      ✅ Agentes de IA
       🔄 Agentes e IA aplicada
       🔄 Design Doc de arquitetura para IA
-      🔄 Embeddings e banco vetorial
+      ✅ Embeddings e banco vetorial
       🔄 Ferramentas de dev com IA
       🔄 Fine-tuning
       🔄 Guardrails
       🔄 LLM
       🔄 MCP
       🔄 Prompt e engenharia de contexto
-      🔄 RAG
-      🔄 Skills
-      🔄 Spec-Driven Development
+      ✅ RAG
+      ✅ Skills
+      ✅ Spec-Driven Development
       🔄 Spring AI
       🔄 Structured output
       🔄 Testes de aplicações com IA (evals)
@@ -1915,7 +1920,7 @@ mindmap
       🔄 Paginação e countQuery
       🔄 Perfis do Spring e homologação
       🔄 Projeção de dados
-      🔄 RFC 9457
+      ✅ RFC 9457
       🔄 Spring Boot e camadas
       🔄 Spring Data JPA e relacionamentos
       🔄 Spring Framework - IoC DI e AOP
@@ -1931,7 +1936,7 @@ mindmap
       ✅ Testes manuais de API - Postman e Insomnia
     testes
       🔄 JUnit e Mockito
-      🔄 Playwright
+      ✅ Playwright
       🔄 Vitest
 ```
 
@@ -1942,15 +1947,12 @@ mindmap
 | 🔄 Arquitetura hexagonal | Arquitetura | <sub>3 a fazer</sub> |
 | 🔄 Arquitetura orientada a eventos | Arquitetura | <sub>2 a fazer</sub> |
 | 🔄 Arquiteturas de software | Arquitetura | <sub>3 a fazer</sub> |
-| 🔄 BFF (Backend for Frontend) | Arquitetura | <sub>1 a fazer</sub> |
 | 🔄 BOLA e IDOR | arquitetura | — |
 | 🔄 CEP com cache e degradação | arquitetura | — |
 | 🔄 CORS | arquitetura | — |
 | 🔄 CQRS | Arquitetura | <sub>2 a fazer</sub> |
 | 🔄 Clean Architecture | Arquitetura | <sub>2 a fazer</sub> |
-| 🔄 Cookie HttpOnly | arquitetura | — |
 | 🔄 Event Sourcing | Arquitetura | <sub>2 a fazer</sub> |
-| 🔄 Lock otimista e transações | arquitetura | — |
 | 🔄 MVC | Arquitetura | <sub>2 a fazer</sub> |
 | 🔄 Microsserviços | Arquitetura | <sub>2 a fazer</sub> |
 | 🔄 Monólito modular | Arquitetura | <sub>2 a fazer</sub> |
@@ -1961,14 +1963,12 @@ mindmap
 | 🔄 Pub-Sub e DLQ | Arquitetura | <sub>2 a fazer</sub> |
 | 🔄 SOA | Arquitetura | <sub>1 a fazer</sub> |
 | 🔄 Serverless | Arquitetura | <sub>2 a fazer</sub> |
-| 🔄 Spring Modulith | arquitetura | — |
 | 🔄 Síncrono e assíncrono | Arquitetura | <sub>3 a fazer</sub> |
 | 🔄 Token de visitante | arquitetura | — |
 | 🔄 AWS | Cloud | <sub>10 a fazer</sub> |
 | 🔄 Aiven | cloud | — |
 | 🔄 Render | cloud | — |
 | 🔄 Vercel | cloud | — |
-| 🔄 Flyway | dados | — |
 | 🔄 PostgreSQL | dados | — |
 | 🔄 CodeQL | devops | — |
 | 🔄 Docker e Compose | devops | — |
@@ -1977,19 +1977,14 @@ mindmap
 | 🔄 OWASP | devops | — |
 | 🔄 Redocly | devops | — |
 | 🔄 gitleaks | devops | — |
-| 🔄 Agentes de IA | IA | — |
 | 🔄 Agentes e IA aplicada | IA | `███░░░░░░░` 1/4 |
 | 🔄 Design Doc de arquitetura para IA | IA | <sub>1 a fazer</sub> |
-| 🔄 Embeddings e banco vetorial | IA | — |
 | 🔄 Ferramentas de dev com IA | IA | — |
 | 🔄 Fine-tuning | IA | — |
 | 🔄 Guardrails | IA | — |
 | 🔄 LLM | IA | — |
 | 🔄 MCP | IA | — |
 | 🔄 Prompt e engenharia de contexto | IA | — |
-| 🔄 RAG | IA | — |
-| 🔄 Skills | IA | — |
-| 🔄 Spec-Driven Development | IA | `███░░░░░░░` 1/4 |
 | 🔄 Spring AI | IA | <sub>5 a fazer</sub> |
 | 🔄 Structured output | IA | — |
 | 🔄 Testes de aplicações com IA (evals) | IA | — |
@@ -2001,7 +1996,6 @@ mindmap
 | 🔄 Paginação e countQuery | spring | — |
 | 🔄 Perfis do Spring e homologação | spring | — |
 | 🔄 Projeção de dados | spring | — |
-| 🔄 RFC 9457 | spring | — |
 | 🔄 Spring Boot e camadas | spring | — |
 | 🔄 Spring Cloud e microsserviços | Spring | — |
 | 🔄 Spring Data JPA e relacionamentos | spring | — |
@@ -2009,26 +2003,25 @@ mindmap
 | 🔄 Spring Security e JWT | spring | — |
 | 🔄 Tratamento de erros REST | spring | — |
 | 🔄 JUnit e Mockito | testes | — |
-| 🔄 Playwright | testes | — |
 | 🔄 Vitest | testes | — |
 | 🔄 API REST | spring | — |
 | 🔄 DTO | spring | — |
 | 🔄 Idempotência e Idempotency-Key | arquitetura | — |
 | 🔄 ORM e modelo de domínio | spring | — |
-| ⏳ Mensageria e Outbox | Arquitetura | <sub>6 a fazer</sub> |
 
-<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-11-24.</sub>
+<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-11-26.</sub>
 <!-- AUTO:estudos:END -->
 
 </details>
 
-### 🧠 Segundo cérebro: estudo contínuo, prática no RKF Bank
+<a name="-segundo-cérebro-estudo-contínuo-prática-no-rkf-bank"></a>
+### 🧠 Segundo cérebro: estudo contínuo, prática no RKF Bank e na Barbearia Altas Horas
 
-> De dia, entrego como **Java backend na Zup**, prestando serviço para o **Itaú**. Fora do expediente, sigo **duas trilhas de estudo** e transformo cada assunto em uma nota no meu Obsidian, com diagrama, exemplo **com × sem** usando o **RKF Bank** e como testar. Depois levo o que aprendi para o projeto. Este painel se atualiza sozinho a cada commit.
+> De dia, entrego como **Java backend na Zup**, prestando serviço para o **Itaú**. Fora do expediente, sigo **duas trilhas de estudo** e transformo cada assunto em uma nota no meu Obsidian, com diagrama, exemplo **com × sem** usando o **RKF Bank** (projeto de portfólio) e a **Barbearia Altas Horas**, e como testar. Depois levo o que aprendi para o projeto. Este painel se atualiza sozinho a cada commit.
 
 <!-- AUTO:cerebro:START -->
 <div align="center">
-  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 23 dias com registro, 153 notas, 3 trilhas e 38 assuntos praticados; progresso de cada trilha e de cada módulo"/>
+  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 22 dias com registro, 155 notas, 3 trilhas e 53 assuntos praticados; progresso de cada trilha e de cada módulo"/>
 </div>
 
 <details>
@@ -2036,17 +2029,17 @@ mindmap
 <br/>
 
 <table align="center"><tr>
-<td align="center">🗓️<br/><b>23</b> dias com registro<br/><sub>nos últimos 30</sub></td>
-<td align="center">📚<br/><b>153</b> notas de estudo<br/><sub>61 com exemplo com × sem</sub></td>
+<td align="center">🗓️<br/><b>22</b> dias com registro<br/><sub>nos últimos 30</sub></td>
+<td align="center">📚<br/><b>155</b> notas de estudo<br/><sub>61 com exemplo com × sem</sub></td>
 <td align="center">🧭<br/><b>3</b> trilhas<br/><sub>18 módulos</sub></td>
-<td align="center">✅<br/><b>38</b> assuntos<br/><sub>praticados em projeto</sub></td>
+<td align="center">✅<br/><b>53</b> assuntos<br/><sub>praticados em projeto</sub></td>
 </tr></table>
 
-| Trilha | Praticado no RKF Bank | ✅ | 🔄 | 📅 | 📘 |
+| Trilha | Praticado no RKF Bank (portfólio) e na Barbearia | ✅ | 🔄 | 📅 | 📘 |
 |---|---|:-:|:-:|:-:|:-:|
-| **☕🌱 Java & Spring** | 🟩🟩🟩🟩⬜<br/>**49/60** | 49 | 8 | 1 | 2 |
-| **🤖 Inteligência Artificial** | 🟩🟩⬜⬜⬜<br/>**5/15** | 5 | 0 | 1 | 9 |
-| **Trilha 3 - Stack dos projetos** | ⬜⬜⬜⬜⬜<br/>**0/34** | 0 | 0 | 0 | 34 |
+| **☕🌱 Java & Spring** | 🟩🟩🟩🟩⬜<br/>**53/62** | 53 | 7 | 0 | 2 |
+| **🤖 Inteligência Artificial** | 🟩🟩🟩⬜⬜<br/>**8/15** | 8 | 0 | 1 | 6 |
+| **Trilha 3 - Stack dos projetos** | 🟩⬜⬜⬜⬜<br/>**10/36** | 10 | 0 | 0 | 26 |
 
 </details>
 
@@ -2061,7 +2054,7 @@ mindmap
 | ③ Banco de dados & sincronização | 🟩🟩🟩🟩⬜<br/>**9/11** | ✅ SQL e MySQL · ✅ Spring Data JPA e relacionamentos · ✅ Carregamento EAGER e LAZY · ✅ N+1 consultas · 🔄 JPQL e JOIN FETCH · 🔄 Paginação e countQuery · ✅ H2 x MySQL · ✅ Flyway · ✅ Lock otimista e transações · ✅ Constraint de exclusão no PostgreSQL · ✅ MongoDB |
 | ④ Validação e tratamento de erros | 🟩🟩🟩🟩🟩<br/>**3/3** | ✅ Bean Validation · ✅ Tratamento de erros REST · ✅ Swagger e OpenAPI |
 | ⑤ Testes (manuais e automatizados) | 🟩🟩🟩🟩🟩<br/>**6/6** | ✅ TDD e estratégia de testes · ✅ JUnit e Mockito · ✅ Spring Boot Test · ✅ DataJpaTest · ✅ Testcontainers · ✅ Testes manuais de API - Postman e Insomnia |
-| ⑥ Segurança e infraestrutura | 🟩🟩🟩⬜⬜<br/>**14/23** | ✅ Spring Security e JWT · 🔄 OAuth2 e OIDC · ✅ LGPD · 📅 Mensageria e Outbox · 📘 Pub-Sub e DLQ · 🔄 Arquiteturas de software · 🔄 Síncrono e assíncrono · ✅ Cache e cache-aside · ✅ Fallback e degradação graciosa · ✅ Rate limiting · ✅ Jobs agendados e ShedLock · ✅ Webhook e HMAC · 🔄 Anonimização e k-anonimato · ✅ Integração com APIs externas · ✅ Logs e observabilidade · ✅ Spring Boot Actuator · 🔄 Perfis do Spring e homologação · ✅ Docker e Compose · ✅ GitHub Actions · ✅ Git Flow e commits semânticos · ✅ Dependências e CVEs · 📘 Spring Cloud e microsserviços · 🔄 AWS |
+| ⑥ Segurança e infraestrutura | 🟩🟩🟩🟩⬜<br/>**18/25** | ✅ Spring Security e JWT · 🔄 OAuth2 e OIDC · ✅ LGPD · ✅ Mensageria e Outbox · 📘 Pub-Sub e DLQ · 🔄 Arquiteturas de software · 🔄 Síncrono e assíncrono · ✅ Cache e cache-aside · ✅ Fallback e degradação graciosa · ✅ Rate limiting · ✅ Jobs agendados e ShedLock · ✅ Webhook e HMAC · ✅ Web Push e VAPID · ✅ CSP com nonce · ✅ Anonimização e k-anonimato · ✅ Integração com APIs externas · ✅ Logs e observabilidade · ✅ Spring Boot Actuator · 🔄 Perfis do Spring e homologação · ✅ Docker e Compose · ✅ GitHub Actions · ✅ Git Flow e commits semânticos · ✅ Dependências e CVEs · 📘 Spring Cloud e microsserviços · 🔄 AWS |
 
 </details>
 
@@ -2072,8 +2065,8 @@ mindmap
 | Módulo | Praticado | Assuntos |
 |---|---|---|
 | ① Fundamentos | 🟩🟩🟩⬜⬜<br/>**1/2** | 📘 LLM · ✅ Prompt e engenharia de contexto |
-| ② Conhecimento: RAG | ⬜⬜⬜⬜⬜<br/>**0/3** | 📘 Embeddings e banco vetorial · 📘 RAG · 📘 Fine-tuning |
-| ③ Ação: ferramentas e agentes | 🟩⬜⬜⬜⬜<br/>**1/4** | 📘 Tool Calling (Function Calling) · 📘 MCP · ✅ Skills · 📘 Agentes de IA |
+| ② Conhecimento: RAG | 🟩🟩🟩⬜⬜<br/>**2/3** | ✅ Embeddings e banco vetorial · ✅ RAG · 📘 Fine-tuning |
+| ③ Ação: ferramentas e agentes | 🟩🟩🟩⬜⬜<br/>**2/4** | 📘 Tool Calling (Function Calling) · 📘 MCP · ✅ Skills · ✅ Agentes de IA |
 | ④ Backend Java | ⬜⬜⬜⬜⬜<br/>**0/1** | 📅 Spring AI |
 | ⑤ Engenharia de software com IA | 🟩🟩⬜⬜⬜<br/>**1/3** | ✅ Spec-Driven Development · 📘 Design Doc de arquitetura para IA · 📘 Testes de aplicações com IA (evals) |
 | ⑥ Ferramentas e automação ("vibe coding" com método) | 🟩🟩🟩🟩🟩<br/>**2/2** | ✅ Ferramentas de dev com IA · ✅ Agentes e IA aplicada |
@@ -2086,18 +2079,18 @@ mindmap
 
 | Módulo | Praticado | Assuntos |
 |---|---|---|
-| ① Como o time trabalha | ⬜⬜⬜⬜⬜<br/>**0/3** | 📘 Git Flow e commits semânticos · 📘 Spec-Driven Development · 📘 ADR |
-| ② Forma do sistema | ⬜⬜⬜⬜⬜<br/>**0/3** | 📘 Monólito modular · 📘 Spring Modulith · 📘 Arquitetura hexagonal |
-| ③ Front, sessão e contrato | ⬜⬜⬜⬜⬜<br/>**0/8** | 📘 Next.js · 📘 BFF (Backend for Frontend) · 📘 Cookie HttpOnly · 📘 Token de visitante · 📘 CORS · 📘 Swagger e OpenAPI · 📘 Redocly · 📘 RFC 9457 |
-| ④ Dados e testes | ⬜⬜⬜⬜⬜<br/>**0/7** | 📘 Flyway · 📘 PostgreSQL · 📘 SQL e MySQL · 📘 Testcontainers · 📘 JUnit e Mockito · 📘 Vitest · 📘 Playwright |
+| ① Como o time trabalha | 🟩🟩⬜⬜⬜<br/>**1/3** | 📘 Git Flow e commits semânticos · ✅ Spec-Driven Development · 📘 ADR |
+| ② Forma do sistema | 🟩🟩⬜⬜⬜<br/>**1/3** | 📘 Monólito modular · ✅ Spring Modulith · 📘 Arquitetura hexagonal |
+| ③ Front, sessão e contrato | 🟩🟩🟩⬜⬜<br/>**5/10** | 📘 Next.js · ✅ BFF (Backend for Frontend) · ✅ Cookie HttpOnly · 📘 Token de visitante · 📘 CORS · 📘 Swagger e OpenAPI · 📘 Redocly · ✅ RFC 9457 · ✅ Web Push e VAPID · ✅ CSP com nonce |
+| ④ Dados e testes | 🟩🟩⬜⬜⬜<br/>**3/7** | ✅ Flyway · 📘 PostgreSQL · 📘 SQL e MySQL · ✅ Testcontainers · 📘 JUnit e Mockito · 📘 Vitest · ✅ Playwright |
 | ⑤ Nuvem (o trio) | ⬜⬜⬜⬜⬜<br/>**0/3** | 📘 Aiven · 📘 Render · 📘 Vercel |
 | ⑥ Risco e pagamento | ⬜⬜⬜⬜⬜<br/>**0/10** | 📘 LGPD · 📘 BOLA e IDOR · 📘 OWASP · 📘 Idempotência e Idempotency-Key · 📘 Webhook e HMAC · 📘 Pix · 📘 CodeQL · 📘 gitleaks · 📘 CEP com cache e degradação · 📘 Java moderno (8 a 25) |
 
 </details>
 
-📝 **Estudado por último:** `Arquitetura` ADR · `Cloud` Aiven · `Arquitetura` BOLA e IDOR · `Arquitetura` CEP com cache e degradação · `DevOps` CodeQL · `Arquitetura` Cookie HttpOnly · `Arquitetura` CORS · `DevOps` gitleaks
+📝 **Estudado por último:** `Arquitetura` CSP com nonce · `Arquitetura` Web Push e VAPID · `Arquitetura` ADR · `Cloud` Aiven · `Arquitetura` BOLA e IDOR · `Arquitetura` CEP com cache e degradação · `DevOps` CodeQL · `Arquitetura` Cookie HttpOnly
 
-<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-11-24</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-11-26</sub>
 <!-- AUTO:cerebro:END -->
 
 <details>
@@ -2409,7 +2402,7 @@ public void sacar(BigDecimal valor) {
 
 <!-- AUTO:status:START -->
 <img src="https://img.shields.io/static/v1?label=R%C3%A9gua%20Pleno&message=13%2F15&color=EC7000&style=flat-square"/>
-<img src="https://img.shields.io/static/v1?label=Testes%20RKF%20Bank&message=360%20%E2%9C%94&color=3fb950&style=flat-square&logo=junit5&logoColor=white"/>
+<img src="https://img.shields.io/static/v1?label=Testes%20RKF%20Bank%20(portf%C3%B3lio)&message=360%20%E2%9C%94&color=3fb950&style=flat-square&logo=junit5&logoColor=white"/>
 <img src="https://img.shields.io/static/v1?label=MVP&message=13%2F13&color=003D74&style=flat-square"/>
 <img src="https://img.shields.io/static/v1?label=Foco%20agora&message=ingl%C3%AAs&color=6A1B9A&style=flat-square"/>
 <!-- AUTO:status:END -->
@@ -2425,9 +2418,9 @@ public void sacar(BigDecimal valor) {
 <!-- AUTO:agora:END -->
 
 <!-- AUTO:dica:START -->
-> 💡 **Dica do dia: `ResponseEntity.created(uri)`**  
-> No POST, devolve 201 com o header Location apontando para o recurso novo.  
-> <sub>Muda todo dia sozinha · 11/20</sub>
+> 💡 **Dica do dia: `MDC + X-Request-Id`**  
+> Coloque o id da requisição no MDC e ele aparece em todas as linhas de log daquela chamada.  
+> <sub>Muda todo dia sozinha · 12/20</sub>
 <!-- AUTO:dica:END -->
 
 <!-- A cobrinha é gerada pelo workflow .github/workflows/snake.yml deste repositório (branch "output"). -->
@@ -2581,7 +2574,9 @@ flowchart LR
 
 ### ✅ Entregue no RKF Bank (produto concluído)
 
-> O RKF Bank está **completo e em produção** desde **03/11/2026**. Não há fila de novas funcionalidades no momento. Abaixo, o que já existe de fato — fatos do próprio README e do repositório.
+<sub>RKF Bank · projeto de portfólio</sub>
+
+> O RKF Bank, projeto de portfólio, está **completo e em produção** desde **03/11/2026**. Não há fila de novas funcionalidades no momento. Abaixo, o que já existe de fato — fatos do próprio README e do repositório.
 
 | Entrega | O que é | Onde conferir |
 |---|---|---|
@@ -2596,7 +2591,7 @@ flowchart LR
 <sub>Produto fechado nessa entrega. Estudos rumo ao Pleno (inglês, mensageria como competência, Spring Professional) ficam no PDI abaixo — sem virar feature nova do RKF.</sub>
 
 <details open>
-<summary><b>📅 Cronograma: do MVP do RKF Bank ao Pleno</b></summary>
+<summary><b>📅 Cronograma: do MVP do RKF Bank (projeto de portfólio) ao Pleno</b></summary>
 <br/>
 
 <!-- AUTO:gantt:START -->
@@ -2636,7 +2631,7 @@ gantt
 - ✅ Trilhas curtas de teste: visitante em 13 passos, ADMIN em 25 e cliente em 36 (`BACKEND_E2E.md` reescrito), geradas de execução real (83/83; 119/119 no H2 e no MySQL) — 2026-10-26
 - ✅ Dependências do front (TypeScript 6, cn, radix-ui, CI) na develop (PR #69); só o PR #70 develop → main aberto — 2026-10-26
 
-**📜 Histórico do MVP do RKF Bank (concluído · em produção desde 03/11/2026)** `████████████` 13/13
+**📜 Histórico do MVP do RKF Bank · projeto de portfólio (concluído · em produção desde 03/11/2026)** `████████████` 13/13
 
 <b>Backend</b> `████████` 3/3
 
@@ -2671,7 +2666,7 @@ gantt
 
 **🧹 Débitos técnicos:** 9/18 resolvidos
 
-<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-11-24.</sub>
+<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-11-26.</sub>
 <!-- AUTO:checklist:END -->
 
 </details>
@@ -3088,26 +3083,26 @@ dono só usa o id, que o proxy já tem) e `@EntityGraph` nas listas que mostram 
 
 <!-- AUTO:flashcards:START -->
 <details>
-<summary><b>🃏 Java · Por que nunca usar double para dinheiro?</b></summary>
+<summary><b>🃏 Java · == ou equals para comparar dois BigDecimal?</b></summary>
 <br/>
 
-Porque double guarda em base 2 e 0.1 não tem representação exata: <code>0.1 + 0.2</code> dá <code>0.30000000000000004</code>. No RKF Bank o saldo é <code>BigDecimal</code> e a coluna é <code>DECIMAL(19,2)</code>.
+Nenhum dos dois: <code>==</code> compara endereço e <code>equals</code> compara a escala (<code>1.0</code> ≠ <code>1.00</code>). Para valor, use <code>compareTo(...) == 0</code>.
 
 </details>
 
 <details>
-<summary><b>🃏 Java · Diferença entre JDK, JRE e JVM?</b></summary>
+<summary><b>🃏 Java · Por que records são ótimos para DTO e péssimos para entidade JPA?</b></summary>
 <br/>
 
-A JVM executa bytecode; o JRE é JVM + bibliotecas para rodar; o JDK é JRE + ferramentas de desenvolvimento (<code>javac</code>). O mesmo <code>.jar</code> roda no Windows e no Linux do CI porque o bytecode é da JVM, não do sistema.
+Records são imutáveis e já trazem <code>equals</code>, <code>hashCode</code> e <code>toString</code>. O Hibernate precisa de construtor vazio e de alterar campos, o que record não permite. Cuidado: o <code>toString</code> automático pode vazar senha no log.
 
 </details>
 
 <details>
-<summary><b>🃏 Java · Java tem vazamento de memória?</b></summary>
+<summary><b>🃏 Java · O que é uma race condition?</b></summary>
 <br/>
 
-Tem: o GC só recolhe objetos inalcançáveis. Um <code>static Map</code> que nunca é limpo mantém tudo vivo até o <code>OutOfMemoryError</code>. A solução é cache com limite e expiração.
+Duas threads leem o mesmo valor e gravam por cima uma da outra. Em memória resolve com <code>AtomicInteger</code>/<code>synchronized</code>; no banco, com lock otimista (<code>@Version</code>), que no RKF Bank vira <code>409</code>.
 
 </details>
 
