@@ -1787,7 +1787,7 @@ quadrantChart
 | Inglês técnico | 🔄 | em andamento |
 | Mensageria e microsserviços | ⏳ | Outbox do comprovante pronto na branch `refactor/monolito-modular` (em revisão); falta o broker |
 
-<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-11-26</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · ⏳ planejado · gerado do meu Obsidian em 2026-11-27</sub>
 <!-- AUTO:regua:END -->
 
 </details>
@@ -1797,9 +1797,9 @@ quadrantChart
 <br/>
 
 <!-- AUTO:estudos:START -->
-**53** assuntos praticados em projeto · **66** em andamento · **0** planejados
+**53** assuntos praticados em projeto · **81** em andamento · **0** planejados
 
-📚 **155** notas de estudo no segundo cérebro · **61** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
+📚 **171** notas de estudo no segundo cérebro · **61** com exemplos "com × sem" (como fica usando e como ficaria sem) · sessões guiadas: **IA, Spring e LGPD** · **Java e seu universo**
 
 ```mermaid
 mindmap
@@ -1856,7 +1856,13 @@ mindmap
     dados
       ✅ Constraint de exclusão no PostgreSQL
       ✅ Flyway
+      🔄 GROUP BY, HAVING e agregações
+      🔄 JOINs · INNER, LEFT e RIGHT
       🔄 PostgreSQL
+      🔄 SELECT, WHERE e ORDER BY
+      🔄 Subconsultas
+      🔄 Transações no SQL
+      🔄 Índices
     Dados
       ✅ H2 x MySQL
       ✅ MongoDB
@@ -1903,6 +1909,32 @@ mindmap
       ✅ POO e SOLID
     java
       ✅ Value Object
+    spring
+      🔄 @Query e query methods
+      🔄 Bean Validation
+      🔄 Consultas nativas
+      🔄 Entidade e consulta orientada a objeto
+      🔄 JOIN e JOIN FETCH
+      🔄 JPQL e JOIN FETCH
+      ✅ Jobs agendados e ShedLock
+      🔄 OAuth2 e OIDC
+      🔄 Paginação com Pageable
+      🔄 Paginação e countQuery
+      🔄 Parâmetros nomeados
+      🔄 Perfis do Spring e homologação
+      🔄 Problema N+1
+      🔄 Projeção de dados
+      🔄 Projeções e DTO
+      ✅ RFC 9457
+      🔄 SQL x JPQL
+      🔄 Spring Boot e camadas
+      🔄 Spring Data JPA e relacionamentos
+      🔄 Spring Framework - IoC DI e AOP
+      🔄 Spring Security e JWT
+      🔄 Tratamento de erros REST
+      🔄 API REST
+      🔄 DTO
+      🔄 ORM e modelo de domínio
     Spring
       ✅ Anotações Java e Spring
       🔄 Carregamento EAGER e LAZY
@@ -1912,23 +1944,6 @@ mindmap
       ✅ Spring Boot Test
       🔄 Spring Cloud e microsserviços
       ✅ Swagger e OpenAPI
-    spring
-      🔄 Bean Validation
-      🔄 JPQL e JOIN FETCH
-      ✅ Jobs agendados e ShedLock
-      🔄 OAuth2 e OIDC
-      🔄 Paginação e countQuery
-      🔄 Perfis do Spring e homologação
-      🔄 Projeção de dados
-      ✅ RFC 9457
-      🔄 Spring Boot e camadas
-      🔄 Spring Data JPA e relacionamentos
-      🔄 Spring Framework - IoC DI e AOP
-      🔄 Spring Security e JWT
-      🔄 Tratamento de erros REST
-      🔄 API REST
-      🔄 DTO
-      🔄 ORM e modelo de domínio
     Testes
       ✅ DataJpaTest
       ✅ TDD e estratégia de testes
@@ -1969,7 +1984,13 @@ mindmap
 | 🔄 Aiven | cloud | — |
 | 🔄 Render | cloud | — |
 | 🔄 Vercel | cloud | — |
+| 🔄 GROUP BY, HAVING e agregações | dados | — |
+| 🔄 JOINs · INNER, LEFT e RIGHT | dados | — |
 | 🔄 PostgreSQL | dados | — |
+| 🔄 SELECT, WHERE e ORDER BY | dados | — |
+| 🔄 Subconsultas | dados | — |
+| 🔄 Transações no SQL | dados | — |
+| 🔄 Índices | dados | — |
 | 🔄 CodeQL | devops | — |
 | 🔄 Docker e Compose | devops | — |
 | 🔄 Git Flow e commits semânticos | devops | — |
@@ -1989,13 +2010,22 @@ mindmap
 | 🔄 Structured output | IA | — |
 | 🔄 Testes de aplicações com IA (evals) | IA | — |
 | 🔄 Tool Calling (Function Calling) | IA | — |
+| 🔄 @Query e query methods | spring | — |
 | 🔄 Bean Validation | spring | — |
 | 🔄 Carregamento EAGER e LAZY | Spring | <sub>2 a fazer</sub> |
+| 🔄 Consultas nativas | spring | — |
+| 🔄 Entidade e consulta orientada a objeto | spring | — |
+| 🔄 JOIN e JOIN FETCH | spring | — |
 | 🔄 JPQL e JOIN FETCH | spring | — |
 | 🔄 OAuth2 e OIDC | spring | — |
+| 🔄 Paginação com Pageable | spring | — |
 | 🔄 Paginação e countQuery | spring | — |
+| 🔄 Parâmetros nomeados | spring | — |
 | 🔄 Perfis do Spring e homologação | spring | — |
+| 🔄 Problema N+1 | spring | — |
 | 🔄 Projeção de dados | spring | — |
+| 🔄 Projeções e DTO | spring | — |
+| 🔄 SQL x JPQL | spring | — |
 | 🔄 Spring Boot e camadas | spring | — |
 | 🔄 Spring Cloud e microsserviços | Spring | — |
 | 🔄 Spring Data JPA e relacionamentos | spring | — |
@@ -2009,7 +2039,7 @@ mindmap
 | 🔄 Idempotência e Idempotency-Key | arquitetura | — |
 | 🔄 ORM e modelo de domínio | spring | — |
 
-<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-11-26.</sub>
+<sub>🤖 Lido das notas de estudo do meu Obsidian em 2026-11-27.</sub>
 <!-- AUTO:estudos:END -->
 
 </details>
@@ -2021,7 +2051,7 @@ mindmap
 
 <!-- AUTO:cerebro:START -->
 <div align="center">
-  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 22 dias com registro, 155 notas, 3 trilhas e 53 assuntos praticados; progresso de cada trilha e de cada módulo"/>
+  <img src="assets/cerebro.svg" width="100%" alt="Painel do segundo cérebro: 23 dias com registro, 171 notas, 3 trilhas e 53 assuntos praticados; progresso de cada trilha e de cada módulo"/>
 </div>
 
 <details>
@@ -2029,8 +2059,8 @@ mindmap
 <br/>
 
 <table align="center"><tr>
-<td align="center">🗓️<br/><b>22</b> dias com registro<br/><sub>nos últimos 30</sub></td>
-<td align="center">📚<br/><b>155</b> notas de estudo<br/><sub>61 com exemplo com × sem</sub></td>
+<td align="center">🗓️<br/><b>23</b> dias com registro<br/><sub>nos últimos 30</sub></td>
+<td align="center">📚<br/><b>171</b> notas de estudo<br/><sub>61 com exemplo com × sem</sub></td>
 <td align="center">🧭<br/><b>3</b> trilhas<br/><sub>18 módulos</sub></td>
 <td align="center">✅<br/><b>53</b> assuntos<br/><sub>praticados em projeto</sub></td>
 </tr></table>
@@ -2088,9 +2118,9 @@ mindmap
 
 </details>
 
-📝 **Estudado por último:** `Arquitetura` CSP com nonce · `Arquitetura` Web Push e VAPID · `Arquitetura` ADR · `Cloud` Aiven · `Arquitetura` BOLA e IDOR · `Arquitetura` CEP com cache e degradação · `DevOps` CodeQL · `Arquitetura` Cookie HttpOnly
+📝 **Estudado por último:** `Spring` @Query e query methods · `Spring` Consultas nativas · `Spring` Entidade e consulta orientada a objeto · `Dados` GROUP BY, HAVING e agregações · `Dados` Índices · `Spring` JOIN e JOIN FETCH · `Dados` JOINs · INNER, LEFT e RIGHT · `Spring` Paginação com Pageable
 
-<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-11-26</sub>
+<sub>✅ praticado em projeto · 🔄 em andamento · 📅 planejado · 📘 estudado na teoria (nota completa, ainda sem projeto) · 🤖 gerado do meu Obsidian em 2026-11-27</sub>
 <!-- AUTO:cerebro:END -->
 
 <details>
@@ -2437,16 +2467,16 @@ public void sacar(BigDecimal valor) {
 <!-- AUTO:atividade:START -->
 | | Repositório | Commit | Quando |
 |:-:|---|---|---|
-| 🔧 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`a8b38d2`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/a8b38d2c893d9223e87368c66bdef91f5d3840d8) chore: atualiza branch com a develop | há 53 min |
-| 🐛 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`3a8c07d`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/3a8c07d100d833fdc9f3b3514df3e479c7f2a71c) fix(a11y): contém o zoom de 200% no agendar e no rodapé | há 57 min |
+| ✨ | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`51c250b`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/51c250bf3ac430ffe72bf4081d93b7b1643557b4) feat(home): com sessão, o cartão 1 de "Como marcar" leva a "Meus agendam | há 2 h |
+| 📝 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`bf23257`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/bf23257c7a7ab40de74c210a6057746aadb2dbc2) docs(prints): refaz os prints da home do F2 sobre a develop com o F4 e p | há 3 h |
 | 📝 | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`664c4f0`](https://github.com/k3vinrich4rd/cpf-utils/commit/664c4f02c74492d8e520af9514600e4e2f7bee4c) docs(readme): adiciona Por que existe e O que aprendi | há 18 dias |
 | 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`8510d19`](https://github.com/k3vinrich4rd/rkf_bank/commit/8510d19697631c6fda2f728aaa4803462ef4a1c5) docs(readme): bloco de revisão técnica em 2 minutos no topo | há 21 dias |
-| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`4558293`](https://github.com/k3vinrich4rd/rkf_bank/commit/4558293c34c59e797d417b723ac8877ffa1aacd2) docs(deploy): checagem diária de integridade da produção | há 23 dias |
+| 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`4558293`](https://github.com/k3vinrich4rd/rkf_bank/commit/4558293c34c59e797d417b723ac8877ffa1aacd2) docs(deploy): checagem diária de integridade da produção | há 24 dias |
 | ♻️ | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`f430211`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/f430211de74e8756ebb6520b13b52ea0bae60578) refactor: renomeia OrdemItem para OrderItem | 28/10/2026 |
 | 📝 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`0849493`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/0849493f006f8569a3c9a93e9578c3ba795d6921) docs: adiciona README com modelo de dominio, endpoints e exemplos reais | 15/10/2026 |
 | • | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`68de4a9`](https://github.com/k3vinrich4rd/cpf-utils/commit/68de4a91b903988d82c6cddc349121e0c9b9093d) Update README.md | 30/06/2025 |
 
-<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 27/11 às 05:41</sub>
+<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 27/11 às 11:41</sub>
 <!-- AUTO:atividade:END -->
 
 </details>
@@ -2666,7 +2696,7 @@ gantt
 
 **🧹 Débitos técnicos:** 9/18 resolvidos
 
-<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-11-26.</sub>
+<sub>🤖 Sincronizado com o checklist do meu Obsidian em 2026-11-27.</sub>
 <!-- AUTO:checklist:END -->
 
 </details>
@@ -2767,7 +2797,7 @@ gantt
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/progresso-61%25-EC7000?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/progresso-63%25-EC7000?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/cap%C3%ADtulos%20conclu%C3%ADdos-3%20de%206-3fb950?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/desafios%20entregues-3%20de%205-58a6ff?style=for-the-badge"/>
 
@@ -2775,7 +2805,7 @@ gantt
 
 ```mermaid
 flowchart LR
-    C1["① Componentes e<br/>injeção de<br/>dependência<br/>✅ 14/14"] --> C2["② Modelo de domínio<br/>e ORM<br/>✅ 15/15"] --> C3["③ API REST, camadas,<br/>CRUD, exceções,<br/>validações<br/>✅ 23/23"] --> C4["④ JPA, consultas SQL<br/>e JPQL<br/>🔄 34/38"] --> C5["⑤ Login e controle<br/>de acesso<br/>📅 0/34"] --> C6["⑥ Homologação e<br/>implantação com<br/>CI/CD<br/>📅 0/18"]
+    C1["① Componentes e<br/>injeção de<br/>dependência<br/>✅ 14/14"] --> C2["② Modelo de domínio<br/>e ORM<br/>✅ 15/15"] --> C3["③ API REST, camadas,<br/>CRUD, exceções,<br/>validações<br/>✅ 23/23"] --> C4["④ JPA, consultas SQL<br/>e JPQL<br/>🔄 37/38"] --> C5["⑤ Login e controle<br/>de acesso<br/>📅 0/34"] --> C6["⑥ Homologação e<br/>implantação com<br/>CI/CD<br/>📅 0/18"]
     style C1 fill:#1f6f3f,color:#fff
     style C2 fill:#1f6f3f,color:#fff
     style C3 fill:#1f6f3f,color:#fff
@@ -2787,15 +2817,15 @@ flowchart LR
 | 1 | Componentes e injeção de dependência | 14/14 | 1h26 | ✅ | [Cálculo de pedido](https://github.com/k3vinrich4rd/desafio-devsuperior-componentes-injecao-dependencia) com `OrderService` + `ShippingService` injetados pelo Spring |
 | 2 | Modelo de domínio e ORM | 15/15 | 2h17 | ✅ | [Sistema de eventos](https://github.com/k3vinrich4rd/desafio-devsuperior-modelo-orm) no H2 e o modelo do [DSCommerce](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) |
 | 3 | API REST, camadas, CRUD, exceções, validações | 23/23 | 3h14 | ✅ | [CRUD de clientes](https://github.com/k3vinrich4rd/desafio-devsuperior-crud-clientes) com **10/10** no checklist de correção |
-| 4 | JPA, consultas SQL e JPQL | 34/38 | 6h52 | 🔄 | Próximo: desafio *Consulta vendas* (relatório paginado + sumário por vendedor) |
+| 4 | JPA, consultas SQL e JPQL | 37/38 | 6h52 | 🔄 | Próximo: desafio *Consulta vendas* (relatório paginado + sumário por vendedor) |
 | 5 | Login e controle de acesso | 0/34 | 4h53 | 📅 | DSCommerce completo com login (OAuth2 + JWT) e pedidos |
 | 6 | Homologação e implantação com CI/CD | 0/18 | 2h09 | 📅 | Perfis dev/prod, PostgreSQL no Docker e deploy com CI/CD |
 
-<sub>86 de 142 aulas assistidas</sub>
+<sub>89 de 142 aulas assistidas</sub>
 
 **📌 Na fila (matriculado, ainda não comecei):** [Java Spring Expert](https://devsuperior.club/courses/6) (206 aulas) · [Java Spring Reference](https://devsuperior.club/courses/7) (151 aulas) · [Java Spring Tópicos Avançados](https://devsuperior.club/courses/63) (11 aulas) · [Análise de Requisitos Expert](https://devsuperior.club/courses/10) (50 aulas) · [Bônus Estudo de caso CI/CD AWS e Github Actions](https://devsuperior.club/courses/12) (17 aulas)
 
-<sub>🤖 Progresso lido da plataforma do curso pela minha automação em 2026-11-24.</sub>
+<sub>🤖 Progresso lido da plataforma do curso pela minha automação em 2026-11-27.</sub>
 <!-- AUTO:cursos:END -->
 
 #### 📖 O que aprendi no Java Spring Professional
