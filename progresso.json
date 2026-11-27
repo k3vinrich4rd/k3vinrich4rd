@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-11-26",
+  "atualizado": "2026-11-27",
   "regua": {
     "praticadas": 13,
     "total": 15,
@@ -864,9 +864,27 @@
       }
     },
     {
+      "nome": "GROUP BY, HAVING e agregações",
+      "area": "dados",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
       "nome": "H2 x MySQL",
       "area": "Dados",
       "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "JOINs · INNER, LEFT e RIGHT",
+      "area": "dados",
+      "status": "andamento",
       "passos": {
         "feitos": 0,
         "total": 0
@@ -891,12 +909,48 @@
       }
     },
     {
+      "nome": "SELECT, WHERE e ORDER BY",
+      "area": "dados",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
       "nome": "SQL e MySQL",
       "area": "Dados",
       "status": "praticado",
       "passos": {
         "feitos": 0,
         "total": 2
+      }
+    },
+    {
+      "nome": "Subconsultas",
+      "area": "dados",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Transações no SQL",
+      "area": "dados",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Índices",
+      "area": "dados",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
       }
     },
     {
@@ -1233,6 +1287,15 @@
       }
     },
     {
+      "nome": "@Query e query methods",
+      "area": "spring",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
       "nome": "Anotações Java e Spring",
       "area": "Spring",
       "status": "praticado",
@@ -1257,6 +1320,33 @@
       "passos": {
         "feitos": 0,
         "total": 2
+      }
+    },
+    {
+      "nome": "Consultas nativas",
+      "area": "spring",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Entidade e consulta orientada a objeto",
+      "area": "spring",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "JOIN e JOIN FETCH",
+      "area": "spring",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
       }
     },
     {
@@ -1296,7 +1386,25 @@
       }
     },
     {
+      "nome": "Paginação com Pageable",
+      "area": "spring",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
       "nome": "Paginação e countQuery",
+      "area": "spring",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Parâmetros nomeados",
       "area": "spring",
       "status": "andamento",
       "passos": {
@@ -1314,7 +1422,25 @@
       }
     },
     {
+      "nome": "Problema N+1",
+      "area": "spring",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
       "nome": "Projeção de dados",
+      "area": "spring",
+      "status": "andamento",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "Projeções e DTO",
       "area": "spring",
       "status": "andamento",
       "passos": {
@@ -1326,6 +1452,15 @@
       "nome": "RFC 9457",
       "area": "spring",
       "status": "praticado",
+      "passos": {
+        "feitos": 0,
+        "total": 0
+      }
+    },
+    {
+      "nome": "SQL x JPQL",
+      "area": "spring",
+      "status": "andamento",
       "passos": {
         "feitos": 0,
         "total": 0
@@ -1522,7 +1657,7 @@
     }
   ],
   "biblioteca": {
-    "notas": 155,
+    "notas": 171,
     "comSem": 61,
     "sessoes": [
       "IA, Spring e LGPD",
@@ -2089,47 +2224,47 @@
         ]
       }
     ],
-    "diasDiario30": 22,
+    "diasDiario30": 23,
     "recentes": [
       {
-        "nome": "CSP com nonce",
-        "area": "Arquitetura",
-        "criado": "2026-11-26"
+        "nome": "@Query e query methods",
+        "area": "Spring",
+        "criado": "2026-11-27"
       },
       {
-        "nome": "Web Push e VAPID",
-        "area": "Arquitetura",
-        "criado": "2026-11-26"
+        "nome": "Consultas nativas",
+        "area": "Spring",
+        "criado": "2026-11-27"
       },
       {
-        "nome": "ADR",
-        "area": "Arquitetura",
-        "criado": "2026-11-20"
+        "nome": "Entidade e consulta orientada a objeto",
+        "area": "Spring",
+        "criado": "2026-11-27"
       },
       {
-        "nome": "Aiven",
-        "area": "Cloud",
-        "criado": "2026-11-20"
+        "nome": "GROUP BY, HAVING e agregações",
+        "area": "Dados",
+        "criado": "2026-11-27"
       },
       {
-        "nome": "BOLA e IDOR",
-        "area": "Arquitetura",
-        "criado": "2026-11-20"
+        "nome": "Índices",
+        "area": "Dados",
+        "criado": "2026-11-27"
       },
       {
-        "nome": "CEP com cache e degradação",
-        "area": "Arquitetura",
-        "criado": "2026-11-20"
+        "nome": "JOIN e JOIN FETCH",
+        "area": "Spring",
+        "criado": "2026-11-27"
       },
       {
-        "nome": "CodeQL",
-        "area": "DevOps",
-        "criado": "2026-11-20"
+        "nome": "JOINs · INNER, LEFT e RIGHT",
+        "area": "Dados",
+        "criado": "2026-11-27"
       },
       {
-        "nome": "Cookie HttpOnly",
-        "area": "Arquitetura",
-        "criado": "2026-11-20"
+        "nome": "Paginação com Pageable",
+        "area": "Spring",
+        "criado": "2026-11-27"
       }
     ]
   }
