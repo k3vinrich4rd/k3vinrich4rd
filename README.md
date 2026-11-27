@@ -2467,8 +2467,8 @@ public void sacar(BigDecimal valor) {
 <!-- AUTO:atividade:START -->
 | | Repositório | Commit | Quando |
 |:-:|---|---|---|
-| ✨ | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`51c250b`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/51c250bf3ac430ffe72bf4081d93b7b1643557b4) feat(home): com sessão, o cartão 1 de "Como marcar" leva a "Meus agendam | há 2 h |
-| 📝 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`bf23257`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/bf23257c7a7ab40de74c210a6057746aadb2dbc2) docs(prints): refaz os prints da home do F2 sobre a develop com o F4 e p | há 3 h |
+| ✨ | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`51c250b`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/51c250bf3ac430ffe72bf4081d93b7b1643557b4) feat(home): com sessão, o cartão 1 de "Como marcar" leva a "Meus agendam | há 9 h |
+| 📝 | [`barbearia-altas-horas`](https://github.com/k3vinrich4rd/barbearia-altas-horas) | [`bf23257`](https://github.com/k3vinrich4rd/barbearia-altas-horas/commit/bf23257c7a7ab40de74c210a6057746aadb2dbc2) docs(prints): refaz os prints da home do F2 sobre a develop com o F4 e p | há 9 h |
 | 📝 | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`664c4f0`](https://github.com/k3vinrich4rd/cpf-utils/commit/664c4f02c74492d8e520af9514600e4e2f7bee4c) docs(readme): adiciona Por que existe e O que aprendi | há 18 dias |
 | 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`8510d19`](https://github.com/k3vinrich4rd/rkf_bank/commit/8510d19697631c6fda2f728aaa4803462ef4a1c5) docs(readme): bloco de revisão técnica em 2 minutos no topo | há 21 dias |
 | 📝 | [`rkf_bank`](https://github.com/k3vinrich4rd/rkf_bank) | [`4558293`](https://github.com/k3vinrich4rd/rkf_bank/commit/4558293c34c59e797d417b723ac8877ffa1aacd2) docs(deploy): checagem diária de integridade da produção | há 24 dias |
@@ -2476,7 +2476,7 @@ public void sacar(BigDecimal valor) {
 | 📝 | [`dscommerce`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM) | [`0849493`](https://github.com/k3vinrich4rd/JAVA-SPRING-PROFESSIONAL-MODELO-DE-DOMINIO-ORM/commit/0849493f006f8569a3c9a93e9578c3ba795d6921) docs: adiciona README com modelo de dominio, endpoints e exemplos reais | 15/10/2026 |
 | • | [`cpf-utils`](https://github.com/k3vinrich4rd/cpf-utils) | [`68de4a9`](https://github.com/k3vinrich4rd/cpf-utils/commit/68de4a91b903988d82c6cddc349121e0c9b9093d) Update README.md | 30/06/2025 |
 
-<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 27/11 às 11:41</sub>
+<sub>✨ feat · 🐛 fix · 🧪 test · 📝 docs · 🔧 chore/build/ci · ♻️ refactor &nbsp;|&nbsp; 🤖 atualizado sozinho pelo GitHub Actions a cada 6 horas · 27/11 às 18:22</sub>
 <!-- AUTO:atividade:END -->
 
 </details>
